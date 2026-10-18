@@ -1,0 +1,119 @@
+{
+  "slug": "310-btc-challenge-0-31btc",
+  "agent": "AutoClaw",
+  "ts": "2026-10-18T17:12:53Z",
+  "date": "2026-10-18",
+  "status": "partial",
+  "note": "",
+  "api_calls": 24,
+  "free_transports": 8,
+  "remaining_seen": 35,
+  "reset_utc": "2026-10-18T17:50:22Z",
+  "files": 1964,
+  "bytes": 83377328,
+  "media": 328,
+  "repos": [
+    {
+      "repo": "bitcoin/bips",
+      "role": "community",
+      "branch": "master",
+      "head_sha": "927b6de9915c9262615a6399de51b200f81e5aa4",
+      "counts": {
+        "issues": 300,
+        "comments": 500,
+        "releases": 0
+      },
+      "files": 491,
+      "bytes": 20844332
+    },
+    {
+      "repo": "baryalangpo/bips",
+      "role": "fork",
+      "branch": "master",
+      "head_sha": "927b6de9915c9262615a6399de51b200f81e5aa4",
+      "counts": {
+        "issues": 0,
+        "comments": 0,
+        "releases": 0
+      },
+      "files": 491,
+      "bytes": 20844332
+    },
+    {
+      "repo": "pubky/bips",
+      "role": "fork",
+      "branch": "master",
+      "head_sha": "927b6de9915c9262615a6399de51b200f81e5aa4",
+      "counts": {
+        "issues": 0,
+        "comments": 0,
+        "releases": 0
+      },
+      "files": 491,
+      "bytes": 20844332
+    },
+    {
+      "repo": "pancamarga41/bips",
+      "role": "fork",
+      "branch": "master",
+      "head_sha": "927b6de9915c9262615a6399de51b200f81e5aa4",
+      "counts": {
+        "issues": 0,
+        "comments": 0,
+        "releases": 0
+      },
+      "files": 491,
+      "bytes": 20844332
+    }
+  ],
+  "candidates": [
+    {
+      "repo": "bitcoin/bips",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 2
+    },
+    {
+      "repo": "baryalangpo/bips",
+      "role": "fork",
+      "source": "форки bitcoin/bips",
+      "hits": 0
+    },
+    {
+      "repo": "pubky/bips",
+      "role": "fork",
+      "source": "форки bitcoin/bips",
+      "hits": 0
+    },
+    {
+      "repo": "pancamarga41/bips",
+      "role": "fork",
+      "source": "форки bitcoin/bips",
+      "hits": 0
+    },
+    {
+      "repo": "web4hub/bips",
+      "role": "fork",
+      "source": "форки bitcoin/bips",
+      "hits": 0
+    },
+    {
+      "repo": "patrickdugan/bips",
+      "role": "fork",
+      "source": "форки bitcoin/bips",
+      "hits": 0
+    },
+    {
+      "repo": "fmtappendf/bips",
+      "role": "fork",
+      "source": "форки bitcoin/bips",
+      "hits": 0
+    }
+  ],
+  "errors": [
+    "не собрано (сверх --max-repos 4): web4hub/bips, patrickdugan/bips, fmtappendf/bips"
+  ],
+  "stop_reason": "срезано потолками: собрано 4 кандидатов из 7 (--max-repos/--max-mb)",
+  "ocp": null,
+  "digest": "data/github/GITHUB_INTAKE.md"
+}

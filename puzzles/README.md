@@ -2,11 +2,11 @@
 
 Папка с подробной информацией по каждому пазлу. Глобальный справочник — [MASTER_CATALOG.md](../MASTER_CATALOG.md).
 
-Активных папок-досье: **80** (+ реестр отбракованных `dead-ends-registry`). Из 5 новых нерешённых загадок, добавленных 18.10.2026
+Активных папок-досье: **79** (+ реестр отбракованных `dead-ends-registry`). Из 5 новых нерешённых загадок, добавленных 18.10.2026
 (`reports/2026-10-18_1245_Qoder_catalog-search-plan-and-new-sources.md`), после прохода верификации 18.10: **3 остались активными**
 (gold-crystal, krypto-chase, lunarcrush — off-chain/физические, нерешены), **2 перенесены в solved/** (hunghuatang-8964 — решён автором;
-satoshis-treasure — сайт мёртв, верифицируемый bounty-адрес свипнут). Также 18.10 закрыта genesis (см. `reports/2026-10-18_1000_OCP_Sync_ocp-full-sync.md`).
-Ещё 55 решённых/закрытых/тупиковых вынесены в [solved/INDEX.md](../solved/INDEX.md) — там не работать без новых данных.
+satoshis-treasure — сайт мёртв, верифицируемый bounty-адрес свипнут). Также 18.10 закрыта genesis (см. `reports/2026-10-18_1000_OCP_Sync_ocp-full-sync.md`) и 310 BTC Challenge — приз финальной стадии отозван владельцем ключей 03.12.2019 (AutoClaw; отчёт `reports/2026-10-18_1745_AutoClaw_310btc-challenge-final-closed.md`).
+Ещё 56 решённых/закрытых/тупиковых вынесены в [solved/INDEX.md](../solved/INDEX.md) — там не работать без новых данных.
 
 **Перед началом работы по любой загадке** сначала проверьте [dead-ends-registry](dead-ends-registry/README.md) —
 там список проверенно мёртвых и отбракованных задач (не тратить время).
@@ -22,7 +22,6 @@ satoshis-treasure — сайт мёртв, верифицируемый bounty-�
 - [1000-btc-challenge-bitcoin-puzzle-tx](1000-btc-challenge-bitcoin-puzzle-tx/README.md) — 1000 BTC Challenge (Bitcoin Puzzle Transaction) (~916-989 BTC (~$58-60M))
 - [11b-x-1371](11b-x-1371/README.md) — 11B-X-1371 (2015)
 - [1btc-brainwallet-defcon-2014](1btc-brainwallet-defcon-2014/README.md) — «1 BTC Brainwallet» (DEFCON 2014) (1 BTC)
-- [310-btc-challenge-0-31btc](310-btc-challenge-0-31btc/README.md) — 310 BTC Challenge (финальный этап) (0,31 BTC)
 - [973-eht-namuh-973](973-eht-namuh-973/README.md) — 973-eht-namuh-973.com
 - [9vw04-gem-finder](9vw04-gem-finder/README.md) — Gem Finder 9vw04 (0.0202076 BTC, цветная сетка 21×50, WIF-маска)
 - [actuarial-science-nft-hunt-10eth](actuarial-science-nft-hunt-10eth/README.md) — Actuarial Science NFT Hunt (до 10 ETH)

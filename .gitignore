@@ -26,7 +26,7 @@ $RECYCLE.BIN/
 # Причины: лицензии чужого кода, объём, и шум в tools/key_scan.py, который обходит всё дерево.
 _sources/github/
 _sources/ocp/
-puzzles/*/data/github/*/files/
-puzzles/*/data/github/*/files__*/
-puzzles/*/data/github/*/raw/
-puzzles/*/data/github/*/wiki/
+**/data/github/*/files/
+**/data/github/*/files__*/
+**/data/github/*/raw/
+**/data/github/*/wiki/

@@ -44,7 +44,7 @@
 | [wonderabbit-prometheus-1msats](wonderabbit-prometheus-1msats/README.md) | solved — приз снят |
 | [zden-haluska-lvl5-555ksats](zden-haluska-lvl5-555ksats/README.md) | solved — приз снят |
 
-## Закрытые — истёк / свипнут / завершён (наш выигрыш не зашёл) (12)
+## Закрытые — истёк / свипнут / завершён (наш выигрыш не зашёл) (14)
 
 Пазл истёк, свипнут или завершён без нашего выигрыша. Возвращать только при новых данных.
 
@@ -63,6 +63,7 @@
 | [proof-of-writing](proof-of-writing/README.md) | закрыт в каталоге (Часть 6), деталей нет |
 | [satoshi-maze](satoshi-maze/README.md) | алиас phemex-dorian-nakamoto; закрыт 21.03.2020 |
 | [satoshis-treasure-arg-1m](satoshis-treasure-arg-1m/README.md) | сайт мёртв (2019 ARG); единственный верифицируемый bounty-адрес 1899BGHGR4… потрачен (баланс 0, проверка 18.10.2026); основной ~$1M фонд физический/off-chain |
+| [310-btc-challenge-0-31btc](310-btc-challenge-0-31btc/README.md) | закрыт: финальная стадия 0,31 BTC снята владельцем ключей 03.12.2019 (пул-адрес Pip 3NPZiNWiD7cCfXZa1D8tnEZBPgQ884cVw7, tx 697a8e2e…, блок 606432 → 3DaNeVNFqpirR9KEHjFuPPeErPaMTZyeBo); сайт мёртв (домен с 2024 — казино-спам); наша on-chain проверка 18.10.2026 |
 
 ## Dead-end и не-пазлы — не тратить время (14)
 

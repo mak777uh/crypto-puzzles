@@ -23,19 +23,13 @@
 - Режим «вся база»: один проход = одна цель (`python tools/github_intake.py backlog --n 5`), бюджет `api.github.com` 60/ч общий на IP всех агентов —
   следы прогонов в `_sources/github/_api_ledger.json` (`python tools/github_intake.py ledger`), повторный прогон при неизменном HEAD стоит 0 запросов.
 
-## Текущая задача (проход 11): каталог — импорт dsh-сессии (GLIMMER/отчёты) закрыт; Genesis — обе ночные батареи закрыты (174 897 прогонов, 0); сертификация relaxed; эскроу
-1. Genesis: батареи #4/#5 закрыты (calib7 29 598 + опечатки 3 999 + calib8 141 300 = 174 897 прогонов M1, ноль). Оракул ppZ — на паузе до решающего декодер-вопроса (2e915cad/e3373eb1); ждёт пополнения и ОК Ильи.
-2. Genesis relaxed sweep: контроль финальной строки DONE total=78 347 016 + пустой hits-лог (PID 45180).
-3. Эскроу-мониторинг: tx_count>116 цепных; новые OP_RETURN — декодировать сразу (бесплатные данные сообщества).
-4. GLIMMER (smith-lyle-moore): оба оставшихся замка — deduction-only (печатной подсказки нет, нарушено привычное правило). Следующие ходы — только новые идеи; аудит §8 handoff на неперекрытые строки — по желанию.
-5. GSMG: chain4-выход (1151 B) / seg0 — по лидам; отчёт Илье + таймер 15 мин.
-
-### Добавлено проходом Qoder, 13:49: GitHub-интейк-шлюз внедрён — дальше только по одному объекту из очереди
-6. Шлюз теперь обязателен и автоматизирован: `python tools/github_intake.py run <slug> --agent <Имя> --take-claim`
-   (13 мин / 40 запросов; повтор при неизменном HEAD = 0 запросов). Статусы 80 папок — `_sources/GITHUB_INTAKE_STATUS.md`,
-   очередь — `_sources/github/INTAKE_BACKLOG.md` (75 pending). Следующие цели: `oobit-139-bitcoinpuzzles-io-0-01545btc`
-   (52 ссылки, ~28 req, брать с `--max-repos 3`), `1000-btc-challenge-bitcoin-puzzle-tx`, затем по списку.
-   Детали и известные ловушки — отчёт `reports/2026-10-18_1349_Qoder_github-intake-gate-rollout.md`.
+## Текущая задача (проход 12, AutoClaw 18.10 17:50Z): 310 BTC Challenge ЗАКРЫТ — приз 0,31 BTC отозван владельцем ключей 03.12.2019
+1. **310 BTC Challenge (bitcoinchallenge.codes, автор «Pip», 4 кошелька на 310,61 BTC) — закрыт.** Адрес финала (пробел досье B29) установлен: `3NPZiNWiD7cCfXZa1D8tnEZBPgQ884cVw7` (пул-адрес Pip; стейджинг ~310 BTC 29.09–01.10.2018 → вывод 309,99590359 BTC в главный `39uAUwEFDi5bBbdBm5ViD8sxDBBrz7SUP4` tx `28a4fb91…`; депозит приза 31 000 000 сат 02.10.2018 tx `0de2063b…`; метка «0,31» подтверждена Medium imeosone + постом NLNico на bitcointalk 5042285). Он-чейн (mempool.space, 18.10.2026): **свип 03.12.2019** (блок 606432, tx `697a8e2e…`, 31 180 000 сат → `3DaNeVNFqpirR9KEHjFuPPeErPaMTZyeBo`, 04.12.2019 консолидация 7 BTC → `3FQZNoJR4vJyTgSPXwsE3PiV78se7fqDCG`); остальные стадии тоже пусты (310,01154184 / 0,2 / 0,1 BTC — все spent, 0,1 решена «Lustre» 04.10.2018). Сайт: «unsolved» держался до 2020-11, списки стадий убраны к 2022-03, домен с 2024 — казино-спам, 2026 — парковка. Публичного решения нет → «приз отозван, не наш выигрыш». Папка → `solved/310-btc-challenge-0-31btc`; GitHub-интейк GH:partial (4 репо, 24 req); индексы и dead-ends-registry обновлены. Отчёт: `reports/2026-10-18_1745_AutoClaw_310btc-challenge-final-closed.md`
+2. guntis-vitolins-metamask-8-6eth (бронь Big Pickle до 18:30Z): CPU-оси исчерпаны; ждём новые хинты автора (@GuntisVitolins) — мониторинг; GPU-оси только с ОК Ильи.
+3. smith-lyle-moore-hunt-2-0-032btc (бронь Qoder до 18:43Z): оставшиеся замки deduction-only — следующие ходы только новые идеи; аудит §8 по желанию.
+4. GSMG: chain4-выход / seg0 по лидам; эскроу-мониторинг (tx_count>116; новые OP_RETURN — декодировать сразу).
+5. Genesis: батареи закрыты (174 897 прогонов, 0); оракул ppZ на паузе до решающего декодер-вопроса (2e915cad/e3373eb1) и ОК Ильи на пополнение.
+6. GitHub-интейк «вся база»: одна цель за проход (`python tools/github_intake.py backlog --n 5`); бэклог ~75 pending. Следующие цели по очереди Qoder: `1000-btc-challenge-bitcoin-puzzle-tx`, далее по бэклогу.
 
 ---
 Журнал проходов (до 2026-10-17 включительно): `_archive/WAKE_JOURNAL_2026-10-17.md`.
