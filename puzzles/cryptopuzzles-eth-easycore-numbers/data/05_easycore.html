@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<title>Cryptopuzzles</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="icons8-puzzle-100.png">
+<style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+
+</style>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="index.html"><img src="wizard.png" style="width:80%;"></a>
+  <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+  <a class="w3-bar-item w3-button w3-teal" href="index.html">Home</a>
+  <div>
+    <a class="w3-bar-item w3-button w3-teal" onclick="myAccordion('unsolved')" href="javascript:void(0)">Unsolved puzzles <i class="fa fa-caret-down"></i></a>
+    <div id="unsolved" class="w3-hide">
+	  <a class="w3-bar-item w3-button" href="easycore.html">Easycore</a>
+      <a class="w3-bar-item w3-button" href="numbers.html">Numbers</a>
+    </div>
+  </div>
+  <div>
+    <a class="w3-bar-item w3-button w3-teal" onclick="myAccordion('solved')" href="javascript:void(0)">Solved puzzles <i class="fa fa-caret-down"></i></a>
+    <div id="solved" class="w3-hide">
+	  <a class="w3-bar-item w3-button" href="robots.html">Robots</a>
+	  <a class="w3-bar-item w3-button" href="deepest.html">Deepest</a>
+	  <a class="w3-bar-item w3-button" href="map.html">Map</a>
+	  <a class="w3-bar-item w3-button" href="gifts.html">Gifts</a>
+      <a class="w3-bar-item w3-button" href="brute.html">Bruteforce challenge</a>
+      <a class="w3-bar-item w3-button" href="matrix.html">Matrix</a>
+      <a class="w3-bar-item w3-button" href="minimalist.html">Minimalist</a>
+      <a class="w3-bar-item w3-button" href="number2.html">Numbers 2</a>
+	  <a class="w3-bar-item w3-button" href="halloween.html">Halloween</a>
+	  <a class="w3-bar-item w3-button" href="children.html">Children's games</a>
+    </div>
+  </div>
+  <a class="w3-bar-item w3-button w3-teal" href="faq.html">F.A.Q.</a>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+<div id="myTop" class="w3-container w3-top w3-theme w3-large">
+  <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide">Cryptopuzzles.eth</span></p>
+</div>
+
+<header class="w3-container w3-theme" style="padding:16px 32px">
+  <h1 class="w3-xxxlarge">Cryptopuzzles.eth</h1>
+</header>
+
+<div class="w3-container" style="padding:32px">
+
+<h2>Easycore puzzle</h2>
+
+<p> Christmas hint : <img src="easyhint.png"> </p>
+<p> Second hint : Take 1 bit out of 8</p>
+<p> Prize address : 0x06460646ca1603a61953eeb385681f5d56401ede (0.5 + 0.5 ETH) </p>
+<a href="https://www.reddit.com/r/bitcoinpuzzles/comments/e2yz6s/15ethfive_puzzles_for_christmas/" target="_blank">Reddit link</a><br/><br/>
+
+<img src="easycore.svg">
+
+</div>
+<footer class="w3-container w3-theme" style="padding:8px  32px">
+  <p><a href="https://twitter.com/Arpoxy" target="_blank">Contact</a></p>
+</footer>
+     
+</div>
+
+<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+// Accordions
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme", "");
+  }
+}
+</script>
+     
+</body>
+</html> 

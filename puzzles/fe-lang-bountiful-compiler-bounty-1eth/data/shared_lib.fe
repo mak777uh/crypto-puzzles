@@ -1,0 +1,318 @@
+// =============================================================================
+// Bountiful — Shared definitions
+//
+// Error enum, constants, helper functions, and cross-contract msg interfaces
+// used by both the Game (challenge) and BountyRegistry (platform) contracts.
+// =============================================================================
+
+use std::abi::sol
+use std::evm::{Address, Evm, assert}
+use std::evm::word::WordRepr
+use core::abi::{Abi, AbiEncoder, AbiSize, Encode}
+
+// =============================================================================
+// Error enum
+// =============================================================================
+
+pub enum Error {
+    InvalidIndex,
+    NotMovable,
+    MissingLock,
+    AlreadyLocked,
+    InvalidClaim,
+    OnlyAdmin,
+    InvalidDeposit,
+    TransferFailed,
+    AlreadyRegistered,
+}
+
+impl Error {
+    pub fn to_int(self) -> u256 {
+        match self {
+            Self::InvalidIndex => 1
+            Self::NotMovable => 2
+            Self::MissingLock => 3
+            Self::AlreadyLocked => 4
+            Self::InvalidClaim => 5
+            Self::OnlyAdmin => 6
+            Self::InvalidDeposit => 7
+            Self::TransferFailed => 8
+            Self::AlreadyRegistered => 9
+        }
+    }
+}
+
+impl AbiSize for Error {
+    const HEAD_SIZE: u256 = 32
+    const IS_DYNAMIC: bool = false
+}
+
+impl<A: Abi> Encode<A> for Error {
+    const DIRECT_ENCODE: bool = true
+
+    fn encode<E: AbiEncoder<A>>(own self, _ e: mut E) {
+        e.write_word(self.to_int())
+    }
+
+    fn encode_to_ptr(own self, _ ptr: u256) {
+        A::store_word(ptr: ptr, value: self.to_int())
+    }
+}
+
+// =============================================================================
+// Challenge struct — packed into a single u256 for StorageMap compatibility
+//
+// Layout: [128 bits prize_amount | ... unused ... | 1 bit is_open]
+// =============================================================================
+
+pub struct Challenge {
+    pub is_open: bool,
+    pub prize_amount: u128,
+}
+
+impl Challenge {
+    pub fn new(is_open: bool, prize_amount: u128) -> Self {
+        Challenge { is_open, prize_amount }
+    }
+
+    pub fn closed() -> Self {
+        Challenge { is_open: false, prize_amount: 0 }
+    }
+}
+
+impl WordRepr for Challenge {
+    fn from_word(_ word: u256) -> Self {
+        let is_open: bool = (word & 1) != 0
+        let prize_amount: u128 = ((word >> 128) as u128)
+        Challenge { is_open, prize_amount }
+    }
+
+    fn to_word(own self) -> u256 {
+        let open_bit: u256 = if self.is_open { 1 } else { 0 }
+        let prize_bits: u256 = (self.prize_amount as u256) << 128
+        prize_bits | open_bit
+    }
+}
+
+// =============================================================================
+// Lock struct — packed into a single u256 for StorageMap compatibility
+//
+// Layout: [160 bits claimer | 96 bits valid_until_block]
+// =============================================================================
+
+pub struct Lock {
+    pub claimer: Address,
+    pub valid_until_block: u256,
+}
+
+const LOCK_BLOCK_MASK: u256 = 0xFFFFFFFFFFFFFFFFFFFFFFFF // 96 bits
+
+impl Lock {
+    pub fn empty() -> Self {
+        Lock { claimer: Address::zero(), valid_until_block: 0 }
+    }
+}
+
+impl WordRepr for Lock {
+    fn from_word(_ word: u256) -> Self {
+        let claimer = Address { inner: word >> 96 }
+        let valid_until_block = word & LOCK_BLOCK_MASK
+        Lock { claimer, valid_until_block }
+    }
+
+    fn to_word(own self) -> u256 {
+        (self.claimer.inner << 96) | (self.valid_until_block & LOCK_BLOCK_MASK)
+    }
+}
+
+// =============================================================================
+// Game constants
+// =============================================================================
+
+pub const LOCK_PERIOD: u256 = 100
+
+pub fn winning_value(index: u256) -> u256 {
+    if index == 15 { return 0 }
+    return index + 1
+}
+
+// =============================================================================
+// Board packing — 16 cells × 4 bits = 64 bits packed into a single u256
+//
+// Cell 0 at bits 0..3, cell 1 at bits 4..7, ..., cell 15 at bits 60..63.
+// Each cell value must be 0..15.
+// =============================================================================
+
+/// Solved board: [1,2,3,...,15,0] packed
+pub const SOLVED_BOARD: u256 = 0x0FEDCBA987654321
+
+/// Unsolvable board: [1,2,...,13,15,14,0] — tiles 14 and 15 swapped, mathematically unsolvable
+pub const UNSOLVABLE_BOARD: u256 = 0x0EFDCBA987654321
+
+/// One move from solved: [1,2,...,14,0,15] — solvable via moveField(15)
+pub const ONE_MOVE_BOARD: u256 = 0xF0EDCBA987654321
+
+/// Unpacks a packed board into a 16-element array.
+pub fn unpack_board(packed: u256) -> [u256; 16] {
+    let mut board: [u256; 16] = [0; 16]
+    let mut i: usize = 0
+    while i < 16 {
+        board[i] = (packed >> ((i as u256) * 4)) & 0xF
+        i += 1
+    }
+    return board
+}
+
+/// Packs a 16-element array into a single u256.
+pub fn pack_board(board: [u256; 16]) -> u256 {
+    let mut packed: u256 = 0
+    let mut i: usize = 0
+    while i < 16 {
+        packed = packed | (board[i] << ((i as u256) * 4))
+        i += 1
+    }
+    return packed
+}
+
+// =============================================================================
+// Cross-contract message interfaces
+// =============================================================================
+
+pub msg SolvableMsg {
+    #[selector = sol("isSolved()")]
+    IsSolved -> bool,
+}
+
+pub msg LockValidatorMsg {
+    #[selector = sol("validateOwnsLock(address,address)")]
+    ValidateOwnsLock { owner: Address, challenge: Address },
+}
+
+// =============================================================================
+// Tests
+// =============================================================================
+
+#[test]
+fn test_error_to_int_all_variants() uses (evm: mut Evm) {
+    assert(Error::InvalidIndex.to_int() == 1)
+    assert(Error::NotMovable.to_int() == 2)
+    assert(Error::MissingLock.to_int() == 3)
+    assert(Error::AlreadyLocked.to_int() == 4)
+    assert(Error::InvalidClaim.to_int() == 5)
+    assert(Error::OnlyAdmin.to_int() == 6)
+    assert(Error::InvalidDeposit.to_int() == 7)
+    assert(Error::TransferFailed.to_int() == 8)
+    assert(Error::AlreadyRegistered.to_int() == 9)
+}
+
+#[test]
+fn test_winning_value() uses (evm: mut Evm) {
+    // Cells 0-14 should have values 1-15
+    assert(winning_value(index: 0) == 1)
+    assert(winning_value(index: 1) == 2)
+    assert(winning_value(index: 7) == 8)
+    assert(winning_value(index: 13) == 14)
+    assert(winning_value(index: 14) == 15)
+    // Cell 15 is the empty cell (value 0)
+    assert(winning_value(index: 15) == 0)
+}
+
+#[test]
+fn test_challenge_word_repr_roundtrip() uses (evm: mut Evm) {
+    let c = Challenge::new(is_open: true, prize_amount: 1000)
+    let word = c.to_word()
+    let c2 = Challenge::from_word(word)
+    assert(c2.is_open)
+    assert(c2.prize_amount == 1000)
+}
+
+#[test]
+fn test_challenge_word_repr_closed() uses (evm: mut Evm) {
+    let c = Challenge::new(is_open: false, prize_amount: 0)
+    let word = c.to_word()
+    let c2 = Challenge::from_word(word)
+    assert(!c2.is_open)
+    assert(c2.prize_amount == 0)
+}
+
+#[test]
+fn test_challenge_word_repr_large_prize() uses (evm: mut Evm) {
+    // 10 ETH in wei = 10_000_000_000_000_000_000
+    let prize: u128 = 10000000000000000000
+    let c = Challenge::new(is_open: true, prize_amount: prize)
+    let word = c.to_word()
+    let c2 = Challenge::from_word(word)
+    assert(c2.is_open)
+    assert(c2.prize_amount == prize)
+}
+
+#[test]
+fn test_challenge_closed_helper() uses (evm: mut Evm) {
+    let c = Challenge::closed()
+    assert(!c.is_open)
+    assert(c.prize_amount == 0)
+}
+
+#[test]
+fn test_lock_word_repr_roundtrip() uses (evm: mut Evm) {
+    let claimer: Address = Address { inner: 0xDEADBEEF12345678 }
+    let block: u256 = 42000
+    let lock = Lock { claimer, valid_until_block: block }
+    let word = lock.to_word()
+    let lock2 = Lock::from_word(word)
+    assert(lock2.claimer == claimer)
+    assert(lock2.valid_until_block == block)
+}
+
+#[test]
+fn test_lock_word_repr_empty() uses (evm: mut Evm) {
+    let lock = Lock::empty()
+    let word = lock.to_word()
+    let lock2 = Lock::from_word(word)
+    assert(lock2.claimer == Address::zero())
+    assert(lock2.valid_until_block == 0)
+}
+
+#[test]
+fn test_unpack_board_solved() uses (evm: mut Evm) {
+    let board = unpack_board(packed: SOLVED_BOARD)
+    let mut i: usize = 0
+    while i < 16 {
+        assert(board[i] == winning_value(index: i as u256))
+        i += 1
+    }
+}
+
+#[test]
+fn test_unpack_board_unsolvable() uses (evm: mut Evm) {
+    let board = unpack_board(packed: UNSOLVABLE_BOARD)
+    // Cells 0-12: values 1-13
+    let mut i: usize = 0
+    while i < 13 {
+        assert(board[i] == (i as u256) + 1)
+        i += 1
+    }
+    // Cell 13 = 15, cell 14 = 14, cell 15 = 0 (empty)
+    assert(board[13] == 15)
+    assert(board[14] == 14)
+    assert(board[15] == 0)
+}
+
+#[test]
+fn test_pack_unpack_roundtrip() uses (evm: mut Evm) {
+    let board = unpack_board(packed: UNSOLVABLE_BOARD)
+    let repacked = pack_board(board)
+    assert(repacked == UNSOLVABLE_BOARD)
+}
+
+#[test]
+fn test_lock_word_repr_full_address() uses (evm: mut Evm) {
+    // Full 160-bit address
+    let claimer: Address = Address { inner: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF }
+    let block: u256 = 999999
+    let lock = Lock { claimer, valid_until_block: block }
+    let word = lock.to_word()
+    let lock2 = Lock::from_word(word)
+    assert(lock2.claimer == claimer)
+    assert(lock2.valid_until_block == block)
+}

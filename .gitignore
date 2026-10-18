@@ -1,0 +1,22 @@
+# Секреты никогда не коммитим: ключи и сиды живут ВНЕ этой папки (AGENT_INSTRUCTIONS.md, п.6)
+.secret/
+secrets/
+*.key
+*.pem
+*.p12
+*.pkcs8
+id_rsa*
+
+# Артефакты Python и прогонов
+__pycache__/
+*.pyc
+
+# Мусор Windows и конфликт-копии OneDrive
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+~$*
+*.tmp
+*.lnk
+*(Conflict*)*

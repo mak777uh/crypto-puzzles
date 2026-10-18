@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="description" content="Solve Puzzle #4 of Solana Puzzles and win SOL. Discover the 12-word seed phrase and claim the reward.">
+  <meta name="keywords" content="Solana, Puzzle #4, Cryptocurrency, Blockchain, Game, Seed Phrase">
+  <title>Puzzle #4 (Active) — Solana Puzzles</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cyber Header -->
+  <header class="cyber-header">
+    <div class="header-container">
+      <a href="index.html" class="logo-brand">
+        <img src="Logo.jpg" alt="Solana Puzzles Logo" class="logo-img" />
+        <div>
+          <span>Solana</span><span class="gradient-text-solana">Puzzles</span>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <a href="index.html" class="cyber-btn cyber-btn-outline cyber-btn-sm">
+          <i class="fa-solid fa-house"></i> <span data-i18n="headerHome">Home</span>
+        </a>
+        <button id="lang-toggle-btn" class="cyber-btn cyber-btn-outline cyber-btn-sm">ES</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <section class="glass-card glass-card-active" style="text-align: center;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 1rem;">
+        <span class="status-badge status-badge-active">
+          <span class="dot-pulse"></span> <span data-i18n="puzzle4ActiveBadge">PUZZLE #4 ACTIVE</span>
+        </span>
+        <div style="font-size: 0.9rem; color: var(--muted-text);">
+          <i class="fa-regular fa-clock"></i> <span data-i18n="currentPuzzleTime">Time Elapsed</span>: <strong id="puzzle4-timer-display" class="mono" style="color: var(--solana-green);">Calculating...</strong>
+        </div>
+      </div>
+
+      <h1 class="hero-title gradient-text-gold" style="margin-bottom: 0.5rem;" data-i18n="puzzle4Title">Puzzle #4 (Active)</h1>
+      
+      <!-- Visual Puzzle Image -->
+      <div class="puzzle-img-wrapper">
+        <img src="images/puzzle4.png" alt="Puzzle #4 Visual Clue" id="puzzle-image">
+        <div class="watermark-overlay">
+          <div class="watermark-text">© Solana Puzzles<br>No Screenshots</div>
+        </div>
+      </div>
+
+      <!-- Wallet Information -->
+      <div style="margin: 1.5rem 0;">
+        <div style="font-size: 0.9rem; color: var(--muted-text); margin-bottom: 6px;" data-i18n="liveBountyWalletLabel">Live Solana Bounty Wallet (0.8 SOL):</div>
+        <div class="copy-box" style="max-width: 650px; margin: 0 auto;">
+          <span class="copy-text">DmDBmb7AEm6xRxkoBYq1mJYqsZP263gmXB53zA2dqjne</span>
+          <div style="display: flex; gap: 8px;">
+            <button onclick="copyToClipboard('DmDBmb7AEm6xRxkoBYq1mJYqsZP263gmXB53zA2dqjne')" class="cyber-btn cyber-btn-outline cyber-btn-sm">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+            <a class="cyber-btn cyber-btn-outline cyber-btn-sm" href="https://solscan.io/account/DmDBmb7AEm6xRxkoBYq1mJYqsZP263gmXB53zA2dqjne" target="_blank">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Solscan
+            </a>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; color: var(--gold-accent); margin-top: 6px; font-weight: 700;" data-i18n="activeBountyBadge">(0.8 SOL Active Bounty)</div>
+      </div>
+
+      <p class="hero-subtitle" style="font-size: 1.05rem; margin-bottom: 2rem;" data-i18n="puzzle4PageDesc">
+        Decode the 12-word seed phrase hidden inside Puzzle #4 visual.<br>
+        Enter the correct words into your Phantom wallet to claim the SOL balance.
+      </p>
+
+      <!-- Hints Section -->
+      <div id="hints" class="glass-card" style="text-align: left; background: rgba(0,0,0,0.3); border-color: rgba(153, 69, 255, 0.3);">
+        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--solana-cyan); display: flex; align-items: center; gap: 8px;">
+          <i class="fa-solid fa-lightbulb"></i> <span data-i18n="hintsTitle">Hints & Clues</span>
+        </h3>
+        
+        <div class="accordion-item active">
+          <button class="accordion-header">
+            <span data-i18n="hint1Title">Hint #1</span>
+            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p id="hint-1" data-i18n="hint1Text">"When things look backwards, clarity comes."</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span data-i18n="hint2Title">Hint #2</span>
+            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p id="hint-2" data-i18n="hint2Text">"Look for the answer in the stars."</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span data-i18n="hint3Title">Hint #3</span>
+            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p id="hint-3" data-i18n="hint3Text">"Don't forget to look for the X on the map."</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span data-i18n="hint4Title">Hint #4</span>
+            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p id="hint-4" data-i18n="hint4Text">"Half of the truth hides in the other half."</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span data-i18n="hint5Title">Hint #5</span>
+            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p id="hint-5" data-i18n="hint5Text">"It's hidden in the cat's eyes."</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span data-i18n="hint6Title">Hint #6</span>
+            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p id="hint-6" data-i18n="hint6Text">"The circle of 13 spins twice."</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span data-i18n="hint7Title">Hint #7</span>
+            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p id="hint-7" data-i18n="hint7Text">"Prime numbers will unlock the gate."</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span data-i18n="hint8Title">Hint #8</span>
+            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p id="hint-8" data-i18n="hint8Text">"From darkness to light, shift the letters."</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span data-i18n="hint9Title">Hint #9</span>
+            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p id="hint-9" data-i18n="hint9Text">"You never have to hunt a whale, because that will take you to the wrong place."</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span data-i18n="hint10Title">Hint #10</span>
+            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p id="hint-10" data-i18n="hint10Text">"What remains when you remove what both share."</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span data-i18n="hint11Title">Hint #11</span>
+            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p id="hint-11" data-i18n="hint11Text">"Don't believe in everything you see."</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span data-i18n="hint12Title">Hint #12</span>
+            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p id="hint-12" data-i18n="hint12Text">"Are you ready to read between the lines?"</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Share Actions -->
+      <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-top: 2rem;">
+        <a href="https://x.com/intent/tweet?text=Try%20to%20solve%20Puzzle%20%234%20of%20Solana%20Puzzles!%20Decode%20the%20seed%20phrase%20and%20win%20SOL!%20https://solanapuzzles.com" target="_blank" class="cyber-btn cyber-btn-outline">
+          <i class="fa-brands fa-x-twitter"></i> <span data-i18n="shareX">Share on X</span>
+        </a>
+        <a href="https://t.me/share/url?url=https://solanapuzzles.com&text=Try%20to%20solve%20Puzzle%20%234%20of%20Solana%20Puzzles!" target="_blank" class="cyber-btn cyber-btn-outline">
+          <i class="fa-brands fa-telegram"></i> <span data-i18n="shareTelegram">Share on Telegram</span>
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Anti Screenshot Warning Toast -->
+  <div id="screenshot-warning" class="toast-notice" style="background: var(--danger-red); color: #FFF;" data-i18n="screenshotWarning">
+    ⚠️ Screenshot attempts are disabled to protect the puzzle.
+  </div>
+
+  <!-- Cyber Footer -->
+  <footer class="cyber-footer">
+    <div class="footer-container">
+      <div style="color: var(--muted-text); font-size: 0.9rem;" data-i18n="footerRights">
+        © 2026 Solana Puzzles. All rights reserved.
+      </div>
+      <div class="footer-links">
+        <a href="https://x.com/solanapuzzles" target="_blank" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://t.me/+5GYvaO1qGT44Mjdh" target="_blank" class="social-link"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    const pImg = document.getElementById("puzzle-image");
+    if (pImg) {
+      pImg.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+        alert("Right-click is disabled to protect the puzzle image.");
+      });
+    }
+
+    const scWarn = document.getElementById("screenshot-warning");
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "PrintScreen" || (e.metaKey && e.key === "s") || (e.ctrlKey && e.key === "s")) {
+        if (scWarn) {
+          scWarn.classList.add("show");
+          setTimeout(() => scWarn.classList.remove("show"), 3000);
+        }
+      }
+    });
+  </script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a4c07946388f1e26',t:'MTc5MjI1MjM4MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"b63996e706034f23b1e53f75834c1fda","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

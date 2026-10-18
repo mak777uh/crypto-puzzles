@@ -1,0 +1,8 @@
+
+## 2026-10-17 20:03
+ocp_guntis_README.md | https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/1-big-prizes/guntis-vitolins-metamask-8-6eth/README.md | 200 | 16845 | OK
+ocp_guntis_leads.md | https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/1-big-prizes/guntis-vitolins-metamask-8-6eth/analysis/leads.md | 200 | 11360 | OK
+ocp_guntis_tested.md | https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/1-big-prizes/guntis-vitolins-metamask-8-6eth/analysis/tested.md | 200 | 18727 | OK
+ocp_reading_order_pool.json | https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/1-big-prizes/guntis-vitolins-metamask-8-6eth/data/reading-order-pool.json | 200 | 1728 | OK
+ocp_video_onscreen_words.json | https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/1-big-prizes/guntis-vitolins-metamask-8-6eth/data/video-onscreen-words.json | 200 | 3523 | OK
+yt_videos_2026-10-17.html | https://www.youtube.com/@GuntisVitolins/videos | ERR | 0 | ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'www.youtube.com\', port=443): Max retries exceeded with url: /@GuntisVitolins/videos (Caused by NameRe

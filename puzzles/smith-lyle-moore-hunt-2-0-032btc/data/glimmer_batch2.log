@@ -1,0 +1,6 @@
+batch2 start 00:17:14 | 110 candidates x 2 locks
+=== zhgsm (raft-escape / RaftBuilt) ===
+--- no hit on zhgsm
+=== jcl9c (smoke-signals / lightafire) ===
+--- no hit on jcl9c
+batch2 done 00:24:10: 220 requests, hits=0

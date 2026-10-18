@@ -1,0 +1,102 @@
+
+
+########## ISSUE #32 (2026-09-14T21:57:46Z, deviceio121) ##########
+GemfinderOfX puzzle
+@GemfinderOfX twitter post.
+https://x.com/GemfinderOfX/status/1870319691295764655?s=20
+
+anybody tried to solve this?
+
+
+########## ISSUE #29 (2026-09-12T10:01:44Z, floflo777) ##########
+New puzzle: Path to Greatness, 3.03 LTC uploaded
+A new open puzzle joins the mid tier: **Path to Greatness: Treasure Hunt**, 3.02608794 LTC (about $164) at `LUtL7qnm3gzxKjHcfVLSjydqhhinTVmTmS`, funded since 2021 and never spent (8 incoming transactions, 0 outgoing, checked 2026-09-12 on litecoinspace.org).
+
+Why this one is worth an afternoon:
+
+- **The author published his own architecture.** A fake desktop screenshot in the game shows the encrypted WIF, four AES-256-CBC segments, their four IVs (album track titles), which clue pairs with which, and the exact length of each of the eight answers. Nothing about the mechanism is left to guess.
+- **Four independent locks instead of one.** The 32-byte key is cut into 4 segments of 8 bytes, each encrypted separately. Any guess on one pair of clues is refuted alone, in microseconds, with a false positive rate of 2^-64. You do not need the other six answers to make progress.
+- **Certified oracle included.** `tools/oracle.py --selftest` reproduces the author's schema and the witness protocol; `--segment N a b` checks one pair; the full mode turns 8 answers into the WIF and the address.
+- **Real findings to build on.** The hidden image in Ship.png is a frame from Titanic (1997), the "will founder" scene (TinEye + FaceNet). The clue 6 melody is the opening of the author's own YouTube track, 15 notes measured to the cent. The chess position, the wasd pointer graph and the km/mi torches are mapped.
+- **What I could not do:** about 1.5e13 witnessed pairs across the four segments, 0 match. The ledger says exactly which readings are dead, so you start where I stopped. Segment 1 (the melody plus the "Imagine" date) is the closest.
+
+Also in this PR: Litecoin support in the tooling (schema, validator, escrow checker via litecoinspace.org, index totals).
+
+Author: Justin Patterson, r/ARG, 2021-07-26. Rules: solve, then move the coins to a wallet only you own.
+
+
+
+########## ISSUE #22 (2026-09-05T14:12:24Z, devamara41-dev) ##########
+C1 public key
+I have the public key to C1, but I don't know how to use it
+
+
+########## ISSUE #13 (2026-08-24T07:20:15Z, salikkhann) ##########
+Two witnessed negatives: Guntis connecting-words sweep (18.66B) and RushWallet #30 quotes corpus (round 4)
+Two ruled-out contributions, per CONTRIBUTING's "ruled something out" path. Both folders pass `tools/validate.py` with 0 warnings; manifests unchanged, so `puzzles.json` is untouched.
+
+## guntis-vitolins-metamask-8-6eth: executes and closes open lead 1
+
+Full detail as new section C1 in `analysis/tested.md`; README summary table and cumulative count updated; lead 1 marked killed in "Open leads".
+
+- Set: anchors `dutch`/1, `fog`/5 (`cloud` dropped per issue #10), `parrot`/12; `fiber`+`fork` required post-side members; 6/6 video/post partition; free pools extended with the short connecting words from the planted sentences and metadata ("there", "will", "also", "only", "because", "like", ...).
+- Space: 822,640 set-pairs x 9! = 298,519,603,200 lists enumerated; 18,657,475,200 passing the checksum. Reconstructed overlap with the prior metadata-era sweeps is 571.5M derivations (3.06%), so about 96.9 percent of this space had never been tested.
+- Method: the repo's own `engines/bip39_passphrase_engine.cu` on a rented L40S; 986,965 derivations/second sustained, measured row-fed through the full path before the run.
+- Witness: every 2,000-set-pair chunk carried the escrow plus 2 planted candidates (first valid rows of set-pairs 0 and 822,639) as simultaneous targets; a chunk that did not recover its witnesses aborts the run rather than reporting a negative. The validation protocol caught and fixed one real generator bug (wrong 128-of-132-bit checksum slice) before any measurement.
+- Result: 0 match across all chunks. Cost: about $11 across three resumable segments.
+
+## rushwallet-contest-30-1msats: round 4, the quotes corpus
+
+New row + witness note in `analysis/tested.md`.
+
+- Corpus: huggingface `jstet/quotes-500k` (499,709 quotes), the corpus linked from the contest's own source list.
+- Candidates: 5 case variants plus surface normalizations (strip, unquote, trailing punctuation, attribution dash) = 3,376,547.
+- Witness: first round in this ledger run with planted witnesses: the fast checker was validated against all 3 certification vectors plus a negative control, then the 3 public sibling passphrases were planted at head/middle/tail of the actual stream and all 3 were recovered through the same code path.
+- Result: 0 match.
+
+
+########## ISSUE #10 (2026-08-20T17:09:40Z, HPreziosa) ##########
+guntis-vitolins-metamask-8-6eth — errors in prior write-up + new source material
+## `guntis-vitolins-metamask-8-6eth` — findings + errors that stayed inherited
+
+Working through this puzzle intensively this session. Sharing what turned up so future solvers don't inherit the same errors we did. Full notes in a longer local doc; this issue is the summary.
+
+### Errors in the current write-up (`analysis/tested.md` + `README.md`)
+
+1. **`top`** — cited to *"video title and hook line"*. Case-insensitive grep of the 2020-06-13 Wayback capture of `youtube.com/watch?v=w4mpiuBP_aY` returned zero hits in title or `og:description`. `top` does appear in the wider blog body prose (*"top ten altcoins"*) and in the video description trailer (*"top mining equipment"*), so the word might still be a candidate — but the sourcing statement is wrong. This propagated into `R1` and every downstream sweep.
+2. **`finish`** — placed in the R1 pool as a title/hook-line word. `finish` (bare stem) does not appear literally in any authored surface. `finished` (past participle) is in the og:description tagline *"Crypto Winter finished?"*. So `finish` is a morphological derivative (same class as the F6 inflection sweep), not a literal.
+3. **`cloud`** — the README explicitly says *"only `fog` and `lake` appear in the source texts"*, then still carries `cloud` as a pos-5 branch on semantic-fit grounds. Direct grep of every 2020 authored surface (blog HTML, main video HTML, main video description) confirms zero authored `cloud` occurrences — the only hits anywhere are modern (post-2023) CDN URLs and YouTube player JS variables. Every sweep with a `cloud` branch doubled compute on a candidate that fails the "correct word in text at challenge" rule Guntis stated in the Hint-5 video comments.
+4. **`fork`-absence-treated-as-elimination** — earlier phases OCR'd 216 images to search for `fork`; found none; the null was interpreted as ruling `fork` out. The tag list in blog HTML metadata had it all along (`ethereum fork` tag, unique-to-this-post). Discovered 2026-08-15 per the repo's own timeline.
+
+### Unresolved contradiction not to close
+
+`analysis/leads.md` cites Guntis's own *"'possible' inside 'impossible' via 'im-' prefix"* example as evidence for a substring mechanism. That contradicts the literal-word rule the same source uses elsewhere. Substring families in the repo's own leads (Tier B, Tier C-length candidates) were never swept exhaustively; this session ran substring Tier A (6 candidates including `possible`) and then deprioritized on a judgment call in favor of the literal rule. If the substring mechanism is real, every literal-rule sweep is over-constrained.
+
+### New author quote worth writing down
+
+From `-MeIaPdVJjA` (comment id `Ugz8NxQbpGiZVY4aMlB4AaABAg.96ssUYBoRva96tAygBNjKq`, 2020-08), replying to a question about pool size:
+
+> *"if will have to many words, people can make bot and have easy guess."*
+
+Design constraint stated directly by Guntis: the plant pool is deliberately small. That validates the *"couple added on top"* reading numerically (~14 planted words = 12 seed + 2 decoys) and argues against very-wide pool sweeps.
+
+### New source material recovered this session
+
+- Full YouTube captions for `w4mpiuBP_aY`, `03wXiMczCXk`, `ZjBJKooVmuE` (via yt-dlp with `--write-auto-subs --sub-langs en`). Hint 4 spoken content transcribed verbatim.
+- Full YouTube video description of `w4mpiuBP_aY` (the trailer text past the 3 planted sentences — reveals Guntis's *"6 are hidden in this video (description, tags, title, video basically could be anywhere in this video)"* verbatim).
+- A **third planted sentence** in the video description, missing from the current repo's clue list: **"Also It is not impossible."** Sits between V1 and V2 in the description. Byte-verified in every Wayback capture 2020-06-13 through 2024-11.
+- Hint source-videos mapped: Hint 1 first appears `3DUufb9wBHA` (2020-02-25), Hint 2 in `-MeIaPdVJjA` (2020-03-31), Hint 3 in `635pXfzlzqA` (2020-05-14). Hint 2 spelling evolved `Netherland` → `Netherlands` mid-2020.
+- The `..X..` marker in Hint 3 (*"seed word 5 ..X..  is made of..."*) is byte-identical across all 27 instances (exact bytes: `20 2e 2e 58 2e 2e 20 20`, with an intentional double-space after) and unique to that hint. Meaning still unexplained.
+
+### Bottom-line status
+
+- The only word Guntis has ever stated outright as a seed word is `fork`, spelled letter-by-letter at 17:28 in `ZjBJKooVmuE`.
+- Three positions are STATED (via hints 1/2/3): pos 12, pos 1, pos 5. The words filling them are INFERRED, not stated.
+- No STATED source-text ever contained a definitive decoy count. *"Couple added on top"* is the tightest constraint.
+- Comment fetches across 58 videos returned nothing about "solved", "winner", "abandoned"; blog and Twitter show zero challenge references post-2020; Hint 5 was silently dropped from Guntis's resumed template (2023-11 onward, hints 1-4 only re-added). Unresolved signal — could be template inertia, could be more.
+
+### For anyone continuing
+
+I have a longer local file (`kit/FINDINGS.md`) that labels every line STATED / INFERRED / OBSERVED / TRANSLATED, scopes every session sweep to exactly what it tested, and lists the specific frames that were **killed vs abandoned vs never touched**. Happy to share on request. The one-line rule I'd suggest for any successor: **separate what Guntis said from what someone read into it.**
+
+Not a solver claim — just a records-cleanup so the next person doesn't re-inherit the errors.

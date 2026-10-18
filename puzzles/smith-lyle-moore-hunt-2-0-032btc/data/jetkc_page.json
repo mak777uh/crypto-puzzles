@@ -1,0 +1,679 @@
+{
+ "structure": {
+  "type": "Page",
+  "styleId": "style-l62s2jy3",
+  "metaData": {
+   "sig": "pkd-217"
+  },
+  "id": "jetkc",
+  "components": [
+   {
+    "type": "Component",
+    "styleId": "txtTheme",
+    "metaData": {
+     "sig": "ju0-777"
+    },
+    "id": "comp-l62s2jy6",
+    "dataQuery": "#dataItem-l62s2jy7",
+    "skin": "wysiwyg.viewer.skins.WRichTextThemeSkin",
+    "layout": {
+     "width": 686,
+     "height": 198,
+     "x": 138,
+     "y": 41,
+     "scale": 1.0,
+     "rotationInDegrees": 0.0,
+     "fixedPosition": false
+    },
+    "propertyQuery": "propItem-l62s2jy9",
+    "connectionQuery": "connection-l62s2jyb",
+    "componentType": "wysiwyg.viewer.components.WRichText"
+   },
+   {
+    "type": "Component",
+    "styleId": "style-l62sd8nd",
+    "metaData": {
+     "sig": "ju0-529"
+    },
+    "id": "comp-l62s2jyc",
+    "dataQuery": "#dataItem-l62s2jyc1",
+    "skin": "wixui.skins.Skinless",
+    "layout": {
+     "width": 377,
+     "height": 40,
+     "x": 301,
+     "y": 565,
+     "scale": 1.0,
+     "rotationInDegrees": 0.0,
+     "fixedPosition": false
+    },
+    "propertyQuery": "propItem-l62s2jyc3",
+    "connectionQuery": "connection-l62s2jye",
+    "componentType": "wixui.StylableButton"
+   },
+   {
+    "type": "Component",
+    "styleId": "style-l62serbn",
+    "metaData": {
+     "sig": "ju0-530"
+    },
+    "id": "comp-l62sdj6a",
+    "dataQuery": "#dataItem-l62sdj7a",
+    "skin": "wixui.skins.Skinless",
+    "layout": {
+     "width": 377,
+     "height": 40,
+     "x": 301,
+     "y": 635,
+     "scale": 1.0,
+     "rotationInDegrees": 0.0,
+     "fixedPosition": false
+    },
+    "propertyQuery": "propItem-l62sdj7c",
+    "connectionQuery": "connection-l62sdj7f",
+    "componentType": "wixui.StylableButton"
+   },
+   {
+    "type": "Component",
+    "styleId": "style-l62sgexq",
+    "metaData": {
+     "sig": "qov-569"
+    },
+    "id": "comp-l62sgafe",
+    "dataQuery": "#dataItem-l62sgagg",
+    "skin": "wixui.skins.Skinless",
+    "layout": {
+     "width": 377,
+     "height": 40,
+     "x": 301,
+     "y": 714,
+     "scale": 1.0,
+     "rotationInDegrees": 0.0,
+     "fixedPosition": false
+    },
+    "propertyQuery": "propItem-l62sgagi",
+    "connectionQuery": "connection-l62sgagm",
+    "componentType": "wixui.StylableButton"
+   }
+  ],
+  "mobileComponents": [
+   {
+    "type": "Component",
+    "styleId": "style-l62sd8nd",
+    "metaData": {
+     "sig": "57o-2517"
+    },
+    "id": "comp-l62s2jyc",
+    "dataQuery": "#dataItem-l62s2jyc1",
+    "skin": "wixui.skins.Skinless",
+    "layout": {
+     "width": 286,
+     "height": 42,
+     "x": 17,
+     "y": 463,
+     "scale": 0.9333333333333333,
+     "rotationInDegrees": 0.0,
+     "fixedPosition": false
+    },
+    "propertyQuery": "propItem-l62s2jyc3",
+    "connectionQuery": "connection-l62s2jye",
+    "componentType": "wixui.StylableButton"
+   },
+   {
+    "type": "Component",
+    "styleId": "txtTheme",
+    "metaData": {
+     "sig": "57o-2351"
+    },
+    "id": "comp-l62s2jy6",
+    "dataQuery": "#dataItem-l62s2jy7",
+    "skin": "wysiwyg.viewer.skins.WRichTextThemeSkin",
+    "layout": {
+     "width": 280,
+     "height": 275,
+     "x": 20,
+     "y": 10,
+     "scale": 0.7666666666666667,
+     "rotationInDegrees": 0.0,
+     "fixedPosition": false
+    },
+    "propertyQuery": "mobile_propItem-l62s2jy9",
+    "connectionQuery": "connection-l62s2jyb",
+    "componentType": "wysiwyg.viewer.components.WRichText"
+   },
+   {
+    "type": "Component",
+    "styleId": "style-l62serbn",
+    "metaData": {
+     "sig": "57o-2516"
+    },
+    "id": "comp-l62sdj6a",
+    "dataQuery": "#dataItem-l62sdj7a",
+    "skin": "wixui.skins.Skinless",
+    "layout": {
+     "width": 280,
+     "height": 42,
+     "x": 20,
+     "y": 515,
+     "scale": 0.9333333333333333,
+     "rotationInDegrees": 0.0,
+     "fixedPosition": false
+    },
+    "propertyQuery": "propItem-l62sdj7c",
+    "connectionQuery": "connection-l62sdj7f",
+    "componentType": "wixui.StylableButton"
+   },
+   {
+    "type": "Component",
+    "styleId": "style-l62sgexq",
+    "metaData": {
+     "sig": "57o-2515"
+    },
+    "id": "comp-l62sgafe",
+    "dataQuery": "#dataItem-l62sgagg",
+    "skin": "wixui.skins.Skinless",
+    "layout": {
+     "width": 280,
+     "height": 42,
+     "x": 20,
+     "y": 567,
+     "scale": 0.9333333333333333,
+     "rotationInDegrees": 0.0,
+     "fixedPosition": false
+    },
+    "propertyQuery": "propItem-l62sgagi",
+    "connectionQuery": "connection-l62sgagm",
+    "componentType": "wixui.StylableButton"
+   }
+  ],
+  "mobileMetaData": {
+   "sig": "qov-575"
+  },
+  "dataQuery": "#jetkc",
+  "skin": "wysiwyg.viewer.skins.page.TransparentPageSkin",
+  "layout": {
+   "width": 1410,
+   "height": 754,
+   "x": 0,
+   "y": 0,
+   "scale": 1.0,
+   "rotationInDegrees": 0.0,
+   "fixedPosition": false
+  },
+  "mobileHintsQuery": "jetkc",
+  "connectionQuery": "jetkc",
+  "componentType": "mobile.core.components.Page",
+  "fixerVersionsQuery": "jetkc"
+ },
+ "data": {
+  "document_data": {
+   "dataItem-l62s2jy7": {
+    "type": "StyledText",
+    "id": "dataItem-l62s2jy7",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "ju0-798"
+    },
+    "text": "<h1 class=\"font_0\" style=\"font-size:24px; text-align:center\"><span style=\"font-size:24px\"><span style=\"color:#20CE88\"><span style=\"background-color:#4682B4\">Your ship washes onto a sandy beach. The group explores the island, and it quickly becomes clear that it&#39;s not very big... and it&#39;s uninhabited. Thankfully, you find what you need to survive. Namely: coconuts for sustenance, and palm huts for shelter. It&#39;s beautiful here, but man... after a few months, coconuts get really old... After a few years, they make you crazy.</span></span></span></h1>",
+    "stylesMapId": "CK_EDITOR_PARAGRAPH_STYLES",
+    "linkList": []
+   },
+   "dataItem-l62s2jyc1": {
+    "type": "StylableButton",
+    "id": "dataItem-l62s2jyc1",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "qov-585"
+    },
+    "label": "Escape via raft, made from palm tree wood",
+    "svgId": "b861b040274141de9c08999ec3b76edf.svg",
+    "link": "#dataItem-l62slhgg"
+   },
+   "dataItem-l62sdj7a": {
+    "type": "StylableButton",
+    "id": "dataItem-l62sdj7a",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "gw2-151"
+    },
+    "label": "Light a Fire to Alert a Passing Ship",
+    "svgId": "b861b040274141de9c08999ec3b76edf.svg",
+    "link": "#dataItem-l64ld2rk"
+   },
+   "dataItem-l62sgagg": {
+    "type": "StylableButton",
+    "id": "dataItem-l62sgagg",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "6i1-3156"
+    },
+    "label": "I think I'll just make a life for myself here",
+    "svgId": "b861b040274141de9c08999ec3b76edf.svg",
+    "link": "#dataItem-l62shit4"
+   },
+   "dataItem-l62shit4": {
+    "type": "PageLink",
+    "id": "dataItem-l62shit4",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "6i1-3157"
+    },
+    "pageId": "#udr8x",
+    "target": "_self",
+    "rel": []
+   },
+   "dataItem-l62slhgg": {
+    "type": "PageLink",
+    "id": "dataItem-l62slhgg",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "6i1-3298"
+    },
+    "pageId": "#zhgsm",
+    "target": "_self",
+    "rel": []
+   },
+   "dataItem-l64ld2rk": {
+    "type": "PageLink",
+    "id": "dataItem-l64ld2rk",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "gw2-152"
+    },
+    "pageId": "#jcl9c",
+    "target": "_self",
+    "rel": []
+   },
+   "jetkc": {
+    "type": "Page",
+    "id": "jetkc",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "2.0",
+     "isHidden": false,
+     "sig": "81f-317"
+    },
+    "title": "Tropical Island",
+    "hideTitle": true,
+    "icon": "",
+    "descriptionSEO": "",
+    "metaKeywordsSEO": "",
+    "pageTitleSEO": "",
+    "pageUriSEO": "hereonnnnngiligansissssssland",
+    "hidePage": true,
+    "isMobileLandingPage": false,
+    "underConstruction": false,
+    "tpaApplicationId": 0,
+    "pageSecurity": {
+     "requireLogin": false,
+     "dialogLanguage": "en"
+    },
+    "isPopup": false,
+    "indexable": true,
+    "isLandingPage": false,
+    "pageBackgrounds": {
+     "desktop": {
+      "custom": true,
+      "ref": "#jetkc_desktop_bg",
+      "isPreset": true,
+      "mediaSizing": "viewport"
+     },
+     "mobile": {
+      "custom": true,
+      "ref": "#jetkc_mobile_bg",
+      "isPreset": false,
+      "mediaSizing": "viewport"
+     }
+    },
+    "translationData": {
+     "uriSEOTranslated": false
+    }
+   },
+   "jetkc_desktop_bg": {
+    "type": "BackgroundMedia",
+    "id": "jetkc_desktop_bg",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "x0h-155"
+    },
+    "mediaRef": "#jetkc_desktop_mediaRef",
+    "color": "{color_11}",
+    "alignType": "center",
+    "fittingType": "fill",
+    "scrollType": "fixed",
+    "colorOverlay": "",
+    "colorOverlayOpacity": 0.0
+   },
+   "jetkc_desktop_mediaRef": {
+    "type": "Image",
+    "id": "jetkc_desktop_mediaRef",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "2.0",
+     "isHidden": false,
+     "sig": "x0h-158"
+    },
+    "title": "desertedisland.gif",
+    "uri": "144728_82cfb8b67a4a428994704ffc7fca494f~mv2.gif",
+    "description": "private",
+    "width": 480,
+    "height": 354,
+    "alt": "",
+    "artist": {
+     "id": "",
+     "name": ""
+    }
+   },
+   "jetkc_mobile_bg": {
+    "type": "BackgroundMedia",
+    "id": "jetkc_mobile_bg",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "9br-194"
+    },
+    "mediaRef": "#jetkc_mobile_mediaRef",
+    "color": "{color_11}",
+    "alignType": "center",
+    "fittingType": "legacy_tile",
+    "scrollType": "fixed",
+    "colorOverlay": "",
+    "colorOverlayOpacity": 0.0
+   },
+   "jetkc_mobile_mediaRef": {
+    "type": "Image",
+    "id": "jetkc_mobile_mediaRef",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "2.0",
+     "isHidden": false,
+     "sig": "9br-195"
+    },
+    "title": "desertedisland.gif",
+    "uri": "144728_82cfb8b67a4a428994704ffc7fca494f~mv2.gif",
+    "description": "private",
+    "width": 480,
+    "height": 354,
+    "alt": "",
+    "artist": {
+     "id": "",
+     "name": ""
+    }
+   }
+  },
+  "design_data": {},
+  "behaviors_data": {},
+  "connections_data": {
+   "connection-l62s2jyb": {
+    "type": "ConnectionList",
+    "id": "connection-l62s2jyb",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "6i1-2789"
+    },
+    "items": [
+     {
+      "type": "WixCodeConnectionItem",
+      "role": "text21"
+     }
+    ]
+   },
+   "connection-l62s2jye": {
+    "type": "ConnectionList",
+    "id": "connection-l62s2jye",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "6i1-2796"
+    },
+    "items": [
+     {
+      "type": "WixCodeConnectionItem",
+      "role": "button8"
+     }
+    ]
+   },
+   "connection-l62sdj7f": {
+    "type": "ConnectionList",
+    "id": "connection-l62sdj7f",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "6i1-3031"
+    },
+    "items": [
+     {
+      "type": "WixCodeConnectionItem",
+      "role": "button9"
+     }
+    ]
+   },
+   "connection-l62sgagm": {
+    "type": "ConnectionList",
+    "id": "connection-l62sgagm",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "6i1-3105"
+    },
+    "items": [
+     {
+      "type": "WixCodeConnectionItem",
+      "role": "button10"
+     }
+    ]
+   },
+   "jetkc": {
+    "type": "ConnectionList",
+    "id": "jetkc",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "6i1-2784"
+    },
+    "items": [
+     {
+      "type": "WixCodeConnectionItem",
+      "role": "page1"
+     }
+    ]
+   }
+  },
+  "theme_data": {
+   "style-l62s2jy3": {
+    "type": "ComponentStyle",
+    "id": "style-l62s2jy3",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "6i1-2783"
+    },
+    "style": {
+     "properties": {},
+     "propertiesSource": {},
+     "groups": {}
+    },
+    "componentClassName": "mobile.core.components.Page",
+    "pageId": "",
+    "compId": "",
+    "styleType": "custom",
+    "skin": "wysiwyg.viewer.skins.page.TransparentPageSkin"
+   },
+   "style-l62sd8nd": {
+    "type": "ComponentStyle",
+    "id": "style-l62sd8nd",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "6i1-3020"
+    },
+    "style": {
+     "properties": {
+      "$st-css": ":import{\n    -st-from: 'wix-ui-santa/index.st.css';\n    -st-named: StylableButton\n}\n.root{\n    -st-extends: StylableButton;\n    transition: all 0.2s ease, visibility 0s;\n    background: #20CE88\n}\n.root:hover {\n    background: value(site_4_2);\n}\n.root:disabled{\n    background: #E2E2E2\n}\n.root:disabled::label{\n    color: #8F8F8F\n}\n.root:disabled::icon{\n    fill: #8F8F8F\n}\n.root::container{\n    transition: inherit\n}\n.root::label{\n    transition: inherit;\n    margin: 0px 4px 0px 0px;\n    letter-spacing: 0.1em;\n    font-size: 13px;\n    font-weight: normal;\n    font-style: normal;\n    font-family: montserrat,sans-serif;\n    color: value(site_1_5)\n}\n.root::icon{\n    transition: inherit;\n    width: 10px;\n    height: 10px;\n    margin: 0px 0px 0px 4px;\n    fill: value(site_1_1);\n    display: none\n}"
+     },
+     "propertiesSource": {
+      "$st-css": "value"
+     },
+     "groups": {}
+    },
+    "componentClassName": "wixui.StylableButton",
+    "pageId": "",
+    "compId": "",
+    "styleType": "custom",
+    "skin": "wixui.skins.Skinless"
+   },
+   "style-l62serbn": {
+    "type": "ComponentStyle",
+    "id": "style-l62serbn",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "6i1-3093"
+    },
+    "style": {
+     "properties": {
+      "$st-css": ":import{\n    -st-from: 'wix-ui-santa/index.st.css';\n    -st-named: StylableButton\n}\n.root{\n    -st-extends: StylableButton;\n    transition: all 0.2s ease, visibility 0s;\n    background: #FF4040\n}\n.root:hover {\n    background: value(site_4_2);\n}\n.root:disabled{\n    background: #E2E2E2\n}\n.root:disabled::label{\n    color: #8F8F8F\n}\n.root:disabled::icon{\n    fill: #8F8F8F\n}\n.root::container{\n    transition: inherit\n}\n.root::label{\n    transition: inherit;\n    margin: 0px 4px 0px 0px;\n    letter-spacing: 0.1em;\n    font-size: 13px;\n    font-weight: normal;\n    font-style: normal;\n    font-family: montserrat,sans-serif;\n    color: value(site_1_5)\n}\n.root::icon{\n    transition: inherit;\n    width: 10px;\n    height: 10px;\n    margin: 0px 0px 0px 4px;\n    fill: value(site_1_1);\n    display: none\n}"
+     },
+     "propertiesSource": {
+      "$st-css": "value"
+     },
+     "groups": {}
+    },
+    "componentClassName": "wixui.StylableButton",
+    "pageId": "",
+    "compId": "",
+    "styleType": "custom",
+    "skin": "wixui.skins.Skinless"
+   },
+   "style-l62sgexq": {
+    "type": "ComponentStyle",
+    "id": "style-l62sgexq",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "6i1-3110"
+    },
+    "style": {
+     "properties": {
+      "$st-css": ":import{\n    -st-from: 'wix-ui-santa/index.st.css';\n    -st-named: StylableButton\n}\n.root{\n    -st-extends: StylableButton;\n    transition: all 0.2s ease, visibility 0s;\n    background: #4682B4\n}\n.root:hover {\n    background: value(site_4_2);\n}\n.root:disabled{\n    background: #E2E2E2\n}\n.root:disabled::label{\n    color: #8F8F8F\n}\n.root:disabled::icon{\n    fill: #8F8F8F\n}\n.root::container{\n    transition: inherit\n}\n.root::label{\n    transition: inherit;\n    margin: 0px 4px 0px 0px;\n    letter-spacing: 0.1em;\n    font-size: 13px;\n    font-weight: normal;\n    font-style: normal;\n    font-family: montserrat,sans-serif;\n    color: value(site_1_5)\n}\n.root::icon{\n    transition: inherit;\n    width: 10px;\n    height: 10px;\n    margin: 0px 0px 0px 4px;\n    fill: value(site_1_1);\n    display: none\n}"
+     },
+     "propertiesSource": {
+      "$st-css": "value"
+     },
+     "groups": {}
+    },
+    "componentClassName": "wixui.StylableButton",
+    "pageId": "",
+    "compId": "",
+    "styleType": "custom",
+    "skin": "wixui.skins.Skinless"
+   }
+  },
+  "component_properties": {
+   "mobile_propItem-l62s2jy9": {
+    "type": "WRichTextProperties",
+    "metaData": {
+     "schemaVersion": "1.0",
+     "sig": "57o-2361",
+     "autoGenerated": false
+    },
+    "id": "mobile_propItem-l62s2jy9",
+    "brightness": 1.0,
+    "packed": true,
+    "verticalText": false
+   },
+   "propItem-l62s2jy9": {
+    "type": "WRichTextProperties",
+    "metaData": {
+     "schemaVersion": "1.0",
+     "sig": "6i1-2788",
+     "autoGenerated": false
+    },
+    "id": "propItem-l62s2jy9",
+    "brightness": 1.0,
+    "packed": true,
+    "verticalText": false
+   },
+   "propItem-l62s2jyc3": {
+    "type": "StylableButtonProperties",
+    "metaData": {
+     "schemaVersion": "1.0",
+     "sig": "6i1-2794"
+    },
+    "id": "propItem-l62s2jyc3"
+   },
+   "propItem-l62sdj7c": {
+    "type": "StylableButtonProperties",
+    "metaData": {
+     "schemaVersion": "1.0",
+     "sig": "6i1-3025"
+    },
+    "id": "propItem-l62sdj7c"
+   },
+   "propItem-l62sgagi": {
+    "type": "StylableButtonProperties",
+    "metaData": {
+     "schemaVersion": "1.0",
+     "sig": "6i1-3099"
+    },
+    "id": "propItem-l62sgagi"
+   }
+  },
+  "mobile_hints": {
+   "jetkc": {
+    "type": "MobileHints",
+    "id": "jetkc",
+    "metaData": {
+     "isPreset": false,
+     "schemaVersion": "1.0",
+     "isHidden": false,
+     "sig": "6i1-2782"
+    },
+    "hidden": false
+   }
+  },
+  "fixerVersions": {
+   "jetkc": {
+    "metaData": {
+     "schemaVersion": "1.0",
+     "isPreset": false,
+     "isHidden": false,
+     "sig": "e5y-15"
+    },
+    "type": "FixerVersions",
+    "viewer_fixer": "AQEBAQEBAgEBAQACAgEBAQEBAQIBAQEBAQECAQEBAQEBAQMBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQECAQEBAQEBAQEBAQEBAQEBAQECAQEBAQEDAQEBAQEBAQEBAQEBAQEBAQEBAgEBAQAAAAABAQEAAAA=",
+    "id": "jetkc",
+    "migration_fixer": "AAMBAQEBAQEBAQEBAQICAgECAgEIAQECAQEBAAIBAAEAAQEBAQEEAQAFAQAAAQABAQEBAQIAAAE="
+   }
+  }
+ },
+ "title": "Tropical Island",
+ "pageUriSEO": "hereonnnnngiligansissssssland"
+}

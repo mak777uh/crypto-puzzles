@@ -1,0 +1,18 @@
+dns:104.21.38.236   https://pipedapi.kavin.rocks | HTTP 403 len 4548
+dns:176.9.8.206     https://pipedapi.adminforge.de | ERR ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='pipedapi.adminforge.de', port=443)
+dns:152.53.15.22    https://pipedapi.reallyaweso.me | ERR JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+dns:86.106.182.35   https://api.piped.private.coffee | ERR SSLError(MaxRetryError("HTTPSConnectionPool(host='api.piped.private.coffee', port=443): Ma
+dns:172.67.166.196  https://pipedapi.leptons.xyz | HTTP 502 len 6435
+dns:FAIL            https://pipedapi.darkness.services | SKIP(dns)
+dns:FAIL            https://pipedapi.drgns.space | SKIP(dns)
+dns:141.95.32.57    https://pipedapi.ducks.party | HTTP 500 len 1357
+dns:198.98.60.34    https://yewtu.be | ERR SSLError(MaxRetryError("HTTPSConnectionPool(host='yewtu.be', port=443): Max retries exceed
+dns:FAIL            https://inv.nadeko.net | SKIP(dns)
+dns:176.97.120.57   https://invidious.nerdvpn.de | HTTP 401 len 574
+dns:74.48.191.220   https://inv.us.projectsegfau.lt | ERR ConnectTimeout(MaxRetryError("HTTPSConnectionPool(host='inv.us.projectsegfau.lt', port=443
+dns:179.43.176.2    https://invidious.privacyredirect.com | ERR SSLError(MaxRetryError("HTTPSConnectionPool(host='invidious.privacyredirect.com', port=443
+dns:FAIL            https://iv.melmac.space | SKIP(dns)
+dns:FAIL            https://invidious.fdn.fr | SKIP(dns)
+dns:FAIL            https://vid.puffyan.us | SKIP(dns)
+dns:193.142.41.149  https://invidious.lunar.icu | ERR SSLError(MaxRetryError("HTTPSConnectionPool(host='invidious.lunar.icu', port=443): Max ret
+dns:FAIL            https://invidious.jing.rocks | SKIP(dns)

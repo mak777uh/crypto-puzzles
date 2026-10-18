@@ -1,0 +1,72 @@
+[
+  {
+    "issue": 18,
+    "url": "https://github.com/floflo777/open-crypto-puzzles/issues/18#issuecomment-5575019358",
+    "by": "floflo777",
+    "at": "2026-09-07T19:44:30Z",
+    "body": "Recorded as lead 1 executed, credited, both lists in data/video-onscreen-words.json. All 219 words checked against the BIP39 list here; link, token, atom and reveal spot-checked on my own frames at 100 s, 150 s and 375 s. Post the RO1 extension as a tested.md PR with the count and the witness when it finishes; the per-word frame index can go under data/ as JSON if you want to attach it.\n"
+  },
+  {
+    "issue": 18,
+    "url": "https://github.com/floflo777/open-crypto-puzzles/issues/18#issuecomment-5844077540",
+    "by": "Bayols",
+    "at": "2026-09-26T06:56:35Z",
+    "body": "<html>\n<body>\n<!--StartFragment--><p dir=\"ltr\"><strong>Negative results: six sweeps on the RO1 model, all no match</strong></p>\n<p dir=\"ltr\">Same anchors and pools as <code dir=\"ltr\">reading-order-pool.json</code> (dutch at 1, fog at 5, parrot at 12). Every run passed a selftest first: the canonical <code dir=\"ltr\">abandon…about</code> vector, agreement with bip_utils, and a planted witness recovered through the real enumeration.</p>\n<div dir=\"ltr\">\nRO1 on 7 paths (/0/0–/0/4, 1'/0/0, 2'/0/0): 167,688,000 arrangements, 10,484,919 checksum-valid, all 7 paths\nRO1 + free video slot from atom, link, basic, token, dash: 1,741,140,000 arrangements, 108,817,960 valid, default path\nRO1 + free video slot from build, ready: 696,456,000 arrangements, 43,524,282 valid, default path\nRO1 + free video slot from donor, stay, until, win: 1,392,912,000 arrangements, 87,064,878 valid, default path\nRO1 + free post-side floater \"hard\": 125,766,000 arrangements, 7,863,418 valid, default path\nRO1 + free post-side floater \"minimum\": 348,228,000 arrangements, 21,763,738 valid, default path\n\n</div>\n<p dir=\"ltr\"><strong>What this rules out:</strong> the RO1 space on the alternative derivation paths (lead 3), plus the extra-word variants above at <code dir=\"ltr\">m/44'/60'/0'/0/0</code>.</p>\n<p dir=\"ltr\"><strong>What it does not rule out:</strong> anything outside RO1's reading-order model, checksum-invalid phrases (only valid candidates were derived), and the other paths for the extra-word sweeps.</p>\n<p dir=\"ltr\"><strong>Scripts:</strong> <code dir=\"ltr\">sweep_paths.py</code>, <code dir=\"ltr\">sweep_coins.py</code> and <code dir=\"ltr\">sweep_postword.py</code> import the enumeration from <code dir=\"ltr\">sweep_reading_order.py</code> unchanged. Each has <code dir=\"ltr\">--selftest</code> and <code dir=\"ltr\">--run --resume</code>. Speed is about 1,000 derivations/s per core, so the paths sweep took about 13 minutes on 22 workers.</p>\n<p dir=\"ltr\"><strong>Next:</strong> the connecting-words lead (about 1.36e10 derivations) needs a GPU PBKDF2 implementation. If anyone has one, I'd welcome it.</p><!--EndFragment-->\n</body>\n</html>\n\n[sweep_postword.py](https://github.com/user-attachments/files/32678410/sweep_postword.py)\n[sweep_coins.py](https://github.com/user-attachments/files/32678411/sweep_coins.py)\n[sweep_paths.py](https://github.com/user-attachments/files/32678409/sweep_paths.py)"
+  },
+  {
+    "issue": 18,
+    "url": "https://github.com/floflo777/open-crypto-puzzles/issues/18#issuecomment-5845231744",
+    "by": "floflo777",
+    "at": "2026-09-26T09:51:34Z",
+    "body": "Integrated as a new section in tested.md with credit, the three scripts kept under tools/ (self-tests re-run here, all OK), lead 3 marked tested, totals updated. On GPU PBKDF2: I have a CUDA BIP39 seed kernel that does about 780k seeds/s, Bitcoin outputs only; an Ethereum variant needs a keccak stage, doable if the connecting-words lead is worth it."
+  },
+  {
+    "issue": 14,
+    "url": "https://github.com/floflo777/open-crypto-puzzles/pull/14#issuecomment-5462325285",
+    "by": "floflo777",
+    "at": "2026-08-29T12:06:50Z",
+    "body": "Merged. One fix I added on top: the leads.md rewrite dropped the issue #10 section, the only credit to HPreziosa for re-sourcing top/finish and dropping cloud, so I restored it. I ran the script, --size reproduces the closed form and --selftest recovers a planted candidate, so I took RO1 as a certified negative. Your connecting-words lead 2 is now killed by PR #13's C1 sweep, which I merged on top."
+  },
+  {
+    "issue": 13,
+    "url": "https://github.com/floflo777/open-crypto-puzzles/pull/13#issuecomment-5462325348",
+    "by": "floflo777",
+    "at": "2026-08-29T12:06:51Z",
+    "body": "Merged both. RushWallet rounds 4 and 5 went in clean. The Guntis C1 row conflicted with #14 (it rewrites the same table), so I resolved it: C1 is now the sweep that kills the connecting-words lead in #14's re-ranked list, credited to you in tested.md. Nothing needed from you."
+  },
+  {
+    "issue": 10,
+    "url": "https://github.com/floflo777/open-crypto-puzzles/issues/10#issuecomment-5364083153",
+    "by": "timothy-barus",
+    "at": "2026-08-21T01:28:57Z",
+    "body": "did you already test that word combination?"
+  },
+  {
+    "issue": 10,
+    "url": "https://github.com/floflo777/open-crypto-puzzles/issues/10#issuecomment-5372279286",
+    "by": "floflo777",
+    "at": "2026-08-21T16:04:08Z",
+    "body": "Recorded your correction in analysis/leads.md as a provenance issue to reconcile: top is in the blog body not the title/og:description, finish only appears as finished, and cloud is in no authored 2020 surface. I have not re-run the greps against the archived pages myself yet, so I am leaving this open until the R1 pool sourcing is re-checked against the captures. It changes no confirmed anchor. Thanks."
+  },
+  {
+    "issue": 10,
+    "url": "https://github.com/floflo777/open-crypto-puzzles/issues/10#issuecomment-5372946641",
+    "by": "floflo777",
+    "at": "2026-08-21T17:09:48Z",
+    "body": "Verified against the 2020 archives (Wayback 20200626184951 of the video, 20201026062858 of the blog), all three confirmed:\n\n- top is not in the video title (\"10 ETH challenge | Ethereum Parabolic | Bitcoin generator portfolio update !?\"); it appears only as \"top altcoins/mining/supporting\" in the description and \"top ten altcoins\" in the blog body.\n- the bare stem finish appears in neither surface; only finished does (nine times, \"Crypto Winter finished?\").\n- cloud has zero occurrences in either the video or the blog.\n\nSo top and finish are re-sourced (description and blog body, not title), and more usefully, since cloud is in no authored surface while fog is (\"dark fog on the lake\"), position 5 resolves to fog and cloud is dropped as a candidate. Written up in analysis/leads.md and analysis/tested.md. Thanks for the careful grep."
+  },
+  {
+    "issue": 1,
+    "url": "https://github.com/floflo777/open-crypto-puzzles/issues/1#issuecomment-5328743967",
+    "by": "floflo777",
+    "at": "2026-08-18T13:19:41Z",
+    "body": "Hey, I’m on holidays but I will be publishing my bruteforce scripts on friday once I have my computer. Note that a SOTA score is achieved by hashcat but depending on the puzzle you usually have to tweak the script and can’t rely on hashcat. It gives a benchmark limit though. "
+  },
+  {
+    "issue": 1,
+    "url": "https://github.com/floflo777/open-crypto-puzzles/issues/1#issuecomment-5372278399",
+    "by": "floflo777",
+    "at": "2026-08-21T16:04:03Z",
+    "body": "Recorded. The MD5 9dd2efb9bc976c2095bd534d7b8d431c and the two reimplementation gotchas (br-br paragraphs, ISO-8859-1) are now written down in analysis/leads.md so the Stage One reproduction is checkable without re-deriving from the post. Thanks."
+  }
+]

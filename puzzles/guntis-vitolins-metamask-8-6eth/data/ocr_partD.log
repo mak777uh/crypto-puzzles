@@ -1,0 +1,5 @@
+files=102 done=53 todo=102 out=ocr_partD.jsonl
+  10/102  88.8s  (8.88s/frame)
+  20/102  458.8s  (22.94s/frame)
+  30/102  709.0s  (23.63s/frame)
+  40/102  830.1s  (20.75s/frame)

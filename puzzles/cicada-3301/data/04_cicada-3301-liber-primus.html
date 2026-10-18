@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cicada 3301 Liber Primus Guide | Boxentriq</title>
+    <meta name="description" content="Explains Liber Primus, Gematria Primus, known clues, and Boxentriq workflows for solving Cicada 3301 runes.">
+    <meta name="author" content="Johan Åhlén">
+    <link rel="icon" href="https://www.boxentriq.com/favicon.ico" type="image/x-icon" >
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" >
+    <link rel="canonical" href="https://www.boxentriq.com/guides/cicada-3301-liber-primus" >
+    <meta property="og:url" content="https://www.boxentriq.com/guides/cicada-3301-liber-primus" >
+    <meta property="og:type" content="website" >
+    <meta property="og:title" content="Cicada 3301 Liber Primus Guide | Boxentriq" >
+    <meta property="og:description" content="Explains Liber Primus, Gematria Primus, known clues, and Boxentriq workflows for solving Cicada 3301 runes." >
+    <meta property="og:image" content="https://www.boxentriq.com/Img/hacker-boxentriq-facebook-preview.jpg" >
+    <meta name="twitter:card" content="summary_large_image" >
+    <meta name="twitter:site" content="@boxentriq" >
+    <meta name="twitter:creator" content="@boxentriq" >
+    <meta name="localUrl" content="guides/cicada-3301-liber-primus" >
+    <meta name="shortName" content="Liber Primus" >
+    <meta name="release" content="2.0.250" >
+    <meta name="qenv" content="Production" >
+
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.boxentriq.com/#website","name":"Boxentriq","url":"https://www.boxentriq.com/","publisher":{"@id":"https://www.boxentriq.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://www.boxentriq.com/search?q={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"Organization","@id":"https://www.boxentriq.com/#organization","name":"Boxentriq","alternateName":"Johan \u00C5hl\u00E9n AB","url":"https://www.boxentriq.com/","logo":{"@type":"ImageObject","@id":"https://www.boxentriq.com/#logo","url":"https://www.boxentriq.com/img/boxentriq_logo.svg"},"sameAs":["https://www.facebook.com/boxentriq","https://x.com/boxentriq","https://www.youtube.com/@boxentriq"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.boxentriq.com/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://www.boxentriq.com/guides"},{"@type":"ListItem","position":3,"name":"Liber Primus","item":"https://www.boxentriq.com/guides/cicada-3301-liber-primus"}]},{"@type":"Article","headline":"Cicada 3301 Liber Primus","description":"Explains Liber Primus, Gematria Primus, known clues, and Boxentriq workflows for solving Cicada 3301 runes.","url":"https://www.boxentriq.com/guides/cicada-3301-liber-primus","author":{"@id":"https://www.boxentriq.com/#organization"},"publisher":{"@id":"https://www.boxentriq.com/#organization"},"isPartOf":{"@id":"https://www.boxentriq.com/#website"},"dateModified":"2026-07-07"}]}</script>
+    <script>!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{};e.SENTRY_RELEASE={id:"bae62aae58fea484733491f6f948c313f01c2d78"};var t=(new e.Error).stack;t&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[t]="1b962011-f1be-41b1-9265-4081548435b1",e._sentryDebugIdIdentifier="sentry-dbid-1b962011-f1be-41b1-9265-4081548435b1")}catch(e){}}(),(()=>{"use strict";const e="boxentriqColorTheme",t="data-q-theme-preference",n=["light","dark"];function r(e){return"string"!=typeof e?null:n.includes(e)?e:null}const o=function(){try{return r(window.localStorage.getItem(e))}catch(e){return null}}(),i=null!=o?o:function(e=function(){return"function"==typeof window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches}()){return e?"dark":"light"}();!function(e,n=document.documentElement){n.setAttribute(t,e),n.setAttribute("data-bs-theme",e)}(i),o||function(t){try{window.localStorage.setItem(e,t)}catch(e){}}(i)})();</script>
+    <script>!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{};e.SENTRY_RELEASE={id:"bae62aae58fea484733491f6f948c313f01c2d78"};var n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="b1a0181b-1928-4b24-8e3a-03e1bbf6dcf7",e._sentryDebugIdIdentifier="sentry-dbid-b1a0181b-1928-4b24-8e3a-03e1bbf6dcf7")}catch(e){}}(),(()=>{"use strict";const e="navigationPanelState";function n(e){return null==e?null:"number"==typeof e&&Number.isFinite(e)?e<280||e>960?null:e:null}const t=function(){const t={preferredWidth:null,dockedVisible:!0};try{const d=window.sessionStorage.getItem(e);if(!d)return t;const o=JSON.parse(d);return"object"!=typeof(i=o)||null===i?t:1!==o.version||"boolean"!=typeof o.dockedVisible?t:{preferredWidth:n(o.preferredWidth),dockedVisible:o.dockedVisible}}catch(e){return t}var i}(),i=window.matchMedia("(min-width: 1092px)").matches;document.documentElement.classList.toggle("navigation-panel-session-collapsed",i&&!t.dockedVisible)})();</script>
+    <script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MQKPXTR');
+</script>
+
+        <script>
+    (function (w, d) {
+        w.adthrive = w.adthrive || {};
+        w.adthrive.cmd = w.adthrive.cmd || [];
+        w.adthrive.plugin = 'adthrive-ads-manual';
+        w.adthrive.host = 'ads.adthrive.com';
+        var s = d.createElement('script');
+        s.async = true;
+        s.referrerpolicy = 'no-referrer-when-downgrade';
+        s.src = 'https://' + w.adthrive.host + '/sites/67eb028cd5aa1556529e18d0/ads.min.js?referrer=' + w.encodeURIComponent(w.location.href) + '&cb=' + (Math.floor(Math.random() * 100) + 1);
+        var n = d.getElementsByTagName('script')[0];
+        n.parentNode.insertBefore(s, n);
+    })(window, document);
+</script>
+
+    <link href="/css/bootstrap.css?v=803dc0df" rel="stylesheet">
+    <link href="/css/site.css?v=4023c908" rel="stylesheet">
+    <script src="/js/bundles/vendors.js?v=e5a22fb0" defer></script>
+    <script src="/js/bundles/main.js?v=575d8b5a" defer></script>
+    
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQKPXTR"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="layoutShell" class="layout-shell">
+        <div class="offcanvas offcanvas-start navigation-offcanvas" tabindex="-1" id="navigationPanel" aria-labelledby="navigationPanelLabel" data-bs-scroll="true" data-bs-backdrop="false">
+    <div class="offcanvas-header border-bottom">
+        <div class="d-flex align-items-center gap-1">
+            <a class="navigation-icon-control" href="/" aria-label="Go to start page">
+                <span class="nav-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span>
+            </a>
+            <h5 class="offcanvas-title text-alternate2" id="navigationPanelLabel">Navigation</h5>
+        </div>
+        <button type="button" class="btn-close" id="navigationPanelClose" data-q-navigation-close="true" aria-label="Close navigation panel"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column gap-3">
+        <button type="button" class="btn btn-outline-primary d-flex align-items-center justify-content-between gap-2 navigation-workspace-toggle"
+            id="navigationWorkspaceToggle" data-q-workspace-open="true" aria-controls="workspacePanel" aria-expanded="false" aria-label="Open My Saved Items panel">
+            <span class="d-inline-flex align-items-center gap-2">
+                <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+</span>
+                <span>My Saved Items</span>
+                <span id="workspaceCountBadge" class="workspace-badge badge rounded-pill d-none" aria-live="polite">0</span>
+            </span>
+            <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/><path d="m14 9 3 3-3 3"/></svg></span>
+        </button>
+        <form id="navigationPanelSearchForm" class="border border-primary-subtle rounded-3 p-3 bg-surface-brand-subtle" role="search" novalidate>
+            <div class="input-group">
+                <label class="input-group-text" for="navigationPanelSearchInput"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></label>
+                <input type="search" id="navigationPanelSearchInput" class="form-control" autocomplete="off" placeholder="Search..." aria-label="Search tools" />
+            </div>
+        </form>
+        <nav id="navigationPanelContent" class="navigation-panel-content flex-grow-1 overflow-auto" aria-label="Browse tools and articles">
+            <div id="navigationBrowseView">
+                <div class="mb-4">
+                    <h6 class="small text-muted fw-semibold mb-2">Featured Links</h6>
+                    <div class="list-group list-group-flush">
+                        <a class="list-group-item list-group-item-action navigation-panel-page-link d-flex align-items-center gap-2" href="/contact" title="Contact" data-q-contact-modal-trigger="true" aria-controls="contactModal" aria-haspopup="dialog">
+                            <span class="d-inline-flex flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></span>
+                            <span>Contact</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action navigation-panel-page-link d-flex align-items-center gap-2" href="/about" title="About">
+                            <span class="d-inline-flex flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+</span>
+                            <span>About</span>
+                        </a>
+                    </div>
+                </div>
+                    <div class="mb-2">
+                        <h6 class="small text-muted fw-semibold mb-2">Categories</h6>
+                        <div class="list-group" id="navigationPanelCategories">
+                                <div class="list-group-item p-0">
+                                    <button class="list-group-item list-group-item-action navigation-panel-category d-flex align-items-center gap-2 w-100 text-start border-0 px-3 py-3" type="button" id="navigationCategoryToggle0" data-bs-toggle="collapse" data-bs-target="#navigationCategoryCollapse0"
+                                        aria-expanded="true" aria-controls="navigationCategoryCollapse0">
+                                        <span class="d-inline-flex flex-shrink-0 fs-5 lh-1" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V5a2 2 0 0 1 2-2h5a3 3 0 0 1 3 3v15a3 3 0 0 0-3-3Z"/><path d="M21 18a1 1 0 0 0 1-1V5a2 2 0 0 0-2-2h-5a3 3 0 0 0-3 3v15a3 3 0 0 1 3-3Z"/></svg>
+</span>
+                                        <span class="fw-semibold">Guides</span>
+                                        <span class="ms-auto text-muted" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="m18 15-6-6-6 6"/></svg></span>
+                                    </button>
+                                        <div id="navigationCategoryCollapse0" class="collapse show" aria-labelledby="navigationCategoryToggle0" data-navigation-category="guides">
+                                            <div class="px-3 pb-3">
+                                                <div class="list-group list-group-flush navigation-panel-category-pages">
+                                                        <a class="list-group-item list-group-item-action navigation-panel-page-link" href="/guides" title="Overview">Overview</a>
+                                                        <a class="list-group-item list-group-item-action navigation-panel-page-link navigation-panel-page-link-current" href="/guides/cicada-3301-liber-primus" title="Liber Primus" aria-current="page">Cicada 3301 Liber Primus</a>
+                                                        <a class="list-group-item list-group-item-action navigation-panel-page-link" href="/guides/ciphers-and-code-breaking" title="Code-breaking guide">Beginner&#x27;s Guide to Ciphers and Code-Breaking</a>
+                                                        <a class="list-group-item list-group-item-action navigation-panel-page-link" href="/guides/cicada-3301-first-puzzle-walkthrough" title="Cicada 3301 walkthrough">Cicada 3301 First Puzzle Walkthrough</a>
+                                                        <a class="list-group-item list-group-item-action navigation-panel-page-link" href="/guides/cryptic-crosswords" title="Cryptic crosswords">Cryptic Crosswords</a>
+                                                        <a class="list-group-item list-group-item-action navigation-panel-page-link" href="/guides/kryptos-cipher-solutions" title="Kryptos solutions">Kryptos Cipher Solutions</a>
+                                                        <a class="list-group-item list-group-item-action navigation-panel-page-link" href="/resources" title="Resources">Resources for Puzzle Solvers</a>
+                                                        <a class="list-group-item list-group-item-action navigation-panel-page-link" href="/guides/zodiac-ciphers" title="Zodiac ciphers">The Zodiac Ciphers</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="list-group-item p-0">
+                                    <button class="list-group-item list-group-item-action navigation-panel-category d-flex align-items-center gap-2 w-100 text-start border-0 px-3 py-3 collapsed" type="button" id="navigationCategoryToggle1" data-bs-toggle="collapse" data-bs-target="#navigationCategoryCollapse1"
+                                        aria-expanded="false" aria-controls="navigationCategoryCollapse1">
+                                        <span class="d-inline-flex flex-shrink-0 fs-5 lh-1" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg></span>
+                                        <span class="fw-semibold">Alphabets &amp; Symbols</span>
+                                        <span class="ms-auto text-muted" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="m6 9 6 6 6-6"/></svg></span>
+                                    </button>
+                                        <div id="navigationCategoryCollapse1" class="collapse" aria-labelledby="navigationCategoryToggle1" data-navigation-category="alphabets"></div>
+                                </div>
+                                <div class="list-group-item p-0">
+                                    <button class="list-group-item list-group-item-action navigation-panel-category d-flex align-items-center gap-2 w-100 text-start border-0 px-3 py-3 collapsed" type="button" id="navigationCategoryToggle2" data-bs-toggle="collapse" data-bs-target="#navigationCategoryCollapse2"
+                                        aria-expanded="false" aria-controls="navigationCategoryCollapse2">
+                                        <span class="d-inline-flex flex-shrink-0 fs-5 lh-1" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M10.7 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v4.1"/><path d="m21 21-1.9-1.9"/><circle cx="17" cy="17" r="3"/></svg></span>
+                                        <span class="fw-semibold">Analysis</span>
+                                        <span class="ms-auto text-muted" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="m6 9 6 6 6-6"/></svg></span>
+                                    </button>
+                                        <div id="navigationCategoryCollapse2" class="collapse" aria-labelledby="navigationCategoryToggle2" data-navigation-category="analysis"></div>
+                                </div>
+                                <div class="list-group-item p-0">
+                                    <button class="list-group-item list-group-item-action navigation-panel-category d-flex align-items-center gap-2 w-100 text-start border-0 px-3 py-3 collapsed" type="button" id="navigationCategoryToggle3" data-bs-toggle="collapse" data-bs-target="#navigationCategoryCollapse3"
+                                        aria-expanded="false" aria-controls="navigationCategoryCollapse3">
+                                        <span class="d-inline-flex flex-shrink-0 fs-5 lh-1" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M2 10v3"/><path d="M6 6v11"/><path d="M10 3v18"/><path d="M14 8v7"/><path d="M18 5v13"/><path d="M22 10v3"/></svg>
+</span>
+                                        <span class="fw-semibold">Audio Tools</span>
+                                        <span class="ms-auto text-muted" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="m6 9 6 6 6-6"/></svg></span>
+                                    </button>
+                                        <div id="navigationCategoryCollapse3" class="collapse" aria-labelledby="navigationCategoryToggle3" data-navigation-category="audio"></div>
+                                </div>
+                                <div class="list-group-item p-0">
+                                    <button class="list-group-item list-group-item-action navigation-panel-category d-flex align-items-center gap-2 w-100 text-start border-0 px-3 py-3 collapsed" type="button" id="navigationCategoryToggle4" data-bs-toggle="collapse" data-bs-target="#navigationCategoryCollapse4"
+                                        aria-expanded="false" aria-controls="navigationCategoryCollapse4">
+                                        <span class="d-inline-flex flex-shrink-0 fs-5 lh-1" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/><circle cx="6" cy="6" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="18" cy="18" r="1" fill="currentColor" stroke="none"/></svg>
+</span>
+                                        <span class="fw-semibold">Ciphers</span>
+                                        <span class="ms-auto text-muted" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="m6 9 6 6 6-6"/></svg></span>
+                                    </button>
+                                        <div id="navigationCategoryCollapse4" class="collapse" aria-labelledby="navigationCategoryToggle4" data-navigation-category="ciphers"></div>
+                                </div>
+                                <div class="list-group-item p-0">
+                                    <button class="list-group-item list-group-item-action navigation-panel-category d-flex align-items-center gap-2 w-100 text-start border-0 px-3 py-3 collapsed" type="button" id="navigationCategoryToggle5" data-bs-toggle="collapse" data-bs-target="#navigationCategoryCollapse5"
+                                        aria-expanded="false" aria-controls="navigationCategoryCollapse5">
+                                        <span class="d-inline-flex flex-shrink-0 fs-5 lh-1" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5a2 2 0 0 0 2 2h1"/><path d="M16 21h1a2 2 0 0 0 2-2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"/></svg>
+</span>
+                                        <span class="fw-semibold">Encodings</span>
+                                        <span class="ms-auto text-muted" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="m6 9 6 6 6-6"/></svg></span>
+                                    </button>
+                                        <div id="navigationCategoryCollapse5" class="collapse" aria-labelledby="navigationCategoryToggle5" data-navigation-category="encodings"></div>
+                                </div>
+                                <div class="list-group-item p-0">
+                                    <button class="list-group-item list-group-item-action navigation-panel-category d-flex align-items-center gap-2 w-100 text-start border-0 px-3 py-3 collapsed" type="button" id="navigationCategoryToggle6" data-bs-toggle="collapse" data-bs-target="#navigationCategoryCollapse6"
+                                        aria-expanded="false" aria-controls="navigationCategoryCollapse6">
+                                        <span class="d-inline-flex flex-shrink-0 fs-5 lh-1" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M10 3 8 21"/><path d="m16 3-2 18"/><path d="M4 9h18"/><path d="M3 15h18"/></svg>
+</span>
+                                        <span class="fw-semibold">Hash Functions</span>
+                                        <span class="ms-auto text-muted" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="m6 9 6 6 6-6"/></svg></span>
+                                    </button>
+                                        <div id="navigationCategoryCollapse6" class="collapse" aria-labelledby="navigationCategoryToggle6" data-navigation-category="hashing"></div>
+                                </div>
+                                <div class="list-group-item p-0">
+                                    <button class="list-group-item list-group-item-action navigation-panel-category d-flex align-items-center gap-2 w-100 text-start border-0 px-3 py-3 collapsed" type="button" id="navigationCategoryToggle7" data-bs-toggle="collapse" data-bs-target="#navigationCategoryCollapse7"
+                                        aria-expanded="false" aria-controls="navigationCategoryCollapse7">
+                                        <span class="d-inline-flex flex-shrink-0 fs-5 lh-1" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><circle cx="10" cy="12" r="2"/><path d="m20 17-1.296-1.296a2.41 2.41 0 0 0-3.408 0L9 22"/></svg></span>
+                                        <span class="fw-semibold">Image Tools</span>
+                                        <span class="ms-auto text-muted" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="m6 9 6 6 6-6"/></svg></span>
+                                    </button>
+                                        <div id="navigationCategoryCollapse7" class="collapse" aria-labelledby="navigationCategoryToggle7" data-navigation-category="imaging"></div>
+                                </div>
+                                <div class="list-group-item p-0">
+                                    <button class="list-group-item list-group-item-action navigation-panel-category d-flex align-items-center gap-2 w-100 text-start border-0 px-3 py-3 collapsed" type="button" id="navigationCategoryToggle8" data-bs-toggle="collapse" data-bs-target="#navigationCategoryCollapse8"
+                                        aria-expanded="false" aria-controls="navigationCategoryCollapse8">
+                                        <span class="d-inline-flex flex-shrink-0 fs-5 lh-1" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M8 6h8"/><path d="M16 14v4"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/></svg>
+</span>
+                                        <span class="fw-semibold">Math</span>
+                                        <span class="ms-auto text-muted" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="m6 9 6 6 6-6"/></svg></span>
+                                    </button>
+                                        <div id="navigationCategoryCollapse8" class="collapse" aria-labelledby="navigationCategoryToggle8" data-navigation-category="math"></div>
+                                </div>
+                                <div class="list-group-item p-0">
+                                    <button class="list-group-item list-group-item-action navigation-panel-category d-flex align-items-center gap-2 w-100 text-start border-0 px-3 py-3 collapsed" type="button" id="navigationCategoryToggle9" data-bs-toggle="collapse" data-bs-target="#navigationCategoryCollapse9"
+                                        aria-expanded="false" aria-controls="navigationCategoryCollapse9">
+                                        <span class="d-inline-flex flex-shrink-0 fs-5 lh-1" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M7 3H5a2 2 0 0 0-2 2v2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M17 21h2a2 2 0 0 0 2-2v-2"/><path d="M7 12s2-3 5-3 5 3 5 3-2 3-5 3-5-3-5-3Z"/><circle cx="12" cy="12" r="1"/></svg>
+</span>
+                                        <span class="fw-semibold">Steganography</span>
+                                        <span class="ms-auto text-muted" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="m6 9 6 6 6-6"/></svg></span>
+                                    </button>
+                                        <div id="navigationCategoryCollapse9" class="collapse" aria-labelledby="navigationCategoryToggle9" data-navigation-category="steganography"></div>
+                                </div>
+                                <div class="list-group-item p-0">
+                                    <button class="list-group-item list-group-item-action navigation-panel-category d-flex align-items-center gap-2 w-100 text-start border-0 px-3 py-3 collapsed" type="button" id="navigationCategoryToggle10" data-bs-toggle="collapse" data-bs-target="#navigationCategoryCollapse10"
+                                        aria-expanded="false" aria-controls="navigationCategoryCollapse10">
+                                        <span class="d-inline-flex flex-shrink-0 fs-5 lh-1" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 8h7"/><path d="M8 12h6"/><path d="M11 16h5"/></svg></span>
+                                        <span class="fw-semibold">Text &amp; Word Tools</span>
+                                        <span class="ms-auto text-muted" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="m6 9 6 6 6-6"/></svg></span>
+                                    </button>
+                                        <div id="navigationCategoryCollapse10" class="collapse" aria-labelledby="navigationCategoryToggle10" data-navigation-category="text-tools"></div>
+                                </div>
+                                <div class="list-group-item p-0">
+                                    <button class="list-group-item list-group-item-action navigation-panel-category d-flex align-items-center gap-2 w-100 text-start border-0 px-3 py-3 collapsed" type="button" id="navigationCategoryToggle11" data-bs-toggle="collapse" data-bs-target="#navigationCategoryCollapse11"
+                                        aria-expanded="false" aria-controls="navigationCategoryCollapse11">
+                                        <span class="d-inline-flex flex-shrink-0 fs-5 lh-1" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"/></svg></span>
+                                        <span class="fw-semibold">Puzzles</span>
+                                        <span class="ms-auto text-muted" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="m6 9 6 6 6-6"/></svg></span>
+                                    </button>
+                                        <div id="navigationCategoryCollapse11" class="collapse" aria-labelledby="navigationCategoryToggle11" data-navigation-category="puzzle"></div>
+                                </div>
+                                <div class="list-group-item p-0">
+                                    <button class="list-group-item list-group-item-action navigation-panel-category d-flex align-items-center gap-2 w-100 text-start border-0 px-3 py-3 collapsed" type="button" id="navigationCategoryToggle12" data-bs-toggle="collapse" data-bs-target="#navigationCategoryCollapse12"
+                                        aria-expanded="false" aria-controls="navigationCategoryCollapse12">
+                                        <span class="d-inline-flex flex-shrink-0 fs-5 lh-1" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+</span>
+                                        <span class="fw-semibold">Site Info</span>
+                                        <span class="ms-auto text-muted" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="m6 9 6 6 6-6"/></svg></span>
+                                    </button>
+                                        <div id="navigationCategoryCollapse12" class="collapse" aria-labelledby="navigationCategoryToggle12" data-navigation-category="site"></div>
+                                </div>
+                                <div class="list-group-item p-0">
+                                    <button class="list-group-item list-group-item-action navigation-panel-category d-flex align-items-center gap-2 w-100 text-start border-0 px-3 py-3 collapsed" type="button" id="navigationCategoryToggle13" data-bs-toggle="collapse" data-bs-target="#navigationCategoryCollapse13"
+                                        aria-expanded="false" aria-controls="navigationCategoryCollapse13">
+                                        <span class="d-inline-flex flex-shrink-0 fs-5 lh-1" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 8h10"/><path d="M7 12h10"/><path d="M7 16h10"/></svg></span>
+                                        <span class="fw-semibold">Navigation</span>
+                                        <span class="ms-auto text-muted" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="m6 9 6 6 6-6"/></svg></span>
+                                    </button>
+                                        <div id="navigationCategoryCollapse13" class="collapse" aria-labelledby="navigationCategoryToggle13" data-navigation-category="navigation"></div>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+            <div id="navigationSearchView" class="d-none">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex flex-column">
+                        <span class="text-uppercase text-muted small fw-semibold">Search results</span>
+                        <span id="navigationSearchCount" class="fw-semibold" aria-live="polite"></span>
+                    </div>
+                    <button type="button" class="btn btn-link btn-sm text-decoration-none p-0" id="navigationSearchReset">Back</button>
+                </div>
+                <div id="navigationSearchResults"></div>
+            </div>
+        </nav>
+    </div>
+    <div id="navigationPanelResizer" class="navigation-resizer navigation-resizer-vertical" role="separator" aria-label="Resize navigation panel"></div>
+</div>
+
+        <div class="grid">
+            <div class="nav-bg"></div>
+<nav class="nav" id="mainNav">
+    <button class="navigation-icon-control nav-toggle flex-shrink-0" type="button" id="navigationPanelToggle" data-q-navigation-toggle="true"
+        aria-controls="navigationPanel" aria-expanded="false" aria-label="Toggle navigation panel">
+        <span class="nav-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg></span>
+    </button>
+    <a class="nav-brand js-scroll-trigger flex-shrink-1" href="/"><svg width="10em" viewBox="0 0 700 80" xmlns="http://www.w3.org/2000/svg">
+	<title>Boxentriq logo</title>
+	<defs>
+		<clipPath id="boxentriqLogo_clipPath">
+			<path d="M722 768h78v64.8h-78zm0 0"/>
+		</clipPath>
+	</defs>
+	<path d="M62.9 33.3H33.5v-10h29.4l3.7 4.8zm0 21.5H33.5v-9.9h29.4l3.7 5.2zm9-44.3H18.2v57h53.7l11.5-17.4-7.2-11 7.2-11m66.5 26.7h-34.6V23.3h34.6zm-38.4-44.3-11.6 13v31l11.6 13h42.2l11.5-13v-31l-11.5-13m74.1 0-16.3 18.3-16.3-18.3H177l25.4 28.6L177 67.6h18.2l16.3-18.4 16.3 18.4h18l-25.3-28.5 25.4-28.6M310 23.3l11.3-12.8h-60.7v57h47.6l11.4-12.7H276v-9.9h27.6L314 33.3h-38v-10m107-12.7v34l-36.8-34.1h-10.7v57h15.3V34.3l36 33.3h11.6V10.5h-15.2m37.7 12.8h15v44.3h15.3V23.3h15.1l11.3-12.8h-68m123.6 25h-29.5V23.3h29.5l4 5.9zm8.2-25h-53v57h15.3v-19H533l4.6 5v14H553V51.2l-8.8-9.9 8.8-13.2m21.3-17.5v56.9h15.3v-57h-15.1" fill="#008009"/>
+	<g clip-path="url(#boxentriqLogo_clipPath)" transform="translate(-112.3 -758.1)">
+		<path d="M737.6 781.4h34.7v31.5h-34.7Zm62.4 51.4-16-13.7 3.6-6.2v-31.3l-11.5-13h-42.2l-11.6 13v31l11.6 13h38.8l9 7.2" fill="#008009"/>
+	</g>
+</svg></a>
+    <button class="navigation-icon-control navigation-theme-toggle flex-shrink-0 ms-auto" type="button" id="colorThemeToggle"
+        data-q-theme-toggle="true" aria-label="Switch to dark theme" title="Switch to dark theme">
+        <span class="navigation-theme-icon navigation-theme-icon-dark" data-q-theme-icon="dark" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+</span>
+        <span class="navigation-theme-icon navigation-theme-icon-light" data-q-theme-icon="light" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+</span>
+    </button>
+</nav>
+
+            
+
+            <div class="head-bg"></div>
+            <div class="head">
+            <div class="breadcrumb-article d-sm-none mb-2">
+                <a class="breadcrumb-article-link" href="/guides">&larr; Guides</a>
+            </div>
+        <nav class="d-none d-sm-block" aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-article mb-2">
+                            <li class="breadcrumb-item">
+                                <a href="/" class="content-link">Home</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="/guides" class="content-link">Guides</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Liber Primus</li>
+            </ol>
+        </nav>
+    
+    <h1>Cicada 3301 Liber Primus</h1>
+
+    <p class="lead">Explains Liber Primus, Gematria Primus, known clues, and Boxentriq workflows for solving Cicada 3301 runes.</p>
+</div>
+
+                <div id="sidebar1" class="sidebar1">
+                    <nav class="navbar toc d-block">
+    <span class="navbar-brand h6">On this page</span>
+    <a class="nav-link" href="#">Start</a>
+        <a class="nav-link" href="#intro">Introduction</a>
+        <a class="nav-link" href="#what-is-liber-primus">What Is Liber Primus?</a>
+        <a class="nav-link" href="#how-the-pages-were-found">How the Pages Were Found</a>
+        <a class="nav-link" href="#gematria-primus-alphabet">Gematria Primus Alphabet</a>
+        <a class="nav-link" href="#solving-liber-primus-with-boxentriq">Solving Liber Primus With Boxentriq</a>
+        <a class="nav-link" href="#known-clues">Known Clues</a>
+        <a class="nav-link" href="#rune-transcription">Rune Transcription</a>
+        <a class="nav-link" href="#resources-and-further-reading">Resources and Further Reading</a>
+</nav>
+
+
+                </div>
+
+            <main id="main" class="main-content main">
+                    <div class="quick-actions justify-content-end mb-3">
+                <a class="quick-action" href="/tags/cicada-3301" aria-label="Browse tag Cicada 3301">#Cicada 3301</a>
+                <a class="quick-action" href="/tags/cryptanalysis" aria-label="Browse tag Cryptanalysis">#Cryptanalysis</a>
+    </div>
+
+<h2 id="intro">Introduction</h2>
+<p>
+    Cicada 3301 was the signature used for a series of public cryptographic puzzle rounds in 2012, 2013, and 2014.
+    The puzzles mixed classical cryptography, steganography, books, music, physical clues, Tor hidden services, and
+    OpenPGP-signed messages. The stated theme was the search for highly intelligent individuals, but the identity and
+    purpose of the group remain unverified.
+</p>
+<p>
+    <em>Liber Primus</em>, "First Book", is the central unresolved artifact from the later Cicada 3301 material. It is
+    a book of Gematria Primus runes, with some pages solved and many pages still unsolved. Community sources differ in
+    page numbering, but modern solver summaries often split the material into LP1, where 17 pages are solved, and LP2,
+    where 2 of 58 pages are solved and 56 remain unsolved.
+</p>
+<p>
+    Cicada material should be treated carefully. The last verified public warning says to beware false paths and verify
+    OpenPGP signatures from key ID <code>7A35090F</code>. This guide distinguishes verified Cicada messages from
+    community analysis and uses source links for reproduced transcriptions and known solve methods.
+</p>
+<p>
+    Most of Boxentriq's cipher tools can be used with Liber Primus. When a tool has a language selector, choose
+    <strong>Gematria Primus</strong>; it is available at the bottom of the language list. This switches compatible
+    tools from the Latin alphabet to the 29-rune Gematria Primus alphabet, so you can test Caesar, Atbash, Vigenere,
+    and autosolver workflows directly against rune text.
+</p>
+<figure class="figure mb-4">
+    <img src="/img/gematria-primus-support.png" class="figure-img img-fluid border rounded" alt="Boxentriq language selector showing Gematria Primus support" loading="lazy" width="1384" height="582" />
+    <figcaption class="figure-caption text-center">Choose Gematria Primus at the bottom of the language list for compatible Boxentriq tools.</figcaption>
+</figure>
+<p>
+    When a tool result is still shown as runes, Boxentriq can also expose a <strong>Translate runes</strong> button.
+    Use it to translate Gematria Primus runes in the output into Latin letter values without leaving the tool workflow.
+</p>
+<figure class="figure mb-4">
+    <img src="/img/gematria-primus-support-2.png" class="figure-img img-fluid border rounded" alt="Boxentriq result tools showing the Translate runes button for Gematria Primus output" loading="lazy" width="1294" height="471" />
+    <figcaption class="figure-caption text-center">Use Translate runes when a tool produces Gematria Primus runes and you want the Latin letter values.</figcaption>
+</figure>
+
+<h2 id="what-is-liber-primus">What Is Liber Primus?</h2>
+<p>
+    <em>Liber Primus</em> is a rune manuscript written with the 29-symbol Gematria Primus alphabet. Some pages are
+    direct rune-to-Latin transliterations, while others use shifts, reversed alphabets, Vigenere-style keys, prime
+    streams, or unknown methods. That mix makes the book useful for both learning and active cryptanalysis: solved pages
+    are reproducible examples, and unsolved pages still offer frequency patterns, repeated fragments, spacing, and
+    mathematical constraints to test.
+</p>
+
+<h2 id="how-the-pages-were-found">How the Pages Were Found</h2>
+<p>
+    The 2014 Cicada path began with a public image and again relied on layered extraction. Solvers used OutGuess and
+    OpenPGP verification, followed a book-cipher path, reached Tor onion pages, and encountered a William Blake collage
+    tied to the next stages. Later material involved RSA clues, a growing hex string, and XOR/JPEG recovery before the
+    first Liber Primus-related images appeared.
+</p>
+<p>
+    More runic pages were later released as a larger dump. This is why source names can be confusing: one source may
+    call a page <code>56.jpg</code>, while another "complete set" view may refer to the same content as
+    <code>73.jpg</code>. In the examples below, page identifiers follow the
+    <a href="https://github.com/scream314/cicada3301" class="content-link" target="_blank" rel="nofollow noopener">scream314/cicada3301</a> transcription and asset layout unless
+    stated otherwise.
+</p>
+
+<h2 id="gematria-primus-alphabet">Gematria Primus Alphabet</h2>
+<p>
+    Boxentriq supports Gematria Primus in the
+    <a href="/encodings/gematria-primus-translator" class="content-link">Gematria Primus Translator</a>. The same 29-rune alphabet is also
+    available as a Gematria Primus language for compatible autosolver workflows, so rune-looking candidate plaintexts
+    can be decoded back to Latin values while preserving ambiguities such as <code>NG/ING</code> and <code>IA/IO</code>.
+</p>
+<div class="table-responsive mb-4">
+    <table class="table table-sm align-middle">
+        <thead>
+            <tr>
+                <th scope="col">Rune</th>
+                <th scope="col">Letter value</th>
+                <th scope="col">Decimal value</th>
+                <th scope="col">Prime value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><th scope="row" class="font-monospace fs-5">ᚠ</th><td>F</td><td>0</td><td>2</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᚢ</th><td>V(U)</td><td>1</td><td>3</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᚦ</th><td>TH</td><td>2</td><td>5</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᚩ</th><td>O</td><td>3</td><td>7</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᚱ</th><td>R</td><td>4</td><td>11</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᚳ</th><td>C(K)</td><td>5</td><td>13</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᚷ</th><td>G</td><td>6</td><td>17</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᚹ</th><td>W</td><td>7</td><td>19</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᚻ</th><td>H</td><td>8</td><td>23</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᚾ</th><td>N</td><td>9</td><td>29</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᛁ</th><td>I</td><td>10</td><td>31</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᛄ</th><td>J</td><td>11</td><td>37</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᛇ</th><td>EO</td><td>12</td><td>41</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᛈ</th><td>P</td><td>13</td><td>43</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᛉ</th><td>X</td><td>14</td><td>47</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᛋ</th><td>S(Z)</td><td>15</td><td>53</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᛏ</th><td>T</td><td>16</td><td>59</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᛒ</th><td>B</td><td>17</td><td>61</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᛖ</th><td>E</td><td>18</td><td>67</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᛗ</th><td>M</td><td>19</td><td>71</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᛚ</th><td>L</td><td>20</td><td>73</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᛝ</th><td>NG(ING)</td><td>21</td><td>79</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᛟ</th><td>OE</td><td>22</td><td>83</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᛞ</th><td>D</td><td>23</td><td>89</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᚪ</th><td>A</td><td>24</td><td>97</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᚫ</th><td>AE</td><td>25</td><td>101</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᚣ</th><td>Y</td><td>26</td><td>103</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᛡ</th><td>IA(IO)</td><td>27</td><td>107</td></tr>
+            <tr><th scope="row" class="font-monospace fs-5">ᛠ</th><td>EA</td><td>28</td><td>109</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<h2 id="solving-liber-primus-with-boxentriq">Solving Liber Primus With Boxentriq</h2>
+<p>
+    Start by transcribing runes or pasting existing transcription into the
+    <a href="/encodings/gematria-primus-translator" class="content-link">Gematria Primus Translator</a>. For unknown pages, use
+    <a href="/analysis/frequency-analysis" class="content-link">Frequency Analysis</a> and
+    <a href="/analysis/text-analysis" class="content-link">Text Analysis</a> to inspect rune distribution, repeated fragments, word lengths,
+    and likely separators. When testing shifts or keyed polyalphabetic ideas, try the
+    <a href="/ciphers/caesar-cipher" class="content-link">Caesar Cipher</a>, <a href="/ciphers/atbash-cipher" class="content-link">Atbash Cipher</a>, and
+    <a href="/ciphers/vigenere-cipher" class="content-link">Vigenere Cipher</a> pages with the Gematria Primus alphabet or its Latin value
+    sequence. Earlier Cicada stages also make <a href="/steganography/outguess-extractor" class="content-link">OutGuess Extractor</a> and
+    <a href="/analysis/binary-analysis" class="content-link">Binary Analysis</a> useful for checking images and recovered byte streams.
+</p>
+<p>
+    The examples below reproduce known community methods. They are useful as calibrations: if your transcription,
+    alphabet order, or shift direction is wrong, these examples will fail before you ever reach the unsolved pages.
+</p>
+
+<h3 id="some-wisdom" class="h5">Some Wisdom</h3>
+<p>
+    Source identifier: <code>05.jpg</code>. This page uses the Gematria Primus alphabet and includes a number square
+    that matches earlier Cicada material. It is a good first start because the text is not encrypted
+    beyond the rune alphabet.
+</p>
+<ol>
+    <li>Open the <a href="/encodings/gematria-primus-translator" class="content-link">Gematria Primus Translator</a>.</li>
+    <li>Select <strong>Gematria Primus to Latin</strong>.</li>
+    <li>Paste the page's rune transcription.</li>
+    <li>Confirm the heading and the prime/totient statements.</li>
+</ol>
+<p class="fw-semibold mb-2">Ciphertext</p>
+<pre class="bg-dark text-white overflow-auto p-3" style="max-height: 12em;"><code>ᛋᚩᛗᛖ-ᚹᛁᛋᛞᚩᛗ.ᚦᛖ-ᛈᚱᛁᛗᛖᛋ-ᚪᚱᛖ-ᛋᚪᚳ/
+ᚱᛖᛞ.ᚦᛖ-ᛏᚩᛏᛁᛖᚾᛏ-ᚠᚢᚾᚳᛏᛡᚾ-ᛁᛋ-ᛋᚪ/
+ᚳᚱᛖᛞ.ᚪᛚᛚ-ᚦᛝᛋ-ᛋᚻᚩᚢᛚᛞ-ᛒᛖ-ᛖᚾᚳᚱᚣ/
+ᛈᛏᛖᛞ./
+&
+ᚳᚾᚩᚹ-ᚦᛁᛋ./
+272		138		ᛋᚻᚪᛞᚩᚹᛋ		131		151./
+ᚫᚦᛖᚱᛠᛚ		ᛒᚢᚠᚠᛖᚱᛋ		ᚢᚩᛁᛞ		ᚳᚪᚱᚾᚪᛚ		18./
+226		ᚩᛒᛋᚳᚢᚱᚪ		ᚠᚩᚱᛗ		245		ᛗᚩᛒᛁᚢᛋ./
+18		ᚪᚾᚪᛚᚩᚷ		ᚢᚩᛁᛞ		ᛗᚩᚢᚱᚾᚠᚢᛚ		ᚫᚦᛖᚱᛠᛚ./
+151		131		ᚳᚪᛒᚪᛚ		138		272./
+</code></pre>
+<figure class="figure mb-4">
+    <img src="/img/liber-primus-solution-some-wisdom.png" class="figure-img img-fluid border rounded" alt="Boxentriq Gematria Primus Translator decoding the Liber Primus Some Wisdom page to Latin text" loading="lazy" width="1346" height="963" />
+    <figcaption class="figure-caption text-center">The Some Wisdom page decoded with Gematria Primus to Latin in Boxentriq's translator.</figcaption>
+</figure>
+<pre class="bg-dark text-white overflow-auto p-3"><code>SOME WISDOM
+SOME WISDOM
+THE PRIMES ARE SACRED
+THE TOTIENT FVNCTIAN IS SACRED
+ALL THNGS SHOVLD BE ENCRYPTED
+
+CNOW THIS
+272		138		SHADOWS		131		151
+AETHEREAL	BVFFERS		VOID		CARNAL		18
+226		OBSCVRA		FORM		245		MOBIVS
+18		ANALOG		VOID		MOVRNFVL	AETHEREAL
+151		131		CABAL		138		272</code></pre>
+
+<h3 id="a-warning" class="h5">A Warning</h3>
+<p>
+    Source identifier: <code>01.jpg</code>. The page uses reversed Gematria,
+    an Atbash-style reversal of the 29-rune alphabet, so it can be solved directly with Boxentriq's
+    <a href="/ciphers/atbash-cipher" class="content-link">Atbash Cipher</a> tool.
+</p>
+<ol>
+    <li>Open the <a href="/ciphers/atbash-cipher" class="content-link">Atbash Cipher</a> tool and select <strong>Gematria Primus</strong> in the language list.</li>
+    <li>Paste the rune transcription into the input field and run the Atbash transformation.</li>
+    <li>Verify that the plaintext begins with <code>A WARNING</code>.</li>
+</ol>
+<p class="fw-semibold mb-2">Ciphertext</p>
+<pre class="bg-dark text-white overflow-auto p-3" style="max-height: 12em;"><code>ᚱ-ᛝᚱᚪᛗᚹ.ᛄᛁᚻᛖᛁᛡᛁ-ᛗᚫᚣᚹ-ᛠᚪᚫᚾ-/
+ᚣᛖᛈ-ᛄᚫᚫᛞ.ᛁᛉᛞᛁᛋᛇ-ᛝᛚᚱᛇ-ᚦᚫᛡ/
+-ᛞᛗᚫᛝ-ᛇᚫ-ᛄᛁ-ᛇᚪᛡᛁ.ᛇᛁᛈᛇ-ᚣᛁ-ᛞ/
+ᛗᚫᛝᚻᛁᚳᛟᛁ.ᛠᛖᛗᚳ-ᚦᚫᛡᚪ-ᛇᚪᛡᚣ.ᛁᛉ/
+ᛋᛁᚪᛖᛁᛗᛞᛁ-ᚦᚫᛡᚪ-ᚳᚠᚣ.ᚳᚫ-ᛗᚫᛇ-ᛁᚳᛖᛇ-ᚫ/
+ᚪ-ᛞᛚᚱᚹᛁ-ᚣᛖᛈ-ᛄᚫᚫᛞ.ᚫᚪ-ᚣᛁ-ᚾᛁᛈᛈᚱᛟᛁ-/
+ᛞᚫᛗᛇᚱᛖᛗᛁᚳ-ᛝᛖᚣᛖᛗ.ᛁᛖᚣᛁᚪ-ᚣᛁ-ᛝᚫ/
+ᚪᚳᛈ-ᚫᚪ-ᚣᛁᛖᚪ-ᛗᛡᚾᛄᛁᚪᛈ.ᛠᚫᚪ-ᚱᚻᚻ-ᛖ/
+ᛈ-ᛈᚱᛞᚪᛁᚳ./
+</code></pre>
+<figure class="figure mb-4">
+    <img src="/img/liber-primus-solution-a-warning-1.png" class="figure-img img-fluid border rounded" alt="Boxentriq Atbash Cipher configured with Gematria Primus for the Liber Primus A Warning page" loading="lazy" width="1346" height="1104" />
+    <figcaption class="figure-caption text-center">Solving the A Warning page with Boxentriq's Atbash Cipher tool and the Gematria Primus language.</figcaption>
+</figure>
+<figure class="figure mb-4">
+    <img src="/img/liber-primus-solution-a-warning-2.png" class="figure-img img-fluid border rounded" alt="Boxentriq Atbash Cipher output for the Liber Primus A Warning page" loading="lazy" width="1296" height="321" />
+    <figcaption class="figure-caption text-center">The Atbash output after clicking "Translate runes".</figcaption>
+</figure>
+<pre class="bg-dark text-white overflow-auto p-3"><code>A WARNNG
+BELIEVE NOTHNG FROM THIS BOOC
+EXCEPT WHAT YOV CNOW TO BE TRVE
+TEST THE CNOWLEDGE
+FIND YOVR TRVTH
+EXPERIENCE YOVR DEATH
+DO NOT EDIT OR CHANGE THIS BOOC
+OR THE MESSAGE CONTAINED WITHIN
+EITHER THE WORDS OR THEIR NVMBERS
+FOR ALL IS SACRED</code></pre>
+
+<h3 id="welcome" class="h5">Welcome</h3>
+<p>
+    Source identifiers: <code>03.jpg</code> and <code>04.jpg</code>. This page can be worked through with the
+    <a href="/ciphers/vigenere-cipher" class="content-link">Vigenere Cipher</a> tool, but it is not ordinary Vigenere across the full page.
+    Liber Primus skips advancing the key position at certain ciphertext indices having the letter ᚠ, known as the F(ᚠ)-skip rule. Those skips
+    break the regular repeating-key rhythm, so start the autosolver with a block that has no F-skips. The first three
+    lines work well for that calibration and recover the key <code>DIVINITY</code> (<code>ᛞᛁᚢᛁᚾᛁᛏᚣ</code>).
+</p>
+<ol>
+    <li>Open the <a href="/ciphers/vigenere-cipher" class="content-link">Vigenere Cipher</a> tool, choose autosolver mode, and select <strong>Gematria Primus</strong>.</li>
+    <li>Paste only the first three lines of the page transcription, where the key stream is still regular, and run the autosolver to recover the key <code>ᛞᛁᚢᛁᚾᛁᛏᚣ</code>.</li>
+    <li>Switch to manual mode, enter the full rune transcription in Input and the rune key <code>ᛞᛁᚢᛁᚾᛁᛏᚣ</code>, select decrypt.</li>
+    <li>To compensate for the Liber Primus F-skip rule, remove the letter ᚠ at those ciphertext positions where the decryption gets out of sync (for instance change <code>ᚠᚠ</code> on line 3 to <code>ᚠ</code>).</li>
+</ol>
+<p class="fw-semibold mb-2">Ciphertext</p>
+<pre class="bg-dark text-white overflow-auto p-3" style="max-height: 12em;"><code>ᚢᛠᛝᛋᛇᚠᚳ.ᚱᛇᚢᚷᛈᛠᛠ-ᚠᚹᛉ/
+ᛏᚳᛚᛠ-ᚣᛗ-ᛠᛇ-ᛏᚳᚾᚫ-ᛝᛗᛡ/
+ᛡᛗᛗᚹ-ᚫᛈᛞᛝᛡᚱ-ᚩᛠ-ᛡᛗᛁ-ᚠᚠ-/
+ᛖᚢᛝ-ᛇᚢᚫ.ᚣᛈ-ᚱᚫ-ᛁᛈᚫ-ᚳᚫ-ᚫᚾᚹ-ᛒᛉᛗᛞ/
+-ᚱᛡᛁ-ᚠᛈᚳ-ᛇᛇᚫᚳ-ᚱᚦᛈ-ᚠᛄᛗᚩ-ᛇᚳᚹᛡ-ᛒᚫᚹ-/
+ᛒᛠᛚᛋ-ᚱᚣ-ᛄᚫ-ᚱ-ᛗᚳᚦᛇᚫᛏᚳᛈᚹ-ᛗᚷᛇ.ᚳ/
+ᛝᛈᚢ-ᛇᚳ-ᚱᛖᚹ-ᛡᛈᛁ-ᛒᚣᛒᛉ-ᚠᛚᛁᚱ-ᚱᛗ-ᚳᚷ/
+ᛒ-ᚣᚱ-ᚳᚠᚢ-ᚦᛈᛡᛄᚹᛏᚠᛠ-ᛄᚷᛒ-ᚫᚦᚠᚠᛠ/
+ᛈᚦ-ᛈᚠᚪᛉ-ᛄᛗᛖᛈᛝᛋᚩᛋᛗ-ᚹᛇᛄᛚ-ᚹᛉᚢᚦ/
+ᚫᚹᛗᚦ-ᛞᚣᛄᚳ-ᛋᛡᛉᚩᛝᚱᛗᛒᚹ-ᚱᛗᛁ-ᛞᚣᛄ/
+ᚳ-ᛉᚻᚢᚣᛈᛚ.ᛄᛝᚣᛗᚠᛄᛈᛇᚢᛡ-ᚹᛇᛄ-ᛞ/
+ᚹᛉᚢ-ᚪᛚᚪᛋᛗᛡᛇᛉ-ᚫᛗ-ᛡᛗᛁ-ᛈᚣ-ᚫᛗᚢᚠ/
+%
+.ᛗᚣ-ᚣᛇ-ᚫᛉᚱᛄᛋᛖ-ᛖᚹᚾ-ᛞᛄᚢᛋᛉᚣᛏ/
+ᛖᛏᛗ-ᛇᚱᚣ-ᛞᛋ-ᚾᛖᚫᛞᛡ-ᛈᛒᚢᚾᛠᛝᛄᛡ/
+ᚫ-ᛄᚷᛒ-ᛈᚦᛉ-ᛈᚾᚹᚹᛁᛚᛗᚫ.ᛚᛈᛒᚢᚩᛠᛡ-ᚱ/
+ᛡᛠᚠ-ᚱᚱᛇᛄᛗ-ᚱᛗᛁ-ᛞᚣᛄ-ᚻᛚᚠᚢ-ᛄᚢᛡᛚᚦ/
+ᛠ-ᛇᛄᚩᛇᚱᚱᛗ.ᚢᛗᛋᚳ-ᛠᛇ-ᛚᛁᚫᚫᚳᛚ-ᚹᛁ-ᛚ/
+ᛏ-ᛈᛖᚢᛈ-ᛠᛡᛈᚦᛏᛒ-ᛏᛗᛖ-ᚢᛚᚩᛚᛖ-ᛇᛄ/
+ᛈ-ᚢᛠ-ᛚᚳᚷ-ᛠᚷᛋᛡᛏᛗ./
+&
+ᛒᛗᚱᚦᚠᛈ.ᚹᚱᛄ-ᚱᛉᚳ-ᛝ-ᛄᛠᛟ-ᛄᛖ/
+ᚣᛗ-ᛞᚣᛄᚳᚫᛡᚢᚠ.ᛈᚠᚪ-ᚳᚳᛠ-ᚱ-/
+ᚢᛄᚱ-ᚪᛗᛒᛈ-ᚷᛈᛒᚢᚾᛠᛝᚠ.ᚾᛉᛖ-/
+ᚣᚷᛁᛠᛝᚢᛗᛏᚳᚷᛠᛠ-ᛄᚫ-ᛒᛈᚹᛞ.ᚠᚣ/
+ᛉ-ᚫᚢᚠ-ᛇᛄᛈ-ᛉᛚᚦᛠᚪ-ᛚᚦ-ᚳᚣᚢᛡ./
+ᚳᛖ-ᛚᚫᛇᛁᛉᚦᛋᚫᚻᚫ-ᚦᚣᚠᛚᚳᛖᚱ-ᛈᚠᚪᛉ-ᚱᛒᛖ-ᚫᚳᛒᚠ./
+</code></pre>
+<figure class="figure mb-4">
+    <img src="/img/liber-primus-solution-welcome-1.png" class="figure-img img-fluid border rounded" alt="Boxentriq Vigenere Cipher autosolver finding the DIVINITY key for the Liber Primus Welcome page" loading="lazy" width="1346" height="1970" />
+    <figcaption class="figure-caption text-center">The Vigenere autosolver finds the DIVINITY key from the first three lines of the Welcome page.</figcaption>
+</figure>
+<pre class="bg-dark text-white overflow-auto p-3"><code>WELCOME
+WELCOME PILGRIM TO THE GREAT JOVRNEY TOWARD THE END OF ALL THNGS
+IT IS NOT AN EASY TRIP BVT FOR THOSE WHO FIND THEIR WAY HERE IT IS A NECESSARY ONE
+ALONG THE WAY YOV WILL FIND AN END TO ALL STRVGGLE AND SVFFERNG YOVR INNOCENCE YOVR ILLVSIANS YOVR CERTAINTY AND YOVR REALITY
+VLTIMATELY YOV WILL DISCOVER AN END TO SELF
+IT IS THROVGH THIS PILGRIMAGE THAT WE SHAPE OVRSELVES AND OVR REALITIES
+JOVRNEY DEEP WITHIN AND YOV WILL ARRIVE OVTSIDE
+LICE THE INSTAR IT IS ONLY THROVGH GONG WITHIN THAT WE MAY EMERGE
+
+WIDSOM
+YOV ARE A BENG VNTO YOVRSELF
+YOV ARE A LAW VNTO YOVRSELF
+EACH INTELLIGENCE IS HOLY
+FOR ALL THAT LIVES IS HOLY
+AN INSTRVCTIAN COMMAND YOVR OWN SELF</code></pre>
+
+<h3 id="an-end" class="h5">An End</h3>
+<p>
+    Source identifier: <code>56.jpg</code> in LP2, shown as complete-set page <code>73.jpg</code> in
+    <code>scream314/cicada3301</code>. The known stream is <code>phi(prime)</code>, equivalent to prime-minus-one for
+    each prime, applied modulo 29 as a forward Gematria shift. This is not a simple Vigenere autosolve; it is a custom
+    numerical stream that Boxentriq helps inspect and verify.
+</p>
+<p>
+    Use the <a href="/ciphers/cicada-3301-totient-cipher" class="content-link">Cicada 3301 Totient Cipher</a> tool to reproduce this
+    prime-minus-one workflow directly with the Liber Primus F-skip rule.
+</p>
+<ol>
+    <li>Convert runes to Gematria positions.</li>
+    <li>Generate the prime-minus-one stream and reduce each value modulo 29.</li>
+    <li>Shift down in the forward Gematria alphabet and verify the result.</li>
+</ol>
+<p class="fw-semibold mb-2">Ciphertext</p>
+<pre class="bg-dark text-white overflow-auto p-3" style="max-height: 12em;"><code>ᚫᛄ-ᛟᛋᚱ.ᛗᚣᛚᚩᚻ-ᚩᚫ-ᚳᚦᚷᚹ-ᚹᛚᚫ.ᛉ/
+ᚩᚪᛈ-ᛗᛞᛞᚢᚷᚹ-ᛚ-ᛞᚾᚣᛄ-ᚳᚠᛡ-ᚫᛏ/
+ᛈᛇᚪᚦ-ᚳᚫ./
+&
+36367763ab73783c7af284446c/
+59466b4cd653239a311cb7116/
+d4618dee09a8425893dc7500b/
+464fdaf1672d7bef5e891c6e227/
+4568926a49fb4f45132c2a8b4/
+&
+ᚳᛞ-ᚠᚾ-ᛡᛖ-ᚠᚾᚳᛝ-ᚱᚠ-ᚫᛁᚱᛞᛖ-ᛋᚣᛄᛠᚢ/
+ᛝᚹ-ᛉᚩ-ᛗᛠᚹᚠ-ᚱᚷᛡ-ᛝᚱᛒ-ᚫᚾᚢᛋ./
+</code></pre>
+<figure class="figure mb-4">
+    <img src="/img/liber-primus-solution-an-end.png" class="figure-img img-fluid border rounded" alt="Boxentriq Cicada 3301 Totient Cipher solution for the Liber Primus An End page" loading="lazy" width="1352" height="1757" />
+    <figcaption class="figure-caption text-center">Solving the Liber Primus An End page with Boxentriq's Cicada 3301 Totient Cipher tool.</figcaption>
+</figure>
+<pre class="bg-dark text-white overflow-auto p-3"><code>AN END
+WITHIN THE DEEP WEB
+THERE EXISTS A PAGE THAT HASHES TO
+36367763ab73783c7af284446c59466b4cd653239a311cb7116d4618dee09a8425893dc7500b464fdaf1672d7bef5e891c6e2274568926a49fb4f45132c2a8b4
+IT IS THE DVTY OF EVERY PILGRIM TO SEEC OVT THIS PAGE</code></pre>
+
+<h2 id="known-clues">Known Clues</h2>
+<ul class="list-spaced">
+    <li>The verified 2016 message says that <em>Liber Primus</em> is the way, its words are the map, their meaning is the road, and their numbers are the direction.</li>
+    <li>Cicada's warning to verify OpenPGP signatures from <code>7A35090F</code> is essential because many public claims are unsigned or impersonated.</li>
+    <li>Modulo 29 matters because Gematria Primus has 29 runes. Shifts, key streams, and prime-derived methods often reduce values into that alphabet.</li>
+    <li>Prime and totient patterns appear in solved material. The <code>An End</code> method uses <code>phi(prime)</code>, which is prime-minus-one, as its stream.</li>
+    <li>Gematria sums and prime/emirp observations are useful checks, but they are supporting evidence, not a complete decryption method by themselves.</li>
+    <li>The <code>An End</code> page points to a deep-web page by hash, which keeps the unsolved work tied to both text and external retrieval.</li>
+    <li>Rune values are ambiguous: <code>U/V</code>, <code>C/K</code>, <code>S/Z</code>, <code>NG/ING</code>, and <code>IA/IO</code> has to be interpreted.</li>
+    <li>Unverified public solutions should be treated as proposed or community analysis until the method is reproducible and source-framed.</li>
+</ul>
+
+
+<h2 id="resources-and-further-reading">Resources and Further Reading</h2>
+<ul class="list-spaced">
+    <li>
+        <a href="https://uncovering-cicada.fandom.com/wiki/Liber_Primus" class="content-link" target="_blank" rel="nofollow noopener">Uncovering Cicada Wiki: Liber Primus</a> -
+        community background on the book and solved pages.
+    </li>
+    <li>
+        <a href="https://github.com/scream314/cicada3301" class="content-link" target="_blank" rel="nofollow noopener">scream314/cicada3301</a> -
+        community archive of Cicada files, notes, and source material.
+    </li>
+    <li>
+        <a href="https://github.com/scream314/cicada3301/blob/master/liber_primus.md" class="content-link" target="_blank" rel="nofollow noopener">scream314/cicada3301: liber_primus.md</a> -
+        companion notes and page walkthrough material.
+    </li>
+    <li>
+        <a href="https://github.com/scream314/cicada3301/blob/master/pages_and_ciphers.md" class="content-link" target="_blank" rel="nofollow noopener">scream314/cicada3301: pages_and_ciphers.md</a> -
+        source for the reproduced transcription table.
+    </li>
+    <li>
+        <a href="https://github.com/scream314/cicada3301/tree/master/assets/2014/liber-primus-complete" class="content-link" target="_blank" rel="nofollow noopener">scream314/cicada3301: Liber Primus assets</a> -
+        image files for the complete source set.
+    </li>
+    <li>
+        <a href="https://github.com/rtkd/iddqd" class="content-link" target="_blank" rel="nofollow noopener">rtkd/iddqd</a> -
+        archive-oriented repository of Cicada 3301 files, transcriptions, and related assets.
+    </li>
+    <li>
+        <a href="https://www.cicadasolvers.com/quickstart/" class="content-link" target="_blank" rel="nofollow noopener">CicadaSolvers: Liber Primus Cryptanalysis Briefing</a> -
+        current solver briefing and LP1/LP2 status overview.
+    </li>
+    <li>
+        Boxentriq tools:
+        <a href="/encodings/gematria-primus-translator" class="content-link">Gematria Primus Translator</a>,
+        <a href="/ciphers/vigenere-cipher" class="content-link">Vigenere Cipher</a>,
+        <a href="/analysis/frequency-analysis" class="content-link">Frequency Analysis</a>,
+        <a href="/analysis/text-analysis" class="content-link">Text Analysis</a>,
+        <a href="/steganography/outguess-extractor" class="content-link">OutGuess Extractor</a>.
+    </li>
+</ul>
+
+    <p class="pt-3">
+        <text>See also:</text>
+ <a href="/guides" class="content-link">Guides</a> | <a href="/analysis/cipher-identifier" class="content-link">Cipher identifier</a> | <a href="/ciphers/cicada-3301-totient-cipher" class="content-link">Cicada totient</a> | <a href="/encodings/pattern-to-letters-converter" class="content-link">Pattern to letters</a> | <a href="/guides/ciphers-and-code-breaking" class="content-link">Code-breaking guide</a> | <a href="/analysis/binary-analysis" class="content-link">Binary analysis</a> | <a href="/analysis/binary-signature-scanner" class="content-link">Binary signature scanner</a>    </p>
+
+            </main>
+
+                <div class="sidebar2">
+                    <div class="sidebar-300"></div>
+                </div>
+
+            <div class="footer-bg"></div>
+<footer class="footer d-lg-flex justify-content-lg-between">
+    <p>
+        &copy; 2026 Johan Åhlén AB. All rights reserved.<br />
+        <span class="footer-meta">
+            Boxentriq Version 2.0.250 · Last update Aug 23, 2026
+        </span>
+    </p>
+    <p>
+        <a href="/resources" class="inherit-link">Resources</a>&nbsp;|
+        <a href="/home/cookiepolicy" class="inherit-link">Cookie Policy</a>&nbsp;|
+        <a href="/home/privacypolicy" class="inherit-link">Privacy Policy</a>&nbsp;|
+        <a href="/home/sitemap" class="inherit-link">Sitemap</a>&nbsp;|
+        <a href="/contact" class="inherit-link" data-q-contact-modal-trigger="true" aria-controls="contactModal" aria-haspopup="dialog">Contact</a>&nbsp;|
+        <a href="/about" class="inherit-link">About</a>
+    </p>
+</footer>
+
+        </div>
+    </div>
+    <template id="iconCopy"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg></template><template id="iconFolderInput"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M2 9V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-1"/><path d="M2 13h10"/><path d="m9 16 3-3-3-3"/></svg></template><template id="iconDownload"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg></template>
+    <div id="toastContainer" class="toast-container position-fixed top-0 end-0 p-3"></div>
+        <script>
+    !function () { "use strict"; !function (e) { if (-1 === e.cookie.indexOf("__adblocker")) { e.cookie = "__adblocker=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/"; var t = new XMLHttpRequest; t.open("GET", "https://www.npttech.com/advertising.js", !0), t.onreadystatechange = function () { if (XMLHttpRequest.DONE === t.readyState) if (200 === t.status) { var n = e.createElement("script"); n.innerHTML = t.responseText, e.getElementsByTagName("head")[0].appendChild(n) } else { var a = new Date; a.setTime(a.getTime() + 3e5), e.cookie = "__adblocker=true; expires=" + a.toUTCString() + "; path=/" } }, t.send() } }(document) }();
+</script>
+<script>
+    !function () { "use strict"; var e; e = document, function () { var t, n; function r() { var t = e.createElement("script"); t.src = "https://cafemedia-com.videoplayerhub.com/galleryplayer.js", e.head.appendChild(t) } function a() { var t = e.cookie.match("(^|[^;]+)\\s*__adblocker\\s*=\\s*([^;]+)"); return t && t.pop() } function c() { clearInterval(n) } return { init: function () { var e; "true" === (t = a()) ? r() : (e = 0, n = setInterval((function () { 100 !== e && "false" !== t || c(), "true" === t && (r(), c()), t = a(), e++ }), 50)) } } }().init() }();
+</script>
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"f4f26856512e4e8cbf0ff46425afa2da","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

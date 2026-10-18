@@ -1,0 +1,83 @@
+
+seed-phrase.com
+seed-phrase.com
+To be claimed: 
+ BTC
+ (~
+$
+)
+s
+Bitcoin, as a store of value, is scarce, highly sought after, and controlled only by the key-holders.
+                Bitcoin, as a protocol, is decentralized, trust-minimized, and designed to be resistant to corruption.
+Welcome to seed-phrase.com. Solve puzzles to uncover a secret recovery phrase that unlocks a Bitcoin wallet. The first person to decode the entire phrase will control its contents. Visit back here for additional clues and updates. Have fun & good luck.
+Encrypt & Decrypt Tool
+ | 
+Questions & Feedback
+ | 
+Policies & Disclaimers
+Clues
+2024-07-12
+                    Speed is critical. Be the first to discover the seed phrase and then control the 🏆 at the end of the 🌈.
+These 
+words
+ will be useful:
+2024-07-14
+                    Beneath the surface, truths do sleep,
+                    In the dark, their secrets keep.
+                    Lift the veil, and you will see,
+                    To reveal, expose, and set them free.
+                    What word embodies this quest?
+                    The 
+link
+ to this clue will only open one time ever. 
+2024-07-16
+2024-07-19
+                    The month in which the world celebrates the harvest and prepares for the coming winter also saw the release of 
+a transformative paper
+ announcing a peer-to-peer electronic cash system.
+2024-07-20
+                    web favorite icon
+2024-07-24
+                    🤢
+2024-07-28
+2024-07-30
+                    m/84'/0'/0'/0/0
+2024-08-09
+2024-08-14
+Encrypted Text: 
+af12ff6a02e571eae376e579a00bfdd318afee92
+IV: 
+4faf05ee74196a6062d383e6
+Password: 
+answer to 2024-07-19 clue (lc)
+Salt: 
+salt
+Balance to be claimed 
+increased
+ from 0.005 BTC to 0.010 BTC.
+Encryption & Decryption
+This tool lets you encrypt and decrypt a message. When you encrypt a message, the original text is scrambled using a password, making it unreadable to anyone who doesn’t have the correct password. The password is a key that locks (encrypts) and unlocks (decrypts) your message. The encrypted message is the scrambled version that you can safely share publicly with minimal risk that the wrong person could decrypt it.
+To decrypt a message, you’ll need the encrypted text, the Initialization Vector (IV), and the same password you used for encryption. Decryption is the reverse process — it takes the scrambled text and turns it back into the original message using the password and IV. If you enter everything correctly, your secret message will be revealed!
+Play around.
+Encrypt
+Text to Encrypt:
+Some text
+Password:
+Salt (optional):
+Encrypt
+Initialization Vector:
+Encrypted Text:
+Copy fields to the right
+Decrypt
+Text to Decrypt:
+Initialization Vector:
+Password:
+Salt:
+Decrypt
+Decrypted Text:
+There are additional features to the encryption used here that make the encryption stronger and harder to crack without all of the needed information. First, after you encrypt a message, you’ll see something called an ‘Initialization Vector’ (IV). This is a unique piece of information that helps ensure that even if you encrypt the exact same message twice, you’ll get different results which adds even more security. Second, there’s an optional ‘salt’ field, which lets the person encrypting the message add additional random data. Both of these features make it hard to just build a big database that maps the encrypted text to the decrypted text.
+Questions & Feedback
+Click to send questions or feedback.
+Policies & Disclaimers
+Participation is voluntary. No purchase is necessary. You are not guaranteed any outcome or reward. Beware of scammers. Never give your private keys or seed recovery phrase to anyone you don't want to have access to your wallets, addresses, and the assets they contain. No one should ever ask you for this sensitive information via email, chat, text, websites, apps, etc., unless they are trying to steal your funds. This website, seed-phrase.com, is the only official channel but it will link out to and embed other channels. The organizers are not liable for any losses or damages incurred through participation in the game or use of the website. By participating, you agree to the terms and conditions outlined on the website. While accuracy is a priority, the completeness or accuracy of any information provided is not guaranteed. There will be red herrings. The organizers reserve the right to modify the rules, disclaimers, and policies at any time without prior notice.
+You matter.

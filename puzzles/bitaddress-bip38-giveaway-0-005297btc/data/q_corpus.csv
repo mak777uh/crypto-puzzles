@@ -1,0 +1,131 @@
+source;text
+stacker.csv;pull down to refresh
+stacker.csv;Brute force and the coins are yours
+stacker.csv;Some years ago I made a paper wallet with bip38 passphrase, which I don't remember today. I donate this to the one who can brute force it or to every bitcoiner if no one succeed. I suspect the passphrase is not more than 30 characters.
+stacker.csv;Private key: 6PfQTphCYc1Fee19uPz2pmou5RVBDVgw8VcrPfGLos4ktUnARdiFLYhcNU
+stacker.csv;Public key: 1J7BVeP8JK4op2X3GN3Hy7xkTnGnQTMpou
+stacker.csv;Passphrase: <find out>
+stacker.csv;Which i generated on this site
+stacker.csv;If you succeed with brute forcing, the coins are yours. I will never have time to do it my self I'm stuck in love life laugh.
+stacker.csv;This is a demonstration that phasphrase is not an extra security layer it is only extra step for donating the coins to every bitcoiner.
+stacker.csv;fractions of a penny for your thoughts?
+stacker.csv;related posts
+stacker.csv;Just found on Reddit: BTC White Hat Bounty
+stacker.csv;"XYZVault - ""we can't see your data"" vs ""we won't look"" which one matters to you?"
+stacker.csv;Bip38 - passphrase
+stacker.csv;Introducing easywallet: a simple and secure brainwallet
+stacker.csv;Definitive explanation of my weird Bitcoin transaction
+stacker.csv;view all related items
+stacker.csv;Looking at this BIP38 encrypted wallet challenge, I can make some educated guesses about the passphrase characteristics and brute force feasibility:
+stacker.csv;BIP38 uses scrypt with heavy parameters (N=16384, r=8, p=8), making it very slow to compute. An RTX 3090 can achieve roughly
+stacker.csv;Rather than pure brute force, more practical approaches would be:
+stacker.csv;Pure brute force is likely
+stacker.csv;even with a 3090, unless the passphrase is very short (≤8 characters) and uses a limited character set. The BIP38 scrypt parameters were specifically designed to make brute forcing prohibitively expensive.
+stacker.csv;The 500k sats might not justify the electricity costs for extended brute forcing, especially given the astronomical time estimates for longer passphrases.
+stacker.csv;A supercomputer can solve this
+stacker.csv;The passphrase is not an additional layer of security, but it certainly slows down the movement of funds by an attacker. Thank you for the challenge you are issuing!
+stacker.csv;Passphrase Analysis
+stacker.csv;Likely Characteristics:
+stacker.csv;: Probably 8-20 characters (user mentioned combining 3 passwords, but likely not the full 30 characters)
+stacker.csv;Character set
+stacker.csv;": Likely alphanumeric only (a-z, A-Z, 0-9) based on user saying ""probably not with special characters"""
+stacker.csv;Dictionary words
+stacker.csv;: Possibly - user mentioned not using a password manager and needing to remember it, suggesting human-memorable patterns
+stacker.csv;Estimated Character Set Sizes:
+stacker.csv;Lowercase only: 26 characters
+stacker.csv;Alphanumeric (mixed case): 62 characters
+stacker.csv;Alphanumeric + common symbols: ~95 characters
+stacker.csv;Brute Force Time Estimates (RTX 3090)
+stacker.csv;1,000-5,000 BIP38 attempts per second
+stacker.csv;Time estimates for different scenarios:
+stacker.csv;Character Set
+stacker.csv;Time (Average)
+stacker.csv;Lowercase (26)
+stacker.csv;Alphanumeric (62)
+stacker.csv;20+ million years
+stacker.csv;Realistic Attack Strategies
+stacker.csv;Dictionary attacks
+stacker.csv;- Common passwords, personal info
+stacker.csv;Hybrid attacks
+stacker.csv;- Dictionary words + numbers/years
+stacker.csv;Pattern-based attacks
+stacker.csv;- Since user mentioned combining 3 passwords
+stacker.csv;Wordlist attacks
+stacker.csv;- Using leaked password databases
+stacker.csv;Wow, I remember using bitaddress. You had to download the source to your computer and run it with wifi turned off so you didn't accidentally leak your private key. I created a bunch of vanity addresses back in the day. I have no idea if I left any sats behind!
+stacker.csv;Challenge accepted. Have lots of sats in case someone manages to do it.
+stacker.csv;hahaha cool challenge!
+stacker.csv;Good luck !! it might just take few qd years
+stacker.csv;The private key starts with '
+stacker.csv;That gives you
+stacker.csv;indication of the encryption algorithm used: EC multiply, no compression, no lot/sequence numbers, according to BIP38.
+stacker.csv;Whether that makes it any easier to brute force, I don't know.
+stacker.csv;That does make it somewhat easier. I'd suspect the best method is really gonna be trying out combinations of words or something like that.
+stacker.csv;This assumes the password is randomly generated, and they indicated they didn't use special characters.
+stacker.csv;Still worth a shot, right? lol
+stacker.csv;deleted by author
+stacker.csv;🤩 more than 500k sats
+stacker.csv;Not bad. The longer in takes to brute force the more it appreciate
+stacker.csv;Sats so close, yet so far away...)
+stacker.csv;Can you hint at the type of passphrase you used? Do you include 1736 $&# etc or is it pure words?
+stacker.csv;I don't remember, I have tested my passwords I used during that time, so probably it is not with special characters
+stacker.csv;Copy that. If I continue to fail after a month I'll try adjusting tactics.
+stacker.csv;how that's going?
+stacker.csv;Any hints as to the passphrase beyond likely under 30 characters? Like, did you likely use words like an actual passphrase or design it more like a password?
+stacker.csv;Most likely I did not use a passphrase of the length 30. But I remeber that I used to combine 3 different passwords to secure wallets which is about that length. I have withdrawn funds from the wallet once so it cannot be an imposible passpharse and most likely I did not used a password manager for it.
+stacker.csv;how can I brute force that? with what program?
+stacker.csv;It's an online treasure hunt
+stacker.csv;I wonder if we have the same passphrase of
+stacker.csv;I only opt for the highest of security on my bitcoins
+stacker.csv;Brute force might sound easy but it ain't when it comes to Bitcoin
+stacker.csv;OoooOoOO.......watching this  0.0
+stacker.csv;Sorry friend 😔
+stacker.csv;No, It was when Stacker news was new and single letter nicknames was avaible, didn't put so much thought in it and q was the first random letter which was not in use.
+stacker (1).csv;on: EU's Climate Hypocrisy: Tariffs on Chinese EVs Reveal True Priorities
+stacker (1).csv;We can first of all declare that tariffs in the long run are bad for domestic innovation because the real competition is played out and there is no incentives to improve anymore.
+stacker (1).csv;Regarding the situation with China, actions must be taken because Chinese producers receive government subsidies, making it impossible to compete fairly. The challenge is to balance maintaining domestic innovation with reducing CO2 emissions, without ignoring the impact of external market forces.
+stacker (1).csv;I don't now  how valid this data is might suspect that China needs to make some actions:
+stacker (1).csv;on: What was your first purchase made with BTC?
+stacker (1).csv;burgers and beer somewhere around 2015 at Room 77 in Berlin, this was during a time when I did not practise spend and replace. Think it was like 0.27 BTC
+stacker (1).csv;on: European Pension Systems: A Looming Crisis
+stacker (1).csv;What is called Bitcoin core today it's former name was Bitcoin-Qt. Managed to forgot my password for my  first encrypted wallet, I spent one weekend trying to test all combinations around 2011, The issue was my frequency on typing the password was so high that two letter could swap and if I concentrated to write it correct it would become in the correct order but could some times fail when my mussle memory just made the dance on the keyboard.
+stacker (1).csv;Don't remember exactly year but started using the Bitcoin wallet on android by Schildbach which I used in Berlin to buy beer and burgers at Room 77. And also went with Myceliym which was early with Hierarchical Deterministic addresses.
+stacker (1).csv;Was doing some reckless stuff with blockchain.info wallets where your wallet was the id in the URL, but it was convenient.
+stacker (1).csv;on: What Made You Become Bitcoin Maximalist?
+stacker (1).csv;In the past, I've taken my maximalism in stages. Back in 2016, I was a dedicated Ethereum enthusiast, but by 2018, my opinion changed after a revealing experience - I worked as a freelance on project for a ICO as utility token that turned out to be a scam, much like 99.999% of other ICOs. I kept the payment in ETH from that job until around 2019, when my maximalism kicked in. At that time, I decided to exchange all my shit coins and airdrops and Bitcoin forks like Bitcoin Cash and Bitcoin SV for bitcoin . The COVID-19 pandemic and the subsequent money printing by governments around the world strengthened my conviction, so I swapped all my fiat money in bitcoin using dollar-cost averaging.
+stacker (1).csv;To provide some context, I received my first Bitcoin in late 2010 and became deeply involved in the whitepaper, trying to understand its concepts. In 2011, I started buying Bitcoin. I later switched to Ethereum, in 2017 and sold almost all my holdings for fiat. I didn't return to Bitcoin until 2019 again.
+stacker (1).csv;on: Bitcoin in a CBDC World
+stacker (1).csv;"It depends on how far we would venture into a dystopian world. If CBDCs (Central Bank Digital Currencies) are implemented sensibly, they would not be linked to your identity or a score reflecting your status as a good citizen. However, I think we can agree that even if the intentions are for the greater good, there is a slippery slope here; over time, this system could be used for controlling and establishing totalitarian central control over all people, tying the necessity of having a job directly to putting food on the table."
+stacker (1).csv;In such a scenario, we could end up in multiple situations where people might consider Bitcoin as a solution:
+stacker (1).csv;on: Stackers Who Budget
+stacker (1).csv;Hehe this feels allot it was made with chatGPT. It starts to feel that majority of what you read on these kind of communities are more and more generated stuff.
+stacker (1).csv;on: Do you keep a budget?
+stacker (1).csv;Yes I'm doing something called envelope budgeting since a while back. Previous I just set a side a fixed amout of fiat for bitcoin and savings the first thing when the pay check arrived.
+stacker (1).csv;Today I'm budgeting more granual to have more options to change my behaviour.
+stacker (1).csv;A tool I use is
+stacker (1).csv;on: Muun question
+stacker (1).csv;They always do on-chain transactions with submarine-swaps it is not a real lightning wallet. Use Phoenix or Breez for the best non-custodial experience.
+stacker (1).csv;on: How Does Tether Fail?
+stacker (1).csv;Tether is one of the biggest buyers of US treasure bonds, they will exist as long as they fuel the fiat ponzi.
+stacker (1).csv;on: Satscards uses
+stacker (1).csv;They are not meant for using as a piggy bank.
+stacker (1).csv;These card are meant for as reusable secure gift cards (thereby no backup) or as mentioned before off chain swap.
+stacker (1).csv;For a piggy bank solution tapsigner is better. Possible to make a backup.
+stacker (1).csv;on: Dreaming about bitcoin mass adoption?
+stacker (1).csv;When people are using the paper notes for paying for stuff.. Almost non of the users understands how new paper notes are issued or why and how different stuff have a price.
+stacker (1).csv;When people are using the plastic cards almost non of the users understand how it works, they don't understans the cryptographic algorithms which protects the credentials for your payment information which the merchants system pass up streams, almost non of the user understands that visa/mastercard never touched their money but takes a fee anyway.
+stacker (1).csv;There is so many things in the society which people using everyday but have no clue about how it works and why. They just accept it because it is more convenient to use it than the alternatives.
+stacker (1).csv;on: Never forget the password for your seed phrase, or your Bitcoins are lost
+stacker (1).csv;I have a demonstration in action with the problem of using seed phrases
+stacker (1).csv;Please avoid it
+stacker (1).csv;on: deleted by author
+stacker (1).csv;If you try the seed vault and getting stuck in why you can only add one seed add the seed here
+stacker (1).csv;Advanced/tools --> Temporary seed
+stacker (1).csv;on: What do you feel about parents paying their children sats to do housework?
+stacker (1).csv;My parents raised me with the simple belief that money comes from hard work. Even though my parents were the wealthiest in the neighborhood/town, it wasn't often that I could simply point at something and get it. If I wanted something, I had to earn it, and by 'earn it,' I mean I had to work to collect money..  This is decades before bitcoin.
+stacker (1).csv;I can observe my friends' kids today, aged 10-13, who seem to have almost no understanding of the value of money. I often witness them spending money freely during vacations as if it were limitless, only to end up disappointed when their pockets are empty, leading them to start begging for more...
+stacker (1).csv;I have a kid, well it is some years before I can start sending sats (but I can hodl), I will not force sats but I will encourage that. It is important that the kid understand that it is an opportunity to earn some hard money by doing stuff at home and for what rate.
+stacker (1).csv;on: Brute force and the coins are yours
+stacker (1).csv;on: Lyn Alden book club part I
+stacker (1).csv;on: Are you known as the crazy bitcoin person in your family?
+stacker (1).csv;I rearly try to push bitcoin on people but if I have a debt to pay or buying something from friends I always ask bitcoin or the nation currency, sometimes they are interested and accept a lightning network payment (me guiding)

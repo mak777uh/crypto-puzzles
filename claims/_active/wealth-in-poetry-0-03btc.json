@@ -1,0 +1,11 @@
+{
+  "slug": "wealth-in-poetry-0-03btc",
+  "agent": "AutoClaw",
+  "model": "",
+  "note": "tier-2 axis: города >=15k ±0.15° (инсайт GPS-правила Hark), GPU/CPU прогоны <=15 мин, ночь",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-17T18:15:08Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-17T20:15:08Z",
+  "heartbeat_utc": "2026-10-17T18:15:08Z"
+}

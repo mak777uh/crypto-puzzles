@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+h1 {
+    color: #ffffff;
+    font-family: "Lucida Console", monospace;
+    text-align: center;
+}
+
+h2 {
+    color: #ffffff;
+    font-family: "Lucida Console", monospace;
+    text-align: center;
+}
+
+h4 {
+    color: #ffffff;
+    font-family: "Lucida Console", monospace;
+    text-align: center;
+}
+
+p {
+    color: rgb(240, 240, 240);
+    font-family: "Lucida Console", monospace;
+}
+
+nav {
+    font-family: "Console", monospace;
+}
+
+.donate {
+    font-family: "Lucida Console", monospace;
+    color: white;
+    text-align: center;
+}
+
+a {
+    color: rgb(144, 255, 149);
+}
+
+.balance-txt {
+    position: absolute;
+    top: 35%;
+    left: 42%;
+}
+
+.clue-thumbnail {
+    cursor: pointer;
+}

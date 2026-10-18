@@ -1,0 +1,10 @@
+BountyRegistry MATCH ✓  len built=5909B chain=5909B
+Game           MATCH ✓  len built=2409B chain=2409B
+Game2D         MATCH ✓  len built=2234B chain=2234B
+GameBitboard   MATCH ✓  len built=2145B chain=2145B
+GameEnum       MATCH ✓  len built=2617B chain=2617B
+GameMonadic    MATCH ✓  len built=4389B chain=4389B
+GameNested     MATCH ✓  len built=3535B chain=3535B
+GameTrait      MATCH ✓  len built=3148B chain=3148B
+
+ИТОГ: все 8 контрактов байт-в-байт совпадают с deployed

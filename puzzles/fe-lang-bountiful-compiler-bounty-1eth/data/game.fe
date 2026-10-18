@@ -1,0 +1,169 @@
+// =============================================================================
+// Game contract — 15-puzzle challenge with flat board in StorageMap
+// =============================================================================
+
+use std::abi::sol
+use std::evm::{Address, Ctx, Call, StorageMap, Evm, assert, revert}
+use shared::{
+    Error,
+    winning_value,
+    unpack_board,
+    LockValidatorMsg,
+}
+use shared::game_util::{ADJACENCY, is_movable_to}
+use shared::dummy_lock_validator::DummyLockValidator
+use shared::{SOLVED_BOARD, UNSOLVABLE_BOARD, ONE_MOVE_BOARD}
+
+pub msg GameMsg {
+    #[selector = sol("getBoard(uint256)")]
+    GetBoard { index: u256 } -> u256,
+    #[selector = sol("isSolved()")]
+    IsSolved -> bool,
+    #[selector = sol("moveField(uint256)")]
+    MoveField { index: u256 },
+}
+
+struct GameStore {
+    lock_validator: Address,
+    board: StorageMap<u256, u256>,
+}
+
+pub contract Game uses (ctx: Ctx, call: mut Call) {
+    mut store: GameStore
+
+    init(lock_validator: Address, packed_board: u256) uses (mut store) {
+        store.lock_validator = lock_validator
+        let board = unpack_board(packed: packed_board)
+        let mut i: u256 = 0
+        while i < 16 {
+            store.board.set(key: i, value: board[i as usize])
+            i += 1
+        }
+    }
+
+    recv GameMsg {
+        GetBoard { index } -> u256 uses (store) {
+            store.board.get(key: index)
+        }
+
+        IsSolved -> bool uses (store) {
+            let mut i: u256 = 0
+            while i < 16 {
+                if store.board.get(key: i) != winning_value(index: i) {
+                    return false
+                }
+                i += 1
+            }
+            return true
+        }
+
+        MoveField { index } uses (mut store, ctx, mut call) {
+            store.lock_validator.call(LockValidatorMsg::ValidateOwnsLock { owner: ctx.caller(), challenge: ctx.address() })
+
+            if index > 15 {
+                revert(Error::InvalidIndex)
+            }
+
+            let mut empty_idx: u256 = 16
+            let mut j: u256 = 0
+            while j < 16 {
+                if store.board.get(key: j) == 0 {
+                    empty_idx = j
+                }
+                j += 1
+            }
+
+            let encoded = ADJACENCY[empty_idx as usize]
+            if !is_movable_to(encoded_moves: encoded, target: index) {
+                revert(Error::NotMovable)
+            }
+
+            let val = store.board.get(key: index)
+            store.board.set(key: index, value: 0)
+            store.board.set(key: empty_idx, value: val)
+        }
+    }
+}
+
+// =============================================================================
+// Tests
+// =============================================================================
+
+// Two moves board: [1,2,...,13,0,14,15] — empty at 13
+const TWO_MOVES_BOARD: u256 = 0xFE0DCBA987654321
+
+#[test]
+fn test_game_deploy_and_check_board() uses (evm: mut Evm) {
+    let validator = evm.create2<DummyLockValidator>(value: 0, args: (false,), salt: 0)
+    let game = evm.create2<Game>(value: 0, args: (validator, SOLVED_BOARD), salt: 1)
+
+    let v0: u256 = evm.call(addr: game, gas: 100000, value: 0, message: GameMsg::GetBoard { index: 0 })
+    assert(v0 == 1)
+    let v7: u256 = evm.call(addr: game, gas: 100000, value: 0, message: GameMsg::GetBoard { index: 7 })
+    assert(v7 == 8)
+    let v15: u256 = evm.call(addr: game, gas: 100000, value: 0, message: GameMsg::GetBoard { index: 15 })
+    assert(v15 == 0)
+
+    let solved: bool = evm.call(addr: game, gas: 200000, value: 0, message: GameMsg::IsSolved {})
+    assert(solved)
+}
+
+#[test]
+fn test_game_unsolved() uses (evm: mut Evm) {
+    let validator = evm.create2<DummyLockValidator>(value: 0, args: (false,), salt: 10)
+    let game = evm.create2<Game>(value: 0, args: (validator, UNSOLVABLE_BOARD), salt: 11)
+
+    let solved: bool = evm.call(addr: game, gas: 200000, value: 0, message: GameMsg::IsSolved {})
+    assert(!solved)
+}
+
+#[test]
+fn test_game_move_and_solve() uses (evm: mut Evm) {
+    let validator = evm.create2<DummyLockValidator>(value: 0, args: (false,), salt: 20)
+    let game = evm.create2<Game>(value: 0, args: (validator, ONE_MOVE_BOARD), salt: 21)
+
+    evm.call(addr: game, gas: 300000, value: 0, message: GameMsg::MoveField { index: 15 })
+
+    let solved: bool = evm.call(addr: game, gas: 200000, value: 0, message: GameMsg::IsSolved {})
+    assert(solved)
+}
+
+#[test(should_revert)]
+fn test_game_invalid_move() uses (evm: mut Evm) {
+    let validator = evm.create2<DummyLockValidator>(value: 0, args: (false,), salt: 30)
+    let game = evm.create2<Game>(value: 0, args: (validator, UNSOLVABLE_BOARD), salt: 31)
+
+    // Move index 0 — not adjacent to empty at 15
+    evm.call(addr: game, gas: 300000, value: 0, message: GameMsg::MoveField { index: 0 })
+}
+
+#[test(should_revert)]
+fn test_game_move_without_lock() uses (evm: mut Evm) {
+    let validator = evm.create2<DummyLockValidator>(value: 0, args: (true,), salt: 40)
+    let game = evm.create2<Game>(value: 0, args: (validator, UNSOLVABLE_BOARD), salt: 41)
+
+    evm.call(addr: game, gas: 300000, value: 0, message: GameMsg::MoveField { index: 14 })
+}
+
+#[test(should_revert)]
+fn test_game_move_field_invalid_index() uses (evm: mut Evm) {
+    let validator = evm.create2<DummyLockValidator>(value: 0, args: (false,), salt: 46)
+    let game = evm.create2<Game>(value: 0, args: (validator, SOLVED_BOARD), salt: 47)
+
+    evm.call(addr: game, gas: 300000, value: 0, message: GameMsg::MoveField { index: 16 })
+}
+
+#[test]
+fn test_game_multiple_moves() uses (evm: mut Evm) {
+    let validator = evm.create2<DummyLockValidator>(value: 0, args: (false,), salt: 48)
+    let game = evm.create2<Game>(value: 0, args: (validator, TWO_MOVES_BOARD), salt: 49)
+
+    let solved: bool = evm.call(addr: game, gas: 200000, value: 0, message: GameMsg::IsSolved {})
+    assert(!solved)
+
+    evm.call(addr: game, gas: 300000, value: 0, message: GameMsg::MoveField { index: 14 })
+    evm.call(addr: game, gas: 300000, value: 0, message: GameMsg::MoveField { index: 15 })
+
+    let solved: bool = evm.call(addr: game, gas: 200000, value: 0, message: GameMsg::IsSolved {})
+    assert(solved)
+}

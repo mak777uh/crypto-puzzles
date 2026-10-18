@@ -1,0 +1,245 @@
+// =============================================================================
+// GameEnum — 15-puzzle using enums, match, struct with impl, fixed array
+//
+// Board stored as [u256; 16] fixed array. Move logic uses an enum Direction
+// and match expressions. Point struct with impl methods converts between
+// flat index and (row, col) coordinates.
+//
+// Fe features exercised: enum, match expression, struct with impl,
+// method calls, [u256; 16] fixed array in storage.
+// =============================================================================
+
+use std::abi::sol
+use std::evm::{Address, Ctx, Call, Evm, assert, revert}
+use shared::{
+    Error,
+    winning_value,
+    unpack_board,
+    SOLVED_BOARD,
+    UNSOLVABLE_BOARD,
+    ONE_MOVE_BOARD,
+    LockValidatorMsg,
+}
+use shared::dummy_lock_validator::DummyLockValidator
+
+enum Direction {
+    Up,
+    Down,
+    Left,
+    Right,
+}
+
+struct Point {
+    row: usize,
+    col: usize,
+}
+
+impl Point {
+    fn from_index(index: usize) -> Point {
+        Point { row: index / 4, col: index % 4 }
+    }
+
+    fn to_index(self) -> usize {
+        self.row * 4 + self.col
+    }
+
+    fn can_move(self, dir: Direction) -> bool {
+        match dir {
+            Direction::Up => self.row > 0,
+            Direction::Down => self.row < 3,
+            Direction::Left => self.col > 0,
+            Direction::Right => self.col < 3,
+        }
+    }
+
+    fn neighbor(self, dir: Direction) -> Point {
+        match dir {
+            Direction::Up => Point { row: self.row - 1, col: self.col },
+            Direction::Down => Point { row: self.row + 1, col: self.col },
+            Direction::Left => Point { row: self.row, col: self.col - 1 },
+            Direction::Right => Point { row: self.row, col: self.col + 1 },
+        }
+    }
+}
+
+fn winning_value_enum(index: usize) -> u256 {
+    winning_value(index: index as u256)
+}
+
+pub msg GameEnumMsg {
+    #[selector = sol("getBoard(uint256)")]
+    GetBoard { index: u256 } -> u256,
+    #[selector = sol("isSolved()")]
+    IsSolved -> bool,
+    #[selector = sol("moveField(uint256)")]
+    MoveField { index: u256 },
+}
+
+struct GameEnumStore {
+    lock_validator: Address,
+    board: [u256; 16],
+}
+
+pub contract GameEnum uses (ctx: Ctx, call: mut Call) {
+    mut store: GameEnumStore
+
+    init(lock_validator: Address, packed_board: u256) uses (mut store) {
+        store.lock_validator = lock_validator
+        let board = unpack_board(packed: packed_board)
+        let mut i: usize = 0
+        while i < 16 {
+            store.board[i] = board[i]
+            i += 1
+        }
+    }
+
+    recv GameEnumMsg {
+        GetBoard { index } -> u256 uses (store) {
+            store.board[index as usize]
+        }
+
+        IsSolved -> bool uses (store) {
+            let mut i: usize = 0
+            while i < 16 {
+                if store.board[i] != winning_value_enum(index: i) {
+                    return false
+                }
+                i += 1
+            }
+            return true
+        }
+
+        MoveField { index } uses (mut store, ctx, mut call) {
+            store.lock_validator.call(LockValidatorMsg::ValidateOwnsLock { owner: ctx.caller(), challenge: ctx.address() })
+
+            if index > 15 {
+                revert(Error::InvalidIndex)
+            }
+
+            let idx = index as usize
+
+            let mut empty_idx: usize = 16
+            let mut j: usize = 0
+            while j < 16 {
+                if store.board[j] == 0 {
+                    empty_idx = j
+                }
+                j += 1
+            }
+
+            let empty_pt = Point::from_index(index: empty_idx)
+            let mut can_swap: bool = false
+
+            if empty_pt.can_move(dir: Direction::Up) {
+                let nb = empty_pt.neighbor(dir: Direction::Up)
+                if nb.to_index() == idx {
+                    can_swap = true
+                }
+            }
+            if empty_pt.can_move(dir: Direction::Down) {
+                let nb = empty_pt.neighbor(dir: Direction::Down)
+                if nb.to_index() == idx {
+                    can_swap = true
+                }
+            }
+            if empty_pt.can_move(dir: Direction::Left) {
+                let nb = empty_pt.neighbor(dir: Direction::Left)
+                if nb.to_index() == idx {
+                    can_swap = true
+                }
+            }
+            if empty_pt.can_move(dir: Direction::Right) {
+                let nb = empty_pt.neighbor(dir: Direction::Right)
+                if nb.to_index() == idx {
+                    can_swap = true
+                }
+            }
+
+            if !can_swap {
+                revert(Error::NotMovable)
+            }
+
+            let val = store.board[idx]
+            store.board[idx] = 0
+            store.board[empty_idx] = val
+        }
+    }
+}
+
+// =============================================================================
+// Tests
+// =============================================================================
+
+const TWO_MOVES_BOARD: u256 = 0xFE0DCBA987654321
+
+#[test]
+fn test_enum_solved() uses (evm: mut Evm) {
+    let v = evm.create2<DummyLockValidator>(value: 0, args: (false,), salt: 300)
+    let game = evm.create2<GameEnum>(value: 0, args: (v, SOLVED_BOARD), salt: 301)
+
+    let v0: u256 = evm.call(addr: game, gas: 100000, value: 0, message: GameEnumMsg::GetBoard { index: 0 })
+    assert(v0 == 1)
+
+    let solved: bool = evm.call(addr: game, gas: 200000, value: 0, message: GameEnumMsg::IsSolved {})
+    assert(solved)
+}
+
+#[test]
+fn test_enum_move_and_solve() uses (evm: mut Evm) {
+    let v = evm.create2<DummyLockValidator>(value: 0, args: (false,), salt: 310)
+    let game = evm.create2<GameEnum>(value: 0, args: (v, ONE_MOVE_BOARD), salt: 311)
+
+    evm.call(addr: game, gas: 300000, value: 0, message: GameEnumMsg::MoveField { index: 15 })
+
+    let solved: bool = evm.call(addr: game, gas: 200000, value: 0, message: GameEnumMsg::IsSolved {})
+    assert(solved)
+}
+
+#[test]
+fn test_enum_unsolved() uses (evm: mut Evm) {
+    let v = evm.create2<DummyLockValidator>(value: 0, args: (false,), salt: 320)
+    let game = evm.create2<GameEnum>(value: 0, args: (v, UNSOLVABLE_BOARD), salt: 321)
+
+    let solved: bool = evm.call(addr: game, gas: 200000, value: 0, message: GameEnumMsg::IsSolved {})
+    assert(!solved)
+}
+
+#[test(should_revert)]
+fn test_enum_invalid_move() uses (evm: mut Evm) {
+    let v = evm.create2<DummyLockValidator>(value: 0, args: (false,), salt: 322)
+    let game = evm.create2<GameEnum>(value: 0, args: (v, UNSOLVABLE_BOARD), salt: 323)
+
+    // Move index 0 — not adjacent to empty at 15
+    evm.call(addr: game, gas: 300000, value: 0, message: GameEnumMsg::MoveField { index: 0 })
+}
+
+#[test(should_revert)]
+fn test_enum_move_without_lock() uses (evm: mut Evm) {
+    let v = evm.create2<DummyLockValidator>(value: 0, args: (true,), salt: 324)
+    let game = evm.create2<GameEnum>(value: 0, args: (v, UNSOLVABLE_BOARD), salt: 325)
+
+    evm.call(addr: game, gas: 300000, value: 0, message: GameEnumMsg::MoveField { index: 14 })
+}
+
+#[test(should_revert)]
+fn test_enum_move_field_invalid_index() uses (evm: mut Evm) {
+    let v = evm.create2<DummyLockValidator>(value: 0, args: (false,), salt: 330)
+    let game = evm.create2<GameEnum>(value: 0, args: (v, SOLVED_BOARD), salt: 331)
+
+    evm.call(addr: game, gas: 300000, value: 0, message: GameEnumMsg::MoveField { index: 16 })
+}
+
+#[test]
+fn test_enum_multiple_moves() uses (evm: mut Evm) {
+    let v = evm.create2<DummyLockValidator>(value: 0, args: (false,), salt: 332)
+    let game = evm.create2<GameEnum>(value: 0, args: (v, TWO_MOVES_BOARD), salt: 333)
+
+    let solved: bool = evm.call(addr: game, gas: 200000, value: 0, message: GameEnumMsg::IsSolved {})
+    assert(!solved)
+
+    evm.call(addr: game, gas: 300000, value: 0, message: GameEnumMsg::MoveField { index: 14 })
+    evm.call(addr: game, gas: 300000, value: 0, message: GameEnumMsg::MoveField { index: 15 })
+
+    let solved: bool = evm.call(addr: game, gas: 200000, value: 0, message: GameEnumMsg::IsSolved {})
+    assert(solved)
+}

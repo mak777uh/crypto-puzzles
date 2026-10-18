@@ -1,0 +1,201 @@
+n=100
+[05-23 23:01] u/[deleted] (parent=_1tk3up2): [removed]
+---
+[05-23 23:38] u/RandomGeordie (parent=_1tk3up2): when i rank by ascending frequency, am i ranking individual mark types or whole glyphs?
+---
+[05-23 23:50] u/[deleted] (parent=_1tk3up2): [removed]
+---
+[05-24 01:41] u/SteebyJeebs (parent=_onijapk): Whole glyph wouldn’t work cuz several appear at the same frequency. There’s some interesting patterns present among the parts of the glyph tho
+---
+[05-24 01:57] u/[deleted] (parent=_1tk3up2): [removed]
+---
+[05-24 02:12] u/Writtenincaligo (parent=_1tk3up2): Appreciation has been sent. 🔥
+---
+[05-24 07:22] u/Legitimate_Music9127 (parent=_onhn29r): Maybe understanding what the code even does is part of the challenge, right?
+---
+[05-24 07:22] u/[deleted] (parent=_1tk3up2): [removed]
+---
+[05-24 09:42] u/RandomGeordie (parent=_onkbg49): Says you've been banned?
+---
+[05-24 10:09] u/YefimShifrin (parent=_onkqvse): He got shadowbanned by Reddit
+---
+[05-24 10:22] u/RandomGeordie (parent=_onktvn1): Unfortunate! I need puzzle closure! 😂
+---
+[05-24 10:44] u/YefimShifrin (parent=_onkvdba): Proposed solution looks like AI slop
+---
+[05-24 11:36] u/[deleted] (parent=_1tk3up2): [removed]
+---
+[05-24 11:43] u/[deleted] (parent=_1tk3up2): [removed]
+---
+[05-24 17:15] u/Flaky-Rip-1333 (parent=_1tk3up2): Alpha
+---
+[05-24 17:22] u/Flaky-Rip-1333 (parent=_onmwpo1): PM me for the explanation, bro
+---
+[05-24 18:54] u/[deleted] (parent=_1tk3up2): [removed]
+---
+[05-24 18:58] u/_JustARiceFarmer (parent=_1tk3up2): Alpha
+---
+[05-24 19:45] u/[deleted] (parent=_1tk3up2): [removed]
+---
+[05-24 23:29] u/[deleted] (parent=_onkxxny): [removed]
+---
+[05-24 23:54] u/dec0demaster (parent=_onkbg49): **AI slop, right?**
+---
+[05-25 00:07] u/dec0demaster (parent=_onhn29r): Yeah, most likely. People get a kick out of these games.
+---
+[05-25 02:04] u/dec0demaster (parent=_onkbfhg): Well, of course.
+---
+[05-25 02:15] u/[deleted] (parent=_ondsfjw): [removed]
+---
+[05-25 02:48] u/[deleted] (parent=_1tk3up2): [removed]
+---
+[05-25 03:48] u/[deleted] (parent=_1tk3up2): [removed]
+---
+[05-25 03:49] u/[deleted] (parent=_1tk3up2): [removed]
+---
+[05-25 04:38] u/GentlyAbusive (parent=_oncrc1b): The first word is not hello. Too obvious. You're assuming the double symbol is a double letter. 
+---
+[05-25 05:17] u/Midnight_Star01 (parent=_onkbg49): Has anyone gotten confirmation from this yet? I feel like this is not it, it doesn’t match the character count either
+---
+[05-25 06:59] u/YefimShifrin (parent=_onqfj8b): It's brainless AI crap. OP confirmed that first word is not "HELLO"  |  | https://www.reddit.com/r/codes/comments/1tk3up2/comment/onqaiu7/
+---
+[05-25 07:10] u/Midnight_Star01 (parent=_onqrz4w): Oh so the comment was made by an AI bot account, got it thank you 
+---
+[05-25 17:08] u/[deleted] (parent=_ona5tqq): [removed]
+---
+[05-25 23:55] u/Eyadiguess (parent=_1tk3up2): Did bro stop posting hints or what’s?
+---
+[05-26 00:04] u/[deleted] (parent=_1tk3up2): [removed]
+---
+[05-26 00:55] u/SnoozerDota (parent=_onvoit5): What do you mean?
+---
+[05-26 00:58] u/Eyadiguess (parent=_onvywt4): My bad I misread when the hints will drop
+---
+[05-26 01:34] u/[deleted] (parent=_onvzgmp): [removed]
+---
+[05-26 04:33] u/dec0demaster (parent=_1tk3up2): Quick clarification on the small triangle near glyph 32: since you said it's related to the larger triangle marker, is it meant to function as a structural marker for routing or segmentation, or is it only a visual cue that it isn't part of glyph 32?
+---
+[05-26 04:48] u/GentlyAbusive (parent=_1tk3up2): Update 3: One word has successfully been decoded. That word is "ME". It appears in the 5th line.
+---
+[05-26 04:50] u/GentlyAbusive (parent=_onwztkh): And update 3.1: Please don't send me AI generated "solutions" one right after the other. It gets annoying and I will not reply to them. If you're incorrect and I tell you as much, pasting 6 more possible solutions immediately will get you ignored.
+---
+[05-26 04:53] u/GentlyAbusive (parent=_onhn29r): It doesn't do anything. Its a concept I had a few years ago that I've refined over the years. The "bounty" is just because I'm a big fan of Forest Fenn, but I don't have the time to go bury shit in the woods. 
+---
+[05-26 04:55] u/GentlyAbusive (parent=_ondabmo): It is not.
+---
+[05-26 05:02] u/GentlyAbusive (parent=_on7bve8): I'm not really sure how to prove that I'm not a troll. If it makes you feel better, my original plan was to create a website, print up the code on a card with a QR code and just sit back and see what happened. But this was a lot easier to get it out there.
+---
+[05-26 05:17] u/[deleted] (parent=_1tk3up2): [removed]
+---
+[05-26 05:57] u/YefimShifrin (parent=_onx03yh): Welcome to Jim Sanborn experience
+---
+[05-26 06:10] u/dec0demaster (parent=_onwztkh): Is the decoded word ME at the start of the fifth line?
+---
+[05-26 09:24] u/[deleted] (parent=_onxa4tp): [removed]
+---
+[05-26 23:17] u/GentlyAbusive (parent=_1tk3up2): Update 4 - the letters H and T have been decoded. |  | 
+---
+[05-26 23:21] u/GentlyAbusive (parent=_onijapk): yes
+---
+[05-27 00:22] u/chronondecay (parent=_1tk3up2): I don't understand how every clue so far has pointed towards this cipher being just a monoalphabetic substitution: |  | - each glyph represents one alphanumeric character or punctuation | - "WIFA" involves extracting an alphabetic index from each glyph and doing a Caesar shift | - individual letters have been solved |  | But obviously a monoalphabetic substitution would've been solved long ago (and god knows I've tried), and somehow even cribbing H and T doesn't just instantly finish it off? I'm more confused than ever...
+---
+[05-27 00:25] u/GentlyAbusive (parent=_oo2rztw): each glyph represents one alphanumeric character or punctuation, but one alphanumeric character or punction may not equal each glyph.
+---
+[05-27 01:35] u/[deleted] (parent=_oo2sigo): [removed]
+---
+[05-27 03:10] u/[deleted] (parent=_1tk3up2): [removed]
+---
+[05-28 04:50] u/BehaSama (parent=_oo2sigo): Multiple glyphs represent a single character? 
+---
+[05-28 05:02] u/GentlyAbusive (parent=_ooba6us): no
+---
+[05-28 05:21] u/BehaSama (parent=_oobbz28): The seemingly double letter from line one char 3,4 have a dash at top of their spines. Are those "-" or it is a different kind of spine.  | Also just below those characters there is a character whose spine has right dash at very bottom then a circle (line 2 char 4)
+---
+[05-28 07:43] u/chronondecay (parent=_oobbz28): If you used the same mapping from glyphs to characters throughout the entire ciphertext, it would be considered a monoalphabetic substitution, even if the mapping is many-to-one (i.e., with homophones). Of course this was what I meant in my original comment, since there are way more than 26 distinct glyphs, so you should reread my comment with that in mind.
+---
+[05-28 15:28] u/GentlyAbusive (parent=_oobw5ck): I'm fully aware of what I created and how. Selective and ambigious responses are part of the fun.
+---
+[05-28 23:58] u/Enough-Highlight-378 (parent=_1tk3up2): How are you paying?
+---
+[05-29 06:08] u/dec0demaster (parent=_1tk3up2): New hint?
+---
+[05-29 06:50] u/dec0demaster (parent=_1tk3up2): Can you walk through WIFA for one glyph end to end - say the 75th glyph? Specifically: which marks on it feed the weighted index and what weight each mark gets, what index value that produces, where that index lands in the 71-character alphabet, and what the final character is after the shift. Just that one glyph worked all the way through is enough.
+---
+[05-29 14:55] u/CipherDecoderMaster (parent=_ooiuvsk): Might as well walk us through to the answer at that point 😂
+---
+[05-31 12:43] u/RandomGeordie (parent=_1tk3up2): New clue is a tad lackluster... :-(
+---
+[05-31 20:03] u/GentlyAbusive (parent=_ooxmtav): Actually, its one of the most important clues.
+---
+[05-31 20:14] u/RandomGeordie (parent=_op04658): Can't deal with this 😂 been trying to solve it on and off since you first posted
+---
+[06-01 06:03] u/[deleted] (parent=_onx03yh): [removed]
+---
+[06-01 13:54] u/CipherDecoderMaster (parent=_1tk3up2): Honestly, although the cipher is well constructed it makes it really hard to determine actual shapes simply because of the inconsistency of the drawings. There are many shapes where I would put an \* just because I just find the shape really confusing. 
+---
+[06-03 23:09] u/ilikeprettytoez (parent=_1tk3up2): Reminds me of brail
+---
+[06-06 07:26] u/BootyKingMaster (parent=_1tk3up2): Does using your own created python script to decrypt your code not allowed or allowed?
+---
+[06-07 19:32] u/FeelTheFire (parent=_1tk3up2): Is this still unsolved
+---
+[06-07 19:42] u/GentlyAbusive (parent=_oqbltq7): Yes
+---
+[06-07 22:20] u/[deleted] (parent=_1tk3up2): [removed]
+---
+[06-08 00:28] u/chronondecay (parent=_1tk3up2): Yeah with hints like that you're never getting a solution lmao, here's why: |  | - Hint 1 really isn't a hint, the information should have been part of the puzzle in the first place: which part of WIFA/47/10 could someone have possibly figured out without you saying what it was? Why split the 47 and 10 if they had to be combined anyway? Why not just 5 (57 mod 26)? Why ignore the boxed 7? | - On the other hand, the wording of hint 1 is vague enough that there are several possible interpretations, none of which make sense. Taking the frequency of symbols clearly has to be done per spine instead of over the whole ciphertext, otherwise you'd have to read the whole text to even figure out the correct symbol mappings. But then how would you convert the frequency ranks to an index, if we're told (in a comment, not in the main post) that individual symbols don't have numerical values? Also, just looking at frequencies also doesn't explain why many glyphs (like +o|+o and +|oo) have the symbols in consistent vertical positions relative to each other, but some glyphs don't, like o|- at the start and end of the first line; a frequency count would call those two glyphs equivalent, but clearly they aren't? And if vertical positions of the symbols matter, why make it so hard to figure them out with bad handwriting? | - Hint 2 is easily suspected to be true, since (as I observed early on) none of the first 5 glyphs appear in the rest of the text. | - Hint 3 is *literally the first thing* that a serious solver will deduce, after transcribing the ciphertext and counting 13 occurrences of +|oo and at most 5 occurrences of any other glyph; word lengths are also generally sensible if +|oo were the only glyph representing space. | - Saying that individual letters have been solved is *not* a hint: it helps no one except the people who have done it, so it might as well have just been a DM. |  | You seem to think that "Selective and ambigious responses are part of the fun"; fun for whom? The people who are most invested in solving the puzzle would have tried dozens or hundreds of ideas, many of which would be far from the solution. *You* know those approaches are obviously wrong, but *we* don't, and your hints aren't doing anything to narrow down the possibilities. I personally don't feel like I'm any closer to the solution than I was 2 weeks ago (and arguably even before Hint 1). If a $500 prize hasn't brought in a solution in 2 weeks (and there are plenty of smart people on here), is the puzzle hard, or just unfair?
+---
+[06-08 08:18] u/RandomGeordie (parent=_1tk3up2): This isn't solveable, even with all of these clues
+---
+[06-09 04:33] u/GentlyAbusive (parent=_oqevqel): a transcript? That would defeat the whole purpose. And just because yu haven't solved it doesn't mean it's unsolvable. Difficult, yes. Mind numbing, sure. But solvable to the right mind. |  | 
+---
+[06-09 04:35] u/GentlyAbusive (parent=_oqd41bv): So what kind of hints were you expecting? This glyph = this word/letter/symbol? That's not a hint, that's a partial solution. Geuwinely curious what kinds of hints you were expecting.
+---
+[06-09 04:37] u/GentlyAbusive (parent=_op4mutk): Historically, handwritten ciphers are much harder to crack specifically for this reason. Which is why I have chosen to have mine exist only in a handwritten media.
+---
+[06-09 06:08] u/chronondecay (parent=_oqkyt8v): Any of the following: |  | - Explain anything that's not a part of a glyph: symbol to the upper right of the last glyph on line 1; down arrow on line 1; ∆ in second glyph on line 3; ∆ on line 4; boxed 7; circled M | - Which glyphs are not letters? | - Does what each glyph represents remain the same throughout the text, or does it change at some point? |  | Do you believe that all of these points have obvious answers based on just the text and what you've revealed so far? Then let me be the first to say that they are not: I'd be surprised if anyone trying this puzzle has confidently answered any of those points.
+---
+[06-09 06:45] u/GentlyAbusive (parent=_oqlatfu): I can answer all of those for you. In fact they have already been answered. Circled M is simply my initial. All other arrows relate to WIFA. The glyphs that are not letters are numbers, spaces, or punctiation. I cant tell you which ones they are, as that's giving progess towards a solution. No each glyph is not the same throughout. For example the letter E may have multiple different glyph variatons. This is done to disable frequency identification. All of these have been answered before in the comments.
+---
+[06-09 07:21] u/chronondecay (parent=_oqlfeoc): > I cant tell you which ones they are, as that's giving progress towards a solution.  |  | ...honest question: what do you think a hint is?  |  | > the letter E may have multiple different glyph variations.  |  | This says that each character can be different glyphs. I'm asking about the other direction: can each glyph be different characters?
+---
+[06-09 08:20] u/RandomGeordie (parent=_oqkyjz6): Why would a transcript defeat the entire purpose? People commonly post transcripts so it's about the actual code rather than interpreting hand written symbols. So much so that it's in the subreddit rules and a bot posts about it.
+---
+[06-09 08:26] u/YefimShifrin (parent=_oqlqagw): The transcript rule is only mandatory for something you can type or copy&paste. OP is not obligated to provide transcript for a custom symbol cipher.
+---
+[06-09 08:30] u/RandomGeordie (parent=_oqlqxv6): Thats fair enough
+---
+[06-09 15:11] u/GentlyAbusive (parent=_oqljn7n): A hint is a slight or indirect suggestion, clue, or piece of advice given to help someone figure something out or make a decision without stating it directly. |  | Regarding your 2nd point, please see my previous comment when this was asked 2 weeks ago: [https://www.reddit.com/r/codes/comments/1tk3up2/comment/oo2sigo/?utm\_source=share&utm\_medium=web3x&utm\_name=web3xcss&utm\_term=1&utm\_content=share\_button](https://www.reddit.com/r/codes/comments/1tk3up2/comment/oo2sigo/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+---
+[06-09 15:16] u/GentlyAbusive (parent=_oqlqagw): I agree there is still a lot of ambiguity around the code, but, I mean it's a code, it's supposed to have ambiguity. 
+---
+[06-09 15:38] u/GentlyAbusive (parent=_oq1ve36): That would be a question for the mods, but I'd be ok with it. I'm actually quite interested to see if the script would be able to solve it.
+---
+[06-09 21:37] u/chronondecay (parent=_oqnl815): Okay, I've been going in circles for so long that I've started entertaining the possibility again that I'm missing something. The specific placements of the symbols I mentioned are wildly confusing, like does the down arrow or ∆ mean "do something here" or "something changes here"? (Aside: I don't see how you've answered all my questions, in particular about the ∆s, unless you consider the ∆s as arrows? That's new information to me...) But if they're related to WIFA like the 47 and 10 then the positioning just doesn't matter? Can you see how frustrating it is for a solver for there to be so many elements in a puzzle which turn out to be dead ends? (Again: fun for whom?) |  | But if you can no longer trust that I'm asking questions in good faith then it really doesn't matter what I say. I don't foresee myself continuing to work on this; all the best to you getting a solution.
+---
+[06-10 07:44] u/BootyKingMaster (parent=_oqnrmd0): I'm already doubting if my script can actually do it lol  |  | 
+---
+[06-10 08:55] u/BootyKingMaster (parent=_oqsodrh): Yep no even If I transcribe the code digitally the script is having a hard time like it spit out random letter  |  | Edit: yep the script is having a hard time decrypting it
+---
+[06-11 11:40] u/Dangerous-Concept-0 (parent=_1tk3up2): In one of the replies you said [https://www.reddit.com/r/codes/comments/1tk3up2/comment/ona6yea/?utm\_source=share&utm\_medium=web3x&utm\_name=web3xcss&utm\_term=1&utm\_content=share\_button](https://www.reddit.com/r/codes/comments/1tk3up2/comment/ona6yea/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)   | But in the post you said There are only these shapes around the spines: o, x, +, |, \_, -, ▲, |  | Which one is the correct one? are the slanted lines just vertical lines?
+---
+[06-11 22:13] u/GentlyAbusive (parent=_or0m766): Slanted lines : \\ /. Put two of those together with a horizontal, and what have you got?
+---
+[06-11 23:43] u/Todo_Tokio (parent=_1tk3up2): What does the boxed 7 and triangle even mean? You never gave clarification on those. 
+---
+[06-12 12:08] u/Todo_Tokio (parent=_1tk3up2): Congratulations, you've made something no one will solve or even bother solving as is. Your clues are all vague and ambiguous, doesn't help anyone 
+---
+[06-13 10:41] u/Dangerous-Concept-0 (parent=_or4d5ld): The “\_” meaning empty counts as a shape? Like should we count it? Or it’s just an indicator that there is nothing in that slot? 
+---
+[06-13 11:06] u/Dangerous-Concept-0 (parent=_or4d5ld): Also, the line 5 first glyph on the right side is that a forward slanted line or horizontal? 
+---
+[06-19 21:57] u/[deleted] (parent=_1tk3up2): [removed]
+---
+[06-20 05:53] u/GentlyAbusive (parent=_or7q075): thats because they are not clues
+---
+[06-20 05:56] u/GentlyAbusive (parent=_or4tg3a): and I wont
+---
+[06-20 05:59] u/GentlyAbusive (parent=_oqq098r): Actually, I'm betting literally $500 that nobody can solve it. I don't want a solution. (I already have it, I made it remember)
+---
+[08-09 05:29] u/GentlyAbusive (parent=_1tk3up2): Update 8/8/26: The code still remains unsolved. 
+---

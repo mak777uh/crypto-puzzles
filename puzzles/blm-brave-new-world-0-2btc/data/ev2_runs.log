@@ -1,0 +1,13 @@
+total 16777216 tasks 4096 start 0
+DONE tasks 4096 / 4096 cands 16777216 survivors 74017 sec 136 rate 123164
+== ev2_h11
+total 256 tasks 128 start 0
+DONE tasks 128 / 128 cands 256 survivors 2 sec 0 rate 256
+== ev2_f3_18
+total 3037500 tasks 450 start 0
+DONE tasks 450 / 450 cands 3037500 survivors 13106 sec 35 rate 85604
+== ev2_f2_13
+total 16777216 tasks 4096 start 0
+DONE tasks 4096 / 4096 cands 16777216 survivors 74002 sec 146 rate 115014
+total 91125000 tasks 450 start 0
+DONE tasks 450 / 450 cands 91125000 survivors 399831 sec 720 rate 126532

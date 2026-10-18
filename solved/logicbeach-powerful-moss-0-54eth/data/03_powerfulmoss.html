@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogicBeach - Powerful Moss</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Include the components script first -->
+    <script src="js/components.js" defer></script>
+    <script src="js/noisepm.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+    <style>
+        /* Trippy Button Base */
+        button {
+            background: linear-gradient(90deg, #0000ff, #8800ff, #00eeff);
+            background-size: 400% 400%;
+            color: white;
+            border: 2px solid #fff;
+            padding: 2px 4px;
+            font-size: 16px;
+            font-family: 'Chicago', 'ChicagoFLF', 'Geneva', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            /* Rounded corners */
+            animation: trippyBackground 6s infinite;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Trippy Button Hover Effect */
+        button:hover {
+            color: #000;
+            background: linear-gradient(90deg, #ffffff, #00ffff, #ffff00, #ff99ff);
+            box-shadow: 0 0 200px rgba(255, 0, 255, 01), 0 0 300px rgba(0, 255, 255, 1);
+            transform: scale(1.05);
+        }
+
+        /* Trippy Button Active Click Effect */
+        button:active {
+            transform: scale(0.95);
+            box-shadow: 0 0 250px rgba(255, 255, 255, 1);
+        }
+
+        /* Trippy Animation */
+        @keyframes trippyBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Rounded border */
+        hr.rounded {
+            border-top: 8px solid #ffffff;
+            border-radius: 5px;
+            max-width: 500px;
+        }
+
+        /* Dashed border */
+        hr.dashed {
+            border-top: 3px dashed #ffffff;
+            max-width: 500px;
+        }
+
+        /* Text Emphasis: Glow and Fade Effect */
+        .text-fade {
+            color: white;
+            /* Text color remains white */
+            text-shadow: 0 0 5px rgba(255, 255, 255, 1),
+                0 0 5px rgba(0, 255, 0, 1),
+                0 0 10px rgba(255, 255, 255, 1);
+            /* Glowing effect */
+            transition: text-shadow 2s;
+            opacity: 100;
+            /* Start fully opaque */
+        }
+
+        #potOutput {
+            opacity: 100;
+        }
+
+        @keyframes rainbowFlow {
+            0% {
+                color: #ff0000;
+            }
+
+            /* Red */
+            16% {
+                color: #ff8000;
+            }
+
+            /* Orange */
+            33% {
+                color: #ffff00;
+            }
+
+            /* Yellow */
+            50% {
+                color: #00ff00;
+            }
+
+            /* Green */
+            66% {
+                color: #0080ff;
+            }
+
+            /* Blue */
+            83% {
+                color: #8000ff;
+            }
+
+            /* Purple */
+            100% {
+                color: #ff0000;
+            }
+
+            /* Back to red */
+        }
+
+        .rainbow-text {
+            animation: rainbowFlow 3s infinite;
+            font-weight: bold;
+        }
+
+        /* Hidden content */
+        .hidden {
+            display: none;
+        }
+
+        /* Revealed content */
+        .revealed {
+            display: block;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Special styling for powerful moss content */
+        .moss-content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .moss-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .moss-content button {
+            margin: 10px;
+        }
+
+        /* Additional styles for powerful moss */
+        .sponsored-by-section {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 98, 255, 0.5);
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: aliceblue;
+        }
+
+        .sponsored-by-section h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: aliceblue;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo-container img {
+            max-width: 150px;
+            max-height: 80px;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .shimmer-text {
+            text-align: center;
+            animation: shimmer 2s infinite linear;
+        }
+
+        p {
+            text-decoration: none;
+        }
+
+        @keyframes shimmer {
+            0% {
+                opacity: 0.8;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.8;
+            }
+        }
+
+        .rainbow-letter {
+            display: inline-block;
+            animation: rainbowFlow 5s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header will be automatically populated -->
+    <header></header>
+    
+    <main>
+        <!-- Social media section will be automatically populated -->
+        <section>
+            <div class="social-media social-media-container"></div>
+        </section>
+        
+        <!-- Powerful Moss specific content -->
+        <section class="moss-content">
+
+            <img src="images/powerfulmoss/PowerFulMoss_savedCover.png" style="opacity: 0.8; max-width:95%;">
+            
+            <section class="sponsored-by-section">
+                <h2>Sponsored By</h2>
+                <div class="logo-container">
+                    <a href="https://www.ethismoney.xyz/" target="_blank">
+                        <img src="/images/powerfulmoss/ethismoney.png">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="" alt="You? Reach out!!!">
+                    </a>
+                </div>
+            </section>
+            
+            <section style="background-color: rgba(0, 0, 0, 0.5);">
+                <button id="toggleDescription" type="button" style="cursor: pointer; padding: 2px; font-size: 16px;">
+                    See Album/Puzzle Description
+                </button>
+                <div id="descriptionContent" style="display: none; margin-top: 1px;">
+                    <p>
+                        Borrowing funky soundfonts hot off the <a
+                            href="https://en.wikipedia.org/wiki/Donkey_Kong_Country_2:_Diddy%27s_Kong_Quest#Audio"
+                            style="color:aliceblue; font-weight: bolder;">
+                            DonkeyKongCountry2 SuperNintendo
+                        </a> cartridge, LogicBeach's latest experimental release, Powerful Moss, has more than meets the
+                        ear!
+                    </p>
+                    <h3>Did you hear that?</h3>
+                    <p>
+                        What a weird sound...
+                        <br><br>Like a clock, year, or seed phrase, this album has 12 of 'em.
+                        <br><br>12 songs... and all <a
+                            href='https://en.wikipedia.org/wiki/Cryptocurrency_wallet#Seed_phrases'
+                            style="color:aliceblue;">that implies</a>.
+                        There's more waiting for those who pay attention and fall through the surface cracks.
+                        Can you find it? and when you do find it, can you solve it!? <br><br>
+                        The prize you are after, aside from the bragging rights of solving this puzzle is 1
+                        ETH (currently ~$4,000) and whatever else has been tossed into the
+                        <a href="https://sepolia.basescan.org/address/0xC8083039E91C0BE0cC801e116A9EB06FA24A6434"
+                            style="color:aliceblue; font-size: large;font-weight: bolder;">prize wallet</a>.
+                    </p>
+                </div>
+            </section>
+            
+            <section style="background-color: rgba(100,50, 0, 0.5);" id="contractInteraction">
+                <h1><a style="color: antiquewhite;"
+                        href='https://basescan.org/address/0x831102C7eb86f9EC8f79dF891bDeA187D54344Dd'>PowerfulMoss
+                        Contract on Base Mainnet</a></h1>
+
+                <div id="messages" style="margin-top: 20px;"></div>
+                <div style="background-color: rgba(20,150, 20, 0.5);">
+                    <h3>Current Prize for solving the album puzzle:</h3>
+                    <p id="potOutput">Connect wallet to see current prize.</p>
+                </div>
+                <hr class="dashed">
+                <div>
+                    <!-- CONNECT //////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+                    <button id="connectWallet">Connect your Base (Ethereum L2) Wallet</button>
+                    <p id="walletAddress" style="margin-top: 10px; font-size: 14px; color: #fff;"></p>
+                </div>
+                <hr class="dashed">
+                <div>
+                    <!-- MINT//////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+                    <h3>🔥Mint the PowerfulMoss NFT🔥</h3>
+                    <label for="donationAmount">Enter minimum of 0.01 ETH, proceeds add to prize:</label>
+                    <input type="number" id="donationAmount" placeholder="yeah, right here >= 0.01" step="0.01"
+                        min="0.01" style="margin-right: 10px;">
+                    <button id="mintNFT">Mint</button>
+                </div>
+                <div id="mintingMessages" style="margin-top: 20px;"></div>
+
+                <hr class="dashed">
+
+                <div>
+                    <!-- ACESS CID //////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+                    <h3>Access Album Download link (Available Jan. 17th) </h3>
+                    <button id="getCID">Get download link</button>
+                    <p id="cidOutput"></p>
+                </div>
+                <hr class="dashed">
+
+
+                <div>
+                    <h3>Withdraw Prize</h3>
+                    <button id="withdrawPrize">Withdraw </button>
+                    <div id="withdrawMessages" style="margin-top: 20px;"></div>
+                    <p style="color:burlywood"><b>Only the winner wallet may withdraw the prize</b><br>
+                        <a href='https://basescan.org/address/0x635739254BDE27d28301f25aD57c3cAC3C3468f3'
+                            style="color: #ffff00;">Winner Wallet:
+                            0x6357392...3C3468f3</a>
+                        <br>
+                        <br>
+                        This is the wallet that you are trying to gain access to by solving the puzzle. The 12 seed
+                        words derive THIS^ wallet.
+                        <br>
+                        <br>
+                    <p style="color:#ff4422">Remember! The prize for solving the puzzle starts at 0.25 ETH then grows to
+                        the full contract
+                        balance over the course of two months.
+                        Withdrawing the prize early forfeits the rest of the prize back to the creator!</p> </p>
+                </div>
+                <hr class="dashed">
+                <div>
+                    <h3>View Contract Balance</h3>
+                    <button id="viewBalance">View Balance</button>
+                    <p id="balanceOutput"></p>
+                </div>
+            </section>
+        </section>
+    </main>
+    
+    <!-- Footer will be automatically populated -->
+    <footer></footer>
+    
+    <canvas id="noiseCanvas"></canvas>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const button = document.getElementById("toggleDescription");
+            const content = document.getElementById("descriptionContent");
+
+            button.addEventListener("click", (event) => {
+                event.preventDefault(); // Prevent any unintended navigation
+
+                if (content.style.display === "none") {
+                    content.style.display = "block";
+                    button.textContent = "Hide Description";
+                } else {
+                    content.style.display = "none";
+                    button.textContent = "See Album/Puzzle Description";
+                }
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", async () => {
+            let provider;
+            let signer;
+            let contract;
+
+            const contractAddress = "0x831102C7eb86f9EC8f79dF891bDeA187D54344Dd";
+            let contractABI;
+
+            const BASE_MAINNET_CHAIN_ID = "0x2105"; // Chain ID for Base Mainnet
+            const BASE_MAINNET_DETAILS = {
+                chainId: BASE_MAINNET_CHAIN_ID,
+                chainName: "Base Mainnet",
+                nativeCurrency: {
+                    name: "ETH",
+                    symbol: "ETH",
+                    decimals: 18,
+                },
+                rpcUrls: ["https://mainnet.base.org"],
+                blockExplorerUrls: ["https://explorer.base.org"],
+            };
+
+            async function ensureCorrectNetwork() {
+                if (!window.ethereum) {
+                    alert("Please install MetaMask or a compatible wallet.");
+                    return false;
+                }
+
+                try {
+                    const network = await window.ethereum.request({ method: "eth_chainId" });
+
+                    if (network !== BASE_MAINNET_CHAIN_ID) {
+                        // Prompt to switch network
+                        try {
+                            await window.ethereum.request({
+                                method: "wallet_switchEthereumChain",
+                                params: [{ chainId: BASE_MAINNET_CHAIN_ID }],
+                            });
+                            alert("Successfully switched to Base Mainnet!");
+                        } catch (switchError) {
+                            if (switchError.code === 4902) {
+                                // Network not added, add it
+                                try {
+                                    await window.ethereum.request({
+                                        method: "wallet_addEthereumChain",
+                                        params: [BASE_MAINNET_DETAILS],
+                                    });
+                                    alert("Base Mainnet has been added and selected.");
+                                } catch (addError) {
+                                    alert("Failed to add Base Mainnet. Please add it manually.");
+                                    return false;
+                                }
+                            } else {
+                                alert("Failed to switch to Base Mainnet.");
+                                return false;
+                            }
+                        }
+                    }
+
+                    return true; // Correct network
+                } catch (error) {
+                    console.error("Error checking or switching network:", error);
+                    return false;
+                }
+            }
+            // Fetch ABI
+            await fetch("/abi.json")
+                .then((response) => response.json())
+                .then((data) => {
+                    contractABI = data;
+                })
+                .catch((error) => displayError("Error loading contract ABI."));
+
+            // Connect Wallet
+            document.getElementById("connectWallet").addEventListener("click", async () => {
+                try {
+                    if (window.ethereum) {
+                        const isCorrectNetwork = await ensureCorrectNetwork();
+                        if (!isCorrectNetwork) {
+                            displayError("Please switch to Base Mainnet to use this dApp.");
+                            return;
+                        }
+
+                        await window.ethereum.request({ method: "eth_requestAccounts" });
+                        provider = new ethers.providers.Web3Provider(window.ethereum);
+                        signer = provider.getSigner();
+                        contract = new ethers.Contract(contractAddress, contractABI, signer);
+
+                        const address = await signer.getAddress();
+                        document.getElementById("walletAddress").innerHTML = `Connected: ${wrapWithRainbow(address)}`;
+
+                        // Initialize Prize Pot Updates after wallet connection
+                        const viewPotContract = new ethers.Contract(contractAddress, [
+                            "function viewPot() public view returns (uint256 availableAmount, uint256 elapsedTime)"
+                        ], provider);
+
+                        async function updatePrize() {
+                            potOutput.classList.remove("text-fade");
+
+                            try {
+                                const [availableAmount] = await viewPotContract.viewPot();
+                                const prize = parseFloat(ethers.utils.formatEther(availableAmount)).toFixed(6);
+
+                                const potOutput = document.getElementById("potOutput");
+
+                                // Update the content
+                                potOutput.textContent = `Current Prize: ${prize} ETH`;
+
+                                // Add the 'text-fade' class for the effect
+                                potOutput.classList.add("text-fade");
+
+                            } catch (error) {
+                                displayError("Error fetching prize amount. Are you using Base as your network?");
+                            }
+                        }
+
+                        // Listen for new blocks and update prize
+                        provider.on("block", updatePrize);
+                        updatePrize(); // Call immediately after connecting
+
+                        // Check NFT holdings after wallet connection
+                        await checkNFTHoldings();
+                    } else {
+                        displayError("Please install MetaMask or another Ethereum wallet.");
+                    }
+                } catch (error) {
+                    console.log(error);
+                    displayError(extractErrorMessage(error));
+                }
+            });
+            // Mint NFT
+            document.getElementById("mintNFT").addEventListener("click", async () => {
+                const donationInput = document.getElementById("donationAmount").value;
+
+                try {
+                    const donationAmount = parseFloat(donationInput);
+                    if (isNaN(donationAmount) || donationAmount < 0.01) {
+                        displayError("Please enter a valid amount (minimum 0.01 ETH).");
+                        return;
+                    }
+
+                    if (!signer || !contract) {
+                        displayError("Please connect your wallet first.");
+                        return;
+                    }
+
+                    const userAddress = await signer.getAddress();
+                    const tx = await contract.mintNFT(userAddress, {
+                        value: ethers.utils.parseEther(donationAmount.toString()),
+                    });
+
+                    displayMintingMessage("Minting NFT... Please wait.");
+                    const receipt = await tx.wait();
+
+                    // Extract the tokenId from the mint event (assumes Transfer event is emitted)
+                    const mintEvent = receipt.events.find(event => event.event === "Transfer");
+                    const tokenId = mintEvent.args[2].toString(); // tokenId is the third argument
+
+                    // Construct OpenSea URLs for Base Sepolia
+                    const openseaNFTLink = `https://opensea.io/assets/base/${contractAddress}/${tokenId}`;
+                    const openseaWalletLink = `https://opensea.io/${userAddress}`;
+
+                    // Update the mint message with OpenSea links
+                    displayMintingMessage(`
+        NFT successfully minted! 
+        <br>
+        <a href="${openseaNFTLink}" target="_blank" class="shimmer-text">View Your NFT on OpenSea</a>
+        <br>
+        <a href="${openseaWalletLink}" target="_blank" class="shimmer-text">View Your Wallet on OpenSea</a>
+    `);
+                } catch (error) {
+                    console.log(error);
+                    displayError(extractErrorMessage(error));
+                }
+            });
+            // Function to check if the connected wallet holds a PowerfulMoss NFT
+            async function checkNFTHoldings() {
+                try {
+                    if (!signer || !contract) {
+                        displayMintingMessage("Please connect your wallet to check NFT holdings.");
+                        return;
+                    }
+
+                    const userAddress = await signer.getAddress();
+                    const nftBalance = await contract.balanceOf(userAddress); // Get the number of NFTs owned by the user
+
+                    if (nftBalance > 0) {
+                        displayMintingMessage(`You own ${nftBalance} PowerfulMoss NFT(s). Thanks for supporting my art!`);
+                    } else {
+                        displayMintingMessage("You do not own any PowerfulMoss NFTs yet.");
+                    }
+                } catch (error) {
+                    console.error("Error checking NFT holdings:", error);
+                    displayMintingMessage("Unable to check NFT holdings. Please try again.");
+                }
+            }
+
+            // Get CID //////////////////////////////////////////////////////////////////////////////
+            document.getElementById("getCID").addEventListener("click", async () => {
+                try {
+                    if (!signer || !contract) {
+                        displayError("Please connect your wallet first.");
+                        return;
+                    }
+
+                    const cid = await contract.getCID();
+                    console.log(cid);
+                    const cidLink = `${cid}`;
+                    document.getElementById("cidOutput").innerHTML = `
+        <a href="${cidLink}" target="_blank" class="shimmer-text">Download Album</a>
+    `;
+                } catch (error) {
+                    console.log(error);
+                    displayError(extractErrorMessage(error));
+
+                }
+            });
+
+            // Withdraw Prize /////////////////////////////////////////////////////////////////////////
+            document.getElementById("withdrawPrize").addEventListener("click", async () => {
+                try {
+                    if (!signer || !contract) {
+                        displayError("Please connect your wallet first.");
+                        return;
+                    }
+
+                    const tx = await contract.withdrawPOT();
+                    displayWithdrawMessage("Withdrawing prize... Please wait.");
+                    await tx.wait();
+                    displayWithdrawMessage("Prize successfully withdrawn!");
+                } catch (error) {
+                    console.log(error);
+                    displayWithdrawError(extractErrorMessage(error));
+                }
+            });
+
+            // View Contract Balance
+            document.getElementById("viewBalance").addEventListener("click", async () => {
+                try {
+                    if (!provider) {
+                        displayError("Please connect your wallet first.");
+                        return;
+                    }
+
+                    const balance = await provider.getBalance(contractAddress);
+                    document.getElementById("balanceOutput").textContent = `Contract Balance: ${ethers.utils.formatEther(balance)} ETH`;
+                } catch (error) {
+                    displayError(extractErrorMessage(error));
+                    console.log(error);
+                }
+            });
+
+            // Utility Functions
+            function displayError(message) {
+                console.log(message);
+                const messagesDiv = document.getElementById("messages");
+                messagesDiv.innerHTML = `<div style="color: red; font-weight: bold;">${message}</div>`;
+
+                // Clear the message
+                setTimeout(() => {
+                    messagesDiv.innerHTML = "";
+                }, 15000);
+            }
+            function displayWithdrawError(message) {
+                console.log(message);
+                const messagesDiv = document.getElementById("withdrawMessages");
+                messagesDiv.innerHTML = `<div style="color: red; font-weight: bold;">${message}</div>`;
+                // Clear the message
+                setTimeout(() => {
+                    messagesDiv.innerHTML = "";
+                }, 15000);
+            }
+
+            function displayMessage(message) {
+                console.log(message);
+                const messagesDiv = document.getElementById("messages");
+                messagesDiv.innerHTML = `<div style="color: limegreen; font-weight: bold;">${message}</div>`;
+            }
+            function displayMintingMessage(message) {
+                console.log(message);
+                const messagesDiv = document.getElementById("mintingMessages");
+                messagesDiv.innerHTML = `<div style="color: limegreen; font-weight: bold;">${message}</div>`;
+            }
+            function displayWithdrawMessage(message) {
+                console.log(message);
+                const messagesDiv = document.getElementById("withdrawMessages");
+                messagesDiv.innerHTML = `<div style="color: limegreen; font-weight: bold;">${message}</div>`;
+            }
+
+            function extractErrorMessage(error) {
+                console.log(message);
+                if (error.reason) return error.reason; // Revert reason
+                if (error.message) return error.message; // General error
+                return "An unexpected error occurred. Please try again.";
+            }
+
+            function wrapWithRainbow(text) {
+                return text.split("")
+                    .map((char, index) => `<span class="rainbow-letter" style="animation-delay: ${index * 100}ms;">${char}</span>`)
+                    .join("");
+            }
+        });
+    </script>
+</body>
+
+</html>

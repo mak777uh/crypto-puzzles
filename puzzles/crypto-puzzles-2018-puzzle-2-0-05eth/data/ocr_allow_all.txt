@@ -1,0 +1,60 @@
+f_001.jpg :: 16 E 1 10 11
+f_002.jpg :: 7 16 2 E 8 10
+f_003.jpg :: 16 E 8 10 11
+f_004.jpg :: 8 16 E 10 11
+f_005.jpg :: 
+f_006.jpg :: 
+f_007.jpg :: B 1 E 1 10
+f_008.jpg :: 7 E 1 10
+f_009.jpg :: F 1 C
+f_010.jpg :: 
+f_011.jpg :: 2
+f_012.jpg :: 2
+f_013.jpg :: 2
+f_014.jpg :: 2
+f_015.jpg :: 2
+f_016.jpg :: 2
+f_017.jpg :: 2
+f_018.jpg :: 2
+f_019.jpg :: 2
+f_020.jpg :: 2
+f_021.jpg :: 2
+f_022.jpg :: 2
+f_023.jpg :: 2
+f_024.jpg :: 2
+f_025.jpg :: 
+f_026.jpg :: 1 8
+f_027.jpg :: 1
+f_028.jpg :: 1
+f_029.jpg :: 1
+f_030.jpg :: 1
+f_031.jpg :: 1
+f_032.jpg :: 1 8
+f_033.jpg :: 1 8
+f_034.jpg :: 1
+f_035.jpg :: 1
+f_036.jpg :: 1 8
+f_037.jpg :: 8 1
+f_038.jpg :: 1
+f_039.jpg :: 1
+f_040.jpg :: 
+f_041.jpg :: 
+f_042.jpg :: 
+f_043.jpg :: 
+f_044.jpg :: 
+f_045.jpg :: 
+f_046.jpg :: 
+f_047.jpg :: 
+f_048.jpg :: 
+f_049.jpg :: 
+f_050.jpg :: EC
+f_051.jpg :: 
+f_052.jpg :: 
+f_053.jpg :: 
+f_054.jpg :: 
+f_055.jpg :: 
+f_056.jpg :: 
+f_057.jpg :: 
+f_058.jpg :: 
+f_059.jpg :: 
+f_060.jpg :: 

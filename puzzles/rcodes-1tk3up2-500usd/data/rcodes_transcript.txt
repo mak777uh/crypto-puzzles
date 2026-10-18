@@ -1,0 +1,8 @@
+# format: spine Lt Lm Lb / Rt Rm Rb ; '.'=empty; spine I=plain(J hook merged), 7=top bar left, L=bottom bar right, G=top bar right, )=curved
+# line 1 (after 47 WIFA↑), ends ↓10
+L1: I o../.-. | 7 ..o/o.| | 7 .../..o | 7 .../..o | I ooo/.-+ | I .+o/.+o | I o+./ ./- | 7 o../o.| | I .oo//.+ | SP | I o../o+- | I ..o/▲-.
+L2: I o../.-o | 7 .../o|o | L .-./.o. | L .../o-o | I .+o/+.o | I o.o/.-+ | 7 .+.//.o | I .-.//.o | L .-./.o. | I o../o+- | SP | 7 o../o.| | I .+./.-o | I .-./+-o | SP | I o../o+- | I o.o/.-. | I -oo/+.|
+L3: I o../|+_ | I |+./.-▲ | SP | I o.o/-+o | I \../.-+ | SP | I ..o/|-. | I o../.-▲ | I -.o/|.o | I -.▲/+.| | SP | 7 o../o.| | I .+o/.+o | I .+o/o-+ | I .../ ./- | I ..o/|-. | I +.o/.-. | I .-o/o.o | I o.o/.-. | L .../o-o | ) ..o/.-+
+L4: 7 o../o.| | I .oo//.+ | SP | I +.o/.-. | I o../o+- | I -.o/.+. | I .-./+.o | I .-.//.o | 7 .../o|o | I \.o/.-+ | SP | I o.o/.-+ | SP | G o../-+o | I .._/-.o
+L5: I ..o//+- | I ..+/o.| | SP | I +-./o.o | I .-o/+.| | I .-./..o | I .-./+.o | I \.o/.-+ | I .-./+-o | SP | I o../++o | I +.o/.-. | I .-o/o.o | I .-o/+.| | L +-./.o. | I \../.-o
+L6: I o../-+- | I .+o/.+o | I o+./ ./- | I ..o//+- | I .-./..o | I .-.//.o | SP | 7 .../o|o | L .-./.o. | I .-./o.x | I \.o/.-+ | SP | I .-./o.x | I -+./+.o | I .-./+-o | I o.o/.-+ | I o-./o.o | I .-o/+.| | 7 o../o.| | I .-./o.x | I .-./..o

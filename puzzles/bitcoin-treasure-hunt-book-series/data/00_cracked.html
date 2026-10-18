@@ -1,0 +1,1706 @@
+<html data-bs-theme="light" lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<title>Cracked - Treasure Hunt Database</title>
+		<link rel="canonical" href="https://treasurehuntdb.com/cracked" />
+
+
+	<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+	<link rel="shortcut icon" href="/favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+	<meta name="apple-mobile-web-app-title" content="TreasureDB" />
+	<link rel="manifest" href="/favicon/site.webmanifest" />
+
+	<!-- Open Graph and Twitter cards -->
+	<meta property="og:image" content="https://treasurehuntdb.com/_og-image.php?id=360">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="600">
+	<meta property="og:image:type" content="image/webp">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Trade+Winds&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+
+	<style>
+:root,
+[data-bs-theme="light"] {
+	--bs-body-bg: #FFFFFF;
+	--bs-body-color: #212529;
+	--bs-body-color-rgb: 33, 37, 41;
+	--bs-link-color: #6482FC;
+	/* #c24e13 */
+	--bs-link-color-rgb: 100, 130, 252;
+	/* 194, 78, 19; */
+	--bs-link-decoration: none;
+	--bs-link-hover-color: #c26100;
+	--bs-link-hover-color-rgb: 194, 97, 0;
+	--bs-secondary: #474F52;
+	--bs-secondary-rgb: 71, 79, 82;
+	--bs-border-width: 1px;
+	--bs-border-radius: 0;
+	--bs-card-bg: #808080;
+	--bs-card-border-radius: 0;
+	--bs-gutter-y: 0 !important;
+}
+
+.table>:not(caption)>*>* { background-color: rgba(255, 255, 255, 0.35); }
+.table-sm>:not(caption)>*>* { padding: .25rem 0.25rem .25rem .65rem; }
+.table-sm>:not(caption)>*>th { background-color:#ddd5ca; }
+
+.table-subhunt a:link, .table-subhunt a:visited {color: var(--sepia-medium);}
+
+h1 .small, h1 small {
+	font-size: .55em;
+}
+h2 .small, h2 small {
+	font-size: .55em;
+}
+p, li {line-height: 1.4;}
+ol, ul { overflow: hidden;}
+
+a { text-decoration: var(--bs-link-decoration); }
+.text-bg-light a:link, .text-bg-light a:visited { color: var(--bs-link-hover-color);} 
+.text-bg-light a:hover, .text-bg-light a:active { color: var(--bs-link-color);} 
+
+/* .bg-secondary a {text-decoration: underline;} */
+
+
+#stcm-icon {
+    width: 48px !important;
+    height: 48px !important;}
+#stcm-icon svg {
+	width: 32px !important;
+    height: 32px !important;}
+
+	
+.clearfix {clear:both;}
+
+blockquote{
+  font-size: 1.4em;
+  width:90%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.45rem 30px 1.45rem 75px;
+  border-left:8px solid #c09678 ;
+  line-height:1.6;
+  position: relative;
+  background:#f5e7ce;
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color: #c09678;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+blockquote p {margin-bottom:0;}
+
+blockquote p:after {
+  font-family:Arial;
+  content: "\201D";
+  color: #bf967833;
+  font-size:7em;
+  position: absolute;
+  right: 30px;
+  bottom:-110px;
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  font-style:italic;
+  margin-top:0.75rem;
+}
+
+.muted { opacity: 50%; }
+.card-title {margin-bottom:0;}
+.card-byline {color:#222222; line-height:1.2rem;font-size: 0.8125rem; margin-top: 0;}
+.card {border:none;}
+
+.legend { margin: -1rem -1rem 1rem 1rem; }
+.status { width:100%;padding: 0.25rem 0.5rem; }
+.status-solved { color:#FFFFFF; background-color:#CC0000; font-weight:bold; }
+.status-found { color:#FFFFFF; background-color:#660000; font-weight:bold; }
+.status-canceled, .status-ended, .status-abandoned { color:#FFFFFF; background-color:#808080; font-weight:bold; }
+.subhunts { color:#000000; font-weight:bold; }
+.extra-notes { line-height:1.2rem; } 
+.btn-amazon { color: #000000; background: #fbab40; }
+
+.cover-banner { background: linear-gradient( to right, #181008 0%, #181008 25%, #2e1a0e 25%, #2e1a0e 100%); }
+.cover-banner img {margin-left: 0rem;}
+
+@media screen and (min-width: 768px) {
+	.cover-banner img {margin-left: -3.25rem;}
+}
+@media screen and (min-width: 992px) {
+	.cover-banner img {margin-left: -4.25rem;}
+}
+@media screen and (min-width: 1200px) {
+	.cover-banner img {margin-left: -5.5rem;}
+}
+
+@media screen and (max-height: 900px) {
+	.cover-banner .col-md-7 img {height:99px; margin-left: -3.25rem;}
+}
+
+
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center; /* center on desktop */
+flex-wrap: wrap;
+background-color: #5f3828;
+}
+
+nav li { margin: 0;	}
+nav ul li:first-child { border-left: 2px solid #000;}
+nav ul li {border-right: 2px solid #000;}
+
+nav a {
+display: block;
+padding: 0.875rem 1.5rem;
+background-color: #5f3828;
+color: #ffe89e;
+text-decoration: none;
+text-align: center;
+transition: background 0.2s ease;
+font-size: 1.15rem;
+}
+nav a.active {background-color:#FFFFFF; color:#5f3828; cursor:default;}
+
+nav a:hover { background-color: #2e1a0e; }
+
+nav a.active:hover { background-color:#FFFFFF; color:#5f3828; }
+
+.card-title a, td.hunttitle a {color: #93675a;}
+.card-title a:hover, td.hunttitle a:hover {text-decoration:underline;}
+
+.color-red {color: #990000;}
+
+/* Mobile layout: 2x2 grid */
+@media (max-width: 768px) {
+	nav ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr; /* 2 columns */
+	}
+	/* Only enable if odd number of nav items 
+	nav ul li:last-child {
+		grid-column: span 2;
+	}
+	*/
+
+	nav a {
+		width: 100%;
+		padding: 0.25rem;
+		border-radius: 0;
+		font-size: 1rem;
+	}
+	nav ul li:first-child { border-left: none;}
+	nav ul li {border-right: none;}
+	nav ul li:first-child,
+	nav ul li:nth-child(3) {
+		border-right: 2px solid #000;
+	}
+	nav ul li:first-child,
+	nav ul li:nth-child(2),
+	nav ul li:nth-child(3),
+	nav ul li:nth-child(4) {
+		border-bottom: 2px solid #000;
+	}
+
+}
+
+.alert-dismissible {
+	position: relative;
+	padding-right: 2.5rem;
+}
+
+.alert-close {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.75rem;
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+	line-height: 1;
+	cursor: pointer;
+	color: inherit;
+	opacity: 0.6;
+}
+
+.alert-close:hover {
+	opacity: 1;
+}
+
+.card-bullet {
+	display: flex; 
+	align-items: flex-start; 
+	margin-bottom: 0.25rem;
+	line-height: 1.15;
+}
+img.icon-bullet { 
+	flex-shrink: 0;
+	margin-right: 10px; 
+	width: 1rem;
+	height: auto;
+	vertical-align: middle; 
+	margin-right: .4rem !important;
+	margin-top: 0.15rem !important;
+}
+
+
+.sidewell {margin-bottom:6px; color:#736c69;}
+.sidewell .credit{ padding-right:0.15rem;}
+.sidewell .caption{ 
+	padding-left:0.35rem; line-height: 1.15rem;
+	font-size: 0.875rem; margin-top: 0.4rem; margin-bottom: 1rem;
+}
+
+@media (min-width:768px){
+	.sidewell-left-portrait, .sidewell-right-portrait {width:260px;}
+	.sidewell-left, .sidewell-right {width:320px;}
+	.sidewell-left-wide, .sidewell-right-wide {width:320px;}
+	.sidewell-centered {width:480px;}
+
+	.sidewell-left, .sidewell-left-portrait, .sidewell-left-wide {margin-right:20px}
+	.sidewell-right,.sidewell-right-portrait,.sidewell-right-wide {margin-left:20px}
+	.sidewell-centered {margin-left:auto;margin-right:auto;}
+}
+@media (min-width: 992px) {
+	.sidewell-left, .sidewell-right {width:350px;}
+	.sidewell-left-wide, .sidewell-right-wide {width:350px;}
+}
+@media (min-width: 1200px) {
+	.sidewell-left-wide, .sidewell-right-wide {width:400px;}
+}
+@media (min-width: 1400px) {
+	.sidewell-left-wide, .sidewell-right-wide {width:480px;}
+}
+
+
+
+figure {margin-bottom:0}
+figure.table {margin-bottom: 1.5rem;}
+
+figure.image img {
+	/* Same CSS as img-fluid */
+	max-width: 100%;
+    height: auto;
+}
+figure.media {
+    margin: 0 0 0 0;
+    width: 100%;
+    max-width: 720px;
+    position: relative;
+    /* Remove padding-bottom and height: 0 entirely */
+}
+.video-title {font-family: "Trade Winds", system-ui; font-size: 1.75rem;
+    font-weight: 400;color: var(--sepia-dark);margin-bottom:0.3rem;line-height: 1;}
+
+/* 2. The Elements (Facade and Iframe) */
+/* By putting aspect-ratio here, the element dictates its own height */
+.video-facade,
+figure.media iframe {
+    width: 100%;
+	aspect-ratio: 16 / 9;
+    display: block;
+    border-radius: 8px;
+    background: #000;
+    overflow: hidden;
+}
+
+.video-facade-vertical,
+figure.media iframe.video-frame-vertical {
+    aspect-ratio: 9 / 16;
+    max-width: 360px; /* keeps a vertical video from stretching full-width */
+}
+
+/* 3. The Play Button Overlay */
+.video-facade {
+    position: relative; /* Needed for the absolute play button */
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-button {
+    width: 68px;
+    height: 48px;
+    background-color: rgba(255, 162, 55, 0.9);
+    border-radius: 12%;
+    position: relative;
+    transition: background-color 0.2s;
+    z-index: 2;
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.75);
+}
+/* Instagram's play button: solid circle, opaque, brand-pink on hover */
+.play-button.play-button-instagram {
+    width: 68px;
+    height: 68px;
+    background-color: rgba(255, 162, 55, 1);
+    border-radius: 100%;
+    position: relative;
+    transition: background-color 0.2s;
+    z-index: 2;
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.75);
+}
+
+.video-facade:hover .play-button,
+.video-facade:focus .play-button {
+    background-color: #ff0000;
+}
+/* Hover/focus: circle turns Instagram pink, triangle turns white */
+.video-facade:hover .play-button.play-button-instagram,
+.video-facade:focus .play-button.play-button-instagram {
+    background-color: #E1306C;
+}
+
+/* The Play Triangle */
+.play-button::before {
+    content: '';
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+/* The Play Triangle */
+.play-button.play-button-instagram::before {
+    content: '';
+    border-style: solid;
+    border-width: 14px 0 14px 26px;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Hunter profile cards */
+.profile-card {
+	height: 100%;
+}
+
+.hunter-card {
+	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+	margin-top:0;
+}
+
+.hunter-card.hidden {
+	opacity: 0;
+	pointer-events: none; /* Prevents clicking while fading */
+	display: none;        /* We will toggle this via JS after a delay */
+}
+
+.hunter-name { line-height: 1.2;}
+
+.avatar {
+	width: 90px;
+	height: 90px;
+	border-radius: 999px;
+	object-fit: cover;
+	border: 1px solid #ddd;
+	background: #f1f1f1;
+}
+
+.card a {
+	text-decoration: none;
+}
+
+.card a:hover {
+	text-decoration: underline;
+}
+
+.profile-card .card-body {
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size: 13.5px;
+	padding-top:0;
+	padding-bottom:20px;
+}
+
+@media screen and (min-width: 768px) {
+	.avatar {
+		width: 90px;
+		height: 90px;
+	}
+}
+
+.main-profile-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start !important; /* Forces left alignment */
+}
+
+.main-profile-row .hunter-card {
+	/* Adjust this percentage to control how many fit per row */
+	/* 10% = 10 cards, 12.5% = 8 cards, etc. */
+	flex: 0 0 50%; 
+	max-width: 50%;
+}
+
+@media (min-width: 768px) {
+	.main-profile-row .hunter-card {
+		flex: 0 0 25%; /* 4 per row */
+		max-width: 25%;
+	}
+}
+@media (min-width: 992px) {
+	.main-profile-row .hunter-card {
+		flex: 0 0 16.6666%; /* 6 per row */
+		max-width: 16.6666%;
+	}
+}
+@media (min-width: 1200px) {
+	.main-profile-row .hunter-card {
+		flex: 0 0 14.28%; /* 7 per row */
+		max-width: 14.28%;
+	}
+}
+@media (min-width: 1400px) {
+	.main-profile-row .hunter-card {
+		flex: 0 0 12.5%; /* 9 per row */
+		max-width: 12.5%;
+	}
+}
+
+.text-bg-tertiary {background-color:lightgray;}
+
+.alphabet-nav .btn { padding-left: 0.55rem; padding-right:0.55rem;font-family:monospace;}
+
+</style>
+	<link rel="stylesheet" href="/css/decodestrip.css?20260912-1">
+
+	<style>
+		/* COLORS & THEME */
+		:root {
+			/* Darker brown for text and deep shadows */
+			--sepia-dark: #5d3a28;
+			/* Medium brown for borders and accents */
+			--sepia-medium: #8b5a2b;
+			/* Lighter paper color */
+			--sepia-light: #e0cda8;
+			/* The main background paper color */
+			--parchment: #f9f1e3;
+
+			/* Brass Button Specific Colors */
+			--brass-light: #d4af37;
+			--brass-dark: #a08050;
+			--brass-shadow: #6b4e2e;
+		}
+
+		body {
+			background-color: #e6ccaa;
+			color: var(--sepia-dark);
+		}
+
+		.parchment-container {
+			background-color: var(--parchment);
+			border: 1px solid var(--sepia-medium);
+			border-top: 0;
+			padding: 0.75rem;
+			box-shadow: 0;
+		}
+
+		@media screen and (max-width: 767.8px) {
+			.lead {
+				font-size: 1.1rem;
+			}
+
+			.shadow-lg {
+				clip-path: inset(0px -50px -50px -50px);
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+			.parchment-container {
+				padding: 2rem;
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), inset 0 0 60px rgba(139, 90, 43, 0.1);
+			}
+		}
+
+
+
+		/* TYPOGRAPHY */
+		h1,
+		h2,
+		h3,
+		h4 {
+			/* Vintage header font */
+			font-family: 'IM Fell English', serif;
+			color: var(--sepia-dark);
+		}
+
+		h1 {
+			font-family: sans-serif;
+			font-weight: 600 !important;
+		}
+
+		.display-4 {
+			font-size: 2rem;
+		}
+
+		@media (min-width: 992px) {
+			.display-4 {
+				font-size: 2.5rem;
+			}
+		}
+
+		@media (min-width: 1200px) {
+			.display-4 {
+				font-size: 3rem;
+			}
+		}
+
+		@media (min-width: 1400px) {
+			.display-4 {
+				font-size: 3.25rem;
+			}
+		}
+
+
+		/* BOOTSTRAP OVERRIDES FOR VINTAGE LOOK */
+		.parchment-card {
+			background-color: #f8f1df;
+			border: none;
+			border-radius: 0;
+			/* Remove modern rounded corners from cards */
+		}
+
+		.parchment-card .card-header {
+			border-bottom: 0;
+		}
+
+		.parchment-card .card-body {
+			background-image: url('/images/parchment-glance2.webp');
+			background-size: 100% 100%
+		}
+
+		.border-bottom-sepia {
+			border-bottom: 2px solid var(--sepia-medium) !important;
+		}
+		.border-bottom-sepia-thin {
+			border-bottom: 1px solid #dabda1 !important;
+		}
+		
+
+		.card {
+			background-color: transparent;
+		}
+
+		.status-badge {
+			background-color: var(--sepia-medium);
+			color: var(--parchment);
+			font-family: 'IM Fell English', serif;
+			font-size: 1rem;
+			letter-spacing: 1px;
+			border: 2px solid var(--sepia-dark);
+			box-shadow: 2px 2px 0 var(--sepia-dark);
+			align-self: center;
+		}
+
+		.status-badge-active {
+			color: #FFFFFF;
+			background-color: #2b8b3a;
+			border: 2px solid #004b0c;
+			box-shadow: 2px 2px 0 #004b0c;
+		}
+
+		.status-badge-upcoming {
+			color: #FFFFFF;
+			background-color: #388fb0;
+			border: 2px solid #00728a;
+			box-shadow: 2px 2px 0 #00728a;
+		}
+
+		@media (min-width:992px) {
+			.status-badge {
+				align-self: flex-start;
+			}
+		}
+
+
+		.glance-table th,
+		.glance-table td {
+			background-color: transparent !important;
+		}
+
+		.card-body.small p {
+			line-height: 1.15;
+		}
+
+		.location-solver-list {
+			display: grid;
+			grid-template-columns: 100px 1fr; /* fixed label column, flexible value column */
+			row-gap: 6px;
+			column-gap: 12px;
+			margin: 0;
+		}
+
+		.location-solver-list dt {
+			font-size: 0.9rem;
+			letter-spacing: 0.03em;
+			color: #777;
+			font-weight: 400;
+		}
+
+		.location-solver-list dt svg {
+			margin-top: -4px;
+			margin-right: 1px;
+		}
+
+		.location-solver-list dd {
+			margin: 0;
+			font-size: 1rem;
+			line-height: 1.25;
+		}
+
+
+		/* =========================================
+   BRASS BUTTON / WAX SEAL STYLE
+   ========================================= */
+		.btn-treasure {
+			/* Typography */
+			font-family: 'IM Fell English', serif;
+			font-weight: bold;
+			color: var(--sepia-dark);
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			/* Give the text a slight engraved look */
+			text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+
+			/* Shape & Size */
+			padding: 15px 40px;
+			border-radius: 50px;
+			/* Very rounded corners for a button/seal shape */
+			border: none;
+
+			/* BRASS GRADIENT BACKGROUND */
+			/* Creates a metallic sheen from top to bottom */
+			background: linear-gradient(to bottom, var(--brass-light) 0%, var(--brass-dark) 100%);
+
+			/* 3D EFFECTS USING SHADOWS */
+			box-shadow:
+				/* 1. The dark outer rim of the button */
+				inset 0 0 0 4px var(--brass-shadow),
+				/* 2. A thin bright highlight on the top inner edge (sheen) */
+				inset 0 2px 0 rgba(255, 255, 255, 0.5),
+				/* 3. A dark inner shadow at the bottom to give depth */
+				inset 0 -4px 5px rgba(0, 0, 0, 0.3),
+				/* 4. The drop shadow onto the paper beneath it */
+				0 6px 10px rgba(0, 0, 0, 0.3);
+
+			transition: all 0.2s ease-in-out;
+			position: relative;
+		}
+
+		/* HOVER STATE: Lift the button slightly and brighten it */
+		.btn-treasure:hover {
+			transform: translateY(-3px);
+			/* Brighten the gradient slightly */
+			background: linear-gradient(to bottom, #eac54e 0%, #b39161 100%);
+			color: black;
+			box-shadow:
+				inset 0 0 0 4px var(--brass-shadow),
+				inset 0 2px 0 rgba(255, 255, 255, 0.6),
+				inset 0 -4px 5px rgba(0, 0, 0, 0.3),
+				/* Larger drop shadow for lifting effect */
+				0 10px 15px rgba(0, 0, 0, 0.35);
+		}
+
+		/* ACTIVE/CLICKED STATE: Press the button down */
+		.btn-treasure:active,
+		.btn-treasure[aria-expanded="true"] {
+			transform: translateY(2px);
+			/* Darken gradient */
+			background: linear-gradient(to bottom, var(--brass-dark) 0%, var(--brass-shadow) 100%);
+			box-shadow:
+				inset 0 0 0 4px var(--brass-shadow),
+				/* Inset shadows become heavier to look pressed in */
+				inset 0 5px 10px rgba(0, 0, 0, 0.5),
+				/* Drop shadow disappears as it touches the paper */
+				0 1px 2px rgba(0, 0, 0, 0.2);
+		}
+
+		/* ========================================= */
+
+
+		/* OTHER DECORATIVE ELEMENTS */
+		.header-banner {
+			/* A decorative border and a subtle map overlay on the header background */
+			background-color: #f5e7ce;
+			/* background-image: linear-gradient(rgba(244, 228, 188, 0.85), rgba(244, 228, 188, 0.85)); */
+
+		}
+
+		.resolution-card {
+			/* Distinct background for the final section */
+			background-color: rgba(160, 128, 80, 0.1);
+			border: 3px dashed var(--sepia-medium);
+		}
+
+		.solve-inner {
+			background-color: rgba(255, 255, 255, 0.4);
+			border-left: 4px solid var(--sepia-medium);
+		}
+
+
+		/* Mini Profile Avatars for the Hunt Detail Page */
+		.hunter-mini-pfp,
+		.hunter-mini-pfp-placeholder {
+			width: 34px;
+			height: 34px;
+			border-radius: 6px;
+			border: 1px solid var(--sepia-dark);
+			object-fit: cover;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: var(--parchment);
+			color: var(--sepia-dark);
+			font-weight: bold;
+			font-family: 'IM Fell English', serif;
+			transition: transform 0.2s, box-shadow 0.2s;
+		}
+
+		.hunter-avatar-link:hover .hunter-mini-pfp,
+		.hunter-avatar-link:hover .hunter-mini-pfp-placeholder {
+			transform: scale(1.1);
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			border-color: var(--sepia-dark);
+		}
+
+		.hunter-mini-pfp-placeholder {
+			font-size: 1.1rem;
+			background-color: var(--sepia-dark);
+			color: #e6ccaa80;
+			padding-top:5px;
+		}
+
+
+		nav a {
+			font-family: "IM Fell English";
+			font-weight: 400;
+		}
+
+
+		.lead {
+			font-family: "IM Fell English", serif;
+			font-size: 1.75rem;
+			line-height: 1.2;
+		}
+
+
+		p.small,
+		.small p,
+		.small,
+		small {
+			font-size: 0.875rem;
+		}
+
+
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: "Trade Winds", system-ui;
+			font-weight: 400;
+			color: var(--sepia-dark) !important;
+		}
+
+		h1,
+		.h1 {
+			font-size: 2.5rem;
+		}
+
+		h2,
+		.h2 {
+			font-size: 2.15rem;
+		}
+
+		h3,
+		.h3 {
+			font-size: 1.57rem;
+		}
+
+		h6,
+		.h6 {
+			font-size: 1rem;
+		}
+
+		h5 {
+			font-family: "IM Fell English", serif;
+			font-weight: 600;
+		}
+
+		.hunt-title {
+			line-height: 1.1;
+		}
+
+		.form-label {
+			margin-bottom: .25rem;
+			font-family: "IM Fell English", serif;
+			font-size: 1.1rem;
+		}
+
+		ul.columns-2,
+		ol.columns-2 {
+			column-count: 2;
+			column-gap: 3rem;
+		}
+
+		ul.columns-3,
+		ol.columns-3 {
+			column-count: 3;
+			column-gap: 3rem;
+		}
+
+
+		.btn-official {
+			align-items: center;
+			appearance: none;
+			background-color: #3EB2FD;
+			background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+			background-size: calc(100% + 20px) calc(100% + 20px);
+			border-radius: 100px;
+			border-width: 0;
+			box-shadow: none;
+			box-sizing: border-box;
+			color: #FFFFFF;
+			cursor: pointer;
+			display: inline-flex;
+			font-family: CircularStd, sans-serif;
+			font-size: 1rem;
+			height: auto;
+			justify-content: center;
+			line-height: 1.5;
+			padding: 6px 20px;
+			position: relative;
+			text-align: center;
+			text-decoration: none;
+			transition: background-color .2s, background-position .2s;
+			user-select: none;
+			-webkit-user-select: none;
+			touch-action: manipulation;
+			vertical-align: top;
+			white-space: nowrap;
+		}
+
+		.btn-official:active,
+		.btn-official:focus {
+			outline: none;
+		}
+
+		.btn-official:hover {
+			background-position: -20px -20px;
+		}
+
+		.btn-official:focus:not(:active) {
+			box-shadow: rgba(40, 170, 255, 0.75) 0 0 0 .125em;
+		}
+
+		.btn-amazon {
+			align-items: center;
+			appearance: none;
+			background-color: #f8af52;
+			background-image: linear-gradient(1deg, #d48d00, #ffbe4d 99%);
+			background-size: calc(100% + 20px) calc(100% + 20px);
+			border-radius: 100px;
+			border-width: 0;
+			box-shadow: none;
+			box-sizing: border-box;
+			color: #000000;
+			cursor: pointer;
+			display: inline-flex;
+			font-family: CircularStd, sans-serif;
+			font-size: 1rem;
+			height: auto;
+			justify-content: center;
+			line-height: 1.5;
+			padding: 6px 20px;
+			position: relative;
+			text-align: center;
+			text-decoration: none;
+			transition: background-color .2s, background-position .2s;
+			user-select: none;
+			-webkit-user-select: none;
+			touch-action: manipulation;
+			vertical-align: top;
+			white-space: nowrap;
+		}
+
+		.btn-amazon:active,
+		.btn-amazon:focus {
+			outline: none;
+		}
+
+		a.btn-amazon:hover {
+			background-position: -20px -20px;
+		}
+
+		.btn-amazon:focus:not(:active) {
+			box-shadow: rgba(190, 120, 25, 0.75) 0 0 0 .125em;
+		}
+
+
+
+
+		.envelope-wrapper {
+			position: relative;
+			width: 100%;
+			min-height: 230px;
+			/* reserves the envelope's space in the flow */
+		}
+
+		.envelope-stack {
+			position: absolute;
+			/* taken out of flow, sits on top of solution content */
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 230px;
+			/* fixed height — all three images share this */
+			z-index: 10;
+		}
+
+		/* Base styles shared by all three layers */
+		.envelope-layer {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 230px;
+			display: block;
+			transition: opacity 0.3s ease;
+		}
+
+		/* Open envelope and flap stretch to fill container width */
+		.envelope-open {
+			object-fit: fill;
+			/* stretch both axes to exactly fill the box */
+		}
+
+		/* Seal/text image keeps its natural aspect ratio and centres horizontally */
+		.envelope-seal {
+			object-fit: contain;
+			object-position: center;
+			cursor: pointer;
+			z-index: 3;
+		}
+
+		.envelope-flap-container {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 230px;
+			perspective: 600px;
+			/* depth of the 3D space — lower = more dramatic */
+			z-index: 2;
+		}
+
+		.envelope-flap {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 230px;
+			object-fit: fill;
+			transform-origin: top center;
+			/* hinge at the bottom edge */
+			transition: transform 0.3s ease;
+		}
+
+		@keyframes flapOpen {
+			0% {
+				transform: rotateX(0deg);
+				opacity: 1;
+			}
+
+			98% {
+				transform: rotateX(-103deg);
+				opacity: 1;
+			}
+
+			/* full opacity until 90% = 450ms */
+			100% {
+				transform: rotateX(-105deg);
+				opacity: 0;
+			}
+
+			/* fade only in last 10% = 50ms */
+		}
+
+		.envelope-flap.opening {
+			animation: flapOpen 0.3s ease forwards;
+		}
+
+		.envelope-open {
+			z-index: 1;
+		}
+
+		/* Utility: fade a layer out */
+		.envelope-layer.hidden {
+			opacity: 0;
+			pointer-events: none;
+		}
+
+		/* Solution content area — collapsed by default */
+		.solution-content {
+			overflow: hidden;
+			max-height: 0;
+			opacity: 0;
+			transition: max-height 2s ease, opacity 0s ease;
+		}
+
+		.solution-content.revealed {
+			max-height: 7000px;
+			/* large enough for any content; adjust if needed */
+			opacity: 1;
+			border-top: 1px solid saddlebrown;
+		}
+
+		.solution-inner {
+			padding: 1.5rem 0;
+		}
+
+		.location-solver-text p {line-height: 1.2;}
+
+		/* Prevents the browser from delaying clicks and messing with gestures */
+.glightbox-container .gslide-image img {
+    touch-action: pinch-zoom;
+}
+
+	</style>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2PHWKKEJYM"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'G-2PHWKKEJYM');
+	</script>
+
+</head>
+
+<body>
+		<section>
+		<div class="cover-banner">
+			<div class="container">
+				<div class="row g-0">
+					<div class="col-md-7">
+                        <p class="visually-hidden">Treasure Hunt Database (THDB)</p>
+						<a href="/"><img class="img-fluid" src="/images/site-header.png?brown" alt="Graphic of a treasure chest with the words Treasure Hunt Database."></a>
+                    </div>
+					<div class="d-none d-md-block col-md-5 text-end mt-4">
+													<a class="btn btn-primary" href="/profile/login">Login</a>
+						                    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+		<nav>
+		<ul>
+			<li><a href="/" class="">Current Hunts</a></li>
+			<li><a href="/past-hunts" class="">Past Hunts</a></li>
+			<li><a href="/locations" class="">GPS Locations</a></li>
+			<li><a href="/profiles" class="">Hunter Profiles</a></li>
+			<li><a href="/calendars" class="">Calendars</a></li>
+			<li><a href="/search" class="">Search</a></li>
+		</ul>
+	</nav>
+
+	<div class="d-block d-md-none text-end">
+		<div class="container mt-0 mb-0 pb-0 parchment-container" style="border-bottom:0;">
+					<a class="btn btn-primary" href="/profile/login">Login</a>
+				</div>
+	</div>
+	<section class="py-0">
+		<div class="container mb-4 parchment-container shadow-lg">
+
+			<header class="row g-4 mt-0 mb-4 align-items-stretch">
+				<div class="col-12 col-lg-4 col-xl-3 d-flex justify-content-center mt-0" style="background-color:#4f461c;">
+					<div class="thumbnail-frame text-center" style="max-width: 300px; background-color:#4f461c;">
+						<img src="thumbnails/cracked.webp" class="img-fluid" alt="Cover art for Cracked">					</div>
+				</div>
+				<div class="col-12 col-lg-8 col-xl-9 text-start mt-0 header-banner ">
+					<div class="p-4 p-lg-5 h-100 d-flex flex-column justify-content-center text-center text-lg-start">
+						<h1 class="display-4 hunt-title">Cracked</h1>
+
+						<span class="badge status-badge status-badge-Solved p-2 px-4">
+							STATUS: SOLVED						</span>
+											</div>
+				</div>
+			</header>
+
+			<div class="row g-4">
+				<aside class="col-lg-4 col-xl-3">
+
+					<div class="card parchment-card mb-4">
+						<div class="card-header bg-transparent">
+							<h2 class="h3 mb-0">Hunt at a Glance</h3>
+						</div>
+						<div class="card-body">
+							<table class="table table-sm table-borderless glance-table small mb-0 ms-1">
+
+																	<tr>
+										<td class="text-end"><strong>Search&nbsp;Area:</strong></td>
+										<td>Fully Armchair</td>
+									</tr>
+																									<tr>
+										<td class="text-end"><strong>Format:</strong></td>
+										<td>Book</td>
+									</tr>
+																									<tr>
+										<td class="text-end"><strong>Release:</strong></td>
+										<td>Apr. 16, 2021</td>
+									</tr>
+																																	<tr>
+										<td class="text-end"><strong>End&nbsp;Date:</strong></td>
+										<td>Jan. 1, 2026</td>
+									</tr>
+																									<tr>
+										<td class="text-end"><strong>Author:</strong></td>
+										<td>&quot;Professor F&quot;</td>
+									</tr>
+																															</table>
+															<hr style="margin: 0.5rem 1.25rem;">
+								<div class="small" style="margin-left:10px !important">
+																			<p class="mb-2"><strong>Prize:</strong> 0.3 BTC, final amount $27,000</p>
+																																					<p class="mb-2"><strong>Purchase Price:</strong> $14.99</p>
+																	</div>
+													</div>
+					</div>
+
+											<div class="d-grid gap-2 mt-3">
+															
+								
+                                    <a href="https://www.youtube.com/@professorf1322/featured" class="btn-official" target="_blank">Official Link</a>
+
+                                																				</div>
+																<hr class="sepia-hr">
+						<div class="mt-3">
+							<h6 class="pb-0 mb-2">Hunters</h6>
+							<div class="d-flex flex-wrap gap-2">
+																	<a href="/profile/hvxx"
+										title="BilliJean1999"
+										class="hunter-avatar-link">
+																																<img src="/uploads/profile_images/tiny/p_hvxx_1775796879.webp"
+												alt="BilliJean1999"
+												class="hunter-mini-pfp">
+																			</a>
+																	<a href="/profile/bz5t"
+										title="CarTarL"
+										class="hunter-avatar-link">
+																																<img src="/uploads/profile_images/tiny/p_bz5t_1780881491.webp"
+												alt="CarTarL"
+												class="hunter-mini-pfp">
+																			</a>
+																	<a href="/profile/th3m"
+										title="Cowlazars"
+										class="hunter-avatar-link">
+																																<img src="/uploads/profile_images/tiny/p_th3m_1770138308.webp"
+												alt="Cowlazars"
+												class="hunter-mini-pfp">
+																			</a>
+																	<a href="/profile/u4hx"
+										title="Erik_the_Weisz"
+										class="hunter-avatar-link">
+																																<img src="/uploads/profile_images/tiny/p_u4hx_1780375067.webp"
+												alt="Erik_the_Weisz"
+												class="hunter-mini-pfp">
+																			</a>
+																	<a href="/profile/g6sh"
+										title="Fire dragon"
+										class="hunter-avatar-link">
+																																<img src="/uploads/profile_images/tiny/p_g6sh_1777580925.webp"
+												alt="Fire dragon"
+												class="hunter-mini-pfp">
+																			</a>
+																	<a href="/profile/zmfa"
+										title="justbill"
+										class="hunter-avatar-link">
+																																<img src="/uploads/profile_images/tiny/p_zmfa_1777608383.webp"
+												alt="justbill"
+												class="hunter-mini-pfp">
+																			</a>
+																	<a href="/profile/k8nh"
+										title="LadyAvylon"
+										class="hunter-avatar-link">
+																					<div class="hunter-mini-pfp-placeholder">
+												L											</div>
+																			</a>
+																	<a href="/profile/2xm6"
+										title="Lady_Di"
+										class="hunter-avatar-link">
+																																<img src="/uploads/profile_images/tiny/p_2xm6_1775248780.webp"
+												alt="Lady_Di"
+												class="hunter-mini-pfp">
+																			</a>
+																	<a href="/profile/qye8"
+										title="Levichar"
+										class="hunter-avatar-link">
+																					<div class="hunter-mini-pfp-placeholder">
+												L											</div>
+																			</a>
+																	<a href="/profile/ent5"
+										title="LorraineS"
+										class="hunter-avatar-link">
+																																<img src="/uploads/profile_images/tiny/p_ent5_1777581261.webp"
+												alt="LorraineS"
+												class="hunter-mini-pfp">
+																			</a>
+																	<a href="/profile/xjkr"
+										title="Nemo"
+										class="hunter-avatar-link">
+																					<div class="hunter-mini-pfp-placeholder">
+												N											</div>
+																			</a>
+																	<a href="/profile/j5rw"
+										title="NJarchhunter"
+										class="hunter-avatar-link">
+																																<img src="/uploads/profile_images/tiny/p_j5rw_1774182529.webp"
+												alt="NJarchhunter"
+												class="hunter-mini-pfp">
+																			</a>
+																	<a href="/profile/x25c"
+										title="SendMeAsign"
+										class="hunter-avatar-link">
+																																<img src="/uploads/profile_images/tiny/p_x25c_1773722297.webp"
+												alt="SendMeAsign"
+												class="hunter-mini-pfp">
+																			</a>
+																	<a href="/profile/j44d"
+										title="Skulbone"
+										class="hunter-avatar-link">
+																																<img src="/uploads/profile_images/tiny/p_j44d_1777605464.webp"
+												alt="Skulbone"
+												class="hunter-mini-pfp">
+																			</a>
+																	<a href="/profile/bgjh"
+										title="Thelionwarrior"
+										class="hunter-avatar-link">
+																																<img src="/uploads/profile_images/tiny/p_bgjh_1777771086.webp"
+												alt="Thelionwarrior"
+												class="hunter-mini-pfp">
+																			</a>
+																	<a href="/profile/3khz"
+										title="Tlo"
+										class="hunter-avatar-link">
+																					<div class="hunter-mini-pfp-placeholder">
+												T											</div>
+																			</a>
+																	<a href="/profile/qz93"
+										title="Trucken Treasure"
+										class="hunter-avatar-link">
+																																<img src="/uploads/profile_images/tiny/p_qz93_1772506688.webp"
+												alt="Trucken Treasure"
+												class="hunter-mini-pfp">
+																			</a>
+															</div>
+						</div>
+					
+									</aside>
+
+				<main class="col-lg-8 col-xl-9">
+					<div class="hunt-decription mt-3 ms-md-3">
+													<div class="hunt-body-text">
+								<p>No description is available yet for this hunt.</p>
+							</div>
+											</div>
+				</main>
+			</div>
+
+						
+				<div class="row mt-4">
+					<div class="col-12">
+
+						<!-- Envelope Reveal Component -->
+						<div class="envelope-wrapper">
+							<div class="envelope-stack" id="envelopeStack">
+
+								<!-- Layer 1 (bottom): open envelope body -->
+								<img
+									src="/images/solution-envelope-open.webp"
+									class="envelope-layer envelope-open"
+									alt="Open envelope">
+
+								<!-- Layer 2 (middle): the flap -->
+								<div class="envelope-flap-container">
+									<img
+										src="/images/solution-envelope-flap.webp"
+										class="envelope-layer envelope-flap"
+										alt="Envelope flap">
+								</div>
+
+								<!-- Layer 3 (top): "Solution" text + wax seal — clickable trigger -->
+								<img
+									src="/images/solution-text-with-wax-seal.webp?v=2026-05-05"
+									class="envelope-layer envelope-seal"
+									id="envelopeSeal"
+									alt="Click to reveal solution">
+
+							</div>
+
+							<!-- Hidden solution content revealed after animation -->
+							<div class="solution-content" id="solutionContent">
+								<div class="solution-inner">
+
+									<h2>Solution</h2>
+
+									
+										<dl class="location-solver-list mb-4">
+											
+																							<dt><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /><path d="M21 21v-2a4 4 0 0 0 -3 -3.85" /></svg> Solver(s)</dt>
+												<dd>
+													&quot;GuestUser17&quot; on Mysterious Writings Discord												</dd>
+																					</dl>
+										<hr>
+
+									
+									
+									<div class="solution-body-text">
+<p>The hunt was solved soon after the creator released an unannounced video stating 10 of the 12 words of the Bitcoin wallet. </p><div class="sidewell sidewell-left-wide"><div class="video-title">"Cracked Final Video"</div><figure class="media"><oembed url="https://www.youtube.com/watch?v=L9g7y3s9p1M&amp;t=324"></oembed></figure><div class="caption">Professor F's surprise video posted on January 1, 2026. (Video jumps forward to where author states the 10 of 12 words.)</div></div><p> </p></div>
+
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<script>
+					(function() {
+						const seal = document.getElementById('envelopeSeal');
+						const flap = document.querySelector('.envelope-flap');
+						const open = document.querySelector('.envelope-open');
+						const content = document.getElementById('solutionContent');
+						let opened = false;
+
+						seal.addEventListener('click', function() {
+							if (opened) return;
+							opened = true;
+
+							// Step 1: seal fades out, flap folds open — simultaneously
+							seal.classList.add('hidden');
+							flap.classList.add('opening');
+
+							// Step 2: after 500ms, fade out the open-envelope body
+							setTimeout(function() {
+								open.classList.add('hidden');
+
+
+								// Step 3: after body fades, expand solution content
+								setTimeout(function() {
+									content.classList.add('revealed');
+									document.getElementById('envelopeStack').style.pointerEvents = 'none';
+
+									// Once the max-height transition finishes, remove the cap entirely
+									content.addEventListener('transitionend', function handler(e) {
+										if (e.propertyName === 'max-height') {
+											content.style.maxHeight = 'none';
+											content.removeEventListener('transitionend', handler);
+										}
+									});
+								}, 50);
+
+							}, 200);
+						});
+					})();
+
+				</script>
+
+					</div>
+	</section>
+
+		<section class="pt-3 pt-md-4">
+        <div class="container">
+			<div class="row">
+				<footer>
+					<p>© 2026 Treasure Hunt DB. All rights reserved. <a class="" href="/terms">Terms of Use and Privacy</a></p>
+				</footer>
+			</div>
+		</div>
+	</section>
+		<!-- Bootstrap 5 core JavaScript Bundle -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<script>
+		// Open all outbound link in a new tab.
+		document.querySelectorAll('a').forEach(function(link) {
+			if (link.hostname !== 'treasurehuntdb.com' && link.hostname !== '') {
+				link.setAttribute('target', '_blank');
+				link.setAttribute('rel', 'noopener noreferrer');
+			}
+		});
+
+
+		// If X is clicked on alert box, then delete/remove it
+		document.addEventListener('click', function(e) {
+			const btn = e.target.closest('.alert-close');
+			if (!btn) return;
+
+			const alert = btn.closest('.alert');
+			if (alert) {
+				alert.remove();
+			}
+		});
+
+		// Remove status queries (used for alert boxes) from URL
+		window.addEventListener('load', function() {
+			const url = new URL(window.location.href);
+			const hasMsg = url.searchParams.has('msg');
+			if (hasMsg) {
+				url.searchParams.delete('msg');
+				// If you also want to remove any trailing "?" cleanly, URL handles it.
+				history.replaceState({}, '', url.toString());
+			}
+		});
+
+		function escapeHtml(str) {
+			if (!str) return '';
+			return String(str).replace(/[&<>"']/g, function(m) {
+				return {
+					'&': '&amp;',
+					'<': '&lt;',
+					'>': '&gt;',
+					'"': '&quot;',
+					"'": '&#039;'
+				}[m];
+			});
+		}
+
+		function cleanGPSandLink(gpsRaw) {
+			// Return empty if there's no GPS data
+			if (!gpsRaw) return '';
+
+			// Convert to string and trim outside whitespace
+			let gps = String(gpsRaw).trim();
+
+			// Remove anything in parentheses (e.g. "(37.123, -122.456)" -> "")
+			gps = gps.replace(/\s*\(.*?\)/g, '');
+
+			// Remove all spaces
+			gps = gps.replace(/\s+/g, '');
+
+			// If string becomes empty after cleaning, return empty
+			if (!gps) return '';
+
+			// Escape the string to prevent XSS and encode special URL characters
+			const safeGps = encodeURIComponent(gps);
+
+			// Return the HTML link
+			return `<a target="_blank" href="https://www.google.com/maps/place/${safeGps}">GPS</a>`;
+		}
+
+
+
+// Convert figure/oembed to video placeholders (for site speed), when clicked load actual video.
+document.addEventListener("DOMContentLoaded", function() {
+	// Use a counter in case multiple videos appear on a page (they each need a unique ID)
+	let videoCounter = 0;
+
+	document.querySelectorAll('figure.media oembed[url]').forEach(element => {
+		videoCounter++;
+		const url = element.getAttribute('url');
+		const figure = element.closest('figure.media');
+
+		// 2. Traverse to find the title element
+		const titleElement = figure ? figure.previousElementSibling : null;
+		let videoTitleText;
+
+		if (titleElement && titleElement.classList.contains('video-title')) {
+			// 3. Generate and assign a unique ID if one doesn't exist
+			const uniqueId = `video-label-${videoCounter}`;
+			titleElement.id = uniqueId;
+
+			// 4. Link the figure to the title for ARIA/SEO
+			figure.setAttribute('aria-labelledby', uniqueId);
+
+			videoTitleText = titleElement.textContent.trim();
+		} else {
+			videoTitleText = 'Video Player';
+		}
+
+		// Declared fresh per-iteration (with let) so a non-matching URL on one
+		// video can't accidentally reuse the previous video's embedUrl/thumbUrl.
+		let embedUrl = '';
+		let thumbUrl = '';
+		let videoId = '';
+		let isVertical = false; // flags Reels/Shorts so we can render a 9:16 player instead of 16:9
+		let isInstagram = false; // used to give Instagram's play button its own styling
+
+		// YouTube Logic
+		if (url.includes('youtube.com') || url.includes('youtu.be')) {
+			videoId = url.split(/v\/|v=|youtu\.be\//)[1].split(/[?&]/)[0];
+
+			// Check for a timestamp (t=) in the original URL
+			let startTime = '';
+			const timeMatch = url.match(/[?&]t=([0-9hms]+)/);
+
+			if (timeMatch) {
+				let t = timeMatch[1];
+				// If the time is just digits (seconds), use it directly
+				if (/^\d+$/.test(t)) {
+					startTime = `&start=${t}`;
+				} else {
+					// If the time is in 1m30s format, we convert it to seconds
+					let seconds = 0;
+					const h = t.match(/(\d+)h/);
+					const m = t.match(/(\d+)m/);
+					const s = t.match(/(\d+)s/);
+					if (h) seconds += parseInt(h[1]) * 3600;
+					if (m) seconds += parseInt(m[1]) * 60;
+					if (s) seconds += parseInt(s[1]);
+					startTime = `&start=${seconds}`;
+				}
+			}
+
+			// Append the start parameter if it exists
+			embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1${startTime}`;
+			thumbUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+
+			// YouTube Shorts are vertical too — flag them the same way as Reels
+			if (url.includes('/shorts/')) {
+				isVertical = true;
+			}
+		}
+		// Vimeo Logic
+		else if (url.includes('vimeo.com')) {
+			videoId = url.split('/').pop();
+			embedUrl = `https://player.vimeo.com/video/${videoId}?autoplay=1`;
+			// Vimeo thumbnails typically require an API call,
+			// so we'll use a CSS fallback or placeholder here.
+			thumbUrl = '';
+		}
+		// Instagram Reel Logic
+		else if (url.includes('instagram.com')) {
+			// Matches /reel/, /reels/, or /p/ links and captures the shortcode,
+			// e.g. https://www.instagram.com/reel/Cxxxxxxxxxx/?utm_source=ig_web_copy_link
+			const igMatch = url.match(/instagram\.com\/(reel|reels|p)\/([A-Za-z0-9_-]+)/);
+
+			if (igMatch) {
+				// Instagram's embeddable path only recognizes "reel" and "p" (not "reels")
+				const igType = igMatch[1] === 'reels' ? 'reel' : igMatch[1];
+				videoId = igMatch[2];
+				embedUrl = `https://www.instagram.com/${igType}/${videoId}/embed`;
+				// Thumbnail is fetched + cached server-side (see instagram-thumbnails.php)
+				// and stamped onto the <oembed> tag as data-thumb before this script runs.
+				thumbUrl = element.getAttribute('data-thumb') || '';
+				isVertical = true;
+				isInstagram = true;
+			}
+		}
+
+		if (embedUrl) {
+			const wrapper = document.createElement('div');
+			wrapper.className = 'video-facade';
+			if (isVertical) {
+				wrapper.classList.add('video-facade-vertical');
+			}
+			wrapper.style.backgroundImage = `url(${thumbUrl})`;
+
+			// Create Play Button — Instagram gets a modifier class so it can be
+			// styled differently (solid circle + brand-pink hover) via CSS.
+			const playButton = document.createElement('div');
+			playButton.className = 'play-button';
+			if (isInstagram) {
+				playButton.classList.add('play-button-instagram');
+			}
+			wrapper.appendChild(playButton);
+
+			// ACCESSIBILITY: Add a label to the facade button
+			wrapper.setAttribute('role', 'button');
+			wrapper.setAttribute('aria-label', `Play video: ${videoTitleText}`);
+
+			// Click Handler
+			wrapper.addEventListener('click', function() {
+				const iframe = document.createElement('iframe');
+
+				// APPLY THE TITLE TO THE IFRAME
+				iframe.setAttribute('title', videoTitleText);
+				iframe.setAttribute('src', embedUrl);
+				iframe.setAttribute('frameborder', '0');
+				iframe.setAttribute('allowfullscreen', 'true');
+
+				if (isVertical) {
+					iframe.classList.add('video-frame-vertical');
+				}
+
+				// Instagram's embed iframe doesn't use the accelerometer/gyroscope
+				// permissions the way YouTube/Vimeo players do
+				if (url.includes('instagram.com')) {
+					iframe.setAttribute('allow', 'autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share');
+				} else {
+					iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+				}
+
+				this.parentNode.replaceChild(iframe, this);
+			});
+
+			element.parentNode.replaceChild(wrapper, element);
+		}
+	});
+});
+	</script>
+	<script src="/js/decodestrip.js?20260912-1"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+<script type="text/javascript">
+// 1. Grab all the image links
+const lightboxLinks = document.querySelectorAll('.glightbox');
+
+// 2. Loop through them and initialize a NEW GLightbox for every single one
+lightboxLinks.forEach((link, index) => {
+    // We give each link a unique temporary class or ID
+    const uniqueClass = `glbox-${index}`;
+    link.classList.add(uniqueClass);
+
+    GLightbox({
+        selector: `.${uniqueClass}`, // Now it's a valid string selector
+        touchNavigation: true,       // Keeps zoom active
+        draggable: false,            // CRITICAL: prevents swipe from fighting your zoom
+        loop: false                  // No cycling
+    });
+});
+</script>
+
+
+
+</body>
+
+</html>

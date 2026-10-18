@@ -1,0 +1,741 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>机窝安全--极客与艺术：赢取 310 BTC 的正确解密方式</title>
+<meta name="description" content="机窝安全,全姿势、一站式安全分析防护平台,国内关注度最高的全球互联网安全一站式平台,以子之盾，御子之矛" />
+<meta name="keywords" content="机窝安全,网络安全,信息安全,黑客技术,互联网安全,渗透测试,漏洞,云安全,大数据安全,物联网安全,IOT安全,工控安全" />
+<link rel="stylesheet" type="text/css" href="/css/jiwo.css">
+<script LANGUAGE = "JavaScript" src="/js/func.js"></script>
+<script charset="utf-8" src="/js/web2.0.js"></script>
+</head>
+
+<body bgcolor='#FCFCFC'>
+
+<script charset="utf-8" src="/jweditor/kindeditor.js"></script>
+<script charset="utf-8" src="/jweditor/lang/zh_CN.js"></script>
+<script>
+	var editor;
+	KindEditor.ready(function(K) {
+		editor = K.create('textarea[name="putcomment"]', {
+			resizeType : 1,
+			allowPreviewEmoticons : false,
+			allowImageUpload : false,
+			items : [
+				'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+				'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+				'insertunorderedlist', '|', 'emoticons', 'image', 'link'],
+			afterBlur: function(){this.sync();}
+		});
+	});
+</script>
+<script charset="utf-8" src="/js/web2.0.js"></script>
+
+<script language="JavaScript">
+	//双击滚屏代码
+	var currentpos, timer;
+	
+	function initialize()
+	{
+		timer=setInterval("scrollwindow()",50);
+	}
+	
+	function sc(){
+		clearInterval(timer);
+	}
+	
+	function scrollwindow()
+	{
+		currentpos=document.body.scrollTop;
+		window.scroll(0,++currentpos);
+		if (currentpos != document.body.scrollTop)
+			sc();
+	}
+	document.onmousedown = sc
+	document.ondblclick = initialize
+</script>
+
+<div class="menuBar">
+	<a href="/">首页</a>&nbsp;>&nbsp;<a href=".">知识</a>&nbsp;>&nbsp;<a href="edit.php?id=2025">修改</a>
+	<div class="topnotice">【页面双击滚屏】</div>
+</div>
+
+<table class="detail" cellpadding="0">
+	<tr>
+		<td width="50%" class="title">标题</td>
+		<td width="30%" class="title">简介</td>
+		<td width="10%" class="title">类型</td>
+		<td width="10%" class="title">公开时间</td>
+	</tr>
+	<tr>
+		<td class="content"><input name="kentitle" type="text" style="height:30px; width:100%" value="极客与艺术：赢取 310 BTC 的正确解密方式" disabled></td>
+		<td class="content"><input name="kenintro" type="text" style="height:30px; width:100%" value="BTC" disabled></td>
+		<td class="content" style="text-align:center;">
+			<select name="kentype" disabled>
+				<option value="0" selected>不指定类型</option>
+				<option value="1" >事件型漏洞</option>
+				<option value="2" >通用型漏洞</option>
+			</select>
+		</td>
+		<td class="content"><input name="kenpubtime" type="text" style="height:30px; width:100%" value="2018-10-09" disabled></td>
+	</tr>
+	<tr>
+		<td colspan='4'>
+			<table class="detail">
+				<tr>
+					<td width="20%" class="title">关联规则</td>
+					<td width="20%" class="title">关联知识</td>
+					<td width="20%" class="title">关联工具</td>
+					<td width="20%" class="title">关联文档</td>
+					<td width="20%" class="title">关联抓包</td>
+				</tr>
+				<tr>
+					<td class='list_title_small'><div id='div_rule2show_2025'><script>div_rela_show('div_rule2show_2025', '', 0, 8, '/rule/detail.php?id=', 'edit.php?id=2025')</script></div></td>
+<td class='list_title_small'><div id='div_ken2show_2025'><script>div_rela_show('div_ken2show_2025', '', 0, 8, '/ken/detail.php?id=', 'edit.php?id=2025')</script></div></td>
+<td class='list_title_small'><div id='div_tool2show_2025'><script>div_rela_show('div_tool2show_2025', '', 0, 8, '/tool/detail.php?id=', 'edit.php?id=2025')</script></div></td>
+<td class='list_title_small'><div id='div_doc2show_2025'><script>div_rela_show('div_doc2show_2025', '', 0, 8, '/doc/detail.php?id=', 'edit.php?id=2025')</script></div></td>
+<td class='list_title_small'><div id='div_pkt2show_2025'><script>div_rela_show('div_pkt2show_2025', '', 0, 8, '/pkt/detail.php?id=', 'edit.php?id=2025')</script></div></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan='4'>
+			<table class="detail">
+				<tr>
+					<td width="25%" class="title">参考1(官网)</td>
+					<td class="content"><input name="kenref1" type="text" style="height:30px; width:100%" value="" disabled></td>
+				</tr>
+				<tr height="30" align="center" bgcolor="D0D0D0">
+					<td class="title">参考2</td>
+					<td class="content"><input name="kenref2" type="text" style="height:30px; width:100%" value="" disabled></td>
+				</tr>
+				<tr height="30" align="center" bgcolor="D0D0D0">
+					<td class="title">参考3</td>
+					<td class="content"><input name="kenref3" type="text" style="height:30px; width:100%" value="" disabled></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td class="title" colspan='4'>详情</td>
+	</tr>
+	<tr>
+		<td colspan='4'>
+			<div class="readeraye">
+				[SAFE-ID: <font color='red'>JIWO-2026-2025</font>]&nbsp;&nbsp;&nbsp;作者:&nbsp;ecawen&nbsp;发表于:&nbsp;[2018-10-09]			</div>
+
+			<br>
+			<div class="summary">
+				本文共 [<font color='red'>764</font>] 位读者顶过
+			</div>
+
+			<br>
+			<div class="detail">
+				<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	曾经，智力超群的黑客们在搞破坏之余也爱玩些行为艺术。可当互联网被垄断后，黑客们捧起了保温杯，去500强上班领工资，就这样，我们失去了古典互联网和极客艺术家。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	[出自:<a href='http://jiwo.org'>jiwo.org</a>]<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	十几年过去，他们又以另一种姿态重新在区块链世界登场，秉承极客精神，用财富、艺术和技术挑战编程想象力的极限。他们有了标榜身份的新玩具——加密艺术品。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+长假已逝，无数人依然沉浸在没能成为“中国锦鲤”的遗憾懊恼中。近日，链圈又诞生了一条数字锦鲤，一名匿名土豪网友发起了一个游戏，宣布将310枚比特币藏在了下面这幅画中。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091625324848.png" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	游戏地址：https://bitcoinchallenge.codes/
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+这款解密游戏共有4关，<strong>第一关0.1BTC，第二关0.2BTC，第三关0.31BTC，第四关310BTC</strong>按照当前的行情，相当于在这幅灰突突的画上贴了1400万人民币。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+该游戏的开发者匿名发布了游戏，自称为Pip，是比特币的早期玩家，早年用一台台式机就挖取了大量的比特币。数量有多少呢？
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091637056095.jpg" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	在FAQ中，Pip说，我不打算告诉你们我有多少比特币，但是我有的数量可以让我不用再担心任何金钱的问题。同时Pip表示他有自己的原因为什么不直接捐赠给一些慈善组织，但破解改谜题赢取310BTC的人可以干任何他们想做的事情（包括做慈善）。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	据最新消息，已经有玩家闯过了第一关，朝着锦鲤本鲤的目标前进了。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+<strong>第一关解密指南</strong>
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091639587814.jpg" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	整张图片最明显的线索就是中间靠下位置的一个3*6的表格，看起来是一些<strong>16进制的数字</strong>。在表格的正上方，我们也能看到一个隐藏的日期“OCT 2 2018”，根据我们之前的解密经验，<strong>先来试一下万能的移位密码，把 20181002作为一个shift key，得到新的表格数字如下</strong>：
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091643476877.jpg" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	可以看到第一行全部是310，这与游戏的大奖金额完全相同，可以理解为是一个解密正确的小提示，下一步我们来研究剩下的12组表格数字，<strong>先把他们转换成10进制的数字</strong>：
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091644280159.jpg" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	目前我们得到了12组数字，想一想，12代表什么？<strong>助记词的位数</strong>！
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+没错，这12组数字一定代表了助记词，<strong>助记词的单词列表由2048个单词构成，而上述的12个数字没有一个数字是超过2048的，那么我们不难猜测，也许数字对应的就是助记词按照字母排序所在的位置</strong>。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+在这里能看到所有的助记词：
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+根据12个数字，我们还原了对应的12个助记词，如下：
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091645310003.jpg" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	用上面的12个助记词，就可以打开比特币钱包：
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+1446C8HqMtvWtEgu1JnjwLcPESSruhzkmV
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+对应的私钥为：
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+KzkZxdhRGxB7eX4u1skXkfJ7VB8JfPp7Nfos3jiF7PQUNMh2SHDE
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091646118597.jpg" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	从该地址我们可以看到<strong>0.1BTC已经在10月4日被1AuSap3Z9NhmhQEe3y1ByxuNFY1S35YtZ3 这一位解密高手领走</strong>。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+到此为止，以上就是0.1BTC谜题的解密过程。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+目前其他的几关尚未有人完全解密，所有的奖励的存币地址如下：
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+310 BTC
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+https://blockexplorer.com/address/39uAUwEFDi5bBbdBm5ViD8sxDBBrz7SUP4
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+0.31 BTC
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+https://blockexplorer.com/address/3NPZiNWiD7cCfXZa1D8tnEZBPgQ884cVw7
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+0.2 BTC
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+https://blockexplorer.com/address/1G7qsUy5x9bUd1pRfhVZ7cuB5cMUP4hsfR
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+0.1 BTC
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+https://blockexplorer.com/address/1446C8HqMtvWtEgu1JnjwLcPESSruhzkmV
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+最终每一个谜题的答案都应该是对应钱包地址的私钥或者助记词。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+在其他线索上有很多人做了尝试，比如：
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091652539844.jpg" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	在图片中隐藏了一个二维码和一段黑白点连成的线，想得到这个信息需要用名为XnView的软件查看此图片。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	打开图像，将“图像”菜单中的“映射”选项设置为“规格化”，“提取通道”设置为“Alpha”，<strong>设置完成后会发现整个图片只剩下了一行线与一个二维码，这条线应该是对应一个2进制数字，而二维码是一个网址。</strong>
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091653488281.jpg" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	而扫描该二维码，所得到的则是一个网址 https://bitcoinchallenge.codes/register-310/
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+将那段线段转换为二进制数字后再转换为ASCII码可以得到以下信息
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091654121094.jpg" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091654276094.jpg" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+上述信息看起来是Base64的加密结果，但用Base64解码做了一些尝试，效果均不理想。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+另外，也有人发现了该图片背景图在被模糊化处理之前的原图片，是一副沐浴在阳光之下的森林图片。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091654582656.jpg" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	此类解密涉及到大量安全和加密知识，对技术要求较高。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+想必大家也看出来了，链圈大佬撒起币来，看的不仅是运气，更看重实力。而将加密货币与画作相结合，让极客与艺术相碰撞正在成为潮流。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+<strong>极客与艺术碰撞出的硬核解谜</strong>
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+尽管科技与艺术的融合在传统世界并不罕见，但区块链、抽象派画作这两个先锋代表在加密世界里的合流显然更胜一筹。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+<strong>他们已经诞生了“爱的结晶”——区块链解密艺术品。</strong>
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+而其中将艺术性和极客技术融合得最完美的，是在2015年，由推特美女艺术家@coin_artist创作的解谜油画《Torched H34R7S》。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091658233438.jpg" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	油画的创作理念和手法融入了文学、编码转换、密码学，背景是国际象棋的棋盘，一只凤凰和斑鸠占据了画作中心，色彩绚丽的火焰在棋盘周围燃烧。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+画作的灵感来自于莎士比亚的爱情长诗《凤凰与斑鸠》。长诗通过描绘相爱的两人（鸟）的葬礼，赞颂他们超越阶级、种族的永恒爱情。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+@coin_artist曾表示，这幅画与自己的感情生活有关。“（在画中引用《凤凰与斑鸠》）对我来说很重要，因为那段时间的感情经历打乱了我的生活，我在一个巨大的岩洞里完成了这件作品”。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+@ coin_artist在接受采访时表示 “这幅画是在2015年熊市那段最艰难的时光创作的，画里的比特币相当于我一半的资产。我希望以这种方式来祈祷，希望一切变得更好。”
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+她将5个比特币放进了画里。最终，2018年2月份，这幅画被一对程序员夫妇破解了。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+聊完艺术的部分，再来看看它的加密技术。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+我们将正向解释下她是如何将秘钥藏入画中的：
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+1. 将《凤凰与斑鸠》中的一段长为24位的诗句“beauty, truth and rarity（美丽、真相和珍贵）”变形为“b34u7y, truth, and rarity”，然后加在钱包52位的明文私钥前，合成76位的字符串。将这个字符串转换为一个长为608（76*8）的二进制数字。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+2. 设置一个长为6位的“变形秘钥”011010按长短隐藏在这六条红丝带中。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091659044688.jpg" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	3. 将608位二进制数字与“变形秘钥”做亦或运算得到一个新的608位二进制数字。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+4. 如何把这608位数字藏在画中呢？作品名叫Torched（火把）所以秘密必然藏在火焰之中，每个火焰有四个属性：外焰颜色、內焰颜色、宽窄、长短。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+每个属性的两个特征都可以用二进制0或1表示：
+</p>
+<p align="center" style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+红色外焰：0&nbsp;&nbsp;&nbsp;&nbsp; 黄色外焰：1<br />
+紫色內焰：0&nbsp;&nbsp;&nbsp;&nbsp; 绿色內焰：1
+</p>
+<p align="center" style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	宽： 0窄：1<br />
+短： 0 长：1
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091700069375.jpg" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<strong>比如左上角的第一个火焰可以用0101表示，一个火焰可以代表一个4位二进制数字，所以作者画了152（608/4）个火焰来隐藏608位二进制数字。</strong>
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+到此就是这幅作品所有正向加密的过程。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+解密时，将152个火焰按顺序转换为608位二进制数字后，用变形秘钥转换为原本的608位二进制数字，然后将二进制数字变为“b34u7y, truth, and rarity+52位明文私钥”的字符串。减去前面的“b34u7y, truth, and rarity”就得到了明文私钥。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+但要注意的是，火焰虽然含有四位二进制数字，但是表示顺序并不一定是按上文所说，这四个属性按先后顺序有24种排列，0/1对应有16（2^4)种方式，火焰的起始位置和排列顺序也有8种，但这些试错都可以依靠编程进行枚举轻松解决。所以最后只有程序员才能解谜成功！怎么样？是不是感觉还有点意思？
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	下面，我们还总结了目前最有意思的几个区块链解谜作品，以及相关信息及提示，让大家开开脑洞，或许还能赚到币。但相关信息也是我们在论坛中收集的网友给出的提示，有些提示像谜题一样难懂，并且不一定都是对的，请大家自行判断。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+<strong>1.中本聪的白皮书</strong>
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+奖金：1BTC
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091718492347.jpg" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	https://www.reddit.com/r/Bitcoin/comments/8kk0pa/1_btc_is_hidden_in_this_puzzle_good_luck/
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+信息/线索：一位名为u/cryptogreetings的Reddit网友给出的全部由中本聪比特币白皮书中单词构成的一副画。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+从上图中通过文字的拼凑目前能找到以下的一些线索：
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+You can throw out at least half the words in the picture
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+Think in pairs
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+Code easily, attack early
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+Lost transaction costs almost users
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+00212121
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+Try +1
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+Almost open
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+Bonus clue: To triumph, one must look within. To infinity, and beyond. When you are close to home, X marks the spot. (from here)
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+-1
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	2. New Money
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+奖金：10,000美元的加密货币
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091707200784.png" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	信息：以为洛杉矶艺术家用10万块乐高拼成的作品，内含价值一万美元的多种加密货币（Bitcoin, Dogecoin, Litecoin, Cannabiscoin等）高清大图可查看https://andybauch.com/exhibitions/new-money
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+3. MonteCrypto: The Bitcoin Enigma
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+奖金：1BTC
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091709270628.jpg" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	信息/线索：一款steam上的Bitcoin解谜游戏，玩家将在游戏中找到一套比特币助记词，第一个成功找到的玩家将得到1个Bitcoin。虽然这道谜题已经被破解，但我们看到了加密货币在游戏中的另一种运用。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+4.The 31 Day Halloween Event
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+奖金：0.1ETH~5mBTC
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<img alt="" src="http://jgy.com/upload/201810/09/201810091709382190.png" />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	信息/线索：解谜网页游戏，美西时间10月1日开始
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+地址：https://cryptopuzzles.org/halloween/
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+<strong>结语</strong>
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+说句实话，与偌大的互联网商业江山相比，整个区块链世界都小得可怜。所以，区块链解密游戏、艺术创作中蕴含的财富并不是最令人振奋的，每年中心化服务商们施予用户的“蝇头小利”，恐怕就相当于几个区块链世界了。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+真正令大家兴奋的是，丧失已久的极客精神重新回来了。曾几何时，黑客就像虚拟世界中的“黑道”，有土匪也有侠客，它们组成了江湖。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+他们不只爱搞破坏，也常把挑战编程极限转化为行为艺术，比如用32M的内存极尽所能地、变出花来做游戏。这曾是古典互联网江湖的一道奇观，象征着极客精神。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+然而随着互联网的控制能力逐渐走向巅峰，“黑道们”收起了手中的“枪”，捧起了保温杯。我们失去了极客艺术家，更重要的，我们失去了古典的互联网和它对自由的承诺。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+极客艺术回来了。那么当年的承诺，是否还有那么一丝机会兑现呢？
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	我们将持续关注310 BTC Challenge的最新信息。
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	两个加密专用的工具箱：
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+https://gchq.github.io/CyberChef/
+</p>
+<p style="font-family:'Microsoft YaHei';font-size:16px;color:#333333;background-color:#FFFFFF;">
+	<br />
+https://www.dcode.fr/
+</p>			</div>
+		</td>
+	</tr>
+</table>
+
+<h3>评论</h3>
+<div id="divweb2show" class="comment_show"><i>暂无</i></div>
+
+<h5>发表评论</h5>
+<textarea id="putcomment" name="putcomment" style="height:100px; width:80%" placeholder="请输入您要说的 ... ..."></textarea>
+<input type='submit' value=" 提  交 " id="putcommentBtn" class='submitBtn' onclick="javascript:web2_post('/comm/comment.php?action=add&mod=ken_comment&fid=2025', putcomment.value, 'divweb2show')" />
+
+<script>
+	web2_get("/comm/comment.php?action=show&mod=ken_comment&fid=2025&rnd=56766", "divweb2show");
+</script>
+
+
+<div class="float-bottom">
+&nbsp;<a href="#">返回顶部</a>&nbsp;<br>
+</div>
+
+<div class="float-bottom1">
+	热度(764)
+</div>
+
+<div class="float-bottom2">
+	<table width="100%">
+		<tr>
+			<td align='center'>
+				<a href="/comm/mark.php?target=ken&mark=1&id=2025"><img src="/img/ding.gif"></a>
+			</td>
+			<td align='center'>
+				<a href="/comm/mark.php?target=ken&mark=-1&id=2025"><img src="/img/cai.gif"></a>
+			</td>
+		</tr>
+		<tr>
+			<td align='center'>
+				顶
+			</td>
+			<td align='center'>
+				踩
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div class="float-bottom3">
+&nbsp;<a href="/img/jiwoweixin.jpg" target="_blank">关注微信&nbsp;</a>
+</div>
+
+
+<div class="footer">v1.4 by jiwo@jiwo.org&nbsp;&nbsp;&nbsp;Copyright &copy; 2016-2046 机窝安全&nbsp;&nbsp;&nbsp;<br><a href='https://beian.miit.gov.cn'>京ICP备16002041号-2</a></div>

@@ -1,0 +1,65 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "lock_validator",
+        "type": "address"
+      },
+      {
+        "name": "packed_board",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "getBoard",
+    "inputs": [
+      {
+        "name": "row",
+        "type": "uint256"
+      },
+      {
+        "name": "col",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "isSolved",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "moveField",
+    "inputs": [
+      {
+        "name": "row",
+        "type": "uint256"
+      },
+      {
+        "name": "col",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  }
+]

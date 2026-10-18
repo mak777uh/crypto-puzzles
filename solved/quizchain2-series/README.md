@@ -1,0 +1,143 @@
+# Quizchain2
+> **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../INDEX.md](../INDEX.md). Вернуть в `puzzles/` — только при новых данных (правила: `AGENT_INSTRUCTIONS.md`).
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: реестр [@agntn/puzzles](https://puzzles.agntn.dev/collections/quizchain2) (raw: https://puzzles.agntn.dev/collections/quizchain2.md).
+
+## Кратко (реестр agntn/puzzles)
+- Описание: The second Quizchain run on r/bitcoinpuzzles and r/Grycoin from May to July 2019. Each block hashed an answer and a TOMI field with MD5 into BIP39 entropy
+- Реестр: https://puzzles.agntn.dev/collections/quizchain2
+
+> The second Quizchain run on r/bitcoinpuzzles and r/Grycoin from May to July 2019. Each block hashed an answer and a TOMI field with MD5 into BIP39 entropy
+
+The first [Quizchain](https://puzzles.agntn.dev/collections/quizchain) ended at block 77. The plan was a 777 mBTC grand finale and a quiet exit. Didn't happen. AoiNakamoto explains why in the [block 1 post](https://puzzles.agntn.dev/collections/quizchain2/1), and it's two very honest reasons. One, too many mistakes to trust a big final block. Two: "I found it way too much fun doing this experiment and want to continue a bit more."
+
+Can't argue with that. So on May 11, 2019 the count starts over at 1. Same subreddit, same author, same love for upside down letters. Block 1 even takes the old block 76 key as its link, so the two runs are literally stitched together.
+
+## The second run, block by block
+
+Every block has its own page. Question, answer, mistakes, and what the chain says about all of it. Here's the map.
+
+### Blocks 1 to 10: single blocks and a bot fight
+
+It opens loud. Every failed block of the first run made the next one 77 mBTC, so [block 1](https://puzzles.agntn.dev/collections/quizchain2/1) and [block 2](https://puzzles.agntn.dev/collections/quizchain2/2) pay 77 each. Block 1 reads `naMe` upside down and lands on U2. Yes, the band. Block 2 has no question at all, just a password manager from the author's Wattpad story.
+
+Then a Twitter poll changes the game. Players want single blocks, not chains, so most blocks drop the link. [Block 3](https://puzzles.agntn.dev/collections/quizchain2/3) hides `CZ` behind Atbash. [Block 4](https://puzzles.agntn.dev/collections/quizchain2/4) finds `MasK` sitting inside the block 3 key. [Block 5](https://puzzles.agntn.dev/collections/quizchain2/5) runs through the vowels, then its funding gets stuck in the mempool for nine hours.
+
+And then the fight. Under [block 6](https://puzzles.agntn.dev/collections/quizchain2/6) a throwaway account says scripts solve 90% of the blocks. True? Nobody can prove it either way. [Block 7](https://puzzles.agntn.dev/collections/quizchain2/7) names the author's altcoin, Grycoin, and a human gets there first. [Block 8](https://puzzles.agntn.dev/collections/quizchain2/8) is xkcd's most famous password, twice. [Block 9](https://puzzles.agntn.dev/collections/quizchain2/9) gets funded twice by accident, so 14 mBTC sit on one address. And [block 10](https://puzzles.agntn.dev/collections/quizchain2/10)? The worst received block of the whole experiment, by the author's own count. That takes some doing.
+
+### Blocks 11 to 20: a new subreddit and a bot test
+
+[Block 11](https://puzzles.agntn.dev/collections/quizchain2/11) has no question at all, and its answer is one space. Literally. Then the first mistake of the run. [Block 12](https://puzzles.agntn.dev/collections/quizchain2/12) gets a capitalization hint wrong, `Grycoin` where the hash wants `grycoin`. That costs the author a 77 mBTC [block 14](https://puzzles.agntn.dev/collections/quizchain2/14), fourteen characters cut out of the genesis address.
+
+Block 12 is also the last one on r/bitcoinpuzzles. From [block 13](https://puzzles.agntn.dev/collections/quizchain2/13) on, the posts go to r/Grycoin. It opens with pizza, Atbash style, on Bitcoin Pizza Day. Solved in nine minutes.
+
+Then the experiment. Do bots sweep MD5 hashes of weak passwords? [Block 15](https://puzzles.agntn.dev/collections/quizchain2/15) sat on the chain for two days with the answer `TOMI` before anyone saw a post. Nobody touched it. So [block 19](https://puzzles.agntn.dev/collections/quizchain2/19) drops the TOMI field and a human still wins.
+
+In between, [block 16](https://puzzles.agntn.dev/collections/quizchain2/16) digs up a vanity address from 2012. [Block 17](https://puzzles.agntn.dev/collections/quizchain2/17) looks into the Mona Lisa's right eye. [Block 18](https://puzzles.agntn.dev/collections/quizchain2/18) asks for one word, `Third.` [Block 20](https://puzzles.agntn.dev/collections/quizchain2/20) quotes an address that fails its own checksum. Who needs a valid address to burn coins?
+
+### Blocks 21 to 30: the TOMI wars
+
+[Block 21](https://puzzles.agntn.dev/collections/quizchain2/21) has a question that says it has no question. The answer is `21 million`, and the hard part is the TOMI field. Players hate it. The author keeps it. Then [block 22](https://puzzles.agntn.dev/collections/quizchain2/22) skips the field and pays for it. A player had the address on a list of old guesses and claimed it four hours before the post. So every block after it gets a TOMI field. Lesson learned.
+
+The questions get tiny. [Block 23](https://puzzles.agntn.dev/collections/quizchain2/23) is `PG`, short one letter of PGP. [Block 24](https://puzzles.agntn.dev/collections/quizchain2/24) is `Reusable`, and somebody who just read about RPOW claims it in the funding block. [Block 25](https://puzzles.agntn.dev/collections/quizchain2/25) fakes a Fibonacci puzzle to hide `77 + 25`. [Block 26](https://puzzles.agntn.dev/collections/quizchain2/26) bends Samson's riddle into `sweet honey strong lion`. Fair? Not really, and the TOMI field says so itself.
+
+Atbash keeps coming back. [Block 27](https://puzzles.agntn.dev/collections/quizchain2/27) turns `FOG COOL` into `UTXO` for 9 mBTC. [Block 30](https://puzzles.agntn.dev/collections/quizchain2/30) folds the alphabet and reads `EU IQ KO` off it. Three days, two hints and a lot of grumbling. In between, [block 28](https://puzzles.agntn.dev/collections/quizchain2/28) goes in ten minutes on Hal Finney's tweet. [Block 29](https://puzzles.agntn.dev/collections/quizchain2/29) tests hints 20 minutes apart and dies in 50.
+
+### Blocks 31 to 40: mind miners
+
+Riddles first. [Block 31](https://puzzles.agntn.dev/collections/quizchain2/31) says `oxen` and means the Veronese riddle, a thousand years old. [Block 32](https://puzzles.agntn.dev/collections/quizchain2/32) rewards anyone who remembers the first run: `Omnipotent`, the answer its block 22 should have had. Gone in eleven minutes.
+
+Then the BIP39 word list moves in. [Block 33](https://puzzles.agntn.dev/collections/quizchain2/33) asks `Can you find the answer?` and means it literally. `answer` sits on line 78, so the solution is `0078`. Players call it impossible. Four hints later, it isn't. [Block 39](https://puzzles.agntn.dev/collections/quizchain2/39) counts one to ten in the same list and finds three numbers missing.
+
+The author keeps playing with hint speed. [Block 35](https://puzzles.agntn.dev/collections/quizchain2/35) fires hints minutes apart and lands on the 2020 halving. [Block 37](https://puzzles.agntn.dev/collections/quizchain2/37) pays 10 mBTC and drops a hint every five minutes, by popular vote. Its answer names the players: `Quizchain player`, mining with the mind. Not everyone loved it. You had to be awake.
+
+Atbash shows up once more. [Block 34](https://puzzles.agntn.dev/collections/quizchain2/34) reads the foldover two places to the right and survives almost a day. [Block 36](https://puzzles.agntn.dev/collections/quizchain2/36) is pure wordplay, `bit` after `de`, `or` and `ha`, and players call it fair. Rare praise. [Block 38](https://puzzles.agntn.dev/collections/quizchain2/38) takes `ACE` from a Pieter Wuille tweet. And [block 40](https://puzzles.agntn.dev/collections/quizchain2/40)? `hodl`, solved at sight, with a double spend race for the prize. Who else could close a stretch like this?
+
+### Blocks 41 to 50: slogans and races
+
+The author starts borrowing. [Block 41](https://puzzles.agntn.dev/collections/quizchain2/41) asks for `Beauty` and means the words before the key in a famous painting puzzle. [Block 42](https://puzzles.agntn.dev/collections/quizchain2/42) has no question at all, just hints every five minutes. Its answer is a sentence from the first run, given away in advance a second time. Cheeky. [Block 43](https://puzzles.agntn.dev/collections/quizchain2/43) reads two words off the block 42 mnemonic, and a player's script tries all 144 pairs.
+
+Then pop culture. [Block 44](https://puzzles.agntn.dev/collections/quizchain2/44) is a Rolling Stones video, and `good solution` stands in for satisfaction. [Block 45](https://puzzles.agntn.dev/collections/quizchain2/45) asks who Satoshi really is, multiple choice. Hal Finney, says the author. The letter is trivial, the TOMI field takes 36 hours. [Block 46](https://puzzles.agntn.dev/collections/quizchain2/46) is only a number, 46, and the answer is a presidential candidate. [Block 47](https://puzzles.agntn.dev/collections/quizchain2/47) pays 11 mBTC for a cross sum that falls in three minutes.
+
+Ads come next. The author muses about the quizchain as advertising. So [block 48](https://puzzles.agntn.dev/collections/quizchain2/48) is `Think different`, an Apple slogan. [Block 49](https://puzzles.agntn.dev/collections/quizchain2/49) is Google's `Don't be evil`, with the TOMI field printed right in the format line. Oops. It goes in 18 minutes, with a double spend attempt on the side.
+
+[Block 50](https://puzzles.agntn.dev/collections/quizchain2/50) makes up for it. Twenty-one ones, a valid address once you add the checksum. The answer is `4oLvT2`. Fair, clever and gone in under three hours. Isn't that the whole point?
+
+### Blocks 51 to 60: Hal everywhere
+
+Speed first. [Block 51](https://puzzles.agntn.dev/collections/quizchain2/51) has no question and the answer is `51 percent attack`. Claimed eight seconds after the post, in the funding block. [Block 52](https://puzzles.agntn.dev/collections/quizchain2/52) takes the block 5 vowels and doubles the first word. Bat, twice.
+
+Then Hal Finney moves in. For the author Hal is Satoshi, and the blocks say so. [Block 53](https://puzzles.agntn.dev/collections/quizchain2/53) wants the URL of a tweet with Hal in a Superman shirt. The mobile URL, as it turns out. Mistake, says the author, and pays for it twice. [Block 55](https://puzzles.agntn.dev/collections/quizchain2/55) is a 77 mBTC `FOMO` that falls in four minutes. [Block 57](https://puzzles.agntn.dev/collections/quizchain2/57) is a second 77, Hal's tweet about CO2, and the mobile URL again.
+
+In between, [block 54](https://puzzles.agntn.dev/collections/quizchain2/54) shifts HAL to IBM and lands on `HAS`. A script found it, the logic not so much. [Block 56](https://puzzles.agntn.dev/collections/quizchain2/56) is a whole sentence from Satoshi's 56th Bitcointalk post. [Block 58](https://puzzles.agntn.dev/collections/quizchain2/58) is Satoshi thanking Hal. Hal talking to himself, if you ask the author.
+
+Atbash closes the stretch. [Block 59](https://puzzles.agntn.dev/collections/quizchain2/59) reads `ET` off the foldover, but the posted digits are wrong. Two days lost. "Quitting this whole thing in disgust", writes the author, then stays. [Block 60](https://puzzles.agntn.dev/collections/quizchain2/60) turns `2N` into `MM`, Mayer Multiple. Ten blocks, a pile of Hal's posts and two mobile links. Tired yet?
+
+### Blocks 61 to 70: sevens and palindromes
+
+July 7 is the big day. [Block 61](https://puzzles.agntn.dev/collections/quizchain2/61) goes up at 7 pm Japanese time and pays 77 mBTC. The question? `A number`. The most important one in history, says a hint. The next hint is a single dot. That's it, a dot. The answer is `350`, the safe CO2 level, and the dot was the TOMI field, `.org`. Three days of guessing. [Block 62](https://puzzles.agntn.dev/collections/quizchain2/62) asks `77` and wants `Tanabata`, the festival of July 7.
+
+Then Aoi gets personal. [Block 63](https://puzzles.agntn.dev/collections/quizchain2/63) is dedicated to Cariga Bright, someone "absolutely not existing whatsoever". The author signs a message with a pen, right on the screen. Sound familiar? The vowels `IAOAOI` hide `I am omnipotent Aoi`. [Block 66](https://puzzles.agntn.dev/collections/quizchain2/66) asks `Aoi` and takes the block 63 message. Trimmed at both ends.
+
+Keyboards and Hal in between. [Block 64](https://puzzles.agntn.dev/collections/quizchain2/64) turns `JD` into `QW` with Atbash. Six letters make `QWERTY`. [Block 65](https://puzzles.agntn.dev/collections/quizchain2/65) is `layer`, from the author's tweet about a second layer. Twelve minutes. [Block 67](https://puzzles.agntn.dev/collections/quizchain2/67) is the next 77. Satoshi is almost an anagram of Thomas. The TOMI field? Hal Finney's full name.
+
+The end reads the same both ways. [Block 68](https://puzzles.agntn.dev/collections/quizchain2/68) wants a book title from a number, `Seveneves`, with `palindrome` as the TOMI field. [Block 69](https://puzzles.agntn.dev/collections/quizchain2/69) answers "Waste of time, sir." with `madam`. Same TOMI, same partial hash, and a player noticed. [Block 70](https://puzzles.agntn.dev/collections/quizchain2/70), the last 7 mBTC block, is `Victor/Victoria`, slash included. It falls in the next block after the post. Bots? No, a Wattpad reader.
+
+### Blocks 71 to 77: climate and two open endings
+
+The prizes count up now. Each block pays the cross sum of its number, 8 mBTC for [block 71](https://puzzles.agntn.dev/collections/quizchain2/71) up to 12 for [block 75](https://puzzles.agntn.dev/collections/quizchain2/75). Block 71 asks `not zero` and wants `net zero`. One player had it, but wrote `carbon-neutral` with a hyphen. Correct English, wrong hash.
+
+And the topic is climate, every time. [Block 72](https://puzzles.agntn.dev/collections/quizchain2/72) asks `NGD` and means the Green New Deal. It's claimed four hours before the post. "I am shocked, SHOCKED", writes the author under [block 73](https://puzzles.agntn.dev/collections/quizchain2/73), and the answer is `carbon budget`. [Block 74](https://puzzles.agntn.dev/collections/quizchain2/74) takes three days and a Wattpad chapter. The answer is `PETM`, a warming spike some 55.5 million years ago. Block 75 asks for the purpose of the real big block. Nine minutes later it's gone: `reverse Turing test`, straight from the author's own FAQ.
+
+Then the big ones. [Block 76](https://puzzles.agntn.dev/collections/quizchain2/76) pays 77 mBTC for `change to`. One public guess matched both posted checksums and still missed the address. The coins sat there for seven years. They moved in August 2026, and nobody has said how.
+
+[Block 77](https://puzzles.agntn.dev/collections/quizchain2/77) came early, on July 7, and in two stages. Stage One is Hal Finney's "Bitcoin and me", read as a puzzle by Satoshi. It went seven minutes after [Grycoin block 2](https://puzzles.agntn.dev/collections/grycoin/2) showed the format, to the same address. The winner kept the tricky bits to themselves. Seven years later a player who didn't win wrote the hash down anyway, and the claim's key backs it. Stage Two, the 777 mBTC block, is [a puzzle of its own](https://puzzles.agntn.dev/collections/real-big-block) and still waits. Up for it?
+
+## What the Quizchain2 records carry
+
+### MD5 from day one
+
+The first run switched to MD5 at block 15 by accident and just kept it. The second run doesn't even pretend. Every block hashes its string with MD5, feeds the 16 bytes to Ian Coleman's BIP39 tool as entropy and takes `m/44'/0'/0'/0/0`. Twelve words, one address, done.
+
+The string usually looks like `[solution] TOMI [TOMI] [link]`. TOMI is Thinking Only Method: a short field that only clicks once you know the answer. The link is a whole earlier key, when there is one. The post also gives the first digits of the MD5, sometimes for each part on its own. That's the only checksum you get. Use it.
+
+### Printed or derived?
+
+A few keys got printed. Block 2's sits in a player's walkthrough. Block 3's shows up in the block 4 thread, because block 4's answer hides inside it. Sneaky. And the author printed block 6's key as the link for block 8. Block 12's key came from a player who posted the string, the address and the WIF right after the claim.
+
+The rest end in `.derived()`. Nobody printed them, so the record runs the published recipe on the published answer. The chain keeps it honest. The WIF has to give the funded address, and its public key has to match the one the claim revealed. Nobody can fake that, the author included.
+
+Block 6 is the fun one. Its key is printed, its six words never are. So the record takes the first six words of the block 5 mnemonic, hashes them and lands exactly on the printed key. Method confirmed. Love it when that happens.
+
+Block 76 has no key at all. It was claimed, and nobody ever posted the string. So its status is `claimed`, not `solved`. The record keeps the question, the hints and the checksums. The rest is up to you.
+
+Block 77 sat in the same corner until August 2026. Then a player who didn't win posted its MD5 in [a GitHub issue](https://github.com/floflo777/open-crypto-puzzles/issues/1). The derived public key matches the 2019 claim, so the record takes the entropy from that issue and the status is `solved`. Who wrote the hash down matters less than what the chain says about it.
+
+### Where the answers come from
+
+Mostly from the author's updates to the posts. When a player posted the full string, the record cites that comment too. Block 7 breaks the pattern: the author never edited the answer in, just replied "Good job" under the winning comment. Block 16 goes further. No update, no reply, only the winner's comment. The claim's public key settles it anyway. Block 29 is the odd one. The author's update spells the riddle's poet Symphonius, while the hash wants Symphosius. Only the second spelling gives the posted digits and the address. Block 38 repeats the trick. The update says `odd numbered alphabet numbers`, the winner wrote `letters`, and only `letters` hashes to the posted `4f0`. Block 39 never got an update at all. The answer lives in one player's comment, and the claim's key backs it. Block 48 is the same. So are blocks 73 and 74. Block 42 has the opposite problem. The update says `the solution of which`, the winner wrote `to which`, and only `to` hashes to `bec`. Block 59 is worse. The post printed `9b3`, the hash starts with `9be`, and the author typed it by hand. A player posted the whole hash after the claim, so the record cites that comment for it. Block 64's update first spelled the TOMI field `kayboard`. A commenter caught it, the author fixed it: "I am crazy, but not THAT crazy."
+
+### Who claimed it?
+
+The chain doesn't name anybody, so no record does either. Block 5 comes close, though. The claim pays `1Thanksg9t4MRoCH2CM3cArWq26JiNvMY`, and u/BrainForceOne says in the thread it's their address. A vanity address that says thanks. Polite. Blocks 14 and 16 share a claim address too, and u/puzzleponky says they solved both. Blocks 23 and 26 also pay one address, `14jnHDoGcSLThfg2pWrCKKkgeA4KGDwFGj`. Nobody in either thread says whose. Block 36 pays it a third time, and this time u/tdp94 posted the winning string. Proof? No. A strong hint, sure. Block 34 pays `1Thanksg…` again, and u/BrainForceOne explains the solve. Blocks 31, 35 and 39 pay `129jw1GUGwiJbf4rL7qEANPbxvSRC5zfHN`, and each time u/puzzleponky posts the answer in the thread. Blocks 48 and 49 pay it too, same story. Block 50 pays `1Thanksg…` a third time, with u/BrainForceOne's explanation underneath. Blocks 44 and 45 share one more, `16YUMnqAExU7yCCRaE1kfFrc4X9c4dMFjL`. Nobody claims it in block 44, and u/DanTheDon83 says they solved block 45. Block 51 pays it a third time, and u/DanTheDon83 says they solved that one too. Blocks 63, 65, 67 and 69 pay `129jw1G…` again, and u/puzzleponky posts the answer under each. Block 64 pays `1Thanksg…` a fourth time, with u/BrainForceOne's walk through the keyboard. Block 62 is the sore one. u/userm1010110 says they solved it first, but another transaction confirmed instead. Blocks 71 and 72 share `1FLVbrhTQBpR9qnTKCuPHdjfvx6YTCWuc1`, and u/LiaVl posts the winning string under both. Block 74 and Stage One of block 77 pay `129jw1G…`, with u/puzzleponky's note under each. Block 76 pays a fresh `bc1q` address in 2026. Nobody says whose.
+
+### The threads, archived
+
+Every thread lives in the repo as a reading copy with a screenshot, in [assets/sources/quizchain2](https://github.com/agntn/puzzles/tree/main/assets/sources/quizchain2). Blocks 1 to 12 come from 2023 captures of old.reddit.com, checked comment by comment against the Arctic Shift Reddit archive. The r/Grycoin threads have no readable capture of the whole page. The Wayback Machine kept Reddit's empty app shell for most of them and nothing at all for blocks 19 and 20. Block 22 is the lucky one: a 2020 capture of a comment link holds the whole post, solution included, plus that one comment. Block 33 got the same luck, a 2020 capture of a deleted comment's link with the whole post and its four hints. Block 46 got luckier. The Wayback Machine caught it in 2019, nine minutes after the post, before the update and before any comment. Blocks 74 and 77 got the comment link luck too, both from July 2020. So the copies come from Arctic Shift, checked against pullpush, and the screenshots are Arctic Shift renders.
+
+### Why not blocks 78 and up?
+
+Because the author started counting again. "Quizchain2 Block 1" is right there in the title. So it's a collection of its own, and `quizchain2/1`, `1`, `"1"` and `"quizchain2/1"` all resolve inside it. Ask the whole dataset for a bare `1` and the miss suggests both runs.
+
+## The Quizchain2 puzzle records
+
+<collection-puzzles collection="quizchain2">
+
+</collection-puzzles>
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка, прогресс, баланс или решение **должны** быть дописаны сюда с датой и ссылкой.
+
+## История изменений
+- 2026-10-16 (deepseek-flash) — данные перенесены из реестра [@agntn/puzzles](https://puzzles.agntn.dev/) (первоисточники внутри текста).

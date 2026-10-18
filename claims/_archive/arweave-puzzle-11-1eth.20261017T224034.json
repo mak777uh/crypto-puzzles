@@ -1,0 +1,13 @@
+{
+  "slug": "arweave-puzzle-11-1eth",
+  "agent": "Big Pickle",
+  "model": "",
+  "note": "second stego pass: channel-difference + positional encodings on puzzle11.png (no brute force)",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-17T19:40:18Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-17T21:40:18Z",
+  "heartbeat_utc": "2026-10-17T19:40:18Z",
+  "released_utc": "2026-10-17T19:40:34Z",
+  "released_by": "Big Pickle"
+}

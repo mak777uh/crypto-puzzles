@@ -1,0 +1,115 @@
+---
+title: "Zden's puzzles"
+description: "Sixteen visual puzzles by Zden on Bitcoin and Ethereum and Litecoin and Decred. Every one ships its image. Level 5 took eight years to crack."
+canonical_url: "https://puzzles.agntn.dev/collections/zden"
+---
+# Zden's puzzles
+
+> Sixteen visual puzzles by Zden on Bitcoin and Ethereum and Litecoin and Decred. Every one ships its image. Level 5 took eight years to crack.
+
+<collection-facts collection="zden">
+
+
+
+</collection-facts>
+
+## The puzzle
+
+Zden publishes images with a key hidden in them, on [crypto.haluska.sk](https://crypto.haluska.sk/). Most levels are a single image. Autonomy combines images and animation across several stages. The prize sits on the address. The solver posts the key. The series moved across four chains, so this is the one collection that spans four values of `chain`. `zden/decred-janus` paid 460 DCR, `zden/litecoin-segwit` 230 LTC, `zden/xixoio` 6 ETH.
+
+## What the records carry
+
+Every Zden record has an `assets({ puzzle })` entry pointing at the image under `assets/zden/` in the repository, so `assetPath()` and `assetUrl()` answer for all sixteen. Fifteen carry the public key, seven carry the private key. A `solved` status doesn't mean the record has enough key material for `verify`; without it, verification answers `unavailable`.
+
+`zden/decred-autonomy` was left out because the live catalog didn't show an address. The [original page's archived HTML](https://web.archive.org/web/20170430210807/https://decred.org/autonomy_puzzle/) links `DseEpHK49hHrTJhxwop3B86K1dryv4CYz8N` below its reward counter, so there's no need for a special addressless record. [Scott Burke's account for BlockCrushr Labs](https://medium.com/blockcrushr-labs/solving-decreds-autonomy-puzzle-aedac18f18f3) dates the launch to 25 April 2017 and documents their solution. The record ships Zden's [gate render](https://crypto.haluska.sk/gate_full.jpg), not the entire interactive puzzle.
+
+Why did 355 DCR leave the address when the puzzle promised 500? [Decred's v1.0 press release](https://www.prnewswire.com/news-releases/decred-releases-v10-the-worlds-first-cryptocurrency-of-the-people-for-the-people-and-by-the-people-300443738.html) has the rule: 500 DCR to the first solver, cut every 24 hours. The chain follows it to the letter. On 26 April 100 DCR went back to the address that had put the prize up. Then 50 on the 27th, 25 on the 28th. Two deposits added 3 and 25 DCR. Slow solvers paid for every day, literally.
+
+The rest of the history is housekeeping. The `funding` is a first 500 DCR that sat there from 6 to 11 April, before launch, and then left. The 502.86 DCR that stayed came in on the 20th. On launch day it left for another address and came back 24 minutes later. Same round trip as in [Proof of Writing](https://puzzles.agntn.dev/collections/proof-of-writing), so a `decrease` and an `increase`. Then 29 April, 23:08 UTC. One transaction sent 355 DCR out and the change back. A second one took the change in the same block. Both are `claim`, and `prize: 355.85470498` is what the address held right before. The launch is dated only to the day, so there's no `solveTime`. The article's publication date isn't a solve date either.
+
+Seven of those solved records also ship the solution image he posted next to the puzzle. Levels 1, 2, 3, SFX, XM17, Nethemba and XIXOIO. The page linked them. The records didn't. `assets({ solution })` is the same field Movie Enigma already used, and `puzzles_show` prints it as `solution asset:`.
+
+```ts
+assets: assets({
+  puzzle: "level-1/puzzle.png",
+  solution: "level-1/solver.png",
+  sourceUrl: "https://crypto.haluska.sk/crypto1.png",
+}),
+```
+
+The hints Zden published are on the records too, in the shape they came in. Codex Protocol got two more renderings, Litecoin SegWit three SVG drawings and Decred Janus a stripped down tree, so those three list the files under `assets({ hints })` and `puzzles_show` prints them as `hint assets:`. The Janus file also comments `33*bbb`. That's the hint, so the record carries it as `official(…)` with a 2018 Wayback capture of the SVG. Demobit and XIXOIO were hinted on Twitter, so those two carry `official(…)` entries with the tweet as the source and a Wayback capture behind it. `puzzles_hints` answers the text ones. The image ones are files, and `assetLinks()` is where a script picks them up.
+
+```ts [src/collections/zden/decred-janus.ts]
+export const zdenPuzzleDecredJanus = puzzle({
+  id: "zden/decred-janus",
+  chain: "decred",
+  address: "DsRaAja82UvgnqYaBHYFuyCKURFX2rCyEJ8",
+  sourceUrl: "https://crypto.haluska.sk/decred_tree.svg",
+  startedAt: "2017-03-07 04:20:56",
+  status: Status.Solved,
+  pubkey: compressed("02278753666ec31c29b755a39421017bd80744d728204da0f7ff452846112b618b"),
+  prize: 460,
+  solvedAt: "2017-03-18 13:51:29",
+  transactions: [
+    funding("900e…05f2", "2017-03-07 04:20:56", 100),
+    increase("47c3…60c2", "2017-03-07 04:31:20", 100),
+    increase("f968…6581", "2017-03-07 04:48:32", 100),
+    increase("2a06…e90e", "2017-03-07 20:38:42", 150),
+    increase("327a…4b13", "2017-03-07 20:55:54", 5),
+    increase("77f5…4719", "2017-03-07 21:00:08", 5),
+    claim("2af4…5467", "2017-03-18 13:51:29", 460),
+  ],
+  assets: assets({ puzzle: "decred-janus/puzzle.svg", hints: ["decred-janus/hint.svg"] }),
+  hints: [
+    official(
+      "33*bbb",
+      "https://crypto.haluska.sk/decred_tree_hint.svg",
+      confirmation(
+        "https://web.archive.org/web/20181219152809/http://crypto.haluska.sk/decred_tree_hint.svg",
+        "Wayback capture of the hint SVG",
+      ),
+    ),
+  ],
+});
+```
+
+`prize: 460` is in DCR because the record says `chain: "decred"` and `prizeCurrency()` reads the chain's symbol from `@agntn/chains`. A `currency` field is only written when the prize isn't the native token.
+
+The 777 sat tx on `zden/1bitcoin-white-paper` isn't the claim. It pays the notarization address and sends change back. The actual sweep lands four days later. His page says the image's SHA-256 is that wallet's private key, so the record quotes that as `official(…)`. The puzzle wallet key is a different one: JTobcat, Ziot and Motive printed it in their writeup, and the record stores that hex and WIF.
+
+## Status
+
+One puzzle is still open: `zden/level-halv`, the halving puzzle from April 2024. The only thing the author said about it, that it is way easier than level 5, is on the record. Level 5 is solved now, the story is below. Want to see what a solved multi chain record looks like? This is the collection.
+
+## Level 5, solved after eight years
+
+`zden/level-5` was the longest wait in this collection. Zden funded `1cryptoGeCRiTzVgxBQcKFFjSVydN1GW7` on 20 October 2018 and topped it up three times to 0.0055555 BTC. On 12 December 2021 Zden relaunched it with a corrected image and new hints, because the 2018 release was, in Zden's own words, incomplete. So for three years the puzzle had no solution at all. Everyone who tried was decoding a broken picture.
+
+On 22 September 2026 at 18:34:35 UTC, in block 968171, all four outputs left in one transaction, [`e254…8e8e`](https://blockstream.info/tx/e2544433184d0fe4157ca10a8e1ce753bb52a7b0bbcf833740d7448ed25e8e8e). For five days that was all anyone had: a spend, an uncompressed public key and a fresh address. The record said `claimed`.
+
+Then on 27 September the winner posted [the solution on echo.ls](https://echo.ls/zden-level-5/), and Zden's page now links it as written by the winner. Every rectangle gives four numbers: width, height and the two border thicknesses. The little diagram in the corner says `-1`, `×10` and `64`. Scale each side by ten, add its border, take one away, divide by 64. Multiply the two and you land within a sixth of an integer, every time. Sum the areas in pairs and the 32 sums are the 32 bytes of the key. Simple? Only once somebody shows you.
+
+```ts [src/collections/zden/level-5.ts]
+status: Status.Solved,
+key: hex("f4bfad68198549d3e5612fa3b1cabad14679c634359e2f5efdd804ddce8a9f51").wif(
+  "5Kg5Mosdn8dbSCsNBVtFHTVMjyfSE8UR2nfLLG8JcjWJNqtBBCG",
+),
+solver: party("echo.ls", { key: "echo-ls", /* … */ }),
+```
+
+`puzzles verify zden/level-5` derives the vanity address from that key, so you don't have to take anybody's word for it. The solver has [a page](https://puzzles.agntn.dev/solvers/echo-ls) too.
+
+## Every puzzle
+
+One page each: the record, the transactions and the live balance.
+
+<collection-puzzles collection="zden">
+
+
+
+</collection-puzzles>
+
+
+## Sitemap
+
+See the full [sitemap](https://puzzles.agntn.dev/sitemap.md) for all pages.

@@ -1,0 +1,78 @@
+{
+  "url": "https://api.github.com/repos/floflo777/open-crypto-puzzles/issues/38",
+  "repository_url": "https://api.github.com/repos/floflo777/open-crypto-puzzles",
+  "labels_url": "https://api.github.com/repos/floflo777/open-crypto-puzzles/issues/38/labels{/name}",
+  "comments_url": "https://api.github.com/repos/floflo777/open-crypto-puzzles/issues/38/comments",
+  "events_url": "https://api.github.com/repos/floflo777/open-crypto-puzzles/issues/38/events",
+  "html_url": "https://github.com/floflo777/open-crypto-puzzles/issues/38",
+  "id": 5696939060,
+  "node_id": "I_kwDOT6BV9M8AAAABU5BkNA",
+  "number": 38,
+  "title": "Four witnessed free-order sweeps, an author quote on spoken words, and a harness bug (Guntis Vitolins)",
+  "user": {
+    "login": "profesor1234",
+    "id": 34805715,
+    "node_id": "MDQ6VXNlcjM0ODA1NzE1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/34805715?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/profesor1234",
+    "html_url": "https://github.com/profesor1234",
+    "followers_url": "https://api.github.com/users/profesor1234/followers",
+    "following_url": "https://api.github.com/users/profesor1234/following{/other_user}",
+    "gists_url": "https://api.github.com/users/profesor1234/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/profesor1234/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/profesor1234/subscriptions",
+    "organizations_url": "https://api.github.com/users/profesor1234/orgs",
+    "repos_url": "https://api.github.com/users/profesor1234/repos",
+    "events_url": "https://api.github.com/users/profesor1234/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/profesor1234/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2026-10-04T06:43:37Z",
+  "updated_at": "2026-10-04T06:43:37Z",
+  "closed_at": null,
+  "assignee": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "sub_issues_summary": {
+    "total": 0,
+    "completed": 0,
+    "percent_completed": 0
+  },
+  "issue_dependencies_summary": {
+    "blocked_by": 0,
+    "total_blocked_by": 0,
+    "blocking": 0,
+    "total_blocking": 0
+  },
+  "body": "[1-tested-ledger.md](https://github.com/user-attachments/files/33019852/1-tested-ledger.md)\n[2-clue-written-words.md](https://github.com/user-attachments/files/33019853/2-clue-written-words.md)\n[3-method-tail-race.md](https://github.com/user-attachments/files/33019851/3-method-tail-race.md)",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/floflo777/open-crypto-puzzles/issues/38/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/floflo777/open-crypto-puzzles/issues/38/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null,
+  "pinned_comment": null
+}

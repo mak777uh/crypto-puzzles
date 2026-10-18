@@ -1,0 +1,7 @@
+# line: glyphs separated by ' ; ', each 'LEFT>RIGHT' shapes: o x + | / - _ ^ ; SP = space glyph (+|oo)
+1: o>- ; -o>o| ; ->o ; ->o ; ooo>-+ ; +o>+o ; o+>/_ ; -o>o| ; oo>/+ ; SP ; o>o+_ ; o>-o
+2: o>-o ; ->o|o ; ->_o ; ->_o-o ; +o>+o ; oo>-+ ; +->/o ; ->/o ; ->_o ; o>o+_ ; SP ; -o>o| ; +>-o ; ->+o ; SP ; o>o+_ ; oo>- ; -o>+|
+3: o>|+_ ; |+>-^ ; SP ; oo>-+ ; o|>-+ ; SP ; o>|- ; o>-^ ; -o>|o ; -^>+| ; SP ; -o>o| ; +_o>+o ; +o>_ ; o+>/_ ; o>|- ; +o>- ; -o>oo ; oo>- ; <ooo>-+
+4: -o>o| ; oo>/+ ; SP ; +o>- ; o>o+_ ; -o>+- ; ->+o ; ->/o ; ->o|o ; o|>-+ ; SP ; oo>-+ ; SP ; o>-+o ; _>-o
+5: o>/+_ ; +>o| ; SP ; +->oo ; -o>+| ; ->o ; ->+o ; |o>-+ ; ->+-o ; SP ; o>+-o ; ->-o ; +o>- ; -o>oo ; -o>+| ; ->_o ; |>-o
+6: o>-+_ ; +o>+o ; o+>/_ ; o>/+_ ; ->o ; ->/o ; SP ; ->o|o ; ->_o ; ->ox ; |o>-+ ; SP ; ->ox ; -+>+o ; ->+o ; oo>+ ; ->oo ; -o>+| ; o>o| ; ->x ; ->o

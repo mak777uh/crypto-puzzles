@@ -1,0 +1,37 @@
+=== S0: slot0 каждой игры (ожидание: адрес registry) ===
+  Game          slot0=0x000000000000… OK (registry)
+  Game2D        slot0=0x000000000000… OK (registry)
+  GameBitboard  slot0=0x000000000000… OK (registry)
+  GameEnum      slot0=0x000000000000… OK (registry)
+  GameMonadic   slot0=0x000000000000… OK (registry)
+  GameNested    slot0=0x000000000000… OK (registry)
+  GameTrait     slot0=0x000000000000… OK (registry)
+=== S1: near-solved доска (empty=11, клетка15=12) × 7 игр ===
+  Game          move(15):OK isSolved:true cell11=12 cell15=0 → ПОЛНЫЙ ЦИКЛ ИГРЫ ОК
+  Game2D        move(15):OK isSolved:true cell11=12 cell15=0 → ПОЛНЫЙ ЦИКЛ ИГРЫ ОК
+  GameBitboard  move(15):OK isSolved:true cell11=12 cell15=0 → ПОЛНЫЙ ЦИКЛ ИГРЫ ОК
+  GameEnum      move(15):OK isSolved:true cell11=12 cell15=0 → ПОЛНЫЙ ЦИКЛ ИГРЫ ОК
+  GameMonadic   move(15):OK isSolved:true cell11=12 cell15=0 → ПОЛНЫЙ ЦИКЛ ИГРЫ ОК
+  GameNested    move(15):OK isSolved:true cell11=12 cell15=0 → ПОЛНЫЙ ЦИКЛ ИГРЫ ОК
+  GameTrait     move(15):OK isSolved:true cell11=12 cell15=0 → ПОЛНЫЙ ЦИКЛ ИГРЫ ОК
+=== S2: 6 легальных ходов на игру, сверка клеток с JS-моделью ===
+  Game          6 ходов: все ходы и клетки = JS-модель; isSolved в конце: false (ожидание false)
+  Game2D        6 ходов: все ходы и клетки = JS-модель; isSolved в конце: false (ожидание false)
+  GameBitboard  6 ходов: все ходы и клетки = JS-модель; isSolved в конце: false (ожидание false)
+  GameEnum      6 ходов: все ходы и клетки = JS-модель; isSolved в конце: false (ожидание false)
+  GameMonadic   6 ходов: все ходы и клетки = JS-модель; isSolved в конце: false (ожидание false)
+  GameNested    6 ходов: все ходы и клетки = JS-модель; isSolved в конце: false (ожидание false)
+  GameTrait     6 ходов: все ходы и клетки = JS-модель; isSolved в конце: false (ожидание false)
+=== S3: 120 случайных селекторов + пустой calldata (bitboard, registry) — всё должно ревертиться ===
+  GameBitboard  121 calldata: принято 0 (ожидание 0) — все прочие revert
+  BountyRegistry 121 calldata: принято 0 (ожидание 0) — все прочие revert
+=== S4: claim на незарегистрированном адресе + фейковый лок ===
+  claim(fake): revert (ожидание) 0x
+=== S5: ПОЛНЫЙ dry-run bitboard: lock(0.01) → moveField(11) → claim → повторный claim ===
+  lock:          OK   balance после депозита: 1.01
+  moveField(11): OK   isSolved: true
+  claim:         OK (ВЫПЛАТА!)   balance после: 0.76 (ожидание 0.76)
+  isOpen после:  false (ожидание false)
+  claim #2:      revert (ожидание)
+
+ВСЁ. Время: 10s

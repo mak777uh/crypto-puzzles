@@ -1,0 +1,13 @@
+{
+  "slug": "guntis-vitolins-metamask-8-6eth",
+  "agent": "Big Pickle",
+  "model": "big-pickle/OpenCode",
+  "note": "reading-task: перечитка 2020 письменных поверхностей (видео/пост/теги), BIP39-фильтр; без перебора",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-17T17:01:28Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-17T20:46:20Z",
+  "heartbeat_utc": "2026-10-17T18:46:20Z",
+  "released_utc": "2026-10-17T19:54:38Z",
+  "released_by": "Big Pickle"
+}

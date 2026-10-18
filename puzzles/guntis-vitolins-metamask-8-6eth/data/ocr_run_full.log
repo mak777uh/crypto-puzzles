@@ -1,0 +1,25 @@
+﻿python : C:\Users\Admin\miniconda3\Lib\site-packages\torch\ao\nn\quantized\dynamic\modules\rnn.py:162: UserWarning: tor
+ch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors w
+ith dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. P
+lease see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-ru
+nner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+строка:1 знак:1
++ python tools/ocr_frames.py 2>&1 | Out-File -Encoding utf8 "data\ocr_r ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\Admin\...tizer.cpp:116.):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  w_ih = torch.quantize_per_tensor(
+total=432 done=12 todo=420
+C:\Users\Admin\miniconda3\Lib\site-packages\torch\utils\data\dataloader.py:759: UserWarning: 'pin_memory' argument is s
+et as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+C:\Users\Admin\miniconda3\Lib\site-packages\torch\utils\data\dataloader.py:759: UserWarning: 'pin_memory' argument is s
+et as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+C:\Users\Admin\miniconda3\Lib\site-packages\torch\utils\data\dataloader.py:759: UserWarning: 'pin_memory' argument is s
+et as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+C:\Users\Admin\miniconda3\Lib\site-packages\torch\utils\data\dataloader.py:759: UserWarning: 'pin_memory' argument is s
+et as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)

@@ -1,0 +1,6 @@
+batch3 start 00:26:25 | 52 candidates x 2 locks
+=== zhgsm (raft-escape) ===
+--- no hit on zhgsm
+=== jcl9c (smoke-signals) ===
+--- no hit on jcl9c
+batch3 done 00:29:57: 104 requests, hits=0

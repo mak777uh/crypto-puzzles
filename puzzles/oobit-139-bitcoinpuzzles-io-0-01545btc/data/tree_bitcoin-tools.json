@@ -1,0 +1,1419 @@
+{
+  "sha": "d99989bb4826ce2a44d9f7c2f3ba2cf34d85a0cd",
+  "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/d99989bb4826ce2a44d9f7c2f3ba2cf34d85a0cd",
+  "tree": [
+    {
+      "path": ".dockerignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "325bfc036d21dbb7b73d9a5afdde12ea18deea89",
+      "size": 874,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/325bfc036d21dbb7b73d9a5afdde12ea18deea89"
+    },
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dc43234357fca35624a6991774e6b078a391a70",
+      "size": 348,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/8dc43234357fca35624a6991774e6b078a391a70"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bdec59ee58881ba617d132a10fc79f57478a7786",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/bdec59ee58881ba617d132a10fc79f57478a7786"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83610cfa4ceb8054ba7729e960cc652343f602bb",
+      "size": 247,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/83610cfa4ceb8054ba7729e960cc652343f602bb"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d5beda1a44237a4339474fbaa3c57b8d4098c420",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/d5beda1a44237a4339474fbaa3c57b8d4098c420"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cac124e85d7d6529d9feb74e1295569bcaa3c223",
+      "size": 3252,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/cac124e85d7d6529d9feb74e1295569bcaa3c223"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d1ce436e0e6c6478376bdc2f796e65c522eef0c",
+      "size": 741,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/1d1ce436e0e6c6478376bdc2f796e65c522eef0c"
+    },
+    {
+      "path": ".kamal",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "df0d548ffcee0b42ba99d45124aaee6251c3f1a9",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/df0d548ffcee0b42ba99d45124aaee6251c3f1a9"
+    },
+    {
+      "path": ".kamal/hooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a0ade6f3147862d0d425ceaef50ac22d46c5d05b",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/a0ade6f3147862d0d425ceaef50ac22d46c5d05b"
+    },
+    {
+      "path": ".kamal/hooks/docker-setup.sample",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fb07d7d7a33b7e6585ef9cf0dc2e7c516e48d2c",
+      "size": 51,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/2fb07d7d7a33b7e6585ef9cf0dc2e7c516e48d2c"
+    },
+    {
+      "path": ".kamal/hooks/post-app-boot.sample",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70f9c4bc9553892271d237bdf284ddf196c40965",
+      "size": 71,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/70f9c4bc9553892271d237bdf284ddf196c40965"
+    },
+    {
+      "path": ".kamal/hooks/post-deploy.sample",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd364c2a77ba90eabd6c1b56a83b73fa487ad996",
+      "size": 319,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/fd364c2a77ba90eabd6c1b56a83b73fa487ad996"
+    },
+    {
+      "path": ".kamal/hooks/post-proxy-reboot.sample",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1435a677f2b1944ab575225a3d234074bed752ba",
+      "size": 55,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/1435a677f2b1944ab575225a3d234074bed752ba"
+    },
+    {
+      "path": ".kamal/hooks/pre-app-boot.sample",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45f73550456ac958c58b9f9eed18817431bddefa",
+      "size": 72,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/45f73550456ac958c58b9f9eed18817431bddefa"
+    },
+    {
+      "path": ".kamal/hooks/pre-build.sample",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5a55678b2e5d28f452d5cf6ecc5f0ec3206f19c",
+      "size": 1103,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/c5a55678b2e5d28f452d5cf6ecc5f0ec3206f19c"
+    },
+    {
+      "path": ".kamal/hooks/pre-connect.sample",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77744bdca8f27d7caa5210ead82bdc1f079a7f71",
+      "size": 1039,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/77744bdca8f27d7caa5210ead82bdc1f079a7f71"
+    },
+    {
+      "path": ".kamal/hooks/pre-deploy.sample",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05b3055b72d62f4d93a76e116b5686b5f6f844de",
+      "size": 2833,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/05b3055b72d62f4d93a76e116b5686b5f6f844de"
+    },
+    {
+      "path": ".kamal/hooks/pre-proxy-reboot.sample",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "061f8059e6a83145ddaed43383346bde68296eda",
+      "size": 59,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/061f8059e6a83145ddaed43383346bde68296eda"
+    },
+    {
+      "path": ".kamal/secrets",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "154a4c75f5bae7b8b55535ebf7fcb0b360da9eee",
+      "size": 1163,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/154a4c75f5bae7b8b55535ebf7fcb0b360da9eee"
+    },
+    {
+      "path": ".rspec",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c99d2e7396e14ac072c63ec8419d9b8fede28d86",
+      "size": 22,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/c99d2e7396e14ac072c63ec8419d9b8fede28d86"
+    },
+    {
+      "path": ".rubocop.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9d86d4a5480283221e922c5e4c42b7f7e532996",
+      "size": 249,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/f9d86d4a5480283221e922c5e4c42b7f7e532996"
+    },
+    {
+      "path": ".ruby-version",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54978911ced10f89a622a77bc4e332ac9bc69eea",
+      "size": 11,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/54978911ced10f89a622a77bc4e332ac9bc69eea"
+    },
+    {
+      "path": "DESIGN_ENHANCEMENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20aa119846be42158c8517e3ea5079e06694fd69",
+      "size": 6888,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/20aa119846be42158c8517e3ea5079e06694fd69"
+    },
+    {
+      "path": "Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a94c10c57728279885341cd267edeb8a76a29dc",
+      "size": 2592,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/4a94c10c57728279885341cd267edeb8a76a29dc"
+    },
+    {
+      "path": "Gemfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92cc570210ddb6e5ca48f294771883a4c8b2597f",
+      "size": 2568,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/92cc570210ddb6e5ca48f294771883a4c8b2597f"
+    },
+    {
+      "path": "Gemfile.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b8dbaf90c41b77e62d9d228750f2cf1ca8020c6",
+      "size": 10746,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/7b8dbaf90c41b77e62d9d228750f2cf1ca8020c6"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7db80e4ca1bf849701dce58a63f09a102cb9f931",
+      "size": 374,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/7db80e4ca1bf849701dce58a63f09a102cb9f931"
+    },
+    {
+      "path": "Rakefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a5ea7383aa83eec12490380a7391d1bb93eeb96",
+      "size": 227,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/9a5ea7383aa83eec12490380a7391d1bb93eeb96"
+    },
+    {
+      "path": "app",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "26f3af927df40d6f9ea9a686fde6749c6736a951",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/26f3af927df40d6f9ea9a686fde6749c6736a951"
+    },
+    {
+      "path": "app/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7f54a3775f8ac9f0319da1e60d02e0e37bdcb527",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/7f54a3775f8ac9f0319da1e60d02e0e37bdcb527"
+    },
+    {
+      "path": "app/assets/images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29a422c19251aeaeb907175e9b3219a9bed6c616",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/29a422c19251aeaeb907175e9b3219a9bed6c616"
+    },
+    {
+      "path": "app/assets/images/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "app/assets/stylesheets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0cd22241ae7c1630e09b1fbcc52d7f0fc0a72bbc",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/0cd22241ae7c1630e09b1fbcc52d7f0fc0a72bbc"
+    },
+    {
+      "path": "app/assets/stylesheets/application.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c031a103c8a50e542be5fea8d07b3a194dfa186b",
+      "size": 26901,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/c031a103c8a50e542be5fea8d07b3a194dfa186b"
+    },
+    {
+      "path": "app/assets/stylesheets/footer.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "621c11056e62f7e7669a60c35e53813003c1fee7",
+      "size": 2802,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/621c11056e62f7e7669a60c35e53813003c1fee7"
+    },
+    {
+      "path": "app/controllers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "47a55b636db4cb9d6f7bcbbfd463e09d540f48f4",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/47a55b636db4cb9d6f7bcbbfd463e09d540f48f4"
+    },
+    {
+      "path": "app/controllers/application_controller.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3537563dabaf257508890ee90148b00d717cb56",
+      "size": 309,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/c3537563dabaf257508890ee90148b00d717cb56"
+    },
+    {
+      "path": "app/controllers/calculators_controller.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d732c202ebeff1f1cd992811626462c089376667",
+      "size": 377,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/d732c202ebeff1f1cd992811626462c089376667"
+    },
+    {
+      "path": "app/controllers/concerns",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29a422c19251aeaeb907175e9b3219a9bed6c616",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/29a422c19251aeaeb907175e9b3219a9bed6c616"
+    },
+    {
+      "path": "app/controllers/concerns/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "app/controllers/puzzles_controller.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "300feb5b6e696d1b697fee3bc3d0ee23f0125822",
+      "size": 847,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/300feb5b6e696d1b697fee3bc3d0ee23f0125822"
+    },
+    {
+      "path": "app/controllers/range_generators_controller.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b60fda8c52ffab9e9e0fe336e809c90344ea613a",
+      "size": 499,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/b60fda8c52ffab9e9e0fe336e809c90344ea613a"
+    },
+    {
+      "path": "app/controllers/your_chances_controller.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "282e1e547cbd67a9aa62e67446846250e06b91e4",
+      "size": 1000,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/282e1e547cbd67a9aa62e67446846250e06b91e4"
+    },
+    {
+      "path": "app/helpers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "68b78d452f62bfecd0a0947de331ee459ea5adc3",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/68b78d452f62bfecd0a0947de331ee459ea5adc3"
+    },
+    {
+      "path": "app/helpers/application_helper.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de6be7945c6a59798eb0ace177df38b05e98c2f0",
+      "size": 29,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/de6be7945c6a59798eb0ace177df38b05e98c2f0"
+    },
+    {
+      "path": "app/helpers/your_chances_helper.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d81420e083623e8de6362c07d9be18e6e795c2fb",
+      "size": 1010,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/d81420e083623e8de6362c07d9be18e6e795c2fb"
+    },
+    {
+      "path": "app/javascript",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b2168e087438beb70fab93ab88c69e16cc44e2b2",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/b2168e087438beb70fab93ab88c69e16cc44e2b2"
+    },
+    {
+      "path": "app/javascript/application.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d7b49404c35d6a69db67a6050d83927ef46f320",
+      "size": 157,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/0d7b49404c35d6a69db67a6050d83927ef46f320"
+    },
+    {
+      "path": "app/javascript/controllers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d22ce6706ca645df11045eded5f0621c826c2690",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/d22ce6706ca645df11045eded5f0621c826c2690"
+    },
+    {
+      "path": "app/javascript/controllers/animations_controller.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2117dc360024531a8f5cb8aedd721ae2a3d73af",
+      "size": 3852,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/b2117dc360024531a8f5cb8aedd721ae2a3d73af"
+    },
+    {
+      "path": "app/javascript/controllers/application.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1213e85c7ac805be18b4ea04f93ab028cc975255",
+      "size": 218,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/1213e85c7ac805be18b4ea04f93ab028cc975255"
+    },
+    {
+      "path": "app/javascript/controllers/hello_controller.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5975c0789d7cf1cc918034ba31a8f102e06e93b9",
+      "size": 157,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/5975c0789d7cf1cc918034ba31a8f102e06e93b9"
+    },
+    {
+      "path": "app/javascript/controllers/index.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1156bf8362e91a105188da4fe2c4e8967a890d63",
+      "size": 272,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/1156bf8362e91a105188da4fe2c4e8967a890d63"
+    },
+    {
+      "path": "app/javascript/controllers/scroll_effects_controller.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4117b05fa2ba1c67947f506e4265a9a90e616ecb",
+      "size": 2124,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/4117b05fa2ba1c67947f506e4265a9a90e616ecb"
+    },
+    {
+      "path": "app/javascript/controllers/theme_controller.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bba729e6f14dfdb329e2cf0f54be6923f7a4ff01",
+      "size": 1383,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/bba729e6f14dfdb329e2cf0f54be6923f7a4ff01"
+    },
+    {
+      "path": "app/javascript/controllers/utilities_controller.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a519691d618e63b11d1d78c2b0f6e7622d0895d",
+      "size": 2732,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/2a519691d618e63b11d1d78c2b0f6e7622d0895d"
+    },
+    {
+      "path": "app/jobs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d4b28433fac8c2aec90083104880bf73849b7ac4",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/d4b28433fac8c2aec90083104880bf73849b7ac4"
+    },
+    {
+      "path": "app/jobs/application_job.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d394c3d106230849e4ff6f4020d41b3e62589061",
+      "size": 269,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/d394c3d106230849e4ff6f4020d41b3e62589061"
+    },
+    {
+      "path": "app/mailers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c1c1ec9df3e7b90f3672f36dbdf4794239746974",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/c1c1ec9df3e7b90f3672f36dbdf4794239746974"
+    },
+    {
+      "path": "app/mailers/application_mailer.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c34c8148f105d699e8ec9b769531192f8637d9a",
+      "size": 102,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/3c34c8148f105d699e8ec9b769531192f8637d9a"
+    },
+    {
+      "path": "app/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c46e83d37f31198075fd702a851f1f13e3709698",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/c46e83d37f31198075fd702a851f1f13e3709698"
+    },
+    {
+      "path": "app/models/application_record.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b63caeb8a5c4a21feec3ea870c4e4a52b89a8fa5",
+      "size": 74,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/b63caeb8a5c4a21feec3ea870c4e4a52b89a8fa5"
+    },
+    {
+      "path": "app/models/concerns",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29a422c19251aeaeb907175e9b3219a9bed6c616",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/29a422c19251aeaeb907175e9b3219a9bed6c616"
+    },
+    {
+      "path": "app/models/concerns/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "app/services",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff578509b8f5d1500de678d389b35182aa535659",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/ff578509b8f5d1500de678d389b35182aa535659"
+    },
+    {
+      "path": "app/services/bitcoin_calculator.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cdcf954e0d13c9d6f64f26a8a854d7eb67d83a7",
+      "size": 1915,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/1cdcf954e0d13c9d6f64f26a8a854d7eb67d83a7"
+    },
+    {
+      "path": "app/services/bitcoin_utils.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03ef0c58eb8a78e140d88c487fa6a180c82a1a14",
+      "size": 5072,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/03ef0c58eb8a78e140d88c487fa6a180c82a1a14"
+    },
+    {
+      "path": "app/services/range_generator.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af5d689bd0f798528ea6f5f09da525f2936a75a9",
+      "size": 2360,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/af5d689bd0f798528ea6f5f09da525f2936a75a9"
+    },
+    {
+      "path": "app/services/your_chances_calculator.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ebb6406cfb94e73336da838f9aadad886b69b87",
+      "size": 2524,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/8ebb6406cfb94e73336da838f9aadad886b69b87"
+    },
+    {
+      "path": "app/views",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c7ed587d0771431509ad8c37c4f7650a5a0c21a7",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/c7ed587d0771431509ad8c37c4f7650a5a0c21a7"
+    },
+    {
+      "path": "app/views/calculators",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cc5de9e331d3baa8779a5b6d2e04339186f09c2b",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/cc5de9e331d3baa8779a5b6d2e04339186f09c2b"
+    },
+    {
+      "path": "app/views/calculators/index.html.erb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f438aa774c8eae932fb23b39b32c53e9b45ce2e",
+      "size": 2867,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/1f438aa774c8eae932fb23b39b32c53e9b45ce2e"
+    },
+    {
+      "path": "app/views/layouts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "880d380d84622f98e0914c58ed1dff671bfdc63f",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/880d380d84622f98e0914c58ed1dff671bfdc63f"
+    },
+    {
+      "path": "app/views/layouts/application.html.erb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ffdcebbf7974b7629b4a2526fccb24af05d2233",
+      "size": 2797,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/6ffdcebbf7974b7629b4a2526fccb24af05d2233"
+    },
+    {
+      "path": "app/views/layouts/mailer.html.erb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3aac9002edca73300507bcd9f9589ffb36ba1faf",
+      "size": 227,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/3aac9002edca73300507bcd9f9589ffb36ba1faf"
+    },
+    {
+      "path": "app/views/layouts/mailer.text.erb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37f0bddbd746bc24923ce9a8eb0dae1ca3076284",
+      "size": 13,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/37f0bddbd746bc24923ce9a8eb0dae1ca3076284"
+    },
+    {
+      "path": "app/views/puzzles",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "689c9f361a463f8f1c63390e20b63a86cbd653f7",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/689c9f361a463f8f1c63390e20b63a86cbd653f7"
+    },
+    {
+      "path": "app/views/puzzles/index.html.erb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ad7a08602948305e5c2b3cc1353f5cad262670a",
+      "size": 2012,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/4ad7a08602948305e5c2b3cc1353f5cad262670a"
+    },
+    {
+      "path": "app/views/pwa",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4ce3cccd51388f4cf75a54f336f6cbdaf8deba01",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/4ce3cccd51388f4cf75a54f336f6cbdaf8deba01"
+    },
+    {
+      "path": "app/views/pwa/manifest.json.erb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06b95a53e60fd9b6a83d87705079d0412cad6ddc",
+      "size": 407,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/06b95a53e60fd9b6a83d87705079d0412cad6ddc"
+    },
+    {
+      "path": "app/views/pwa/service-worker.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3a13fb7bbbf2b8a4666ea12446a7903243713a2",
+      "size": 876,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/b3a13fb7bbbf2b8a4666ea12446a7903243713a2"
+    },
+    {
+      "path": "app/views/range_generators",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "08bf9577e12617a56e50effb088e33cca4c9ced4",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/08bf9577e12617a56e50effb088e33cca4c9ced4"
+    },
+    {
+      "path": "app/views/range_generators/index.html.erb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0421eede45a01dbd2b4034efa79f02a8c33bdb1",
+      "size": 5519,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/a0421eede45a01dbd2b4034efa79f02a8c33bdb1"
+    },
+    {
+      "path": "app/views/your_chances",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "48a9e37914f177c6caad6442db39f131a865f17c",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/48a9e37914f177c6caad6442db39f131a865f17c"
+    },
+    {
+      "path": "app/views/your_chances/show.html.erb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec5061cdf373d1093a0a860599adb6fa4534a1a1",
+      "size": 5360,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/ec5061cdf373d1093a0a860599adb6fa4534a1a1"
+    },
+    {
+      "path": "bin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0b039317701cc8e9f83a59185c26d3be76309ab6",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/0b039317701cc8e9f83a59185c26d3be76309ab6"
+    },
+    {
+      "path": "bin/brakeman",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ace1c9ba08ad76f113b8cb284494a1d65cc3749e",
+      "size": 139,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/ace1c9ba08ad76f113b8cb284494a1d65cc3749e"
+    },
+    {
+      "path": "bin/bundler-audit",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2ef22690c693cb790ebe945289aa09a7d0d5b11",
+      "size": 202,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e2ef22690c693cb790ebe945289aa09a7d0d5b11"
+    },
+    {
+      "path": "bin/ci",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4137ad5bb07d239eec05fbfd9b7b6305d4c5429f",
+      "size": 180,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/4137ad5bb07d239eec05fbfd9b7b6305d4c5429f"
+    },
+    {
+      "path": "bin/dev",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f91c20545355b344e2ad312e03ad419ef331184",
+      "size": 56,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/5f91c20545355b344e2ad312e03ad419ef331184"
+    },
+    {
+      "path": "bin/docker-entrypoint",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed31659f40caef03d61a834800c58779f05dc9ef",
+      "size": 203,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/ed31659f40caef03d61a834800c58779f05dc9ef"
+    },
+    {
+      "path": "bin/importmap",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36502ab16c7adf42dfc804702966e684d68610dd",
+      "size": 91,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/36502ab16c7adf42dfc804702966e684d68610dd"
+    },
+    {
+      "path": "bin/jobs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcf59f309ae53acda98d718376bacbbaeb37b8f3",
+      "size": 117,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/dcf59f309ae53acda98d718376bacbbaeb37b8f3"
+    },
+    {
+      "path": "bin/kamal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbe59b95ed79e96482beb8c203012cf15f6ced60",
+      "size": 745,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/cbe59b95ed79e96482beb8c203012cf15f6ced60"
+    },
+    {
+      "path": "bin/rails",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efc0377492f7e0ec9f6cedf7b5e1f6119bbbd24e",
+      "size": 141,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/efc0377492f7e0ec9f6cedf7b5e1f6119bbbd24e"
+    },
+    {
+      "path": "bin/rake",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fbf10b960ef780b748861e6a616a4d88b00b50a",
+      "size": 90,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/4fbf10b960ef780b748861e6a616a4d88b00b50a"
+    },
+    {
+      "path": "bin/rubocop",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a20504716c31e8314709231e0268848c5b5f76b",
+      "size": 266,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/5a20504716c31e8314709231e0268848c5b5f76b"
+    },
+    {
+      "path": "bin/setup",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81be011e8722bfbf8cf7197922e5f3f94eef77ff",
+      "size": 1069,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/81be011e8722bfbf8cf7197922e5f3f94eef77ff"
+    },
+    {
+      "path": "bin/thrust",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36bde2d832f6c5c1545ec6eacb82cbb79f4473b6",
+      "size": 104,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/36bde2d832f6c5c1545ec6eacb82cbb79f4473b6"
+    },
+    {
+      "path": "config.ru",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a3c09a6889a97a54af8cbcc1a47e03e58cce376",
+      "size": 160,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/4a3c09a6889a97a54af8cbcc1a47e03e58cce376"
+    },
+    {
+      "path": "config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "57a785ccab397084397d5ff90a559205777bad8d",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/57a785ccab397084397d5ff90a559205777bad8d"
+    },
+    {
+      "path": "config/application.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ed482b2935f62efb3675c78dea52056d99fabc5",
+      "size": 996,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/2ed482b2935f62efb3675c78dea52056d99fabc5"
+    },
+    {
+      "path": "config/boot.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "988a5ddc460f03c2cafb3b91d98f0cc930ebc8ed",
+      "size": 207,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/988a5ddc460f03c2cafb3b91d98f0cc930ebc8ed"
+    },
+    {
+      "path": "config/bundler-audit.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e74b3af9492e94048a50dfb0f8867851d594202e",
+      "size": 226,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e74b3af9492e94048a50dfb0f8867851d594202e"
+    },
+    {
+      "path": "config/cable.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9adc5aa3a578713049a328e8c24f1fe08edf54f",
+      "size": 549,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/b9adc5aa3a578713049a328e8c24f1fe08edf54f"
+    },
+    {
+      "path": "config/cache.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19d490843bb5c1cd86b12c391f32c2277384428d",
+      "size": 300,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/19d490843bb5c1cd86b12c391f32c2277384428d"
+    },
+    {
+      "path": "config/ci.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e56a92e4189cb66cd338e4880b641d6c431dcb03",
+      "size": 852,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e56a92e4189cb66cd338e4880b641d6c431dcb03"
+    },
+    {
+      "path": "config/credentials.yml.enc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99df826e3d5ac4b8541ede2bf92bd2bc5af005ec",
+      "size": 548,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/99df826e3d5ac4b8541ede2bf92bd2bc5af005ec"
+    },
+    {
+      "path": "config/database.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "693252b7c36e06c920fa338ad8df5d6549a580a7",
+      "size": 1135,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/693252b7c36e06c920fa338ad8df5d6549a580a7"
+    },
+    {
+      "path": "config/deploy.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b2df6a63b5ba524f48ecdb904d8223f51db2acc",
+      "size": 3679,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/4b2df6a63b5ba524f48ecdb904d8223f51db2acc"
+    },
+    {
+      "path": "config/environment.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cac5315775258a68f5e18885605d3fb1b758319e",
+      "size": 128,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/cac5315775258a68f5e18885605d3fb1b758319e"
+    },
+    {
+      "path": "config/environments",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "28ff0c9a9bcd16d01921a142bd4487354ed15fdb",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/28ff0c9a9bcd16d01921a142bd4487354ed15fdb"
+    },
+    {
+      "path": "config/environments/development.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b670ca3e85d8d8f02a4c71b7500525f12c48993",
+      "size": 2798,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/3b670ca3e85d8d8f02a4c71b7500525f12c48993"
+    },
+    {
+      "path": "config/environments/production.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f950c46c7342d1197ec4f4b576a873d76b47790c",
+      "size": 4144,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/f950c46c7342d1197ec4f4b576a873d76b47790c"
+    },
+    {
+      "path": "config/environments/test.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2095b11743b1dfd2b8bab2a8b9f69eef7d0b263",
+      "size": 2319,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/c2095b11743b1dfd2b8bab2a8b9f69eef7d0b263"
+    },
+    {
+      "path": "config/importmap.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "909dfc542d2af92331a4f26f72c50ab97751cf70",
+      "size": 285,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/909dfc542d2af92331a4f26f72c50ab97751cf70"
+    },
+    {
+      "path": "config/initializers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c90de93ec8701624a8ac53ae281f0c5085e14ec6",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/c90de93ec8701624a8ac53ae281f0c5085e14ec6"
+    },
+    {
+      "path": "config/initializers/assets.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "487324424ff4acf9223fe9c361a0a709e86b8f18",
+      "size": 296,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/487324424ff4acf9223fe9c361a0a709e86b8f18"
+    },
+    {
+      "path": "config/initializers/bitcoin.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93d92f714e0fc41851bd873e921b9435deb24da1",
+      "size": 47,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/93d92f714e0fc41851bd873e921b9435deb24da1"
+    },
+    {
+      "path": "config/initializers/content_security_policy.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d51d71397983082ba226ca5b8eb36fab78b4cc45",
+      "size": 1332,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/d51d71397983082ba226ca5b8eb36fab78b4cc45"
+    },
+    {
+      "path": "config/initializers/filter_parameter_logging.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0b717f7ecbb904e158e17ff5236b05211e03f81",
+      "size": 468,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/c0b717f7ecbb904e158e17ff5236b05211e03f81"
+    },
+    {
+      "path": "config/initializers/inflections.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3860f659ead02224f524351d612cd92aefcd5d8b",
+      "size": 649,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/3860f659ead02224f524351d612cd92aefcd5d8b"
+    },
+    {
+      "path": "config/locales",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e7ba83425f59eceecb7583b9e0438cf2492d9c02",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/e7ba83425f59eceecb7583b9e0438cf2492d9c02"
+    },
+    {
+      "path": "config/locales/en.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c349ae5e37433af7fd8c4ced3b219e710a368c3",
+      "size": 908,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/6c349ae5e37433af7fd8c4ced3b219e710a368c3"
+    },
+    {
+      "path": "config/puma.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38c4b865963840c115dded07ec5c767b7c1c2483",
+      "size": 2052,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/38c4b865963840c115dded07ec5c767b7c1c2483"
+    },
+    {
+      "path": "config/queue.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9eace59c41e6a3a63d294e53480eaf5a8945e014",
+      "size": 290,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/9eace59c41e6a3a63d294e53480eaf5a8945e014"
+    },
+    {
+      "path": "config/recurring.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4207f9b07cc3ecda5ec87b384927b41a6e7d269",
+      "size": 474,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/b4207f9b07cc3ecda5ec87b384927b41a6e7d269"
+    },
+    {
+      "path": "config/routes.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04a04ede2dfa8a48545bb5f1dee9dc93e8c6ff5a",
+      "size": 884,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/04a04ede2dfa8a48545bb5f1dee9dc93e8c6ff5a"
+    },
+    {
+      "path": "config/storage.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "927dc537c8a6ce8e2b6b172ab5d577de6d90f1d3",
+      "size": 811,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/927dc537c8a6ce8e2b6b172ab5d577de6d90f1d3"
+    },
+    {
+      "path": "db",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c8b815deb427b54a11b349f5a8727ecfa167f3ad",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/c8b815deb427b54a11b349f5a8727ecfa167f3ad"
+    },
+    {
+      "path": "db/cable_schema.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23666604a59e7dd29e86a8f8d8c65532132a50f6",
+      "size": 545,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/23666604a59e7dd29e86a8f8d8c65532132a50f6"
+    },
+    {
+      "path": "db/cache_schema.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6005a29725a28b98644f56d774a6c05010fc4697",
+      "size": 644,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/6005a29725a28b98644f56d774a6c05010fc4697"
+    },
+    {
+      "path": "db/queue_schema.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85194b6a8809eac596ebbbfef72fb9e24799d3d8",
+      "size": 6278,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/85194b6a8809eac596ebbbfef72fb9e24799d3d8"
+    },
+    {
+      "path": "db/seeds.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fbd6ed970cb439af968458dc6aec586ee0dbc76",
+      "size": 494,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/4fbd6ed970cb439af968458dc6aec586ee0dbc76"
+    },
+    {
+      "path": "lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "16ec43d924b3e829bdadbcd4340d114c6dbdd686",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/16ec43d924b3e829bdadbcd4340d114c6dbdd686"
+    },
+    {
+      "path": "lib/tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29a422c19251aeaeb907175e9b3219a9bed6c616",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/29a422c19251aeaeb907175e9b3219a9bed6c616"
+    },
+    {
+      "path": "lib/tasks/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "log",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29a422c19251aeaeb907175e9b3219a9bed6c616",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/29a422c19251aeaeb907175e9b3219a9bed6c616"
+    },
+    {
+      "path": "log/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "public",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "676ae27439455d74747f3796c92fcca833cb6cb0",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/676ae27439455d74747f3796c92fcca833cb6cb0"
+    },
+    {
+      "path": "public/400.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f59c79ab82f05bfffaa72e8d95a87f28bde603a8",
+      "size": 6683,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/f59c79ab82f05bfffaa72e8d95a87f28bde603a8"
+    },
+    {
+      "path": "public/404.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26d16027c6a4c84ba87c00561db503b794ac8d18",
+      "size": 4830,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/26d16027c6a4c84ba87c00561db503b794ac8d18"
+    },
+    {
+      "path": "public/406-unsupported-browser.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9532a9ccd0f5caa333332925b50346dc481700c8",
+      "size": 6912,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/9532a9ccd0f5caa333332925b50346dc481700c8"
+    },
+    {
+      "path": "public/422.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed5a5805d0e5f347f9bbe01c138f6172f1faee93",
+      "size": 8376,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/ed5a5805d0e5f347f9bbe01c138f6172f1faee93"
+    },
+    {
+      "path": "public/500.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "318723853a010f54f6121edd484a6ce8e9aee517",
+      "size": 7912,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/318723853a010f54f6121edd484a6ce8e9aee517"
+    },
+    {
+      "path": "public/icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4c9dbfbbd2f7c1421ffd5727188146213abbcef",
+      "size": 4166,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/c4c9dbfbbd2f7c1421ffd5727188146213abbcef"
+    },
+    {
+      "path": "public/icon.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04b34bf83f34441a1f7ae93a6f7f6ac0d27bef16",
+      "size": 122,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/04b34bf83f34441a1f7ae93a6f7f6ac0d27bef16"
+    },
+    {
+      "path": "public/robots.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c19f78ab6836efd56c42aa56457d58871d9e2782",
+      "size": 99,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/c19f78ab6836efd56c42aa56457d58871d9e2782"
+    },
+    {
+      "path": "script",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29a422c19251aeaeb907175e9b3219a9bed6c616",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/29a422c19251aeaeb907175e9b3219a9bed6c616"
+    },
+    {
+      "path": "script/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "spec",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2687e9153742937efcdfcc3e384bd279b10f7155",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/2687e9153742937efcdfcc3e384bd279b10f7155"
+    },
+    {
+      "path": "spec/rails_helper.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d495ee96363c303c31686cf831515addb33958c",
+      "size": 2867,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/3d495ee96363c303c31686cf831515addb33958c"
+    },
+    {
+      "path": "spec/spec_helper.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8560f299bcdea8629b00e1b61099ac9dd903c971",
+      "size": 4755,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/8560f299bcdea8629b00e1b61099ac9dd903c971"
+    },
+    {
+      "path": "storage",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29a422c19251aeaeb907175e9b3219a9bed6c616",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/29a422c19251aeaeb907175e9b3219a9bed6c616"
+    },
+    {
+      "path": "storage/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "72c2d0c94718eb9b1d69421bf46aaaf45b4948f4",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/72c2d0c94718eb9b1d69421bf46aaaf45b4948f4"
+    },
+    {
+      "path": "test/application_system_test_case.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cee29fd2143ea40e9b8384b80ad8b6ea9a391b26",
+      "size": 168,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/cee29fd2143ea40e9b8384b80ad8b6ea9a391b26"
+    },
+    {
+      "path": "test/controllers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29a422c19251aeaeb907175e9b3219a9bed6c616",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/29a422c19251aeaeb907175e9b3219a9bed6c616"
+    },
+    {
+      "path": "test/controllers/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "test/fixtures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "94add667ae0cfa0e567e9e4e65ce15504ca9cc46",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/94add667ae0cfa0e567e9e4e65ce15504ca9cc46"
+    },
+    {
+      "path": "test/fixtures/files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29a422c19251aeaeb907175e9b3219a9bed6c616",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/29a422c19251aeaeb907175e9b3219a9bed6c616"
+    },
+    {
+      "path": "test/fixtures/files/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "test/helpers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29a422c19251aeaeb907175e9b3219a9bed6c616",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/29a422c19251aeaeb907175e9b3219a9bed6c616"
+    },
+    {
+      "path": "test/helpers/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "test/integration",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29a422c19251aeaeb907175e9b3219a9bed6c616",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/29a422c19251aeaeb907175e9b3219a9bed6c616"
+    },
+    {
+      "path": "test/integration/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "test/mailers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29a422c19251aeaeb907175e9b3219a9bed6c616",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/29a422c19251aeaeb907175e9b3219a9bed6c616"
+    },
+    {
+      "path": "test/mailers/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "test/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29a422c19251aeaeb907175e9b3219a9bed6c616",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/29a422c19251aeaeb907175e9b3219a9bed6c616"
+    },
+    {
+      "path": "test/models/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "test/system",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29a422c19251aeaeb907175e9b3219a9bed6c616",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/29a422c19251aeaeb907175e9b3219a9bed6c616"
+    },
+    {
+      "path": "test/system/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "test/test_helper.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c22470ec14ec523287bf465a3a3b9c1939a9908",
+      "size": 410,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/0c22470ec14ec523287bf465a3a3b9c1939a9908"
+    },
+    {
+      "path": "tmp",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "784080170430c80d02125677015b0eed7d6206cb",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/784080170430c80d02125677015b0eed7d6206cb"
+    },
+    {
+      "path": "tmp/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tmp/pids",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29a422c19251aeaeb907175e9b3219a9bed6c616",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/29a422c19251aeaeb907175e9b3219a9bed6c616"
+    },
+    {
+      "path": "tmp/pids/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tmp/storage",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29a422c19251aeaeb907175e9b3219a9bed6c616",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/29a422c19251aeaeb907175e9b3219a9bed6c616"
+    },
+    {
+      "path": "tmp/storage/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "vendor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6093dc5590a12604250a44707b8e00a410795181",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/6093dc5590a12604250a44707b8e00a410795181"
+    },
+    {
+      "path": "vendor/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "vendor/javascript",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29a422c19251aeaeb907175e9b3219a9bed6c616",
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/trees/29a422c19251aeaeb907175e9b3219a9bed6c616"
+    },
+    {
+      "path": "vendor/javascript/.keep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/lmajowka/bitcoin-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    }
+  ],
+  "truncated": false
+}

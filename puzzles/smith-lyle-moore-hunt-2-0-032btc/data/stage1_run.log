@@ -1,0 +1,35 @@
+selftest OK: address vector, account xpub path, /0/1 donation, /0/0 target
+blocks to run: 32, raw mnemonics: 82575360, expected valid ~5160960
+[753.6s] block 05 753.1s valid=162299 | elapsed blocks=1/32
+[755.9s] block 09 755.3s valid=162032 | elapsed blocks=2/32
+[770.9s] block 08 770.4s valid=161432 | elapsed blocks=3/32
+[783.1s] block 03 782.7s valid=161714 | elapsed blocks=4/32
+[797.5s] block 04 797.0s valid=162087 | elapsed blocks=5/32
+[805.9s] block 02 805.5s valid=162025 | elapsed blocks=6/32
+[808.5s] block 11 807.9s valid=161711 | elapsed blocks=7/32
+[808.9s] block 13 808.2s valid=161602 | elapsed blocks=8/32
+[809.8s] block 00 809.5s valid=162157 | elapsed blocks=9/32
+[814.8s] block 06 814.3s valid=162031 | elapsed blocks=10/32
+[819.0s] block 01 818.7s valid=161428 | elapsed blocks=11/32
+[848.4s] block 12 847.7s valid=161118 | elapsed blocks=12/32
+[870.9s] block 14 870.0s valid=161731 | elapsed blocks=13/32
+[876.1s] block 15 875.0s valid=162099 | elapsed blocks=14/32
+[910.7s] block 10 910.1s valid=161562 | elapsed blocks=15/32
+[1007.7s] block 07 1007.2s valid=161639 | elapsed blocks=16/32
+[1518.1s] block 18 747.2s valid=161821 | elapsed blocks=17/32
+[1539.0s] block 17 783.1s valid=161558 | elapsed blocks=18/32
+[1546.8s] block 16 793.2s valid=161687 | elapsed blocks=19/32
+[1554.3s] block 20 756.8s valid=161132 | elapsed blocks=20/32
+[1555.6s] block 25 740.9s valid=161311 | elapsed blocks=21/32
+[1594.7s] block 24 784.9s valid=161090 | elapsed blocks=22/32
+[1595.6s] block 22 787.1s valid=161957 | elapsed blocks=23/32
+[1602.7s] block 19 819.6s valid=161652 | elapsed blocks=24/32
+[1608.9s] block 26 789.8s valid=161197 | elapsed blocks=25/32
+[1609.7s] block 23 800.8s valid=161353 | elapsed blocks=26/32
+[1621.7s] block 27 773.3s valid=161553 | elapsed blocks=27/32
+[1625.3s] block 21 819.3s valid=162206 | elapsed blocks=28/32
+[1642.9s] block 28 772.0s valid=161245 | elapsed blocks=29/32
+[1653.0s] block 29 776.8s valid=161824 | elapsed blocks=30/32
+[1656.3s] block 31 648.6s valid=145506 | elapsed blocks=31/32
+[1660.0s] block 30 749.3s valid=161492 | elapsed blocks=32/32
+finished in 1660.1s

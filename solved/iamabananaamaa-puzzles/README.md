@@ -1,0 +1,175 @@
+# IAMABananaAMAA's puzzles
+> **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../INDEX.md](../INDEX.md). Вернуть в `puzzles/` — только при новых данных (правила: `AGENT_INSTRUCTIONS.md`).
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: реестр [@agntn/puzzles](https://puzzles.agntn.dev/collections/iamabananaamaa) (raw: https://puzzles.agntn.dev/collections/iamabananaamaa.md).
+
+## Кратко (реестр agntn/puzzles)
+- Описание: Two puzzles from the first night of r/bitcoinpuzzles, six hours apart. A GIF with a ZIP after its last byte and two Base64 alphabets. Then four lines of text under a verse signed by Caesar, where the key was the text itself.
+- Реестр: https://puzzles.agntn.dev/collections/iamabananaamaa
+- `id`: "iamabananaamaa/gif"
+- `chain`: "bitcoin"
+- `address`: "1DprL7pbKGwjMKoJ4c6BEKrTmtbPB4AiNJ"
+- `sourceUrl`: THREAD
+- `startedAt`: "2013-12-22 22:35:39"
+- `status`: Status.Solved
+- `prize`: 0.001
+- `pubkey`: compressed("03987951b3fa4a6f68ba76bd509a8ac4945b3cb1e14be1eadd5d3210f590313024")
+- `key`: wif("L21s1A2LjTL5WLEfWPJtuKxHKF3PcfJnyiEtjNtPUxwnSdqWBD66")
+
+> Two puzzles from the first night of r/bitcoinpuzzles, six hours apart. A GIF with a ZIP after its last byte and two Base64 alphabets. Then four lines of text under a verse signed by Caesar, where the key was the text itself.
+
+December 22, 2013. [IAMABananaAMAA](https://puzzles.agntn.dev/authors/iamabananaamaa) opened r/bitcoinpuzzles, and 17 minutes after the welcome post came [the GIF puzzle](https://www.reddit.com/r/bitcoinpuzzles/comments/1thjjq/easy_1mbtc_find_the_private_key_in_this_gif/). A title, **1 mBTC**, a link to an animated GIF. Nothing else. The title said easy. Thirteen minutes later the author wrote "I maybe should've put this as medium."
+
+Six hours later came the second one, [a riddle](https://www.reddit.com/r/bitcoinpuzzles/comments/1ticec/medium_1mbtc_riddle_me_this_for_a_private_key/) with another **1 mBTC**. Four lines of text and a verse signed by Caesar. Marked medium this time, from the start.
+
+## How the GIF puzzle works
+
+### A ZIP after the last byte
+
+The GIF is 212 frames of an animated Bitcoin logo. Everyone stared at the pixels first. Someone found an artifact in the bottom right corner and called it steganography. The author killed that fast: "the thing in the bottom right is an error on the gif's part."
+
+The real hint was about software: you don't need anything special, just "a program that basically anybody on the planet has". An unzipper. A GIF ends at its `0x3b` trailer byte, and a ZIP reads its directory from the end of the file. So glue a ZIP after the GIF and both still open. Rename it to `.zip` and you get `MEGAN.txt`, 96 bytes:
+
+```text
+jZXbm2zukIKdShNxcJnrkuXPm2XRSZGY=M1Gku=9gKGJc/9uju1eoJ=ynhfSjuXPddfvc2n4cJyqlMf2dLD4k2Nvi2refuSI
+```
+
+A commenter posted it in the thread an hour in. That's where most people got stuck.
+
+### Megan is 35
+
+The next hint: "Megan may not be a person, but if she was, she'd be 35 years old." MEGAN-35. Sounds like a hash. It isn't. It's Base64 with a shuffled alphabet, the kind of thing online "encrypter" pages still offer. Decoding gives another Base64 string. That one is ATOM-128, same trick, different alphabet. And out comes a compressed WIF.
+
+Where was ATOM hinted? The author said it after the solve: "The zip file name was ATOM :)." Nobody had noticed.
+
+Order matters here. ATOM first and MEGAN second gives garbage, not a key.
+
+### Solved, then noticed an hour later
+
+[Wickex](https://www.reddit.com/r/bitcoinpuzzles/comments/1thjjq/comment/ce846u3/) posted the address `1DprL7pbKGwjMKoJ4c6BEKrTmtbPB4AiNJ` at 01:01:07 UTC, 2 hours 25 minutes after the post. Called it "Public key of the decrypted address", but it's an address. The prize left three and a half minutes later, 0.0009 BTC after a 0.0001 BTC fee. The author was posting from a phone and missed the comment for almost an hour and a half. Then: "Wow, I completely missed your post.. Feel free to explain it!" [The method](https://www.reddit.com/r/bitcoinpuzzles/comments/1thjjq/comment/ce86ejm/) came right after.
+
+## What the GIF record carries
+
+```ts [src/collections/iamabananaamaa/gif.ts]
+export const iAmABananaAmaaGif = puzzle({
+  id: "iamabananaamaa/gif",
+  chain: "bitcoin",
+  address: "1DprL7pbKGwjMKoJ4c6BEKrTmtbPB4AiNJ",
+  sourceUrl: THREAD,
+  startedAt: "2013-12-22 22:35:39",
+  status: Status.Solved,
+  pubkey: compressed("03987951b3fa4a6f68ba76bd509a8ac4945b3cb1e14be1eadd5d3210f590313024"),
+  key: wif("L21s1A2LjTL5WLEfWPJtuKxHKF3PcfJnyiEtjNtPUxwnSdqWBD66"),
+  prize: 0.001,
+  hints: [/* the program, Megan, the corner, the ZIP name, MEGAN.txt */],
+  solvedAt: "2013-12-23 01:04:43",
+  solveTime: 8944,
+  transactions: [funding(/* … */), claim(/* … */)],
+  solver: party("Wickex", { profiles: [/* reddit */] }),
+  assets: assets({ puzzle: "gif/puzzle.gif", sourceUrl: GIF }),
+});
+```
+
+### A key nobody printed
+
+The thread never shows the WIF. Wickex gave the address and the recipe, the author confirmed both. The key in the record is that recipe run on the GIF itself, and `verify` derives the address from it. The public key comes from the spend's own input script, so it doesn't depend on the recipe at all.
+
+### Hints with their answers
+
+Four hints are the author's, each from its own comment. The program and Megan carry Wickex's answers from the method comment, word for word. The corner hint has no answer, because the corner has none. `MEGAN.txt` is a community hint: someone else extracted it, and the record keeps who.
+
+### The GIF in the repo
+
+`assets/iamabananaamaa/gif/puzzle.gif` is the Imgur file, byte for byte. Same SHA-256 as the Wayback copy from 2020. Imgur still serves it, but a 2013 upload is one cleanup away from gone. So the ZIP is right there if you want to unzip it yourself.
+
+### Keyed by the author
+
+`iamabananaamaa/gif` resolves as `gif` or `iamabananaamaa/gif`. The collection is named after the author, not after the GIF, so the Caesar riddle sits right next to it.
+
+## How the Caesar riddle works
+
+### Four lines and a verse
+
+December 23, 04:53 UTC. The post is this:
+
+```text
+Ky1VCMxtg9xD1
+3hFrEhWxN22Qo
+bNEfeTDX14sZd
+hGHC3nBRTEDQ8
+
+"FOUR IS SIX
+ THREE IS SEVEN
+ TWO IS NINE
+ ONE IS FOUR"
+        - CAESAR'S LAST WORDS
+```
+
+Plus the address `1wkQxZaewFqYrDJeVnxqrfMKfJykdRfr5`, funded an hour and three quarters before, and a rule: if you solve it and want to leave the prize for someone else, post the first two and last two characters of the key. "It doesn't involve any images or videos."
+
+So it reads like a Caesar cipher. Line four shifted by six, line three by seven, and so on. That's the obvious plan.
+
+### The key was never encrypted
+
+Now join the four lines. `Ky1VCMxtg9xD13hFrEhWxN22QobNEfeTDX14sZdhGHC3nBRTEDQ8`. 52 characters, starts with `K`, and the Base58 checksum holds. That's a compressed WIF. It derives `1wkQxZ…dfr5`, and its public key is the one in the claim's input script.
+
+The shift plan doesn't survive a check. Shift line one by four and its `K` becomes `G`, and no WIF starts with `G`. Try every combination of four shifts over the letters, forwards or backwards, and exactly one passes the checksum: zero, four times. The verse was a decoy, or the author mixed it up.
+
+### Solved by someone who didn't know it
+
+The first comment came 26 minutes in. It's deleted now, but the replies around it say enough. The author asked for "the first two and last two of the key as per OP." auximenes answered, "I don't think I've solved it, was merely fishing for a hint! 
+
+Almost ten hours later the author came back to that comment: "Next time please use the format in the OP since you actually have the key away." Two days later auximenes explained. They didn't know they'd solved it, "since the 'solved' key did not start with a 5". They had answered the verse with "Et tu, Brute?", the last words history gives Caesar.
+
+At 14:42 came another comment, also deleted. The author asked how they solved it, then: "You got it from that guys post? Gah...I wish he didn't do that." The prize left at 15:18:26, 0.0009 BTC after a 0.0001 BTC fee. Nobody in the thread said it was them.
+
+### The author's own explanation
+
+At 19:40 dombeef asked how it could've been solved. The author, from memory: "whatever the second number in each line is the Caesar Shift amount. So if "one is four", the first line can be decrypted using a Caesar shift of 4." And "I don't remember it off the top of my head." Fair enough, because the key in the post needs no shift at all.
+
+## What the Caesar record carries
+
+```ts [src/collections/iamabananaamaa/caesar.ts]
+export const iAmABananaAmaaCaesar = puzzle({
+  id: "iamabananaamaa/caesar",
+  chain: "bitcoin",
+  address: "1wkQxZaewFqYrDJeVnxqrfMKfJykdRfr5",
+  sourceUrl: THREAD,
+  startedAt: "2013-12-23 04:53:59",
+  status: Status.Solved,
+  pubkey: compressed("022550e961be572a4909f753ea9e98a2a70d77743f367979c5309c2215e852a9be"),
+  key: wif("Ky1VCMxtg9xD13hFrEhWxN22QobNEfeTDX14sZdhGHC3nBRTEDQ8"),
+  prize: 0.001,
+  hints: [/* the verse with the author's answer, easy/medium */],
+  solvedAt: "2013-12-23 15:18:26",
+  solveTime: 37467,
+  transactions: [funding(/* … */), claim(/* … */)],
+});
+```
+
+### A key the post printed
+
+The WIF is the post's four lines, joined. Nothing is derived. `verify` gets the address from it, and the public key comes from the spend's input script, so the two agree without trusting the verse.
+
+### A hint that doesn't hold
+
+The verse is an official hint, and its answer is the author's explanation, word for word. A hint never records whether it's right, so the record keeps it even though the shifts don't give the key. The other hint is the post's own "easy/medium" line.
+
+### No solver
+
+Both comments that had the key are deleted, and the claim doesn't say who sent it. So `solver` is absent. `solvedAt` is the claim's block, and `solveTime` counts from the post, ten hours and 24 minutes.
+
+The thread's archive, with every comment that survived, is in [`assets/sources/iamabananaamaa`](https://github.com/agntn/puzzles/blob/main/assets/sources/iamabananaamaa/iamabananaamaa-2013-12-23.md).
+
+## The IAMABananaAMAA puzzle records
+
+<collection-puzzles collection="iamabananaamaa">
+
+</collection-puzzles>
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка, прогресс, баланс или решение **должны** быть дописаны сюда с датой и ссылкой.
+
+## История изменений
+- 2026-10-16 (deepseek-flash) — данные перенесены из реестра [@agntn/puzzles](https://puzzles.agntn.dev/) (первоисточники внутри текста).

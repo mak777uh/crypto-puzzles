@@ -1,0 +1,131 @@
+{
+  "sha": "fd63e1da2c589c73afb775db235594f9e0f2b214",
+  "url": "https://api.github.com/repos/lmajowka/words-breaker-gpu/git/trees/fd63e1da2c589c73afb775db235594f9e0f2b214",
+  "tree": [
+    {
+      "path": ".cargo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9557280f620b43f680713021b65edb5bfc36018c",
+      "url": "https://api.github.com/repos/lmajowka/words-breaker-gpu/git/trees/9557280f620b43f680713021b65edb5bfc36018c"
+    },
+    {
+      "path": ".cargo/config.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64f6e0c2ee8d12384df7b68d69e4350dae59e3d4",
+      "size": 572,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker-gpu/git/blobs/64f6e0c2ee8d12384df7b68d69e4350dae59e3d4"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c250a2889e9f42473a394be0d1f696b43d4c1bfe",
+      "size": 20,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker-gpu/git/blobs/c250a2889e9f42473a394be0d1f696b43d4c1bfe"
+    },
+    {
+      "path": "Cargo.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c922a209732ba24978b2304070b6eebb6c64fcde",
+      "size": 17639,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker-gpu/git/blobs/c922a209732ba24978b2304070b6eebb6c64fcde"
+    },
+    {
+      "path": "Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da7db3f57e5a6a3d5a9c438229e7e6f3c68e4a4a",
+      "size": 336,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker-gpu/git/blobs/da7db3f57e5a6a3d5a9c438229e7e6f3c68e4a4a"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04bd9a0af1e71d76874da318a3259ee7f19a451c",
+      "size": 5820,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker-gpu/git/blobs/04bd9a0af1e71d76874da318a3259ee7f19a451c"
+    },
+    {
+      "path": "build.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2a73df7fc1692df8ab84999660177cd6d4ad408",
+      "size": 1364,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker-gpu/git/blobs/e2a73df7fc1692df8ab84999660177cd6d4ad408"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0f542cb1fc3eef1ab1b2d5ff9fa01235d3256214",
+      "url": "https://api.github.com/repos/lmajowka/words-breaker-gpu/git/trees/0f542cb1fc3eef1ab1b2d5ff9fa01235d3256214"
+    },
+    {
+      "path": "src/candidates.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b28277f87d0473fc8889ad86ef5890f5af1d5cf4",
+      "size": 1655,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker-gpu/git/blobs/b28277f87d0473fc8889ad86ef5890f5af1d5cf4"
+    },
+    {
+      "path": "src/cuda",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d3f1dffea828e35978a1d2e27fdcd8b4ed112e37",
+      "url": "https://api.github.com/repos/lmajowka/words-breaker-gpu/git/trees/d3f1dffea828e35978a1d2e27fdcd8b4ed112e37"
+    },
+    {
+      "path": "src/cuda/kernels.cu",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72b85e7f088d26cccba7f2cd5bfe060fc2256a9b",
+      "size": 44885,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker-gpu/git/blobs/72b85e7f088d26cccba7f2cd5bfe060fc2256a9b"
+    },
+    {
+      "path": "src/gpu.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddb39e2620f659205138d9e284348c9c94406a1d",
+      "size": 23672,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker-gpu/git/blobs/ddb39e2620f659205138d9e284348c9c94406a1d"
+    },
+    {
+      "path": "src/main.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efc696ea714b9ef3f23cc123faf9f8c29571d7bc",
+      "size": 13217,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker-gpu/git/blobs/efc696ea714b9ef3f23cc123faf9f8c29571d7bc"
+    },
+    {
+      "path": "target",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2de608ad7904b713865ca44691ce5241e5148f27",
+      "url": "https://api.github.com/repos/lmajowka/words-breaker-gpu/git/trees/2de608ad7904b713865ca44691ce5241e5148f27"
+    },
+    {
+      "path": "target/.rustc_info.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24eacb5c1102930b5d67be12da243fa12c2515fc",
+      "size": 1603,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker-gpu/git/blobs/24eacb5c1102930b5d67be12da243fa12c2515fc"
+    },
+    {
+      "path": "target/CACHEDIR.TAG",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20d7c319cda945dc07729797750a49b232206ab5",
+      "size": 177,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker-gpu/git/blobs/20d7c319cda945dc07729797750a49b232206ab5"
+    }
+  ],
+  "truncated": false
+}

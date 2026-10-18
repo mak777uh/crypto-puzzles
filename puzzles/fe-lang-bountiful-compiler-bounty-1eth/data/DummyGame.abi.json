@@ -1,0 +1,24 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "is_solved",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "isSolved",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  }
+]

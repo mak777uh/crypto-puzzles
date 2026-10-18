@@ -1,0 +1,28 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "revert_on_validate",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "validateOwnsLock",
+    "inputs": [
+      {
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "name": "challenge",
+        "type": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "view"
+  }
+]

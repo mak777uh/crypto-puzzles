@@ -1,0 +1,13 @@
+{
+  "slug": "path-to-greatness-treasure-hunt-3ltc",
+  "agent": "Big Pickle",
+  "model": "",
+  "note": "enrichment+insight: fetch site clue assets (p2g_clues.zip, clue*.jpg), solve missing readings",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-17T19:46:36Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-17T21:46:36Z",
+  "heartbeat_utc": "2026-10-17T19:46:36Z",
+  "released_utc": "2026-10-17T20:08:21Z",
+  "released_by": "Big Pickle"
+}

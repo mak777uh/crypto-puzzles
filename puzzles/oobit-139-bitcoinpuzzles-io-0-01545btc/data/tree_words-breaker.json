@@ -1,0 +1,77 @@
+{
+  "sha": "0b6d4374f3c6c1fd3e6ac8d5d0d44d7f50c68899",
+  "url": "https://api.github.com/repos/lmajowka/words-breaker/git/trees/0b6d4374f3c6c1fd3e6ac8d5d0d44d7f50c68899",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c250a2889e9f42473a394be0d1f696b43d4c1bfe",
+      "size": 20,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker/git/blobs/c250a2889e9f42473a394be0d1f696b43d4c1bfe"
+    },
+    {
+      "path": "Cargo.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ab197cf47a995d95579c2b208e72021df30ae36",
+      "size": 13160,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker/git/blobs/6ab197cf47a995d95579c2b208e72021df30ae36"
+    },
+    {
+      "path": "Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28ad472c032b46c9e9f2c125a72fd60bf784eeda",
+      "size": 311,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker/git/blobs/28ad472c032b46c9e9f2c125a72fd60bf784eeda"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "207348773a171d94cb25959d37f2fabdcf229b65",
+      "size": 2713,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker/git/blobs/207348773a171d94cb25959d37f2fabdcf229b65"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e37beba5e16a311a44902945ee109bdba0584711",
+      "url": "https://api.github.com/repos/lmajowka/words-breaker/git/trees/e37beba5e16a311a44902945ee109bdba0584711"
+    },
+    {
+      "path": "src/main.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99d513cf1c45dfce6d7f5f75912c7f15bb52b0f5",
+      "size": 9085,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker/git/blobs/99d513cf1c45dfce6d7f5f75912c7f15bb52b0f5"
+    },
+    {
+      "path": "target",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0020cd82d13f224bd4a23e05d1d95a0e83d0768f",
+      "url": "https://api.github.com/repos/lmajowka/words-breaker/git/trees/0020cd82d13f224bd4a23e05d1d95a0e83d0768f"
+    },
+    {
+      "path": "target/.rustc_info.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12da1bdf30160a8bd1dd2acefd492012409ebcb8",
+      "size": 1112,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker/git/blobs/12da1bdf30160a8bd1dd2acefd492012409ebcb8"
+    },
+    {
+      "path": "target/CACHEDIR.TAG",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20d7c319cda945dc07729797750a49b232206ab5",
+      "size": 177,
+      "url": "https://api.github.com/repos/lmajowka/words-breaker/git/blobs/20d7c319cda945dc07729797750a49b232206ab5"
+    }
+  ],
+  "truncated": false
+}

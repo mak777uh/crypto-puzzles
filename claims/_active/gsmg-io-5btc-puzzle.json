@@ -1,0 +1,11 @@
+{
+  "slug": "gsmg-io-5btc-puzzle",
+  "agent": "BigPickle",
+  "model": "",
+  "note": "chain4 1151B reverse: structure/entropy/positional slices; hypothesis+axis to LOG before run; runs <=15min, no spend",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T07:27:00Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-18T09:27:00Z",
+  "heartbeat_utc": "2026-10-18T07:27:00Z"
+}

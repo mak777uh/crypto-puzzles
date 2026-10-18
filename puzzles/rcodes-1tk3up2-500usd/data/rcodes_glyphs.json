@@ -1,0 +1,686 @@
+{
+ "lines": {
+  "1": [
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o..",
+    "R": ".-.",
+    "raw": "I o../.-."
+   },
+   {
+    "space": false,
+    "spine": "7",
+    "L": "..o",
+    "R": "o.|",
+    "raw": "7 ..o/o.|"
+   },
+   {
+    "space": false,
+    "spine": "7",
+    "L": "...",
+    "R": "..o",
+    "raw": "7 .../..o"
+   },
+   {
+    "space": false,
+    "spine": "7",
+    "L": "...",
+    "R": "..o",
+    "raw": "7 .../..o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "ooo",
+    "R": ".-+",
+    "raw": "I ooo/.-+"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".+o",
+    "R": ".+o",
+    "raw": "I .+o/.+o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o+.",
+    "R": "./-",
+    "raw": "I o+./ ./-"
+   },
+   {
+    "space": false,
+    "spine": "7",
+    "L": "o..",
+    "R": "o.|",
+    "raw": "7 o../o.|"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".oo",
+    "R": "/.+",
+    "raw": "I .oo//.+"
+   },
+   {
+    "space": true
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o..",
+    "R": "o+-",
+    "raw": "I o../o+-"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "..o",
+    "R": "▲-.",
+    "raw": "I ..o/▲-."
+   }
+  ],
+  "2": [
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o..",
+    "R": ".-o",
+    "raw": "I o../.-o"
+   },
+   {
+    "space": false,
+    "spine": "7",
+    "L": "...",
+    "R": "o|o",
+    "raw": "7 .../o|o"
+   },
+   {
+    "space": false,
+    "spine": "L",
+    "L": ".-.",
+    "R": ".o.",
+    "raw": "L .-./.o."
+   },
+   {
+    "space": false,
+    "spine": "L",
+    "L": "...",
+    "R": "o-o",
+    "raw": "L .../o-o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".+o",
+    "R": "+.o",
+    "raw": "I .+o/+.o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o.o",
+    "R": ".-+",
+    "raw": "I o.o/.-+"
+   },
+   {
+    "space": false,
+    "spine": "7",
+    "L": ".+.",
+    "R": "/.o",
+    "raw": "7 .+.//.o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-.",
+    "R": "/.o",
+    "raw": "I .-.//.o"
+   },
+   {
+    "space": false,
+    "spine": "L",
+    "L": ".-.",
+    "R": ".o.",
+    "raw": "L .-./.o."
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o..",
+    "R": "o+-",
+    "raw": "I o../o+-"
+   },
+   {
+    "space": true
+   },
+   {
+    "space": false,
+    "spine": "7",
+    "L": "o..",
+    "R": "o.|",
+    "raw": "7 o../o.|"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".+.",
+    "R": ".-o",
+    "raw": "I .+./.-o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-.",
+    "R": "+-o",
+    "raw": "I .-./+-o"
+   },
+   {
+    "space": true
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o..",
+    "R": "o+-",
+    "raw": "I o../o+-"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o.o",
+    "R": ".-.",
+    "raw": "I o.o/.-."
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "-oo",
+    "R": "+.|",
+    "raw": "I -oo/+.|"
+   }
+  ],
+  "3": [
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o..",
+    "R": "|+_",
+    "raw": "I o../|+_"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "|+.",
+    "R": ".-▲",
+    "raw": "I |+./.-▲"
+   },
+   {
+    "space": true
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o.o",
+    "R": "-+o",
+    "raw": "I o.o/-+o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "\\..",
+    "R": ".-+",
+    "raw": "I \\../.-+"
+   },
+   {
+    "space": true
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "..o",
+    "R": "|-.",
+    "raw": "I ..o/|-."
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o..",
+    "R": ".-▲",
+    "raw": "I o../.-▲"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "-.o",
+    "R": "|.o",
+    "raw": "I -.o/|.o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "-.▲",
+    "R": "+.|",
+    "raw": "I -.▲/+.|"
+   },
+   {
+    "space": true
+   },
+   {
+    "space": false,
+    "spine": "7",
+    "L": "o..",
+    "R": "o.|",
+    "raw": "7 o../o.|"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".+o",
+    "R": ".+o",
+    "raw": "I .+o/.+o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".+o",
+    "R": "o-+",
+    "raw": "I .+o/o-+"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "...",
+    "R": "./-",
+    "raw": "I .../ ./-"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "..o",
+    "R": "|-.",
+    "raw": "I ..o/|-."
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "+.o",
+    "R": ".-.",
+    "raw": "I +.o/.-."
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-o",
+    "R": "o.o",
+    "raw": "I .-o/o.o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o.o",
+    "R": ".-.",
+    "raw": "I o.o/.-."
+   },
+   {
+    "space": false,
+    "spine": "L",
+    "L": "...",
+    "R": "o-o",
+    "raw": "L .../o-o"
+   },
+   {
+    "space": false,
+    "spine": ")",
+    "L": "..o",
+    "R": ".-+",
+    "raw": ") ..o/.-+"
+   }
+  ],
+  "4": [
+   {
+    "space": false,
+    "spine": "7",
+    "L": "o..",
+    "R": "o.|",
+    "raw": "7 o../o.|"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".oo",
+    "R": "/.+",
+    "raw": "I .oo//.+"
+   },
+   {
+    "space": true
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "+.o",
+    "R": ".-.",
+    "raw": "I +.o/.-."
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o..",
+    "R": "o+-",
+    "raw": "I o../o+-"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "-.o",
+    "R": ".+.",
+    "raw": "I -.o/.+."
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-.",
+    "R": "+.o",
+    "raw": "I .-./+.o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-.",
+    "R": "/.o",
+    "raw": "I .-.//.o"
+   },
+   {
+    "space": false,
+    "spine": "7",
+    "L": "...",
+    "R": "o|o",
+    "raw": "7 .../o|o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "\\.o",
+    "R": ".-+",
+    "raw": "I \\.o/.-+"
+   },
+   {
+    "space": true
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o.o",
+    "R": ".-+",
+    "raw": "I o.o/.-+"
+   },
+   {
+    "space": true
+   },
+   {
+    "space": false,
+    "spine": "G",
+    "L": "o..",
+    "R": "-+o",
+    "raw": "G o../-+o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".._",
+    "R": "-.o",
+    "raw": "I .._/-.o"
+   }
+  ],
+  "5": [
+   {
+    "space": false,
+    "spine": "I",
+    "L": "..o",
+    "R": "/+-",
+    "raw": "I ..o//+-"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "..+",
+    "R": "o.|",
+    "raw": "I ..+/o.|"
+   },
+   {
+    "space": true
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "+-.",
+    "R": "o.o",
+    "raw": "I +-./o.o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-o",
+    "R": "+.|",
+    "raw": "I .-o/+.|"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-.",
+    "R": "..o",
+    "raw": "I .-./..o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-.",
+    "R": "+.o",
+    "raw": "I .-./+.o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "\\.o",
+    "R": ".-+",
+    "raw": "I \\.o/.-+"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-.",
+    "R": "+-o",
+    "raw": "I .-./+-o"
+   },
+   {
+    "space": true
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o..",
+    "R": "++o",
+    "raw": "I o../++o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "+.o",
+    "R": ".-.",
+    "raw": "I +.o/.-."
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-o",
+    "R": "o.o",
+    "raw": "I .-o/o.o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-o",
+    "R": "+.|",
+    "raw": "I .-o/+.|"
+   },
+   {
+    "space": false,
+    "spine": "L",
+    "L": "+-.",
+    "R": ".o.",
+    "raw": "L +-./.o."
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "\\..",
+    "R": ".-o",
+    "raw": "I \\../.-o"
+   }
+  ],
+  "6": [
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o..",
+    "R": "-+-",
+    "raw": "I o../-+-"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".+o",
+    "R": ".+o",
+    "raw": "I .+o/.+o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o+.",
+    "R": "./-",
+    "raw": "I o+./ ./-"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "..o",
+    "R": "/+-",
+    "raw": "I ..o//+-"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-.",
+    "R": "..o",
+    "raw": "I .-./..o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-.",
+    "R": "/.o",
+    "raw": "I .-.//.o"
+   },
+   {
+    "space": true
+   },
+   {
+    "space": false,
+    "spine": "7",
+    "L": "...",
+    "R": "o|o",
+    "raw": "7 .../o|o"
+   },
+   {
+    "space": false,
+    "spine": "L",
+    "L": ".-.",
+    "R": ".o.",
+    "raw": "L .-./.o."
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-.",
+    "R": "o.x",
+    "raw": "I .-./o.x"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "\\.o",
+    "R": ".-+",
+    "raw": "I \\.o/.-+"
+   },
+   {
+    "space": true
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-.",
+    "R": "o.x",
+    "raw": "I .-./o.x"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "-+.",
+    "R": "+.o",
+    "raw": "I -+./+.o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-.",
+    "R": "+-o",
+    "raw": "I .-./+-o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o.o",
+    "R": ".-+",
+    "raw": "I o.o/.-+"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": "o-.",
+    "R": "o.o",
+    "raw": "I o-./o.o"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-o",
+    "R": "+.|",
+    "raw": "I .-o/+.|"
+   },
+   {
+    "space": false,
+    "spine": "7",
+    "L": "o..",
+    "R": "o.|",
+    "raw": "7 o../o.|"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-.",
+    "R": "o.x",
+    "raw": "I .-./o.x"
+   },
+   {
+    "space": false,
+    "spine": "I",
+    "L": ".-.",
+    "R": "..o",
+    "raw": "I .-./..o"
+   }
+  ]
+ },
+ "problems": []
+}

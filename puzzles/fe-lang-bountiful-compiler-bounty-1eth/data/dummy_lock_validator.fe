@@ -1,0 +1,18 @@
+use std::evm::revert
+use ingot::{Error, LockValidatorMsg}
+
+pub contract DummyLockValidator {
+    mut should_revert: bool,
+
+    init(revert_on_validate: bool) uses (mut should_revert) {
+        should_revert = revert_on_validate
+    }
+
+    recv LockValidatorMsg {
+        ValidateOwnsLock { owner, challenge } uses (should_revert) {
+            if should_revert {
+                revert(Error::MissingLock)
+            }
+        }
+    }
+}

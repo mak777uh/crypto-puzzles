@@ -1,0 +1,3603 @@
+# GLIMMER HANDOFF — Smith, Lyle & Moore Treasure Hunt #2 — state as of 2026-10-17 00:00 MSK
+
+## 0. TL;DR
+- Goal: get all 12 BIP39 words + a BIP39 passphrase for the escrow bc1q0akdjvrc2csau2n3gyxa3xcq0fss852x997m9y (0.031777 BTC, unspent), BIP84 path m/84'/0'/0'/0/0. xpub: xpub6CpNc58z…vQqhNqVC (see agntn puzzles page).
+- 11 known words (from in-site "message" pages): when you depart find mystery discover music need love fortune safe
+  - sm18u (/litter, pw youshallpass47) labels words 1-5 as "when you depart find mystery".
+  - c2ozw (/take-a-big-breath, pw discoverglimmer) labels 5-8 as "discover music need love" (the labels overlap at 5, and nothing is labeled 9).
+  - h7j3h (/a-rocky-beach, pw "Atlas Mountains") gives 10-11 "fortune safe".
+  - WORD ORDER IS NOT CERTAIN. Still missing: one word (probably behind the raft/smoke locks) + the passphrase.
+- Final page /glimmer (gkfxt, pw closerandcloser): the 12 words get emailed to codebreaker@smithlylemoore.com with subject "I've Found Amphitrite, and All 12 Words". In Hunt #1 the band replied with gateway info, and the passphrase was the last word of an unreleased song ("supernova").
+- Main open locks (parent jetkc /hereonnnnngiligansissssssland, pw "Mary Ann", page "Tropical Island", Gilligan's Island theme):
+  - zhgsm /raft-escape, page title "RaftBuilt". Button: "Escape via raft, made from palm tree wood".
+  - jcl9c /smoke-signals, page title "lightafire". Button: "Light a Fire to Alert a Passing Ship".
+  - Third button, "I think I'll just make a life for myself here", leads to udr8x Death (pw 777).
+  - Other closed pages: y6cd1 pirate-battle (likely a troll: its EXIF says "nope lol"), sodpq treasure-map (Hunt #1 leftover), oq7la/ml7yd (opened: 27756932 / 73511573).
+- Password oracle: Wix endpoint (code in section 6). A wrong password returns HTTP 403, a right one returns success + a parastorage URL with the page JSON. Passwords are case-sensitive. Keep checks sequential, ~0.55 s apart.
+- Password style the author uses: a famous person or thing doing the button's action (swim-to-shore=michaelphelps, talk-to-pirates=semaphore, hitch-a-ride=seahitchhiker, speak-to-whales=mobydick69420, reach-land=sleighride); abbreviations of the text (huntgathwhalblo, shiphuntshalpar); suffix 64 (north64..., 1964 = Gilligan premiere year); Hunt #1 "fire" locks were MMDDYYYY dates (07201969, 01271967 = Apollo 1 fire) and fffffffffff/FFFFFFFFFFF.
+- About 2,500 distinct strings have been tried across all locks (section 8). zhgsm and jcl9c alone have had over 1,000 misses each.
+
+## 1. What has been ruled out offline (wallet)
+- Order A: when you depart find mystery discover music need love fortune safe ? (125 checksum-valid options for the last word).
+- Order B: when you depart find discover music need love mystery fortune safe ? (128 options).
+- Order D: when you depart find discover music need love ? fortune safe mystery (131 options).
+- Order E: when you depart find ? discover music need love fortune safe mystery (139 options).
+- Each order × 15,248 passphrases (empty, lyrics of Glimmer/Vampire/other band songs as words and n-grams, every site password, page titles, slugs, narrative words, Hunt #1 words, case variants): 0 FOUND.
+- So either the passphrase is something outside this set, the order is something else, or the missing word is fixed and not just a checksum filler.
+
+## 2. Site map (pageId | slug | title | known password)
+
+gly1l | /wise-choice-explorer | Email List Landing Page | -
+aj73v | /the-search-begins | The Search Begins | -
+vispv | /awake | Awake | electricfeel64
+zren9 | /popup-zren9 | My Stuff | -
+az5r4 | /donation | Donation | -
+zrend | /popup-zrend | FBI RAID | -
+onfzt | /waiting | Waiting... | -
+ouxh2 | /escape | escape | escape
+ruiat | /the-passage | the passage | FFFFFFFFFFF
+oanvz | /the-vault | the vault | 4samcodeartist
+eetj4 | /north | North | north64
+y756h | /a | a | -
+xrd91 | /birdpewp | bird | east64
+qomxw | /night | night | witchoftheeast
+epndr | /more-info | More Info | -
+swidf | /end-of-treasure-hunt | End of Treasure Hunt | -
+giz6m | /isawthismovie3timesintheaters | abovewater | 2hours40minutes
+thmoi | /land-ho | Land Ho! | huntgathwhalblo
+jetkc | /hereonnnnngiligansissssssland | Tropical Island | Mary Ann
+ebsrv | /treasure-hunt | TREASURE HUNT | -
+b3vye | /havingfunwiththeurl-ilovedthisshowasakid-sosomuch | Name 6 | Dr. Roy
+y6cd1 | /pirate-battle | fight | -
+jxam2 | /still-waiting | Heaven Is Close | -
+wqcam | /celine-dion | iceberg | witchoftheeast
+kx8wx | /a-giant-whale-appears | A Giant Whale Appears | wavebreaker7109
+zrene | /copy-of-bitcoin-qt | Apple Music | -
+zrena | /copy-of-my-stuff | SR Updates | -
+xjnxo | /copy-of-b | c | -
+lzyu7 | /music | MUSIC | -
+y9iq2 | /home | HOME | -
+tt6yc | /vampireb | vampireb | -
+ty78s | /hell | Hell | 666
+kvvu4 | /name4 | Name 4 | Lovey
+jcl9c | /smoke-signals | lightafire | -
+oq7la | /latitude | latitude | -
+wsbja | /treasure-hunt-intro | Introduction | -
+gkfxt | /glimmer | glimmer | closerandcloser
+x8cku | /atlantis | atlantis | north64
+p8po9 | /video | VIDEO | -
+c2ozw | /take-a-big-breath | resurface | -
+gps16 | /speak-to-whales | italkwhale | mobydick69420
+leklh | /b | b | -
+bbryd | /its-not-a-herring-but-its-a-red-herring | not a red herring, but its a red herring | -
+fibyo | /vampire | vampire | -
+ay4p6 | /get-hints | Help Us, Help You | -
+a76va | /ross-u | the library | shiphuntshalpar
+vicn4 | /copy-of-home-old-lading | Copy of Home old lading | -
+udr8x | /death | Death | 777
+mwfaz | /whale-message | amessage | glimmer
+pxsqo | /weallliveinayellowsubmarine | underwater | 20000leagues
+jbuh5 | /my-account | My Account | -
+acwn5 | /illstillbelovinyou | illstillbelovinyou | virtual moon
+g5jpk | /west | West | west64
+xtb6t | /choose-your-direction | Choose Your Direction | amphitrite
+sodpq | /treasure-map-97328971321 | treasure map | -
+ml7yd | /who-is-she | Who is she? | -
+t2xjy | /name3 | Name 3 | Thurston
+e3zre | /pirates | ship | albatross
+a4rhu | /gateway | gateway | codebreaker11
+neyhh | /name-1 | Name 1 | Gilligan
+chtro | /hitch-a-ride | HitchARide | seahitchhiker
+fv4pt | /south | South | south64
+zhgsm | /raft-escape | RaftBuilt | -
+h7j3h | /a-rocky-beach | land | -
+wdnv9 | /name5 | Name 5 | Ginger
+pbvye | /east | East | east64
+gv4d7 | /key-checker | KEY CHECKER | -
+vbk6p | /cape-cod | Cape Cod | vampire
+eqyel | /swim-to-shore | Swim to Shore | michaelphelps
+shzgm | /name2 | Name 2 | Jonas
+vy58x | /copy-of-c | d | -
+gyhal | /glow-in-the-dark | glowinthedark | north64
+hhb0r | /talk-to-pirates | communicate | semaphore
+sm18u | /litter | litter | youshallpass47
+d3zak | /reach-land | You Reach Land | sleighride
+rtf05 | /octopus | octopus | north64
+wt1jy | /message | a message | pirate bay
+zrenb | /copy-of-sr-updates | Bitcoin QT | -
+
+## 3. Page link graph (edges.out)
+vispv awake -> [('neyhh', 'name-1')]
+ouxh2 escape -> [('kx8wx', 'a-giant-whale-appears')]
+ruiat the-passage -> [('oanvz', 'the-vault')]
+oanvz the-vault -> [('dbqak', None), ('lw4kn', None)]
+eetj4 north -> [('kx8wx', 'a-giant-whale-appears')]
+xrd91 birdpewp -> [('e3zre', 'pirates')]
+qomxw night -> [('wqcam', 'celine-dion')]
+giz6m isawthismovie3timesintheaters -> [('udr8x', 'death')]
+thmoi land-ho -> [('chtro', 'hitch-a-ride'), ('eqyel', 'swim-to-shore')]
+jetkc hereonnnnngiligansissssssland -> [('jcl9c', 'smoke-signals'), ('udr8x', 'death'), ('zhgsm', 'raft-escape')]
+b3vye havingfunwiththeurl-ilovedthisshowasakid-sosomuch -> [('jetkc', 'hereonnnnngiligansissssssland')]
+wqcam celine-dion -> [('giz6m', 'isawthismovie3timesintheaters'), ('pxsqo', 'weallliveinayellowsubmarine')]
+kx8wx a-giant-whale-appears -> [('gps16', 'speak-to-whales')]
+ty78s hell -> []
+kvvu4 name4 -> [('wdnv9', 'name5')]
+gkfxt glimmer -> []
+x8cku atlantis -> [('kx8wx', 'a-giant-whale-appears')]
+gps16 speak-to-whales -> [('mwfaz', 'whale-message')]
+a76va ross-u -> [('ouxh2', 'escape'), ('zren9', 'popup-zren9'), ('zrena', 'copy-of-my-stuff'), ('zrenb', 'copy-of-sr-updates'), ('zrene', 'copy-of-bitcoin-qt')]
+udr8x death -> []
+mwfaz whale-message -> [('thmoi', 'land-ho')]
+pxsqo weallliveinayellowsubmarine -> [('c2ozw', 'take-a-big-breath')]
+acwn5 illstillbelovinyou -> []
+g5jpk west -> [('wt1jy', 'message')]
+xtb6t choose-your-direction -> [('eetj4', 'north'), ('fv4pt', 'south'), ('g5jpk', 'west'), ('pbvye', 'east')]
+t2xjy name3 -> [('kvvu4', 'name4')]
+e3zre pirates -> [('hhb0r', 'talk-to-pirates'), ('y6cd1', 'pirate-battle')]
+a4rhu gateway -> [('acwn5', 'illstillbelovinyou')]
+neyhh name-1 -> [('shzgm', 'name2')]
+chtro hitch-a-ride -> [('d3zak', 'reach-land')]
+fv4pt south -> [('udr8x', 'death'), ('vispv', 'awake')]
+wdnv9 name5 -> [('b3vye', 'havingfunwiththeurl-ilovedthisshowasakid-sosomuch')]
+pbvye east -> [('xrd91', 'birdpewp')]
+vbk6p cape-cod -> []
+eqyel swim-to-shore -> [('vbk6p', 'cape-cod')]
+shzgm name2 -> [('t2xjy', 'name3')]
+gyhal glow-in-the-dark -> [('kx8wx', 'a-giant-whale-appears')]
+hhb0r talk-to-pirates -> [('sm18u', 'litter')]
+sm18u litter -> [('qomxw', 'night')]
+d3zak reach-land -> [('ty78s', 'hell')]
+rtf05 octopus -> [('kx8wx', 'a-giant-whale-appears')]
+wt1jy message -> [('a76va', 'ross-u')]
+
+
+## 4. Text of every opened page (from its page JSON)
+
+### a4rhu (pw: codebreaker11) slug=['gateway']
+And now.... an advanced screening of a future song. Your ticket is word11 word12: the last stop of your journey.&nbsp;
+
+### a76va (pw: shiphuntshalpar) slug=['ross-u']
+YOU MUST USE A COMPUTER FOR THIS STEP
+
+### acwn5 (pw: virtual moon) slug=['illstillbelovinyou']
+
+
+### b3vye (pw: Dr. Roy) slug=['havingfunwiththeurl-ilovedthisshowasakid-sosomuch']
+Finally, I asked the last girl her name.&nbsp;
+Buttons: And her name was
+
+### c2ozw (pw: ?) slug=['take-a-big-breath']
+Ahhhh... fresh air again... And more litter? Amphitrite should take better care of the sea.
+The message reads:
+&nbsp; &nbsp; 5&nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;6&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; 7&nbsp; &nbsp;&nbsp;
+&nbsp; &nbsp; 8&nbsp; &nbsp;&nbsp;
+discover
+music
+need
+love
+Land in the distance. Finally. You can feel that you are getting closer to her.
+password hint - where will you find her?
+Buttons: Land ho!
+
+### chtro (pw: seahitchhiker) slug=['hitch-a-ride']
+A creative? destructive? way to help yourself
+Password is 2 words, but omit the first
+Buttons: Evil Santa
+
+### d3zak (pw: sleighride) slug=['reach-land']
+You&#39;re carried all the way to shore. You take up a job as a lightkeeper. An ironic choice, for somebody with such a dark soul.&nbsp; You help ships avoid the rocky shallows, until you&#39;re old and wrinkled. And then you die alone.
+pass: 666
+Buttons: Goodbye, cruel world
+
+### e3zre (pw: albatross) slug=['pirates']
+A surge of adrenaline, as you see another ship in the distance. OH, TO COMMUNICATE WITH OTHERS. TO HEAR ANOTHER&#39;S VOICE. TO FEEL ANOTHER&#39;S SKIN.&nbsp; But your pure joy quickly fades... Pirates. Do they know about the treasure? Could they have taken her? You don&#39;t have much left on your boat. They won&#39;t be happy with what you can offer them. Did you miss your welcome home party only to be welcomed to a Donner party at sea? Surely no... you&#39;re just leathery skin and bones by now. Will you try to communicate with them? What language do pirates even speak? Or should you try to fight them off?&nbsp;
+Buttons: I choose to fight || I know the language of these pirates
+
+### eetj4 (pw: north64) slug=['north']
+pass: wavebreaker7109
+Buttons: Full Speed Ahead!
+
+### eqyel (pw: michaelphelps) slug=['swim-to-shore']
+I ❤️ The Smell of Blood.&nbsp;
+Buttons: And I Swam All Night, And Arrived Before Dawn
+
+### fv4pt (pw: south64) slug=['south']
+You are caught in a massive thunderstorm. You can feel the static surround you. Your hair stands on end, chills climb up your body, and then BANG. White light surrounds you, and you lose consciousness.
+Password: 777
+Password: electricfeel64
+Buttons: But I'm Strong and Woke Up the Next Day || I Never Woke Up
+
+### g5jpk (pw: west64) slug=['west']
+Pirates... Are they coming from the treasure? Did they steal the treasure for themselves? Did they download a lot of music/movies from napster/limewire/kazaa/somewhere else? Is that Blackbeard? Or Shawn Fanning? Do you feel unbridaled rage, and a newfound desire to play the drums? Is your last name Ulrich? Ulbricht? Svartholm? Neij?
+Buttons: Yo Ho, Yo Ho, A Pirate's Life fer Me
+
+### giz6m (pw: 2hours40minutes) slug=['isawthismovie3timesintheaters']
+password: 777
+Buttons: Ill Never Let Go Jack
+
+### gkfxt (pw: closerandcloser) slug=['glimmer']
+The song echoes through the mountain valleys, and it brings her to you
+Once you have all 12 words, click below and email them to us, for the final step
+Buttons: I'm ready for this to end
+
+### gps16 (pw: mobydick69420) slug=['speak-to-whales']
+Download Video &nbsp; - Right Click, Save As
+Buttons: The Whale Said...
+
+### gyhal (pw: north64) slug=['glow-in-the-dark']
+pass: wavebreaker7109
+Buttons: Full Speed Ahead!
+
+### h7j3h (pw: ?) slug=['a-rocky-beach']
+They&#39;ve all been from her... All of the messages... She still loves you.
+After I Love You, The message reads:
+&nbsp; &nbsp; 10&nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;11&nbsp; &nbsp; &nbsp;
+fortune
+safe
+Now the climb. Sing her a song, about your love, about your journey.&nbsp;
+password: closerandcloser
+Buttons: I will sing her glimmer.
+
+### hhb0r (pw: semaphore) slug=['talk-to-pirates']
+
+Buttons: Moving on...
+
+### jetkc (pw: Mary Ann) slug=['hereonnnnngiligansissssssland']
+Your ship washes onto a sandy beach. The group explores the island, and it quickly becomes clear that it&#39;s not very big... and it&#39;s uninhabited. Thankfully, you find what you need to survive. Namely: coconuts for sustenance, and palm huts for shelter. It&#39;s beautiful here, but man... after a few months, coconuts get really old... After a few years, they make you crazy.
+Buttons: Escape via raft, made from palm tree wood || I think I'll just make a life for myself here || Light a Fire to Alert a Passing Ship
+
+### kvvu4 (pw: Lovey) slug=['name4']
+And this famous girl too...
+Buttons: Her name was...
+
+### kx8wx (pw: wavebreaker7109) slug=['a-giant-whale-appears']
+pass: mobydick69420
+Buttons: I can talk to the whale... reason with him
+
+### ml7yd (pw: ?) slug=['who-is-she']
+Who is she?
+Who are you looking for?
+(Click the Bottom Right of Video to Turn On Audio)
+Buttons: I'm Looking For...
+
+### mwfaz (pw: glimmer) slug=['whale-message']
+You find a message in a bottle... Could it be from her?
+The message reads:
+hunt
+gather
+whale
+blood
+&nbsp; &nbsp; 1 &nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp;&nbsp;
+&nbsp; &nbsp; 3 &nbsp; &nbsp;
+&nbsp; &nbsp; 4 &nbsp; &nbsp;
+password: huntgathwhalblo
+Buttons: Land Ho! Full Speed Ahead to Land...
+
+### neyhh (pw: Gilligan) slug=['name-1']
+Now get to know your shipmates. Ask for their names
+Buttons: My bff is...
+
+### oanvz (pw: 4samcodeartist) slug=['the-vault']
+
+
+### oq7la (pw: ?) slug=['latitude']
+Nice work...
+longitude (numbers only)
+Buttons: Chart a Course
+
+### ouxh2 (pw: escape) slug=['escape']
+That was a close call. Legend has it that if you pull out Moby Dick, a secret passageway to the sea will appear
+pass: wavebreaker7109
+
+### pbvye (pw: east64) slug=['east']
+The sea is beautiful. But she can also make you crazy. Every morning, you wake up, note where the sun is rising, and point your bow towards it. The instruments are going haywire. Nonsensical readings on everything. So, you resort to ancient tricks. You need to become one with your surroundings. To observe the sun, the sky, the wind, the clouds, the stars, the moon. And in this observation, you find peace. And in your solitude, there is a peace as well. But after weeks, you wonder, how many days have I been doing this? After months you fill with existential dread and doubt yourself, your surroundings, reality. There are no books aboard. The stupid TV is on a 10 minute loop of commercials from the 80s. At least there are a few seconds where you get to look at her. You haven&#39;t seen a real living thing, aside from the fish you&#39;ve caught, in ages. You must be in a hypoxic area. An ocean desert. The ocean is beautiful, yes, but beauty is relative, and you&#39;re beginning to not have anything to relate her to.&nbsp;
+keep heading: east64
+Buttons: Towards the rising sun...
+
+### pxsqo (pw: 20000leagues) slug=['weallliveinayellowsubmarine']
+20,000 Leagues. Impressive. But it&#39;s not easy on the body. Hydrogen narcosis sets in. Images start flashing before your eyes. Is it your life flashing before your eyes or hallucinations? Is this the end?
+Buttons: Continue Eastward...
+
+### qomxw (pw: witchoftheeast) slug=['night']
+password: witchoftheeast
+A warm summer night. A light breeze blows across your face. The ocean lights up beneath you... magic. You&#39;re not in the oceanic desert anymore. There is life around you. You sit back. You relax. Peace. Slowly, you drift off into a wonderful sleep.
+Buttons: Continue Eastward...
+
+### rtf05 (pw: north64) slug=['octopus']
+pass: wavebreaker7109
+Buttons: Full Speed Ahead!
+
+### ruiat (pw: FFFFFFFFFFF) slug=['the-passage']
+Great Scott! The fire exposed a vault that was hidden underneath the secret museum. It&#39;s a good thing you lit a fire to keep warm, explorer. No journey worthwhile is without its bumps. You now have access to an artifact. It is a piece of a treasure map, for those who understand.&nbsp;
+4samcodeartist
+Vault Password:
+(use this password to access all items in the vault)
+Buttons: Click To Enter the Vault
+
+### shzgm (pw: Jonas) slug=['name2']
+The next guy I asked was named...
+Buttons: He told me his name was...
+
+### sm18u (pw: youshallpass47) slug=['litter']
+You find a message in a bottle... Could it be from her?
+The message reads:
+&nbsp; &nbsp; 1 &nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp;&nbsp;
+&nbsp; &nbsp; 3 &nbsp; &nbsp;
+&nbsp; &nbsp; 4 &nbsp; &nbsp;
+when
+you
+depart
+find
+password: witchoftheeast
+&nbsp; &nbsp; 5&nbsp; &nbsp;&nbsp;
+mystery
+Buttons: Continue Eastward...
+
+### t2xjy (pw: Thurston) slug=['name3']
+And he was there with his wife.
+Buttons: His Wife's Name Was...
+
+### thmoi (pw: huntgathwhalblo) slug=['land-ho']
+Your boat has been through a lot. It&#39;s engine broke. But shore is in sight...
+password: michaelphelps
+password: seahitchhiker
+Buttons: Hitch a Ride || Swim to Shore
+
+### ty78s (pw: 666) slug=['hell']
+You have gone to hell, where you stay for eternity. &nbsp;
+
+### udr8x (pw: 777) slug=['death']
+
+
+### vbk6p (pw: vampire) slug=['cape-cod']
+You arrive to a world of the past. This is not the America you left behind. There are no cars. There are no Apollo missions. There is no TV and no Radio. There is a panic
+Coming Soon...
+Sep 9, 2022
+
+### vispv (pw: electricfeel64) slug=['awake']
+In the massive storm, your tiny ship was tossed, but you survived. Now, you feel different. This experience changed you. Reality has changed too. Are you hallucinating? Is it real? There are now 6 others aboard your ship.&nbsp;
+Get to know your new self.
+Buttons: My Name Is...
+
+### wdnv9 (pw: Ginger) slug=['name5']
+The other guy had some good ideas about how to get out of the mess we were in.&nbsp;
+Buttons: His name was...
+
+### wqcam (pw: witchoftheeast) slug=['celine-dion']
+You awaken to a crash, to the wail of twisting iron. Almost like a whale singing. Your ship has struck an iceberg and you start taking on water. You wont be afloat for long. How long after hitting the iceberg until your ship sinks? As the ship cracks, you notice a hidden compartment. A 2-man submarine is unveiled. If you choose to explore the ocean&#39;s depths, you&#39;ll need to travel great lengths under the water. How far?
+length of time or distance
+length of time or distance
+Buttons: A Captain Never Leaves His Ship || I Captained a Spaceship, this Shitty Boat, and Now a Submarine.
+
+### wt1jy (pw: pirate bay) slug=['message']
+You find a message in a bottle... Did a pirate throw it overboard?
+The message reads:
+&nbsp; &nbsp; 1 &nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp;&nbsp;
+&nbsp; &nbsp; 3 &nbsp; &nbsp;
+&nbsp; &nbsp; 4 &nbsp; &nbsp;
+ship
+hunt
+shallow
+parrot
+password: shiphuntshalpar
+a portal opened in the sea. do you dare go through it? you&#39;re no 17th century pirate, 21st century boy
+Buttons: I Choose a Life of Risk
+
+### x8cku (pw: north64) slug=['atlantis']
+pass: wavebreaker7109
+Buttons: Full Speed Ahead!
+
+### xrd91 (pw: east64) slug=['birdpewp']
+Finally! A sign of life. Is this a glimmer of hope? Or a bad omen?
+Buttons: This is an...
+
+### xtb6t (pw: amphitrite) slug=['choose-your-direction']
+password: north64
+password: south64
+password: east64
+password: west64
+Buttons: E || N || S || W
+
+
+## FILE: NOTES.md
+# Glimmer (Smith, Lyle & Moore #2) — state 2026-10-16 00:37 MSK
+Escrow bc1q0akdjvrc2csau2n3gyxa3xcq0fss852x997m9y intact 3,177,700 sat.
+Oracle: Wix resolve_protected_page_urls; HIT=success, wrong=403. Go serial, ~0.3s, retry ERR; threaded sweeps get throttled.
+Known passwords: west64 east64 south64 north64 777 electricfeel64 youshallpass47 witchoftheeast
+ wavebreaker7109 mobydick69420 2hours40minutes (giz6m abovewater) 20000leagues (pxsqo underwater)
+ 'pirate bay' (wt1jy message, found by Илья) -> shiphuntshalpar (a76va ross-u library)
+ escape (ouxh2 -> loops back to wavebreaker7109)
+ross-u: "YOU MUST USE A COMPUTER FOR THIS STEP"; buttons -> zren9 My Stuff, zrena SR Updates, zrenb Bitcoin QT, zrene Apple Music, ouxh2 escape; popup zrend FBI RAID after 4s (desktop only). zren* are lightboxes (API 404, static files 403) -> need desktop browser render.
+South Name 6 (b3vye): all castaway names in Title Case = no.
+East final gate (after 20000leagues, "Is this the end?"): Gandalf phrases not conclusive yet.
+
+## 2026-10-16 01:47 browser read of /ross-u popups
+- FBI RAID: "...sentenced to life in prison." + line "ffffffffff" (10 f)
+- My Stuff: files dpr master password list, friendly chemist hit, hit list, sr-update1..7
+- SR Updates: macOS unlock disk 'Samsung T5', 6-char prefilled pw (inferred 'escape')
+- Bitcoin QT: last block Fri Oct 8 23:27:55 2021, headers 741409, 41 weeks behind
+- Apple Music: track "Glimmer (ft Dhani Harrison)_48k24b"; playlists Retrograde, Retrograde1, "The World (Is Going..."; search hit Glimmer - Tame Impala
+- Only real link: /escape -> pw 'escape' -> pass wavebreaker7109 (loop to whale line)
+- Endgame still locked: the-vault oanvz, key-checker gv4d7, glimmer gkfxt, treasure-map sodpq
+- Asked Илья: focus endgame vs south chain.
+
+## 2026-10-16 11:50 +04 run
+- SOURCE: community findings PDF (pdfhost j8y6cN2WSx, saved findings.pdf/findings.txt, 26 Aug 2026):
+  seed words 1-5 claimed FOUND: "when you depart find mystery"; 6-9 candidate "hunt gather whale blood" (decoy?); 10 behind lock; 11-12 = "ticket" image (foggy dirt road) on gateway->ticket page; passphrase "in the song".
+  Their passwords: amphitrite (compass), albatross, semaphore, glimmer, huntgathwhalblo, michaelphelps, seahitchhiker, Gilligan Jonas Thurston Lovey Ginger "Dr. Roy" "Mary Ann", 666, vampire, vault chain: FFFFFFFFFFF, 4samcodeartist, codebreaker11, "virtual moon" (Hunt#1 pws work on vault/gateway/ticket).
+  Album cover metadata base32 UVHZ532IWIFZFN5FUY2K5RDX3I -> A54F9EEF48B20B92B7A5A634AEC477DA.
+  Their 5 remaining locks: East pxsqo-final, West, Raft zhgsm, Smoke jcl9c, Who is she ml7yd. Passwords CASE-SENSITIVE.
+- VERIFIED: b3vye (Name 6) opens with "Dr. Roy" -> "Finally, I asked the last girl her name" -> jetkc (Tropical Island) opens with "Mary Ann".
+  jetkc -> 3 buttons: raft zhgsm, smoke jcl9c, "make a life here" death udr8x. All three locked; tried x, Mary Ann, Dr. Roy, Gilligan, raft, fire, SOS, Skipper, Minnow, S.S. Minnow, Poseidon, Kon-Tiki, Wilson, Cast Away -> no (also on ml7yd).
+- t1.py <pids,comma>: tests findings-PDF password list on pages. NOTE: `pkill -f bipsweep.py` inside a shell command kills that shell itself; use pkill -f "python3 bipsweep".
+- NEXT: run t1.py on oanvz,gkfxt,sodpq,ruiat,a4rhu,pxsqo (vault chain pws from PDF); fetch vault/gateway/ticket pages; get ticket image -> words 11-12.
+- BIP39 2048 sweep on the-vault oanvz: complete, no HIT (2026-10-16 11:50). Next: gkfxt.
+- VERIFIED (same run): ruiat 'FFFFFFFFFFF' -> shows vault pw 4samcodeartist -> oanvz (the vault: Born to Be Wild audio, links dbqak/lw4kn = deleted pages, API ERR) ; a4rhu 'codebreaker11' (gateway: "Your ticket is word11 word12") -> acwn5 'virtual moon' (I'll Still Be Lovin You video). This vault chain = HUNT #1 leftovers (virtual moon = Hunt#1 words 11-12), NOT Hunt #2 words. bipsweep on oanvz stopped (solved). gkfxt, sodpq still locked vs PDF list.
+- PDF's words 1-5 "when you depart find mystery" are all valid BIP39 words but source unverified (we haven't seen where they come from).
+- NEXT: locks zhgsm (raft), jcl9c (smoke), udr8x (death/stay), ml7yd (who is she), pxsqo-final, west final, gkfxt, sodpq. Find where "when you depart find mystery" appears (west/east pages?). bipsweep next: gkfxt.
+- bipsweep gkfxt background was canceled by sandbox at start; next fire: restart from last index in bip_gkfxt.out
+- 11:55 restarted bipsweep gkfxt
+- 12:00 t2.py: ~65 pw (Penelope/Odysseus/Calypso/Mina/Dracula, library clues Retrograde/Tame Impala/48k24b/Samsung T5/741409, raft/SOS/Kon-Tiki/Wilson, Professor...) x ml7yd,zhgsm,jcl9c,udr8x,pxsqo,gkfxt,sodpq -> all no.
+- 12:05 sweep gkfxt at ~900/2048, running, no HIT
+- 12:14 t3.py: ghost ships (Demeter, Mary Celeste, Flying Dutchman, Octavius...), Dracula names, famous ships (Minnow, Titanic, Pequod, Nautilus, Argo, Bounty...) x 7 locks -> all no.
+- 12:16 restarted gkfxt sweep from 1500 (no HIT through 1500)
+- !!! 12:24 gkfxt /glimmer OPENED with 'closerandcloser' (Glimmer lyric). Text: "The song echoes through the mountain valleys, and it brings her to you. Once you have all 12 words, click below and email them to us, for the final step." Button "I'm ready for this to end" -> mailto codebreaker@smithlylemoore.com subj "I've Found Amphitrite, and All 12 Words". Media: Glimmer.mp3 (144728_019f7f75b73e472fb49ea839bf365421.mp3), mountainbg720.mov. => final page; passphrase likely from band after email. Lyric-phrase passwords work: try more lyric lines on remaining locks (ml7yd, zhgsm, jcl9c, pxsqo, sodpq).
+- 12:27 gkfxt sweep END no HIT; started sodpq sweep
+- 12:35 t5: 52 Glimmer lyric lines (with/without spaces) x ml7yd,zhgsm,jcl9c,pxsqo,sodpq -> no.
+- 12:46 sodpq sweep END no HIT; started zhgsm sweep
+- 12:50 graph: chtro(seahitchhiker) riddle "creative? destructive? way to help yourself; 2 words omit first" + image nantucketsleighride -> d3zak 'sleighride' OPEN (You Reach Land: lightkeeper, die alone, pass 666 -> hell ty78s) = DEAD END.
+  e3zre(albatross) pirates page: "Could they have taken her? missed your welcome home party... Donner party at sea" -> buttons communicate hhb0r (semaphore -> litter sm18u) and FIGHT y6cd1 (still locked, untested well). xtb6t(amphitrite) = compass.
+  Lesson: answers are often in the page's IMAGE filename/alt (nantucketsleighride.png). Check image names on lock-parent pages!
+- 12:58 checked: zhgsm sweep state above, no HIT
+- 13:01 t6 (Donner/skin and bones/welcome home/mutiny/image names/fight) x y6cd1+5 locks: no HIT; 28 got HTTP 429 (rate-limit, concurrent with autocycle) -> retest those from t6.out. Avoid running two oracle scripts at once.
+- 13:05 zhgsm sweep still running, no HIT
+- 2026-10-16 12:05: pxsqo (20000leagues) button "Continue Eastward..." -> c2ozw /take-a-big-breath (lock). Clue video LifeFlashBeforeEyes.mp4 (74s, saved vid/life.mp4): Apollo/Saturn V launch, Earth from space, lunar surface, lunar module, sand dunes, blue/yellow eye, Positano-like bay with full moon, palms, foggy road, cows, kaleidoscope tunnels. t7 (~70 Apollo/moon/breath words x c2ozw,ml7yd,zhgsm,jcl9c,sodpq): no HIT. Next: video audio track/speech, image filenames on c2ozw parents.
+- 13:17 check: gkfxt END no HIT; zhgsm sweep state above, no new progress
+- 13:18 zhgsm sweep END no HIT (some 429); started jcl9c
+- 12:20 t8 (152 lyric/Nautilus/breath on c2ozw) and t9 (Beatles/Harrison titles x c2ozw,ml7yd,zhgsm,jcl9c,sodpq): no HIT (unless listed above). Audio of LifeFlash video = Glimmer song, spectrogram clean.
+- 13:27 jcl9c sweep running, no HIT yet
+- 12:35 t10 (257 lines from Vampire/Werewolf/Fate/Gold/Hollywood Forever lyrics + vampire names x 5 locks): see t10.out
+- 13:36 jcl9c sweep continuing, no HIT
+- 13:37 jcl9c END no HIT; started udr8x
+- 13:46 udr8x sweep had died at ~500; restarted from 500 (no HIT so far)
+- 12:47 Site scan (status.txt): public pages incl. waiting/still-waiting (Open the Hatch -> rickroll / restart = dead ends), key-checker ("enter first word of key... just like last time"), end-of-treasure-hunt (taunt). Start page: ship Poseidon -> she = Amphitrite theme. t10 band lyrics (257) and t11 Amphitrite/Nereid/she (55) x c2ozw,ml7yd,zhgsm,jcl9c,sodpq: no HIT.
+- 12:58 key-checker START KEY CHECK = rickroll. Tested key words (when..., hunt gather whale blood, ticket/virtual moon) x 5 locks: no. jetkc text: "coconuts get really old... After a few years, they make you crazy" -> tested coconut/crazy/island fever/palm variants x zhgsm,jcl9c,udr8x: no. desertedisland.gif = plain pixel beach loop, no metadata.
+- 13:56 udr8x sweep running, no HIT
+- 13:00 East page clue: TV loop of 80s commercials, 'few seconds to look at her'. East video screens = abstract visualizer only. t12 (~110 80s-commercial women/slogans x 5 locks): see t12.out
+- 14:06 restarted udr8x sweep from last index
+- 14:07 udr8x END no HIT; started ml7yd sweep
+- 14:16 ml7yd sweep still running, no HIT
+
+## 2026-10-16 13:30 FULL MAP (map.py/map.json, edges.out)
+- 42/56 locked pages open with known pws (map.json = pid->pw). edges.out = outgoing links of each.
+- FRONTIER locks (parent open): zhgsm raft + jcl9c smoke (parent jetkc), c2ozw take-a-big-breath (parent pxsqo), y6cd1 pirate-battle/fight (parent e3zre).
+- ORPHANS (no open parent -> probably downstream of frontier): ml7yd who-is-she, sodpq treasure-map, fibyo vampire, tt6yc vampireb, y756h /a, leklh /b, xjnxo /c, vy58x /d, h7j3h a-rocky-beach. STOP brute-forcing these; focus frontier.
+- oq7la /latitude = entry (parent public the-search-begins). The Poseidon.jpg EXIF GPS 27°7'56.93"N 73°5'11.57"W (date 2077:07:29). Many lat formats failed; low value (compass opens via amphitrite anyway).
+- Community repo github.com/floflo777/open-crypto-puzzles .../smith-lyle-moore-hunt-2-0-032btc: author published account xpub on site; wallet = BIP39 12 words + PASSPHRASE, BIP84 m/84'/0'/0'/0/0. Passwords case-sensitive (South Title Case). Repo is behind us (stuck at Dr. Roy / pirate bay).
+- 14:30 gkfxt END no HIT
+- 13:34 t_front1.py: 558 checks (zhgsm/jcl9c Gilligan canon in Title/lower/joined forms; y6cd1 fight weapons/metallica) — 0 HIT.
+- 14:36 started sodpq sweep
+- 13:39 t_front2.py c2ozw Gandalf/resurface/narcosis/Verne: done 327, see front2.out
+- 14:50 sodpq sweep ~1300 no HIT. t13 (c2ozw breath/narcosis, 32) got 403 WAF (no real result) while sweep ran in parallel; retry when sweep is idle.
+- 13:47 Lens: video tunnels = Kubrick 2001 Stargate 'Jupiter and Beyond the Infinite'; rocket = LC-39 KSC; palms = LA. Tried 68 2001/Kubrick/HAL candidates on c2ozw — 0 HIT. NB 1080p file frame timing differs from life.mp4.
+- NEXT: Lens on bay-under-moon, dunes, sunset-fence frames from life.mp4 (low-res file; sc/s008.jpg, s005, s001 are the right ones), then try place names on c2ozw.
+- 13:55 Lens2: flowers=Giant coreopsis (Point Mugu/Ventura CA match), sunset matched band Instagram 'Glimmer'. 44 CA/coreopsis candidates c2ozw.
+- 14:56 (+04) all sweeps (gkfxt,sodpq,zhgsm,jcl9c,udr8x,ml7yd) ended no HIT; started c2ozw BIP39 sweep
+- 14:00 20000leagues.gif = Nemo at Nautilus window w/ sunfish, needlefish, octopus; 43 fish/Verne candidates c2ozw.
+- 15:05 c2ozw sweep running, no HIT yet
+- 14:06 Cast Away (Wilson, Chuck Noland, I have made fire), Lord of the Flies (Piggy, specs, conch), Crusoe on zhgsm+jcl9c, 64x2 — 0 HIT. Oracle sanity OK.
+- 15:15 (+04) c2ozw BIP39 sweep END no HIT; started y6cd1 sweep
+- 14:19 (MSK) c2ozw page title = "resurface"; pxsqo SEO slug weallliveinayellowsubmarine. t14: 380 Vampire-lyric n-grams (2-6 words, nospace lowercase; "saw my life unfold" hypothesis) on c2ozw — 0 HIT. BIP39 full sweep c2ozw (2048) — 0 HIT. Video black tail 61-74s verified pure black (no hidden text). User-supplied 30s storyboard (pizza ИСКРА etc.) is NOT our video.
+- 15:27 y6cd1 sweep checked, no HIT
+- 15:29 t15 c2ozw 90 (Skyfall "this is the end, hold your breath and count to ten", Doors The End, notyet, resurface/ascent/air): 0 HIT. t16 51 Gilligan theme-song lines + fire/raft words on jcl9c,zhgsm: 0 HIT.
+- 15:40 t17 c2ozw 172 (Amphitrite/sea/dive/breath words, Title+lower): 0 HIT. No bipsweep running.
+- 15:40 !!! c2ozw OPEN 'discoverglimmer' (Reddit rational-Gain5010, bit pattern in video). Words 6-9 = discover music need love (labels 5-8). Next: h7j3h a-rocky-beach, hint 'where will you find her?'. ml7yd OPEN '73511573' (Reddit) -> xtb6t. 
+- 15:45 h7j3h: 84 candidates (sea/Poseidon/coordinates formats/mountain valleys) 0 HIT. brain_cands.json (subagent) ready for zhgsm/jcl9c/y6cd1. Reddit intel: /workspace/projects/1b07d678-80ae-425a-93d7-393c4a65d627/work/slm_public_intel_2026-10-16.md (aramor1: rocky-beach 'main thing is to write it correctly'; pirate-battle 'very simple'; '10 you will receive, but 9 and 12 no').
+- 15:47 t17.py running brain_cands on y6cd1,jcl9c,zhgsm sequentially -> t17.out (don't run other oracle jobs in parallel).
+- 15:55 t17 brain_cands (571) on y6cd1/jcl9c/zhgsm: 0 HIT. h7j3h +129 (music/glimmer/home/mirror/Spotify/Amphitrite myth: Delphinus, Aegae, Aegean, palace, Nereids): 0 HIT. Reddit thread saved reddit_wojppy.json (pullpush via web_fetch; curl blocked by Cloudflare).
+- 15:58 started h7j3h BIP39 sweep
+- 16:00 y6cd1 +75 simple answers (fight/yes/arrr/directions64) 0 HIT. e3zre image bw.jpeg = stock pirate ship with signal flags on mast (2x2 quartered ~U, diagonal ~Y, horizontal bands) — maybe decorative; giphy = open sea waves.
+- 16:10 OFFLINE WALLET CHECKER walletcheck.py (embit+coincurve in ./pylib, ~1.2 ms/addr, BIP84 m/84h/0h/0h/0/0, verified on test vector). wc1.py: words1-9 (A=discover music need love, B=hunt gather whale blood) + w10 any (checksum-valid) + 11-12 'virtual moon' both orders x 244 passphrases (core + band lyric lines): 0 FOUND. Next: other 11-12 guesses, passphrase lists; full w10-12 space = 5.4e8/passphrase (too big w/o hints).
+- 16:06 gkfxt bip sweep END no HIT; no FOUND.txt. no new progress
+- 16:15 no new progress; h7j3h sweep not running
+- 16:25 !!! oq7la /latitude OPEN '27756932' (lat DMS digits 27 7 56.93 + '2'; who-is-she 73511573 = long 73 5 11.57 + '3').
+- 16:30 oq7la text 'Nice work... longitude (numbers only)' -> ml7yd (73511573) -> xtb6t. h7j3h +124 (Glimmer lyrics from bandcamp: high tide/coast/other side..., Amphitrite Point/Ucluelet, lat/long combos/decimals): 0 HIT. c2ozw video = stock bottle at sunset.
+- 16:40 h7j3h +36 (X marks the spot/map/compass/stars): 0 HIT. Account xpub6CpNc58zqQvNGPHDGGTr68wgrmtfFDBWRuSDAxoDdrCE1iRAaZtyAD5T9uCJ3ELUYKCkx8Jkind2kwoR3Uxmg1ycQ6DWyGxZBMFvQqhNqVC (m/84'/0'/0'), pubkey 037e3109f564912f1007912d90f76c7aae43b812d6286d609a86140b746fbc7943 (puzzles.agntn.dev).
+- 16:27 check: no sweep running, h7j3h sweep tail above, no new progress
+- 16:37 check: no FOUND, no progress
+- 16:40 h7j3h lyric n-grams 1-8 (945): 0 HIT
+- 16:47 check: no sweep running, no FOUND, no progress
+- 16:40 h7j3h lyric n-grams 1-8 (945): 0 HIT
+- 16:54 h7j3h idea batch (myth/Beatles/Odyssey/Bahamas/coast/song imagery, ~800): 0 HIT
+- 17:00 check: no FOUND, no progress
+- 17:00 HIT h7j3h 'Atlas Mountains' -> words 10 fortune, 11 safe; 'After I Love You'. next gkfxt (closerandcloser).
+- 17:08 comm_sweep: y6cd1 14 community cands, sodpq 4+15, fibyo 15, tt6yc 15 (vampire/known pw): 0 HIT
+- 17:10 deepscan done (DEEPSCAN.md): EXIF minnow.jpeg GPS 22.6001,-73.41 date 1964-09-26; pirate photo 'nope lol' GPS 25.9126,-44.1054. Tested 20 cands on y6cd1/zhgsm/jcl9c: 0 HIT. Word12 lyric-overlap: eagle, fly, now. vampire pages=next-single teaser, sodpq=Hunt#1 leftover.
+- 17:12 fw.py: eagle/fly/now x 15248 passphrases (all cand files + lyric 1-4grams + case variants): 0 FOUND
+- 17:15 check: no FOUND, no progress
+- 17:26 check: no FOUND, no progress
+- 17:36 check: no FOUND, no progress
+- 17:45 (+04) subagent batch (t18-t21, pp_band.py), all one-at-a-time with 0.55-0.6 s pauses, 0 ERR/429:
+  - t18 (75): EXIF GPS digits of minnow.jpeg (2236046, 73243609, combos, 19640926…) on zhgsm/jcl9c; pirate EXIF ('nope lol', 25544542, 4461969…) on y6cd1; plus wavebreaker7109, Two on a Raft forms, smoke-signal/fire words, 777/666. 0 HIT.
+  - t19 (49, deduped against all earlier lists): Gilligan episodes (S1E1 'Two on a Raft' = 1964-09-26, the EXIF date; Marooned, Goodbye Island, Ship Ahoax, Birds Gotta Fly Fish Gotta Talk = signal fire, Forget Me Not = signal tower, Splashdown, Rescue from Gilligan's Island = huts turned into a raft, smoke seen by the Coast Guard), Bahamas places near the GPS (Plana Cays, Mayaguana). 0 HIT.
+  - t21 (129): reliable run of ALL known passwords (43, Hunt #1 included) on y6cd1/zhgsm/jcl9c. 0 HIT, which closes SYNTHESIS insight 2.
+  - t20 (80): /a /b /c /d (y756h leklh xjnxo vy58x, created 2022-07-29 = Glimmer release day). All protected (403); final-step words, supernova, 4samcodeartist. 0 HIT.
+  - pp_band.py offline: 299 passphrases (band/members Andrew Smith, Tyler Lyle, Jack Moore, Dhani Harrison, credits, Beatles titles, story phrases, known passwords) x 128 w12. 0 FOUND.
+  - Key fact: gkfxt button = EmailLink codebreaker@smithlylemoore.com, subject "I've Found Amphitrite, and All 12 Words". In Hunt #1 the passphrase came only after emailing (gateway->ticket). /a-/d are probably those post-email pages. The passphrase (and maybe the zhgsm/jcl9c passwords) most likely came by email, so guessing has low odds. We do NOT send email (rule).
+- 17:45 Hypothesis B: order 1-4, discover music need love (5-8), mystery (9), fortune safe (10-11), word 12 behind a closed lock (raft/smoke). Email to author held: Илья doubts sending 11 words.
+- 17:46 check: no FOUND, no progress
+- 17:50 order B: climb heart sun dust behind horn leave nothing x15248: 0
+- 17:55 check: no FOUND, no progress
+
+## E. Video + audio deep check (2026-10-16 ~18:00 +04, subagent; no oracle calls, no brute force)
+Files: vid2/*.mp4 (10 videos, from video.wixstatic.com at 1080p/720p), vid2/*_sheet*.jpg (1 fps; 0.5 fps for TV room and whale), vid2/crops/, vid2/c2_all.jpg; audio_diff/diff.py, residual.wav, res_spec.png, side_A/B.wav.
+- **Metadata:** every file is a Wix transcode (Lavf58.76/58.29, handler "Mainconcept"/"Core Media Audio"). None has a subtitle stream, title/comment tags or chapters, so the original metadata is lost. The source names are in the page JSON only: Boat Direction Sunset with Noise 1080.mov (xtb6t), Boat In Storm.mp4 (eetj4), Boat Open Ocean.mp4 (pbvye), Glimmer Treasure Hunt Intro Video3.mp4 (wsbja, 97.7 s), Render 15sec (y9iq2), Render 4 (common), TV Room 2 720p.mov (ml7yd, 320 s), Whale Talking (gps16), bioluminescense (qomxw), illstillbelovinyoureels1080p.mov (acwn5).
+- **Boats (3):** one static CG shot from the bow (wheel, compass, chartplotter). The chartplotter screen shows only a pulsing pink/red glow. The small right-hand screen shows a looped water texture. There is no text, digits, QR code, or on/off blinking that could be Morse. The green dot on the console appears roughly every 5 s, in step with the loop, and is not a code. Storm differs only in the background and ends on a wave.
+- **Intro (97 s):** a rocket/capsule scene. The captions are "Liftoff", "Re-entering earth's atmosphere", "Location: South Atlantic Anomaly", "G-Forces Increase", then the capsule falls into the ocean. These are story captions with no numbers. The "South Atlantic Anomaly" is the only real place-name, and that is weak.
+- **TV room (320 s):** a room with a retro TV. On the screen is a VHS collage: a VHS warning screen, "Time & Work Study Dept", "ACE Merry Christmas", sheet music, a blue "maintenance/interruption" screen, a Columbia Cable TV channel guide, a basketball game, moon landings and a shuttle, plus empty blue screens. Everything looks like found footage. I found no planted passwords or digits (the channel-guide frame was only skimmed).
+- **Whale Talking (166 s):** a Long Now Foundation "The Interval" talk by James Nestor ("Humanity and the Deep Ocean", author of "Deep"), followed by underwater sperm-whale footage. This is a theme source (whale clicks are Morse-like) and holds no text clues.
+- **Render 15sec:** night lights/town, with no text. **Render 4:** a coastal cliff at dusk, with no text. **bioluminescense:** deep-sea creatures, no text. **illstillbelovinyou reel:** vertical Instagram-style reel (fog, desert, sea, pizza, bonfire, sunset), no text.
+- **Audio, Glimmer A (019f, 320k/44.1k) vs B (0c86, 192k/48k→44.1k):** this is the same master.
+  - Global offset is 230 samples (5.2 ms) and stays fixed with no drift. Gain is 0.99–1.00.
+  - The residual after subtraction is −24…−35 dB below the signal and follows the music's transients, i.e. codec/resampling noise. Its spectrogram shows no tones, speech, keyed Morse or appended segments. The only difference is a cutoff of about 16 kHz (A) vs about 20 kHz (B), and a slightly different fade at 185–200 s (gain 0.99).
+  - The L−R (side) channel is −8 dB in both files with nothing unusual.
+- **Result:** no clue to word 12, the passphrase, zhgsm or jcl9c was found in the videos or in the audio difference. These channels are closed.
+- 18:08 TV-guide frame (tvroom ~128s): genuine Columbia Cable TV Houston guide (KPRC, USA, HBO, ESPN, CBN, Reuters, KUHT, WGN). Found footage, no clue. A Taschen 'Greek Myths' (Schwab) book sits on the shelf: theme only.
+- 2026-10-16 14:05 run: public /treasure-hunt unchanged, no FOUND.txt, no bg brute running; no new leads.
+- 2026-10-16 18:16 run: no FOUND.txt, no bg brute; public page md5 fcbdfdff (no baseline compare); no new leads, no new tests.
+- 2026-10-16 18:25 run: no FOUND.txt, no bg brute; public page md5 fcbdfdff unchanged; no new tests.
+- 2026-10-16 18:36 run: no FOUND.txt, no bg brute; no new tests.
+- 2026-10-16 14:44 run: no FOUND.txt, no bg brute; no new tests.
+- 2026-10-16 18:46 (+04) run "результат прогона 125 слов": fwA/fwB/fwOB.log had only the header line, no 'done' and no FOUND. The sandbox had restarted (uptime 0) and killed fw.py/fwo.py. Relaunched as the resumable fwr.py (2 cores, ~15 s/word): progA.txt (order A, waA.txt 125 words) and progB.txt (order B, waB.txt 128 words). By 18:46: A 40/125, B 40/128, 0 FOUND. Background job limit is 20 min. Follow-up task 66c95c86 at 19:00 +04 resumes it and reports.
+- 2026-10-16 18:54 run: no FOUND.txt; no new tests.
+
+## 2026-10-16 19:15 (+04) fwr.py прогон слова 12
+- Процессы были мертвы (A 41/125, B 41/128) — перезапущены фоном в 19:00. К 19:15: A 77/125, B 77/128, FOUND.txt нет. Скорость ~2,5 слова/мин на порядок (~16 с/слово). Осталось A 48, B 51 (~20 мин). Досмотр — разовая задача 62a7df73 на 19:40.
+- 19:16: фоновая задача прервана (sandbox canceled при завершении прогона) — фон умирает вместе с прогоном; задача 62a7df73 перезапустит.
+- 19:17 run: no FOUND.txt; no new tests.
+- 19:25 run: no FOUND.txt; no new tests.
+- 19:56 run: no FOUND.txt; no new tests.
+- 2026-10-16 20:15: fwr full sweep DONE. Order A (125 words) and order B (128 words) x 15248 passphrases: 0 FOUND. So the passphrase is not in our candidate set (or the order/words are different).
+
+## 2026-10-16 ~20:25 (+04) — fwr.py word-12 sweep FINISHED
+- Order A (mystery@5): all 125 checksum-valid word-12 options × 15 248 passphrases — no match.
+- Order B (mystery@9): all 128 options × 15 248 passphrases — no match. No FOUND.txt.
+- Note: shell background jobs are killed at 1200 s, which is why runs kept stopping; resume works (prog files have duplicate lines from restarts, harmless).
+- 2026-10-16 20:34 run: no FOUND.txt; no new tests.
+- 2026-10-16 22:34 run: no FOUND.txt; no new tests.
+- 2026-10-16 22:50: t30 (page titles RaftBuilt/lightafire + slug variants, 26), t31 (digit repeats/short numbers/SOS/mayday, 128), t32 (theme lines, raft/fire wordplay, episodes, 140) on zhgsm/jcl9c: 0 HIT. The jetkc background gif (82cfb8, a 12-frame pixel-art beach) has no metadata. Next ideas: /get-hints (needs a public post, so ask Илья), and the 'fire->vault->gateway' Hunt#1 mirror.
+- 2026-10-16 22:45 run: no FOUND.txt; no new tests.
+- 2026-10-16 22:55 run: no FOUND.txt; no new tests.
+- 2026-10-16 23:10: Pattern seen: a lock's password often names a famous person or thing doing the button's action (swim-to-shore=michaelphelps, hitch-a-ride=seahitchhiker, talk-to-pirates=semaphore). t33 tested it with raft (Huck Finn, Heyerdahl, Life of Pi, Medusa, Moana...) on zhgsm (32) and fire (Smokey Bear, Prometheus, Katniss, Doors, Deep Purple, white smoke/pope...) on jcl9c (55): 0 HIT. A public hint request on Reddit via the Google account is in progress.
+- 2026-10-16 23:16 run: no FOUND.txt; no new tests.
+- 2026-10-16 23:17: hint request posted as a comment from u/Serious-Bad8845 (Google mak777777uh): https://www.reddit.com/r/smithlylemoore/comments/wojppy/comment/ph62e5z/ . Check it for replies from u/smithlylemoore. r/smithlylemoore restricts new posts.
+- 2026-10-16 23:30 run: no FOUND.txt; public page md5 fcbdfdff unchanged; Reddit comment ph62e5z has 0 replies (checked via browser).
+- 2026-10-16 23:36 t34 (castaway/beacon figures, 60) zhgsm/jcl9c: see run
+- 2026-10-16 22:41 [manual type2] hypothesis: passphrase = a known password/slug/title/narrative string (pp_narr.txt, 1168 variants) x 128 w12 x orders A,B = 299k combinations: 0 FOUND. Next: acrostic/word order from the page texts.
+- 2026-10-16 22:50 [manual] t35: hypothesis that lock = a song title (electricfeel64, Nantucket Sleighride, Born to Be Wild). Tried 75 raft/boat/escape songs (Pina Colada, Sloop John B, Come Sail Away...) on zhgsm and 48 fire/SOS songs (Light My Fire, Signal Fire, Sending Out an SOS...) on jcl9c, plus no-space and 64 variants: 0 HIT (all 403).
+- 2026-10-16 23:57 t36 (Gilligan/castaway/Lord of Flies/Lost figures) 50 zhgsm + 42 jcl9c: 0 HIT. Next: Hunt#1 parallels, band other songs.
+- 2026-10-16 23:46 [type2] hypothesis: passphrase = a single BIP39 word (lower/Capitalized) or year 1900–2030 or small number/hunt suffix (4247 pps) × 128 w12 × orders A,B (t2_bipnum.py). Killed at the 15-min CPU cap with no FOUND and no 'done' (progress unknown, so treat as partial/inconclusive; rerun would need a progress file). Reddit thread wojppy checked via arctic-shift (reddit_all.txt): our comment ph62e5z not indexed yet, no band replies, no passphrase/word-12 hints; one user claims smithlylemoore.codebreaker@proton.me answered with hints (another calls it a scam) — do NOT email. Next: type1 locks (new batch), or resumable BIP39-word passphrase sweep with progress file.
+- 2026-10-17 00:10 [type2] public check: arctic-shift latest r/smithlylemoore comments, no band reply, nothing new/no new clues. No tests run.
+- 2026-10-16 23:10 [manual] t36: puns and personas. zhgsm got 69 (palmpilot, macgyver, balsa, tiki, coconutraft, nemo, gulliver...); jcl9c got 87 (tikitorch, batsignal, smokeyrobinson, fireship, flaregun, humantorch, flintstone, smaug, puff...), each in lower and lower+64. 0 HIT.
+- 2026-10-17 00:15 t37 (raft/fire figures ~100 each lower+Cap) zhgsm/jcl9c: partial (timeout 110s), no HIT printed.
+- 2026-10-17 00:24 [type2] no new test run (brief); next: type1 Hunt#1 parallels / band songs on zhgsm,jcl9c.
+- 2026-10-16 23:27 [manual] t37: 'self-hinting' abbreviations in the style of huntgathwhalblo/shiphuntshalpar, built from the button texts, titles and slugs (first 1-4 letters, 4+3, initials). zhgsm 56, jcl9c 55: 0 HIT. Note: Hunt #1 design rule (h58buzy) says 'The words only make sense in one order'.
+- 2026-10-16 23:30 [manual] t38: real raft escapes (Papillon, Alcatraz/Frank Morris, Bounty, Shackleton, Zamperini...) zhgsm 32; Lord of the Flies (piggysglasses, conch), Paul Revere (oneifbyland), Selkirk/Man Friday, white smoke/Habemus Papam, Smoke Signals film jcl9c 37: 0 HIT. Offline D/E: chunks 1-2 of 3 = 0 FOUND.
+- 2026-10-17 00:34 [type2] no new test run (brief); idea: acrostic of slugs/titles in sitemap.json for ordering.
+- 2026-10-16 23:40 [manual] Offline orders D (…love ? fortune safe mystery) and E (…find ? discover…safe mystery) × full 15,248 passphrases × ~135 options for the missing word: 0 FOUND. Orders A, B, D, E are all closed against the current passphrase set.
+- 2026-10-16 23:42 [manual] Site study: jetkc's SEO slug is 'hereonnnnngiligansissssssland'. In Hunt #1 the fire locks were MMDDYYYY dates (07201969, 01271967 Apollo 1 fire). t39: air dates of all 98 Gilligan episodes, the films, the pilot and the 11261963 filming date, in MMDDYYYY, on zhgsm (104) and jcl9c (104): 0 HIT. Next: DDMMYYYY and dates of real rescues/fires.
+- 2026-10-17 00:46 [type2] no new test run (brief); idea: DDMMYYYY dates of real rescues/fires.
+
+
+
+## FILE: SYNTHESIS.md
+# Glimmer (SLM Hunt #2): consolidated synthesis, 2026-10-16 ~16:50 +04
+Read-only analysis. No oracle calls were made. Inputs: NOTES.md, map.json, edges.out, sitemap.json, every page_*.json, opened*.json, findings.txt, brain_cands.json, t*.py/*_sweep.py/*.out, pub_*.html, slm_public_intel_2026-10-16.md.
+Candidates: `synth_cands.json` ({pid: [ordered]}). Items already tried (exact string in any earlier script or list) were filtered out. The exceptions are calls that returned 429/ERR, which were never really tested, and reused known passwords (see insight 2).
+
+## 0. Top insights
+1. **The start point is inside the Bermuda Triangle, and sailing due east from it reaches land at Laâyoune (Western Sahara).** Poseidon EXIF is 27°7'56.932"N 73°5'11.573"W = 27.1325, -73.0865. A point-in-triangle test against Miami, Bermuda and San Juan returns true. That fits the story: "instruments going haywire", "reality has changed", a "world of the past" (Cape Cod). The East branch keeps saying "point your bow towards the rising sun" and "Continue Eastward". Going due east along 27.13°N passes just south of the Canaries (El Hierro's tip is 27.64°N) and first hits Africa at Foum el Oued / **Laâyoune (El Aaiún), 27.15°N**. That is Morocco / Western Sahara, the Atlas side. East.html also calls the sea "an ocean desert", and the land you reach borders the Sahara. In the myth, **Amphitrite fled to Atlas** and the dolphin found her there. A city name with several official spellings (Laayoune / Laâyoune / El Aaiún) fits aramor1's "easy, the main thing is to write it correctly". This is my top hypothesis for h7j3h.
+2. **Password reuse is the author's strongest habit, and it was never cross-tested reliably.** north64 is used on 4 pages, wavebreaker7109 on about 5, witchoftheeast ×2, east64 ×2, 777 ×2 (death), and escape = the slug/title of /escape. Hunt #1 passwords still open Hunt #2 pages. The only "all known passwords × all locks" runs (sweepT.py/runsweep.py) were **threaded and counted only HIT**, so HTTP 429 replies were silently counted as misses. **t1.py never ran** (t1.out: "can't open file t1.py"). So 777/666/Hunt #1 passwords on y6cd1/zhgsm/jcl9c are effectively **untested**.
+3. **jcl9c (Light a Fire) is almost certainly the Hunt #1 fire step.** ruiat (the passage, opened by FFFFFFFFFFF) says: "Great Scott! The fire exposed a vault… good thing you lit a fire to keep warm". It has no open parent in edges.out. TapInteresting: "fire → vault → gateway → finale". The Hunt #1 fire chain was `01271967` (Apollo 1 fire, "pyromaniac" red herring) → `fffffffffff` (11 lowercase f) → `FFFFFFFFFFF`. Neither `fffffffffff` (11 lowercase) nor `01271967` appears in any test list for jcl9c.
+4. **Untested holes in the BIP39 sweeps:**
+   - zhgsm: 31 words got 429 and were never tested: long loop **love** **lumber** luxury lyrics machine magnet mammal man mandate mansion **maple** margin **marine** market marriage mask **match** measure **message** monitor monkey museum **north** nose **ocean** opera oven six sniff. lumber and maple fit a raft "made from palm tree wood".
+   - y6cd1: bip_y6cd1.out stops at "#0", so less than 100 words were tested.
+   - h7j3h: bip_h7j3h.out stops after "#300", so about 400 of 2048 were done. The c2ozw password embedded a seed word (discover+glimmer), and aramor1 says "10 you will receive", so a BIP39 answer on h7j3h is plausible. **Finish both sweeps.**
+   - t6 got 429 on y6cd1 for adrenaline, coconut crazy and hitchhiker (fight, battle and run were covered later by t_front1).
+5. **The word-label conflict is real:** litter (sm18u) labels are 1–5 = when you depart find **mystery**. c2ozw labels are **5,6,7,8** = discover music need love (checked against the layout JSON). In litter's mobile layout, "5"/"mystery" have a different width (280 vs 32–45) from slots 1–4, so they look added later. The most likely order is still 1–9 = *when you depart find mystery discover music need love*. But aramor1's "10 you will receive, but 9 and 12 no" fits better if c2ozw's labels are the author's numbering (word 9 never shown; 10 shown later; 12 deduced).
+6. **Many story words are BIP39 words:** welcome, home, party, garlic, table, stove, dinner, cook, flame, mountain, valley, echo, song, dolphin, island, coast. "Did you miss your **welcome home party**" (e3zre) is three BIP39 words in a row. The final page (gkfxt) says "the song **echo**es through the **mountain valley**s and brings her to you".
+
+## 1. Solved locks: how hint maps to password
+| pid / slug (title) | hint on parent / page | password | mapping / type |
+|---|---|---|---|
+| oq7la /latitude | the-search-begins: "To begin, chart a course. latitude (numbers only)", The Poseidon.jpg | 27756932 | EXIF GPS lat DMS digits 27 7 56.932 |
+| ml7yd /who-is-she | oq7la: "longitude (numbers only)" | 73511573 | EXIF long DMS digits 73 5 11.573 |
+| xtb6t /choose-your-direction | ml7yd "Who are you looking for?" + TV video | amphitrite | myth, Poseidon's wife (ship = Poseidon); lowercase |
+| eetj4/x8cku/gyhal/rtf05, pbvye, fv4pt, g5jpk | shown on xtb6t | north64 east64 south64 west64 | given; direction+64 |
+| xrd91 /birdpewp | east: "keep heading: east64" (given, reused) | east64 | reuse |
+| e3zre /pirates (ship) | bird: "This is an…" + albatross.gif | albatross | image filename = answer |
+| hhb0r /talk-to-pirates | "What language do pirates even speak?" | semaphore | concept, lowercase |
+| sm18u /litter | hhb0r: screenshot "correct Screen Shot…" (semaphore msg) | youshallpass47 | decoded message + digits (Gandalf misquote) |
+| qomxw /night, wqcam /celine-dion | shown on litter / night | witchoftheeast | given, reused ×2 |
+| giz6m /isawthismovie3timesintheaters | "How long after hitting the iceberg until your ship sinks?" | 2hours40minutes | Titanic fact, digits+words |
+| pxsqo /weallliveinayellowsubmarine | "travel great lengths under the water. How far?" | 20000leagues | Verne title, digits+word |
+| c2ozw /take-a-big-breath (resurface) | LifeFlashBeforeEyes.mp4 (bit pattern) + "name of the song" | discoverglimmer | seed word 6 + song title |
+| gkfxt /glimmer | (orphan) | closerandcloser | Glimmer lyric, lowercase, no spaces |
+| udr8x /death | shown on South / giz6m | 777 | dead end, given |
+| vispv /awake | shown on South | electricfeel64 | MGMT song "Electric Feel" + 64 (storm/static) |
+| neyhh, shzgm, t2xjy, kvvu4, wdnv9, b3vye, jetkc | "Ask for their names" chain, minnow.jpeg | Gilligan, Jonas, Thurston, Lovey, Ginger, Dr. Roy, Mary Ann | TV-show canon, exact Title Case, spaces/punctuation kept |
+| kx8wx /a-giant-whale-appears | shown on north | wavebreaker7109 | given, reused ×5 |
+| gps16 /speak-to-whales | shown, mobydick.gif | mobydick69420 | book + meme digits |
+| mwfaz /whale-message | Whale Talking.mp4 | glimmer | song title |
+| thmoi /land-ho | bottle hunt gather whale blood | huntgathwhalblo | 4+4+4+3-letter truncation concatenation |
+| eqyel /swim-to-shore | shown | michaelphelps | famous swimmer |
+| chtro /hitch-a-ride | shown | seahitchhiker | given |
+| d3zak /reach-land | "creative? destructive? way to help yourself; 2 words, omit the first" + nantucketsleighride.png | sleighride | image filename |
+| ty78s /hell | shown on d3zak | 666 | dead end |
+| vbk6p /cape-cod | vampire1-3.png | vampire | image filename / theme |
+| wt1jy /message | West: Pirate Bay founders (Svartholm, Neij), Napster, Ulrich | pirate bay | real name, lowercase **with space** |
+| a76va /ross-u | bottle ship hunt shallow parrot | shiphuntshalpar | 4+4+4+3 truncation |
+| ouxh2 /escape | slug/title "escape" | escape | slug = password |
+| ruiat, oanvz, a4rhu, acwn5 | Hunt #1 leftovers | FFFFFFFFFFF, 4samcodeartist, codebreaker11, virtual moon | Hunt #1 reuse |
+
+**Author habits:**
+- (a) Where possible the parent page gives the password away ("pass: X"), or the image filename is the answer (albatross.gif, nantucketsleighride.png, vampire*.png, mobydick).
+- (b) Real-world proper names keep exact canonical spelling, case and punctuation (Dr. Roy, Mary Ann, pirate bay). Concept and phrase answers are lowercase with no spaces.
+- (c) Number-ish answers use digits+words without spaces (2hours40minutes, 20000leagues). Coordinates are raw DMS digits.
+- (d) Meme or arbitrary digit suffixes: 64, 47, 7109, 69420, 11.
+- (e) Passwords are heavily reused across pages, and Hunt #1 passwords are reused.
+- (f) "Hint" pages state the answer's type ("numbers only", "length of time or distance", "2 words, omit the first", "where will you find her?").
+- (g) Dead ends get 777/666 and are shown on the parent.
+- (h) Some slugs or titles are the password (escape).
+
+## 2. Open locks
+### h7j3h /a-rocky-beach (title "land")
+- Parent c2ozw text: "Ahhhh... fresh air again... And more litter? Amphitrite should take better care of the sea." Bottle 5–8 discover music need love. "Land in the distance. Finally. You can feel that you are getting closer to her." "**password hint - where will you find her?**" Button: **"Land ho!"**
+- Parent media: 106573915-static-shot-message-glass-bott… (stock bottle video; there is also a second storyboard 4b5cec4e…). No other images.
+- Reddit: easy; "the main thing is to write it correctly".
+- Already tried: idea_sweep (681: myth places, Naxos, Aegae, home, beach/sea/island and Caribbean names) and lyr_sweep (945 lyric n-grams), plus inline lists from NOTES (coordinates, Amphitrite Point, Spotify, X marks the spot), and BIP39 up to about #399.
+- Ranked ideas: (1) the due-east landfall: Laâyoune / Western Sahara / Morocco / Atlas Mountains (myth: Amphitrite hid at Atlas). (2) Bermuda Triangle / Sargasso Sea (where the story starts). (3) "Welcome Home", spelled as on the banner. (4) mountain valley(s) (gkfxt). (5) "in the song" / in music. (6) the dolphin. (7) New England / Cape Cod (other "reach land" pages use newengland.jpg).
+- **Top 10:** laayoune, Laayoune, Welcome Home, westernsahara, Western Sahara, atlasmountains, Atlas Mountains, morocco, bermudatriangle, Bermuda Triangle. The full 80 are in JSON. Also: **finish the BIP39 sweep from #300.**
+
+### y6cd1 /pirate-battle (title "fight"), parent e3zre
+- e3zre text: "…Pirates. Do they know about the treasure? Could they have taken her? … Did you miss your welcome home party only to be welcomed to a Donner party at sea? … leathery skin and bones … Will you try to communicate with them? What language do pirates even speak? Or should you try to fight them off?" Buttons: "**I choose to fight**" → y6cd1; "I know the language of these pirates" → hhb0r.
+- Media: pirate ship bw.jpeg (stock galleon, Jolly Roger, mermaid figurehead, a hoist of 3 signal flags, likely decorative); giphy.gif (waves).
+- "Very simple, no research". The sister branch's answer was the obvious concept word (semaphore), and dead ends reuse 777/666.
+- **Top 10:** 777, 666, FIGHT, fight!, Fight!, fightthemoff, fight them off, fightback, fight back, piratebattle. Then adrenaline (a 429 earlier), youshallnotpass47 (the opposite of the other branch's youshallpass47), imalovernotafighter, and others. Also: **run the BIP39 sweep (only <100 done).**
+
+### zhgsm /raft-escape (title RaftBuilt), parent jetkc
+- jetkc text: "Your ship washes onto a sandy beach… coconuts for sustenance, and palm huts for shelter… after a few months, coconuts get really old... After a few years, they make you crazy." Buttons: "**Escape via raft, made from palm tree wood**" → zhgsm; "Light a Fire to Alert a Passing Ship" → jcl9c; "I think I'll just make a life for myself here" → udr8x (777).
+- Media: desertedisland.gif only.
+- Community: one of raft/fire is a dead end; fire → vault. So raft is probably the dead end, which makes 777/666 reuse a strong guess.
+- **Top 10:** 777, 666, lumber, maple, ocean, love, message, six, marine, north (the first 8 after 777/666 are BIP39 words that got 429 and were never tested). Then RaftBuilt, raft built, raftescape, palm tree wood, shark…
+
+### jcl9c /smoke-signals (title lightafire), parent jetkc
+- Button "Light a Fire to Alert a Passing Ship". Downstream is probably ruiat ("the fire exposed a vault").
+- **Top 10:** fffffffffff, 01271967, FFFFFFFFFFF, FFFFFFFFFF, ffffffffff, pyromaniac, Pyromaniac, F, pressf, pressftopayrespects. Then the remaining Hunt #1 passwords: 07201969, fortune, all man kind, one giant step, into digital, morse00100001, tomorrow0010000, codebreaker11, 4samcodeartist, virtual moon.
+
+### Orphans
+- **sodpq** /treasure-map-97328971321. ruiat says "You now have access to an artifact… a piece of a treasure map" and "(use this password to access all items in the vault)". So test **4samcodeartist** on sodpq and on /a /b /c /d (y756h, leklh, xjnxo, vy58x, likely the map pieces). Also test the slug digits 97328971321.
+- **fibyo/tt6yc** (vampire/vampireb): vampire, vampireb, garlic (garlic appears in the opening scene). All are in the JSON.
+
+## 3. The 12-word structure
+- Words: 1 when 2 you 3 depart 4 find 5 mystery 6 discover 7 music 8 need 9 love. All are BIP39 words.
+- Read as a sentence: "When you depart, find mystery, discover music, need love, …". It is an imperative travel blessing and grammatical if comma-separated. "Need love" nods to "All you need is love" (Beatles; Dhani Harrison; the yellow-submarine slug). Hunt #1 bent a famous quote (one small step…) and ended at the "last stop" (virtual moon). By analogy, Hunt #2 should end at the place where you find her or the journey home.
+- Note: back, her, forever, rocky, lost, star and treasure are **not** BIP39 words, so "come back home" and "find her" are impossible.
+- Ranked 10–12 candidates (all BIP39):
+  1. welcome home party (literal phrase in e3zre; the banner says "Welcome Home")
+  2. [x] mountain valley, e.g. echo mountain valley, sing mountain valley, song mountain valley (gkfxt: "song echoes through the mountain valleys")
+  3. then come home / always come home / come home again / come home soon / come home safe
+  4. then return home / return home safe / return home together / return home again
+  5. find home again / arrive home safe / welcome home again
+  6. follow dolphin song / hear ocean song / follow ocean song
+  7. ticket virtual moon (Hunt #1 leftover; already tested offline in wc1 and negative)
+  8. dirt road / fog road (from the "ticket" image; foggy road also appears in LifeFlash)
+- Offline check done in this run (walletcheck.py, BIP84 m/84'/0'/0'/0/0): words 1–9 + any word 10 + (11,12) for 19 pairs (home party, welcome home, come home, return home, mountain valley, valley mountain, home again/soon/safe/together, find home, arrive home, ocean song, glow light, dirt road, fog road, ticket home, island home, love home). Each pair was run against 10 passphrases ("", supernova, glimmer, Glimmer, closerandcloser, amphitrite, Amphitrite, discoverglimmer, in the song, inthesong). About 25k checksum-valid mnemonics, **0 found**. The passphrase is unknown (gkfxt implies it comes after emailing the band), so a negative result here proves little.
+- Next offline step (cheap, no oracle): fix word 12 ∈ {home, valley, party, song, road} and enumerate words 10–11 freely. That is about 262k addresses per (word 12, passphrase), roughly 5 min each.
+
+
+
+## FILE: COMMUNITY.md
+# Glimmer (SLM Hunt #2) — community intel sweep, 2026-10-16 ~17:00 +04
+
+Scope: everything public I could reach. Already-known items from the brief (words 1–9, discoverglimmer, 73511573, 27756932, closerandcloser, 20000leagues, Gilligan cast, amphitrite, north64) are NOT repeated except where needed for context.
+Raw data saved under /workspace/work/glimmer/comm/ (posts.json, comments.json = full r/smithlylemoore dump via arctic-shift; post2022.txt = all 217 comments since Jul 2022 in time order; band_comments.txt = every u/smithlylemoore comment; tap/ = TapInteresting2374's research folder; gh/ = floflo777 repo files; cdx.json = Wayback index).
+
+**Bottom line: nobody has posted a password for /a-rocky-beach, /raft-escape, /smoke-signals, /pirate-battle, the treasure map, word 10–12 or the passphrase.** All answers were traded by DM. What is public is listed below, ranked.
+
+---
+
+## 1. TapInteresting2374's private-but-public GitHub dossier (HIGH value — strong negative evidence)
+Source: https://github.com/benjacasas02/independent-cryptography-research/tree/main/research/glimmer (README, STATUS, RESULTS, route-map, experiments/01-03, artifacts/site-model-reference). Snapshot dated 2026-09-02. Author = Reddit u/TapInteresting2374 (Benjamin, Chile). Raw passwords are in an unpublished `artifacts/VAULT-sensitive.md` (not in repo).
+- Words 6–9 per them come from the whale bottle `mwfaz`: "SEED WORDS 6-9: hunt . gather . whale . blood" (read directly). Words 11–12 = "virtual moon" (from a4rhu→acwn5, "interpreted from ticket"). Word 10 assumed behind c2ozw.
+- **Exhaustive passphrase negatives under that seed body** (experiments/02-passphrase-campaigns.md), verified against Hunt #1 (`supernova` reproduces bc1qgtymp8…):
+  - "C1 — Empty passphrase (RULED OUT) — GPU, 2048^3 (word10/11/12 all free), passphrase = ''"
+  - "C2 — supernova … GPU 2048^3 x supernova … No match."
+  - "C6 — Full English dictionary on GPU … 358,612 words, word10 free, across all 12 seed arrangements = ~4.3 BILLION derivations. No hit." + case variants + 100k first+last names.
+  - ~2,600 concept/lyric words (Glimmer, I'll Still Be Lovin You, EP, Derrival lyrics; stellar-remnant words; Harrison-spiritual etc.).
+- Their own top hypotheses: "Words 11-12 are not virtual moon" and passphrase = "the beloved's name (who-is-she answer)".
+- **Implication for us:** with whale words as 6–9 + virtual moon, no word10 + no dictionary passphrase works. That is consistent with our finding that 6–9 are actually *discover music need love* (c2ozw) and that virtual moon / the vault-gateway chain are Hunt #1 leftovers. Note also C1: with words 1–9 = when…blood and empty passphrase, 2048^3 tails were swept — so if 1–5 + whale words were right, there must be a passphrase.
+- Their route-map confirms /pirate-battle = y6cd1 (child of e3zre "I choose to fight"), and lists other EXIF coords: "Albatross (e3zre) 25.9126, -44.1054; Minnow (Gilligan) 22.6001, -73.4100 … All inside the Bermuda Triangle (thematic: 'she vanished')."
+- They did NOT have latitude / who-is-she / c2ozw / raft / smoke / pirate-battle as of 2026-09-02.
+
+## 2. Reddit, r/smithlylemoore — new items (full dump: 13 posts, 603 comments; 217 since Jul 2022)
+Fetched from https://arctic-shift.photon-reddit.com/api/comments/search?subreddit=smithlylemoore (pullpush via curl is Cloudflare-blocked). Ranked:
+1. **Group says 2 words are missing and some pages give replacement words** — iuseredditlikeyou, wojppy pa5dkpl, 2026-09-16: "Can we get a public clue on how to arrange the words since two are missing and there are replacements for multiple words, can't wrap our heads around it as a group". deviceioxmm (pbq0mlt): "same haha." → supports 'discover music need love' being *replacements* for some earlier words (labels 5–8), and two words (10 + one of 11/12 or 9/12) still missing. Pairs with aramor1 (p9p9xuv): "10 you will receive. but 9 and 12 no" (known).
+2. **Who has what (useful to know what is solvable):**
+   - rational-Gain5010 (ojmqzj pc55bt0, 2026-09-26): "I have almost every page resolved. I need help with the following: /vampire /vampireb /treasure-map-97328971321 /a /b" → he HAS pirate-battle, a-rocky-beach, raft, smoke, glimmer, who-is-she. Same user (pd3pl8h, 2026-09-30): "Could someone please show me how you got the gps of the birdpewp?" (bird page image EXIF — he skipped latitude via another route).
+   - Kitchen-Sail-3689 (ojmqzj pblwxri, 2026-09-23): "I've solved everything except /take-a-big-breath /pirate-battle /treasure-map-97328971321 /a-rocky-beach /glimmer". Exact treasure-map slug: **/treasure-map-97328971321**.
+   - aramor1: "I opened all" (patlb4r 2026-09-19); "any clue 10 usdt. opened all pages." (pa16x4e) → aramor1 opened every page incl. treasure map but still lacks word 10 → word 10 is not on a page.
+   - Fearless-Role-2707 (pbyp4lj 2026-09-25): "I can give you a way past Name 6 without solving it, what the whale says, and what's behind the North 'coming soon'." → a bypass/shortcut exists around b3vye.
+   - Serious-Warning-1294 (p7fv0rq): "got both south exits, raft and fire, plus reach-land on the north side".
+   - Jamal5403 (p6ldh6s): "i have passwords for smoke-signals and light-a-fire pages. one leads to a dead end."
+   - Due-Pound-9218 (p9mta5r): "i have take a breath do you have /pirate-battle?"
+   - shamewizard__ (p60nvj9 2026-08-26): "anyone stuck at these: /message /take-a-big-breath /smoke-signals /raft-escape — Still has roughly 16 pws left to solve, as well as the final 13th part of the seed phrase." ('13th part' = passphrase.) Also (p5v99r3): "those links aren't close to the end."
+   - Exotic_Wonder_7199 (j7i0lm1, 2023-02-06), about the North "coming soon..." page: "a few days after that date they announced that a new song would be coming at the end of that month. Some time between those dates I found a page that relates to it but never found the password" → a page tied to the next single (Vampire) — matches /vampire, /vampireb.
+3. **a-rocky-beach** (h7j3h): reached from **East** — SLM-Hunter744 "What compass direction brought you to that page?" … aramor1 (p8wj6n4): "east". aramor1 (p85sl25): "the answer is not very difficult, the main thing is to write it correctly." Englipt (p5roesh, 2026-08-25): "I've tested more than 6k variants on /a-rocky-beach." No password posted.
+4. **pirate-battle** (y6cd1): dasdull (pau6qin): "very simple, you don't need to research/analyze anything deep" (known). azazel_ass (p85iex7): "nothing matches. no logic". Jarod_38 (pdv43q9): "stuck on /pirates (I Choose to Fight)". Odd in-joke among the 'opened all' crowd: iuseredditlikeyou "I ate some hot dogs and weiners :D"; deviceioxmm to aramor1 (pea6z2e): "did you open? you had some weiners... glimmer / gkfxt / c...r ?"; aramor1: "yeah i got so much weiners" — 'weiners' ≈ winners / extra words; low-confidence candidate only.
+5. **who-is-she / latitude 2022–23 hints** (now solved, kept for method): rarioj (iov5jcy 2022-09-18): "The answer to the latitude (and longitude later on) is actually 8 digits number. The exif tool GPS shows only 7 digits, so you will have to add another 1 digit number at the end." Tax_Previous (jaoipf4): "There's a clue on that page that's not in the video. Use the 'who is she' and 'the mystery begins' pages together." amangeldyva44: "check opposite names too"; "Check ship's name and think or search on opposite ones" (jkaifi8). Head-Experience7101: "start with the name of boat… try no caps".
+6. **South names**: WhiskeyTangoTrotfox (iowqo16): "Listening to or singing the theme song helps." rarioj (jgh5bfa, re Professor): "use different title" (→ Dr. Roy). rarioj: "West is the shortest thread. Followed by North, then East and South. For the West part, all names mentioned there have something in common."
+7. **Email**: Valuable-Land-891 (pbcgway 2026-09-22): "I can confirm the codebreaker email does respond still." Unlikely_Ad3554 (p8xxwi3): "mail box is still active i got response". smithlylemoore.codebreaker@proton.me = scam (shamewizard__ p69n6uz).
+8. **Presave/tag hints**: Band post (w8pwag ihqp7m6, 2022-07-26): "Presave Glimmer, and we will send you hints about how to solve the first clue on Monday, July 31st. Tag 3 friends … and we'll help you solve the second clue as well." No public copy of those emails found. An IG commenter (duyple_, ~Sep 2026, on post CgmfD-2AxSf) tagged friends "like we promised in the email — ready for the next clue hint".
+
+## 3. Band's own statements relevant to the endgame (from u/smithlylemoore comments, Hunt #1 era)
+- Hunt #1 treasure map promised the final answer in a LATER release — band (h6q2phe, 2021-07-27): "we stated in the treasure map that 'Encoded into one of our next 2 releases is the answer to the final puzzle in this treasure hunt, so you will have to listen to that song in order to find the buried treasure.'" → Glimmer analogue: the locked /treasure-map-97328971321 likely says the same, pointing at **Vampire** (single, Oct 2022). /vampire and /vampireb were already password-protected pages on 2022-08-11 (Wayback capture of /treasure-hunt lists both fibyo/tt6yc in passwordProtected). Instagram bio snippet: "Been laying out a road map for next year that will see us release multiple singles" (Dec 2022).
+- Shortcut: "Nobody figured out the shortcut. Prob will use a similar method to encode something into our next release" (h9q3xvm, 2021-08-20); "The shortcut has been available since the album cover was out … It seems that nobody has discovered it" (h6q2phe). Hunt #1 shortcut was linked to a rainbow-road Instagram post (njayant h55qklg: "anyone noticed rainbow roads post in instagram. this can be a shortcut" → band: "🌈🌈🌈🌈"). Glimmer /more-info repeats it verbatim: "In rainbow road on N64 … There is also a shortcut in this journey if you know where/how to look and are willing to take the baby steps that lead to one giant leap … No questions will be answered regarding the shortcut." (Wayback https://web.archive.org/web/20220812000418/https://www.smithlylemoore.com/more-info). The '64' passwords (north64…) come from this.
+- Hunt #1 design rule (h58buzy): "The words you are looking for only make sense in one order."
+- Hunt #1 passphrase mechanism: after email to band → gateway → ticket → words 11–12 + password (puzzles.agntn.dev summary of write-up). Our /glimmer final page also says email the 12 words "for the final step" → passphrase likely only comes from the band after a correct 12-word email.
+
+## 4. Site/Wayback facts
+- /get-hints (live, ay4p6 "Help Us, Help You"): "Share this treasure hunt with your friends on social media. Tag us. We will offer assistance to those that do, with one of the first 3 steps (your choice which one — previous page was Step #1). If you make something go viral or drive significant traffic, we'll help with all 3. After that, any hints will only be shared publicly." (https://www.smithlylemoore.com/get-hints)
+- /donation (Wayback 2022-08-11): "To add btc to the treasure-wallet, send it here: bc1q8cgqs3aljnj5fzg044v0lwh5cn8tul87wlvpwt". I verified locally this is **m/84'/0'/0'/0/1 of the same account xpub** (escrow = /0/0) — confirms the xpub/derivation; address is empty. Band tip address: bc1qzmfyf4apa9qf6cmz8g55py6mqlz68z9eynrf7m.
+- Wayback CDX (121 URLs) has captures of /a-rocky-beach (2026-09-15), /take-a-big-breath (2023-08-15), /glimmer, /vampire, /west, /ross-u etc., but all are Wix shells (protected content not captured). The 2022-08-11 /treasure-hunt capture lists 56 protected pages — identical set to today, so the maze has not changed since launch. Old-revision page JSONs on parastorage return 403.
+- No hint/FAQ page beyond /more-info, /get-hints, /donation.
+
+## 5. Other sources checked (nothing new)
+- floflo777/open-crypto-puzzles …/smith-lyle-moore-hunt-2-0-032btc (README, analysis/leads|mechanism|tested, clues/author-posts) — behind us (stuck at West/East/Dr. Roy as of 2026-07-25).
+- itsnex1s/crypto-puzzle-list unsolved/smith-lyle-moore-hunt-2-0-032btc.md — same content as floflo777.
+- puzzles.agntn.dev/collections/smith-lyle-moore(/glimmer) — 7 official hints only; account xpub; pubkey 037e3109…; nothing past the pages.
+- pdfhost findings (already known).
+- stacker.news/items/658645 — 3 trivial comments.
+- YouTube b7Tngu2h1BQ comments (via inv.nadeko.net API): only "@ByMoneyy: Still waiting for a hint for the treasure hunt reference to Gilligan Island, Who is that other guy?" → replies "Dr. Roy", "Pirate battle in the east?".
+- X/Facebook/Instagram: only the launch posts (Jul 2022) are indexed; no hint posts found. Instagram post CGh-Q-5ByGN ("a collage of our next 3 singles' album covers. One of them will contain the final clue to the treasure hunt") is from Oct 2020 (pre-Hunt #1), not Glimmer.
+- No Discord/Telegram group link was ever posted publicly (OkExperience5359 proposed a Telegram group in 2023, no link).
+- Key solvers' other Reddit activity (arctic-shift author search for 36 users) — no Glimmer posts outside the sub, except TapInteresting2374's repo above.
+
+
+
+## FILE: DEEPSCAN.md
+# DEEPSCAN — Glimmer (SLM Hunt #2), 2026-10-16 ~17:10 +04
+I made no oracle calls. I worked from the 46 page_*.json dumps (including page_h7j3h.json), plus the public/lightbox/masterPage JSON, all images, audio and one video.
+Scripts: deepscan.py (structure extractor) → deepscan_raw.json, ds_view.txt; forensics.py → forensics.json; w12check.py (offline word-12 × passphrase checker against the account xpub).
+New data: pubjson/ (all 21 public pages + **masterPage**, fetched from pages.parastorage.com/sites/<pageJsonFileName>.json.z?v=3. This is a static CDN and does NOT need the lightbox render), media/ (63 originals), audio/ (4 mp3), ds/ (sheets, spectrograms, mountain.mp4).
+
+## A. NEW findings (ranked)
+1. **minnow.jpeg (vispv /awake, the island branch) carries hidden EXIF.**
+   - GPS **22°36'0.46"N 73°24'36.09"W** (≈22.6001, −73.4100, SE Bahamas near Plana Cays/Mayaguana; the place itself is unverified).
+   - EXIF DateTime/DateTimeOriginal **1964:09:26 13:59:40**. That is the premiere date of Gilligan's Island.
+   - This is the same channel as Poseidon.jpg, which gave the latitude/longitude passwords. vispv leads into the Name chain → jetkc → **zhgsm raft / jcl9c fire**, which are still locked.
+   - DMS-digit candidates in the oq7la style: lat `2236046`, long `73243609`.
+2. **'pirate ship bw.jpeg' (e3zre, parent of y6cd1 "fight") carries hidden EXIF.**
+   - ImageDescription = binary `01101110 01101111 01110000 01100101 00100000 01101100 01101111 01101100` = **"nope lol"**.
+   - GPS **25°54'45.42"N 44°06'19.69"W**, mid-Atlantic.
+   - Reading: either the fight branch is a troll/dead end, or the password is literally "nope lol" or the GPS digits (`25544542` / `4461969`).
+3. **Word-12 constraint (order A = when you depart find mystery discover music need love fortune safe ?).** Only 128 BIP39 words pass the checksum (listed in section D).
+   - Words from the Glimmer lyrics that are in that set: **eagle** ("feathers of an eagle"), **fly** ("I can fly a little easier"), **now** ("I feel free now").
+   - Other thematic words in the set: rain (rainbow in the final video), sunset, universe, peace, girl, royal, kingdom, noble, purity, meadow, diamond, blue, tonight, soon, there, where.
+   - Theme words that are NOT checksum-valid in order A: home, song, mountain, valley, echo, journey, climb, sing, moon, travel, light, hope.
+   - The xpub verifies the escrow address: escrow bc1q0akd… = m/84'/0'/0'/0/0, and donation-page "treasure-wallet" bc1q8cgq… = /0/1. So an account-xpub compare (pubkey 02e20da6…fb73 at m/84'/0'/0') is a valid offline test, at about 1.5 ms per check (w12check.py).
+4. **Page creation timeline.** Decoded from the base36 timestamps in Wix menu-item IDs in masterPage:
+   - land h7j3h 22:39 → glimmer gkfxt 22:46 → vampire fibyo / vampireb tt6yc 23:00 (all 2022-07-27). So vampire/vampireb were built after the final page. Cape Cod says "Vampire… Coming Soon… Sep 9, 2022" (the Vampire single's release), so these are most likely a teaser and not on the Hunt #2 path.
+   - RaftBuilt zhgsm 23:08:58 and lightafire jcl9c 23:12:09 (07-26) were created right after Tropical Island. **"A Giant Whale Appears" kx8wx was created 4 min after lightafire.** That suggests raft/fire rejoin the whale line (kx8wx, pass wavebreaker7109). It also fits the fire→vault link being Hunt #1-only.
+   - fight y6cd1 was created 12 s before communicate.
+   - **treasure map sodpq was created 2021-07-01**, along with the passage/vault (2021-07-16) and gateway (2021-08-08). It is a **Hunt #1 leftover**, not part of Hunt #2. It is also the only page with a custom SEO title ("The Treasure Map | Smith, Lyle & Moore") and indexable=false.
+   - a/b/c/d (y756h, leklh, xjnxo, vy58x) were created 2022-07-29 16:03, after everything else. Donation was created 08-03.
+   - litter's "5"/"mystery" were added at 21:33, 24 min after the litter page (21:09) and before c2ozw existed (22:31). So mystery was a deliberate later insert, yet c2ozw was still labelled 5–8. The numbering conflict is in the author's own data.
+5. **Pages missing from map.json/sitemap.json: none.** masterPage lists exactly 78 Page items, the same as sitemap.json. Links to **deleted** pages are szyux (key-checker START KEY CHECK), ibr9y (HOME hidden button), ljhom (footer © link) and dbqak/lw4kn (vault). They are not in the page list, so they cannot be opened. Live /sitemap.xml now returns 404.
+6. The **h7j3h page** has nothing hidden.
+   - Text: "They've all been from her... All of the messages... She still loves you." / "After I Love You, The message reads: 10 fortune 11 safe" / "Now the climb. Sing her a song, about your love, about your journey." / "password: closerandcloser".
+   - Button "I will sing her glimmer." → gkfxt.
+   - No mobile-only, hidden, offscreen or unused items, and no SEO fields.
+   - bottleonbeach.gif: 67 frames at 40 ms, no comment or app extension except NETSCAPE, no trailing data, no EXIF. Visible scroll text "I love you" only.
+7. **gkfxt background mountainbg720.mov** = waterfall (Ouzoud Falls, Morocco/Atlas look) with an animated woman in a flower crown (Amphitrite) zooming in, ending on a rainbow. No text frames. The Wix transcode stripped the metadata.
+8. **Two different Glimmer audio files.** gkfxt has 144728_019f…mp3 (320k, 44.1k, ID3v1 "Glimmer 2022"). zrene Apple Music lightbox has 144728_0c86…mp3 (192k/48k, "Glimmer (ft Dhani Harrison)_48k24b", iTunes 13.1.6.37 tags). Both spectrograms are clean, with no appended data. The two are not compared waveform-by-waveform yet.
+9. Other metadata, low value:
+   - Born to Be Wild cover PNG: text after IEND (Hunt #1: "First word: fortune. Last stop, the moon… secret museum… 8-digit pin") and XMP Country "The Moon, 07/20/1969", State "Sea of Tranquility". This is the known Hunt #1 channel.
+   - library3.jpg is by David Iliff; Theater Background is by Don Holtz; the ruiat image is a flickr stock image. These are stock credits.
+   - PNG LSB pulls (R/G/B/RGB/A) found only gradient noise in all 18 PNGs.
+   - No SVG <text> in any shape.
+   - The Donation page shows treasure address bc1q8cgqs3aljnj5fzg044v0lwh5cn8tul87wlvpwt (= xpub /0/1) and band tip address bc1qzmfyf4apa9qf6cmz8g55py6mqlz68z9eynrf7m.
+
+## B. Per-page summary (only noteworthy items; full dump in ds_view.txt / ds_pub_view.txt)
+- **vispv awake**: minnow.jpeg EXIF GPS 22°36'0.46"N 73°24'36.09"W, date 1964-09-26 (NEW). It links to the full image as an external link.
+- **e3zre ship**: pirate ship bw.jpeg EXIF "nope lol" + GPS 25°54'45.42"N 44°06'19.69"W (NEW). The image is also linked to its full-size URL, as an invitation to download it.
+- **aj73v the-search-begins**: Poseidon.jpg GPS (known).
+- **h7j3h land**: see A6.
+- **gkfxt glimmer**: mailto codebreaker@smithlylemoore.com, subject "I've Found Amphitrite, and All 12 Words". The video is described in A7.
+- **ouxh2 escape**: mobydick.png is a WPhoto positioned offscreen (x=−114, 13×31 px) that links to kx8wx. This is the "secret passage" (pull out Moby Dick) and it is known.
+- **a76va ross-u**: 5 buttons are desktop-only and hidden on mobile. A behavior opens the zrend popup after 4 s, desktop only. Known.
+- **zren9/zrena/zrenb/zrene/zrend** lightbox JSON is now on disk (pubjson/). Content matches the browser read: zrena has the text "escape"; zrend has "ffffffffff". The screenshots are 2022-07-27 Mac screenshots with no extra EXIF.
+- **sm18u litter / c2ozw / wt1jy / mwfaz**: word labels as known. On litter, mobile layout has 0-height rich-text boxes for the words; they are not hidden.
+- **y9iq2 HOME**: a hidden button links to the deleted ibr9y; another goes to bbryd ("not a red herring").
+- **gv4d7 key-checker**: START → deleted szyux; the text link is a rickroll.
+- **vicn4 "Copy of Home old lading"**: Wix template tour dates (filler).
+- **epndr more-info**: links to YouTube R_ofGEYvEJ0 and XwXfJXdVSYQ, reddit r/smithlylemoore, presave.io/t/glimmer.
+- **All other unlocked pages**: no hidden, mobile-only or offscreen components, no SEO descriptions, no alt text beyond filenames (already listed in SYNTHESIS).
+
+## C. Not done / limits
+- Only mountainbg was pulled frame by frame; the other videos (Boat*, TV Room, intro video 97 s, Render 4/15sec, Apollo 14) were not re-checked here. Earlier runs covered life/east/c2. Wix re-encodes video, so original container metadata is gone.
+- I made no oracle tests, as instructed. Candidates are in deepscan_cands.json.
+- Offline: order B (mystery moved to slot 9) × 147 passphrases (lyric words, supernova, glimmer…): 0 found. The dispatcher's wc_final*.py already covers order A × lyric n-grams, so I did not duplicate it.
+
+## D. Order-A word-12 checksum set (128)
+absent addict age alpha amount armed assist attract ball banner before blanket blue bottom brother cable canvas case certain cheese choice clay clown consider cotton crew crush cute decide describe diamond dish dog drama eagle electric emotion enjoy evil evolve face fat fetch fiscal fly fortune frog gallery gesture girl gossip grid half head honey hungry illness increase input jeans joke kingdom laptop lawsuit license lion lunch march meadow menu million modify muffin negative noble now obvious orange organ pact peace pen pistol plastic prepare prison proud purity rain razor remind render rifle rival royal same scissors season series shock situate slogan smoke soon south squeeze step struggle sunset sustain syrup tenant there tobacco tonight tray trial turtle universe urge various velvet violin wasp weather where worth wrong
+
+## E. Video + audio deep check (2026-10-16 ~18:00 +04, subagent; no oracle calls, no brute force)
+Files: vid2/*.mp4 (10 videos, from video.wixstatic.com at 1080p/720p), vid2/*_sheet*.jpg (1 fps; 0.5 fps for TV room and whale), vid2/crops/, vid2/c2_all.jpg; audio_diff/diff.py, residual.wav, res_spec.png, side_A/B.wav.
+- **Metadata:** every file is a Wix transcode (Lavf58.76/58.29, handler "Mainconcept"/"Core Media Audio"). None has a subtitle stream, title/comment tags or chapters, so the original metadata is lost. The source names are in the page JSON only: Boat Direction Sunset with Noise 1080.mov (xtb6t), Boat In Storm.mp4 (eetj4), Boat Open Ocean.mp4 (pbvye), Glimmer Treasure Hunt Intro Video3.mp4 (wsbja, 97.7 s), Render 15sec (y9iq2), Render 4 (common), TV Room 2 720p.mov (ml7yd, 320 s), Whale Talking (gps16), bioluminescense (qomxw), illstillbelovinyoureels1080p.mov (acwn5).
+- **Boats (3):** one static CG shot from the bow (wheel, compass, chartplotter). The chartplotter screen shows only a pulsing pink/red glow. The small right-hand screen shows a looped water texture. There is no text, digits, QR code, or on/off blinking that could be Morse. The green dot on the console appears roughly every 5 s, in step with the loop, and is not a code. Storm differs only in the background and ends on a wave.
+- **Intro (97 s):** a rocket/capsule scene. The captions are "Liftoff", "Re-entering earth's atmosphere", "Location: South Atlantic Anomaly", "G-Forces Increase", then the capsule falls into the ocean. These are story captions with no numbers. The "South Atlantic Anomaly" is the only real place-name, and that is weak.
+- **TV room (320 s):** a room with a retro TV. On the screen is a VHS collage: a VHS warning screen, "Time & Work Study Dept", "ACE Merry Christmas", sheet music, a blue "maintenance/interruption" screen, a Columbia Cable TV channel guide, a basketball game, moon landings and a shuttle, plus empty blue screens. Everything looks like found footage. I found no planted passwords or digits (the channel-guide frame was only skimmed).
+- **Whale Talking (166 s):** a Long Now Foundation "The Interval" talk by James Nestor ("Humanity and the Deep Ocean", author of "Deep"), followed by underwater sperm-whale footage. This is a theme source (whale clicks are Morse-like) and holds no text clues.
+- **Render 15sec:** night lights/town, with no text. **Render 4:** a coastal cliff at dusk, with no text. **bioluminescense:** deep-sea creatures, no text. **illstillbelovinyou reel:** vertical Instagram-style reel (fog, desert, sea, pizza, bonfire, sunset), no text.
+- **Audio, Glimmer A (019f, 320k/44.1k) vs B (0c86, 192k/48k→44.1k):** this is the same master.
+  - Global offset is 230 samples (5.2 ms) and stays fixed with no drift. Gain is 0.99–1.00.
+  - The residual after subtraction is −24…−35 dB below the signal and follows the music's transients, i.e. codec/resampling noise. Its spectrogram shows no tones, speech, keyed Morse or appended segments. The only difference is a cutoff of about 16 kHz (A) vs about 20 kHz (B), and a slightly different fade at 185–200 s (gain 0.99).
+  - The L−R (side) channel is −8 dB in both files with nothing unusual.
+- **Result:** no clue to word 12, the passphrase, zhgsm or jcl9c was found in the videos or in the audio difference. These channels are closed.
+
+
+
+## FILE: findings.txt
+Smith, Lyle & Moore — "Glimmer" Bitcoin Treasure
+Hunt
+Complete findings report · generated 26 August 2026
+
+What this hunt is, in plain words: an indie band hid the private key to a Bitcoin wallet across their
+website. The site is a maze of ~78 password-locked pages. Solve the riddles, collect 12 secret words,
+and the wallet is yours. The band publicly promised the coins to whoever solves it.
+
+1. The Prize — still unclaimed
+Wallet address bc1q0akdjvrc2csau2n3gyxa3xcq0fss852x997m9y
+Balance
+
+3,177,700 sats = 0.031777 BTC (about $2,000)
+
+Status
+
+FUNDED · UNSPENT · 1 transaction · nobody has claimed it
+
+Checked
+
+26 Aug 2026 (mempool.space and blockchain.info agree)
+
+2. The 12 Secret Words — how far we got
+Words
+
+Status
+
+What we have
+
+1–5
+
+FOUND
+
+when you depart find mystery
+
+6–9
+
+candidate
+
+hunt gather whale blood
+
+10
+
+missing
+
+behind a locked page
+
+11–12
+
+shown as a picture the "ticket" image (foggy road) — exact words undetermined
+
+passphrase missing
+
+hidden "in the song" (Hunt #1's was supernova)
+
+Why words 6–9 are only a "candidate": they come from a second message-in-a-bottle page on
+the whale branch. All four are valid seed words, but the story hints that bottle may be a decoy. It was
+worth testing; nothing matched.
+
+3. Every Password We Cracked (32 total)
+Part of the site
+
+Passwords
+
+Entry & compass amphitrite, north64, south64, east64, west64
+
+East branch
+
+albatross, semaphore, youshallpass47, witchoftheeast,
+2hours40minutes, 20000leagues
+
+North / whale
+
+wavebreaker7109, mobydick69420, glimmer, huntgathwhalblo,
+
+branch
+
+michaelphelps, seahitchhiker
+
+South branch
+
+Vault chain
+
+Gilligan, Jonas, Thurston, Lovey, Ginger, "Dr. Roy", "Mary Ann",
+electricfeel64, 777, 666, vampire
+FFFFFFFFFFF, 4samcodeartist, codebreaker11, "virtual moon"
+
+Biggest single crack: Dr. Roy — the sixth castaway from Gilligan's Island, written with a period
+and a space. That page had resisted the whole community for years. It also proved the passwords use
+exact real-world spellings, punctuation included.
+
+4. Eight New Pages Opened This Session
+• Land Ho! · Swim to Shore · Hitch a Ride (the whale branch was not a dead end)
+• The compass page (answer: amphitrite, Poseidon's wife)
+• The passage → the vault → the gateway → the ticket page
+The gateway page says: "Your ticket is word11 word12: the last stop of your journey." The "ticket" is
+a picture — a dirt road vanishing into fog. So the last two words are drawn, not written.
+
+5. The Album Cover's Hidden Secret
+Hidden in the cover's
+metadata
+
+UVHZ532IWIFZFN5FUY2K5RDX3I
+
+Decoded (Base32)
+
+A54F9EEF48B20B92B7A5A634AEC477DA
+
+What it is
+
+exactly 16 bytes = 128 bits, the size of a crypto key
+
+Tested as
+
+seed words, MD5, XOR, Vigenère, AES on the song audio — all negative
+
+Conclusion
+
+most likely a key for the vault pages the author later deleted —
+unrecoverable
+
+6. Hunt #1's Full Solution (the author's blueprint)
+Its 12 words
+
+fortune all man kind one giant step into digital tomorrow virtual
+moon
+
+Its passphrase supernova
+Its style
+
+famous quotes bent to fit the word list; passwords that hint at themselves
+
+This mattered: four of Hunt #1's passwords still work on Hunt #2's site — that's how the vault,
+gateway and ticket pages opened.
+
+7. The Cracking Machine We Built
+• Local seed-testing engine — passes every official BIP39/BIP84 test vector
+• Verifies candidates against the author's own published key (exact, no false positives)
+• ~20,000 candidate seeds per second on 24 CPU cores, fully offline
+• Web interface with live progress and instant stop
+• Every bounded search space was covered exhaustively — zero matches
+
+8. What's Left: Five Locked Riddles
+Lock
+
+East
+
+West
+
+The riddle
+"20,000 Leagues. Impressive... Is it your life flashing before your eyes or hallucinations? Is this
+the end?"
+"Pirates... Is that Blackbeard? Or Shawn Fanning? ...Is your last name Ulrich? Ulbricht?
+Svartholm? Neij?"
+
+Raft
+
+"Escape via raft, made from palm tree wood"
+
+Smoke
+
+"Light a Fire to Alert a Passing Ship"
+
+Who is
+she?
+
+Empty ship named Poseidon, "Welcome Home" banner, garlic, lit candles, a warm meal
+
+~250,000 password guesses were fired at these five pages — every pop-culture, song-lyric,
+mythology, pirate and Gilligan's Island angle we could generate. All rejected. These answers are the
+author's private wordplay; they need the intended insight, not more brute force.
+
+9. Bottom Line
+Words known
+
+5 of 12 confirmed, in the right order
+
+Prize status
+
+still sitting in the wallet, unclaimed
+
+Blocker
+
+words 6–10, locked behind five riddle pages
+
+Best remaining lead the band replied to a DM in 2026 — they are active and answering
+
+Report ends. The wallet lives on the Bitcoin blockchain and cannot be deleted from any machine.
+
+
+
+
+## 6. oracle.py
+import sys, json, urllib.request, urllib.error, time
+
+URL="https://site-pages.wix.com/_api/wix-public-html-info-webapp/resolve_protected_page_urls"
+META="13cab6fc-e004-4514-aab0-a7cf702047f9"
+SITE="b8aa9fe0-61db-4696-8909-9dd877606aa4"
+UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+
+def test(pageId, pw, timeout=12, retries=2):
+    body=json.dumps({"metaSiteId":META,"siteId":SITE,"pageId":pageId,"password":pw}).encode()
+    for a in range(retries+1):
+        req=urllib.request.Request(URL, data=body, headers={
+            "Content-Type":"application/json",
+            "Origin":"https://www.smithlylemoore.com",
+            "User-Agent":UA})
+        try:
+            r=urllib.request.urlopen(req, timeout=timeout)
+            d=json.loads(r.read())
+            return ("HIT", d.get("payload")) if d.get("success") else ("no", d.get("errorCode"))
+        except urllib.error.HTTPError as e:
+            # 403 = WAF block on WRONG password = definitive "no". Do not retry.
+            if e.code==403:
+                return ("no", 403)
+            if a<retries: time.sleep(0.8); continue
+            return ("ERR", f"HTTP {e.code}")
+        except Exception as e:
+            if a<retries: time.sleep(0.8); continue
+            return ("ERR", str(e))
+
+
+## 7. fetchpage.py (opens a page with a password and downloads its JSON)
+import sys, json, urllib.request, re
+from oracle import test, META, SITE
+UA="Mozilla/5.0"
+def resolve(pid,pw):
+    st,info=test(pid,pw)
+    if st!="HIT": return None,st
+    # payload urls -> fetch parastorage json
+    url=None
+    for u in info["urls"]:
+        if "parastorage" in u: url=u
+    try:
+        d=urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":UA}),timeout=15).read()
+        return json.loads(d), "HIT"
+    except Exception as e:
+        return None, "fetchfail:"+str(e)
+def texts(d):
+    out=[]
+    def walk(o):
+        if isinstance(o,dict):
+            for k,v in o.items():
+                if k=="text" and isinstance(v,str):
+                    t=re.sub(r'<[^>]+>',' ',v); t=re.sub(r'\s+',' ',t).strip()
+                    if t: out.append(t)
+                else: walk(v)
+        elif isinstance(o,list):
+            for x in o: walk(x)
+    walk(d); return out
+if __name__=="__main__":
+    pid,pw=sys.argv[1],sys.argv[2]
+    d,st=resolve(pid,pw)
+    print("status",st)
+    if d:
+        for t in texts(d): print("T>",t)
+
+
+## 8. Every string tried as a lock password (2479, mostly on zhgsm/jcl9c/h7j3h/c2ozw; all misses unless listed in the site map)
+ 
+ +
+ setitablaze
+"""
+"([^"\n]{1,60})"
+",
+%B %d, %Y
+%d%m%Y
+%m%d%Y
+'
+'([^'\n]{1,60})'
+'([^'\n]{1,60})'|\
+)+
+),
+), re.sub(r
+),s2,s2.title().replace(
+).replace("
+*.json
+*_sweep.py
+*cands*.json
+,
+, 
+,''), s.lower().replace(' ','').replace(
+,b).replace(
+,l.lower().replace(
+--- ...
+...---...
+.join(w),
+.join(w).lower(),
+.split(
+.txt
+0
+0.46"N 73°24
+007
+01271967
+07201969
+09261964
+1
+100
+1000feet
+101
+10987654321
+11
+123
+1234
+12345
+123456
+13
+1588-07-29
+1666-09-02
+1666-09-05
+1709-02-01
+1719-04-25
+1775-04-18
+1789-04-28
+1805-10-21
+1814-08-24
+1816-07-02
+1871-10-08
+1889-05-31
+1903-12-17
+1906-04-18
+1912-04-15
+1915-11-21
+1916-04-24
+1916-05-20
+1916-08-30
+1937-05-06
+1937-06-26
+1941-06-19
+1941-11-23
+1945-08-06
+1947-04-28
+1947-08-07
+1952-10-19
+1958-10-28
+1962-06-11
+1964
+1964-09-26
+19640926
+1967
+1967-01-27
+1969
+1969-07-20
+1969-07-24
+1970-04-17
+1973-05-13
+1978-10-14
+1979-05-03
+1980-05-18
+1984
+1986-01-28
+1minute14seconds
+2
+2 on a raft
+20,000 leagues
+2000-12-22
+20000feet
+20000leagues
+2003-02-01
+2005-04-19
+2013-03-13
+2236
+22360046
+2236046
+2236046 73243609
+223604673243609
+22360467324369
+22600173410
+23minutes31seconds
+25544542
+25544542 4461969
+2554454244061969
+255445424461969
+2591264410
+25912644105
+26091964
+27756932
+2hours40minutes
+2minutes
+2pm
+3
+35000feet
+3hours
+3hourtour
+3minutes
+40days
+40days40nights
+42
+420
+44061969
+4461969
+45.42"N 44°06
+451
+47
+4815162342
+48k24b
+4:20
+4minutes
+4samcodeartist
+5minutes55seconds
+6000meters
+64
+666
+69
+69420
+7
+7109
+7324
+732436009
+73243609
+73511573
+741409
+74seconds
+777
+8minutes
+90seconds
+911
+97328971321
+98episodes
+99
+===
+=== vampire
+A
+AMPHITRITE
+AS-204
+Acklins
+Adrenaline
+Adrift
+Africa
+Agamemnon
+Ahoy
+Alan Hale
+Alcatraz
+Alexander Selkirk
+Amphitrite
+Amphitrite64
+Andrea Gail
+Andy Dufresne
+Anglin
+Anglin Brothers
+Anya Major
+Apache
+Apollo
+Apollo 1
+Apollo 11
+Apple 1984
+Argo
+Ariel
+Ark
+Arnold Palmer
+Arsonist
+Athazagoraphobia
+Athena
+Atlantis
+Atlas Mountains
+Bahamas
+Balsa
+Bamboo
+Banana Boat Song
+Barbie
+Bat Signal
+Baychimo
+Beacon
+Beacon fire
+Beacon of Gondor
+Beacons of Gondor
+Bear Grylls
+Beelzebub
+Ben Gunn
+Bermuda
+Bermuda Triangle
+BermudaTriangle
+Betty Crocker
+Big Wheel Keep On Turnin
+Birds Gotta Fly
+Birds Gotta Fly, Fish Gotta Talk
+Bitcoin
+Black Pearl
+Black smoke
+Blackbeard
+Blue Marble
+Bob Denver
+Bob Marley
+Bohemian Rhapsody
+Bon Voyage
+Bonfire
+Bonfire Night
+Born to Be Wild
+Bounty
+Bram Stoker
+Brandy
+Brooke
+Brooke Shields
+Burn Baby Burn
+Burning Down the House
+Burning Man
+Buzz Aldrin
+Caleuche
+Calypso
+Campfire
+Canary Islands
+Canoe
+Cape Cod
+Captain Bligh
+Captain Hook
+Captain Nemo
+Captain Phillips
+Carmilla
+Carroll A. Deering
+Cast Away
+Castaway
+Castaways
+Castaways Pictures Presents
+Celine Dion
+Challenger Deep
+Charizard
+Cheech
+Cherokee
+Chimney
+Christie Brinkley
+Cindy Crawford
+Circe
+Clara Peller
+Clint Eastwood
+Clytemnestra
+Coast Guard
+Coconut
+Come On Baby Light My Fire
+Come Sail Away
+Conch
+Conclave
+Count Dracula
+DPR
+Daryl Hannah
+Dawn Wells
+Day-O
+Deep Purple
+Def Leppard
+Dega
+Delphin
+Demeter
+Devils Island
+Dhani Harrison
+Disco Inferno
+Dock of the Bay
+Don't hate me because I'm beautiful
+Donner
+Donner Party
+Dr. Roy
+Dracula
+Dragon
+Dread Pirate Roberts
+Drogon
+Dustin Hoffman
+ERR
+Eagle
+Earthrise
+Echoes
+Edmund Fitzgerald
+El Aaiun
+El Aaiún
+El Chapo
+El Hierro
+Electric Feel
+Elizabeth
+Ember
+Endurance
+Erika Tiffany-Smith to the Rescue
+Ernest Shackleton
+Escape
+Escape The Pina Colada Song
+Escape from Alcatraz
+Escape via raft, made from palm tree wood
+F
+FFFFFFFFFF
+FFFFFFFFFFF
+FIGHT
+FOUND
+FOUND.txt
+Fahrenheit 451
+Farrah Fawcett
+Feldman
+Fight
+Fight!
+Fire
+Fire Marshall
+Fire Ship
+Fire and Rain
+Fire starter
+Fireball
+Firefly
+Firefox
+Fireman Sam
+Firestarter
+Firework
+Flame Princess
+Flare
+Flare Gun
+Flashlight
+Fletcher Christian
+Flint
+Flint and Steel
+Flying Dutchman
+Forget Me Not
+Frank Morris
+Frank Worsley
+Fred Flintstone
+Friday
+Frosty
+Fuerteventura
+Gericault
+Gertrude
+Ghost Rider
+Ghost Ship
+Gilligan
+Gilligan Goes Gung-Ho
+Gilligans Island
+Gilligans Island theme
+Ginger
+Ginger Grant
+Girl on Fire
+Glimmer
+Gondor
+Gondor calls for aid
+Good-Bye Island
+Goodbye Island
+Grace Darling
+Great Balls of Fire
+Great Escape
+Great Fire
+Great Scott
+Great Scott!
+Gulliver
+Guy Fawkes
+Guybrush Threepwood
+HELP
+HIT
+HIT c2ozw
+HIT?
+HIT_
+Habemus Papam
+Harry Belafonte
+Harry Houdini
+Hawaii
+Headhunters
+Heather Locklear
+Hellboy
+Help
+Help Me Rhonda
+Henri Charriere
+Hephaestus
+Hermes
+Hestia
+Hey Ship
+Heyerdahl
+Hold the Line
+Home Sweet Hut
+Honolulu
+Houdini
+Houston
+Huck Finn
+HuckFinn
+Huckleberry Finn
+Human Torch
+Hurley
+Hut
+I choose to fight
+I have made fire
+I'm the captain now
+I've fallen and I can't get up
+Ignite
+In the song
+Inigo Montoya
+Is this the real life
+Ishmael
+Island
+Island in the Sun
+Islands in the Stream
+Ithaca
+Ithaka
+Jack Merridew
+Jack Shephard
+Jack Sparrow
+Jem
+Jenny
+Jim
+Jim Backus
+Jim Morrison
+Jimmy Buffett
+Joan Collins
+Joan of Arc
+John Locke
+Johnny Storm
+Jolly Roger
+Jonas
+Jonas Grumby
+Jose Alvarenga
+Joseph Conrad
+Juan Fernandez
+Jules Verne
+Kate
+Katniss
+Kayak
+Keeper
+Kelly LeBrock
+Khaleesi
+Kindle
+Kindling
+Kokomo
+Kon Tiki
+Kon-Tiki
+Kupaii
+Laayoune
+Lady Lovibond
+Lagoon
+Laâyoune
+Leaving on a Jet Plane
+Lemuel Gulliver
+Life Alert
+Life of Pi
+LifeFlashBeforeEyes
+Light Em Up
+Light My Fire
+Light a Fire
+Light a Fire to Alert a Passing Ship
+LightAFire
+Lightafire
+Lighter
+Lighthouse
+Lighthouse Keeper
+Lit
+Little Buddy
+Little Island Big Gun
+Lonely Island
+Long John Silver
+Lost
+Louis Zamperini
+Lovey
+Lovey Howell
+Lucy
+Lucy Westenra
+Lusitania
+MAYDAY
+MacGyver
+Madison
+Madonna
+Man Friday
+Manu
+Margaritaville
+Marie Celeste
+Marina
+Mark Twain
+Marooned
+Mary Ann
+Mary Ann Summers
+Mary Celeste
+Matchstick
+Maui
+Max Headroom
+Mayaguana
+Mayday
+Mayday Mayday
+Mayflower
+Medusa
+Message in a Bottle
+Michael
+Mina
+Mina Harker
+Minnow
+Mississippi
+Moana
+Moby Dick
+Mom
+Moon
+Mordor
+Morocco
+Morse
+Moses
+Mosquitoes
+Mother
+Mother Ship
+Mother of Dragons
+Mr Wilson
+Mrs OLeary
+Mrs. Butterworth
+Mrs. Fletcher
+Mutiny on the Bounty
+Mysterious Island
+NOPE LOL
+Nantucket
+Natalie Schafer
+Nautilus
+Navy
+Ned Land
+Neil Armstrong
+Nemo
+Nereid
+Nero
+New England
+Nigger Jim
+Nina
+Noah
+Nope lol
+Nosferatu
+Oar
+Octavius
+Odysseus
+Olympic torch
+One if by land
+Open your eyes
+Orinoco Flow
+Ourang Medan
+Paddle
+Palm
+Palm Beach
+Palm Pilot
+Palm Springs
+PalmPilot
+Palme dOr
+Pamela Anderson
+Pantene
+Papillon
+Paul Revere
+Paula Abdul
+Penelope
+Pequod
+Persephone
+Peter Pan
+Pharos
+Pheidippides
+Pi
+Pi Patel
+Piggy
+Piggys glasses
+Pink Floyd
+Pinta
+Pitcairn
+Plana Cays
+Plymouth Rock
+Poon Lim
+Pope
+Popeye
+Poseidon
+Poseidon Adventure
+Press F to pay respects
+Professor
+Prometheus
+Proud Mary
+Puff
+Puff the Magic Dragon
+Pyro
+Pyromaniac
+Queen Anne's Revenge
+Queequeg
+Quest for Fire
+Quick Before It Sinks
+RIP
+Ra
+Ra II
+Radio
+Rafa
+Rafael Nadal
+Raffi
+Raft
+Raft Built
+Raft Man
+RaftBuilt
+RaftEscape
+Raftaar
+Raftbuilt
+Ralph
+Rescue
+Rescue Me
+Rescue from Gilligan's Island
+Rescue from Gilligans Island
+Retrograde
+Retrograde1
+Richard Parker
+Ring of Fire
+Robinson
+Robinson Crusoe
+Rock the Boat
+Rollin on the River
+Rose
+Ross
+Row Row Row Your Boat
+Roy Hinkley
+Rupert Holmes
+Russell Johnson
+Ryan Raftery
+S.O.S.
+S.S. Minnow
+SOS
+SS Minnow
+Sahara
+Sail Away
+Sail On Sailor
+Sailing
+Sailor Moon
+Salacia
+Samsung T5
+Santa
+Santa Maria
+Sargasso Sea
+Saturn V
+Sawyer
+Scylla
+Sedna
+Selkirk
+Sending Out an SOS
+September 26, 1964
+Set Fire to the Rain
+Shackleton
+Shark
+Shawshank
+She
+She-Ra
+Sherman Alexie
+Sherwood Schwartz
+Ship Ahoax
+Ship Ahoy
+Ship of Fools
+Ships are female
+Shipwrecked
+Signal
+Signal Fire
+Signal fire
+Silk Road
+Simon
+Siren
+Skipper
+Sloop John B
+Smaug
+Smoke
+Smoke Monster
+Smoke Signals
+Smoke on the Water
+SmokeSignals
+Smokey
+Smokey Bear
+Smokey Robinson
+Smokey the Bear
+Snoop Dogg
+Snow Patrol
+Southern Cross
+Spark
+Sparky
+Splash
+Splashdown
+Starship
+Steel
+Steve McQueen
+Steve McQueen raft
+Steven Callahan
+Swiss Family
+Swiss Family Robinson
+Tahiti
+Tahiti Nui
+Tame Impala
+Tarfaya
+Te Fiti
+The Abyss
+The Big Blue
+The Big Gold Strike
+The Castaways
+The Demeter
+The Doors
+The Eagle has landed
+The Flying Dutchman
+The Mary Celeste
+The Pina Colada Song
+The Police
+The Poseidon
+The Professor
+This Girl Is on Fire
+Thomas Builds the Fire
+Thor Heyerdahl
+Three Hour Tour
+Thurston
+Thurston Howell
+Tigris
+Tiki
+Tiki Torch
+Tina Louise
+Tiny Ship
+Titanic
+Tom Hanks
+Tom Hanks raft
+Tom Neale
+Tom Sawyer
+Torch
+Tossed
+Tranquility Base
+Transistor
+Treasure Hunt
+Treasure Island
+Two if by sea
+Two on a Raft
+Ugg
+Ulla
+Ulysses
+Unbroken
+Under the Sea
+Utnapishtim
+Vampire
+Vanna White
+Vatican
+Vesta
+Victor Joseph
+Vlad
+Voodoo Something to Me
+Voyager
+Vulcan
+W, desc 
+Walt
+Waterworld
+Watubi
+We Didnt Start the Fire
+Weather
+Welcome Home
+Wendy
+Werewolf
+Western Sahara
+Where's the beef?
+Whitby
+White smoke
+Wife
+Wildfire
+William Bligh
+Willie Nelson
+Willy Gilligan
+Wilson
+Wonder Woman
+Wrongway Feldman
+X Marks the Spot
+Zamperini
+Zippo
+['\
+[A-Za-z0-9 ]{3,}
+[A-Za-z]+
+[^a-z ]
+[^a-z0-9 ]
+\"]{1,40})[
+\n
+\n]{1,60})\
+]
+_note
+_word12_order_A_thematic
+a
+a far green country
+a fateful trip
+a glimmer of hope
+a passing ship
+a tale of a fateful trip
+a three hour tour
+a-rocky-beach (h7j3h)
+aboldfellowship
+abrandnewtale
+abyss
+acid
+aden
+adrenaline
+adrian
+adrift
+africa
+afteriloveyou
+afterlife
+aghost
+ahoy
+ahoythere
+air
+albatross
+aldrin
+alert a passing ship
+alertapassingship
+alive
+all man kind
+all turns to silver glass
+allhandsonbattlestations
+allhandsondeck
+allthatyoutouch
+altitude
+amphitrite
+amphitrite64
+anchorsaweigh
+anditriedsoveryhardtounderstand
+andjusticeforall
+andmyaxe
+andmybow
+androhanwillanswer
+andydufresne
+annebonny
+annecheche
+another path
+antipiracy
+anyakmajor
+anybodywantapeanut
+aphrodite
+apocalypsenow
+apollo
+apollo 11
+apollo1
+apollo11
+apple1984
+aquaman
+ariel
+ark
+armstrong
+armyofthedead
+aronnax
+arrr
+arrrr
+arsonist
+as204
+ascend
+ascent
+asprimitiveascanbe
+astronomydomine
+asyouwish
+ataleofafatefultrip
+athazagoraphobia
+athreehourtour
+atlantis
+atlasmountains
+attack
+aunt jemima
+avast
+awake
+awaken
+ayahuasca
+b
+b3vye
+b4
+back on the same island
+back to the coast
+bad omen
+badmoonrising
+balsa
+balsa wood
+balsawood
+bamboo
+bamboo and vines
+bamboo raft
+bambooraft
+bamboozled
+band_lyrics.txt
+bangarang
+barbie
+barbossa
+barenecessities
+batman
+batsignal
+battle
+battleship
+beacon
+beacons
+beaconsarelit
+bearbrylls
+beargrylls
+beatit
+beavisandbutthead
+bees
+ben
+bends
+benlinus
+beprepared
+bermuda
+bermudatriangle
+bettycrocker
+big breath
+bigbreath
+bigfish
+biggerboat
+billyjoel
+binoculars
+bitcoin
+bitcoinqt
+blackbeard
+blacksmoke
+blastoff
+bligh
+blue
+bluebeard
+bluelagoon
+bluemarble
+bluepill
+bluto
+board
+boarding
+boardingparty
+bohemianrhapsody
+bonfire
+bonfire on the beach
+bonvoyage
+born again
+born to be wild
+boyscouts
+brain_cands.json
+brain_gen.py
+braindamage
+breath
+breathe
+breathe it in
+breathedeeper
+breatheintheair
+breatheitin
+bring her back
+broadside
+broken ice
+brooke
+brooke shields
+brookeshields
+brutus
+bucs
+bud
+build a raft
+buildaraft
+burn
+burnbabyburn
+burning
+burningdownthehouse
+burningman
+burnitdown
+burnthemaid
+buzzaldrin
+byGodIwashere
+bygodiwashere
+c
+c2ozw
+c2ozw,ml7yd,zhgsm,jcl9c,sodpq
+cabbagepatch
+caesar
+calicojack
+calvins
+calypso
+campfire
+canaryislands
+cand_*.txt
+cannibal
+cannibalism
+cannibals
+cannon
+cannonball
+cannonballs
+cannons
+canyouhearme
+capecod
+captain nemo
+captainbligh
+captaincrunch
+captainhook
+captainjacksparrow
+captainkidd
+captainmorgan
+captainnemo
+captainphillips
+captainplanet
+carefulwiththataxeeugene
+carmilla
+castaway
+castaways
+catchingfire
+caughtinalandslide
+caulkthewagon
+caulkthewagonandfloatit
+cavemanfire
+challengerdeep
+charge
+chariotsoffire
+charlie
+charliepace
+charon
+cheech
+cheechandchong
+christiebrinkley
+chuck
+cindycrawford
+claire
+clarapeller
+clickyourheels
+closer and closer
+closer to home
+closerandcloser
+closertohome
+cloudlessday
+coastguard
+coconut
+coconut crazy
+coconutraft
+coconuts
+coconutsdriveyoucrazy
+codebreaker
+codebreaker11
+colitas
+columnofsmoke
+come on baby light my fire
+come up for air
+comeonbabylightmyfire
+comesailaway
+comfortablynumb
+comm_sweep.py
+commissionergordon
+congratulations
+conseil
+coppertone
+coppertone girl
+corsairsofumbar
+countdown
+cousteau
+crazy
+cuckoo
+currents
+cutlass
+d
+dagger
+damnthetorpedoes
+darksideofthemoon
+darksideoftherainbow
+daryl hannah
+davyjones
+dayo
+dazedandconfused
+dead
+deadmentellnotales
+deadpirates
+death is just another path
+death is just another path one that we all must take
+deathtoallpirates
+decompression
+deep
+deeppurple
+dejavu
+delphin
+demeter
+desert
+desert island
+desert isle
+deserted island
+desertedisland
+desertedisland.gif
+desertisland
+desmond
+destroyer
+dhaniharrison
+dharma
+diamond
+die
+digitaltomorrow
+dinner
+discoinferno
+discoverglimmer
+dmca
+dmt
+doesnt end here
+dogwithcoffee
+dolphin
+don't hate me because I'm beautiful
+done
+donner
+donner party
+donnerparty
+donnerpartyatsea
+dontgiveuptheship
+dontgointothelight
+dontmehatebecauseimbeautiful
+doorscene
+dorothy
+dory
+doubloons
+downloadingpiratedfilmsisstealing
+dpr
+dracarys
+dracula
+dragon
+dragonfire
+dreadpirateroberts
+dreadpirateroberts2
+dream
+dreaming
+driftaway
+driftingaway
+driftwood
+drowned
+drowning
+drums
+drunk
+drunkonthedeep
+dude
+duel
+dunes
+dust
+dust and clay
+dustandclay
+dustinhoffman
+dynamite
+e5
+eagle
+earthrise
+east64
+eaten
+eatenalive
+eatme
+echoes
+eclipse
+elaaiun
+electricfeel64
+elhierro
+elvis
+emerge
+empire
+en garde
+end no
+end no the journey doesnt end here
+engarde
+enter sandman
+enterthevoid
+enzomolinari
+escape
+escape the island
+escape via raft
+escape64
+escapefromalcatraz
+escapethepinacoladasong
+eternalflame
+eventually
+everybodywaskungfufighting
+everythingisfine
+exhale
+exodus
+explorer
+eye
+eyeinthesky
+eyeofthetiger
+fahrenheit451
+fantasy
+far green country
+far green country under a swift sunrise
+farrahfawcett
+fatality
+fatamorgana
+fate
+fate had its chance
+fatefultrip
+fbi
+fbiantipiracywarning
+fbiopenup
+fbiraid
+fbiwarning
+feathers of an eagle
+fedex
+feelslikeweonlygobackwards
+ferryman
+feverdream
+ffffffffff
+fffffffffff
+fibyo
+fifteenmenonadeadmanschest
+fight
+fight back
+fight them off
+fight!
+fightback
+fightclub
+fightfightfight
+fightforyourright
+fightforyourrighttoparty
+fightthemoff
+fightthepower
+find her
+findher
+findingnemo
+fine
+finishhim
+fire
+fire and smoke
+fire to alert
+fire64
+fireBAD
+fireandrain
+fireatwill
+firebad
+fireball
+firecannons
+firefire
+fireflies
+firefly
+firegood
+fireinthehole
+fireinthesky
+fireisgood
+fireisonfire
+fireship
+firesignal
+firestarter
+firethecannons
+firewalkwithme
+firework
+firstruleoffightclub
+fisticuffs
+fists
+flagdown
+flaggeddown
+flame
+flameon
+flames
+flare
+flare gun
+flaregun
+flares
+flashesbeforeyoureyes
+flawlessvictory
+flee
+fletcherchristian
+flint
+flintandsteel
+flintlock
+flintstone
+floatacross
+floating
+floatingaway
+floatit
+fly
+flymetothemoon
+fordtheriver
+forfrodo
+forgondor
+forrestgump
+fortune
+fortunesafe
+fortydays
+fourtwenty
+frankenstein
+freebird
+freeross
+friction
+friendlychemist
+from
+frosty
+fuelfor
+fuerteventura
+further and further away
+galatea
+garlic
+geraultd
+gericault
+getbusylivingorgetbusydying
+getoverhere
+ghost
+ghost ship
+ghostship
+gilligans island
+gilligansisle
+gilmour
+giphy
+girl
+girlonfire
+gkfxt
+glasses
+glimmer
+glimmer in the ocean
+glimmer of hope
+go into the light
+go to the light
+goingcrazy
+goingupinsmoke
+goingwiththeflow
+gold
+gomugomu
+gondorcallsforaid
+gonecoconuts
+gonecrazy
+goodbyeyellowbrickroad
+goodnight
+gooogoogjoob
+gotothelight
+gotowardsthelight
+gowiththeflow
+grapeshot
+greatballsoffire
+greatscott
+greensmoke
+grew old
+grey havens
+grey rain curtain
+grissom
+groundcontroltomajortom
+guidelines
+gulfofaden
+gunpowder
+guybrushthreepwood
+gv4d7
+h2
+h7j3h
+habemuspapam
+hadouken
+hallelujah
+hallucination
+hallucinations
+hand to hand
+harpoon
+harrisonford
+harrynilsson
+harvestmoon
+headhunters
+heart to heart
+heartoftheocean
+heartofthesea
+heatherlocklear
+heaveho
+heaven
+heavenisaplaceonearth
+heliox
+helium
+hellomynameisinigomontoyayoukilledmyfatherpreparetodie
+help
+help us
+helpineedsomebody
+hemingway
+henrymorgan
+hephaestus
+her
+hereon gilligans island
+heresonourisle
+heretoday
+hestia
+heyerdahl
+heyyou
+heyyouguys
+high
+high tide
+highhopes
+highpressurenervoussyndrome
+hightide
+highwaytohell
+hindenburg
+hitchhiker
+hitlist
+hollandaise
+hollywood forever
+hollywoodforever
+holysmoke
+holysmokes
+home
+hook
+hope
+hotdog
+hotdogs
+hotdogsandweiners
+hotelcalifornia
+houston
+houstonwehaveaproblem
+howappropriateyoufightlikeacow
+howfarillgo
+hpns
+huck finn
+huckfinn
+huckleberry finn
+huckleberryfinn
+humantorch
+hunt
+huntgathwhalblo
+hurley
+hydreliox
+hydrogen
+hydrogenarcosis
+hydrogennarcosis
+i am alive
+i feel free now
+iamdeath
+iamfire
+iamfireiamdeath
+iamnotlefthanded
+iamthecaptainnow
+iamthewalrus
+icannotescape
+ichoosetofight
+icouldhavefit
+idie
+iftnotforthecourage
+ifyoulikepinacoladas
+ignition
+ignore
+ihavemadefire
+ihavenotyetbeguntofight
+illhaveyouknow
+illneverletgojack
+ilovethesmell
+ilovethesmellofnapalminthemorning
+iloveyou
+im alive
+imalovernotafighter
+imhere
+immigrantsong
+imstrongtothefinishcauseieatsmespinach
+imthecaptainnow
+in a bottle
+in glimmer
+in my dreams
+in the mountain valleys
+in the music
+in the song
+inabottle
+inception
+inconceivable
+indiansmokesignals
+inglimmer
+inhale
+inigomontoya
+inmusic
+inmydreams
+innerspeaker
+instantdestiny
+insultswordfighting
+interstellaroverdrive
+inthemountainvalleys
+inthemusic
+inthesong
+into digital
+into the west
+iris
+ironmaiden
+isanybodyoutthere
+isittrue
+island fever
+islandfever
+islandsinthestream
+istheendhere
+isthereanybodyoutthere
+isthisjustfantasy
+isthistheendofme
+isthisthereallife
+it is not the end
+it sinks
+ithaka
+itisnot
+itmightbetime
+its not the end
+itsinks
+ivefallenandicantgetup
+ivegotalovelybunchofcoconuts
+iveseen this movie 3 times
+iwannagohome
+iwin
+iyamwhatiyam
+jack
+jackdawson
+jacquescousteau
+jacquesmayol
+jamaisvu
+jamielee curtis
+jane fonda
+janefonda
+jaws
+jcl9c
+jcl9c HIT
+jeffprobst
+jem
+jim
+jimandhuck
+jimhawkins
+jimmorrison
+jimmybuffett
+jin
+joancollins
+joanofarc
+johnnycash
+johnpauljones
+jollyroger
+journey doesnt end here
+jules verne
+julesverne
+july201969
+jungle
+junglebook
+just another path
+justkeepswimming
+kaimana
+katniss
+keep warm
+keepthefiresburning
+keepthehomefiresburning
+keepwarm
+kellylebrock
+key-checker
+kick
+kids
+killemall
+kingdom
+knockinonheavensdoor
+knocks on my door
+kokomo
+kontiki
+kraken
+kumbaya
+kungfufighting
+laayoune
+labyrinthsofcoralcaves
+lady liberty
+lagoon
+larsulrich
+launch
+lawsuit
+learningtofly
+leather
+leathery
+leatheryskin
+leave the island
+lechuck
+ledzeppelin
+leech
+legrandbleu
+leklh
+lemondedusilence
+lestat
+letithappen
+letmegohome
+letsgetreadytorumble
+life
+lifealert
+lifeflashbeforeeyes
+lifeflashedbeforemyeyes
+lifeflashingbeforeyoureyes
+lifeinprison
+lifeisbutadream
+lifeislikeaboxofchocolates
+lifeofpi
+liftoff
+light
+light a fire
+light at the end of the tunnel
+light my fire
+lightafire
+lightafire64
+lightemup
+lighthouse
+lightitup
+lightitupforthepeople
+lightkeeper
+lightmyfire
+lightthebeacons
+lightthefire
+like robinson crusoe
+like vampires
+likerobinsoncrusoe
+limbo
+lindsey
+lines="""
+littledarkage
+livetogetherdiealone
+locke
+log raft
+logs
+lonerism
+long
+longjohnsilver
+lookatme
+lookatmeimthecaptainnow
+lookuptotheskiesandsee
+loop
+lost
+lost in time
+lostinyesterday
+love
+lovelybunchofcoconuts
+loveofmylife
+lovernotafighter
+lsd
+lucy
+lucyintheskywithdiamonds
+luffy
+lumber
+lunar module
+lunarmodule
+luxury
+lyrics
+macgyver
+machine
+made from palm tree wood
+madison
+madness
+madonna
+maersk
+maerskalabama
+magnet
+majortom
+make love not war
+makeafire
+makefire
+makelovenotwar
+mammal
+man
+mandate
+manonthemoon
+mansion
+maple
+marcopolo
+margaritaville
+margin
+mariana
+marilyn
+marilynmonroe
+marina
+marine
+market
+marktwain
+marlin
+marooned
+marriage
+marshmallow
+martini law
+martinislaw
+mary celeste
+maryread
+mask
+masterofpuppets
+match
+matches
+matchstick
+maui
+maxheadroom
+mayday
+meadow
+measure
+meddle
+medusa
+mermaid
+merrilymerrily
+mescaline
+message
+messageinabottle
+metallica
+michael
+michaelcollins
+michaelphelps
+michaelrowtheboatashore
+michaelsraft
+mina
+mirage
+mirror
+mississippi
+mississippiriver
+ml7yd
+ml7yd,zhgsm,jcl9c,pxsqo,gkfxt,sodpq
+ml7yd,zhgsm,jcl9c,pxsqo,sodpq
+ml7yd,zhgsm,jcl9c,udr8x,pxsqo,gkfxt,sodpq
+moana
+mobilis in mobili
+mobilisinmobili
+mobydick
+mobydick69420
+mockingjay
+modernmajorgeneral
+mom
+monitor
+monkey
+monkeyisland
+moon
+moon landing
+moonagedaydream
+moondance
+moonlanding
+moreguidelines
+morocco
+morse
+morse00100001
+morsecode
+mortalkombat
+morton salt girl
+mortonsaltgirl
+mountain valley
+mountain valleys
+mountainvalley
+mountainvalleys
+movie
+mrs butterworth
+mrsbutterworth
+mrsfletcher
+museum
+mushrooms
+music
+musket
+mutiny
+mutinyonthebounty
+my empire turns to dust
+my love
+my own way
+myLifeFlashedBeforeMyEyes
+mycrazylife
+mydinnerwithandre
+myeyesmyeyes
+mylove
+myraft
+mywife
+n
+name6
+nantucket
+napalm
+napster
+narcosis
+nautilus
+navy
+navy destroyer
+nde
+neardeathexperience
+nearly drowned
+ned land
+nedland
+neilarmstrong
+nemo
+neptune
+nereid
+nero
+neverland
+neverletgo
+neversaydie
+neversurrender
+newengland
+newpope
+nextrelease
+nicolascage
+nitrogen narcosis
+no
+no it isnt
+no one
+no phone no lights no motor cars
+no sleep until the light
+noah
+noahsark
+noble
+nobody
+nobodyisaboard
+noescapefromreality
+nofirewithoutsmoke
+noitsnot
+none
+noone
+nooneshowedustotheland
+nopayment
+nope
+nope lol
+nopelol
+nopelol47
+nophonenolightsnomotorcar
+noplacelikehome
+north
+north64
+nose
+nosferatu
+nosleepuntilthelight
+not a single luxury
+not the end
+not today
+not yet
+notasingleluxury
+nothing comes between me and my calvins
+nothingcomesbetweenmeandmycalvins
+nothingreallymatters
+notpennysboat
+notthebees
+nottoday
+notyet
+notyetbutsoon
+now
+noxzema
+nuts
+oaklandraiders
+oanvz
+ocean
+oceana
+oceanic815
+octopus garden
+octopuss garden
+ohthehumanity
+oldmanandthesea
+oliveoyl
+olympicflame
+olympictorch
+on the coast
+on this ship
+on top of the world
+onadarkdeserthighway
+one giant leap
+one giant step
+one small step
+onegiantleap
+oneifbyland
+onemorehour
+oneofthesedays
+onepiece
+onesmallstep
+onlyhuman
+onlyyoucanpreventforestfires
+onthecoast
+ontheotherside
+ontopoftheworld
+openyoureyes
+opera
+oregontrail
+orinocoflow
+other side
+otherside
+ourloveisgold
+outrigger
+outwitoutlastoutplay
+oven
+overandout
+overheadthealbatross
+overhere
+overtherainbow
+oxygen
+paddle
+paint our names
+paint our names across the silver sky
+pale blue dot
+palebluedot
+palm
+palm huts
+palm raft
+palm tree wood
+palm wood
+palmhuts
+palms
+palmtree
+palmtreewood
+palmwood
+pamelaanderson
+pancake glue
+pantene
+papillon
+paradise
+parlay
+parley
+passing ship
+passingship
+passphrase
+password
+paulaabdul
+peace
+pelargir
+penelope
+penny
+pennysboat
+pennywidmore
+peopleforbreakfast
+pepperland
+persephone
+peterpan
+peyote
+pi
+piecesofeight
+piggysglasses
+piggysspecs
+pinacolada
+pinacoladasong
+pinkfloyd
+piracyisacrime
+piracyitsacrime
+pirate battle
+pirate bay
+pirate ship
+pirate ship bw.jpeg
+pirate-battle
+pirate-battle (y6cd1)
+piratebattle
+pirateofpenzance
+pirateraft
+pirateship
+pirateshipbw
+pistol
+pittsburghpirates
+plank
+plymouthrock
+police
+pope
+popeye
+popeyethesailorman
+poseidon
+poseidonswife
+posthumousforgiveness
+powder
+prepareforboarding
+preparetodie
+presseftopayrespects
+pressf
+pressftopayrespects
+primitive as can be
+princessbride
+prodigy
+prometheus
+proudmary
+psychedelic
+punch
+purity
+putthelimeinthecoconut
+pxsqo
+pyre
+pyro
+pyromaniac
+queen of the sea
+queenannesrevenge
+queenofthesea
+questforfire
+raft
+raft built
+raft escape
+raft made from palm tree wood
+raft-escape
+raft-escape (zhgsm) / smoke-signals (jcl9c)
+raft64
+raftbuilt
+raftescape
+rafting
+raftofthemedusa
+raiders
+rain
+raiseyourhands
+ram
+ramit
+ramming
+rammingspeed
+rapids
+rapture
+rapture of the deep
+reallife
+rebirth
+reborn
+redbeard
+redpill
+releasethekraken
+renfield
+rescue
+rescue me
+rescued
+rescueme
+rescueship
+resurface
+retrograde
+retrograde1
+richardparker
+richardphillips
+rideethelightning
+ringoffire
+rip
+rise
+risingtothesurface
+rivercrossing
+robinsoncrusoe
+rocket
+rocketman
+rockets
+rocktheboat
+rocky
+rogerwaters
+rollinontheriver
+rosebud
+row away
+rowrowrowyourboat
+royal
+rub two sticks
+rubberducky
+rubtwostickstogether
+rubyslippers
+rufio
+rum
+run
+runforrestrun
+rupertholmes
+safe
+sahara
+sail away
+sail for help
+sail into the west
+sailaway
+sailho
+sailing
+salacia
+same island
+samsungt5
+sanddunes
+santiago
+sargasso
+sargassosea
+satoshi
+saturn v
+saturnv
+save us
+savemysoul
+savvy
+sawyer
+scouts
+sea
+seahitchhiker
+season
+second chance
+seed
+seeders
+seekanddestroy
+seeyouonthedarksideofthemoon
+seeyouspacecowboy
+semaphore
+sendinganSOStotheworld
+sendinganostotheworld
+sendingoutansos
+september261964
+set ground on the shore
+set sail that day
+setfiretotherain
+setthecontrolsfortheheartofthesun
+shadow of the sun
+shark
+shark bite
+sharks
+she
+shera
+shimmeringearth
+shineonyoucrazydiamond
+shiphuntshalpar
+shipwreck
+shipwrecked
+shiver me timbers
+shiverme timbers
+siberianbreaks
+signal
+signal fire
+signal platform
+signal tower
+signalfire
+signalflare
+silkroad
+silver bullets
+silver glass
+silver sky
+silverbullets
+silversky
+sink
+sinking
+sinkit
+sinkthem
+siren
+sirens
+sit right back
+six
+sixdaysevennights
+skin and bones
+skinandbones
+sleighride
+sloopjohnb
+smaug
+smee
+smellofnapalm
+smoke
+smoke signal
+smoke signals
+smoke-signals
+smoke64
+smokeandmirrors
+smokemonster
+smokeonthewater
+smokesignal
+smokesignals
+smokeweed
+smokeweedeveryday
+smokey
+smokeybear
+smokeyrobinson
+smokeythebear
+smokie
+smokingkills
+smores
+sniff
+sodpq
+soitgoes
+sojoinusherereachweek
+somalia
+somalipirates
+soon
+sos
+sotheygo
+south
+south64
+soylentgreen
+soylentgreenispeople
+space
+spacemonkeys
+spaceoddity
+spacetime
+spalding
+spartans
+spinach
+splash
+stairwaytoheaven
+stanger
+starkist
+starmanwaitinginthesky
+startthefire
+stealingisagainstthelaw
+stevemcqueen
+still alive
+stmanger
+strangerspassinginthestreet
+strawhat
+sttheresa
+styx
+sub
+sue
+summer nights
+sun
+sun kissed the mountains
+sunk
+sunny
+sunset
+supernova
+surface
+surrender
+survivor
+swashbuckle
+swashbuckler
+sweetheart
+swift sunrise
+swissfamilyrobinson
+sword
+sword fight
+swordfight
+swords
+sydbarrett
+t*.py
+t10.py
+t13.py
+t33.py
+t35.py
+t36.py
+t37.py
+t38.py
+t39.py
+t40.py
+t5.py
+t8.py
+t_front2.py
+tab
+take a big breath
+takeabigbreath
+takeadeepbreath
+tallyho
+tameimpala
+tampabaybuccaneers
+tarfaya
+the
+the beginning
+the bends
+the bermuda triangle
+the castaways
+the coast
+the cure is a curse
+the dolphin
+the dust has just settled
+the eagle has landed
+the end
+the ghost
+the girl
+the grey rain curtain of this world rolls back
+the journey does not end here
+the journey doesnt end here
+the light
+the minnow would be lost
+the mountain valleys
+the one you love
+the other side
+the sea
+the tiny ship was tossed
+the weather started getting rough
+the west
+the woman
+the-vault
+theabyss
+theatlasmountains
+thebeaconsarelit
+thebeaconsofminastirith
+thebends
+thebermudatriangle
+thebigblue
+thebluelagoon
+thecallofthewild
+thecliffsofinsanity
+thecode
+theconstant
+thecrocodile
+thecureisacurse
+thedolphin
+thedoors
+theeaglehaslanded
+theendmybeautifulfriend
+thefearlesscrew
+theflame
+thegilligansislandraft
+thegirl
+thegirlonfire
+thegoonies
+thegreatescape
+thehatch
+thehumantorch
+thejunglebook
+thelessiknowthebetter
+thelunaticisonthegrass
+themartiniseffect
+thematrix
+theminnowwouldbelost
+theminnowwouldbelosttheminnowwouldbelost
+themoon
+theoneyoulove
+theothers
+theotherside
+thepiratesofpenzance
+theposeidonadventure
+thepowerisyours
+there
+theresnoplacelikehome
+therestarehereongilligansisle
+therewasroomonthedoor
+thesea
+thesecretofmonkeyisland
+theshawshankredemption
+thesignal
+thesilentworld
+theslowrush
+thesmokemonster
+thetinyshipwastossed
+thetis
+thetribehasspoken
+theweatherstartedgettingrough
+thewickerman
+theworldisgoingup
+theyouth
+this is not the end
+thisisfine
+thisisnotpennysboat
+thisissparta
+thisistheendmyonlyfriend
+thisistheislesisle
+thor
+thorheyerdahl
+three days
+three hour tour
+threehours
+threehourtour
+tickticktock
+tictoc
+tikitorch
+timeisgone
+timetopretend
+titanic
+to
+tokeepwarm
+tomhanks
+tomorrow0010000
+tomorrowneverknows
+tomsawyer
+tonight
+tonightwedineinhell
+torch
+torpedo
+toto
+touche
+tranquility
+tranquilitybase
+treasure
+treasure map
+treasure-map
+treasure-map-97328971321 (sodpq)
+treasureisland
+treasuremap
+treeoflife
+trieste
+trimix
+trip
+triton
+troll
+truffleshuffle
+tt6yc
+tunnel
+tunnelvision
+turnoffyourmindrelaxandfloatdownstream
+twain
+twentythousandleagues
+twinpeaks
+twoifbysea
+twoonaraft
+tylerdurden
+uncharted desert isle
+under the sea
+undersea
+undying lands
+universe
+upforair
+upinsmoke
+upup
+upupandaway
+utorrent
+valhalla
+valinor
+vampire
+vampireb
+vampires
+vandhelsing
+vanna
+vannawhite
+venilia
+venus
+verne
+vestalvirgins
+via
+victory
+vikings
+vines
+virgilbrigman
+virtual moon
+volleyball
+vulcan
+vy58x
+w
+wake up
+wakeup
+walk the plank
+walkingonthemoon
+walkintothelight
+walktheplank
+walt
+waltlloyd
+war
+wastingawayagaininmargaritaville
+watersgilmour
+waterworld
+wavebreaker7109
+wavefordown
+wavethem down
+waveyourarms
+we are here
+wecomefromthelandoftheiceandsnow
+weconfromthelandoftheiceandsnow
+wedeadpirates
+wedidntstartthefire
+wedonottalkaboutfightclub
+weekendwars
+wehavetogoback
+weiner
+weiners
+welcome home
+welcome home party
+welcomehome
+welcomehomeparty
+well that isnt so bad
+wendy
+weneedabiggerboat
+weneedtogoback
+werewolf
+weshallfightonthebeaches
+west64
+westernsahara
+westley
+wewerelost
+wewillfightonthebeaches
+wewillmeetagain
+what gandalf
+whateverhappenedhappened
+when you depart find mystery
+where
+where's the beef
+whereisthesmoke
+wheresthebeef
+wheretheressmoke
+wheretheressmoketheresfire
+white shores
+white shores and beyond
+white smoke
+whiteflag
+whitelight
+whitesmoke
+whitesurrender
+whitewater
+whitneyhouston
+whyistherumgone
+wiener
+wieners
+wife
+wiiiilson
+wildfire
+williamkidd
+wilsonnn
+win
+winner
+winners
+winteriscoming
+wishyouwerehere
+witchoftheeast
+wizardofoz
+wonderwoman
+wood
+xjnxo
+y6cd1
+y6cd1,ml7yd,zhgsm,jcl9c,pxsqo,sodpq
+y756h
+yarr
+yellow submarine
+yes
+yesimchanging
+yo ho
+yoadrian
+yoho
+yohoandabottleofrum
+yohoyoho
+yohoyohoapirateslifeforme
+you shall not pass
+youarewaitingforatrain
+youdie
+youfightlikeacow
+youfightlikeadairyfarmer
+youhavediedofdysentery
+youhavemysword
+youkilledmyfather
+youregonnaneedabiggerboat
+yourenogonnaneedabiggerboat
+yourlove
+yousankmybattleship
+youshallnotpass47
+youshallpass47
+yousunkmybattleship
+youth
+youvegottafightforyourright
+youwouldntdownloadacar
+youwouldntstealacar
+youwouldntstealahandbag
+zhgsm
+zhgsm HIT
+ziggy
+zihuatanejo
+zippo
+zoro
+|
+—
+
+## 9. Public sources
+- puzzles.agntn.dev/collections/smith-lyle-moore/glimmer and /born-to-be-wild (Hunt #1 full solution)
+- github.com/floflo777/open-crypto-puzzles (2-mid-prizes/smith-lyle-moore-hunt-2-0-032btc), github.com/diploux/unsolved-crypto-puzzles
+- reddit r/smithlylemoore, thread wojppy. Our hint request is comment ph62e5z by u/Serious-Bad8845 (no reply from the author yet).
+- Public video from the east branch: video.wixstatic.com/video/144728_08cb40115a304bacaf3b924b96e5bf23/1080p/mp4/file.mp4
+## 10. Rules from the owner
+Never spend or move funds without explicit OK. Don't email the band, don't DM other solvers.

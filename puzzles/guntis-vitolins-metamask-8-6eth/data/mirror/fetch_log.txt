@@ -1,0 +1,6 @@
+
+## 2026-10-17 20:05
+piped_streams.json | https://pipedapi.kavin.rocks/streams/w4mpiuBP_aY | 403 | 4548
+piped_video_info.json | https://pipedapi.kavin.rocks/videos/w4mpiuBP_aY | 403 | 4548
+invidious_video.json | https://yewtu.be/api/v1/videos/w4mpiuBP_aY | ERR | SSLError(MaxRetryError("HTTPSConnectionPool(host='yewtu.be', port=443): Max retries exceeded with url: /api/v1/videos/w4mpiuBP_aY (Caused by SSLError(
+wayback_video_2020.html | https://web.archive.org/web/20200626184951id_/https://www.youtube.com/watch?v=w4mpiuBP_aY | 200 | 315686

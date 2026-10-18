@@ -1,0 +1,15 @@
+use shared::SolvableMsg
+
+pub contract DummyGame {
+    mut solved: bool,
+
+    init(is_solved: bool) uses (mut solved) {
+        solved = is_solved
+    }
+
+    recv SolvableMsg {
+        IsSolved -> bool uses (solved) {
+            solved
+        }
+    }
+}

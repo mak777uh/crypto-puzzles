@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Path to Greatness: Treasure Hunt</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="lookingood.css">
+        <script>
+            fetch("https://api.blockcypher.com/v1/ltc/main/addrs/LUtL7qnm3gzxKjHcfVLSjydqhhinTVmTmS/balance").then(function(response) {
+                return response.json();
+            }).then(function(data) {
+                final_balance = data.final_balance / 100000000;
+                document.getElementById("balance").innerHTML = new String(final_balance) + " LTC";
+            }).catch(function() {
+                console.log("Failed to retrieve balance.");
+            });
+        </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../index.html">P2G: Treasure Hunt</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="p2g.html">P2G</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <h1 style="text-align: center; color: white">Path to Greatness: Treasure Hunt</h1>
+            <h1 style="margin-top: 50px">What the heck is this thing?</h1>
+            <p>It's kinda two things:</p>
+            <h2>It's a gameplay demo for Path to Greatness</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>It's free, and you can <a href="download.html">download</a> it right now. Even better, if you're on a Windows PC, you can actually play it after downloading it. In this demo you can parkour your way around an obstacle course while collecting orbs. Collect all the orbs and a timer will stop. See if you can beat my time of 8:10 with lava turned on. Oh yeah, you can turn on lava. This is an early gameplay demo, but I think it's fun, and I wanted to share with you what I've got so far. Plus I'm using it as a delivery system for something else...</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="screenshot.jpg" class="img-responsive fit-image">
+                </div>
+            </div>
+            <h2>It's an online treasure hunt</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>And you can win Litecoin by solving the puzzle. Clues can be found inside the demo, and will lead you to a Litecoin wallet's private key. Once found, take your prize by sending the Litecoin to your own Litecoin wallet. Good luck, and have fun!</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/T98D6Otefgs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 50px">Current Prize Value:</p>
+            <p id="balance" style="color: rgb(255, 225, 53); font-family: 'Console', monospace; text-align: center;font-size: 50px; margin-top: -20px">Loading balance...</p>
+            <p style="text-align: center; margin-bottom: 50px;">Increases with donations, and is updated daily, or when a threshold is met.</p>
+            <h1>Justin needs money to finish this game</h1>
+            <p>The truth is, developing this game is taking longer than I initially thought. Duh. Games are hard to make, and I really should know that by now. But I have a vision for this game, and it includes an amazing, parkourlicious world. The demo is a small taste of what <a href="p2g.html">Path to Greatness</a> will become. The problem is, I don't have enough money to keep working on it right now. However, I didn't want to just make another boring Kickstarter or Patreon page, which is why I made this demo/treasure hunt. If you donate to the address below, half of it will go to me to keep working on P2G, and the other half will go to the treasure hunt's Litecoin prize. My hope is that the treasure hunt will be something exciting I can offer you right now, and the demo will showcase the potential of the game, and what your donation could lead to. Any donation, wee or mighty, is super-duper appreciated. Thank you!</p>
+        </div>
+        <div class="container">
+            <div class="row" style="background-color: rgb(44, 44, 44);">
+                <div class="col-md-6">
+                    <h3 class="donate">Donate Litecoin (LTC)</h3>
+                    <p class="donate" style="margin-top: 35px">Litecoin address:</p>
+                    <p class="donate" style="font-size: 20px; color:cyan">LScab9KZsy9UeHr6mxxAcDqR6nYSwacWdB</p>
+                    <p class="donate" style="margin-top: 35px">Half of your donation will help fund the development of Path to Greatness, and the other half will go to the treasure hunt's prize. Thank you for your donation!</p>
+                    <p class="donate" style="margin-top: 35px"><span style="color: yellow">Warning: </span>Only send Litecoin (LTC) to this address. Do not send Bitcoin, or any other currency to this address.</p>
+                    <br>
+                    <p class="donate"><a  href="donate.html" style="color: rgb(37, 255, 135);">Other ways to donate</a></p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive center-block" style="max-width: 75%" src="qrs/ltc_main.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <p style="margin-top: 30px; margin-bottom: 30px; font-size: 20px"><a href="https://twitter.com/jpatt94">Follow me on Twitter</a></p>
+        </div>
+    </body>
+</html>

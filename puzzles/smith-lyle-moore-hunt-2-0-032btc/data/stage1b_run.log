@@ -1,0 +1,16 @@
+compiling planted-target module ...
+  compiled in 0.2s
+  planted BIP84 vector: FOUND at row 0
+compiling Glimmer-target module ...
+  compiled in 0.0s
+  negative control (reference mnemonic vs Glimmer target): no hit
+placement 0: 5159239 valid, gen 0.1s, derive 24.8s (207981/s), hit=0
+placement 1: 5158471 valid, gen 0.1s, derive 24.8s (208304/s), hit=0
+placement 2: 5159597 valid, gen 0.1s, derive 24.9s (207372/s), hit=0
+placement 3: 5160049 valid, gen 0.1s, derive 25.0s (206530/s), hit=0
+placement 4: 5165157 valid, gen 0.1s, derive 25.1s (205706/s), hit=0
+placement 5: 5161459 valid, gen 0.1s, derive 25.2s (205081/s), hit=0
+placement 6: 5164038 valid, gen 0.1s, derive 25.2s (204662/s), hit=0
+placement 7: 5161751 valid, gen 0.1s, derive 25.2s (204569/s), hit=0
+placement 8: 5161840 valid, gen 0.1s, derive 25.3s (203978/s), hit=0
+done: 46451601 derivations in 226.4s, no match

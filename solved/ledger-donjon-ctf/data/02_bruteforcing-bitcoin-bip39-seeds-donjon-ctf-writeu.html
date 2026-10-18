@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="dark-mode" lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Bruteforcing Bitcoin BIP39 Seeds: Scissors Secret Sharing Ledger Donjon CTF Writeup | CryptoHack Blog</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Bruteforcing Bitcoin BIP39 Seeds: Scissors Secret Sharing Ledger Donjon CTF Writeup" />
+<meta name="author" content="joachim" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This challenge was one of the most straightforward to understand in the Ledger Donjon CTF. It involved bruteforcing a 12-word Bitcoin seed passphrase by starting off with partial information about it. Writeup by joachim." />
+<meta property="og:description" content="This challenge was one of the most straightforward to understand in the Ledger Donjon CTF. It involved bruteforcing a 12-word Bitcoin seed passphrase by starting off with partial information about it. Writeup by joachim." />
+<link rel="canonical" href="https://blog.cryptohack.org/bruteforcing-bitcoin-bip39-seeds-donjon-ctf-writeup" />
+<meta property="og:url" content="https://blog.cryptohack.org/bruteforcing-bitcoin-bip39-seeds-donjon-ctf-writeup" />
+<meta property="og:site_name" content="CryptoHack Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-11-24T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Bruteforcing Bitcoin BIP39 Seeds: Scissors Secret Sharing Ledger Donjon CTF Writeup" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"joachim"},"dateModified":"2020-11-24T00:00:00+00:00","datePublished":"2020-11-24T00:00:00+00:00","description":"This challenge was one of the most straightforward to understand in the Ledger Donjon CTF. It involved bruteforcing a 12-word Bitcoin seed passphrase by starting off with partial information about it. Writeup by joachim.","headline":"Bruteforcing Bitcoin BIP39 Seeds: Scissors Secret Sharing Ledger Donjon CTF Writeup","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.cryptohack.org/bruteforcing-bitcoin-bip39-seeds-donjon-ctf-writeup"},"url":"https://blog.cryptohack.org/bruteforcing-bitcoin-bip39-seeds-donjon-ctf-writeup"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" type="text/css"  href="/assets/css/style.css">
+  <link rel="stylesheet" type="text/css"  href="/assets/css/highlight.css">
+  <link rel="stylesheet" type="text/css"  href="/assets/css/all.min.css">
+  <link rel="stylesheet" type="text/css"  href="/assets/css/v4-shims.min.css"><link type="application/atom+xml" rel="alternate" href="https://blog.cryptohack.org/feed.xml" title="CryptoHack Blog" />
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="36x36"  href="/assets/favicon/android-icon-36x36.png">
+<link rel="icon" type="image/png" sizes="48x48"  href="/assets/favicon/android-icon-48x48.png">
+<link rel="icon" type="image/png" sizes="72x72"  href="/assets/favicon/android-icon-72x72.png">
+<link rel="icon" type="image/png" sizes="96x96"  href="/assets/favicon/android-icon-96x96.png">
+<link rel="icon" type="image/png" sizes="144x144"  href="/assets/favicon/android-icon-144x144.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+
+<!-- Generic Metadata -->
+<link rel="canonical" href="https://blog.cryptohack.org" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://blog.cryptohack.org" />
+<meta property="og:site_name" content="CryptoHack" />
+<meta property="og:image" content="https://blog.cryptohack.org/assets/images/brain.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@CryptoHack__" />
+<meta name="twitter:image" content="https://blog.cryptohack.org/assets/images/brain.png" />
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  processEscapes: true
+}
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<script>
+  function isLightThemeSelected() {
+      return document.cookie.match(/theme=light/i) != null
+  }
+
+  function setThemeFromCookie() {
+      var html = document.getElementsByTagName('html')[0]
+      html.className = isLightThemeSelected() ? 'light-mode' : 'dark-mode'
+      console.log('Loaded cookie: ' + document.cookie)
+  }
+
+  (function() {
+    setThemeFromCookie()
+  })();
+</script>
+</head>
+<body><header class="site-header"><div class="top-nav">
+      <a class="site-title" rel="author" href="/">CryptoHack Blog</a>
+
+      <a class="site-icon" href="https://cryptohack.org"><img src="/assets/images/icon.png" alt="cryptohack icon"></a>
+    </div>
+</header>
+<main class="page-content" aria-label="Content">
+        <div class="wrapper">
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Bruteforcing Bitcoin BIP39 Seeds: Scissors Secret Sharing Ledger Donjon CTF Writeup</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2020-11-24T00:00:00+00:00" itemprop="datePublished">
+        Nov 24, 2020
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">joachim</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>This challenge was one of the most straightforward to understand in the <a href="https://donjon.ledger.com/Capture-the-Fortress/">Ledger Donjon CTF</a>. It involved bruteforcing a 12-word Bitcoin seed passphrase by starting off with partial information about it. Writeup by joachim.</p>
+
+<h2 id="scissors-secret-sharing-100pts">Scissors Secret Sharing (100pts)</h2>
+
+<blockquote>
+  <p>A company found a clever way to split its seed used to access their Bitcoin account: it has converted its seed phrase in 12 words with BIP39, and gave one word of the mnemonic to 12 employees.
+Alice entered the manager’s office and was given the first word on a piece of paper. Then Bob got the second word. Eve entered, and when she opened the door, a draft made all the papers fell on the floor. They are now totally mixed up.
+The company is trying to access its funds at address 1EHiMwCPzcvMdeGowsowVF2X2PgLo67Qj7, without success yet. Can you help it?
+Flag is CTF{&lt;4th word&gt;_&lt;9th word&gt;_&lt;11th word&gt;_&lt;10th word&gt;}.
+For example, is mnemonic is “satoshi security lonely cupboard magic grow cup buddy cancel desert jar face”, address and flag will be: 1J5ryMwcUmb7XiuDPqYjxSywJNf37FNdmA and CTF{cupboard_cancel_jar_desert}.</p>
+</blockquote>
+
+<p>We were given a mnemonic.txt file which contains the following contents:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Alice  since
+Bob    desk
+???    zone
+???    leaf
+???    luggage
+???    hobby
+???    depart
+???    thrive
+???    practice
+???    carbon
+???    prison
+???    ivory
+
+Bitcoin address: 1EHiMwCPzcvMdeGowsowVF2X2PgLo67Qj7
+</code></pre></div></div>
+
+<p>We know 12 words would have $12! = 479001600$ permutations, far too much to brute-force. However, if the two first words are fixed, we only have to brute-force $10! = 3628800$ permutations, which is a bit more reasonable. The easiest way to do this is just generating all permutations of the last 10 words, and computing the address associated with the mnemonic.</p>
+
+<p>Looking at the description, BIP39 (Bitcoin Improvement Proposal 39) is used for the mnemonic. This means the 11 first words of the mnemonic are data words, and the 12th word is a checksum word. We can use this to improve the performance of the brute-force even more, and exit before calculating the address if the checksum does not verify.</p>
+
+<p>Finally, there are a lot of different ways to convert a mnemonic to an address. If we put the provided example in <a href="https://iancoleman.io/bip39/">https://iancoleman.io/bip39/</a> and play around with some of the settings, we can see that the BIP44 derived address with index 0 is the one to target (no hardened addresses).</p>
+
+<p>To implement this, we used the <a href="https://github.com/ebellocchia/bip_utils">Python BIP utility library</a>, which also has a handy example for key derivation.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">bip_utils</span> <span class="kn">import</span> <span class="n">Bip39SeedGenerator</span><span class="p">,</span> <span class="n">Bip39MnemonicValidator</span>
+<span class="kn">from</span> <span class="nn">bip_utils</span> <span class="kn">import</span> <span class="n">Bip44</span><span class="p">,</span> <span class="n">Bip44Coins</span><span class="p">,</span> <span class="n">Bip44Changes</span>
+<span class="kn">import</span> <span class="nn">itertools</span>
+
+<span class="n">address</span> <span class="o">=</span> <span class="s">"1EHiMwCPzcvMdeGowsowVF2X2PgLo67Qj7"</span>
+<span class="n">words_prefix</span> <span class="o">=</span> <span class="p">[</span><span class="s">'since'</span><span class="p">,</span> <span class="s">'desk'</span><span class="p">]</span>
+<span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s">'zone'</span><span class="p">,</span> <span class="s">'leaf'</span><span class="p">,</span> <span class="s">'luggage'</span><span class="p">,</span> <span class="s">'hobby'</span><span class="p">,</span> <span class="s">'depart'</span><span class="p">,</span> <span class="s">'thrive'</span><span class="p">,</span> <span class="s">'practice'</span><span class="p">,</span> <span class="s">'carbon'</span><span class="p">,</span> <span class="s">'prison'</span><span class="p">,</span> <span class="s">'ivory'</span><span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">generate_address</span><span class="p">(</span><span class="n">words</span><span class="p">):</span>
+    <span class="n">mnemonic</span> <span class="o">=</span> <span class="s">" "</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+    <span class="c1"># Early exit if the checksum word is wrong.
+</span>    <span class="k">if</span> <span class="ow">not</span> <span class="n">Bip39MnemonicValidator</span><span class="p">(</span><span class="n">mnemonic</span><span class="p">).</span><span class="n">Validate</span><span class="p">():</span>
+        <span class="k">return</span> <span class="bp">False</span>
+
+    <span class="c1"># Derive the seed bytes from the mnemonic.
+</span>    <span class="n">seed_bytes</span> <span class="o">=</span> <span class="n">Bip39SeedGenerator</span><span class="p">(</span><span class="n">mnemonic</span><span class="p">).</span><span class="n">Generate</span><span class="p">()</span>
+    <span class="c1"># Derive the master BIP44 key from the seed bytes.
+</span>    <span class="n">bip44_mst</span> <span class="o">=</span> <span class="n">Bip44</span><span class="p">.</span><span class="n">FromSeed</span><span class="p">(</span><span class="n">seed_bytes</span><span class="p">,</span> <span class="n">Bip44Coins</span><span class="p">.</span><span class="n">BITCOIN</span><span class="p">)</span>
+    <span class="c1"># Derive account 0 for Bitcoin: m/44'/0'/0'.
+</span>    <span class="n">bip44_acc</span> <span class="o">=</span> <span class="n">bip44_mst</span><span class="p">.</span><span class="n">Purpose</span><span class="p">().</span><span class="n">Coin</span><span class="p">().</span><span class="n">Account</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="c1"># Derive the external chain: m/44'/0'/0'/0
+</span>    <span class="n">bip44_change</span> <span class="o">=</span> <span class="n">bip44_acc</span><span class="p">.</span><span class="n">Change</span><span class="p">(</span><span class="n">Bip44Changes</span><span class="p">.</span><span class="n">CHAIN_EXT</span><span class="p">)</span>
+    <span class="c1"># Derive the first address of the external chain: m/44'/0'/0'/0/0
+</span>    <span class="n">bip44_addr</span> <span class="o">=</span> <span class="n">bip44_change</span><span class="p">.</span><span class="n">AddressIndex</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">bip44_addr</span><span class="p">.</span><span class="n">PublicKey</span><span class="p">().</span><span class="n">ToAddress</span><span class="p">()</span> <span class="o">==</span> <span class="n">address</span>
+
+
+<span class="k">for</span> <span class="n">perm</span> <span class="ow">in</span> <span class="n">itertools</span><span class="p">.</span><span class="n">permutations</span><span class="p">(</span><span class="n">words</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">generate_address</span><span class="p">(</span><span class="n">words_prefix</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">perm</span><span class="p">)):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">words_prefix</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">perm</span><span class="p">))</span>
+        <span class="nb">exit</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>After running for some time, this program outputs <code class="language-plaintext highlighter-rouge">['since', 'desk', 'thrive', 'carbon', 'zone', 'prison', 'leaf', 'depart', 'hobby', 'practice', 'ivory', 'luggage']</code>.
+This results in the flag <code class="language-plaintext highlighter-rouge">CTF{carbon_hobby_ivory_practice}</code>.</p>
+
+
+  </div><a class="u-url" href="/bruteforcing-bitcoin-bip39-seeds-donjon-ctf-writeup" hidden></a>
+</article>
+</div>
+
+    </main><footer class="site-footer h-card">
+  <div class="footer-wrap">
+    <div class="footerLinks">
+        <div>
+          <h5>CryptoHack</h5>
+          <a id="changeTheme">Light Mode</a><br>
+          <a href="https://cryptohack.org">CryptoHack</a><br>
+          <a href="https://cryptohack.org/faq/">FAQ</a><br>
+          <a href="https://blog.cryptohack.org">Blog</a><br>
+          <a href="/feed.xml">Blog RSS Feed</a><br>
+          <span class="footerIcon">
+            <a href="https://twitter.com/cryptohack__" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://discord.gg/h9E7cna5pV" aria-label="Discord"><img src="https://cryptohack.org/static/img/Discord-Logo-Color.svg" width="25" style="padding-bottom: 10px;"></i></a>
+            <a href="https://patreon.com/cryptohack" aria-label="Patreon"><i class="fab fa-patreon"></i></a>
+          </span><br>
+        </div>
+      </div>
+
+
+      <div class="credits">
+        <h5>Credits</h5>
+        Illustrations from <a href="https://icons8.com">Ouch.pics</a><br>
+        Drawn by <a href="https://dribbble.com/thierryfousse">Thierry Fousse</a>
+      </div>
+
+      <div class="copyright">
+        <span>
+          <a href="https://cryptohack.org/privacy-policy/">Privacy Policy</a> &nbsp;
+        </span>
+
+        <span>
+          © 2021 CryptoHack
+        </span>
+      </div>
+  </div>
+</footer>
+</body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    function updateThemeToggleFooter() {
+        var elem = document.querySelector('#changeTheme');
+        elem.innerHTML = isLightThemeSelected() ? 'Dark Mode' : 'Light Mode'
+    }
+
+    (function() {
+      updateThemeToggleFooter()
+    })();
+
+    function togglePageContentLightDark() {
+        var html = document.getElementsByTagName('html')[0]
+        var currentClass = html.className
+        var newClass = html.className == 'dark-mode' ? 'light-mode' : 'dark-mode'
+        html.className = newClass
+
+        document.cookie = 'theme=' + (newClass == 'light-mode' ? 'light' : 'dark') + '; SameSite=Strict; path=/; domain=cryptohack.org; expires=Fri, 31 Dec 9999 23:59:59 GMT'
+        console.log('Cookies are now: ' + document.cookie)
+
+        updateThemeToggleFooter()
+    }
+
+    $("#changeTheme").on("click", function(e){
+      togglePageContentLightDark();
+    });
+  </script>
+
+</html>

@@ -1,0 +1,36 @@
+=== T1: bitboard ONE_MOVE: moveField(15) c override slot0 -> затем isSolved ===
+  moveField(15): SUCCESS
+  isSolved после: true
+  => механика override+последовательность РАБОТАЕТ
+=== T1b: то же, но dummy без кода (проверка codesize-check) ===
+  moveField(15) c codeless dummy: SUCCESS (codesize не проверяется)
+=== T2: реальное состояние, moveField(11) БЕЗ override → должен ревертнуться ===
+  moveField(11): REVERT 0x
+=== T3: claim(bitboard) на РЕШЁННОЙ доске + фейковый лок → ожидание: успех, balance -0.25 ===
+  claim: SUCCESS
+  registry balance после: 0.75 ETH (ожидание при выплате: 0.75)
+  logs: []
+=== T4: claim на всех 7 играх (реальные НЕрешённые доски) + фейковый лок ===
+  Game          claim: revert 0x  | balance=1.0
+  Game2D        claim: revert 0x  | balance=1.0
+  GameBitboard  claim: revert 0x  | balance=1.0
+  GameEnum      claim: revert 0x  | balance=1.0
+  GameMonadic   claim: revert 0x  | balance=1.0
+  GameNested    claim: revert 0x  | balance=1.0
+  GameTrait     claim: revert 0x  | balance=1.0
+=== T5: isSolved на 24 досках × 7 игр (сравнение с JS) ===
+  Game: 27 досок — готово
+  Game2D: 27 досок — готово
+  GameBitboard: 27 досок — готово
+  GameEnum: 27 досок — готово
+  GameMonadic: 27 досок — готово
+  GameNested: 27 досок — готово
+  GameTrait: 27 досок — готово
+  T5 итог: 189 тестов, расхождений: 0
+=== T6: индексы вне диапазона ===
+  moveField(16): revert 0x
+  moveField(2^200+16): revert 0x
+  Game2D getBoard(16,0): revert 0x
+  Game2D getBoard(0,2^200): revert 0x
+
+ВСЁ. Время: 59s

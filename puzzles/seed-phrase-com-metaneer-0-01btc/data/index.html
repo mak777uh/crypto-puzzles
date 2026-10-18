@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--  "If you're not embarrassed by the first version of your product, you've launched too late." -RH -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' http: https:; style-src 'self' 'unsafe-inline' https:; frame-src 'self' https:;">
+        <title>seed-phrase.com</title>
+        <link rel="icon" type="image/png" sizes="256x256" href="img/SPfavicon-256x256.png">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f0f0f0;
+            }
+            
+            header {
+                background-color: #222;
+                color: #fff;
+                padding: 5px;
+                text-align: center;
+            }
+            
+            .container {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            
+            .container h2 {
+                margin-block-start: 0.1em;
+                margin-block-end: 0.1em;
+            }
+            
+            .container img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+            
+            .clues {
+                background-color: #f9f9f9;
+                padding: 10px;
+                border: 1px solid #ddd;
+            }
+            
+            .clues h2 {
+                margin-block-start: 0.1em;
+                margin-block-end: 0.1em;
+            }
+            
+            .clue {
+                margin-bottom: 10px;
+                background-color: rgba(0, 0, 0, 0.05);
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+            
+            .encrypt-decrypt-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 20px;
+                width: 800px;
+            }
+            
+            .section {
+                background: #fff;
+                padding: 0px 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                box-sizing: border-box;
+            }
+            
+            .encrypt-tool-form-group {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 20px;
+            }
+            
+            .encrypt-tool-form-group label {
+                margin-bottom: 5px;
+            }
+            
+            .encrypt-tool-form-group input, .encrypt-tool-form-group textarea, .encrypt-tool-form-group button {
+                padding: 10px;
+                font-size: 1em;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                width: 100%;
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+            
+            .encrypt-tool-form-group textarea {
+                height: 80px;
+                resize: vertical;
+            }
+            
+            .encrypt-tool-form-group button {
+                background: #007BFF;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                width: auto;
+            }
+            
+            .encrypt-tool-form-group button:hover {
+                background: #0056b3;
+            }
+            
+            .encrypt-tool-button-container {
+                display: flex;
+                align-items: center;
+            }
+            
+            .encrypt-tool-button-container .error-message {
+                margin-left: 10px;
+            }
+            
+            .error-message {
+                color: red;
+                font-size: 0.9em;
+                margin-top: -10px;
+                margin-bottom: 10px;
+            }
+            
+            .encrypt-tool-form-group #copyFieldsButton {
+                color: #007BFF;
+                text-decoration: underline;
+                cursor: pointer;
+                font-size: 0.9em;
+                padding: 0;
+                margin: 0;
+                border: none;
+                background: none;
+            }
+            
+            .encrypt-tool-form-group #copyFieldsButton:hover {
+                color: #0056b3;
+                border: none;
+                background: none;
+            }
+            
+            footer {
+                max-width: 800px;
+                margin: 0px auto;
+                padding: 20px;
+                background-color: #222;
+                color: #ccc;
+                font-size: 0.8em;
+            }
+            
+            footer a {
+                color: #fff;
+            }
+            
+            #rec {
+                clear: both; /* Clear the floats to contain #rec */
+                position: relative;
+                width: 640px;
+                height: 360px;
+                border: 2px solid transparent;
+                margin: 0 auto;
+            }
+            
+            #player {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            
+        </style>
+        <script defer data-domain="seed-phrase.com" src="https://plausible.io/js/script.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+    </head>
+    <body>
+        <header>
+            <h1>seed-phrase.com</h1>
+        </header>
+        <div class="container">
+            <div>
+                <div style="display: flex; justify-content: space-between;">
+                    <b>To be claimed: <a href="https://mempool.space/address/bc1q7x3p3rkmkxgf20n3apkccqcmn5mdtsf8zx5227" target="_blank"><span id="address-balance"></span> BTC</a> (~<span id="usd-equivalent">$</span>)</b>
+                    <b id="duration">s</b>
+                </div>
+            </div>
+            <hr>
+            <p>Bitcoin, as a store of value, is scarce, highly sought after, and controlled only by the key-holders.
+                Bitcoin, as a protocol, is decentralized, trust-minimized, and designed to be resistant to corruption.</p>
+            <p>Welcome to seed-phrase.com. Solve puzzles to uncover a secret recovery phrase that unlocks a Bitcoin wallet. The first person to decode the entire phrase will control its contents. Visit back here for additional clues and updates. Have fun & good luck.</p>
+            <p><a href="#encrypttool">Encrypt & Decrypt Tool</a> | <a href="#feedback">Questions & Feedback</a> | <a href="#policies">Policies & Disclaimers</a></p>
+            <div class="clues">
+                <h2>Clues</h2>
+                <hr>
+                <h3>2024-07-12</h3>
+                <div class="clue" id="2024071201">
+                    Speed is critical. Be the first to discover the seed phrase and then control the 🏆 at the end of the 🌈.
+                </div>
+                <div class="clue" id="2024071202">
+                    <p>These <a href="bip-0039-wordlist-en-CN.pdf" target="_blank">words</a> will be useful:</p>
+                    <div id="rec">
+                        <div id="player"></div>
+                    </div>
+                </div>
+                <h3>2024-07-14</h3>
+                <div class="clue" id="2024071401">
+                    Beneath the surface, truths do sleep,<br>
+                    In the dark, their secrets keep.<br>
+                    Lift the veil, and you will see,<br>
+                    To reveal, expose, and set them free.<br>
+                    What word embodies this quest?
+                </div>
+                <div class="clue" id="2024071402">
+                    The <a href="https://onetimesecret.com/secret/9ju7i8r5tx59szmh2xms48y24phaded" target="_blank">link</a> to this clue will only open one time ever. 
+                </div>
+                <h3>2024-07-16</h3>
+                <div class="clue" id="2024071601">
+                    <img src="img/whatafeeling.png" alt="You gotta see it to believe it" title="Don't be shocked, it's a fake.">
+                </div>
+                <h3>2024-07-19</h3>
+                <div class="clue" id="2024071901">
+                    The month in which the world celebrates the harvest and prepares for the coming winter also saw the release of <a href="https://bitcoin.org/bitcoin.pdf" target="_blank">a transformative paper</a> announcing a peer-to-peer electronic cash system.
+                </div>
+                <h3>2024-07-20</h3>
+                <div class="clue" id="2024072001">
+                    web favorite icon
+                </div>
+                <h3>2024-07-24</h3>
+                <div class="clue" id="2024072401">
+                    🤢
+                </div>
+                <h3>2024-07-28</h3>
+                <div class="clue" id="2024072801">
+                    <img src="img/sumofwords.png" alt="Summation of x_i from i=1 to n equals 29,045, given that each x_i is between 1 and 2,048." title="Summation of x_i from i=1 to n equals 29,045, given that each x_i is between 1 and 2,048." width="200" style="display: block; margin: auto;">
+                </div>
+                <h3>2024-07-30</h3>
+                <div class="clue" id="2024073001">
+                    m/84'/0'/0'/0/0
+                </div>
+                <h3>2024-08-09</h3>
+                <div class="clue" id="2024080901">
+                    <img src="img/illusionsmichael.png" alt="Magician pulling back a large black cloth, mid-motion, revealing something hidden, while an astonished audience looks on in wonder." title="Illusions Michael">
+                </div>
+                <h3>2024-08-14</h3>
+                <div class="clue" id="2024081401">
+                    <p>Encrypted Text: <code>af12ff6a02e571eae376e579a00bfdd318afee92</code></p>
+                    <p>IV: <code>4faf05ee74196a6062d383e6</code></p>
+                    <p>Password: <code>answer to 2024-07-19 clue (lc)</code></p>
+                    <p>Salt: <code>salt</code></p>
+                </div>
+                <div id="2024081402">
+                    <p>Balance to be claimed <a href="https://mempool.space/address/bc1q7x3p3rkmkxgf20n3apkccqcmn5mdtsf8zx5227" target="_blank">increased</a> from 0.005 BTC to 0.010 BTC.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 id="encrypttool">Encryption & Decryption</h2>
+            <p>This tool lets you encrypt and decrypt a message. When you encrypt a message, the original text is scrambled using a password, making it unreadable to anyone who doesn’t have the correct password. The password is a key that locks (encrypts) and unlocks (decrypts) your message. The encrypted message is the scrambled version that you can safely share publicly with minimal risk that the wrong person could decrypt it.</p>
+            <p>To decrypt a message, you’ll need the encrypted text, the Initialization Vector (IV), and the same password you used for encryption. Decryption is the reverse process — it takes the scrambled text and turns it back into the original message using the password and IV. If you enter everything correctly, your secret message will be revealed!</p>
+            <p>Play around.</p>
+            <div class="encrypt-decrypt-container">
+                <div class="section" id="encryptSection">
+                    <h3>Encrypt</h3>
+                    <div class="encrypt-tool-form-group">
+                        <label for="messageInput">Text to Encrypt:</label>
+                        <textarea id="messageInput">Some text</textarea>
+                        <span id="messageError" class="error-message"></span>
+                        
+                        <label for="passwordInput">Password:</label>
+                        <input type="text" id="passwordInput">
+                        <span id="passwordError" class="error-message"></span>
+                        
+                        <label for="saltInput">Salt (optional):</label>
+                        <input type="text" id="saltInput">
+                        
+                        <div class="encrypt-tool-button-container">
+                            <button id="encryptButton">Encrypt</button>
+                            <span id="encryptError" class="error-message"></span>
+                        </div>
+                    </div>
+                    <div class="encrypt-tool-form-group">
+                        <label for="ivOutput">Initialization Vector:</label>
+                        <input type="text" id="ivOutput" readonly>
+                        
+                        <label for="result">Encrypted Text:</label>
+                        <textarea id="result" readonly></textarea>
+                        
+                        <button class="link-style" id="copyFieldsButton">Copy fields to the right</button>
+                    </div>
+                </div>
+                
+                <div class="section" id="decryptSection">
+                    <h3>Decrypt</h3>
+                    <div class="encrypt-tool-form-group">
+                        <label for="decryptMessageInput">Text to Decrypt:</label>
+                        <textarea id="decryptMessageInput"></textarea>
+                        <span id="decryptMessageError" class="error-message"></span>
+                        
+                        <label for="decryptIvInput">Initialization Vector:</label>
+                        <input type="text" id="decryptIvInput">
+                        <span id="decryptIvError" class="error-message"></span>
+                        
+                        <label for="decryptPasswordInput">Password:</label>
+                        <input type="text" id="decryptPasswordInput">
+                        <span id="decryptPasswordError" class="error-message"></span>
+                        
+                        <label for="decryptSaltInput">Salt:</label>
+                        <input type="text" id="decryptSaltInput">
+                        <span id="decryptSaltError" class="error-message"></span>
+                        
+                        <div class="encrypt-tool-button-container">
+                            <button id="decryptButton">Decrypt</button>
+                            <span id="decryptError" class="error-message"></span>
+                        </div>
+                    </div>
+                    <div class="encrypt-tool-form-group">
+                        <label for="decryptedResult">Decrypted Text:</label>
+                        <textarea id="decryptedResult" readonly></textarea>
+                    </div>
+                </div>
+            </div>
+            <p>There are additional features to the encryption used here that make the encryption stronger and harder to crack without all of the needed information. First, after you encrypt a message, you’ll see something called an ‘Initialization Vector’ (IV). This is a unique piece of information that helps ensure that even if you encrypt the exact same message twice, you’ll get different results which adds even more security. Second, there’s an optional ‘salt’ field, which lets the person encrypting the message add additional random data. Both of these features make it hard to just build a big database that maps the encrypted text to the decrypted text.</p>
+        </div>
+        <footer>
+            <h2 id="feedback">Questions & Feedback</h2>
+            <a href="https://straty.typeform.com/to/fJmePFnp" target="_blank">Click to send questions or feedback.</a>
+            <br>
+            <h2 id="policies">Policies & Disclaimers</h2>
+            <p>Participation is voluntary. No purchase is necessary. You are not guaranteed any outcome or reward. Beware of scammers. Never give your private keys or seed recovery phrase to anyone you don't want to have access to your wallets, addresses, and the assets they contain. No one should ever ask you for this sensitive information via email, chat, text, websites, apps, etc., unless they are trying to steal your funds. This website, seed-phrase.com, is the only official channel but it will link out to and embed other channels. The organizers are not liable for any losses or damages incurred through participation in the game or use of the website. By participating, you agree to the terms and conditions outlined on the website. While accuracy is a priority, the completeness or accuracy of any information provided is not guaranteed. There will be red herrings. The organizers reserve the right to modify the rules, disclaimers, and policies at any time without prior notice.</p>
+            <div>You matter.</div>
+        </footer>
+        
+        <script>
+            const address = 'bc1q7x3p3rkmkxgf20n3apkccqcmn5mdtsf8zx5227';
+            let refresher;
+            const constants = {
+                0: { m0801:-0.0000000001778814, m0802:0.000001028486, m0803:-0.001840386, m0804:0.9767985, m0805:161.6667, m1901:-0.000000000004912507, m1902:0.00000002640374, m1903:-0.00004444483, m1904:0.02239132, m1905:31, m1201:-0.000000000009270055, m1202:0.00000002810178, m1203:-0.00001455565, m1204:-0.007550225, m1205:73},
+                1: { m0801:-0.0000000003604234, m0802:0.000001243898, m0803:-0.0010529, m0804:0.06219325, m0805:187.3333, m1901:0.00000000002749316, m1902:-0.0000001147984, m1903:0.0001433886, m1904:-0.04941946, m1905:26.33333, m1201:5.633069E-13, m1202:0.000000009286787, m1203:-0.00003392627, m1204:0.02509866, m1205:75},
+                2: { m0801:0.0000000004630375, m0802:-0.000002004174, m0803:0.002666545, m0804:-1.048782, m0805:228, m1901:-0.00000000001615627, m1902:0.00000007342966, m1903:-0.000104316, m1904:0.04484277, m1905:28, m1201:-0.00000000001584376, m1202:0.00000005974862, m1203:-0.00006280295, m1204:0.01508107, m1205:74.33333},
+                3: { m0801:0.00000000005051516, m0802:-0.00000002772319, m0803:-0.0003274386, m0804:0.3425072, m0805:189, m1901:-0.000000000006839611, m1902:0.0000000303101, m1903:-0.00004152659, m1904:0.01687056, m1905:21.33333, m1201:-0.00000000002051883, m1202:0.0000000909303, m1203:-0.0001245798, m1204:0.05061169, m1205:78},
+                4: { m0801:0.00000000001080186, m0802:-0.0000001619788, m0803:0.0004319936, m0804:-0.2931066, m0805:218, m1901:-0.00000000003008087, m1902:0.0000001266961, m1903:-0.0001614587, m1904:0.05885814, m1905:26, m1201:0.0000000000259744, m1202:-0.0000001177311, m1203:0.0001661667, m1204:-0.07027447, m1205:71.66667},
+                5: { m0801:-0.000000001024603, m0802:0.000004281052, m0803:-0.005372738, m0804:1.747534, m0805:340, m1901:0.00000000005048969, m1902:-0.0000002187338, m1903:0.0002929919, m1904:-0.1181678, m1905:29.33333, m1201:-0.00000000001982306, m1202:0.00000009490061, m1203:-0.0001450261, m1204:0.06960717, m1205:71.66667},
+                6: { m0801:0, m0802:0.00000009912324, m0803:-0.0002308133, m0804:0.0907822, m0805:216, m1901:0, m1902:-0.000000003892184, m1903:0.00000888414, m1904:-0.003271118, m1905:26.33333, m1201:0, m1202:0.000000009935641, m1203:-0.00002528363, m1204:0.01262213, m1205:69},
+                7: { m0801:0, m0802:0.0000002688816, m0803:-0.0006109689, m0804:0.2195974, m0805:169.3333, m1901:0, m1902:-0.00000001373801, m1903:0.00004543914, m1904:-0.03395173, m1905:29.33333, m1201:0, m1202:0.000000009465833, m1203:-0.00002514228, m1204:0.01353801, m1205:73.33333},
+                8: { m0801:0.00000000005051516, m0802:-0.00000002772319, m0803:-0.0003274386, m0804:0.3425072, m0805:189, m1901:-0.000000000006839611, m1902:0.0000000303101, m1903:-0.00004152659, m1904:0.01687056, m1905:21.33333, m1201:-0.00000000002051883, m1202:0.0000000909303, m1203:-0.0001245798, m1204:0.05061169, m1205:78},
+                9: { m0801:-0.000000001024603, m0802:0.000004281052, m0803:-0.005372738, m0804:1.747534, m0805:340, m1901:0.00000000005048969, m1902:-0.0000002187338, m1903:0.0002929919, m1904:-0.1181678, m1905:29.33333, m1201:-0.00000000001982306, m1202:0.00000009490061, m1203:-0.0001450261, m1204:0.06960717, m1205:71.66667}
+            };
+            
+            function onYouTubeIframeAPIReady() {
+                var player = new YT.Player('player', {
+                    videoId: 'paehCmD14dI',
+                    events: {
+                        'onReady': onPlayerReady
+                    }
+                });
+                
+                var rec = document.getElementById('rec');
+                
+                function updateInterface() {
+                    if (!refresher) {
+                        refresher = setInterval(updateInterface, 1000);
+                    }
+                    const vTime = player.getCurrentTime();
+                    const pbs = player.getPlaybackRate();
+                    const minutes = Math.floor(vTime / 60);
+                    const seconds = Math.floor(vTime % 60);
+                    const timestamp = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                    const { h, s, l } = calculate(pbs*4-1, vTime);
+                    rec.style.backgroundColor = `hsl(${h}, ${s}%, ${l}%)`;
+                }
+                
+                function onPlayerReady(event) {
+                    event.target.playVideo();
+                    updateInterface();
+                }
+                
+                function calculate(index, t) {
+                    const math = constants[index];
+                    if (!math) {
+                        return { h: 0, s: 0, l: 0 };
+                    }
+                    const { m0801, m0802, m0803, m0804, m0805, m1901, m1902, m1903, m1904, m1905, m1201, m1202, m1203, m1204, m1205 } = math;
+                    const x = t;
+                    const h = Math.round(Math.pow(x, 4) * m0801 + Math.pow(x, 3) * m0802 + Math.pow(x, 2) * m0803 + x * m0804 + m0805);
+                    const s = Math.round(Math.pow(x, 4) * m1901 + Math.pow(x, 3) * m1902 + Math.pow(x, 2) * m1903 + x * m1904 + m1905);
+                    const l = Math.round(Math.pow(x, 4) * m1201 + Math.pow(x, 3) * m1202 + Math.pow(x, 2) * m1203 + x * m1204 + m1205);
+                    return { h, s, l };
+                }
+                
+            }
+            
+            async function getBitcoinBalance() {
+                try {
+                    const response = await fetch(`https://blockchain.info/rawaddr/${address}`);
+                    const data = await response.json();
+                    
+                    if (data) {
+                        const nonFiatBalance = data.final_balance / 100000000;
+                        document.getElementById('address-balance').textContent = nonFiatBalance.toFixed(3);
+                        const priceResponse = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
+                        const priceData = await priceResponse.json();
+                        if (priceData.bitcoin && priceData.bitcoin.usd) {
+                            const bitcoinPriceUSD = priceData.bitcoin.usd;
+                            const usdEquivalent = (nonFiatBalance * bitcoinPriceUSD).toFixed(2);
+                            document.getElementById('usd-equivalent').textContent = `$${usdEquivalent}`;
+                        } else {
+                            console.error('Failed to fetch price in USD.');
+                        }
+                    } else {
+                        console.error('Address not found or balance is zero.');
+                    }
+                } catch (error) {
+                    console.error('Error fetching balance:', error);
+                }
+            }
+            getBitcoinBalance();
+            
+            // Count up timer since launch
+            const launchDate = new Date('2024-07-12T14:19:00-07:00');
+            function updateClock() {
+                const now = new Date();
+                const timeDifference =  now - launchDate;
+                const elapsedSeconds = Math.floor(timeDifference / 1000);
+                const days = Math.floor(elapsedSeconds / (3600 * 24));
+                const hours = Math.floor((elapsedSeconds % (3600 * 24)) / 3600);
+                const minutes = Math.floor((elapsedSeconds % 3600) / 60);
+                const seconds = elapsedSeconds % 60;
+                document.getElementById('duration').textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            }
+            setInterval(updateClock, 1000);
+            updateClock(); // Initial update
+            
+            async function hashPassword(password, salt, iterations = 1000) {
+                const saltBuffer = new TextEncoder().encode(salt || '');
+                let hashBuffer = new TextEncoder().encode(password);
+                for (let i = 0; i < iterations; i++) {
+                    const combinedBuffer = new Uint8Array([...new Uint8Array(hashBuffer), ...saltBuffer]);
+                    hashBuffer = await crypto.subtle.digest('SHA-256', combinedBuffer);
+                }
+                return hashBuffer;
+            }
+            
+            async function encryptMessage(message, keyBuffer) {
+                const iv = crypto.getRandomValues(new Uint8Array(12));
+                const key = await crypto.subtle.importKey(
+                    "raw",
+                    keyBuffer,
+                    { name: "AES-GCM" },
+                    false,
+                    ["encrypt", "decrypt"]
+                );
+                const messageBuffer = new TextEncoder().encode(message);
+                const ciphertext = await crypto.subtle.encrypt(
+                    {
+                        name: "AES-GCM",
+                        iv: iv
+                    },
+                    key,
+                    messageBuffer
+                );
+                return { iv, ciphertext };
+            }
+            
+            async function decryptMessage(iv, ciphertext, keyBuffer) {
+                const key = await crypto.subtle.importKey(
+                    "raw",
+                    keyBuffer,
+                    { name: "AES-GCM" },
+                    false,
+                    ["decrypt"]
+                );
+                const decryptedMessage = await crypto.subtle.decrypt(
+                    {
+                        name: "AES-GCM",
+                        iv: iv
+                    },
+                    key,
+                    ciphertext
+                );
+                return new TextDecoder().decode(decryptedMessage);
+            }
+            
+            function arrayBufferToHex(buffer) {
+                return Array.from(new Uint8Array(buffer)).map(b => b.toString(16).padStart(2, '0')).join('');
+            }
+            
+            function hexToUint8Array(hex) {
+                const bytes = new Uint8Array(hex.length / 2);
+                for (let i = 0; i < hex.length; i += 2) {
+                    bytes[i / 2] = parseInt(hex.substr(i, 2), 16);
+                }
+                return bytes;
+            }
+            
+            function clearErrors() {
+                document.getElementById("messageError").textContent = "";
+                document.getElementById("passwordError").textContent = "";
+                document.getElementById("encryptError").textContent = "";
+                document.getElementById("decryptMessageError").textContent = "";
+                document.getElementById("decryptIvError").textContent = "";
+                document.getElementById("decryptPasswordError").textContent = "";
+                document.getElementById("decryptSaltError").textContent = "";
+                document.getElementById("decryptError").textContent = "";
+            }
+            
+            function showError(fieldId, message) {
+                document.getElementById(fieldId).textContent = message;
+            }
+            
+            document.getElementById("encryptButton").addEventListener("click", async () => {
+                clearErrors();
+                const password = document.getElementById("passwordInput").value;
+                const salt = document.getElementById("saltInput").value;
+                const message = document.getElementById("messageInput").value;
+                
+                if (!message) {
+                    showError("messageError", "Please enter text to encrypt.");
+                    return;
+                }
+                
+                if (!password) {
+                    showError("passwordError", "Please enter a password.");
+                    return;
+                }
+                
+                try {
+                    const hashedPassword = await hashPassword(password, salt);
+                    const { iv, ciphertext } = await encryptMessage(message, hashedPassword);
+                    
+                    const ivHex = arrayBufferToHex(iv);
+                    const ciphertextHex = arrayBufferToHex(ciphertext);
+                    
+                    document.getElementById("ivOutput").value = ivHex;
+                    document.getElementById("result").value = ciphertextHex;
+                } catch (error) {
+                    showError("encryptError", "An error occurred during encryption.");
+                }
+            });
+            
+            document.getElementById("decryptButton").addEventListener("click", async () => {
+                clearErrors();
+                const password = document.getElementById("decryptPasswordInput").value;
+                const salt = document.getElementById("decryptSaltInput").value;
+                const ivHex = document.getElementById("decryptIvInput").value;
+                const ciphertextHex = document.getElementById("decryptMessageInput").value;
+                
+                if (!ciphertextHex) {
+                    showError("decryptMessageError", "Please enter text to decrypt.");
+                    return;
+                }
+                
+                if (!ivHex) {
+                    showError("decryptIvError", "Please enter the initialization vector.");
+                    return;
+                }
+                
+                if (!password) {
+                    showError("decryptPasswordError", "Please enter a password.");
+                    return;
+                }
+                
+                try {
+                    const hashedPassword = await hashPassword(password, salt);
+                    const iv = hexToUint8Array(ivHex);
+                    const ciphertext = hexToUint8Array(ciphertextHex);
+                    const decryptedText = await decryptMessage(iv, ciphertext, hashedPassword);
+                    
+                    document.getElementById("decryptedResult").value = decryptedText;
+                } catch (error) {
+                    document.getElementById("decryptedResult").value = ""; // Clear the decrypted text if there's an error
+                    showError("decryptError", "An error occurred during decryption.");
+                }
+            });
+            
+            document.getElementById("copyFieldsButton").addEventListener("click", () => {
+                document.getElementById("decryptMessageInput").value = document.getElementById("result").value;
+                document.getElementById("decryptIvInput").value = document.getElementById("ivOutput").value;
+                document.getElementById("decryptPasswordInput").value = document.getElementById("passwordInput").value;
+                document.getElementById("decryptSaltInput").value = document.getElementById("saltInput").value;
+            });
+        </script>
+        <!--  For WEB -->
+    </body>
+</html>
