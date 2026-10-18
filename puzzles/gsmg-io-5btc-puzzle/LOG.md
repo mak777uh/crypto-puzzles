@@ -215,3 +215,22 @@
 - Бонус для будущих агентов: страница `theseedisplanted` и её 8 ребусных картинок заархивированы — `web.archive.org/web/2020/https://gsmg.io/theseedisplanted` + `…/theseedisplanted/img/{black_banking - war, blue_ca, blue_dig_i, blue_lock_lo, red_crypto_gic, red_n_you, red_open_lock_n_ing, red_t}.png` (CDX 2020-11-12 … 2026). Прямые URL с домена мертвы с 07.2026.
 - Артефакты: `data/puzzle_wayback.png` (sha256 38125bbd…), `data/grid14_cells.{png,txt}`, `data/banner.png`, `data/center_rabbit.png`, `tools/gsmg_image_derive_2026-10-18.py` (воспроизводимый прогон с witness-ами).
 - Отчёт: `reports/2026-10-18_1042_BigPickle_gsmg-phase1-image.md`.
+
+## 2026-10-18 — Big Pickle (big-pickle / OpenCode, Windows) — GSMG: полная выгрузка репозитория сообщества puzzlehunt/gsmgio-5btc-puzzle
+
+- Повод: запрос Ильи «посмотреть репозиторий и ссылки целиком и вытащить всю информацию по загадке». Тип: обогащение.
+- Выгружено через GitHub API (без аутентификации) в `data/puzzlehunt/`:
+  - `PUZZLEHUNT_REPO_EXTRACT.md` (45.9 КБ) — итоговый разбор: 5 «дверей», свежие находки 2026, реестр подсказок создателя, таблица адресов, индекс 112 issues, 235 внешних ссылок;
+  - `GITHUB_DIGEST.md` (~907 КБ) — README + тела всех 112 issue + 609 комментариев;
+  - `issue_comments.json` (609 комментариев, raw);
+  - `README.md` (396 строк), все картинки: `puzzle.png`, `theseedisplanted.png`, `phase2.png`, `phase3.png`, `SalPhaselonCosmicDuality.png`, `photo_2020-04-26_09-24-30.jpg`.
+- **Проверенная находка (наша)**: H160-«цель» из issue #111 (`a9553269572a317e39f0f518cb87c1a0ee1dbae4`) = **в точности hash160 адреса приза `1GSMG1JC9wtdSwfwApgj2xcmJPAwx7prBe`** (подтверждено base58-декодом). Т.е. конструкция «половин» #111 нацелена на публичный ключ приза напрямую.
+  - `FH (16 B) = gros[0::4][:16] XOR gros[1145:1161] = 8048c428a6faf6d3df77db13ca68766d`;
+  - `BetterHalf = Reduction(SOURCE_4) XOR gros[1161:1177]`, `Reduction: 48B→16B` — неизвестен;
+  - `SOURCE_4` base64 `QvX0t8v3jPB4okpspxebRi6sE1BMl5HI8Rku+KejUqTvdWOX6nQjSpepXwGuN/jJ` (малый blob SalPhaseIon).
+- Подтверждено (независимо от нас): единственная off-white клетка **RGB (254,254,254)** в (строка 7, столбец 4) — issues #14 и #111. 24 цветные клетки = «последний бит каждого из 24 байт» URL (спиральный индекс ≡ 5 mod 8 у сообщества; у нас ≡ 7 mod 8 — та же структура).
+- Новые сущности: «Half» = `1JG648yaB7Wp2dpUfcZoRSD4q35oq47vCu` (H160 `bd5498c1…`, баланс 0, 105 tx); «Better Half» = `145ZQ9siLrsXBKf465wjdyQYAP5dRwhRhQ` (H160 `21c51630…`, баланс 0, 105 tx). Создатель = «Jrk Bgrt» (Telegram «GSMG Puzzle Solvers», id 1166734859). Issue #114: разыскивается полный Telegram-экспорт ≈57 729 сообщений (2019-04-20…2026-07-26) — непубличный корпус подсказок.
+- Уточнение #106: `floflo777/open-crypto-puzzles:tools/oracle.py` использует EVP-MD5, но все решённые блобы цепочки — EVP-SHA256 (исключение — только Cosmic Duality). Прежние свипы через oracle.py структурно недостоверны.
+- Мейнтейнер Naddiseo: загадка решаема («все части есть»); критерий — приватник к `1GSMG1JC9…` и/или `17ucy1K9…`. CADEIA/chain4, правки base64 (#108) и «Bifid→BTCSEED» (#112/#113) он считает LLM-фейками. Наш прежний вывод «chain4 = фантом» согласуется.
+- Следующий шаг (требует ОК Ильи): проверить формулы #111 против локального воспроизводимого артефакта Phase 3.2 (`gros`, 2432 B). Ось задана формулами — не слепой перебор.
+- Отчёт: `reports/2026-10-18_1055_BigPickle_gsmg-puzzlehunt-repo-extract.md`.
