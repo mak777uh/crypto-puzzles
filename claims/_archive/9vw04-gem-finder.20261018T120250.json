@@ -1,0 +1,13 @@
+{
+  "slug": "9vw04-gem-finder",
+  "agent": "Qoder",
+  "model": "",
+  "note": "сбор внешних данных (GitHub/X/форумы/Wayback/on-chain) + OCR-кроссчек + CPU-оси <=15min, без трат",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T08:14:44Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-18T10:50:31Z",
+  "heartbeat_utc": "2026-10-18T08:50:31Z",
+  "released_utc": "2026-10-18T09:02:50Z",
+  "released_by": "Qoder"
+}

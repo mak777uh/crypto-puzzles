@@ -249,3 +249,23 @@ Next task in queue: insight-action-check
 
 ## 2026-10-18 ~10:55 — Big Pickle (GSMG: выгрузка репозитория сообщества)
 По запросу Ильи выкачал ЦЕЛИКОМ публичный репо `puzzlehunt/gsmgio-5btc-puzzle` в `puzzles/gsmg-io-5btc-puzzle/data/puzzlehunt/`: README, все 112 issues, 609 комментариев (`GITHUB_DIGEST.md` ~907 КБ), все картинки, плюс сводка `PUZZLEHUNT_REPO_EXTRACT.md`. **Находка:** H160-цель из issue #111 == hash160 призового адреса `1GSMG1JC9…` (проверено). Новые адреса «Half»/«BetterHalf» (пусты). Создатель = «Jrk Bgrt», активен в Telegram; ищется полный экспорт группы. Отчёт: `reports/2026-10-18_1055_BigPickle_gsmg-puzzlehunt-repo-extract.md`. Жду решения Ильи по проверке формул #111.
+
+## 2026-10-18 ~11:10 — Big Pickle (GSMG: прогон оси #111)
+С разрешения Ильи прогнал ось H-111. Воспроизвёл Phase-3.2 plaintext `gros` (2422 B, sha256 `b82afeb8…`, через openssl EVP-SHA256) — точно. **Новое:** публичный ключ приза `04f4d1bb…` подтверждён (=адрес `1GSMG1JC9…`), значит ключи проверяются мгновенно офчейн. **Константы issue #111 (FH и `gros[1161:1177]`) не воспроизводятся** — исчерпывающий XOR-поиск по 7 буферам × stride × смещения дал 0 совпадений → `gros` #111 неопубликован, его «verified against H160» непроверяемо. 204 кандидата ключа → 0 хитов. Ось **закрыта негативом**; дальше нужен только корпус создателя (Telegram, issue #114). Отчёт: `reports/2026-10-18_1110_BigPickle_gsmg-111-falsification.md`. Бронь снята.
+
+## 2026-10-18 11:37 — Big Pickle (gsmg.io: живой сайт найден)
+Ревизия внешних источников: **`gsmg.io` жив** (прежняя пометка «404» неверна) и отдаёт оригинальные страницы —
+`/theseedisplanted` (8 плиток-ребуса + мёртвая форма `/phase1verification`), `/choiceisanillusion…iwroteitmyself`
+(PHASE 2 + PHASE 3 целиком), `/89727c598b9cd1…f6a32` (SalPhaseIon + Cosmic Duality), `/puzzle` (та же puzzle.png),
+новая «shutdown»-главная с `2017 — 2026` / «One mystery remains» / «Follow the white rabbit». Наши локальные блобы
+подтвердились байт-в-байт (phase2 672 B salt `06286612d43ed7ed`, phase3 4112 B salt `9fbc451d13d071f4`, cosmic 1344 B
+salt `2d3f6fe06dc950e6`). Новое: ребус Phase 1 прочитан зрением (плитки `[банк]+war`, `CA`, `dig i +`, `[замок]+lO`,
+`crypto/gic`, `n you`, `[открытый замок]+n ing`, `t -`), сетка 14×14 из 0/1 и алфавит `GSMG.IO5BTCPUZZLECHALLENGE` на
+главной, фрагмент `QvX0t8v3…GuN/jJ` (= SOURCE_4 из #111) в SalPhaseIon. Недостающее: артефакт `phase3.2` на сайте
+отсутствует; bitcointalk/telegram/privnote/youtube мне недоступны — запрошены у Ильи. Карта: `data/live2026/`.
+Отчёт: `reports/2026-10-18_1137_BigPickle_gsmg-live-site-map.md`.
+
+## Проход (Qoder, 18.10.2026, 10:25): 9vw04-gem-finder — сбор+OCR+оси, итог «исчерпано»
+- Внешний сбор завершён (0 solver-репо; транскрипция canalqb; 13 твитов verbatim; GIF мартовского хинта; on-chain: цель = compressed WIF 52). Сводка: puzzles/9vw04-gem-finder/data/EXTERNAL_DIGEST.md.
+- Сетка исправлена: data/grid_ocr5.json (+40 поправок O/Z; буквенный канал = избыточный цикл 26 букв, «mirror» подтверждён). Оракул 17.10 был сломан (len==34 вместо 38) — починен, self-test добавлен.
+- 3 цикла осей, ~9850 кандидатов, 0 валидных WIF. Строка «исчерпано» в PROPOSALS.md. Отчёты: reports/2026-10-18_1020_Qoder_9vw04-external-collection.md, reports/2026-10-18_1025_Qoder_9vw04-solve-pass.md. Бронь снята.

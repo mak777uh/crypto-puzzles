@@ -1,0 +1,33 @@
+{
+ "stats": {
+  "atbash_row": 396,
+  "atbash_col": 376,
+  "atbash_snake": 397,
+  "atbash_diag_rc": 107,
+  "atbash_diag_rplusc": 382,
+  "atbash_row_rev": 383,
+  "atbash_col_rev": 409,
+  "atbash_snake_rev": 385,
+  "atbash_diag_rc_rev": 140,
+  "atbash_diag_rplusc_rev": 403,
+  "mark_blueL": 0,
+  "mark_greyL": 0,
+  "mark_greyD": 0,
+  "mark_whiteD": 0,
+  "mark_all": 0,
+  "h4_cycd": 53,
+  "h4_cycd_rev": 56,
+  "h4_abcd": 46,
+  "h4_abcd_rev": 45,
+  "h4_sum": 92,
+  "h4_sum_rev": 90,
+  "h4_swap": 35,
+  "h4_swap_rev": 36,
+  "spiral_in": 452,
+  "spiral_out": 334,
+  "spiral_in_m": 409,
+  "spiral_out_m": 378
+ },
+ "hits": [],
+ "seconds": 0.1
+}

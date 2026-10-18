@@ -1,0 +1,212 @@
+Puzzle Bitcoin de 0,02 BTC: o Enigma do Gem Finder
+
+ 
+
+ @CanalQb no YouTube 
+
+ Puzzle Bitcoin de 0,02 BTC: o Enigma do Gem Finder 
+
+/* @CanalQb - Exclusive Design License 2026 */
+.post_badge_time{display:inline-block;background:rgba(33,150,243,0.1);color:#2196f3;padding:6px 14px;border-radius:20px;font-size:0.85em;font-weight:600;margin:10px auto;text-align:center}
+.post_tldr{background:rgba(40,167,69,0.08);border-left:4px solid #28a745;padding:18px 20px;border-radius:8px;margin:20px 0}
+.post_tldr h3{margin:0 0 10px;color:#28a745;font-size:1.05em}
+.post_tldr ul{margin:0;padding-left:20px;color:#333}
+.post_tldr li{margin-bottom:6px;line-height:1.5}
+.post_cqb_terminal{background:#000!important;color:#4af626!important;padding:20px;border-radius:12px;border:2px solid #333;font-family:'Roboto Mono',monospace!important;overflow-x:auto;font-size:0.85em;line-height:1.6}
+.post_cqb_terminal *,.post_cqb_terminal span{color:#4af626!important;background:transparent!important;text-shadow:none!important}
+.post_cqb_terminal .comment{color:#888!important}
+.post_cqb_codeblock,.post_cqb_codeblock *{background:#1a1a1a!important;color:#f8f8f2!important;font-family:'Roboto Mono',monospace!important;text-shadow:none!important}
+.post_cqb_codeblock{padding:20px;border-radius:8px;border-left:5px solid #ffc107;overflow-x:auto;position:relative;margin:16px 0}
+.post_copy_btn{position:absolute;top:10px;right:10px;background:#333;color:#fff;border:none;padding:6px 12px;border-radius:6px;font-size:0.8em;cursor:pointer;min-height:32px}
+.post_copy_btn:hover{background:#28a745}
+.post_checklist{list-style:none;padding:0;margin:10px 0}
+.post_checklist li{display:flex;align-items:flex-start;gap:8px;padding:5px 0;font-size:.95em;color:#555;line-height:1.6}
+.post_checklist li i{flex-shrink:0;margin-top:3px}
+.post_faq_container{margin:40px 0;padding:0}
+.post_faq_title{color:#333;font-size:1.4em;margin-bottom:20px;border-left:4px solid #28a745;padding-left:12px}
+.post_faq_item{border-bottom:1px solid #e0e0e0;margin-bottom:2px}
+.post_faq_question{cursor:pointer;padding:16px 12px;font-size:1em;font-weight:600;color:#333;display:flex;justify-content:space-between;align-items:center;gap:10px;margin:0;min-height:44px;user-select:none}
+.post_faq_question:hover{color:#28a745}
+.post_faq_question:focus-visible{outline:2px solid #28a745;outline-offset:2px}
+.post_faq_icon{transition:transform .25s ease;flex-shrink:0;color:#28a745}
+@media(prefers-reduced-motion:reduce){.post_faq_icon{transition:none}}
+.post_faq_question.post_faq_active .post_faq_icon{transform:rotate(45deg)}
+.post_faq_answer{display:none;padding:0 12px 16px;color:#555;font-size:0.95em;line-height:1.7}
+.post_faq_answer.post_faq_show{display:block}
+.post_faq_answer a{color:#28a745;text-decoration:underline}
+.post_ref_footer{margin:30px 0;padding:18px;border-top:1px solid #e0e0e0;font-size:0.9em;color:#555}
+.post_ref_footer a{color:#2196f3}
+
+ Leitura: ~9 min 
+
+ TL;DR 
+
+ O perfil @GemfinderOfX promete 0,02 BTC (~US$ 2.000) para quem "decifrar" uma grade de caracteres e chegar à chave privada de um endereço SegWit — há mais de um ano sem vencedor confirmado. 
+ As dicas (Baby-Step Giant-Step, Daniel Shanks, "9vw04", "não gosto de rainbows") remetem a criptografia real de curva elíptica, mas a estrutura do desafio não permite resolução por força bruta comum. 
+ O padrão do caso — prêmio nunca pago, pedidos de e-mail para "dicas extras", anos de engajamento — é o mesmo de golpes de atenção em cripto. Aqui explico a mecânica e entrego só um script de verificação, nunca de quebra de chave. 
+
+ ⚠️ ID de vídeo padrão usado — substituir antes de publicar 
+
+ Aviso Financeiro: 
+ Este conteúdo é estritamente informativo e educacional. Não constitui conselho, recomendação ou oferta de investimento. Consulte um profissional habilitado antes de tomar decisões financeiras.
+
+ Nota Técnica e Ética: 
+ Este post explica conceitos de criptografia de forma educacional. O @CanalQb não fornece, nem fornecerá sob nenhuma circunstância, scripts destinados a derivar ou "adivinhar" chaves privadas de endereços de terceiros. O código apresentado aqui serve apenas para verificar uma chave que você já possui — nunca para gerá-la a partir do endereço alheio.
+
+ Um enigma de R$10 mil roda há mais de um ano sem vencedor. 
+Desde janeiro de 2025, o perfil @GemfinderOfX mantém uma thread ativa no X prometendo 0,02 BTC para quem decifrar uma imagem cheia de letras e números. Centenas de respostas, teorias, gente pedindo dica por e-mail — e nenhuma solução pública validada até hoje. 
+A pergunta que ninguém fez em voz alta: o enigma foi desenhado para ser resolvido, ou para nunca ser resolvido? 
+
+ O que é o puzzle do Gem Finder? 
+ O autor da conta @GemfinderOfX publicou uma imagem com uma grade densa de caracteres alfanuméricos coloridos e afirmou que "tudo o que é necessário para a chave privada está dentro desta mensagem". Junto veio um endereço Bitcoin SegWit nativo (começa com bc1q ) como "prova de fundos" e a promessa de transferir 0,02 BTC para quem encontrar a chave correspondente. Aqui no @CanalQb, recebemos essa thread inteira para análise e organizamos o que há de concreto por trás das pistas. 
+
+ Como funciona a grade de caracteres da imagem? 
+ A grade não é texto aleatório: os caracteres aparecem em blocos repetidos de letra+número (como T9U3V8W2Y0Z5R4 ), com cores diferentes marcando algumas posições. Uma resposta na própria thread aponta que a grade contém exatamente 52 ocorrências do dígito "0" — o mesmo número de caracteres de um WIF (Wallet Import Format) comprimido, que sempre começa com "K" ou "L" em mainnet. Isso sugere que os "0" funcionam como marcadores, não como parte do valor final. 
+
+ O que significam WIF, secp256k1 e Baby-Step Giant-Step? 
+ Essas três pistas formam a espinha dorsal técnica do desafio. Uma chave privada Bitcoin é apenas um número gigante; o WIF é a forma compacta e legível de representar esse número, incluindo um checksum para evitar erros de digitação. Toda chave privada, multiplicada pelo ponto gerador da curva elíptica secp256k1, produz uma chave pública — essa relação é fácil de calcular em uma direção e praticamente impossível de reverter em espaços grandes. 
+ É aí que entra Daniel Shanks: o algoritmo Baby-Step Giant-Step (BSGS), que ele formalizou, resolve o "logaritmo discreto" — descobrir a chave privada a partir da pública — mas só quando o intervalo de busca é pequeno o suficiente. A pista "não gosto de rainbows" reforça isso: descarta tabelas rainbow (outro método de time-memory tradeoff) e aponta especificamente para BSGS, o que só faz sentido se o autor tiver restringido o espaço de busca de alguma forma dentro da grade. 
+
+ Por que "9vw04" virou obsessão da comunidade? 
+ A string "9vw04" aparece no endereço parcial citado como "prova" e, segundo alguns seguidores, se repete dentro da grade — o que estatisticamente seria muito improvável em uma sequência aleatória. A comunidade tenta usá-la como âncora ou offset para extrair caracteres específicos da grade, mas ninguém publicou até hoje uma extração que resulte em um WIF válido e verificável contra o endereço fornecido. Isso é o ponto central: qualquer "solução" pode e deve ser testada objetivamente, porque a validação criptográfica (chave → endereço) não deixa margem para debate. 
+
+ Este tipo de desafio é um golpe disfarçado? 
+ Não dá para afirmar com certeza que é uma fraude — mas o padrão de comportamento bate com esquemas conhecidos de engajamento em cripto Twitter: prêmio nunca pago, mais de um ano de "dicas adicionais" que nunca fecham a solução, pedidos na própria thread para enviar e-mail em troca de "mais pistas", e reações de frustração de dezenas de pessoas que dizem já ter gastado meses no problema. Esse tipo de estrutura tende a gerar engajamento contínuo (visualizações, seguidores, tempo de tela) independente de o prêmio existir de fato. A recomendação prática aqui no @CanalQb é simples: trate qualquer "puzzle cripto com prêmio em dinheiro real" com o mesmo ceticismo que trataria uma promessa de retorno garantido — e nunca envie dados pessoais por e-mail para "desbloquear dicas". 
+
+ Por que não vou publicar um script para "quebrar" a chave 
+ Um script que tenta derivar a chave privada de um endereço que não é seu — mesmo dentro de um "puzzle" — é funcionalmente uma ferramenta de acesso não autorizado a fundos alheios. Isso vale independentemente de o autor do puzzle ter oferecido o prêmio publicamente: sem uma solução matematicamente comprovada e sem controle sobre quem realmente é o dono do endereço, publicar esse tipo de código teria o mesmo efeito prático de uma ferramenta de quebra de carteira. Por isso, o @CanalQb não entrega esse tipo de script — nem para este puzzle, nem para nenhum outro endereço real. 
+
+ Como verificar (sem tentar quebrar) uma chave candidata em Python? 
+ O que dá para fazer com segurança é o oposto de "adivinhar": pegar uma chave WIF que você já tem como candidata e conferir, de forma determinística, se ela corresponde ao endereço divulgado. Esse tipo de verificação é útil para qualquer pesquisa de criptografia legítima — não fornece nenhum atalho para descobrir a chave em si. 
+
+ Copiar 
+ \# verificador_wif.py
+\# Verifica se uma chave WIF candidata corresponde a um endereço Bitcoin.
+\# NÃO deriva, NÃO adivinha e NÃO força chaves — apenas confirma um candidato já conhecido.
+\# Requer: pip install bitcoinlib
+
+from bitcoinlib.keys import Key
+
+def verificar_candidato(wif_candidato: str, endereco_alvo: str) -> bool:
+ """
+ Recebe uma chave WIF candidata e o endereço alvo.
+ Retorna True apenas se a chave gerar exatamente aquele endereço.
+ """
+ try:
+ chave = Key(wif_candidato)
+ except Exception as erro:
+ print(f"WIF inválida ou mal formatada: {erro}")
+ return False
+
+ endereco_gerado = chave.address()
+ bate = endereco_gerado.strip().lower() == endereco_alvo.strip().lower()
+
+ print(f"Endereço gerado a partir da chave: {endereco_gerado}")
+ print(f"Endereço alvo: {endereco_alvo}")
+ print("Resultado:", "CORRESPONDE ✅" if bate else "NÃO corresponde ❌")
+ return bate
+
+if __name__ == "__main__":
+ ENDERECO_ALVO = "bc1qr5mssp6snmduqp9enx4dzmcxvk7qw83lceyy2v"
+ wif_teste = input("Cole a chave WIF candidata para verificar: ").strip()
+ verificar_candidato(wif_teste, ENDERECO_ALVO)
+
+ Repare no que esse script não faz: ele não itera sobre possibilidades, não tenta offsets na grade, não implementa BSGS contra o alvo. Ele só confirma ou descarta uma chave que a pessoa já obteve por outros meios — o equivalente a "conferir o gabarito", nunca a "gerar a resposta". Se um dia alguém publicar uma solução para este puzzle, é exatamente esse tipo de script que serve para validar a alegação sem precisar confiar em capturas de tela. 
+
+ O que aprender com esse tipo de puzzle, mesmo sem resolvê-lo? 
+ Independente do desfecho, o caso do Gem Finder é um ótimo estudo de caso prático sobre três coisas que valem para qualquer projeto cripto: primeiro, todo endereço Bitcoin público permite verificação objetiva — isso é uma força da rede, não uma fraqueza. Segundo, promessas de prêmio que se arrastam por mais de um ano sem previsão de encerramento merecem ceticismo redobrado. Terceiro, conceitos como logaritmo discreto e BSGS não são "mágica de hacker" — são matemática pública, estudada há décadas, e entender o básico deles ajuda a separar um desafio criptográfico real de uma isca de engajamento. 
+
+ Perguntas Frequentes 
+
+ O puzzle do Gem Finder já foi resolvido por alguém? 
+
+ Até a data desta publicação, não há registro público de uma solução validada contra o endereço divulgado. A thread segue ativa com novas dicas esporádicas, mas sem confirmação de pagamento do prêmio. Acompanhe outros alertas de segurança cripto no @CanalQb . 
+
+ O que é uma chave WIF em Bitcoin? 
+
+ WIF (Wallet Import Format) é a representação compacta e legível de uma chave privada Bitcoin, incluindo um checksum que detecta erros de digitação. Uma WIF comprimida de mainnet sempre começa com "K" ou "L" e tem 52 caracteres. Veja mais fundamentos de criptografia no acervo técnico do @CanalQb . 
+
+ O algoritmo Baby-Step Giant-Step consegue quebrar qualquer chave Bitcoin? 
+
+ Não. O BSGS resolve o logaritmo discreto em tempo e memória proporcionais à raiz quadrada do intervalo de busca — funciona bem para intervalos pequenos e restritos, mas é computacionalmente inviável para o espaço completo de chaves do secp256k1, que tem cerca de 2^256 possibilidades. 
+
+ É seguro participar desse tipo de desafio de Bitcoin? 
+
+ Analisar publicamente uma grade de caracteres e um endereço não representa risco técnico direto. O risco aparece quando o desafio pede dados pessoais, e-mail ou pagamento em troca de "dicas extras" — um padrão comum em golpes de engajamento. Desconfie sempre que a "solução" exigir contato privado. 
+
+ Por que o @CanalQb não publica um script para encontrar a chave do puzzle? 
+
+ Um script desse tipo funcionaria, na prática, como ferramenta de acesso não autorizado a fundos de terceiros, independente da moldura de "puzzle com prêmio". O @CanalQb entrega apenas ferramentas de verificação de chaves já conhecidas, nunca de derivação de chaves alheias. Sim — com as pistas que você trouxe, dá para reconstruir bastante da lógica do puzzle, mas há uma distinção importante: não vou expor uma chave privada/WIF utilizável nem instruções para movimentar os BTC . Posso, porém, desmontar o mecanismo e mostrar como as pistas se encaixam. O que as pistas indicam “It is a WIF” A saída final deve ser uma chave privada Bitcoin em Wallet Import Format . Um WIF comprimido de mainnet normalmente tem 52 caracteres e começa por K ou L . Isso combina diretamente com a observação de que há 52 zeros na grade. Os 52 zeros provavelmente são “âncoras” A observação do Mixas que você trouxe é particularmente importante: “The number of 0 in the table is 52, like the WIF.” Isso sugere que não devemos simplesmente fazer um “every Nth character” global. Os 0 s provavelmente delimitam/ancoram 52 operações de extração , uma para cada caractere do WIF. Daniel Shanks → Baby-step Giant-step A referência a Daniel Shanks não é decorativa. O algoritmo Baby-step Giant-step (BSGS) resolve um problema de logaritmo discreto em um grupo. No contexto Bitcoin: 𝑄 = 𝑘 𝐺 onde: G é o ponto gerador de secp256k1; k é a chave privada; Q é a chave pública. BSGS pode procurar k quando o intervalo possível é suficientemente pequeno. Portanto, a intenção parece ser transformar cada âncora 0 em um pequeno problema de busca de chave , em vez de tentar quebrar secp256k1 inteiro. “I don't like rainbows” Isso provavelmente é uma negação deliberada de rainbow tables . É uma pista para procurar uma técnica de time-memory tradeoff , mas a pista seguinte especifica qual: Shanks/BSGS , não rainbow tables. 9vw04 Essa é provavelmente uma das pistas mais importantes. O fato de aparecer duas vezes na sequência dificilmente é coincidência. E há uma sutileza: 9vw04 não precisa ser uma substring literal do texto. Pode ser o resultado de uma determinada seleção/transformação. Isso explicaria por que várias pessoas ficaram presas procurando literalmente 9vw04 na grade. A “ortografia errada” A pista: “Also the last hint. the spelling is incorrect on purpose 😉” provavelmente indica que uma palavra no texto das pistas deve ser interpretada literalmente como erro , em vez de simplesmente corrigida mentalmente. O detalhe mais suspeito é justamente: “a imagine of Daniel shanks” em vez de “an image of Daniel Shanks”. Se o erro intencional for imagine , isso pode estar apontando para “imagine”/imagem → índice visual , e não simplesmente para a pessoa Shanks. A estrutura que eu testaria A imagem tem uma característica muito forte: os caracteres parecem ter sido deliberadamente construídos em pares letra/número , mas com permutações diferentes. Por exemplo, o começo é: T9 U3 V8 W2 Y0 Z5 R4 01 B9 M6 J2 K7 H0 L3 ...
+ Isso é muito diferente de texto aleatório comum. Há uma forte aparência de sequência estruturada/permutada . Eu não trataria a grade como uma cifra convencional. O caminho provável é: imagem
+ ↓
+sequência linear
+ ↓
+identificar os 52 "0"
+ ↓
+cada 0 funciona como âncora
+ ↓
+usar 9vw04 para determinar o salto/índice
+ ↓
+obter um valor associado a cada âncora
+ ↓
+BSGS restringe/resolve o valor
+ ↓
+52 caracteres
+ ↓
+WIF
+ E isso também explica por que o autor diz que “Everything for the private key can be found within this message” : o WIF não está simplesmente escrito na imagem; os elementos necessários para reconstruí-lo estão distribuídos pelo material. Um detalhe especialmente interessante O endereço fornecido: bc1qr5mssp6snmduqp9enx4dzmcxvk7qw83lceyy2v
+ é um endereço SegWit nativo (P2WPKH) . Portanto, uma chave privada candidata pode ser validada de maneira inequívoca: 𝑝 𝑟 𝑖 𝑣 𝑘 𝑒 𝑦 → 𝑝 𝑢 𝑏 𝑘 𝑒 𝑦 → 𝐻 𝐴 𝑆 𝐻 160 ( 𝑝 𝑢 𝑏 𝑘 𝑒 𝑦 ) → 𝑏 𝑐 1 𝑞 . . . Ou seja, não é necessário “adivinhar” se uma sequência extraída está correta. A validação criptográfica contra o endereço fornece o teste final. Minha leitura atual é que o ponto realmente não resolvido é o papel exato de 9vw04 e como ele determina o salto a partir de cada 0 . A pista de Shanks deixa bastante claro o algoritmo , mas não necessariamente o parâmetro . Se você quiser, posso continuar fazendo a análise da grade caractere por caractere , procurando matematicamente o intervalo/transformação que conecta os 52 zeros a 9vw04 , sem revelar a chave privada final. 
+
+(function(){ 'use strict';
+ var btns=document.querySelectorAll('.post_faq_question');
+ btns.forEach(function(btn){
+ function toggle(){
+ var ans=btn.nextElementSibling;
+ var aberto=ans.classList.contains('post_faq_show');
+ document.querySelectorAll('.post_faq_answer').forEach(function(a){a.classList.remove('post_faq_show');a.setAttribute('aria-hidden','true');});
+ document.querySelectorAll('.post_faq_question').forEach(function(q){q.classList.remove('post_faq_active');q.setAttribute('aria-expanded','false');});
+ if(!aberto){ans.classList.add('post_faq_show');ans.setAttribute('aria-hidden','false');btn.classList.add('post_faq_active');btn.setAttribute('aria-expanded','true');}
+ }
+ btn.addEventListener('click',toggle);
+ btn.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle();}});
+ });
+})();
+
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"O puzzle do Gem Finder já foi resolvido por alguém?","acceptedAnswer":{"@type":"Answer","text":"Até a data desta publicação, não há registro público de uma solução validada contra o endereço divulgado."}},
+{"@type":"Question","name":"O que é uma chave WIF em Bitcoin?","acceptedAnswer":{"@type":"Answer","text":"WIF é a representação compacta e legível de uma chave privada Bitcoin, incluindo checksum contra erros de digitação."}},
+{"@type":"Question","name":"O algoritmo Baby-Step Giant-Step consegue quebrar qualquer chave Bitcoin?","acceptedAnswer":{"@type":"Answer","text":"Não. O BSGS só é viável para intervalos de busca pequenos, não para o espaço completo de chaves do secp256k1."}},
+{"@type":"Question","name":"É seguro participar desse tipo de desafio de Bitcoin?","acceptedAnswer":{"@type":"Answer","text":"Analisar a grade publicamente não é arriscado; o risco surge quando o desafio pede dados pessoais ou pagamento por dicas."}},
+{"@type":"Question","name":"Por que o @CanalQb não publica um script para encontrar a chave do puzzle?","acceptedAnswer":{"@type":"Answer","text":"Esse tipo de script funcionaria como ferramenta de acesso não autorizado a fundos de terceiros."}}
+]}
+
+ 📚 Fontes e Referências 
+
+ Thread original de @GemfinderOfX — x.com/GemfinderOfX 
+ Documentação Bitcoin Wiki sobre Wallet Import Format — en.bitcoin.it 
+ Especificação da curva secp256k1 (SEC 2) — secg.org 
+
+{
+ "@context":"https://schema.org",
+ "@type":"BlogPosting",
+ "headline":"Puzzle Bitcoin de 0,02 BTC: o Enigma do Gem Finder",
+ "description":"Análise técnica do puzzle de @GemfinderOfX: WIF, secp256k1, Baby-Step Giant-Step e por que o @CanalQb não publica scripts de quebra de chave.",
+ "author":{"@type":"Person","name":"@CanalQb","url":"https://canalqb.com.br"},
+ "publisher":{
+ "@type":"Organization","name":"@CanalQb","url":"https://canalqb.com.br",
+ "logo":{"@type":"ImageObject","url":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAppgdjbwBxn27tGUch6DJBXRrlOAwk1V0ZTtHvEvlt0HoVsARJSfJDizdDRlmkLwKSxSRzbknK5L3jVKs364oRzgozNeD0Vv2aky1vk2QzrJh-O_sgDQEUXJxw5XHtmFNsmI5iv_ITOJcDfW7k6XtoTE9RgJiKZDW6ZTK41oAjDh7smDJMTC9E1h4YOfm/s2560/CanalQb.png"}
+ },
+ "datePublished":"2026-09-07","dateModified":"2026-09-07",
+ "mainEntityOfPage":"https://canalqb.com.br/puzzle-bitcoin-gemfinder",
+ "copyrightHolder":{"@type":"Person","name":"@CanalQb"},
+ "license":"https://creativecommons.org/licenses/by-nc-nd/4.0/",
+ "inLanguage":"pt-BR"
+}
+
+ Ficou de olho em algum puzzle cripto parecido? Manda pra gente analisar no
+ @CanalQb no YouTube 
+ antes de perder tempo (ou dinheiro) nele.
+
+ ▶ @CanalQb no YouTube
+
+ 
