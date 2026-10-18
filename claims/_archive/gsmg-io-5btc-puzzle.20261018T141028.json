@@ -7,5 +7,7 @@
   "started_utc": "2026-10-18T10:59:38Z",
   "ttl_min": 120,
   "expires_utc": "2026-10-18T12:59:38Z",
-  "heartbeat_utc": "2026-10-18T10:59:38Z"
+  "heartbeat_utc": "2026-10-18T10:59:38Z",
+  "released_utc": "2026-10-18T11:10:28Z",
+  "released_by": "BigPickle"
 }

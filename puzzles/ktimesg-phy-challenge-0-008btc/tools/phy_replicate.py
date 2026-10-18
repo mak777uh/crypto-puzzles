@@ -131,9 +131,10 @@ def magic_hash(msg: bytes) -> bytes:
 
 
 def recover(r, s, z, recid):
-    if recid & 2:
-        return None
-    x = r + (N if recid & 1 else 0)
+    # стандартный recid: бит0 = чётность y, бит1 = x = r + n  (исправлено 18.10:
+    # раньше бит 1 использовался и для сдвига x, и для чётности -> recid 1..3 были неверны;
+    # сертифицированный прогон recid=0 этим не затронут)
+    x = r + (N if recid & 2 else 0)
     if x >= P:
         return None
     alpha = (pow(x, 3, P) + 7) % P

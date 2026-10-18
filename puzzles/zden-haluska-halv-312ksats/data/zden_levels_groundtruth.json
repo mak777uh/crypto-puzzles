@@ -1,0 +1,146 @@
+[
+ {
+  "id": "level-1",
+  "status": "Solved",
+  "address": "1cryptommoqPHVNHuxVQG3bzujnRJYB1D",
+  "key": "46c92e7276ae95778df0d7a248ab736cb6275190ded54438377a2e4b0d42a096",
+  "wif": "5JMTiDVHj3pj8VfaTe6pDtD9byZr6too3PD3AGBJrXF1hVsitc8",
+  "pubkey": "0408fe136fc5f5ab550da96673c050c539ce9877ec69965dde958d080cc4a2b896d6db9afd83e05875a401edcbc0e870c23251cb12b55677dba04a495806fd9fb7",
+  "priv": null
+ },
+ {
+  "id": "level-2",
+  "status": "Solved",
+  "address": "1cryptoTuax4qeedzVC35eYf4c16v4reJ",
+  "key": "febedbdd99c7a288eafb6ec1b0fdc3e10a09567ff8a3ab30b9fdf69eb492a6dc",
+  "wif": "5KkUiPnCoG6JteP1fdZLYTGYu7RAPymsWB82hF1xkXRPNBD6FLd",
+  "pubkey": "040616b3227a76ebd896a916be772a5174cfced52413e4180a7be1ab128fc1acb6f839c4e5c7e9c52815a9daa728ab7f14302e2acb51227dca6a654f18d51f78e8",
+  "priv": null
+ },
+ {
+  "id": "level-3",
+  "status": "Solved",
+  "address": "1cryptoJzomVVJUSys8Qv1gKPCXFoZy1U",
+  "key": "6008c37d0aa226dbbe611be64106964bca6cbba7098fe4602a932c590e14b074",
+  "wif": "5JYaeV69haogQrDcGuW2Pmux8Mm2qtGYr9T2psxiKYfmhDYErQ2",
+  "pubkey": "043648d46ea6de8285c56df043a9f438693692c33da0bacb0f3383e65d9983a8bf12be321634a4fdbc5cb58bd76a2c62a7546e3f70d6b28c35d5843527583ad48f",
+  "priv": null
+ },
+ {
+  "id": "level-4",
+  "status": "Solved",
+  "address": "1cryptoRMRnj7Q9fgToxTRvejLnx3QRPq",
+  "key": null,
+  "wif": null,
+  "pubkey": "042348aa53c41b59a87be13846d37160538e6e6addb254116dc40223fcf2925e013d1cbfd764193f9268122c0444038a0c798f540874d6f0b9b182b8ced6dc98eb",
+  "priv": null
+ },
+ {
+  "id": "level-5",
+  "status": "Solved",
+  "address": "1cryptoGeCRiTzVgxBQcKFFjSVydN1GW7",
+  "key": "f4bfad68198549d3e5612fa3b1cabad14679c634359e2f5efdd804ddce8a9f51",
+  "wif": "5Kg5Mosdn8dbSCsNBVtFHTVMjyfSE8UR2nfLLG8JcjWJNqtBBCG",
+  "pubkey": "0488d3d2481ceee8be4372fc4d1ef8451e5b5e1c092728566f5b1bd1a5849ffa870681b60b5e97983e4d027156273b3f81da778005e1104cf3fbc9446e66ccbb9a",
+  "priv": null
+ },
+ {
+  "id": "level-halv",
+  "status": null,
+  "address": "1crypto24HCr178iMcKd5iUi5D4rsg1nK",
+  "key": null,
+  "wif": null,
+  "pubkey": null,
+  "priv": null
+ },
+ {
+  "id": "level-sfx",
+  "status": "Solved",
+  "address": "1crypto92aYKxdzD6VSAKwpEJnXcA2s9t",
+  "key": null,
+  "wif": null,
+  "pubkey": "04f3522614fabf280019a1c7005523808d4f08afa8084c483fe4e02b92a7ae587c264138073c19f1106b7670a23c4f4bb7e08b3cc75254f45b7cdbb958cf97abc3",
+  "priv": null
+ },
+ {
+  "id": "level-xm17",
+  "status": "Solved",
+  "address": "1cryptozWJAE7UzDZF1eSgsT7mVjUsu7g",
+  "key": "f85204261fa2cef0febb7eefc1bf64105e51351039ed4dd26ee6f427cc403e98",
+  "wif": "5KhebJWTSHq8wpSKKMhxroKuwrCA8UMS4WKSLpTcH4gDGJz1jqo",
+  "pubkey": "04a7daaeb780428349a532386cbe4570c2765265099a5cabb6614abbbc16e0eed968f012d4e999a2726ec101402af57d4d99813d86ca6a1de7bf15ec6ff740ab6e",
+  "priv": null
+ },
+ {
+  "id": "1bitcoin-white-paper",
+  "status": "Solved",
+  "address": "1BiTCoiNsuFnkCFGkv6AGgwWxN31GUwY6W",
+  "key": "261f71e7602c5b7802b5ec9b28c1a0a96283a4d3d345d56a95861b469dfec298",
+  "wif": "5J75Nt7nGQfMWBsoQF74hou2yFc7mK2tHrEA1q3wn3Ls82sHhzA",
+  "pubkey": "04bb16b0a88389b89e0b900f1509589fa7f03e18a4482967b87421c3ab5b6d44d2be549abdb95861b64430b3d6b4ee389d0bf7e5ad554442c5bd12ed1651cf4540",
+  "priv": null
+ },
+ {
+  "id": "demobit-2018",
+  "status": "Solved",
+  "address": "1cryptotnptVK1ZbpZFyEqcR5EVp5hjfk",
+  "key": null,
+  "wif": null,
+  "pubkey": "04fc4f71ab4554b2ea1203b1cf6d0cfaf179213d7fa028be7dda5c183807792b15c5c0146f10be96bebf2fc1fb41637bd0b16d2d534e14b649da6ab7420e143b74",
+  "priv": null
+ },
+ {
+  "id": "nethemba",
+  "status": "Solved",
+  "address": "1cryptoP5yMdKcz1bjzUqnbs3LsasVRX6",
+  "key": null,
+  "wif": null,
+  "pubkey": "0448ececabf97b8b0b17c96d6908ee913192855f05040764776b2ba33de2c354d3149b187b8ff65f6b429ce363296766d61ef0c16261ad0bc1e40679c6b8571d2c",
+  "priv": null
+ },
+ {
+  "id": "xixoio",
+  "status": "Solved",
+  "address": "0x5d663791e869ca70c71e0a5f4cfd707f596265aa",
+  "key": null,
+  "wif": null,
+  "pubkey": "04da1a5098d80ce66b4c9fd974b9d9164d57caf1263d834c961c89b117a412ece1703a3bb1d606d03c1c4ff9225b556c291c2c6fbd67968f451f472a827dc9e781",
+  "priv": null
+ },
+ {
+  "id": "codex-protocol",
+  "status": "Solved",
+  "address": "0x6b2560b34c7469c561a8fce581c88bfb8cce73b2",
+  "key": "5a9674dbee5a9674dbee5a9674dbee5a9674dbee5a9674dbee5a9674dbfcf3ec",
+  "wif": null,
+  "pubkey": "04b2bb29c9cf6a1c7a048e02cecdd7bec9f4fb3d19e0a9b5c7d7785fb6b17a4d8b11ec437d972a8922838b3af1854f375278ee94758e5c8a4d699072bdd7581301",
+  "priv": null
+ },
+ {
+  "id": "litecoin-segwit",
+  "status": "Solved",
+  "address": "LartGjF6UjmvmF1JXBhFf5wtM9uZX7LzeS",
+  "key": null,
+  "wif": null,
+  "pubkey": "03bc34c725e24d6159f3e2d3c01d455cf5fd48b83a7ca5eb4c7155044ec728ff11",
+  "priv": null
+ },
+ {
+  "id": "decred-janus",
+  "status": "Solved",
+  "address": "DsRaAja82UvgnqYaBHYFuyCKURFX2rCyEJ8",
+  "key": null,
+  "wif": null,
+  "pubkey": "02278753666ec31c29b755a39421017bd80744d728204da0f7ff452846112b618b",
+  "priv": null
+ },
+ {
+  "id": "decred-autonomy",
+  "status": "Solved",
+  "address": "DseEpHK49hHrTJhxwop3B86K1dryv4CYz8N",
+  "key": null,
+  "wif": null,
+  "pubkey": "02daa17dcb78cd7befd6986e3af1cc49acdd924f557990680c0b7ffe05ae03e960",
+  "priv": null
+ }
+]

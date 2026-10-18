@@ -1,0 +1,50 @@
+﻿SP     salt=3ab585348552415d ct=80 B (blocks=5)
+P32    salt=b45a5e3d827593ca ct=80 B (blocks=5)
+COSMIC salt=2d3f6fe06dc950e6 ct=1328 B (blocks=83)
+CTRL chain-1 (md5, SP): pad=1 sha256=1449a2178eea7c0e3fabac8c1ad2afa294be4fc1800c594a025a056e88c626bf -> OK
+последовательностей: 61867
+тестов: 742404  valid-padding: 2889  elapsed 22.0s
+ожидаемый шум: SP/P32 ~1018 каждый, COSMIC ~967  (1/243 и 1/256)
+
+паддингов >1 байта: 13
+   SP     sha256hex md5    pad=2  len=78  pr=0.42 sha=86f910438065 cand=b'lastwordsbeforearchichoicecausalityourfirsth
+   P32    raw       sha256 pad=2  len=78  pr=0.41 sha=5fcf5f8b55ff cand=b'yourlastcommandyinyangsecondanswertheone'
+   COSMIC sha256hex sha256 pad=2  len=1326 pr=0.39 sha=d7bdd4defaca cand=b'shabef shabef enter yellowblueprimes'
+   SP     raw       md5    pad=2  len=78  pr=0.39 sha=e527ffd41297 cand=b'yellowblueprimescausalitylastwordsbeforearch
+   COSMIC sha256hex md5    pad=2  len=1326 pr=0.38 sha=d26cf2985001 cand=b'thispassword yinyang enter theone'
+   COSMIC sha256hex sha256 pad=2  len=1326 pr=0.38 sha=971a65715d65 cand=b'yourlastcommandthispasswordenteryinyang'
+   COSMIC raw       sha256 pad=2  len=1326 pr=0.38 sha=5a2eee63516c cand=b'matrixsumlist yourlastcommand enter btcseed'
+   COSMIC raw       md5    pad=2  len=1326 pr=0.38 sha=fc268f25a69a cand=b'thispassword shabef matrixsumlist causality'
+   COSMIC sha256hex sha256 pad=2  len=1326 pr=0.38 sha=e9ad07bbaff1 cand=b'matrixsumlistcausalitythispasswordmatrixsuml
+   P32    raw       md5    pad=2  len=78  pr=0.38 sha=d01b4abf6f7a cand=b'matrixsumlisttheoneshabef'
+   COSMIC sha256hex sha256 pad=2  len=1326 pr=0.37 sha=b1c58461df64 cand=b'btcseedlastwordsbeforearchichoiceyinyang'
+   SP     sha256hex md5    pad=2  len=78  pr=0.36 sha=538ed0b6aa06 cand=b'yourlastcommand secondanswer btcseed lastwor
+
+топ-10 по печатаемости:
+   SP     sha256hex md5    pad=1  len=79  pr=0.57 sha=8f37d45f4f1f cand=b'shabefourfirsthintisyourlastcommandbtcseed'
+   P32    raw       md5    pad=1  len=79  pr=0.57 sha=149897efffde cand=b'shabef yourlastcommand theone lastwordsbefor
+   P32    raw       sha256 pad=1  len=79  pr=0.55 sha=0b0e47e7e95f cand=b'yourlastcommand theone shabef enter'
+   SP     sha256hex sha256 pad=1  len=79  pr=0.54 sha=a7160e2c3e03 cand=b'causality yourlastcommand shabef enter'
+   SP     sha256hex md5    pad=1  len=79  pr=0.54 sha=6f1bc1807948 cand=b'theoneourfirsthintisyourlastcommandourfirsth
+   P32    sha256hex md5    pad=1  len=79  pr=0.54 sha=896f95dde5c9 cand=b'yellowblueprimesmatrixsumlistmatrixsumlistca
+   P32    raw       md5    pad=1  len=79  pr=0.54 sha=ad2d26c4513c cand=b'yellowblueprimes matrixsumlist yourlastcomma
+   P32    sha256hex md5    pad=1  len=79  pr=0.53 sha=783fceae2d04 cand=b'yourlastcommandlastwordsbeforearchichoicecau
+   P32    raw       md5    pad=1  len=79  pr=0.53 sha=e23d5928e1cd cand=b'btcseedcausalityentersecondanswer'
+   SP     sha256hex md5    pad=1  len=79  pr=0.51 sha=e988ec269aa5 cand=b'yellowblueprimesshabefentertheone'
+валидных паддингов с printable>=0.85: 0
+призовых ключей: 0
+
+CTRL cosmic SetB XOR key = a795de117e472590 -> OK
+CTRL cosmic SetB raw+md5: pad=1 len=1327 pr=0.389 sha256(body)=4f7a1e4efe4bf6c5 -> OK
+XOR-семейство: тестов 98292, valid-padding 369 (шум ~384)
+из них COSMIC: 114 (шум ~128); подсемейство опубликованной конструкции (xor32+md5): 36 (шум ~32)
+топ-6 по печатаемости в XOR-семействе:
+   P32    xorhex  sha256 pad=1  len=79   pr=0.50 sha=81c4ccc105a0 combo=matrixsumlist+enter+shabef+causality+seconda
+   SP     xorhex  sha256 pad=1  len=79   pr=0.50 sha=72490a1aaa1b combo=matrixsumlist+enter+lastwordsbeforearchichoi
+   SP     xorhex  sha256 pad=1  len=79   pr=0.50 sha=be95005c7ad4 combo=enter+yinyang+shabef+causality+theone+second
+   SP     xor32   md5    pad=1  len=79   pr=0.49 sha=03d62fe419ab combo=enter+lastwordsbeforearchichoice+ourfirsthin
+   P32    xorhex  md5    pad=1  len=79   pr=0.49 sha=6eeffcad3c38 combo=enter+lastwordsbeforearchichoice+ourfirsthin
+   SP     xor32   md5    pad=1  len=79   pr=0.49 sha=d66079b1a3dd combo=matrixsumlist+thispassword+yellowblueprimes+
+printable>=0.85 в XOR-семействе: 0
+призовых ключей в XOR-семействе: 0
+elapsed total 25.0s
