@@ -1,0 +1,219 @@
+{
+ "crypto puzzle unsolved bounty in:name,description,readme": [
+  {
+   "full_name": "Spacial/awesome-csirt",
+   "stars": 656,
+   "desc": "Awesome CSIRT is an curated list of links and resources in security and CSIRT daily activities.",
+   "url": "https://github.com/Spacial/awesome-csirt",
+   "updated": "2026-10-09"
+  },
+  {
+   "full_name": "AfvanMoopen/tryhackme-",
+   "stars": 226,
+   "desc": "All Solutions ",
+   "url": "https://github.com/AfvanMoopen/tryhackme-",
+   "updated": "2024-05-19"
+  },
+  {
+   "full_name": "floflo777/open-crypto-puzzles",
+   "stars": 206,
+   "desc": "Unsolved crypto puzzles worth ~10 BTC, ~12 ETH and ~1,900 AR still on-chain: escrow addresses, author clues, and my research on each. A few solved, with payout proofs.",
+   "url": "https://github.com/floflo777/open-crypto-puzzles",
+   "updated": "2026-10-17"
+  },
+  {
+   "full_name": "SalvatoreRa/ML-news-of-the-week",
+   "stars": 183,
+   "desc": "A collection of the the best ML and AI news every week (research, news, resources)",
+   "url": "https://github.com/SalvatoreRa/ML-news-of-the-week",
+   "updated": "2025-07-27"
+  },
+  {
+   "full_name": "wynandw87/claude-code-spinner-verbs",
+   "stars": 140,
+   "desc": "6,300+ curated spinner verbs and spinner phrases for Claude Code across 153 themed categories",
+   "url": "https://github.com/wynandw87/claude-code-spinner-verbs",
+   "updated": "2026-10-01"
+  },
+  {
+   "full_name": "lanjelot/ctfs",
+   "stars": 107,
+   "desc": "notes and code on past CTFs",
+   "url": "https://github.com/lanjelot/ctfs",
+   "updated": "2021-06-17"
+  },
+  {
+   "full_name": "uttambodara/Awesome-Hacking-Learning-Path",
+   "stars": 38,
+   "desc": "A comprehensive hacking learning path covering Pentesting, OSINT, Linux, Networking, Web Application Security, Cryptography, Exploitation, Reverse Engineering, Forensics, CVEs, and CTF challenges. Per",
+   "url": "https://github.com/uttambodara/Awesome-Hacking-Learning-Path",
+   "updated": "2026-07-24"
+  },
+  {
+   "full_name": "LitoMore/games",
+   "stars": 33,
+   "desc": "🎮 List of video games I already own",
+   "url": "https://github.com/LitoMore/games",
+   "updated": "2026-10-18"
+  },
+  {
+   "full_name": "oritwoen/kangaroo",
+   "stars": 28,
+   "desc": "GPU-accelerated Pollard's Kangaroo ECDLP solver for secp256k1 (Vulkan/Metal/DX12)",
+   "url": "https://github.com/oritwoen/kangaroo",
+   "updated": "2026-04-02"
+  },
+  {
+   "full_name": "agntn/puzzles",
+   "stars": 22,
+   "desc": "Crypto bounties, puzzles and challenges data library",
+   "url": "https://github.com/agntn/puzzles",
+   "updated": "2026-10-17"
+  },
+  {
+   "full_name": "catsecorg/CatSec-TryHackMe-WriteUps",
+   "stars": 14,
+   "desc": "All WriteUps and Flags of TryHackMe",
+   "url": "https://github.com/catsecorg/CatSec-TryHackMe-WriteUps",
+   "updated": "2020-11-24"
+  },
+  {
+   "full_name": "testermas/tryhackme",
+   "stars": 5,
+   "desc": "",
+   "url": "https://github.com/testermas/tryhackme",
+   "updated": "2022-08-14"
+  },
+  {
+   "full_name": "shuklaayush/ingonyama-ctf-solutions",
+   "stars": 4,
+   "desc": "Solutions to Ingonyama CTF 2023",
+   "url": "https://github.com/shuklaayush/ingonyama-ctf-solutions",
+   "updated": "2023-06-25"
+  },
+  {
+   "full_name": "LinXiaoTao/awesome-grokbot",
+   "stars": 3,
+   "desc": "",
+   "url": "https://github.com/LinXiaoTao/awesome-grokbot",
+   "updated": "2026-10-16"
+  },
+  {
+   "full_name": "oritwoen/unsek",
+   "stars": 2,
+   "desc": "Cryptographic security research framework — coordination repo for unsek tools ecosystem",
+   "url": "https://github.com/oritwoen/unsek",
+   "updated": "2026-02-20"
+  },
+  {
+   "full_name": "GizzZmo/GizzZmo",
+   "stars": 1,
+   "desc": "Config files for my GitHub profile.",
+   "url": "https://github.com/GizzZmo/GizzZmo",
+   "updated": "2026-10-05"
+  },
+  {
+   "full_name": "Sarthak690/CaInDra",
+   "stars": 1,
+   "desc": "A collection of the the best ML and AI news every week (research, news, resources)",
+   "url": "https://github.com/Sarthak690/CaInDra",
+   "updated": "2025-12-14"
+  },
+  {
+   "full_name": "SmallCakekoo/open-crypto-puzzles",
+   "stars": 0,
+   "desc": "Public crypto treasure-hunt puzzle research",
+   "url": "https://github.com/SmallCakekoo/open-crypto-puzzles",
+   "updated": "2026-08-26"
+  },
+  {
+   "full_name": "HosterjackAGV/gsmg-5btc-puzzle",
+   "stars": 0,
+   "desc": "An interactive compendium of the GSMG puzzle.",
+   "url": "https://github.com/HosterjackAGV/gsmg-5btc-puzzle",
+   "updated": "2026-09-22"
+  },
+  {
+   "full_name": "jantoniaze/btc-kangaroo-solver",
+   "stars": 0,
+   "desc": "Bitcoin ECDLP solver using Pollard Kangaroo algorithm with AMD GPU support",
+   "url": "https://github.com/jantoniaze/btc-kangaroo-solver",
+   "updated": "2026-09-08"
+  },
+  {
+   "full_name": "Andy00L/dragnet",
+   "stars": 0,
+   "desc": "",
+   "url": "https://github.com/Andy00L/dragnet",
+   "updated": "2026-07-16"
+  },
+  {
+   "full_name": "consigcody94/ARweave-Puzzle-11",
+   "stars": 0,
+   "desc": "The Definitive Forensic Audit, Mathematical Decoding Suite & Apple Metal GPU Solver for Tiamat's 1.0 ETH Arweave Crypto Puzzle #11",
+   "url": "https://github.com/consigcody94/ARweave-Puzzle-11",
+   "updated": "2026-09-03"
+  },
+  {
+   "full_name": "Greendev832/kangaroo",
+   "stars": 0,
+   "desc": "",
+   "url": "https://github.com/Greendev832/kangaroo",
+   "updated": "2026-10-07"
+  },
+  {
+   "full_name": "PedroMVillar/sec-notes",
+   "stars": 0,
+   "desc": "Notes, writeups and resources from my journey into CTFs and offensive security.",
+   "url": "https://github.com/PedroMVillar/sec-notes",
+   "updated": "2026-09-16"
+  },
+  {
+   "full_name": "SOJU001/Sec-TryHackMe",
+   "stars": 0,
+   "desc": "",
+   "url": "https://github.com/SOJU001/Sec-TryHackMe",
+   "updated": "2026-09-17"
+  },
+  {
+   "full_name": "SOJU001/CatSec-TryHackMe-WriteUps",
+   "stars": 0,
+   "desc": "",
+   "url": "https://github.com/SOJU001/CatSec-TryHackMe-WriteUps",
+   "updated": "2026-09-16"
+  },
+  {
+   "full_name": "Joao-Paulino/TryHackMe",
+   "stars": 0,
+   "desc": "",
+   "url": "https://github.com/Joao-Paulino/TryHackMe",
+   "updated": "2024-09-22"
+  },
+  {
+   "full_name": "enhansome/enhansome-csirt",
+   "stars": 0,
+   "desc": "",
+   "url": "https://github.com/enhansome/enhansome-csirt",
+   "updated": "2026-10-18"
+  },
+  {
+   "full_name": "lineality/ai_2024_in_review",
+   "stars": 0,
+   "desc": "",
+   "url": "https://github.com/lineality/ai_2024_in_review",
+   "updated": "2026-10-17"
+  },
+  {
+   "full_name": "KellyFederalEnerGy/dec22",
+   "stars": 0,
+   "desc": "",
+   "url": "https://github.com/KellyFederalEnerGy/dec22",
+   "updated": "2025-12-23"
+  }
+ ],
+ "bitcoin puzzle list catalog": [],
+ "crypto treasure hunt puzzle prize": [],
+ "seed phrase puzzle bounty": [],
+ "unsolved cipher bounty prize": [],
+ "blockchain puzzle collection awesome": []
+}

@@ -1,0 +1,225 @@
+phase214_probe_combo_catalog
+
+BUCKET SUMMARY
+- rotator_chain        count= 39 support_sum=5.843240 best_combo=0.233300 templates=['chain_m_to_e_to_f_to_m', 'chain_m_to_f_to_e_to_m']
+- clean_baseline       count= 10 support_sum=4.477800 best_combo=0.447780 templates=['identity']
+- clean_perturbation   count= 12 support_sum=1.715040 best_combo=0.142920 templates=['swap_matrixsumlist_enter']
+- h_island_branch      count= 27 support_sum=1.407060 best_combo=0.069100 templates=['h_island_injection_to_enter', 'h_island_injection_to_fourforone']
+
+TEMPLATE SUMMARY
+- identity                         bucket=clean_baseline     count=10 support=0.447780 best_combo=0.447780
+  best_probe: order=locked_order serialization=token_equals_pipe
+  probe     : matrixsumlist=cfebffi ; enter=cfebfgi ; yourlastcommand=chebffi ; fourforone=cfebfhi|cfebgfi|cfebggi
+- chain_m_to_f_to_e_to_m           bucket=rotator_chain      count=20 support=0.233300 best_combo=0.233300
+  best_probe: order=locked_order serialization=token_equals_pipe
+  probe     : matrixsumlist=cfebfgi ; enter=cfebfhi|cfebgfi|cfebggi ; yourlastcommand=chebffi ; fourforone=cfebffi
+- swap_matrixsumlist_enter         bucket=clean_perturbation count=12 support=0.142920 best_combo=0.142920
+  best_probe: order=locked_order serialization=token_equals_pipe
+  probe     : matrixsumlist=cfebfgi ; enter=cfebffi ; yourlastcommand=chebffi ; fourforone=cfebfhi|cfebgfi|cfebggi
+- h_island_injection_to_fourforone bucket=h_island_branch    count=15 support=0.069100 best_combo=0.069100
+  best_probe: order=locked_order serialization=token_equals_pipe
+  probe     : matrixsumlist=cfebffi ; enter=cfebfgi|cfebfhi|cfebgfi ; yourlastcommand=chebfhi ; fourforone=chebffi
+- chain_m_to_e_to_f_to_m           bucket=rotator_chain      count=19 support=0.061960 best_combo=0.061960
+  best_probe: order=locked_order serialization=token_equals_pipe
+  probe     : matrixsumlist=cfebfhi|cfebgfi|cfebggi ; enter=cfebffi ; yourlastcommand=chebffi ; fourforone=cfebfgi
+- h_island_injection_to_enter      bucket=h_island_branch    count=12 support=0.030880 best_combo=0.030880
+  best_probe: order=locked_order serialization=token_equals_pipe
+  probe     : matrixsumlist=cfebffi ; enter=chebffi ; yourlastcommand=chebfhi ; fourforone=cfebfgi|cfebfhi|cfebgfi
+
+TOP UNIQUE PROBES
+01. combo=0.447780 support=0.447780 identity :: locked_order :: token_equals_pipe
+    matrixsumlist=cfebffi ; enter=cfebfgi ; yourlastcommand=chebffi ; fourforone=cfebfhi|cfebgfi|cfebggi
+02. combo=0.437780 support=0.447780 identity :: locked_order :: token_equals_space
+    matrixsumlist=cfebffi ; enter=cfebfgi ; yourlastcommand=chebffi ; fourforone=cfebfhi cfebgfi cfebggi
+03. combo=0.427780 support=0.447780 identity :: locked_order :: pipe_words
+    cfebffi || cfebfgi || chebffi || cfebfhi|cfebgfi|cfebggi
+04. combo=0.417780 support=0.447780 identity :: locked_order :: space_words
+    cfebffi cfebfgi chebffi cfebfhi cfebgfi cfebggi
+05. combo=0.407780 support=0.447780 identity :: locked_order :: concat_words
+    cfebfficfebfgichebfficfebfhicfebgficfebggi
+06. combo=0.387780 support=0.447780 identity :: command_first_order :: token_equals_pipe
+    yourlastcommand=chebffi ; enter=cfebfgi ; matrixsumlist=cfebffi ; fourforone=cfebfhi|cfebgfi|cfebggi
+07. combo=0.377780 support=0.447780 identity :: command_first_order :: token_equals_space
+    yourlastcommand=chebffi ; enter=cfebfgi ; matrixsumlist=cfebffi ; fourforone=cfebfhi cfebgfi cfebggi
+08. combo=0.367780 support=0.447780 identity :: alpha_nonempty_order :: token_equals_pipe
+    enter=cfebfgi ; fourforone=cfebfhi|cfebgfi|cfebggi ; matrixsumlist=cfebffi ; yourlastcommand=chebffi
+09. combo=0.367780 support=0.447780 identity :: command_first_order :: pipe_words
+    chebffi || cfebfgi || cfebffi || cfebfhi|cfebgfi|cfebggi
+10. combo=0.357780 support=0.447780 identity :: command_first_order :: space_words
+    chebffi cfebfgi cfebffi cfebfhi cfebgfi cfebggi
+11. combo=0.233300 support=0.233300 chain_m_to_f_to_e_to_m :: locked_order :: token_equals_pipe
+    matrixsumlist=cfebfgi ; enter=cfebfhi|cfebgfi|cfebggi ; yourlastcommand=chebffi ; fourforone=cfebffi
+12. combo=0.223300 support=0.233300 chain_m_to_f_to_e_to_m :: locked_order :: token_equals_space
+    matrixsumlist=cfebfgi ; enter=cfebfhi cfebgfi cfebggi ; yourlastcommand=chebffi ; fourforone=cfebffi
+13. combo=0.213300 support=0.233300 chain_m_to_f_to_e_to_m :: locked_order :: pipe_words
+    cfebfgi || cfebfhi|cfebgfi|cfebggi || chebffi || cfebffi
+14. combo=0.213300 support=0.233300 chain_m_to_f_to_e_to_m :: template_order :: token_equals_pipe
+    matrixsumlist=cfebfgi ; fourforone=cfebffi ; enter=cfebfhi|cfebgfi|cfebggi ; yourlastcommand=chebffi
+15. combo=0.203300 support=0.233300 chain_m_to_f_to_e_to_m :: locked_order :: space_words
+    cfebfgi cfebfhi cfebgfi cfebggi chebffi cfebffi
+16. combo=0.203300 support=0.233300 chain_m_to_f_to_e_to_m :: template_order :: token_equals_space
+    matrixsumlist=cfebfgi ; fourforone=cfebffi ; enter=cfebfhi cfebgfi cfebggi ; yourlastcommand=chebffi
+17. combo=0.193300 support=0.233300 chain_m_to_f_to_e_to_m :: locked_order :: concat_words
+    cfebfgicfebfhicfebgficfebggichebfficfebffi
+18. combo=0.193300 support=0.233300 chain_m_to_f_to_e_to_m :: template_order :: pipe_words
+    cfebfgi || cfebffi || cfebfhi|cfebgfi|cfebggi || chebffi
+19. combo=0.193300 support=0.233300 chain_m_to_f_to_e_to_m :: trace_order :: token_equals_pipe
+    enter=cfebfhi|cfebgfi|cfebggi ; matrixsumlist=cfebfgi ; fourforone=cfebffi ; yourlastcommand=chebffi
+20. combo=0.183300 support=0.233300 chain_m_to_f_to_e_to_m :: template_order :: space_words
+    cfebfgi cfebffi cfebfhi cfebgfi cfebggi chebffi
+21. combo=0.183300 support=0.233300 chain_m_to_f_to_e_to_m :: trace_order :: token_equals_space
+    enter=cfebfhi cfebgfi cfebggi ; matrixsumlist=cfebfgi ; fourforone=cfebffi ; yourlastcommand=chebffi
+22. combo=0.173300 support=0.233300 chain_m_to_f_to_e_to_m :: command_first_order :: token_equals_pipe
+    yourlastcommand=chebffi ; enter=cfebfhi|cfebgfi|cfebggi ; matrixsumlist=cfebfgi ; fourforone=cfebffi
+23. combo=0.173300 support=0.233300 chain_m_to_f_to_e_to_m :: template_order :: concat_words
+    cfebfgicfebfficfebfhicfebgficfebggichebffi
+24. combo=0.173300 support=0.233300 chain_m_to_f_to_e_to_m :: trace_order :: pipe_words
+    cfebfhi|cfebgfi|cfebggi || cfebfgi || cfebffi || chebffi
+25. combo=0.163300 support=0.233300 chain_m_to_f_to_e_to_m :: command_first_order :: token_equals_space
+    yourlastcommand=chebffi ; enter=cfebfhi cfebgfi cfebggi ; matrixsumlist=cfebfgi ; fourforone=cfebffi
+26. combo=0.163300 support=0.233300 chain_m_to_f_to_e_to_m :: trace_order :: space_words
+    cfebfhi cfebgfi cfebggi cfebfgi cfebffi chebffi
+27. combo=0.153300 support=0.233300 chain_m_to_f_to_e_to_m :: alpha_nonempty_order :: token_equals_pipe
+    enter=cfebfhi|cfebgfi|cfebggi ; fourforone=cfebffi ; matrixsumlist=cfebfgi ; yourlastcommand=chebffi
+28. combo=0.153300 support=0.233300 chain_m_to_f_to_e_to_m :: command_first_order :: pipe_words
+    chebffi || cfebfhi|cfebgfi|cfebggi || cfebfgi || cfebffi
+29. combo=0.153300 support=0.233300 chain_m_to_f_to_e_to_m :: trace_order :: concat_words
+    cfebfhicfebgficfebggicfebfgicfebffichebffi
+30. combo=0.143300 support=0.233300 chain_m_to_f_to_e_to_m :: command_first_order :: space_words
+    chebffi cfebfhi cfebgfi cfebggi cfebfgi cfebffi
+31. combo=0.142920 support=0.142920 swap_matrixsumlist_enter :: locked_order :: token_equals_pipe
+    matrixsumlist=cfebfgi ; enter=cfebffi ; yourlastcommand=chebffi ; fourforone=cfebfhi|cfebgfi|cfebggi
+32. combo=0.132920 support=0.142920 swap_matrixsumlist_enter :: locked_order :: token_equals_space
+    matrixsumlist=cfebfgi ; enter=cfebffi ; yourlastcommand=chebffi ; fourforone=cfebfhi cfebgfi cfebggi
+33. combo=0.122920 support=0.142920 swap_matrixsumlist_enter :: locked_order :: pipe_words
+    cfebfgi || cfebffi || chebffi || cfebfhi|cfebgfi|cfebggi
+34. combo=0.112920 support=0.142920 swap_matrixsumlist_enter :: locked_order :: space_words
+    cfebfgi cfebffi chebffi cfebfhi cfebgfi cfebggi
+35. combo=0.102920 support=0.142920 swap_matrixsumlist_enter :: locked_order :: concat_words
+    cfebfgicfebffichebfficfebfhicfebgficfebggi
+36. combo=0.102920 support=0.142920 swap_matrixsumlist_enter :: trace_order :: token_equals_pipe
+    enter=cfebffi ; matrixsumlist=cfebfgi ; yourlastcommand=chebffi ; fourforone=cfebfhi|cfebgfi|cfebggi
+37. combo=0.092920 support=0.142920 swap_matrixsumlist_enter :: trace_order :: token_equals_space
+    enter=cfebffi ; matrixsumlist=cfebfgi ; yourlastcommand=chebffi ; fourforone=cfebfhi cfebgfi cfebggi
+38. combo=0.082920 support=0.142920 swap_matrixsumlist_enter :: command_first_order :: token_equals_pipe
+    yourlastcommand=chebffi ; enter=cfebffi ; matrixsumlist=cfebfgi ; fourforone=cfebfhi|cfebgfi|cfebggi
+39. combo=0.072920 support=0.142920 swap_matrixsumlist_enter :: command_first_order :: token_equals_space
+    yourlastcommand=chebffi ; enter=cfebffi ; matrixsumlist=cfebfgi ; fourforone=cfebfhi cfebgfi cfebggi
+40. combo=0.069100 support=0.069100 h_island_injection_to_fourforone :: locked_order :: token_equals_pipe
+    matrixsumlist=cfebffi ; enter=cfebfgi|cfebfhi|cfebgfi ; yourlastcommand=chebfhi ; fourforone=chebffi
+
+ACTIVE PROBE PACK
+- identity
+  * combo=0.447780 order=locked_order serialization=token_equals_pipe
+    matrixsumlist=cfebffi ; enter=cfebfgi ; yourlastcommand=chebffi ; fourforone=cfebfhi|cfebgfi|cfebggi
+  * combo=0.437780 order=locked_order serialization=token_equals_space
+    matrixsumlist=cfebffi ; enter=cfebfgi ; yourlastcommand=chebffi ; fourforone=cfebfhi cfebgfi cfebggi
+  * combo=0.427780 order=locked_order serialization=pipe_words
+    cfebffi || cfebfgi || chebffi || cfebfhi|cfebgfi|cfebggi
+  * combo=0.417780 order=locked_order serialization=space_words
+    cfebffi cfebfgi chebffi cfebfhi cfebgfi cfebggi
+  * combo=0.407780 order=locked_order serialization=concat_words
+    cfebfficfebfgichebfficfebfhicfebgficfebggi
+- chain_m_to_f_to_e_to_m
+  * combo=0.233300 order=locked_order serialization=token_equals_pipe
+    matrixsumlist=cfebfgi ; enter=cfebfhi|cfebgfi|cfebggi ; yourlastcommand=chebffi ; fourforone=cfebffi
+  * combo=0.223300 order=locked_order serialization=token_equals_space
+    matrixsumlist=cfebfgi ; enter=cfebfhi cfebgfi cfebggi ; yourlastcommand=chebffi ; fourforone=cfebffi
+  * combo=0.213300 order=locked_order serialization=pipe_words
+    cfebfgi || cfebfhi|cfebgfi|cfebggi || chebffi || cfebffi
+  * combo=0.213300 order=template_order serialization=token_equals_pipe
+    matrixsumlist=cfebfgi ; fourforone=cfebffi ; enter=cfebfhi|cfebgfi|cfebggi ; yourlastcommand=chebffi
+  * combo=0.203300 order=locked_order serialization=space_words
+    cfebfgi cfebfhi cfebgfi cfebggi chebffi cfebffi
+- swap_matrixsumlist_enter
+  * combo=0.142920 order=locked_order serialization=token_equals_pipe
+    matrixsumlist=cfebfgi ; enter=cfebffi ; yourlastcommand=chebffi ; fourforone=cfebfhi|cfebgfi|cfebggi
+  * combo=0.132920 order=locked_order serialization=token_equals_space
+    matrixsumlist=cfebfgi ; enter=cfebffi ; yourlastcommand=chebffi ; fourforone=cfebfhi cfebgfi cfebggi
+  * combo=0.122920 order=locked_order serialization=pipe_words
+    cfebfgi || cfebffi || chebffi || cfebfhi|cfebgfi|cfebggi
+  * combo=0.112920 order=locked_order serialization=space_words
+    cfebfgi cfebffi chebffi cfebfhi cfebgfi cfebggi
+  * combo=0.102920 order=locked_order serialization=concat_words
+    cfebfgicfebffichebfficfebfhicfebgficfebggi
+- h_island_injection_to_fourforone
+  * combo=0.069100 order=locked_order serialization=token_equals_pipe
+    matrixsumlist=cfebffi ; enter=cfebfgi|cfebfhi|cfebgfi ; yourlastcommand=chebfhi ; fourforone=chebffi
+  * combo=0.059100 order=locked_order serialization=token_equals_space
+    matrixsumlist=cfebffi ; enter=cfebfgi cfebfhi cfebgfi ; yourlastcommand=chebfhi ; fourforone=chebffi
+  * combo=0.049100 order=locked_order serialization=pipe_words
+    cfebffi || cfebfgi|cfebfhi|cfebgfi || chebfhi || chebffi
+  * combo=0.049100 order=template_order serialization=token_equals_pipe
+    yourlastcommand=chebfhi ; fourforone=chebffi ; enter=cfebfgi|cfebfhi|cfebgfi ; matrixsumlist=cfebffi
+  * combo=0.039100 order=locked_order serialization=space_words
+    cfebffi cfebfgi cfebfhi cfebgfi chebfhi chebffi
+- chain_m_to_e_to_f_to_m
+  * combo=0.061960 order=locked_order serialization=token_equals_pipe
+    matrixsumlist=cfebfhi|cfebgfi|cfebggi ; enter=cfebffi ; yourlastcommand=chebffi ; fourforone=cfebfgi
+  * combo=0.051960 order=locked_order serialization=token_equals_space
+    matrixsumlist=cfebfhi cfebgfi cfebggi ; enter=cfebffi ; yourlastcommand=chebffi ; fourforone=cfebfgi
+  * combo=0.041960 order=locked_order serialization=pipe_words
+    cfebfhi|cfebgfi|cfebggi || cfebffi || chebffi || cfebfgi
+  * combo=0.041960 order=template_order serialization=token_equals_pipe
+    matrixsumlist=cfebfhi|cfebgfi|cfebggi ; enter=cfebffi ; fourforone=cfebfgi ; yourlastcommand=chebffi
+  * combo=0.031960 order=locked_order serialization=space_words
+    cfebfhi cfebgfi cfebggi cfebffi chebffi cfebfgi
+- h_island_injection_to_enter
+  * combo=0.030880 order=locked_order serialization=token_equals_pipe
+    matrixsumlist=cfebffi ; enter=chebffi ; yourlastcommand=chebfhi ; fourforone=cfebfgi|cfebfhi|cfebgfi
+  * combo=0.020880 order=locked_order serialization=token_equals_space
+    matrixsumlist=cfebffi ; enter=chebffi ; yourlastcommand=chebfhi ; fourforone=cfebfgi cfebfhi cfebgfi
+  * combo=0.010880 order=locked_order serialization=pipe_words
+    cfebffi || chebffi || chebfhi || cfebfgi|cfebfhi|cfebgfi
+  * combo=0.010880 order=template_order serialization=token_equals_pipe
+    yourlastcommand=chebfhi ; enter=chebffi ; fourforone=cfebfgi|cfebfhi|cfebgfi ; matrixsumlist=cfebffi
+  * combo=0.000880 order=locked_order serialization=space_words
+    cfebffi chebffi chebfhi cfebfgi cfebfhi cfebgfi
+
+DEDUPED-AWAY PROBES
+01. combo=0.427780 support=0.447780 identity :: template_order :: token_equals_pipe
+    matrixsumlist=cfebffi ; enter=cfebfgi ; yourlastcommand=chebffi ; fourforone=cfebfhi|cfebgfi|cfebggi
+02. combo=0.417780 support=0.447780 identity :: template_order :: token_equals_space
+    matrixsumlist=cfebffi ; enter=cfebfgi ; yourlastcommand=chebffi ; fourforone=cfebfhi cfebgfi cfebggi
+03. combo=0.407780 support=0.447780 identity :: template_order :: pipe_words
+    cfebffi || cfebfgi || chebffi || cfebfhi|cfebgfi|cfebggi
+04. combo=0.407780 support=0.447780 identity :: trace_order :: token_equals_pipe
+    matrixsumlist=cfebffi ; enter=cfebfgi ; yourlastcommand=chebffi ; fourforone=cfebfhi|cfebgfi|cfebggi
+05. combo=0.397780 support=0.447780 identity :: template_order :: space_words
+    cfebffi cfebfgi chebffi cfebfhi cfebgfi cfebggi
+06. combo=0.397780 support=0.447780 identity :: trace_order :: token_equals_space
+    matrixsumlist=cfebffi ; enter=cfebfgi ; yourlastcommand=chebffi ; fourforone=cfebfhi cfebgfi cfebggi
+07. combo=0.387780 support=0.447780 identity :: trace_order :: pipe_words
+    cfebffi || cfebfgi || chebffi || cfebfhi|cfebgfi|cfebggi
+08. combo=0.387780 support=0.447780 identity :: template_order :: concat_words
+    cfebfficfebfgichebfficfebfhicfebgficfebggi
+09. combo=0.377780 support=0.447780 identity :: trace_order :: space_words
+    cfebffi cfebfgi chebffi cfebfhi cfebgfi cfebggi
+10. combo=0.367780 support=0.447780 identity :: trace_order :: concat_words
+    cfebfficfebfgichebfficfebfhicfebgficfebggi
+11. combo=0.122920 support=0.142920 swap_matrixsumlist_enter :: template_order :: token_equals_pipe
+    matrixsumlist=cfebfgi ; enter=cfebffi ; yourlastcommand=chebffi ; fourforone=cfebfhi|cfebgfi|cfebggi
+12. combo=0.112920 support=0.142920 swap_matrixsumlist_enter :: template_order :: token_equals_space
+    matrixsumlist=cfebfgi ; enter=cfebffi ; yourlastcommand=chebffi ; fourforone=cfebfhi cfebgfi cfebggi
+13. combo=0.102920 support=0.142920 swap_matrixsumlist_enter :: template_order :: pipe_words
+    cfebfgi || cfebffi || chebffi || cfebfhi|cfebgfi|cfebggi
+14. combo=0.092920 support=0.142920 swap_matrixsumlist_enter :: template_order :: space_words
+    cfebfgi cfebffi chebffi cfebfhi cfebgfi cfebggi
+15. combo=0.082920 support=0.142920 swap_matrixsumlist_enter :: trace_order :: pipe_words
+    cfebffi || cfebfgi || chebffi || cfebfhi|cfebgfi|cfebggi
+16. combo=0.082920 support=0.142920 swap_matrixsumlist_enter :: template_order :: concat_words
+    cfebfgicfebffichebfficfebfhicfebgficfebggi
+17. combo=0.072920 support=0.142920 swap_matrixsumlist_enter :: trace_order :: space_words
+    cfebffi cfebfgi chebffi cfebfhi cfebgfi cfebggi
+18. combo=0.062920 support=0.142920 swap_matrixsumlist_enter :: trace_order :: concat_words
+    cfebfficfebfgichebfficfebfhicfebgficfebggi
+19. combo=0.029100 support=0.069100 h_island_injection_to_fourforone :: trace_order :: token_equals_pipe
+    yourlastcommand=chebfhi ; fourforone=chebffi ; enter=cfebfgi|cfebfhi|cfebgfi ; matrixsumlist=cfebffi
+20. combo=0.019100 support=0.069100 h_island_injection_to_fourforone :: trace_order :: token_equals_space
+    yourlastcommand=chebfhi ; fourforone=chebffi ; enter=cfebfgi cfebfhi cfebgfi ; matrixsumlist=cfebffi
+
+WORKING READ
+- identity stays the highest-priority clean baseline probe family.
+- chain_m_to_f_to_e_to_m is the main nonh fourforone perturbation family.
+- swap_matrixsumlist_enter is the smallest clean perturbation and should be tested early.
+- h_island branches remain separate probe families and should not be mixed into clean-core runs.

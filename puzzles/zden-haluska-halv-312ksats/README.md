@@ -206,3 +206,7 @@ One page each: the record, the transactions and the live balance.
 **Источники (OCP `sources`):**
   - url: https://twitter.com/Zd3N/status/1781475361160663236 | title: Zden, original announcement | date: 2024-04-20
   - url: https://crypto.haluska.sk/ | title: Zden's puzzle site | date: 2026-08-16
+
+## Обновление GitHub-интейка (2026-10-18, Qoder)
+- GitHub-интейк: **partial** (2026-10-18) — срезано потолками: собрано 2 репо из 8 кандидатов (--max-repos 2), 111 файл (533 КБ), 0 API-запросов; остаток в `data/github/resume.json` репо: 2; путь дайдеста: `data/github/GITHUB_INTAKE.md`
+- Остаток — форки `*/open-crypto-puzzles` (шум реестра, не содержимое пазла): полная пересборка `run … --full` при наличии бюджета.

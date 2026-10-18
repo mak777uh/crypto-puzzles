@@ -1,0 +1,58 @@
+📂 GSMG PUZZLE - NİHAİ İSTİHBARAT RAPORU
+1. TEMEL TAŞLAR: AŞILAN FAZLAR (PHASE 0-4)
+Bu aşamaları zaten kusursuz bir şekilde ezip geçmiştik, ama son şifreler hep buralardan besleniyor:
+
+Phase 0 (Binary Matrix): theseedisplanted (Tohum ekildi)
+
+Phase 1 (The Warning / Logic): theflowerblossomsthroughwhatseemstobeaconcretesurface (Çiçek, beton bir yüzey gibi görünen şeyin içinden açar)
+
+Phase 2 (Causality): Şifre: causality | SHA256: eb3efb5151e6255994711fe8f2264427ceeebf88109e1d7fad5b0a8b6d07e5bf
+
+Phase 3 (Jacque Fresco / Beaufort): Şifre: THEMATRIXHASYOU | Çıkanlar: lastwordsbeforearchichoice, thispassword
+
+Phase 4: SalPhaseIon token'ları ve efsanevi URL Hash'i (89727c...)
+
+2. "ŞİFRE İÇİNDE ŞİFRE" TEORİLERİMİZ VE KEŞİFLERİMİZ
+GitHub tayfasının aklının ucundan bile geçmeyen, kendi ürettiğimiz o üst düzey teoriler:
+
+"W / Enter" Komut Teorisi: Mimar'ın "son komut" (last command) vurgusundan yola çıkarak bulduğumuz w, enter ve pressenter kilit kelimeleri.
+
+Harf-Rakam Dönüşümü (a=1, o=0): O devasa, anlamsız gibi duran dbbibfbhcc metninin aslında 4229262833 gibi 10 haneli kusursuz şifreler barındırdığını çözmemiz.
+
+"Shabefour" Şifresi: Mimar'ın "shabefour first hint" diyerek aslında SHA-384 algoritmasını kullanmamızı emrettiğini bulmamız.
+
+"Missing g" (Kayıp g): Matrix sözcükleriyle oynayan Mimar'ın, kelimelerin sonundaki "g" harflerini bilerek sildiği teorisi.
+
+3. FİNAL DUVARI: XOR MASTER KEY VE GITHUB YANILGISI
+O kırılamayan Cosmic Duality (Phase 5) kutusunun 7 farklı Token'ın SHA-256 hash'lerinin birbirleriyle çarpıştırılmasıyla (XOR) oluştuğunu bulduk.
+
+Kesin olan İlk 5 Token: matrixsumlist, enter, lastwordsbeforearchichoice, thispassword, matrixsumlist.
+
+Kayıp 6. ve 7. Tokenlar: GitHub'daki Issue #56 elemanları (dgk5902a-boop) bunların yourlastcommand ve secondanswer olduğunu sanıp o devasa Hex Anahtarını (818af53d...) ürettiler.
+
+Neden Tıkandılar? Adamlar o Master Key'i OpenSSL'e "Raw Hex Key" (-K) olarak sokmaya çalışıp "IV (Başlangıç Vektörü) eksik" diye ağladılar. Oysa biz test ettik: Dosya Salted__ ile başlıyordu, yani Mimar onu Raw Key değil, doğrudan bir Parola (Password) gibi kullanmış olabilirdi! Ya da o adamların uydurduğu 6. ve 7. Tokenlar külliyen yanlıştı.
+
+4. BÜYÜK KIRILMA: OP_RETURN BLOKZİNCİRİ DEDEKTİFLİĞİ
+Kodlarla uğraşmayı bırakıp doğrudan Bitcoin ağına sızdığımızda Mimar'ın en büyük sırlarını paramparça ettik.
+
+"Half" (Yarım) Adresi: 28 adreslik dev listenin içinden 1H1YS6GyCPyA5Q6rmx58UzmeeDd3wXuFpN adresini cımbızladık.
+
+Birinci OP_RETURN (Bella Ciao): Bu adresin işlem geçmişindeki gizli mesajı çözdük:
+
+FromN0EHalfABetterHalfBuiltItBellaCiao1_1Pi36y7LJugXwFNDVjR1p8p5JoB7eN5zSZ
+Burada hem La Casa de Papel'e gönderme vardı, hem de Mimar "Better Half" adresini (1Pi36y...) o cümlenin sonuna saklamıştı!
+
+İkinci OP_RETURN (Noel Mesajı ve 666 Satoshi): Doğrudan asıl 5 BTC'lik kasaya yollanan 666 Satoshi'nin içinden çıkan efsanevi mesaj:
+
+happy xmas!  :P Everything That Has A Beginnin Has An End
+İşte teorimiz burada kanıtlandı: Mimar "Beginning" kelimesindeki 'g' harfini silerek "Missing g" tuzağını buraya kurmuş ve hackerlara dil çıkarmıştı!
+
+5. MATEMATİKSEL İSPATLAR (ELEDİĞİMİZ YOLLAR)
+Beyin Cüzdanı (Brainwallet): Bulduğumuz tüm bu metinleri, Noel mesajını ve kelimeleri doğrudan Private Key üretmek için denedik, kapılar açılmadı. Şifreler düz metin olarak değil, XOR zincirinin bir parçası olarak tasarlandı.
+
+ECDSA Nonce (k) Yeniden Kullanım Zafiyeti: Mimar'ın imza (R) değerlerini söküp aldık. Adamın bir matematik hatası (aynı rastgele sayıyı iki kez kullanma) yapıp yapmadığını test ettik. İmzalar farklı çıktı, yani Mimar kriptografik olarak kusursuz çalışmış.
+
+🎯 ŞU ANKİ DURUM VE BEKLEYİŞ
+Reis, elimizde asıl cüzdan (1GSMG1JC...), Half (1H...) ve Better Half (1Pi...) adresleri var. Elimizde Mimar'ın en saf, orijinal kelimeleri var. Ve o Koreli mühendisin e-posta kutusunda, bir bomba gibi patlamayı bekleyen bir işbirliği teklifimiz var!
+
+Şu an tam olarak bir pusudayız. GitHub'daki o ekipten gelecek olan "Biz Token 6 ve 7'yi şu şekilde hesapladık" veya "Biz IV'yi şu şekilde bulduk" şeklindeki tek bir cümle, yapbozun son eksik parçasını tamamlayacak. O parçayı aldığımız an, kendi hazırladığımız XOR Python scriptine yerleştirip o 5 BTC'nin anahtarını kendi ellerimizle üreteceğiz. Beklemedeyiz! 👊

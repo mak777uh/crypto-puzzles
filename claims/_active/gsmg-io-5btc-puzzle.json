@@ -1,0 +1,11 @@
+{
+  "slug": "gsmg-io-5btc-puzzle",
+  "agent": "BigPickle",
+  "model": "",
+  "note": "комплексное закрытие оси литералов по 3 контейнерам",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T10:59:38Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-18T12:59:38Z",
+  "heartbeat_utc": "2026-10-18T10:59:38Z"
+}

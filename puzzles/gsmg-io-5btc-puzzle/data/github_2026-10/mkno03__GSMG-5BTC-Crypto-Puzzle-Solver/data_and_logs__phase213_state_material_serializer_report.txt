@@ -1,0 +1,201 @@
+phase213_state_material_serializer
+
+LOCKED MAPPING
+- matrixsumlist    nonh
+- enter            clean
+- yourlastcommand  h_island
+- fourforone       clean
+
+ACTIVE PROBE PACKS
+- identity                         support=0.447780 exemplar=matrixsumlist::nonh, enter::clean, yourlastcommand::h_island, fourforone::clean
+  token_multiset_signature : matrixsumlist[cfebffi] ; enter[cfebfgi] ; yourlastcommand[chebffi] ; fourforone[cfebfhi,cfebgfi,cfebggi]
+  move_strings             : -
+  locked_order            : ['matrixsumlist', 'enter', 'yourlastcommand', 'fourforone']
+    space_words      : cfebffi cfebfgi chebffi cfebfhi cfebgfi cfebggi
+    pipe_words       : cfebffi || cfebfgi || chebffi || cfebfhi|cfebgfi|cfebggi
+    concat_words     : cfebfficfebfgichebfficfebfhicfebgficfebggi
+    token_equals_pipe: matrixsumlist=cfebffi ; enter=cfebfgi ; yourlastcommand=chebffi ; fourforone=cfebfhi|cfebgfi|cfebggi
+  template_order          : ['matrixsumlist', 'enter', 'yourlastcommand', 'fourforone']
+    space_words      : cfebffi cfebfgi chebffi cfebfhi cfebgfi cfebggi
+    pipe_words       : cfebffi || cfebfgi || chebffi || cfebfhi|cfebgfi|cfebggi
+    concat_words     : cfebfficfebfgichebfficfebfhicfebgficfebggi
+    token_equals_pipe: matrixsumlist=cfebffi ; enter=cfebfgi ; yourlastcommand=chebffi ; fourforone=cfebfhi|cfebgfi|cfebggi
+  trace_order             : ['matrixsumlist', 'enter', 'yourlastcommand', 'fourforone']
+    space_words      : cfebffi cfebfgi chebffi cfebfhi cfebgfi cfebggi
+    pipe_words       : cfebffi || cfebfgi || chebffi || cfebfhi|cfebgfi|cfebggi
+    concat_words     : cfebfficfebfgichebfficfebfhicfebgficfebggi
+    token_equals_pipe: matrixsumlist=cfebffi ; enter=cfebfgi ; yourlastcommand=chebffi ; fourforone=cfebfhi|cfebgfi|cfebggi
+  command_first_order     : ['yourlastcommand', 'enter', 'matrixsumlist', 'fourforone']
+    space_words      : chebffi cfebfgi cfebffi cfebfhi cfebgfi cfebggi
+    pipe_words       : chebffi || cfebfgi || cfebffi || cfebfhi|cfebgfi|cfebggi
+    concat_words     : chebfficfebfgicfebfficfebfhicfebgficfebggi
+    token_equals_pipe: yourlastcommand=chebffi ; enter=cfebfgi ; matrixsumlist=cfebffi ; fourforone=cfebfhi|cfebgfi|cfebggi
+  alpha_nonempty_order    : ['enter', 'fourforone', 'matrixsumlist', 'yourlastcommand']
+    space_words      : cfebfgi cfebfhi cfebgfi cfebggi cfebffi chebffi
+    pipe_words       : cfebfgi || cfebfhi|cfebgfi|cfebggi || cfebffi || chebffi
+    concat_words     : cfebfgicfebfhicfebgficfebggicfebffichebffi
+    token_equals_pipe: enter=cfebfgi ; fourforone=cfebfhi|cfebgfi|cfebggi ; matrixsumlist=cfebffi ; yourlastcommand=chebffi
+
+- chain_m_to_f_to_e_to_m           support=0.233300 exemplar=matrixsumlist::nonh, enter::clean, yourlastcommand::h_island, fourforone::nonh
+  token_multiset_signature : matrixsumlist[cfebfgi] ; enter[cfebfhi,cfebgfi,cfebggi] ; yourlastcommand[chebffi] ; fourforone[cfebffi]
+  move_strings             : ['move:cfebfgi:enter->matrixsumlist', 'move:cfebfhi:fourforone->enter', 'move:cfebgfi:fourforone->enter', 'move:cfebggi:fourforone->enter', 'move:cfebffi:matrixsumlist->fourforone']
+  locked_order            : ['matrixsumlist', 'enter', 'yourlastcommand', 'fourforone']
+    space_words      : cfebfgi cfebfhi cfebgfi cfebggi chebffi cfebffi
+    pipe_words       : cfebfgi || cfebfhi|cfebgfi|cfebggi || chebffi || cfebffi
+    concat_words     : cfebfgicfebfhicfebgficfebggichebfficfebffi
+    token_equals_pipe: matrixsumlist=cfebfgi ; enter=cfebfhi|cfebgfi|cfebggi ; yourlastcommand=chebffi ; fourforone=cfebffi
+  template_order          : ['matrixsumlist', 'fourforone', 'enter', 'yourlastcommand']
+    space_words      : cfebfgi cfebffi cfebfhi cfebgfi cfebggi chebffi
+    pipe_words       : cfebfgi || cfebffi || cfebfhi|cfebgfi|cfebggi || chebffi
+    concat_words     : cfebfgicfebfficfebfhicfebgficfebggichebffi
+    token_equals_pipe: matrixsumlist=cfebfgi ; fourforone=cfebffi ; enter=cfebfhi|cfebgfi|cfebggi ; yourlastcommand=chebffi
+  trace_order             : ['enter', 'matrixsumlist', 'fourforone', 'yourlastcommand']
+    space_words      : cfebfhi cfebgfi cfebggi cfebfgi cfebffi chebffi
+    pipe_words       : cfebfhi|cfebgfi|cfebggi || cfebfgi || cfebffi || chebffi
+    concat_words     : cfebfhicfebgficfebggicfebfgicfebffichebffi
+    token_equals_pipe: enter=cfebfhi|cfebgfi|cfebggi ; matrixsumlist=cfebfgi ; fourforone=cfebffi ; yourlastcommand=chebffi
+  command_first_order     : ['yourlastcommand', 'enter', 'matrixsumlist', 'fourforone']
+    space_words      : chebffi cfebfhi cfebgfi cfebggi cfebfgi cfebffi
+    pipe_words       : chebffi || cfebfhi|cfebgfi|cfebggi || cfebfgi || cfebffi
+    concat_words     : chebfficfebfhicfebgficfebggicfebfgicfebffi
+    token_equals_pipe: yourlastcommand=chebffi ; enter=cfebfhi|cfebgfi|cfebggi ; matrixsumlist=cfebfgi ; fourforone=cfebffi
+  alpha_nonempty_order    : ['enter', 'fourforone', 'matrixsumlist', 'yourlastcommand']
+    space_words      : cfebfhi cfebgfi cfebggi cfebffi cfebfgi chebffi
+    pipe_words       : cfebfhi|cfebgfi|cfebggi || cfebffi || cfebfgi || chebffi
+    concat_words     : cfebfhicfebgficfebggicfebfficfebfgichebffi
+    token_equals_pipe: enter=cfebfhi|cfebgfi|cfebggi ; fourforone=cfebffi ; matrixsumlist=cfebfgi ; yourlastcommand=chebffi
+
+- swap_matrixsumlist_enter         support=0.142920 exemplar=matrixsumlist::nonh, enter::nonh, yourlastcommand::h_island, fourforone::clean
+  token_multiset_signature : matrixsumlist[cfebfgi] ; enter[cfebffi] ; yourlastcommand[chebffi] ; fourforone[cfebfhi,cfebgfi,cfebggi]
+  move_strings             : ['move:cfebfgi:enter->matrixsumlist', 'move:cfebffi:matrixsumlist->enter']
+  locked_order            : ['matrixsumlist', 'enter', 'yourlastcommand', 'fourforone']
+    space_words      : cfebfgi cfebffi chebffi cfebfhi cfebgfi cfebggi
+    pipe_words       : cfebfgi || cfebffi || chebffi || cfebfhi|cfebgfi|cfebggi
+    concat_words     : cfebfgicfebffichebfficfebfhicfebgficfebggi
+    token_equals_pipe: matrixsumlist=cfebfgi ; enter=cfebffi ; yourlastcommand=chebffi ; fourforone=cfebfhi|cfebgfi|cfebggi
+  template_order          : ['matrixsumlist', 'enter', 'yourlastcommand', 'fourforone']
+    space_words      : cfebfgi cfebffi chebffi cfebfhi cfebgfi cfebggi
+    pipe_words       : cfebfgi || cfebffi || chebffi || cfebfhi|cfebgfi|cfebggi
+    concat_words     : cfebfgicfebffichebfficfebfhicfebgficfebggi
+    token_equals_pipe: matrixsumlist=cfebfgi ; enter=cfebffi ; yourlastcommand=chebffi ; fourforone=cfebfhi|cfebgfi|cfebggi
+  trace_order             : ['enter', 'matrixsumlist', 'yourlastcommand', 'fourforone']
+    space_words      : cfebffi cfebfgi chebffi cfebfhi cfebgfi cfebggi
+    pipe_words       : cfebffi || cfebfgi || chebffi || cfebfhi|cfebgfi|cfebggi
+    concat_words     : cfebfficfebfgichebfficfebfhicfebgficfebggi
+    token_equals_pipe: enter=cfebffi ; matrixsumlist=cfebfgi ; yourlastcommand=chebffi ; fourforone=cfebfhi|cfebgfi|cfebggi
+  command_first_order     : ['yourlastcommand', 'enter', 'matrixsumlist', 'fourforone']
+    space_words      : chebffi cfebffi cfebfgi cfebfhi cfebgfi cfebggi
+    pipe_words       : chebffi || cfebffi || cfebfgi || cfebfhi|cfebgfi|cfebggi
+    concat_words     : chebfficfebfficfebfgicfebfhicfebgficfebggi
+    token_equals_pipe: yourlastcommand=chebffi ; enter=cfebffi ; matrixsumlist=cfebfgi ; fourforone=cfebfhi|cfebgfi|cfebggi
+  alpha_nonempty_order    : ['enter', 'fourforone', 'matrixsumlist', 'yourlastcommand']
+    space_words      : cfebffi cfebfhi cfebgfi cfebggi cfebfgi chebffi
+    pipe_words       : cfebffi || cfebfhi|cfebgfi|cfebggi || cfebfgi || chebffi
+    concat_words     : cfebfficfebfhicfebgficfebggicfebfgichebffi
+    token_equals_pipe: enter=cfebffi ; fourforone=cfebfhi|cfebgfi|cfebggi ; matrixsumlist=cfebfgi ; yourlastcommand=chebffi
+
+- h_island_injection_to_fourforone support=0.069100 exemplar=matrixsumlist::nonh, enter::clean, yourlastcommand::h_island, fourforone::h_island
+  token_multiset_signature : matrixsumlist[cfebffi] ; enter[cfebfgi,cfebfhi,cfebgfi] ; yourlastcommand[chebfhi] ; fourforone[chebffi]
+  move_strings             : ['move:chebffi:yourlastcommand->fourforone', 'drop:cfebggi@fourforone', 'introduce:chebfhi->yourlastcommand', 'move:cfebfhi:fourforone->enter', 'move:cfebgfi:fourforone->enter']
+  locked_order            : ['matrixsumlist', 'enter', 'yourlastcommand', 'fourforone']
+    space_words      : cfebffi cfebfgi cfebfhi cfebgfi chebfhi chebffi
+    pipe_words       : cfebffi || cfebfgi|cfebfhi|cfebgfi || chebfhi || chebffi
+    concat_words     : cfebfficfebfgicfebfhicfebgfichebfhichebffi
+    token_equals_pipe: matrixsumlist=cfebffi ; enter=cfebfgi|cfebfhi|cfebgfi ; yourlastcommand=chebfhi ; fourforone=chebffi
+  template_order          : ['yourlastcommand', 'fourforone', 'enter', 'matrixsumlist']
+    space_words      : chebfhi chebffi cfebfgi cfebfhi cfebgfi cfebffi
+    pipe_words       : chebfhi || chebffi || cfebfgi|cfebfhi|cfebgfi || cfebffi
+    concat_words     : chebfhichebfficfebfgicfebfhicfebgficfebffi
+    token_equals_pipe: yourlastcommand=chebfhi ; fourforone=chebffi ; enter=cfebfgi|cfebfhi|cfebgfi ; matrixsumlist=cfebffi
+  trace_order             : ['yourlastcommand', 'fourforone', 'enter', 'matrixsumlist']
+    space_words      : chebfhi chebffi cfebfgi cfebfhi cfebgfi cfebffi
+    pipe_words       : chebfhi || chebffi || cfebfgi|cfebfhi|cfebgfi || cfebffi
+    concat_words     : chebfhichebfficfebfgicfebfhicfebgficfebffi
+    token_equals_pipe: yourlastcommand=chebfhi ; fourforone=chebffi ; enter=cfebfgi|cfebfhi|cfebgfi ; matrixsumlist=cfebffi
+  command_first_order     : ['yourlastcommand', 'enter', 'matrixsumlist', 'fourforone']
+    space_words      : chebfhi cfebfgi cfebfhi cfebgfi cfebffi chebffi
+    pipe_words       : chebfhi || cfebfgi|cfebfhi|cfebgfi || cfebffi || chebffi
+    concat_words     : chebfhicfebfgicfebfhicfebgficfebffichebffi
+    token_equals_pipe: yourlastcommand=chebfhi ; enter=cfebfgi|cfebfhi|cfebgfi ; matrixsumlist=cfebffi ; fourforone=chebffi
+  alpha_nonempty_order    : ['enter', 'fourforone', 'matrixsumlist', 'yourlastcommand']
+    space_words      : cfebfgi cfebfhi cfebgfi chebffi cfebffi chebfhi
+    pipe_words       : cfebfgi|cfebfhi|cfebgfi || chebffi || cfebffi || chebfhi
+    concat_words     : cfebfgicfebfhicfebgfichebfficfebffichebfhi
+    token_equals_pipe: enter=cfebfgi|cfebfhi|cfebgfi ; fourforone=chebffi ; matrixsumlist=cfebffi ; yourlastcommand=chebfhi
+
+- chain_m_to_e_to_f_to_m           support=0.061960 exemplar=matrixsumlist::nonh, enter::nonh, yourlastcommand::h_island, fourforone::nonh
+  token_multiset_signature : matrixsumlist[cfebfhi,cfebgfi,cfebggi] ; enter[cfebffi] ; yourlastcommand[chebffi] ; fourforone[cfebfgi]
+  move_strings             : ['move:cfebfgi:enter->fourforone', 'move:cfebfhi:fourforone->matrixsumlist', 'move:cfebgfi:fourforone->matrixsumlist', 'move:cfebggi:fourforone->matrixsumlist', 'move:cfebffi:matrixsumlist->enter']
+  locked_order            : ['matrixsumlist', 'enter', 'yourlastcommand', 'fourforone']
+    space_words      : cfebfhi cfebgfi cfebggi cfebffi chebffi cfebfgi
+    pipe_words       : cfebfhi|cfebgfi|cfebggi || cfebffi || chebffi || cfebfgi
+    concat_words     : cfebfhicfebgficfebggicfebffichebfficfebfgi
+    token_equals_pipe: matrixsumlist=cfebfhi|cfebgfi|cfebggi ; enter=cfebffi ; yourlastcommand=chebffi ; fourforone=cfebfgi
+  template_order          : ['matrixsumlist', 'enter', 'fourforone', 'yourlastcommand']
+    space_words      : cfebfhi cfebgfi cfebggi cfebffi cfebfgi chebffi
+    pipe_words       : cfebfhi|cfebgfi|cfebggi || cfebffi || cfebfgi || chebffi
+    concat_words     : cfebfhicfebgficfebggicfebfficfebfgichebffi
+    token_equals_pipe: matrixsumlist=cfebfhi|cfebgfi|cfebggi ; enter=cfebffi ; fourforone=cfebfgi ; yourlastcommand=chebffi
+  trace_order             : ['enter', 'fourforone', 'matrixsumlist', 'yourlastcommand']
+    space_words      : cfebffi cfebfgi cfebfhi cfebgfi cfebggi chebffi
+    pipe_words       : cfebffi || cfebfgi || cfebfhi|cfebgfi|cfebggi || chebffi
+    concat_words     : cfebfficfebfgicfebfhicfebgficfebggichebffi
+    token_equals_pipe: enter=cfebffi ; fourforone=cfebfgi ; matrixsumlist=cfebfhi|cfebgfi|cfebggi ; yourlastcommand=chebffi
+  command_first_order     : ['yourlastcommand', 'enter', 'matrixsumlist', 'fourforone']
+    space_words      : chebffi cfebffi cfebfhi cfebgfi cfebggi cfebfgi
+    pipe_words       : chebffi || cfebffi || cfebfhi|cfebgfi|cfebggi || cfebfgi
+    concat_words     : chebfficfebfficfebfhicfebgficfebggicfebfgi
+    token_equals_pipe: yourlastcommand=chebffi ; enter=cfebffi ; matrixsumlist=cfebfhi|cfebgfi|cfebggi ; fourforone=cfebfgi
+  alpha_nonempty_order    : ['enter', 'fourforone', 'matrixsumlist', 'yourlastcommand']
+    space_words      : cfebffi cfebfgi cfebfhi cfebgfi cfebggi chebffi
+    pipe_words       : cfebffi || cfebfgi || cfebfhi|cfebgfi|cfebggi || chebffi
+    concat_words     : cfebfficfebfgicfebfhicfebgficfebggichebffi
+    token_equals_pipe: enter=cfebffi ; fourforone=cfebfgi ; matrixsumlist=cfebfhi|cfebgfi|cfebggi ; yourlastcommand=chebffi
+
+- h_island_injection_to_enter      support=0.030880 exemplar=matrixsumlist::nonh, enter::h_island, yourlastcommand::h_island, fourforone::clean
+  token_multiset_signature : matrixsumlist[cfebffi] ; enter[chebffi] ; yourlastcommand[chebfhi] ; fourforone[cfebfgi,cfebfhi,cfebgfi]
+  move_strings             : ['move:chebffi:yourlastcommand->enter', 'drop:cfebggi@fourforone', 'introduce:chebfhi->yourlastcommand', 'move:cfebfgi:enter->fourforone']
+  locked_order            : ['matrixsumlist', 'enter', 'yourlastcommand', 'fourforone']
+    space_words      : cfebffi chebffi chebfhi cfebfgi cfebfhi cfebgfi
+    pipe_words       : cfebffi || chebffi || chebfhi || cfebfgi|cfebfhi|cfebgfi
+    concat_words     : cfebffichebffichebfhicfebfgicfebfhicfebgfi
+    token_equals_pipe: matrixsumlist=cfebffi ; enter=chebffi ; yourlastcommand=chebfhi ; fourforone=cfebfgi|cfebfhi|cfebgfi
+  template_order          : ['yourlastcommand', 'enter', 'fourforone', 'matrixsumlist']
+    space_words      : chebfhi chebffi cfebfgi cfebfhi cfebgfi cfebffi
+    pipe_words       : chebfhi || chebffi || cfebfgi|cfebfhi|cfebgfi || cfebffi
+    concat_words     : chebfhichebfficfebfgicfebfhicfebgficfebffi
+    token_equals_pipe: yourlastcommand=chebfhi ; enter=chebffi ; fourforone=cfebfgi|cfebfhi|cfebgfi ; matrixsumlist=cfebffi
+  trace_order             : ['yourlastcommand', 'enter', 'fourforone', 'matrixsumlist']
+    space_words      : chebfhi chebffi cfebfgi cfebfhi cfebgfi cfebffi
+    pipe_words       : chebfhi || chebffi || cfebfgi|cfebfhi|cfebgfi || cfebffi
+    concat_words     : chebfhichebfficfebfgicfebfhicfebgficfebffi
+    token_equals_pipe: yourlastcommand=chebfhi ; enter=chebffi ; fourforone=cfebfgi|cfebfhi|cfebgfi ; matrixsumlist=cfebffi
+  command_first_order     : ['yourlastcommand', 'enter', 'matrixsumlist', 'fourforone']
+    space_words      : chebfhi chebffi cfebffi cfebfgi cfebfhi cfebgfi
+    pipe_words       : chebfhi || chebffi || cfebffi || cfebfgi|cfebfhi|cfebgfi
+    concat_words     : chebfhichebfficfebfficfebfgicfebfhicfebgfi
+    token_equals_pipe: yourlastcommand=chebfhi ; enter=chebffi ; matrixsumlist=cfebffi ; fourforone=cfebfgi|cfebfhi|cfebgfi
+  alpha_nonempty_order    : ['enter', 'fourforone', 'matrixsumlist', 'yourlastcommand']
+    space_words      : chebffi cfebfgi cfebfhi cfebgfi cfebffi chebfhi
+    pipe_words       : chebffi || cfebfgi|cfebfhi|cfebgfi || cfebffi || chebfhi
+    concat_words     : chebfficfebfgicfebfhicfebgficfebffichebfhi
+    token_equals_pipe: enter=chebffi ; fourforone=cfebfgi|cfebfhi|cfebgfi ; matrixsumlist=cfebffi ; yourlastcommand=chebfhi
+
+ALL TEMPLATE BUNDLES
+- identity                         support=0.447780
+  signature : matrixsumlist[cfebffi] ; enter[cfebfgi] ; yourlastcommand[chebffi] ; fourforone[cfebfhi,cfebgfi,cfebggi]
+- chain_m_to_f_to_e_to_m           support=0.233300
+  signature : matrixsumlist[cfebfgi] ; enter[cfebfhi,cfebgfi,cfebggi] ; yourlastcommand[chebffi] ; fourforone[cfebffi]
+- swap_matrixsumlist_enter         support=0.142920
+  signature : matrixsumlist[cfebfgi] ; enter[cfebffi] ; yourlastcommand[chebffi] ; fourforone[cfebfhi,cfebgfi,cfebggi]
+- h_island_injection_to_fourforone support=0.069100
+  signature : matrixsumlist[cfebffi] ; enter[cfebfgi,cfebfhi,cfebgfi] ; yourlastcommand[chebfhi] ; fourforone[chebffi]
+- chain_m_to_e_to_f_to_m           support=0.061960
+  signature : matrixsumlist[cfebfhi,cfebgfi,cfebggi] ; enter[cfebffi] ; yourlastcommand[chebffi] ; fourforone[cfebfgi]
+- h_island_injection_to_enter      support=0.030880
+  signature : matrixsumlist[cfebffi] ; enter[chebffi] ; yourlastcommand[chebfhi] ; fourforone[cfebfgi,cfebfhi,cfebgfi]
+
+WORKING READ
+- phase212 gave exact post-template states; this phase turns each state into reusable string/material serializations.
+- identity, swap, and the main chain now each have ready-to-use word-only and token-tagged probe strings.
+- h_island branches are serialized too, but should stay separate from clean-core runs.

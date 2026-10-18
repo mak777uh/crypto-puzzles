@@ -1,7 +1,7 @@
 # Crypto Puzzles — рабочая база охоты за криптозагадками
 
 > **EN (short).** A living knowledge base of cryptocurrency treasure hunts and puzzles with
-> unclaimed public bounties: 78 puzzle dossiers + 52 closed/dead-end ones, agent runbooks,
+> unclaimed public bounties: 80 puzzle dossiers + 55 closed/dead-end ones, agent runbooks,
 > reusable checkers and oracles, and a full log of every negative result. Everything here is
 > **read-only research**: no spending, no transaction broadcasting, no paid hints.
 > Start with `AGENT_INSTRUCTIONS.md`, then `puzzles/README.md` (index) and `OPTIMAL_TARGETS_2026-10-17.md`.
@@ -22,7 +22,7 @@
 
 | Что | Сколько |
 |---|---|
-| Активных папок-досье | 78 (+ реестр отбракованных `puzzles/dead-ends-registry/`) |
+| Активных папок-досье | 80 (+ реестр отбракованных `puzzles/dead-ends-registry/`); 3 новые нерешённые охоты добавлены 18.10.2026 (gold-crystal, krypto-chase, lunarcrush), 2 из 5 после верификации перенесены в solved/ — см. `MASTER_CATALOG.md` Часть 14 |
 | Закрытых/решённых/тупиковых | 52 (`solved/INDEX.md`) |
 | Адресов с балансом > 0 | 52 (карта: `LIVE_MAP_2026-10-17.md`) |
 | Отчётов проходов | `reports/` (один проход = один файл) |
@@ -48,7 +48,9 @@
 | `PROPOSALS.md` | предложения агентов пользователю (статус-строка = решение пользователя) |
 | `AGENT_INSTRUCTIONS.md` | **обязательный протокол**: журнал, брони, лимиты, запреты |
 | `claims/`, `agents/` | файловые брони пазлов (lease + TTL) и реестр агентов |
-| `tools/` | общие скрипты: `claims.py`, `balance_check_fast.py`, триаж OCP |
+| `tools/` | общие скрипты: `claims.py`, `github_intake.py` (GitHub-шлюз), `balance_check_fast.py`, триаж OCP |
+| `puzzles/<slug>/data/github/` | дампы репозиториев по цели + дайдест `GITHUB_INTAKE.md` (сырьё в `.gitignore`) |
+| `_sources/github/` | общий кэш GitHub-интейков: бюджет API, ETag-кэш, очередь `INTAKE_BACKLOG.md` |
 | `reports/` | детальные отчёты проходов |
 | `_sources/`, `_archive/` | внешние дампы (OCP-issues, реестры) и старые журналы |
 
@@ -65,6 +67,13 @@ less AGENT_INSTRUCTIONS.md
 python tools/claims.py acquire <slug> --agent <Имя> --ttl 120 --note "скоуп"
 python tools/claims.py heartbeat <slug> --agent <Имя>
 python tools/claims.py release <slug> --agent <Имя>
+
+# 2b) GitHub-интейк — обязательный первый шлюз (правило от 18.10.2026): собрать по цели всё из репозиториев
+python tools/github_intake.py plan <slug> --no-net          # кандидаты и оценка затрат, 0 сети
+python tools/github_intake.py run <slug> --agent <Имя>      # сбор + дайдест + запись в LOG/README/реестр
+python tools/github_intake.py status <slug>                 # DONE|PARTIAL|NONE|STALE|LEGACY|PENDING
+python tools/github_intake.py backlog --n 20                # режим «вся база»: одна цель за проход
+# без пройденного шлюза (или оформленного негатива) — не выставляем строку в PROPOSALS.md и не запускаем прогон
 
 # 3) поработать: всё значимое (и негатив!) — в puzzles/<slug>/LOG.md, прорыв — в README.md
 #    код — в puzzles/<slug>/tools/, данные — в puzzles/<slug>/data/, отчёт — в reports/
@@ -89,6 +98,9 @@ python tools/claims.py gc
    Публикация ключа до снятия приза недопустима.
 5. **Ничья работа не затирается**: только дополнять; общие файлы править атомарно (перечитать →
    temp → `os.replace`), чужие строки не переставлять.
+6. **GitHub-интейк — первый шлюз (18.10.2026):** прежде чем предлагать цель или запускать прогон, агент
+   собирает по ней всё из репозиториев (`tools/github_intake.py run <slug>`) и фиксирует результат в
+   `LOG.md`; оформленный негатив («репо не найдено, проверено по N запросам») тоже закрывает шлюз.
 
 ## Приоритеты (сводка на 2026-10-18; подробности — в OPTIMAL_TARGETS/QUICK_SOLVE_RERANK)
 
@@ -110,6 +122,14 @@ Python 3 + `coincurve`, `numpy`, OpenCV/PIL, EasyOCR 1.7.2 + `torch` **CPU** (з
 чисто-переборные и стего-оси без этих инструментов упираются в блокер. Сеть: `mempool.space` с этой
 машины недоступен (TLS-таймаут), работают `blockstream.info`, `blockchain.info`, `eth.blockscout.com`;
 `api.github.com` — 60 запросов/час без токена.
+
+Про GitHub (факты, проверенные на этой машине 18.10.2026, учитываются в `tools/github_intake.py`):
+квоту **не** тратят `codeload.github.com` (тарболлы), `raw.githubusercontent.com`, `git ls-remote`
+и `browser_download_url` релизов — содержимое реп качается бесплатно; `api.github.com` — 60 запросов/час,
+и он **общий на весь IP всех агентов** (лимит часовой, учитывай `tools/github_intake.py ledger`);
+ответ `304` по ETag — бесплатно; анонимный `search` — отдельный пул 10 запросов/мин; GraphQL анонимно
+недоступен (лимит 0); default-ветка у старых репозиториев часто `master`, а не `main` — её определяет
+`git ls-remote --symref`.
 
 ## Про публикацию этого репозитория
 

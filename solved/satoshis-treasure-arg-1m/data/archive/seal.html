@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script>
+        var countDownDate = new Date("May 5, 2020 18:00:00").getTime();
+        var x = setInterval(function() {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "GOTIME";
+          }
+        }, 1000);
+        </script>
+<style>
+body {
+  background-color: black;
+  color:#33ff33;
+  font-family: monospace;
+  text-shadow: 0 0 2px #22ff22;
+}
+
+a:not(#inline){
+text-decoration: none;
+font-size:2em;
+}
+
+h1 {
+text-align:center
+}
+
+div.box#header {
+  transform:rotate(5deg);
+  width:400px;
+  margin:0 auto;
+  border: 1px solid #33ff33;
+  background-color: black;
+}
+
+
+.wrapper {
+margin:50px 0px 200px 0px;
+padding: 0rem 20%;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+grid-gap: 2rem;
+}
+
+div.box {
+text-align: left;
+border-radius: 10px;
+border: 1px solid #33ff33;
+background-color: black;
+
+}
+
+div.box a {
+text-align:center;
+color: #33ff33;
+}
+
+div.card {
+text-align: left;
+border-radius: 10px;
+border: 1px solid #33ff33;
+background-color: black;
+overflow-wrap: break-word;
+transform:rotate(-3deg);
+}
+
+div.card2 {
+text-align: left;
+border-radius: 10px;
+padding:15px;
+border: 1px solid #33ff33;
+background-color: black;
+overflow-wrap: break-word;
+transform:rotate(-3deg);
+}
+
+
+</style>
+
+    </head>
+
+    <body>
+
+      <div class="box" id="header">
+      <h1 style="margin: 0">the first seal</h1>
+      <ul>
+        <li>previous keys can unlock what you'll need to progress</li>
+        <li>you can use <a id="inline" href="https://encode-decode.com/aes-256-cbc-encrypt-online/">this tool</a> to make things easier</li>
+      </ul>
+    </div>
+
+
+<div>
+      <div class="wrapper">
+
+        <div class="box">
+          <div class="card">
+            <div class="card2">
+            <a href="#">1</a>
+            <p>HI/uKGIiKsf03CMfAERDccguLNS2fQKAUxvld5XE/xetLhLrnK9R0fw7x7e7q+3jZNX0wQiKvnaJIi3ydAAjMvhH81Jy1H+743VgYOnl4zpAuRlxHn1dQ/oEakoj2qvB+6G4k+qkYEFli6VP1UBQEaN0Pnp2VvV2UpBgUj+wqRCrKCGa+8w0bFB/4qvhn7Ln</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="card">
+            <div class="card2">
+            <a href="#">2</a>
+            <p>qZr2TXdmuw0XPuXLAJIOm0mZbU6aCLXNsSz1OiIOnzjj+Kvm3hlqQw1cUuGTIpaLlgJdyUYFUym8TIHbMAPkRHX42pJCxLDfcv+u4cfKcCE6Y3SBeyAfRFtwoo9Zgluzo29Lmq+l7M0RbOXJhMD4Jhm+JepUwFn7XJWs1apyKnE+9OtDP00r/zJ41gufkgIG</p>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="box">
+          <div class="card">
+            <div class="card2">
+            <a href="#">3</a>
+            <p>g4VFCwx1ZfOSAZ8L/pmI5Q2UXcYKB1q0iZXuDRlns+qrPwgBZSv1M43yFQ8hlDuoehSuGhOPPm5DaE7MLVswwLk8ZFnHmpQDho6rxxZ1YQHxH0xhBuA/R0gXvQKGDZkDsVuJpE+Wcgy7F8IM8uomyD5RsAIX56cYS3GVbRxSZi0TOXohlDGGRGjsr01gz/s5</p>
+          </div>
+        </div>
+        </div>
+
+
+
+        <div class="box">
+          <div class="card">
+            <div class="card2">
+            <a href="#">4</a>
+            <p id="countdown">
+          </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+      </div>
+</div>
+
+
+
+
+
+    </body>
+</html>

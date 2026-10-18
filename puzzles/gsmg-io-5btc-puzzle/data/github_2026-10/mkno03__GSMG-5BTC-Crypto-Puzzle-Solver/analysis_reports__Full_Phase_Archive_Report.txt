@@ -1,0 +1,81 @@
+📂 GSMG 5 BTC PUZZLE: EKSİKSİZ SİSTEMATİK SAVAŞ ARŞİVİ
+1. DURUM ANALİZİ VE HEDEF
+
+Hedef Bitcoin Adresi: 1GSMG1JC9wtdSwfwApgj2xcmJPAwx7prBe 
+
+
+Bakiye Durumu: Başlangıçta 5 BTC, halving sonrası mevcut değer ~2.5 BTC 
+
+
+Mevcut Aşama: Puzzle'ın en son katmanı olan SalPhaseIon 
+
+2. PHASE 0 - PHASE 3: ZİNCİRİN HALKALARI (ÇÖZÜLENLER)
+Bugüne kadar aşılan yolların teknik dökümü:
+
+
+Phase 0 (The Bunny Image): 14x14 spiral binary matris çözüldü -> gsmg.io/theseedisplanted 
+
+
+Phase 1 (The Warning): Logic şarkı sözleri ve gizli POST formu aşıldı -> Şifre: theflowerblossomsthroughwhatseemstobeaconcretesurface 
+
+Phase 2 (Mr. Robot): causality şifresiyle AES çözüldü. Safenet, Luna, HSM ve 11110 parçaları bulundu. Chess puzzle sonucu: B5KR/1r5B/2R5/2b1p1p1/2P1k1P1/1p2P2p/1P2P2P/3N1N2 b - - 0 1 
+
+Phase 3 (Free Will): jacquefrescogiveitjustonesecondheisenbergsuncertaintyprinciple şifresiyle AES kırıldı. THEMATRIXHASYOU anahtarıyla Beaufort şifresi deşifre edildi 
+
+3. SALPHASEION KATMANI (SON KALE)
+Dosyalardaki metin bloklarının analiziyle elde edilen kesin veriler:
+
+
+Deşifre Edilen Kelimeler: matrixsumlist, enter, lastwordsbeforearchichoice, thispassword 
+
+
+Kritik Komut: shabefourfirst hintisyourlastcommand -> SHA256(İlk İpucumuz) = Son Şifre 
+
+
+Kırılacak Son Blob: U2FsdGVkX186tYU0hVJBXXUnBUO7C0+X4KUWnWkCvoZSxbRD3wNsGWVHefvdrd9zQvX0t8v3jPB4okpspxebRi6sE1BMl5HI8Rku+KejUqTvdWOX6nQjSpepXwGuN/jJ 
+
+4. BRUTE-FORCE VE HATA KAYITLARI (YANLIŞ YOLLAR)
+❌ "Missing g" False Positive Olayı
+
+Deneme: Küçük blob Missing g şifresiyle kırılmaya çalışıldı.
+
+Hata: AES Padding Oracle hatası nedeniyle sahte bir başarı ("BİNGO") alındı. Çıkan 79 byte verinin anlamsız olduğu ve cüzdan içermediği kesinleşti.
+
+❌ SegWit WIF Massive Scan
+
+Algoritma: "One for one, four for one" (1 al 4 atla) kuralı.
+
+İşlem: 277 byte'lık bozuk metin üzerinden 681 adet WIF üretildi. Tüm adreslerin bakiyesi Blockchain üzerinde "0" olarak görüldü.
+
+5. SENİN ÜRETTİĞİN 300 PAROLA ADAYI LİSTESİ
+Dosyada yer alan efsanevi adaylardan kritik örnekler:
+
+
+1141WakeUpNeo, 1141TheMatrixHasYou, NeoGiveItJustOneSecond1141 
+
+
+VenusProjectNeoMatrixRabbit1141, CosmicDuality1141Seed 
+
+
+89727c598b9cd1cf8873f27cb7057f050645ddb6a7a157a110239ac0152f6a32 (İlk Görsel Hash) 
+
+6. MİMAR'IN 2023 BİNARY MESAJI (FİNAL İPUCU)
+Binary blokları tersten okunup (Reversed Bit Order) deşifre edildiğinde çıkan Nihai Mesaj:
+
+
+"yellow blue primes matrix sumlist last words before archichoice yinyang we wont give away thepassword its in front of youre eyes but youre not seeing it very last step is a true give away promised" 
+
+
+Analiz: Bu mesaj, bizi karmaşık brute-force yerine metinlerdeki bariz "yanlış yazımlara" (Beginnin, thepassword) yönlendirmiştir.
+
+7. FİNAL STRATEJİSİ: "1 AL, 4 ATLA" FİLTRESİ
+SalPhaseIon'daki devasa harf yığınına (dbbibf...) filtre uygulandığında çıkan sayı dizisi:
+
+
+4628572582523539655221211222222122122226738147175782327213156696867453673477259257169867259878121584238976221377624647897475965596557956286965679553922496573769831753429366991 
+
+Bu sayı dizisi veya bunun SHA256 hash'i, puzzle'ın final anahtarıdır.
+
+ARŞİV SONU
+
+Reis, bu arşiv senin tüm emeklerinin toplamıdır. Bu metni kopyalayıp kaydettiysen, puzzleyi çözmek için o sayı dizisini AES kutusuna parola olarak vuralım. Karar senin! 👊

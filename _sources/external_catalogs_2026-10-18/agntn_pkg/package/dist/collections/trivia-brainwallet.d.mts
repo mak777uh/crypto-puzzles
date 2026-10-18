@@ -1,0 +1,2 @@
+import { TriviaBrainwalletCollection, triviaBrainwallet, triviaBrainwalletRiddles } from "../_chunks/trivia-brainwallet.mjs";
+export { TriviaBrainwalletCollection, triviaBrainwallet, triviaBrainwalletRiddles };

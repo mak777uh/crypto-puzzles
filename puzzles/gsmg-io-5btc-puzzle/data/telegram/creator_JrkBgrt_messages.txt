@@ -1,0 +1,1528 @@
+### id=74 date=2019-04-20T19:18:49 type=message
+Ok.. somebody has cracked the first code.
+
+### id=75 date=2019-04-20T19:19:00 type=message
+that was way faster than expected.
+
+### id=77 date=2019-04-20T19:21:57 type=message
+The first part. Maybe the puzzle has multiple stages 😉.
+
+### id=79 date=2019-04-20T19:22:36 type=message
+It is.
+
+### id=87 date=2019-04-20T19:41:14 type=message
+It's a way to protect websites against cross site request forgery but the loadbalancer is a bitch on multiple tries apparently.
+
+### id=212 date=2019-04-22T17:28:08 type=message
+wrong chat RKT 😊
+
+### id=216 date=2019-04-22T17:39:49 type=message
+😂
+
+### id=225 date=2019-04-22T22:48:52 type=message
+5ac407837447fba24ba2802e4d1e9aecb4580aa29fef1088cc387c180b746f75
+
+### id=226 date=2019-04-22T22:49:09 type=message
+just try hit your options against that hash.
+
+### id=231 date=2019-04-23T00:24:17 type=message
+Puzzle token issue for stage 1 seems to be resolved.
+
+### id=234 date=2019-04-23T00:26:42 type=message
+https://passwordsgenerator.net/sha256-hash-generator/
+
+### id=236 date=2019-04-23T00:26:51 type=message
+or just get yourself a python script
+
+### id=239 date=2019-04-23T00:28:13 type=message
+a sticker
+
+### id=257 date=2019-04-23T01:29:02 type=message
+A hash which we provided as the website was giving a lot of token errors. With this hash the puzzlers can try their passwords instead of firing them at the website.
+
+### id=325 date=2019-04-23T21:57:51 type=message
+Ewout managed to crack the april 1st puzzle. He was the first to solve it.
+
+### id=518 date=2019-04-27T18:46:58 type=message
+hahahaha :D
+
+### id=519 date=2019-04-27T18:47:07 type=message
+back to the pile!
+
+### id=550 date=2019-04-30T01:35:29 type=message
+I personally don't mind you talkinig in another language in  this chat tbh although I do prefer english to be the standard language as I assume most of us will be able to follow the conversations. The main chat of GSMG is english only.
+
+### id=660 date=2019-05-08T16:20:21 type=message
+Apparently somebody managed to get into Phase 3 🧐
+
+### id=663 date=2019-05-08T16:34:39 type=message
+Nobody knows
+
+### id=850 date=2019-05-14T17:49:49 type=message
+👌
+
+### id=851 date=2019-05-14T17:51:40 type=message
+Quests might* be scams. We didn't promote this puzzle nor is it unsolvalble. Please enjoy the puzzle or continue your journey.
+
+### id=855 date=2019-05-14T17:53:59 type=message
+Sure, once it's solved.
+
+### id=859 date=2019-05-14T18:01:11 type=message
+I suppose the btc price will be above 10k at the next halving.
+
+### id=866 date=2019-05-18T01:39:21 type=message
+Dear all, somebody pointed out that there might be a mistake in phase III and that is correct unfortunately. The mistake makes it nearly impossible to solve unless you'd know where to add 1 extra character between the 3 answers. My sincerest apologies for this, I'll fix this a soon as I've found a decent spot to do so as I'm on holiday atm. Again, 1000 times sorry, I'm aware I might have wasted a lot of time for some :-(...
+
+### id=867 date=2019-05-18T01:43:46 type=message
+Here's the hint in order to bypass the mistake:
+
+giveit = givetit
+
+### id=869 date=2019-05-18T03:04:04 type=message
+Correct.
+
+### id=871 date=2019-05-18T03:15:22 type=message
+For those feeling bad about having wasted time on my typo. I might feel even worse as I've tested the entire puzzle 3 times with the same string which had the typo in it 😒. I'll kill some braincells tonight with tasteless alcohol in order to forget this blunder.
+
+### id=874 date=2019-05-18T05:30:08 type=message
+The issue is within the 3th phase. Not in going from 2 to 3.
+
+### id=875 date=2019-05-18T05:30:34 type=message
+Once you have to work with give(t)it you'll know.
+
+### id=879 date=2019-05-18T19:26:26 type=message
+So, after yesterday's 'hint' a team of puzzlers has made an unbelievable amount of progress in just one day... The progress they made was unforseen as we expected it to take at least a !month! to pass those parts of the puzzle. Hat off for those that managed to puzzle their way through all the ciphers and riddles in this extraordinary pace. We're really impressed by that, actually, we stand in awe for you. Congrats.
+
+To those not having reached Phase III yet, no worries besides a bit of extra pressure. The "last" part of the puzzle will ensure that there's quite some time for you guys to catch up to them... although given their obvious skill this might be solved quicker than expected aswell.. time will tell. Good luck!
+
+### id=881 date=2019-05-18T19:31:02 type=message
+In case the private key hasn't been found in 2019 we'll release a tiny hint at the start of 2020, that will be the final hint. Can the private key be retrieved without that hint? Yes.
+
+### id=886 date=2019-05-18T19:49:27 type=message
+Nope
+
+### id=887 date=2019-05-18T19:50:17 type=message
+Part III consist out of a few stages. The last few stages are, how shall I say it, not really easy to solve for most.
+
+### id=896 date=2019-05-18T20:10:46 type=message
+No, they reaced out to me on tg and send me proof of them passing the stages.
+
+### id=898 date=2019-05-18T20:13:29 type=message
+No hints after stage 2 (except the 't' to fix my stupid mistake)
+
+### id=950 date=2019-05-27T03:25:10 type=message
+Not completely, voice recognition might even work to pass although I'd copy past the answer as it's faster ;-).
+
+### id=952 date=2019-05-27T06:20:49 type=message
+Ok you found a song. Do have a clue on how to proceed on the webpage?
+
+### id=961 date=2019-05-28T19:45:40 type=message
+Nobody knows.
+
+### id=978 date=2019-05-31T18:02:28 type=message
+Now we need a bot here too
+
+### id=984 date=2019-05-31T18:20:06 type=message
+
+
+### id=988 date=2019-05-31T18:27:49 type=message
+shitcoin
+
+### id=989 date=2019-05-31T18:27:53 type=message
+😉
+
+### id=990 date=2019-05-31T18:28:01 type=message
+Well.... yes
+
+### id=991 date=2019-05-31T18:28:28 type=message
+Apparently folks found a new piece.
+
+### id=994 date=2019-05-31T18:29:13 type=message
+Almost banned for spam 😋
+
+### id=999 date=2019-05-31T18:32:29 type=message
+/daysandbox_set safe_hours=720
+
+### id=1210 date=2019-06-28T00:38:51 type=message
+🌱
+
+### id=1211 date=2019-06-28T00:39:32 type=message
+🛣
+
+### id=1416 date=2019-08-10T19:50:10 type=message
+You'll only know when you've solved that part.
+
+### id=1448 date=2019-09-04T10:58:16 type=message
+Still no hints ;-)
+
+### id=1461 date=2019-09-23T01:55:01 type=message
+Found it by now?
+
+### id=1465 date=2019-09-23T02:00:48 type=message
+7 parts right?
+
+### id=1487 date=2019-09-26T18:35:24 type=message
+There may indeed a piece be found outside the main puzzle.
+
+### id=1537 date=2019-10-13T21:38:53 type=message
+Gsmg.io/puzzle
+
+### id=1587 date=2019-11-01T04:53:04 type=message
+Sure, what's the hint?
+
+### id=1602 date=2019-12-03T20:55:55 type=message
+giveit = givetit
+
+### id=1638 date=2019-12-31T13:30:23 type=message
+Hahaha, you're on it. Not an exact time, but it will be posted in this channel. It's at the start of 2020 indeed, way before the halving.
+
+### id=1639 date=2019-12-31T13:33:29 type=message
+To all you peepz in advance: have a blast in the last part of 2019 and have an even better 2020. Best wishes to you all and good luck with the next puzzle piece(s) in case you manage to find them 😉!
+
+### id=1647 date=2020-01-05T04:01:00 type=message
+
+
+### id=1648 date=2020-01-05T04:01:19 type=message
+Anybody hungry?
+
+### id=1651 date=2020-01-05T04:01:54 type=message
+No, it's a dessert
+
+### id=1659 date=2020-01-05T04:06:01 type=message
+Note: I might be in a trolling mood.
+
+### id=1680 date=2020-01-12T23:52:32 type=message
+👆
+
+### id=1703 date=2020-01-13T19:40:54 type=message
+Hint to be expected within a few days. Note: not trolling with scripted cake this time.
+
+### id=1710 date=2020-01-14T13:38:06 type=message
+Roses are White but often Red.
+Yellow has a number and so does Blue.
+Go back to the first puzzle piece without further ado.
+
+It might have shown you only one door, beware that the rabbits nest may contain a whole lot more.
+
+Hush hush.
+
+### id=1711 date=2020-01-14T13:38:49 type=message
+Good luck 👍
+
+### id=1726 date=2020-01-27T18:21:35 type=message
+Might have been fixed fyi 👆
+
+### id=1729 date=2020-01-27T19:00:04 type=message
+Would be nice, not required
+
+### id=1743 date=2020-02-20T18:31:58 type=message
+😎
+
+### id=1753 date=2020-02-21T16:03:21 type=message
+I'm not the esthetician when it comes to coding 😉
+
+### id=1758 date=2020-02-22T18:19:41 type=message
+👋
+
+### id=1775 date=2020-02-22T18:32:30 type=message
+Solutions for the first stages can be found online.
+
+### id=1777 date=2020-02-22T18:32:52 type=message
+The quickest brain did it within 2 hours if I remember correctly.
+
+### id=1779 date=2020-02-22T18:34:10 type=message
+Don't know
+
+### id=1806 date=2020-02-22T19:11:52 type=message
+Typos: Horrible mistakes due to rushed work. I'm 100% to blame for this noobish display of words. No clues to be found in those typos might you wonder 😉.
+
+### id=1837 date=2020-02-22T23:30:18 type=message
+Only -41,-17 matters
+
+### id=1895 date=2020-02-25T15:45:53 type=message
+Not sponsored, just see it as a side quest
+
+### id=2002 date=2020-02-25T21:04:46 type=message
+You are right
+
+### id=2011 date=2020-02-25T21:07:05 type=message
+FA please soften the communication. I like enthusiasm, but don't bring down the vibe. A lot of very smart people have been on this puzzle and put in a lot more effort than 1 can do in a month. Some puzzlers amazed me by being so incredibly fast in some stages.
+
+### id=2013 date=2020-02-25T21:07:19 type=message
+3.2 is a thing btw
+
+### id=2017 date=2020-02-25T21:09:10 type=message
+Or nobody found the direction
+
+### id=2020 date=2020-02-25T21:09:39 type=message
+But I should shut up ofcourse 😁
+
+### id=2023 date=2020-02-25T21:10:30 type=message
+I'd dive in the puzzle from the beginning before making assumptions
+
+### id=2024 date=2020-02-25T21:11:01 type=message
+A few guys here cracked phase 2 in 2 days.
+
+### id=2026 date=2020-02-25T21:15:01 type=message
+Don't know but most see 3.2 as the last part.
+
+### id=2067 date=2020-02-25T21:38:52 type=message
+😂😂😂
+
+### id=2070 date=2020-02-25T21:40:01 type=message
+Just spend less time here fishing for clues and solve 🧐
+
+### id=2244 date=2020-02-27T19:06:27 type=message
+Nice and silent
+
+### id=2245 date=2020-02-27T19:06:41 type=message
+Damn so annoying
+
+### id=2247 date=2020-02-27T19:07:09 type=message
+He'll be back
+
+### id=2297 date=2020-03-16T16:13:31 type=message
+Yeah we might want to push the English only rule here too ;-)
+
+### id=2905 date=2020-03-25T03:19:39 type=message
+Interesting 😜
+
+### id=2910 date=2020-03-25T04:02:42 type=message
+Answering that would be too much of a hint.
+
+### id=2918 date=2020-03-25T04:22:40 type=message
+There must at least be something hidden in there.
+
+### id=3281 date=2020-04-06T15:12:03 type=message
+No hints 🤓
+
+### id=3338 date=2020-04-08T21:38:10 type=message
+Those hints are the last hints. Although I can say that one team managed to find something... something others haven't yet found (unless they didn't tell us).
+
+### id=3340 date=2020-04-08T22:01:53 type=message
+That would be another hint.
+
+### id=3342 date=2020-04-08T22:12:53 type=message
+there are errors?
+
+### id=3345 date=2020-04-08T22:16:14 type=message
+Before you send anything. No hints; errors and typos are mostly not intended 😄
+
+### id=3348 date=2020-04-08T22:27:23 type=message
+well, I'll just wait until you guys have progressed to "the next stage or something like that"😁
+
+### id=3365 date=2020-04-08T23:12:57 type=message
+the backstage 😎
+
+### id=3369 date=2020-04-08T23:16:02 type=message
+obviously a typo
+
+### id=3370 date=2020-04-08T23:17:30 type=message
+Rushed work. I take all the blame there is for those 😞. My sincerest apologies.
+
+### id=3371 date=2020-04-08T23:17:43 type=message
+Hope it hasn't spoiled the fun so far.
+
+### id=3373 date=2020-04-08T23:19:06 type=message
+I can't even write without typo's. The intelligence is an illusion.
+
+### id=3375 date=2020-04-08T23:19:36 type=message
+But thanks nevertheless.
+
+### id=3384 date=2020-04-08T23:27:08 type=message
+Quite some typos have been changed already. The biggest blunder so far in the mainline of the puzzle was givetit instead of giveit 😩🔨
+
+### id=3386 date=2020-04-08T23:28:48 type=message
+What impressed me most so far was that 1 crew even managed to pass it while the typo was unknown.
+
+### id=3390 date=2020-04-08T23:33:39 type=message
+Humph. Hope, it is the quintessential human delusion, simultaneously the source of your greatest strength, and your greatest weakness.
+
+### id=3391 date=2020-04-08T23:33:48 type=message
+(not a hint btw, just fooling around)
+
+### id=3395 date=2020-04-08T23:39:11 type=message
+like 5 thousand milibitcoin...?
+
+### id=3404 date=2020-04-08T23:51:58 type=message
+And Oen
+
+### id=3478 date=2020-04-11T22:52:20 type=message
+♟
+
+### id=3615 date=2020-04-29T20:18:49 type=message
+👆
+
+### id=3860 date=2020-05-11T19:42:26 type=message
+
+
+### id=3876 date=2020-05-11T20:07:48 type=message
+Invest it in bitconnect.
+
+### id=3902 date=2020-05-11T22:26:40 type=message
+Well spotted
+
+### id=3903 date=2020-05-11T22:26:51 type=message
+Happy halving!
+
+### id=3905 date=2020-05-11T22:31:00 type=message
+It'll high likely be worth more than it once the price was 5 btc. Next halving in 209999
+
+### id=3923 date=2020-05-11T23:31:25 type=message
+Let's see what bitcoin is worth the next halving and who knows what you'll find after opening the 2nd door. The price is in half, but what does it mean 🤔.
+
+### id=4094 date=2020-05-21T01:54:11 type=message
+It is
+
+### id=4096 date=2020-05-21T02:36:55 type=message
+This one 👆.
+
+### id=4102 date=2020-05-21T05:40:46 type=message
+answer is there
+
+### id=4105 date=2020-05-21T09:12:59 type=message
+First or zero
+
+### id=4266 date=2020-05-23T15:29:12 type=message
+Thanks @EwoutM, I fell asleep.
+
+### id=4272 date=2020-05-23T16:40:20 type=message
+/goodbye off
+
+### id=4274 date=2020-05-23T16:40:29 type=message
+/cleanwelcome on
+
+### id=4307 date=2020-05-23T22:51:51 type=message
+I have a purpose now. Buy a dosis of super covid-20 for every spammer.
+
+### id=4309 date=2020-05-23T22:53:42 type=message
+Perfect
+
+### id=4310 date=2020-05-23T22:53:55 type=message
+Make it very contagious please.
+
+### id=4314 date=2020-05-23T23:01:14 type=message
+/lock audio bot button command contact document email emojigame forward game invitelink location phone poll rtl sticker url video videonote voice
+
+### id=4316 date=2020-05-23T23:01:44 type=message
+😇
+
+### id=4363 date=2020-05-25T05:17:02 type=message
+I think a computer would beat me in the turing test.
+
+### id=4548 date=2020-07-01T02:29:05 type=message
+👆
+
+### id=4589 date=2020-08-02T19:54:57 type=message
+Or the same puzzle, or just not at all 🤷‍♀.
+
+### id=4590 date=2020-08-02T19:56:20 type=message
+Really nobody managed to find the extra door, didn't expect that after the earlier pace of cracking things.
+
+### id=4597 date=2020-08-03T15:46:06 type=message
+A few here know
+
+### id=4603 date=2020-08-03T18:17:43 type=message
+It's ok, more chance for those that aren't running. We said we'd do this from the start, no need to feel bad about this.
+
+### id=4624 date=2020-08-09T13:38:27 type=message
+a private key
+
+### id=4647 date=2020-08-10T19:50:52 type=message
+Cracking ethereum requires billions of ether.
+
+### id=4688 date=2020-08-12T16:10:55 type=message
+Indeed remarkable with the hints stating the path pretty obvious...
+
+### id=4693 date=2020-08-12T21:22:59 type=message
+No hints
+
+### id=4694 date=2020-08-12T21:23:21 type=message
+There's 1 club that passed but they are stuck in the next phase.
+
+### id=4696 date=2020-08-12T22:18:55 type=message
+Correct
+
+### id=4771 date=2020-10-01T15:41:56 type=message
+I've just been notified that number 2 has made it to the next stage.
+
+### id=4912 date=2020-10-27T11:58:39 type=message
+https://www.blockchain.com/btc/address/1GSMG1JC9wtdSwfwApgj2xcmJPAwx7prBe price is indeed still there.
+
+### id=5069 date=2020-11-24T21:02:48 type=message
+We have our reasons halving the price money at every bitcoin halving event :-).
+
+### id=5071 date=2020-11-24T22:02:23 type=message
+Who knows, maybe even in the same block.
+
+### id=5251 date=2020-12-26T14:54:18 type=message
+Thanks
+
+### id=5365 date=2021-01-07T22:57:32 type=message
+It'll be split on the next halving.
+
+### id=5368 date=2021-01-07T22:58:45 type=message
+We mentioned this at the beginning, when the puzzle started.
+
+### id=5370 date=2021-01-07T22:59:38 type=message
+Depends on the contestants' puzzle skills.
+
+### id=5375 date=2021-01-08T00:58:17 type=message
+Tg channel
+
+### id=5672 date=2021-01-18T17:41:23 type=message
+I can solemnly promise you I'm not using any other accounts besides my own.
+
+### id=5677 date=2021-01-19T21:12:59 type=message
+From now on no more begging for money in exchange for "hints". Doing so results in a ban. Measure in place due to many complaints.
+
+### id=5678 date=2021-01-19T21:14:14 type=message
+This puzzle is supposed to be fun ✌️.
+
+### id=5684 date=2021-01-20T00:39:00 type=message
+I'll offer free hints in PM. (After you've paid me 5.1 btc 🤡).
+
+### id=5685 date=2021-01-20T00:39:13 type=message
+Good luck again.
+
+### id=5717 date=2021-01-21T14:35:49 type=message
+Not to give any hints but a few might not require the internet anymore.
+
+### id=5960 date=2021-03-01T14:33:17 type=message
+Ancient spelling 😅. One of the many many typos.
+
+### id=5966 date=2021-03-01T14:34:42 type=message
+You are at the prime part already???
+
+### id=5969 date=2021-03-01T14:35:15 type=message
+Oh wait, shouldn't have said that. That might have been a hint 🤔.
+
+### id=5982 date=2021-03-01T14:38:37 type=message
+Rumour has it I'm an admin at least.
+
+### id=6025 date=2021-03-01T14:45:48 type=message
+
+
+### id=6243 date=2021-03-05T16:14:28 type=message
+Those not enjoying the puzzle are the ones wasting time I guess 😅?
+
+### id=6250 date=2021-03-05T16:15:26 type=message
+Infrared
+
+### id=6252 date=2021-03-05T16:15:45 type=message
+No hints 🤡
+
+### id=6491 date=2021-03-14T09:58:08 type=message
+Fyi. Another person (or team) made it to salph.
+
+### id=6495 date=2021-03-14T12:25:14 type=message
+Nope
+
+### id=6497 date=2021-03-14T12:45:01 type=message
+I don't check the website logs. There aren't any tracking scripts either. People somehow now how to reach me on telegram and PM me, that's how I know :-). Although I can't prove it, we don't monitor the puzzlers progress in any way. I just read the chat and when I notice the address is empty I'll know how they did it. After the first stage was cracked within no-time I was afraid the entire puzzle would have been solved not too long after that. When people progress in salphation it might be cracked pretty soon. Breaking salphation, should be giving the feeling of the phase's name. Won't be easy but I've noticed how clever most of you are so I assume it will be cracked at some point, probably before next halving.
+
+### id=6509 date=2021-03-14T18:19:29 type=message
+I gave an unforseen hint already 🤷‍♂
+
+### id=6514 date=2021-03-15T10:16:26 type=message
+Hush hush
+
+### id=6541 date=2021-03-19T14:07:55 type=message
+If know about 3 people/teams.
+
+### id=6543 date=2021-03-19T14:19:59 type=message
+4*
+
+### id=6712 date=2021-03-22T19:53:39 type=message
+Nr 5 in salph
+
+### id=6767 date=2021-03-25T01:19:43 type=message
+🤣
+
+### id=6846 date=2021-03-27T16:37:10 type=message
+Maybe combine it with some psilocybe azurescens and mao inhibitors or go all  the way with some 5-MeO-DMT. 👀
+
+### id=6847 date=2021-03-27T16:39:51 type=message
+
+
+### id=6884 date=2021-04-01T09:57:38 type=message
+Hint: "another door might be found on {1 },{4} ,{21}"
+
+### id=6895 date=2021-04-01T11:34:22 type=message
+Good one V ;-). (Assuming you played cyberpunk).
+
+### id=6913 date=2021-04-01T16:29:41 type=message
+R=18
+A=1
+B=2
+
+Could also be 21 or 1812 bit 🧐. Sometimes I'm glad I don't have to solve this puzzle myself.
+
+### id=6944 date=2021-04-01T17:06:39 type=message
+👆
+
+### id=7028 date=2021-04-02T23:18:22 type=message
+I haven't deleted it. Not sure who, but I noticed some more messages are deleted from time to time.
+
+### id=7060 date=2021-04-03T18:51:32 type=message
+Nobody knows
+
+### id=7061 date=2021-04-03T18:52:35 type=message
+I've been pretending to be one of the few creators for a while now.
+
+### id=7152 date=2021-04-06T17:08:39 type=message
+Some parts of cicada puzzles are still unsolved. Must be bad design.
+
+### id=7153 date=2021-04-06T17:09:36 type=message
+If it were just about having fun, that'd be great wouldn't it :-).
+
+### id=7224 date=2021-04-09T22:46:38 type=message
+✅
+
+### id=7244 date=2021-04-10T20:49:28 type=message
+Fyi, another person or team reached salph today.
+
+### id=7381 date=2021-04-16T14:14:33 type=message
+Blame noted and accepted
+
+### id=7385 date=2021-04-16T14:20:09 type=message
+Deal, we'll take of 75% instead 😈.
+
+### id=7388 date=2021-04-16T14:21:12 type=message
+https://www.bitcoinblockhalf.com/
+
+### id=7396 date=2021-04-16T14:33:32 type=message
+I don't care who shares what indeed, too much of a hassle. As long as people enjoy and that the best puzzler gets the price I'm ok with a lot.
+
+### id=7418 date=2021-04-16T15:08:24 type=message
+Good point
+
+### id=7520 date=2021-04-18T20:33:41 type=message
+I suspect he isn't
+
+### id=7529 date=2021-04-18T21:24:13 type=message
+Do you know what usually happens on the first of april?
+
+### id=7830 date=2021-08-10T23:51:12 type=message
+Technically we do 😁
+
+### id=7832 date=2021-08-11T13:55:52 type=message
+The one to be found by solving the puzzle yes
+
+### id=7834 date=2021-08-11T14:07:15 type=message
+And the solver will find a way to 'decrypt' it.
+
+### id=7886 date=2021-09-24T02:38:41 type=message
+https://blockchair.com/tools/halving-countdown
+
+### id=7889 date=2021-09-24T12:37:18 type=message
+This was alcohol talking last night. The topic puzzle came up, and couldn't resist posting it 😅.
+
+### id=7891 date=2021-09-24T13:01:15 type=message
+That's not mine
+
+### id=7906 date=2021-10-31T14:08:49 type=message
+😅
+
+### id=7914 date=2021-12-03T06:41:18 type=message
+There is
+Another
+D
+O
+O
+R
+
+### id=7915 date=2021-12-03T06:46:25 type=message
+Remind me when it's Christmas.
+
+### id=7998 date=2021-12-26T23:11:26 type=message
+Oh well, why not. A mini mini hint. Ready 🐰?
+
+### id=8000 date=2021-12-26T23:18:32 type=message
+The previous "there is another door hint" is still a thing. We're not sure if anyone has found another door so far, and we can't check that... We've seen prime numbers being mentioned; well, that is definitely an aspect which is required to proceed. Furthermore, along the way, some characters need to be 'zeroed out'.. Best of luck and happy holidays! 🥂
+
+### id=8034 date=2021-12-31T03:39:11 type=message
+...how did you found out?
+
+### id=8036 date=2021-12-31T03:42:43 type=message
+That leaves me positively speechless
+
+### id=8038 date=2021-12-31T03:45:53 type=message
+Rumour has it, it is was done before dawn.
+
+### id=8040 date=2021-12-31T03:46:44 type=message
+This was stated after drinking dozers stuff.
+
+### id=8042 date=2021-12-31T03:47:07 type=message
+😁
+
+### id=8048 date=2021-12-31T20:14:55 type=message
+The only date I give away is the expiry date of neo's passport.
+
+### id=8140 date=2022-05-25T13:22:06 type=message
+
+
+### id=8142 date=2022-05-25T17:25:33 type=message
+Looks like somebody found a gsmg subscription.
+
+### id=8189 date=2022-06-01T19:56:24 type=message
+👽
+
+### id=8288 date=2022-09-06T12:21:52 type=message
+
+
+### id=8301 date=2022-12-02T15:14:53 type=message
+It is meant to be solved.
+
+### id=8307 date=2022-12-02T15:36:36 type=message
+There might be a hint coming but not too soon.
+
+### id=8309 date=2022-12-03T01:45:40 type=message
+I'm not exactly sure how long it would take to discover that theory so I can't really tell 🤔.
+
+### id=8311 date=2022-12-11T18:30:38 type=message
+.... That is very specific
+
+### id=8315 date=2022-12-11T18:33:20 type=message
+If the puzzle is solved you'll see how scary specific that is 😂
+
+### id=8328 date=2023-01-09T07:52:11 type=message
+@barrystyle, provided a very specific hint already.
+
+### id=8330 date=2023-01-09T13:10:46 type=message
+At least prime number is very important to get any further.
+
+### id=8339 date=2023-01-11T11:45:22 type=message
+
+
+### id=8340 date=2023-01-11T11:46:17 type=message
+Mini apologies for this Jeremy gif, couldn't help myself.
+
+### id=8342 date=2023-01-12T03:23:03 type=message
+Rumour has it a new hint is to be expected within 2 months from now.
+
+### id=8349 date=2023-01-12T14:02:00 type=message
+We obviously did this to have a chance at ending up in the Guinness Book for creating the lamest puzzle ever.
+
+### id=8352 date=2023-01-12T14:07:00 type=message
+I checked a certain GitHub yesterday, for whoever set that up, nicely done. You guys are really getting close.
+
+### id=8353 date=2023-01-12T14:08:02 type=message
+At least higher than sqrt(-1).
+
+### id=8354 date=2023-01-12T14:09:14 type=message
+Focussing on the theory of everything is also still a valid path to reaching the private key.
+
+### id=8356 date=2023-01-12T14:10:54 type=message
+An imaginary puzzle would.
+
+### id=8358 date=2023-01-12T14:13:36 type=message
+
+
+### id=8360 date=2023-01-12T14:15:46 type=message
+Just be clear. My apologies for this puzzle not to be too easy. I'm aware it might appear unsolvable, but it's not. If you find the answer now, the remaining 2.5 btc is well deserved... Or 5, who knows.
+
+### id=8364 date=2023-01-12T19:05:16 type=message
+Every btc halving the price will half too.
+
+### id=8368 date=2023-01-12T20:47:07 type=message
+👆
+
+### id=8385 date=2023-01-25T17:59:19 type=message
+42
+
+### id=8438 date=2023-02-02T17:47:18 type=message
+I'm staying out of this one 😅
+
+### id=8446 date=2023-02-24T02:20:03 type=message
+00100110 10100110 11001110 10010110 10110110 11110110 01001110 00001110 10011110 10000110 11101110 10000110 10100110 01101110 10010110 11100110 10100110 10101110 01001110 00101110 10000110 11001110 10010110 00001110 10100110 00101110 11001110 00101110 11001110 10000110 00110110 10011110 01001110 10100110 01101110 00101110 10010110 11100110 01110110 10010110 10100110 10100110 11001110 00101110 11110110 01110110 10100110 01001110 10101110 11110110 10011110 00101110 10101110 01000110 11001110 10100110 10011110 10100110 01001110 10101110 11110110 10011110 01100110 11110110 00101110 01110110 11110110 01001110 01100110 01110110 10010110 11001110 00101110 10010110 00100110 01001110 11110110 11101110 11001110 11001110 10000110 00001110 10100110 00010110 00101110 10011110 10000110 11101110 10000110 10100110 01101110 10010110 11100110 00101110 01110110 11110110 11101110 10100110 11101110 11100110 01110110 10000110 10011110 01110110 10010110 10011110 10100110 11000110 10010110 11110110 00010110 11000110 10010110 00010110 11000110 01001110 10000110 10100110 01001110 11110110 01100110 10100110 01000110 11001110 00100110 01001110 11110110 11101110 00101110 11001110 10000110 00110110 00101110 11001110 10010110 00110110 10110110 10101110 11001110 00011110 10010110 01001110 00101110 10000110 10110110 11001110 10100110 10110110 10010110 01001110 00001110 10100110 10101110 00110110 01000110 11101110 11110110 00110110 00110110 10100110 10011110
+
+### id=8472 date=2023-03-03T12:47:19 type=message
+🐰
+
+### id=8483 date=2023-04-08T05:53:03 type=message
+👆🤷‍♂
+
+### id=8491 date=2023-04-14T20:41:07 type=message
+It can be solved, albeit very difficult as you have to understand how to interpret all the hints. Currently we are not planning to release any new hints soon.
+
+### id=8512 date=2023-04-30T00:19:45 type=message
+😂
+
+### id=8516 date=2023-05-02T22:12:43 type=message
+Still remarkable that scene. Especially the expiration date of his passport 😁.
+
+### id=8518 date=2023-05-02T23:03:59 type=message
+Hope..
+
+### id=8569 date=2023-06-10T09:39:07 type=message
+Correct.
+-
+No.
+-
+Can't say anything about this.
+
+### id=8608 date=2023-06-12T15:31:49 type=message
+Physically, I assume not 😅.
+
+### id=8773 date=2023-08-03T22:50:23 type=message
+Ok ok ok ok. I can't hold this one any longer.
+
+### id=8774 date=2023-08-03T22:51:33 type=message
+Are you really looking for just the btc...?
+
+### id=8779 date=2023-08-03T23:17:19 type=message
+Another one only 8 minutes after the last one?
+
+### id=8787 date=2023-08-03T23:28:20 type=message
+Might be. Wish I had said nothing though.
+
+### id=8790 date=2023-08-03T23:30:14 type=message
+Exactly, should have refrained from typing earlier maybe.
+
+### id=8792 date=2023-08-03T23:32:25 type=message
+
+
+### id=8793 date=2023-08-03T23:32:47 type=message
+
+
+### id=8795 date=2023-08-03T23:33:50 type=message
+I saw that you guys got really really far already.
+
+### id=8796 date=2023-08-03T23:34:24 type=message
+Actually, the hardest part is done.
+
+### id=9047 date=2023-08-05T03:46:47 type=message
+"Globally supporting my generation"
+
+### id=9550 date=2023-08-06T13:42:15 type=message
+This may sound at little dramatic but if I suddenly can't answer you guys anymore, it was nice knowing you all ❤️.
+
+### id=9551 date=2023-08-06T13:43:46 type=message
+Oh, and be careful of what you get yourselves into. 🤐
+
+### id=9553 date=2023-08-06T13:44:27 type=message
+I'll not explain why.
+
+### id=9554 date=2023-08-06T13:44:39 type=message
+The puzzle talks for me.
+
+### id=9556 date=2023-08-06T13:45:26 type=message
+And don't worry, I'll just be here in the meanwhile 😘.
+
+### id=9572 date=2023-08-06T13:55:01 type=message
+Not at all.
+
+### id=9577 date=2023-08-06T13:56:34 type=message
+You know if you know.
+
+### id=9586 date=2023-08-06T14:22:27 type=message
+It wasn't cryptic enough before?
+
+### id=9592 date=2023-08-06T15:05:33 type=message
+I wish only for that the puzzle provided some exciting pieces of information. That others have learned something new and that for some it is simply entertaining. I hope that the person who connects the last pieces for the 'main price' will thus get its hands on the private key and hold or spend it wisely, but mostly enjoy it. And lastly, I hope to witness the day that the last scene of mr. Robot becomes a reality.
+
+### id=9593 date=2023-08-06T15:05:51 type=message
+In the eye of the beholder, for sure 😊.
+
+### id=9595 date=2023-08-06T15:09:27 type=message
+Technically my friends and family can get to all my data if they'd work together. In that scenario, don't expect a halving of the price.
+
+### id=9597 date=2023-08-06T15:11:19 type=message
+Hahaha good one. I thought of a 24h Killswitch, but nah. Can't be bothered :D! Instead.
+
+### id=9599 date=2023-08-06T15:12:13 type=message
+Probably the last hint:
+
+Once you hit a "ying yang", you'll be able to solve it the same day.
+
+### id=9601 date=2023-08-06T15:13:30 type=message
+Chance is small though. Merely an fyi, bit dramatic as stated earlier.
+
+### id=9603 date=2023-08-06T15:14:54 type=message
+Both?
+
+### id=9607 date=2023-08-06T15:19:07 type=message
+No need. You have all the info.
+
+### id=9608 date=2023-08-06T15:19:16 type=message
+Good to see you again btw.
+
+### id=9611 date=2023-08-06T15:20:13 type=message
+No hints 🤡
+
+### id=9615 date=2023-08-06T15:21:07 type=message
+My hat off to you, and you know why 🫡.
+
+### id=9616 date=2023-08-06T15:21:37 type=message
+Only fair ones. And to everyone.
+
+### id=9621 date=2023-08-06T15:43:54 type=message
+To answer your question 'fully', from here on, high likely no hints anymore. But if somehow you all can't solve it from here in the next few years (which I deem unlikely given the state of the solving process), then I might feel the need to give an additional hint, as I couldn't happily live with the idea that some would think that this was a scam. Note, that I hope not to have to give another hint as it would probably be a give away. Good luck to you all!
+
+### id=9627 date=2023-08-06T15:49:59 type=message
+Something was solved rather... remarkable.
+
+### id=9629 date=2023-08-06T15:53:56 type=message
+Partly.
+
+### id=9631 date=2023-08-06T15:56:02 type=message
+I won't!
+
+### id=9632 date=2023-08-06T16:00:38 type=message
+Ok, although I somehow feel the need to have my eyes at this chat all for sudden it's time for me to shut up again and see my little ones play in an obstacle parc here on France. Ciao!
+
+### id=9636 date=2023-08-06T20:23:44 type=message
+I have no clue.
+
+### id=9639 date=2023-08-06T21:39:34 type=message
+Correct. Well, technically, you'll need the internet to claim the prize in the end 🤔.
+
+### id=9943 date=2023-08-11T08:52:53 type=message
+Hi all, getting quite some DM's which is fine, just know that I'm traveling the next coming days ✌️!
+
+### id=9944 date=2023-08-11T08:53:25 type=message
+And I usually answer with "no hints".
+
+### id=10423 date=2023-08-18T16:24:12 type=message
+😳 how?
+
+### id=10424 date=2023-08-18T16:25:35 type=message
+Hi all. I'm on holiday btw. I might not answer DMs.
+
+### id=11989 date=2023-08-23T22:43:21 type=message
+Note that I get quite some puzzle DMs. I've become used to just say 'no hints'.. (sorry for that).
+
+### id=12653 date=2023-08-29T21:06:07 type=message
+Correct
+
+### id=15513 date=2023-09-28T19:13:32 type=message
+I'm ok! ♥️
+
+### id=15515 date=2023-09-28T19:14:24 type=message
+Sorry for not answering. I've just been trying not to live in my phone, as that has become a habit the last 20 years of my life.
+
+### id=15517 date=2023-09-28T19:16:21 type=message
+Still on holiday 😅. In the Caribbean currently. It's lovely here. I see some spam complaints, also sorry for that. Everyone ok besides that?
+
+### id=15520 date=2023-09-28T19:19:30 type=message
+Thanks!!!
+
+### id=16547 date=2023-11-17T15:50:24 type=message
+Hello there, are we all still having fun?
+
+### id=16549 date=2023-11-17T15:51:43 type=message
+I received some DMs, I thought I'd say hi ✌️. I'm ok, apologies for not being here on a daily basis.
+
+### id=16624 date=2023-11-24T17:05:13 type=message
+There's a question multiple people have asked me. "Given the available knowledge, is internet still required to solve it?"
+
+Nope
+
+### id=17884 date=2023-12-26T20:13:51 type=message
+Heeeeelllloooooooo
+
+### id=17885 date=2023-12-26T20:14:06 type=message
+Happy Christmas all ❤️
+
+### id=17888 date=2023-12-26T20:15:02 type=message
+Hahahaha that meme, love it
+
+### id=17889 date=2023-12-26T20:15:42 type=message
+Any spammers I have to ban?
+
+### id=17891 date=2023-12-26T20:27:27 type=message
+Have you tried the purple pill already?
+
+### id=17893 date=2023-12-26T20:28:12 type=message
+Candy flipping into 2024 ;-)
+
+### id=20219 date=2024-01-26T20:13:57 type=message
+~2000 new messages, great. You all doing ok?
+
+### id=20223 date=2024-01-26T20:21:46 type=message
+Regular Bitcoin Private key
+
+### id=20224 date=2024-01-26T20:22:04 type=message
+🤐
+
+### id=23116 date=2024-03-26T13:41:13 type=message
+I'm not really here, just checking if you folks are still alive and kicking. ✌️
+
+### id=23120 date=2024-03-26T13:42:36 type=message
+For all those DM'ing me, the answer to your question is probably NO or YES. I decided not to answer any puzzle questions anymore. If there will be a hint (ever). It will be here.
+
+### id=23121 date=2024-03-26T13:43:04 type=message
+IT'S OK, I FORGOT THAT IT'S CAPS TUESDAY.
+
+### id=23124 date=2024-03-26T13:46:40 type=message
+Yeah, being lost is a common aspect of being on this planet I guess, or at least when tempering with rabbit holes.
+
+### id=23125 date=2024-03-26T13:47:53 type=message
+Btw, for those with the heartwarming words. Many thanks ❤️.
+
+### id=23129 date=2024-03-26T13:49:08 type=message
+Please understand that I get multiple of these questions on a daily basis..
+
+### id=23130 date=2024-03-26T13:50:02 type=message
+There are investment institutions for this. Requesting money for a solid idea is not that difficult.
+
+### id=23133 date=2024-03-26T13:52:11 type=message
+Yes. Some if you might soon be drinking it probably.
+
+### id=23134 date=2024-03-26T13:53:04 type=message
+Seems puzzlers are decent people ;-).
+
+### id=23136 date=2024-03-26T13:55:39 type=message
+Ask Claude-3 for the best approach maybe?
+
+### id=23138 date=2024-03-26T13:56:29 type=message
+Understandable
+
+### id=23140 date=2024-03-26T13:57:09 type=message
+Does it come close to Claude and gpt?
+
+### id=23151 date=2024-03-26T17:40:01 type=message
+Technically yes but Nope.
+
+### id=23152 date=2024-03-26T17:40:38 type=message
+And hi, you're hallucinating. Is it the mescaline?
+
+### id=23154 date=2024-03-26T17:41:41 type=message
+😉
+
+### id=23159 date=2024-03-26T20:05:05 type=message
+I prefer superpositions 😉.
+
+### id=23163 date=2024-03-26T20:23:03 type=message
+You're doing fine.
+
+### id=23200 date=2024-03-27T19:41:56 type=message
+Sqaures and a rabbit?
+
+### id=24071 date=2024-04-10T21:21:30 type=message
+1357 blocks to go
+
+### id=24491 date=2024-04-17T14:02:00 type=message
+I received some complaints about insulting behavior.
+
+May it be obvious that it's not acceptable.
+
+Please refrain from doing so, or I have to get the banhammer out of the drawer of either slap someone with a large trout.
+
+Please be nice ❤️.
+
+### id=24492 date=2024-04-17T14:03:03 type=message
+Happy countdown everyone ✌️!
+
+### id=24623 date=2024-04-20T03:08:44 type=message
+Ha, we lost one 'puzzler'.
+
+### id=24624 date=2024-04-20T03:10:14 type=message
+Seemed like a nice moment to get the ban hammer out of the drawer.
+
+### id=24626 date=2024-04-20T03:10:43 type=message
+Happy halving everyone!
+
+### id=24627 date=2024-04-20T03:15:48 type=message
+For those that still haven't solved the puzzle. There are few prizes to win besides the banter in this chat. A private key, some 'obscure' intel, or what I hope most of you have discovered by now, the most obvious reason to make sure you hold on to Bitcoin 😉.
+
+### id=24628 date=2024-04-20T03:15:54 type=message
+✌️
+
+### id=24638 date=2024-04-20T03:29:57 type=message
+16$ fee. Damn.
+
+Well, anyway, see you in 4 years! Good luck you all.
+
+### id=24640 date=2024-04-20T03:31:10 type=message
+Me? No. Don't know that guy.
+
+### id=24652 date=2024-04-20T04:34:10 type=message
+I should.
+
+### id=24654 date=2024-04-20T04:35:15 type=message
+Challenge accepted.
+
+### id=25758 date=2024-06-06T11:16:00 type=message
+Crazy No hint Thursday, every Friday!
+
+### id=25767 date=2024-06-07T13:10:08 type=message
+An active one.
+
+### id=26085 date=2024-07-11T22:29:17 type=message
+None planned.
+
+### id=26223 date=2024-08-01T03:26:53 type=message
+
+
+### id=26490 date=2024-08-30T12:21:04 type=message
+It indeed set to private. I haven't opened tg for a while so I guess it wasn't from my side 🫤.
+
+### id=26875 date=2024-09-19T10:20:23 type=message
+I simply liked Jacque's ideas a lot. I have techy friends building communities around that idea today; I haven't invested much time into it as I should myself. But in the coming years I move to a place where that becomes a possibility.
+
+### id=27882 date=2024-10-21T22:03:09 type=message
+I know a Matthew, and if he knows a Roberto, it's likely the same one and a very smart guy. 😉
+
+### id=27884 date=2024-10-21T22:03:34 type=message
+Hi all! Everyone still happy?
+
+### id=27907 date=2024-10-21T22:06:58 type=message
+Nice! Chilling under artificial stars, clearing up disks.
+
+### id=32529 date=2024-11-29T12:56:10 type=message
+In that case I'll show, as I don't have much talent.
+
+### id=32530 date=2024-11-29T12:56:39 type=message
+Hello everyone, still having fun :-)?
+
+### id=32532 date=2024-11-29T12:57:24 type=message
+I was told this group could use some moderation.
+
+### id=32535 date=2024-11-29T12:59:41 type=message
+If wallet != empty, puzzle not solved.
+
+(Most likely).
+
+### id=32537 date=2024-11-29T13:00:19 type=message
+That was indeed the plan.
+
+### id=32550 date=2024-11-29T13:10:40 type=message
+
+
+### id=32555 date=2024-11-29T13:13:16 type=message
+If at all, a very bad one. Not even worth the title of skid. Although, as you might have guessed, I've seen some 'security' places 'protecting' our digital realms.
+
+### id=32557 date=2024-11-29T13:15:17 type=message
+Haven't interacted with a terminal in a while. "But what can you do without a cpu?", touch grass it is.
+
+### id=32560 date=2024-11-29T13:17:21 type=message
+Hint? Hint? Heh, what craziness are you talking about? There is no hint.
+
+### id=32561 date=2024-11-29T13:17:37 type=message
+
+
+### id=32570 date=2024-11-29T13:20:59 type=message
+🤐
+
+### id=32579 date=2024-11-29T13:28:47 type=message
+At this point, I don't know what to hint, without ruining it for those that might find it. If you guys got 1 microstep further, the puzzle will likely be solved the same day.
+
+I could come up with some empty cryptic bs hint, but that would be lame too.
+
+And in the end, good puzzles don't need hints, hence this puzzle appears to be a tiny bit shitty sometimes.
+
+### id=32580 date=2024-11-29T13:29:20 type=message
+No clue Friday.
+Every Saturday.
+
+### id=32590 date=2024-11-29T13:39:33 type=message
+Oh, and before I forget, apologies for not answering any DMs, don't take it personal.
+
+I mainly got tired of answering with either 'no hints', or listening to sad stories about family, or kids with severe health problems, hoping to obtain a hint, all day every day.
+
+### id=32597 date=2024-11-29T13:42:55 type=message
+I saw that @qv8du3ne8s9 😂
+
+### id=32613 date=2024-11-29T13:47:19 type=message
+I think I'll be going for ASCII 127 myself. But not overly dramatic.
+
+### id=32640 date=2024-11-29T13:57:33 type=message
+I think I'm fine - gladly I don't feel that weird anxiety anymore. However, I do expect that in about 18 years my government might have to notify me that I've been 'under investigation' for a while. But don't worry about me; me, family and friends are doing great!
+
+### id=32644 date=2024-11-29T13:58:58 type=message
+This is so true. I must say, with that in mind, it makes typing any message here a bit more challenging.
+
+### id=32647 date=2024-11-29T14:00:25 type=message
+Admins
+
+### id=32659 date=2024-11-29T14:02:00 type=message
+Happiness.
+
+### id=32671 date=2024-11-29T14:06:24 type=message
+You only need the last number of pi and it might get you somewhere.
+
+### id=32687 date=2024-11-29T14:13:47 type=message
+I already have gray hair unfortunately.
+
+### id=32690 date=2024-11-29T14:15:34 type=message
+Maybe Bryan Johnson has an answer for my hair.
+
+### id=32695 date=2024-11-29T14:20:19 type=message
+Pimeyes leads me to a festival thingy in the Netherlands. Is this a puzzle?
+
+### id=32699 date=2024-11-29T14:23:12 type=message
+Not sure why but I suppose it doesn't affect the puzzle.
+
+### id=32701 date=2024-11-29T14:25:31 type=message
+Could be, it has been years and we had a few FE guys working on it.
+
+### id=32705 date=2024-11-29T14:28:41 type=message
+Yeah, what can I say? In a way, it's a pretty smart by mr Sailor, and Bitcoin is built to withstand this shenanigans anyway.
+
+### id=32707 date=2024-11-29T14:29:55 type=message
+Yeah NAD is great.
+
+### id=32711 date=2024-11-29T14:30:33 type=message
+I only take ~80 supplements daily, nothing crazy 😅.
+
+### id=32715 date=2024-11-29T14:32:02 type=message
+Blueprint is sort of the leading list at this point.
+
+### id=32719 date=2024-11-29T14:34:04 type=message
+I mean, if you guys don't solve it anytime soon I'll have to try and stay alive till the year 2145.
+
+### id=32724 date=2024-11-29T14:37:27 type=message
+I explain them a lot but I don't want them to know about BTC yet, having this unhealthy fear for btc kidnapping.
+
+### id=32728 date=2024-11-29T14:39:50 type=message
+Enjoying life, mostly 😉.
+
+### id=32741 date=2024-11-29T14:47:44 type=message
+Yeah, heard this argument before. Haven't used it myself for years. Bryan is a bit.. extreme, and his team of doctors probably concluded that it's good for him. Also, there aren't many studies that have concluded that long term low dose usage would do any damage.
+
+In the end there's no perfect static setup, as we're all a bit different.
+
+### id=32748 date=2024-11-29T14:51:05 type=message
+Another doctor in my room states that these are indeed the typical puzzle doctors 😉.
+
+### id=32755 date=2024-11-29T14:54:17 type=message
+Already better than many doctors... especially for discovering very unlikely cases.
+
+### id=32767 date=2024-11-29T15:03:37 type=message
+I'd quit that if you want quality sleep. I used it so much, my body can't deal with it anymore. After a week or 2 you'll start dreaming again.
+
+### id=32770 date=2024-11-29T15:05:46 type=message
+Ah sorry, I missed that. I used a gram daily, for years. 😅
+
+### id=32772 date=2024-11-29T15:06:39 type=message
+🫡
+
+### id=32773 date=2024-11-29T15:13:43 type=message
+Ok, I'm off people 👻. Be good, stay healthy, stack sats and enjoy life. 
+
+Ciao!
+
+And good luck Admins! (And many thanks in advance, please be fair 😉).
+
+### id=39192 date=2025-04-28T19:45:31 type=message
+
+
+### id=39194 date=2025-04-28T19:45:47 type=message
+You people are still having fun I see.
+
+### id=39200 date=2025-04-28T19:48:07 type=message
+Ah, no hints? Ok, that's also fine.
+
+### id=39206 date=2025-04-28T19:51:05 type=message
+I have to say, that touching grass thingy is pretty nice.
+
+### id=39208 date=2025-04-28T19:52:50 type=message
+Yeah, tricky question. You can try to time it (I stopped doing that), but if you understand the puzzle you'll discover that I'd suggest btc only, and don't gamble.
+
+### id=39217 date=2025-04-28T19:55:14 type=message
+I was hinted when eth was 2$. Saw the "DAO" unfold live in front of my eyes with 8000 holders on slack; was allowed to double my eth with all the left over etc, and then swap it to btc. Good old times.
+
+### id=39219 date=2025-04-28T19:56:14 type=message
+If I'd ever take the funds (I won't), I wouldn't even tell the answer 😈.
+
+### id=39224 date=2025-04-28T19:57:17 type=message
+Did anyone found yingyang? I don't think so, you guys are so smart, when yingyang is reached, 2 hours max.
+
+### id=39229 date=2025-04-28T19:58:50 type=message
+Im with alcohol, dont blame me for more typos.
+
+### id=39232 date=2025-04-28T19:59:29 type=message
+Alcohol, and answering this chat go hand in hand somehow.
+
+### id=39234 date=2025-04-28T20:00:26 type=message
+Que?
+
+### id=39237 date=2025-04-28T20:01:36 type=message
+It’s the next phase, but I await the day someone finally gets there.
+
+### id=39241 date=2025-04-28T20:02:46 type=message
+Ok, the "better half" is hungry. Which means I'm off 🤗
+
+### id=49172 date=2025-09-16T05:20:54 type=message
+
+
+### id=49175 date=2025-09-16T05:24:36 type=message
+Yes
+
+### id=49176 date=2025-09-16T05:24:52 type=message
+Carrots were originally purple, until the Dutch turned them orange in the 1600s to kiss up to their royal family.
+
+### id=53335 date=2026-01-01T06:15:02 type=message
+.
+
+### id=53336 date=2026-01-01T06:16:15 type=message
+..
+
+### id=53338 date=2026-01-01T06:17:05 type=message
+...
+
+### id=53339 date=2026-01-01T06:18:07 type=message
+....
+
+### id=53341 date=2026-01-01T06:19:05 type=message
+.....
+
+### id=53342 date=2026-01-01T06:20:03 type=message
+01001000 01100001 01110000 01110000 01111001 00100000 01101110 01100101 01110111 00100000 01111001 01100101 01100001 01110010 00100001 00100000 01001101 01100001 01101011 01100101 00100000 01110100 01101000 01100101 00100000 01100010 01100101 01110011 01110100 00100000 01101111 01100110 00100000 01100101 01110110 01100101 01110010 01111001 01110100 01101000 01101001 01101110 01100111 00101110 00100000 01001111 01101000 00101100 00100000 01100001 01101110 01100100 00100000 01101000 01100101 01110010 01100101 00100111 01110011 00100000 01100001 00100000 00100010 01110100 01101001 01101110 01111001 00100000 01101000 01101001 01101110 01110100 00100010 00100000 00111100 00110011 00101110
+
+### id=60285 date=2026-03-04T04:11:55 type=message
+👆🫡
+
+### id=60286 date=2026-03-04T04:12:28 type=message
+Hi all 👋🏻
+
+### id=60289 date=2026-03-04T04:17:02 type=message
+No hints , only free will. One of the few things I somehow strugle to fully accept albeit that science is currently not on the deterministic side if I'm not mistaken.
+
+### id=60292 date=2026-03-04T04:18:06 type=message
+Everyone still having fun?
+
+### id=60298 date=2026-03-04T04:19:39 type=message
+Jacque was quite an inspiring lad I'd say.
+
+### id=60302 date=2026-03-04T04:21:38 type=message
+It's kinda of a pvp zone here. Sort of a rust server with both nice and toxic units.
+
+### id=60306 date=2026-03-04T04:22:42 type=message
+Maybe, Cartman's quote about chatroulette fits too.
+
+### id=60307 date=2026-03-04T04:23:27 type=message
+🤐
+
+### id=60309 date=2026-03-04T04:27:00 type=message
+Looks at gnomad. 👀
+
+### id=60312 date=2026-03-04T04:29:05 type=message
+Bingo
+
+### id=60314 date=2026-03-04T04:30:47 type=message
+I only need to look at the address. If any of you reaches the next phase, the price is taken in no-time.
+
+### id=60316 date=2026-03-04T04:31:09 type=message
+🤷‍♂️
+
+### id=60318 date=2026-03-04T04:32:01 type=message
+I suppose that could get you far in real life.
+
+### id=60322 date=2026-03-04T04:33:52 type=message
+Before I forget. For those who DM me, my apologies for not answering - or only rarely. Nothing personal ❤️.
+
+### id=60324 date=2026-03-04T04:35:22 type=message
+I'm going to rewatch episode 3.5 with  the better half.
+
+### id=60326 date=2026-03-04T04:36:04 type=message
+Nope. You're not the first to ask.
+
+### id=60327 date=2026-03-04T04:37:14 type=message
+Cheers all, good luck again 👋🏻!
+
+### id=63957 date=2026-05-28T14:41:02 type=message
+Ah, ofcourse. The puzzle is still valid!
+
+### id=63966 date=2026-05-28T16:34:18 type=message
+🫡🥳
+
+### id=66540 date=2026-07-13T03:17:04 type=message
+I just dawned on me; what if one day, some of you finally finds it... and doesn't explain it publicly, while I've already passed away. How do I have to turn myself around in my grave 🤔...
+
+### id=66542 date=2026-07-13T03:21:05 type=message
+Another thing. In 2029, all btc on old addresses might be cracked (cmiiw).
+
+### id=66543 date=2026-07-13T03:21:43 type=message
+Whats your view on that?
+
+### id=66549 date=2026-07-13T03:26:42 type=message
+I might me drunk, or worse, I dont even know what rhetorical is at this point.
+
+### id=66551 date=2026-07-13T03:27:09 type=message
+Hell yes
+
+### id=66555 date=2026-07-13T03:30:03 type=message
+Anyway, if bip360 is going to be a thing. I have to come up with something.
+
+### id=66559 date=2026-07-13T03:34:41 type=message
+Well this nearly perfectly phrases it. Yes, I was busy with gsmg and quite obviously linked it too it, but I was in a crazy mood and honestly I still don't know how I got this weird idea to make a puzzle. The rickroll effect inspired me to make an actual puzzle, just to see if I could. It wasn’t a PR stunt until I realized it after I published it. The others didnt fully understand/agree for what I remember.
+
+### id=66560 date=2026-07-13T03:35:20 type=message
+Yeah, fire away.
+
+### id=66561 date=2026-07-13T03:37:00 type=message
+I have these moment where I get into a frenzy and zone in with 800%. A day later I can hardly understand what I have done 🫤. And that is not a joke.
+
+### id=66564 date=2026-07-13T03:45:53 type=message
+I don't know right now.
+
+### id=66568 date=2026-07-13T03:47:16 type=message
+Most of you know the puzzle WAAAY better than me at this point. I have a hidden laptop which I haven't touched in years. On that thing... is the actual answer....
+
+### id=66571 date=2026-07-13T03:49:19 type=message
+Some of you, can find me. Quite a few in this chat, already met me.
+
+### id=66573 date=2026-07-13T03:51:37 type=message
+My close friends have the best chance of solving it (a few tried). But they don't have the skills some of you do.
+
+### id=66574 date=2026-07-13T03:51:59 type=message
+NOTE: that is a hint.
+
+### id=66576 date=2026-07-13T03:52:24 type=message
+Hi
+
+### id=66578 date=2026-07-13T03:52:58 type=message
+💯
+
+### id=66581 date=2026-07-13T03:53:46 type=message
+Beer, red wine and champagne.
+
+### id=66582 date=2026-07-13T03:54:16 type=message
+It kills braincells.
+
+### id=66584 date=2026-07-13T03:55:29 type=message
+Welcome. I feel it a bit off knowing the url (and thus the original puzzle) is "gone".
+
+### id=66586 date=2026-07-13T03:56:04 type=message
+Nope.
+
+### id=66588 date=2026-07-13T04:01:05 type=message
+Yes
+
+### id=66589 date=2026-07-13T04:03:51 type=message
+And IIFF I'm somehow still wrong, which I'm most likely not as I've verified many times back then after some sad rushed mistakes, it's all still solvable with a few stable qubits.
+
+### id=66590 date=2026-07-13T04:04:38 type=message
+But... Bip360 anyone. Thoughts?
+
+### id=66592 date=2026-07-13T04:08:52 type=message
+Oh... and before I fall asleep. I want to assume it is quite clear I held quite a secret in my head which I seriously wanted to share with the planet... for those who can understand what I meant...
+
+### id=66593 date=2026-07-13T04:10:37 type=message
+The "5" btc was never the actual prize. That was only a tiny fraction.
+
+### id=66595 date=2026-07-13T04:11:31 type=message
+(And yes, the btc is still available before you fire any questions).
+
+### id=66596 date=2026-07-13T04:12:48 type=message
+A nation state will at some point hack the currently lost coins, and then keep OR sell it.
+
+### id=66600 date=2026-07-13T04:17:49 type=message
+Some already found it. And understood not to risk it... 🤐
+
+### id=66604 date=2026-07-13T04:20:51 type=message
+Iykyk
+
+### id=66606 date=2026-07-13T04:22:37 type=message
+Thanks, already nearly sober again. It's only alcohol, not lsd or ayahuasca with mao-inhibitors.
+
+### id=66609 date=2026-07-13T04:29:54 type=message
+Going dark again. Might be in a specific Ibiza club the 15th. HI, ciao and cheers you all ❤️!
+
+### id=66884 date=2026-07-17T01:06:17 type=message
+Where were you?
+
+### id=66889 date=2026-07-17T01:08:35 type=message
+Hello
+
+### id=66891 date=2026-07-17T01:09:35 type=message
+I saw people were waiting for drunk me.
+
+### id=66893 date=2026-07-17T01:10:17 type=message
+Hmm. Meta hunting. Like it.
+
+### id=66898 date=2026-07-17T01:12:02 type=message
+Had my eyes closed, but still saw double.
+
+### id=66903 date=2026-07-17T01:19:17 type=message
+Well, it's hidden in a room with a hidden door.
+
+### id=66904 date=2026-07-17T01:20:06 type=message
+Nah, I'm quite practiced.
+
+### id=66906 date=2026-07-17T01:21:40 type=message
+I should ask AI in this state.
+
+### id=66909 date=2026-07-17T01:25:32 type=message
+Imagine a piggy bank that only opens with a super-secret password. Right now, most piggy banks show a little part of the lock on the outside, and a future quantum computer could steal that part and crack it.
+BIP 360 is a new kind of piggy bank: it hides the whole lock inside. You only see a 32-byte hash, no key visible at all. When you want to open it, you prove you know a secret path inside that hash. Safer against future quantum hackers.
+
+### id=66910 date=2026-07-17T01:26:05 type=message
+AI knows how to explain it to my level.
+
+### id=66912 date=2026-07-17T01:26:27 type=message
+🤫
+
+### id=66913 date=2026-07-17T01:26:44 type=message
+ELI4.5 is meta.
+
+### id=66931 date=2026-07-17T01:32:30 type=message
+You have to be in your prime for that.
+
+### id=66935 date=2026-07-17T01:33:29 type=message
+Quantum computers AND AI, both not being sure what to answer.
+
+### id=66938 date=2026-07-17T01:36:07 type=message
+Well. I've been doing this life enjoying project for a while. Quite ego-centric. But in a matrix cypher kinda way I like it.
+
+### id=66940 date=2026-07-17T01:36:59 type=message
+Nah, ketamine is immune to me by now.
+
+### id=66944 date=2026-07-17T01:39:07 type=message
+I think I do have the answer to an nearly optimal drug setup... in case anyone here would be interested.
+
+### id=66948 date=2026-07-17T01:40:39 type=message
+Brb 🤖
+
+### id=66951 date=2026-07-17T01:44:11 type=message
+Around for so long, never heard of it. Thanks.
+
+### id=66961 date=2026-07-17T01:50:15 type=message
+Give yourself yourself and yourself will be given yourself.
+
+### id=66962 date=2026-07-17T01:51:10 type=message
+Latetly, I'm working with many NOTES.
+
+### id=66964 date=2026-07-17T01:52:37 type=message
+Nice
+
+### id=66969 date=2026-07-17T01:54:07 type=message
+What about 70mq lsd, 100 mg mdma and bit of ket on the end?
+
+### id=66976 date=2026-07-17T01:56:18 type=message
+And in Dutch its called "geestveruimend". Implying those who dont take drugs are... simpleminded...
+
+### id=70307 date=2026-09-01T14:49:57 type=message
+Pfff. Coincidence.
+
+### id=70309 date=2026-09-01T14:57:32 type=message
+To you, and all those that have send me kind words for the monstrosity I decided to build a few years ago. Thanks ❤️.
+
+### id=70311 date=2026-09-01T15:01:50 type=message
+A. I rushed (t)it.
+B. Yes, have quite some time for stupid stuff.
+
+### id=70317 date=2026-09-01T15:17:44 type=message
+👆
+
+### id=70322 date=2026-09-01T15:27:03 type=message
+Fairly sober ;-)
+
+### id=70325 date=2026-09-01T15:32:41 type=message
+🤐
+
+### id=70327 date=2026-09-01T15:33:19 type=message
+Always a joy
+
+### id=70334 date=2026-09-01T15:40:27 type=message
+Enjoying life
+
+### id=70336 date=2026-09-01T15:40:54 type=message
+Couple hours, and no.
+
+### id=70377 date=2026-09-01T18:41:20 type=message
+Same same
+

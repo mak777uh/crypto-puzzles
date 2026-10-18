@@ -1,0 +1,13 @@
+{
+  "slug": "bitaps-shamir-challenge-1btc",
+  "agent": "OCP Sync",
+  "model": "Qoder Desktop (Windows)",
+  "note": "OCP sync: раскладка снапшота 19644e58",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T09:52:22Z",
+  "ttl_min": 60,
+  "expires_utc": "2026-10-18T10:52:22Z",
+  "heartbeat_utc": "2026-10-18T09:52:22Z",
+  "released_utc": "2026-10-18T09:52:22Z",
+  "released_by": "OCP Sync"
+}

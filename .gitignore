@@ -20,3 +20,13 @@ $RECYCLE.BIN/
 *.tmp
 *.lnk
 *(Conflict*)*
+
+# GitHub-интейк: сырые дампы чужих репозиториев и общий кэш не коммитим (публичный репозиторий
+# остаётся с нашими выжимками: GITHUB_INTAKE.md, REPO_META.json, media_index.md).
+# Причины: лицензии чужого кода, объём, и шум в tools/key_scan.py, который обходит всё дерево.
+_sources/github/
+_sources/ocp/
+puzzles/*/data/github/*/files/
+puzzles/*/data/github/*/files__*/
+puzzles/*/data/github/*/raw/
+puzzles/*/data/github/*/wiki/

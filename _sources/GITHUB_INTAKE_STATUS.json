@@ -1,0 +1,65 @@
+{
+  "rows": {
+    "11b-x-1371": {
+      "slug": "11b-x-1371",
+      "status": "none",
+      "date": "2026-10-18",
+      "ts": "2026-10-18T10:58:59Z",
+      "agent": "Qoder",
+      "repos": 0,
+      "repo_list": "",
+      "api_calls": 0,
+      "head": "",
+      "digest": "data/github/GITHUB_INTAKE.md"
+    },
+    "gsmg-io-5btc-puzzle": {
+      "slug": "gsmg-io-5btc-puzzle",
+      "status": "partial",
+      "date": "2026-10-18",
+      "ts": "2026-10-18T10:58:59Z",
+      "agent": "Qoder",
+      "repos": 4,
+      "repo_list": "",
+      "api_calls": 14,
+      "head": "",
+      "digest": "data/github/GITHUB_INTAKE.md"
+    },
+    "zden-haluska-halv-312ksats": {
+      "slug": "zden-haluska-halv-312ksats",
+      "status": "partial",
+      "date": "2026-10-18",
+      "ts": "2026-10-18T10:58:59Z",
+      "agent": "Qoder",
+      "repos": 2,
+      "repo_list": "",
+      "api_calls": 0,
+      "head": "",
+      "digest": "data/github/GITHUB_INTAKE.md"
+    },
+    "9vw04-gem-finder": {
+      "slug": "9vw04-gem-finder",
+      "status": "partial",
+      "date": "2026-10-18",
+      "ts": "2026-10-18T10:58:59Z",
+      "agent": "Qoder",
+      "repos": 3,
+      "repo_list": "",
+      "api_calls": 0,
+      "head": "",
+      "digest": "data/github/GITHUB_INTAKE.md"
+    },
+    "ktimesg-phy-challenge-0-008btc": {
+      "slug": "ktimesg-phy-challenge-0-008btc",
+      "status": "partial",
+      "date": "2026-10-18",
+      "ts": "2026-10-18T10:58:59Z",
+      "agent": "Qoder",
+      "repos": 4,
+      "repo_list": "",
+      "api_calls": 25,
+      "head": "",
+      "digest": "data/github/GITHUB_INTAKE.md"
+    }
+  },
+  "updated_utc": "2026-10-18T10:58:59Z"
+}

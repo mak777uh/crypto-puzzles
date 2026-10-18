@@ -1,0 +1,13 @@
+{
+  "slug": "bitaddress-bip38-giveaway-0-005297btc",
+  "agent": "AutoClaw",
+  "model": "",
+  "note": "browser/API: добор ~25 записей профиля q (страницы 2+), корпус паролей, scrypt <=5k/15min",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-17T17:17:39Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-17T20:15:08Z",
+  "heartbeat_utc": "2026-10-17T18:15:08Z",
+  "stolen_utc": "2026-10-18T09:35:41Z",
+  "stolen_by": "OCP Sync"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "gsmg-io-5btc-puzzle",
+  "agent": "Qoder",
+  "model": "",
+  "note": "github-intake",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T10:18:15Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-18T12:18:15Z",
+  "heartbeat_utc": "2026-10-18T10:18:15Z",
+  "released_utc": "2026-10-18T10:41:45Z",
+  "released_by": "Qoder"
+}

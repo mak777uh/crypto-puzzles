@@ -1,0 +1,113 @@
+{
+  "slug": "9vw04-gem-finder",
+  "agent": "Qoder",
+  "ts": "2026-10-18T10:33:35Z",
+  "date": "2026-10-18",
+  "status": "partial",
+  "note": "",
+  "api_calls": 0,
+  "free_transports": 3,
+  "remaining_seen": 34,
+  "reset_utc": "2026-10-18T10:33:40Z",
+  "files": 0,
+  "bytes": 0,
+  "media": 0,
+  "repos": [
+    {
+      "repo": "agntn/puzzles",
+      "role": "community",
+      "branch": "main",
+      "head_sha": "decdd4db731a8ea6da7bbc30d4e234711fa9b0cd",
+      "counts": {},
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "repo": "floflo777/open-crypto-puzzles",
+      "role": "registry",
+      "branch": "main",
+      "head_sha": "19644e58e50721f8469680f2edcba1daa0697630",
+      "counts": {},
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "repo": "canalqb/puzzle_bc1qr5mssp6snmduqp9enx4dzmcxvk7qw83lceyy2v",
+      "role": "community",
+      "branch": "main",
+      "head_sha": "1c180a1f415f37299a2ccbc3938726c2dbc75e22",
+      "counts": {},
+      "files": 0,
+      "bytes": 0
+    }
+  ],
+  "candidates": [
+    {
+      "repo": "agntn/puzzles",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 35,
+      "legacy": "data/external2/github2/"
+    },
+    {
+      "repo": "floflo777/open-crypto-puzzles",
+      "role": "registry",
+      "source": "ссылки досье",
+      "hits": 11
+    },
+    {
+      "repo": "canalqb/puzzle_bc1qr5mssp6snmduqp9enx4dzmcxvk7qw83lceyy2v",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 9,
+      "legacy": "data/external/github/canalqb-puzzle/"
+    },
+    {
+      "repo": "canalqb/agentehermes",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 4
+    },
+    {
+      "repo": "canalqb/blogforlinkedin",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 4
+    },
+    {
+      "repo": "canalqb/bot_telegram",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 4
+    },
+    {
+      "repo": "canalqb/puzzle",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 4
+    },
+    {
+      "repo": "canalqb/puzzle-67-neon",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 4
+    },
+    {
+      "repo": "onyxdeveloper/webpack-simple",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 2
+    }
+  ],
+  "errors": [
+    "кандидаты отсечены как шум одного владельца (39 из 48): canalqb/briefcase, canalqb/canalqb.github.io, canalqb/canalqb_wallet, canalqb/cpuminer, canalqb/cpuminer-multi, canalqb/electrum_config, canalqb/engaja, canalqb/ESP_ambiente…",
+    "репо владельца agntn: пропущено (исчерпан --api-budget (0 запросов))",
+    "форки agntn/puzzles: пропущено (исчерпан --api-budget (0 запросов))",
+    "не собрано (сверх --max-repos 3): canalqb/agentehermes, canalqb/blogforlinkedin, canalqb/bot_telegram, canalqb/puzzle, canalqb/puzzle-67-neon, onyxdeveloper/webpack-simple",
+    "agntn/puzzles: не собрано: исчерпан --api-budget (0 запросов)",
+    "canalqb/puzzle_bc1qr5mssp6snmduqp9enx4dzmcxvk7qw83lceyy2v: не собрано: исчерпан --api-budget (0 запросов)"
+  ],
+  "stop_reason": "исчерпан --api-budget (0 запросов)",
+  "ocp": null,
+  "digest": "data/github/GITHUB_INTAKE.md"
+}

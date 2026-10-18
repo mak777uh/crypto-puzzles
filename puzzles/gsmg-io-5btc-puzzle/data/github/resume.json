@@ -1,0 +1,35 @@
+{
+  "done": [
+    "puzzlehunt/gsmgio-5btc-puzzle",
+    "naddiseo/gsmgio-5btc-puzzle",
+    "floflo777/open-crypto-puzzles",
+    "jackdevs66/gsmg5_cduality"
+  ],
+  "left": [
+    "alexdepario/5-btc-puzzle-cosmic-duality",
+    "hossein2002426/gsmgio-5btc-puzzle",
+    "jwerle/libbeaufort",
+    "hosterjackagv/gsmg-5btc-puzzle",
+    "kaibuzz0/gsmg.io-solution",
+    "corunethron/salph-cosmic-better-solution",
+    "corunethron/salph-cosmic-extra-solution",
+    "corunethron/salph-cosmic-final-solution",
+    "corunethron/salph-cosmic-great-solution",
+    "corunethron/salph-cosmic-super-solution",
+    "corunethron/salph-cosmic-ultra-solution",
+    "dinhoka/gsmgio-5btc-puzzle",
+    "halbgott29a/gsmgio-5btc-puzzle",
+    "jconorgrogan/lost-eth",
+    "seed-safe/btc-balance",
+    "silveranth/gsmgio-5btc-puzzle",
+    "turjaun985123/gsmgiopuzzle",
+    "abkr1/gsmgio-5btc-puzzle",
+    "liam-dow/gsmgio-5btc-puzzle",
+    "powerversed01/gsmgio-5btc-puzzle",
+    "devjotaduo/gsmgio-5btc-puzzle",
+    "udoka-am/gsmgio-5btc-puzzle",
+    "bescllc/gsmgio-5btc-puzzle"
+  ],
+  "ts": "2026-10-18T10:31:37Z",
+  "reason": "исчерпан --api-budget (14 запросов)"
+}

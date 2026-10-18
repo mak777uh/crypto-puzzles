@@ -1,0 +1,7858 @@
+[
+ {
+  "p": 0,
+  "s": "256"
+ },
+ {
+  "p": 0,
+  "s": "CAT"
+ },
+ {
+  "p": 0,
+  "s": "Cat"
+ },
+ {
+  "p": 0,
+  "s": "KBZ"
+ },
+ {
+  "p": 0,
+  "s": "Kbz"
+ },
+ {
+  "p": 0,
+  "s": "MOX"
+ },
+ {
+  "p": 0,
+  "s": "Mox"
+ },
+ {
+  "p": 0,
+  "s": "PGP"
+ },
+ {
+  "p": 0,
+  "s": "PHY"
+ },
+ {
+  "p": 0,
+  "s": "Pgp"
+ },
+ {
+  "p": 0,
+  "s": "Phy"
+ },
+ {
+  "p": 0,
+  "s": "cat"
+ },
+ {
+  "p": 0,
+  "s": "kbZ"
+ },
+ {
+  "p": 0,
+  "s": "kbz"
+ },
+ {
+  "p": 0,
+  "s": "mox"
+ },
+ {
+  "p": 0,
+  "s": "pgp"
+ },
+ {
+  "p": 0,
+  "s": "phy"
+ },
+ {
+  "p": 0,
+  "s": "2022"
+ },
+ {
+  "p": 0,
+  "s": "CLAP"
+ },
+ {
+  "p": 0,
+  "s": "Clap"
+ },
+ {
+  "p": 0,
+  "s": "SATS"
+ },
+ {
+  "p": 0,
+  "s": "Sats"
+ },
+ {
+  "p": 0,
+  "s": "clap"
+ },
+ {
+  "p": 0,
+  "s": "sats"
+ },
+ {
+  "p": 0,
+  "s": "0,008"
+ },
+ {
+  "p": 0,
+  "s": "0.008"
+ },
+ {
+  "p": 0,
+  "s": "137.5"
+ },
+ {
+  "p": 0,
+  "s": "EMOJI"
+ },
+ {
+  "p": 0,
+  "s": "Emoji"
+ },
+ {
+  "p": 0,
+  "s": "PHYLO"
+ },
+ {
+  "p": 0,
+  "s": "Phylo"
+ },
+ {
+  "p": 0,
+  "s": "emoji"
+ },
+ {
+  "p": 0,
+  "s": "phylo"
+ },
+ {
+  "p": 0,
+  "s": "800000"
+ },
+ {
+  "p": 0,
+  "s": "ABACUS"
+ },
+ {
+  "p": 0,
+  "s": "ASCII8"
+ },
+ {
+  "p": 0,
+  "s": "Abacus"
+ },
+ {
+  "p": 0,
+  "s": "Ascii8"
+ },
+ {
+  "p": 0,
+  "s": "EMOJIS"
+ },
+ {
+  "p": 0,
+  "s": "Emojis"
+ },
+ {
+  "p": 0,
+  "s": "FLABIT"
+ },
+ {
+  "p": 0,
+  "s": "Flabit"
+ },
+ {
+  "p": 0,
+  "s": "GVONYS"
+ },
+ {
+  "p": 0,
+  "s": "Gvonys"
+ },
+ {
+  "p": 0,
+  "s": "SPIRAL"
+ },
+ {
+  "p": 0,
+  "s": "Spiral"
+ },
+ {
+  "p": 0,
+  "s": "URS0MQ"
+ },
+ {
+  "p": 0,
+  "s": "UrS0Mq"
+ },
+ {
+  "p": 0,
+  "s": "Urs0Mq"
+ },
+ {
+  "p": 0,
+  "s": "Urs0mq"
+ },
+ {
+  "p": 0,
+  "s": "abacus"
+ },
+ {
+  "p": 0,
+  "s": "ascii8"
+ },
+ {
+  "p": 0,
+  "s": "emojis"
+ },
+ {
+  "p": 0,
+  "s": "flabit"
+ },
+ {
+  "p": 0,
+  "s": "gvonys"
+ },
+ {
+  "p": 0,
+  "s": "spiral"
+ },
+ {
+  "p": 0,
+  "s": "urs0mq"
+ },
+ {
+  "p": 0,
+  "s": "5584952"
+ },
+ {
+  "p": 0,
+  "s": "ASCII 8"
+ },
+ {
+  "p": 0,
+  "s": "Ascii 8"
+ },
+ {
+  "p": 0,
+  "s": "BEARISH"
+ },
+ {
+  "p": 0,
+  "s": "BITCOIN"
+ },
+ {
+  "p": 0,
+  "s": "Bearish"
+ },
+ {
+  "p": 0,
+  "s": "Bitcoin"
+ },
+ {
+  "p": 0,
+  "s": "HASHING"
+ },
+ {
+  "p": 0,
+  "s": "Hashing"
+ },
+ {
+  "p": 0,
+  "s": "KTIMESG"
+ },
+ {
+  "p": 0,
+  "s": "KTimesG"
+ },
+ {
+  "p": 0,
+  "s": "Ktimesg"
+ },
+ {
+  "p": 0,
+  "s": "REDRAWN"
+ },
+ {
+  "p": 0,
+  "s": "Redrawn"
+ },
+ {
+  "p": 0,
+  "s": "TALKIMG"
+ },
+ {
+  "p": 0,
+  "s": "Talkimg"
+ },
+ {
+  "p": 0,
+  "s": "ascii 8"
+ },
+ {
+  "p": 0,
+  "s": "ascii-8"
+ },
+ {
+  "p": 0,
+  "s": "ascii_8"
+ },
+ {
+  "p": 0,
+  "s": "bearish"
+ },
+ {
+  "p": 0,
+  "s": "bitcoin"
+ },
+ {
+  "p": 0,
+  "s": "hashing"
+ },
+ {
+  "p": 0,
+  "s": "kTimesG"
+ },
+ {
+  "p": 0,
+  "s": "ktimesg"
+ },
+ {
+  "p": 0,
+  "s": "redrawn"
+ },
+ {
+  "p": 0,
+  "s": "talkimg"
+ },
+ {
+  "p": 0,
+  "s": "20260605"
+ },
+ {
+  "p": 0,
+  "s": "65011712"
+ },
+ {
+  "p": 0,
+  "s": "66802369"
+ },
+ {
+  "p": 0,
+  "s": "66860784"
+ },
+ {
+  "p": 0,
+  "s": "CLAPPING"
+ },
+ {
+  "p": 0,
+  "s": "CRACKING"
+ },
+ {
+  "p": 0,
+  "s": "Clapping"
+ },
+ {
+  "p": 0,
+  "s": "Cracking"
+ },
+ {
+  "p": 0,
+  "s": "FHELUCRM"
+ },
+ {
+  "p": 0,
+  "s": "Fhelucrm"
+ },
+ {
+  "p": 0,
+  "s": "PASSWORD"
+ },
+ {
+  "p": 0,
+  "s": "Password"
+ },
+ {
+  "p": 0,
+  "s": "SKINTONE"
+ },
+ {
+  "p": 0,
+  "s": "Skintone"
+ },
+ {
+  "p": 0,
+  "s": "ZEPHYRUS"
+ },
+ {
+  "p": 0,
+  "s": "Zephyrus"
+ },
+ {
+  "p": 0,
+  "s": "clapping"
+ },
+ {
+  "p": 0,
+  "s": "cracking"
+ },
+ {
+  "p": 0,
+  "s": "fhelucrM"
+ },
+ {
+  "p": 0,
+  "s": "fhelucrm"
+ },
+ {
+  "p": 0,
+  "s": "password"
+ },
+ {
+  "p": 0,
+  "s": "skintone"
+ },
+ {
+  "p": 0,
+  "s": "zephyrus"
+ },
+ {
+  "p": 0,
+  "s": "BACKSPACE"
+ },
+ {
+  "p": 0,
+  "s": "Backspace"
+ },
+ {
+  "p": 0,
+  "s": "FIBONACCI"
+ },
+ {
+  "p": 0,
+  "s": "Fibonacci"
+ },
+ {
+  "p": 0,
+  "s": "SKIN TONE"
+ },
+ {
+  "p": 0,
+  "s": "Skin Tone"
+ },
+ {
+  "p": 0,
+  "s": "Skin tone"
+ },
+ {
+  "p": 0,
+  "s": "backspace"
+ },
+ {
+  "p": 0,
+  "s": "fibonacci"
+ },
+ {
+  "p": 0,
+  "s": "insideout"
+ },
+ {
+  "p": 0,
+  "s": "looseends"
+ },
+ {
+  "p": 0,
+  "s": "nohashing"
+ },
+ {
+  "p": 0,
+  "s": "skin tone"
+ },
+ {
+  "p": 0,
+  "s": "skin-tone"
+ },
+ {
+  "p": 0,
+  "s": "skin_tone"
+ },
+ {
+  "p": 0,
+  "s": "2026-06-05"
+ },
+ {
+  "p": 0,
+  "s": "800000sats"
+ },
+ {
+  "p": 0,
+  "s": "INSIDE OUT"
+ },
+ {
+  "p": 0,
+  "s": "INSIDE-OUT"
+ },
+ {
+  "p": 0,
+  "s": "Inside Out"
+ },
+ {
+  "p": 0,
+  "s": "Inside out"
+ },
+ {
+  "p": 0,
+  "s": "Inside-Out"
+ },
+ {
+  "p": 0,
+  "s": "Inside-out"
+ },
+ {
+  "p": 0,
+  "s": "KTIMESGPHY"
+ },
+ {
+  "p": 0,
+  "s": "Ktimesgphy"
+ },
+ {
+  "p": 0,
+  "s": "LOOSE ENDS"
+ },
+ {
+  "p": 0,
+  "s": "Loose Ends"
+ },
+ {
+  "p": 0,
+  "s": "Loose ends"
+ },
+ {
+  "p": 0,
+  "s": "NO HASHING"
+ },
+ {
+  "p": 0,
+  "s": "No Hashing"
+ },
+ {
+  "p": 0,
+  "s": "No hashing"
+ },
+ {
+  "p": 0,
+  "s": "PGPMESSAGE"
+ },
+ {
+  "p": 0,
+  "s": "RECOLORING"
+ },
+ {
+  "p": 0,
+  "s": "Recoloring"
+ },
+ {
+  "p": 0,
+  "s": "SPACESTAMP"
+ },
+ {
+  "p": 0,
+  "s": "Spacestamp"
+ },
+ {
+  "p": 0,
+  "s": "inside out"
+ },
+ {
+  "p": 0,
+  "s": "inside-out"
+ },
+ {
+  "p": 0,
+  "s": "inside_out"
+ },
+ {
+  "p": 0,
+  "s": "ktimesgphy"
+ },
+ {
+  "p": 0,
+  "s": "loose ends"
+ },
+ {
+  "p": 0,
+  "s": "loose-ends"
+ },
+ {
+  "p": 0,
+  "s": "loose_ends"
+ },
+ {
+  "p": 0,
+  "s": "no hashing"
+ },
+ {
+  "p": 0,
+  "s": "no-hashing"
+ },
+ {
+  "p": 0,
+  "s": "no_hashing"
+ },
+ {
+  "p": 0,
+  "s": "peertopeer"
+ },
+ {
+  "p": 0,
+  "s": "phylobased"
+ },
+ {
+  "p": 0,
+  "s": "recoloring"
+ },
+ {
+  "p": 0,
+  "s": "spacestamp"
+ },
+ {
+  "p": 0,
+  "s": "usefulsign"
+ },
+ {
+  "p": 0,
+  "s": "MOXZEPHYRUS"
+ },
+ {
+  "p": 0,
+  "s": "MoxZephyrus"
+ },
+ {
+  "p": 0,
+  "s": "Moxzephyrus"
+ },
+ {
+  "p": 0,
+  "s": "PGP MESSAGE"
+ },
+ {
+  "p": 0,
+  "s": "PGP-MESSAGE"
+ },
+ {
+  "p": 0,
+  "s": "PGP_MESSAGE"
+ },
+ {
+  "p": 0,
+  "s": "PHYLLOTAXIS"
+ },
+ {
+  "p": 0,
+  "s": "PHYLO-BASED"
+ },
+ {
+  "p": 0,
+  "s": "Pgp Message"
+ },
+ {
+  "p": 0,
+  "s": "Pgp message"
+ },
+ {
+  "p": 0,
+  "s": "Phyllotaxis"
+ },
+ {
+  "p": 0,
+  "s": "Phylo-Based"
+ },
+ {
+  "p": 0,
+  "s": "Phylo-based"
+ },
+ {
+  "p": 0,
+  "s": "SPACESTAMPS"
+ },
+ {
+  "p": 0,
+  "s": "Spacestamps"
+ },
+ {
+  "p": 0,
+  "s": "USEFUL SIGN"
+ },
+ {
+  "p": 0,
+  "s": "Useful Sign"
+ },
+ {
+  "p": 0,
+  "s": "Useful sign"
+ },
+ {
+  "p": 0,
+  "s": "ZephyrusMox"
+ },
+ {
+  "p": 0,
+  "s": "goldenangle"
+ },
+ {
+  "p": 0,
+  "s": "moxzephyrus"
+ },
+ {
+  "p": 0,
+  "s": "nolooseends"
+ },
+ {
+  "p": 0,
+  "s": "pgp message"
+ },
+ {
+  "p": 0,
+  "s": "phyllotaxis"
+ },
+ {
+  "p": 0,
+  "s": "phylo-based"
+ },
+ {
+  "p": 0,
+  "s": "spacestamps"
+ },
+ {
+  "p": 0,
+  "s": "useful sign"
+ },
+ {
+  "p": 0,
+  "s": "useful-sign"
+ },
+ {
+  "p": 0,
+  "s": "useful_sign"
+ },
+ {
+  "p": 0,
+  "s": "800 000 SATS"
+ },
+ {
+  "p": 0,
+  "s": "800 000 Sats"
+ },
+ {
+  "p": 0,
+  "s": "800 000 sats"
+ },
+ {
+  "p": 0,
+  "s": "800-000-sats"
+ },
+ {
+  "p": 0,
+  "s": "800_000_sats"
+ },
+ {
+  "p": 0,
+  "s": "GOLDEN ANGLE"
+ },
+ {
+  "p": 0,
+  "s": "Golden Angle"
+ },
+ {
+  "p": 0,
+  "s": "Golden angle"
+ },
+ {
+  "p": 0,
+  "s": "PEER-TO-PEER"
+ },
+ {
+  "p": 0,
+  "s": "PHYCHALLENGE"
+ },
+ {
+  "p": 0,
+  "s": "Peer-To-Peer"
+ },
+ {
+  "p": 0,
+  "s": "Peer-to-peer"
+ },
+ {
+  "p": 0,
+  "s": "PhyChallenge"
+ },
+ {
+  "p": 0,
+  "s": "Phychallenge"
+ },
+ {
+  "p": 0,
+  "s": "ZEPHYRUS MOX"
+ },
+ {
+  "p": 0,
+  "s": "Zephyrus Mox"
+ },
+ {
+  "p": 0,
+  "s": "Zephyrus mox"
+ },
+ {
+  "p": 0,
+  "s": "Zephyrus-Mox"
+ },
+ {
+  "p": 0,
+  "s": "Zephyrus_Mox"
+ },
+ {
+  "p": 0,
+  "s": "backspacecat"
+ },
+ {
+  "p": 0,
+  "s": "bearishcycle"
+ },
+ {
+  "p": 0,
+  "s": "crackingface"
+ },
+ {
+  "p": 0,
+  "s": "golden angle"
+ },
+ {
+  "p": 0,
+  "s": "golden-angle"
+ },
+ {
+  "p": 0,
+  "s": "golden_angle"
+ },
+ {
+  "p": 0,
+  "s": "peer-to-peer"
+ },
+ {
+  "p": 0,
+  "s": "phychallenge"
+ },
+ {
+  "p": 0,
+  "s": "zephyrus mox"
+ },
+ {
+  "p": 0,
+  "s": "4milliseconds"
+ },
+ {
+  "p": 0,
+  "s": "BACKSPACE CAT"
+ },
+ {
+  "p": 0,
+  "s": "BEARISH CYCLE"
+ },
+ {
+  "p": 0,
+  "s": "Backspace Cat"
+ },
+ {
+  "p": 0,
+  "s": "Backspace cat"
+ },
+ {
+  "p": 0,
+  "s": "Bearish Cycle"
+ },
+ {
+  "p": 0,
+  "s": "Bearish cycle"
+ },
+ {
+  "p": 0,
+  "s": "CRACKING FACE"
+ },
+ {
+  "p": 0,
+  "s": "Cracking Face"
+ },
+ {
+  "p": 0,
+  "s": "Cracking face"
+ },
+ {
+  "p": 0,
+  "s": "NO LOOSE ENDS"
+ },
+ {
+  "p": 0,
+  "s": "No Loose Ends"
+ },
+ {
+  "p": 0,
+  "s": "No loose ends"
+ },
+ {
+  "p": 0,
+  "s": "PHY CHALLENGE"
+ },
+ {
+  "p": 0,
+  "s": "Phy Challenge"
+ },
+ {
+  "p": 0,
+  "s": "Phy challenge"
+ },
+ {
+  "p": 0,
+  "s": "Phy-Challenge"
+ },
+ {
+  "p": 0,
+  "s": "Phy_Challenge"
+ },
+ {
+  "p": 0,
+  "s": "backspace cat"
+ },
+ {
+  "p": 0,
+  "s": "backspace-cat"
+ },
+ {
+  "p": 0,
+  "s": "backspace_cat"
+ },
+ {
+  "p": 0,
+  "s": "bearish cycle"
+ },
+ {
+  "p": 0,
+  "s": "bearish-cycle"
+ },
+ {
+  "p": 0,
+  "s": "bearish_cycle"
+ },
+ {
+  "p": 0,
+  "s": "cracking face"
+ },
+ {
+  "p": 0,
+  "s": "cracking-face"
+ },
+ {
+  "p": 0,
+  "s": "cracking_face"
+ },
+ {
+  "p": 0,
+  "s": "modularvalues"
+ },
+ {
+  "p": 0,
+  "s": "no loose ends"
+ },
+ {
+  "p": 0,
+  "s": "no-loose-ends"
+ },
+ {
+  "p": 0,
+  "s": "no_loose_ends"
+ },
+ {
+  "p": 0,
+  "s": "phy challenge"
+ },
+ {
+  "p": 0,
+  "s": "phy-challenge"
+ },
+ {
+  "p": 0,
+  "s": "phy_challenge"
+ },
+ {
+  "p": 0,
+  "s": "smartapproach"
+ },
+ {
+  "p": 0,
+  "s": "4 MILLISECONDS"
+ },
+ {
+  "p": 0,
+  "s": "4 Milliseconds"
+ },
+ {
+  "p": 0,
+  "s": "4 milliseconds"
+ },
+ {
+  "p": 0,
+  "s": "4-milliseconds"
+ },
+ {
+  "p": 0,
+  "s": "4_milliseconds"
+ },
+ {
+  "p": 0,
+  "s": "MODULAR VALUES"
+ },
+ {
+  "p": 0,
+  "s": "Modular Values"
+ },
+ {
+  "p": 0,
+  "s": "Modular values"
+ },
+ {
+  "p": 0,
+  "s": "SMART APPROACH"
+ },
+ {
+  "p": 0,
+  "s": "Smart Approach"
+ },
+ {
+  "p": 0,
+  "s": "Smart approach"
+ },
+ {
+  "p": 0,
+  "s": "modular values"
+ },
+ {
+  "p": 0,
+  "s": "modular-values"
+ },
+ {
+  "p": 0,
+  "s": "modular_values"
+ },
+ {
+  "p": 0,
+  "s": "smart approach"
+ },
+ {
+  "p": 0,
+  "s": "smart-approach"
+ },
+ {
+  "p": 0,
+  "s": "smart_approach"
+ },
+ {
+  "p": 0,
+  "s": "BEGINPGPMESSAGE"
+ },
+ {
+  "p": 0,
+  "s": "finalusefulsign"
+ },
+ {
+  "p": 0,
+  "s": "worstweeklyfall"
+ },
+ {
+  "p": 0,
+  "s": "5708258122F19519"
+ },
+ {
+  "p": 0,
+  "s": "5708258122f19519"
+ },
+ {
+  "p": 0,
+  "s": "Afinalusefulsign"
+ },
+ {
+  "p": 0,
+  "s": "alreadymentioned"
+ },
+ {
+  "p": 0,
+  "s": "ALREADY MENTIONED"
+ },
+ {
+  "p": 0,
+  "s": "Already Mentioned"
+ },
+ {
+  "p": 0,
+  "s": "Already mentioned"
+ },
+ {
+  "p": 0,
+  "s": "BEGIN PGP MESSAGE"
+ },
+ {
+  "p": 0,
+  "s": "BEGIN-PGP-MESSAGE"
+ },
+ {
+  "p": 0,
+  "s": "BEGIN_PGP_MESSAGE"
+ },
+ {
+  "p": 0,
+  "s": "Begin Pgp Message"
+ },
+ {
+  "p": 0,
+  "s": "Begin pgp message"
+ },
+ {
+  "p": 0,
+  "s": "FINAL USEFUL SIGN"
+ },
+ {
+  "p": 0,
+  "s": "Final Useful Sign"
+ },
+ {
+  "p": 0,
+  "s": "Final useful sign"
+ },
+ {
+  "p": 0,
+  "s": "WORST WEEKLY FALL"
+ },
+ {
+  "p": 0,
+  "s": "Worst Weekly Fall"
+ },
+ {
+  "p": 0,
+  "s": "Worst weekly fall"
+ },
+ {
+  "p": 0,
+  "s": "already mentioned"
+ },
+ {
+  "p": 0,
+  "s": "already-mentioned"
+ },
+ {
+  "p": 0,
+  "s": "already_mentioned"
+ },
+ {
+  "p": 0,
+  "s": "begin pgp message"
+ },
+ {
+  "p": 0,
+  "s": "digitalsignatures"
+ },
+ {
+  "p": 0,
+  "s": "final useful sign"
+ },
+ {
+  "p": 0,
+  "s": "final-useful-sign"
+ },
+ {
+  "p": 0,
+  "s": "final_useful_sign"
+ },
+ {
+  "p": 0,
+  "s": "flabitzephyrusmox"
+ },
+ {
+  "p": 0,
+  "s": "moxzephyrusflabit"
+ },
+ {
+  "p": 0,
+  "s": "trustedthirdparty"
+ },
+ {
+  "p": 0,
+  "s": "worst weekly fall"
+ },
+ {
+  "p": 0,
+  "s": "worst-weekly-fall"
+ },
+ {
+  "p": 0,
+  "s": "worst_weekly_fall"
+ },
+ {
+  "p": 0,
+  "s": "DIGITAL SIGNATURES"
+ },
+ {
+  "p": 0,
+  "s": "Digital Signatures"
+ },
+ {
+  "p": 0,
+  "s": "Digital signatures"
+ },
+ {
+  "p": 0,
+  "s": "digital signatures"
+ },
+ {
+  "p": 0,
+  "s": "digital-signatures"
+ },
+ {
+  "p": 0,
+  "s": "digital_signatures"
+ },
+ {
+  "p": 0,
+  "s": "privatekeyrecovery"
+ },
+ {
+  "p": 0,
+  "s": "proofofequivalence"
+ },
+ {
+  "p": 0,
+  "s": "A FINAL USEFUL SIGN"
+ },
+ {
+  "p": 0,
+  "s": "A Final Useful Sign"
+ },
+ {
+  "p": 0,
+  "s": "A final useful sign"
+ },
+ {
+  "p": 0,
+  "s": "A-final-useful-sign"
+ },
+ {
+  "p": 0,
+  "s": "A_final_useful_sign"
+ },
+ {
+  "p": 0,
+  "s": "FLABIT ZEPHYRUS MOX"
+ },
+ {
+  "p": 0,
+  "s": "Flabit Zephyrus Mox"
+ },
+ {
+  "p": 0,
+  "s": "Flabit zephyrus mox"
+ },
+ {
+  "p": 0,
+  "s": "MOX ZEPHYRUS FLABIT"
+ },
+ {
+  "p": 0,
+  "s": "Mox Zephyrus Flabit"
+ },
+ {
+  "p": 0,
+  "s": "Mox zephyrus flabit"
+ },
+ {
+  "p": 0,
+  "s": "TRUSTED THIRD PARTY"
+ },
+ {
+  "p": 0,
+  "s": "Trusted Third Party"
+ },
+ {
+  "p": 0,
+  "s": "Trusted third party"
+ },
+ {
+  "p": 0,
+  "s": "a final useful sign"
+ },
+ {
+  "p": 0,
+  "s": "flabit zephyrus mox"
+ },
+ {
+  "p": 0,
+  "s": "flabit-zephyrus-mox"
+ },
+ {
+  "p": 0,
+  "s": "flabit_zephyrus_mox"
+ },
+ {
+  "p": 0,
+  "s": "mox zephyrus flabit"
+ },
+ {
+  "p": 0,
+  "s": "mox-zephyrus-flabit"
+ },
+ {
+  "p": 0,
+  "s": "mox_zephyrus_flabit"
+ },
+ {
+  "p": 0,
+  "s": "trusted third party"
+ },
+ {
+  "p": 0,
+  "s": "trusted-third-party"
+ },
+ {
+  "p": 0,
+  "s": "trusted_third_party"
+ },
+ {
+  "p": 0,
+  "s": "PRIVATE KEY RECOVERY"
+ },
+ {
+  "p": 0,
+  "s": "PROOF OF EQUIVALENCE"
+ },
+ {
+  "p": 0,
+  "s": "PROOF-OF-EQUIVALENCE"
+ },
+ {
+  "p": 0,
+  "s": "Private Key Recovery"
+ },
+ {
+  "p": 0,
+  "s": "Private key recovery"
+ },
+ {
+  "p": 0,
+  "s": "Proof Of Equivalence"
+ },
+ {
+  "p": 0,
+  "s": "Proof of equivalence"
+ },
+ {
+  "p": 0,
+  "s": "Proof-Of-Equivalence"
+ },
+ {
+  "p": 0,
+  "s": "Proof-of-equivalence"
+ },
+ {
+  "p": 0,
+  "s": "private key recovery"
+ },
+ {
+  "p": 0,
+  "s": "private-key-recovery"
+ },
+ {
+  "p": 0,
+  "s": "private_key_recovery"
+ },
+ {
+  "p": 0,
+  "s": "proof of equivalence"
+ },
+ {
+  "p": 0,
+  "s": "proof-of-equivalence"
+ },
+ {
+  "p": 0,
+  "s": "proof_of_equivalence"
+ },
+ {
+  "p": 0,
+  "s": "fractionalreservebanking"
+ },
+ {
+  "p": 0,
+  "s": "FRACTIONAL RESERVE BANKING"
+ },
+ {
+  "p": 0,
+  "s": "Fractional Reserve Banking"
+ },
+ {
+  "p": 0,
+  "s": "Fractional reserve banking"
+ },
+ {
+  "p": 0,
+  "s": "fractional reserve banking"
+ },
+ {
+  "p": 0,
+  "s": "fractional-reserve-banking"
+ },
+ {
+  "p": 0,
+  "s": "fractional_reserve_banking"
+ },
+ {
+  "p": 0,
+  "s": "thepassword'salreadymentioned"
+ },
+ {
+  "p": 0,
+  "s": "THE PASSWORD'S ALREADY MENTIONED"
+ },
+ {
+  "p": 0,
+  "s": "The Password'S Already Mentioned"
+ },
+ {
+  "p": 0,
+  "s": "The password's already mentioned"
+ },
+ {
+  "p": 0,
+  "s": "the password's already mentioned"
+ },
+ {
+  "p": 0,
+  "s": "the-password's-already-mentioned"
+ },
+ {
+  "p": 0,
+  "s": "the_password's_already_mentioned"
+ },
+ {
+  "p": 0,
+  "s": "02425AFDD1716149FAF414B6FDB96D5E7AFC8CE42496042F4DF559C80A7C6650EB"
+ },
+ {
+  "p": 0,
+  "s": "02425Afdd1716149Faf414B6Fdb96D5E7Afc8Ce42496042F4Df559C80A7C6650Eb"
+ },
+ {
+  "p": 0,
+  "s": "02425afdd1716149faf414b6fdb96d5e7afc8ce42496042f4df559c80a7c6650eb"
+ },
+ {
+  "p": 0,
+  "s": "J0D1VHYLWQXKQWZBHFQMZWU8JGXA54DGLX+BPJQNBRL4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBIQSPK6GR2BE"
+ },
+ {
+  "p": 0,
+  "s": "J0D1Vhylwqxkqwzbhfqmzwu8Jgxa54Dglx+Bpjqnbrl4Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbiqspk6Gr2Be"
+ },
+ {
+  "p": 0,
+  "s": "J0d1vHyLWQXkQWZBhfQmZWu8jgXA54DgLx+bPJQNBrL4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABbiQspK6Gr2bE"
+ },
+ {
+  "p": 0,
+  "s": "J0d1vhylwqxkqwzbhfqmzwu8jgxa54dglx+bpjqnbrl4aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbiqspk6gr2be"
+ },
+ {
+  "p": 0,
+  "s": "j0d1vhylwqxkqwzbhfqmzwu8jgxa54dglx+bpjqnbrl4aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbiqspk6gr2be"
+ },
+ {
+  "p": 1,
+  "s": "================="
+ },
+ {
+  "p": 1,
+  "s": "ApurelyP2Pversionofmodularvalueswouldallowonline"
+ },
+ {
+  "p": 1,
+  "s": "ThekTimesG2026/06/05Bitcoinhasworstweeklyfallsince2022"
+ },
+ {
+  "p": 1,
+  "s": "A purely P2P version of modular values would allow online"
+ },
+ {
+  "p": 1,
+  "s": "a purely p2p version of modular values would allow online"
+ },
+ {
+  "p": 1,
+  "s": "The kTimesG 2026/06/05 Bitcoin has worst weekly fall since 2022"
+ },
+ {
+  "p": 1,
+  "s": "the ktimesg 2026/06/05 bitcoin has worst weekly fall since 2022"
+ },
+ {
+  "p": 2,
+  "s": "isin"
+ },
+ {
+  "p": 2,
+  "s": "tobe"
+ },
+ {
+  "p": 2,
+  "s": "andno"
+ },
+ {
+  "p": 2,
+  "s": "endis"
+ },
+ {
+  "p": 2,
+  "s": "is in"
+ },
+ {
+  "p": 2,
+  "s": "is-in"
+ },
+ {
+  "p": 2,
+  "s": "noend"
+ },
+ {
+  "p": 2,
+  "s": "ofthe"
+ },
+ {
+  "p": 2,
+  "s": "to be"
+ },
+ {
+  "p": 2,
+  "s": "to-be"
+ },
+ {
+  "p": 2,
+  "s": "tothe"
+ },
+ {
+  "p": 2,
+  "s": "and no"
+ },
+ {
+  "p": 2,
+  "s": "and-no"
+ },
+ {
+  "p": 2,
+  "s": "besent"
+ },
+ {
+  "p": 2,
+  "s": "butthe"
+ },
+ {
+  "p": 2,
+  "s": "end is"
+ },
+ {
+  "p": 2,
+  "s": "end-is"
+ },
+ {
+  "p": 2,
+  "s": "endsno"
+ },
+ {
+  "p": 2,
+  "s": "intoan"
+ },
+ {
+  "p": 2,
+  "s": "itinto"
+ },
+ {
+  "p": 2,
+  "s": "lostif"
+ },
+ {
+  "p": 2,
+  "s": "no end"
+ },
+ {
+  "p": 2,
+  "s": "no-end"
+ },
+ {
+  "p": 2,
+  "s": "of the"
+ },
+ {
+  "p": 2,
+  "s": "of-the"
+ },
+ {
+  "p": 2,
+  "s": "partof"
+ },
+ {
+  "p": 2,
+  "s": "thatit"
+ },
+ {
+  "p": 2,
+  "s": "to the"
+ },
+ {
+  "p": 2,
+  "s": "to-the"
+ },
+ {
+  "p": 2,
+  "s": "arelost"
+ },
+ {
+  "p": 2,
+  "s": "asproof"
+ },
+ {
+  "p": 2,
+  "s": "badthis"
+ },
+ {
+  "p": 2,
+  "s": "be sent"
+ },
+ {
+  "p": 2,
+  "s": "be-sent"
+ },
+ {
+  "p": 2,
+  "s": "but the"
+ },
+ {
+  "p": 2,
+  "s": "but-the"
+ },
+ {
+  "p": 2,
+  "s": "chainof"
+ },
+ {
+  "p": 2,
+  "s": "endisin"
+ },
+ {
+  "p": 2,
+  "s": "ends no"
+ },
+ {
+  "p": 2,
+  "s": "ends-no"
+ },
+ {
+  "p": 2,
+  "s": "fromone"
+ },
+ {
+  "p": 2,
+  "s": "insight"
+ },
+ {
+  "p": 2,
+  "s": "into an"
+ },
+ {
+  "p": 2,
+  "s": "into-an"
+ },
+ {
+  "p": 2,
+  "s": "isstill"
+ },
+ {
+  "p": 2,
+  "s": "it into"
+ },
+ {
+  "p": 2,
+  "s": "it-into"
+ },
+ {
+  "p": 2,
+  "s": "lost if"
+ },
+ {
+  "p": 2,
+  "s": "lost-if"
+ },
+ {
+  "p": 2,
+  "s": "noendis"
+ },
+ {
+  "p": 2,
+  "s": "noloose"
+ },
+ {
+  "p": 2,
+  "s": "notonly"
+ },
+ {
+  "p": 2,
+  "s": "part of"
+ },
+ {
+  "p": 2,
+  "s": "part-of"
+ },
+ {
+  "p": 2,
+  "s": "partyis"
+ },
+ {
+  "p": 2,
+  "s": "partyto"
+ },
+ {
+  "p": 2,
+  "s": "proofof"
+ },
+ {
+  "p": 2,
+  "s": "sightso"
+ },
+ {
+  "p": 2,
+  "s": "that it"
+ },
+ {
+  "p": 2,
+  "s": "that-it"
+ },
+ {
+  "p": 2,
+  "s": "themain"
+ },
+ {
+  "p": 2,
+  "s": "andnoend"
+ },
+ {
+  "p": 2,
+  "s": "are lost"
+ },
+ {
+  "p": 2,
+  "s": "are-lost"
+ },
+ {
+  "p": 2,
+  "s": "as proof"
+ },
+ {
+  "p": 2,
+  "s": "as-proof"
+ },
+ {
+  "p": 2,
+  "s": "bad this"
+ },
+ {
+  "p": 2,
+  "s": "bad-this"
+ },
+ {
+  "p": 2,
+  "s": "butproof"
+ },
+ {
+  "p": 2,
+  "s": "cannotbe"
+ },
+ {
+  "p": 2,
+  "s": "chain of"
+ },
+ {
+  "p": 2,
+  "s": "chain-of"
+ },
+ {
+  "p": 2,
+  "s": "chainnot"
+ },
+ {
+  "p": 2,
+  "s": "chainthe"
+ },
+ {
+  "p": 2,
+  "s": "from one"
+ },
+ {
+  "p": 2,
+  "s": "from-one"
+ },
+ {
+  "p": 2,
+  "s": "hasworst"
+ },
+ {
+  "p": 2,
+  "s": "in sight"
+ },
+ {
+  "p": 2,
+  "s": "in-sight"
+ },
+ {
+  "p": 2,
+  "s": "is still"
+ },
+ {
+  "p": 2,
+  "s": "is-still"
+ },
+ {
+  "p": 2,
+  "s": "itintoan"
+ },
+ {
+  "p": 2,
+  "s": "itserves"
+ },
+ {
+  "p": 2,
+  "s": "looksbad"
+ },
+ {
+  "p": 2,
+  "s": "no loose"
+ },
+ {
+  "p": 2,
+  "s": "no-loose"
+ },
+ {
+  "p": 2,
+  "s": "not only"
+ },
+ {
+  "p": 2,
+  "s": "not-only"
+ },
+ {
+  "p": 2,
+  "s": "ofevents"
+ },
+ {
+  "p": 2,
+  "s": "oneparty"
+ },
+ {
+  "p": 2,
+  "s": "party is"
+ },
+ {
+  "p": 2,
+  "s": "party to"
+ },
+ {
+  "p": 2,
+  "s": "party-is"
+ },
+ {
+  "p": 2,
+  "s": "party-to"
+ },
+ {
+  "p": 2,
+  "s": "proof of"
+ },
+ {
+  "p": 2,
+  "s": "proof-of"
+ },
+ {
+  "p": 2,
+  "s": "servesas"
+ },
+ {
+  "p": 2,
+  "s": "sight so"
+ },
+ {
+  "p": 2,
+  "s": "sight-so"
+ },
+ {
+  "p": 2,
+  "s": "sohere's"
+ },
+ {
+  "p": 2,
+  "s": "the main"
+ },
+ {
+  "p": 2,
+  "s": "the-main"
+ },
+ {
+  "p": 2,
+  "s": "thechain"
+ },
+ {
+  "p": 2,
+  "s": "tobesent"
+ },
+ {
+  "p": 2,
+  "s": "The chain"
+ },
+ {
+  "p": 2,
+  "s": "The-chain"
+ },
+ {
+  "p": 2,
+  "s": "anongoing"
+ },
+ {
+  "p": 2,
+  "s": "arelostif"
+ },
+ {
+  "p": 2,
+  "s": "aroundand"
+ },
+ {
+  "p": 2,
+  "s": "asproofof"
+ },
+ {
+  "p": 2,
+  "s": "bechanged"
+ },
+ {
+  "p": 2,
+  "s": "but proof"
+ },
+ {
+  "p": 2,
+  "s": "but-proof"
+ },
+ {
+  "p": 2,
+  "s": "cannot be"
+ },
+ {
+  "p": 2,
+  "s": "cannot-be"
+ },
+ {
+  "p": 2,
+  "s": "chain The"
+ },
+ {
+  "p": 2,
+  "s": "chain not"
+ },
+ {
+  "p": 2,
+  "s": "chain-The"
+ },
+ {
+  "p": 2,
+  "s": "chain-not"
+ },
+ {
+  "p": 2,
+  "s": "end is in"
+ },
+ {
+  "p": 2,
+  "s": "end-is-in"
+ },
+ {
+  "p": 2,
+  "s": "fallsince"
+ },
+ {
+  "p": 2,
+  "s": "has worst"
+ },
+ {
+  "p": 2,
+  "s": "has-worst"
+ },
+ {
+  "p": 2,
+  "s": "iftrusted"
+ },
+ {
+  "p": 2,
+  "s": "insightso"
+ },
+ {
+  "p": 2,
+  "s": "isinsight"
+ },
+ {
+  "p": 2,
+  "s": "it serves"
+ },
+ {
+  "p": 2,
+  "s": "it-serves"
+ },
+ {
+  "p": 2,
+  "s": "looks bad"
+ },
+ {
+  "p": 2,
+  "s": "looks-bad"
+ },
+ {
+  "p": 2,
+  "s": "no end is"
+ },
+ {
+  "p": 2,
+  "s": "no-end-is"
+ },
+ {
+  "p": 2,
+  "s": "noendisin"
+ },
+ {
+  "p": 2,
+  "s": "of events"
+ },
+ {
+  "p": 2,
+  "s": "of-events"
+ },
+ {
+  "p": 2,
+  "s": "ofmodular"
+ },
+ {
+  "p": 2,
+  "s": "one party"
+ },
+ {
+  "p": 2,
+  "s": "one-party"
+ },
+ {
+  "p": 2,
+  "s": "partofthe"
+ },
+ {
+  "p": 2,
+  "s": "proofthat"
+ },
+ {
+  "p": 2,
+  "s": "purelyp2p"
+ },
+ {
+  "p": 2,
+  "s": "puzzlefor"
+ },
+ {
+  "p": 2,
+  "s": "serves as"
+ },
+ {
+  "p": 2,
+  "s": "serves-as"
+ },
+ {
+  "p": 2,
+  "s": "servesthe"
+ },
+ {
+  "p": 2,
+  "s": "so here's"
+ },
+ {
+  "p": 2,
+  "s": "so-here's"
+ },
+ {
+  "p": 2,
+  "s": "the chain"
+ },
+ {
+  "p": 2,
+  "s": "the-chain"
+ },
+ {
+  "p": 2,
+  "s": "toanother"
+ },
+ {
+  "p": 2,
+  "s": "toprevent"
+ },
+ {
+  "p": 2,
+  "s": "versionof"
+ },
+ {
+  "p": 2,
+  "s": "wepropose"
+ },
+ {
+  "p": 2,
+  "s": "We propose"
+ },
+ {
+  "p": 2,
+  "s": "We-propose"
+ },
+ {
+  "p": 2,
+  "s": "an ongoing"
+ },
+ {
+  "p": 2,
+  "s": "an-ongoing"
+ },
+ {
+  "p": 2,
+  "s": "and no end"
+ },
+ {
+  "p": 2,
+  "s": "and-no-end"
+ },
+ {
+  "p": 2,
+  "s": "andnoendis"
+ },
+ {
+  "p": 2,
+  "s": "around and"
+ },
+ {
+  "p": 2,
+  "s": "around-and"
+ },
+ {
+  "p": 2,
+  "s": "be changed"
+ },
+ {
+  "p": 2,
+  "s": "be-changed"
+ },
+ {
+  "p": 2,
+  "s": "bitcoinhas"
+ },
+ {
+  "p": 2,
+  "s": "butthemain"
+ },
+ {
+  "p": 2,
+  "s": "everyoneno"
+ },
+ {
+  "p": 2,
+  "s": "fall since"
+ },
+ {
+  "p": 2,
+  "s": "fall-since"
+ },
+ {
+  "p": 2,
+  "s": "if trusted"
+ },
+ {
+  "p": 2,
+  "s": "if-trusted"
+ },
+ {
+  "p": 2,
+  "s": "it into an"
+ },
+ {
+  "p": 2,
+  "s": "it-into-an"
+ },
+ {
+  "p": 2,
+  "s": "networkthe"
+ },
+ {
+  "p": 2,
+  "s": "of modular"
+ },
+ {
+  "p": 2,
+  "s": "of-modular"
+ },
+ {
+  "p": 2,
+  "s": "onepartyto"
+ },
+ {
+  "p": 2,
+  "s": "onlyserves"
+ },
+ {
+  "p": 2,
+  "s": "p2pversion"
+ },
+ {
+  "p": 2,
+  "s": "paymentsto"
+ },
+ {
+  "p": 2,
+  "s": "privatekey"
+ },
+ {
+  "p": 2,
+  "s": "proof that"
+ },
+ {
+  "p": 2,
+  "s": "proof-that"
+ },
+ {
+  "p": 2,
+  "s": "proofofthe"
+ },
+ {
+  "p": 2,
+  "s": "purely P2P"
+ },
+ {
+  "p": 2,
+  "s": "purely-P2P"
+ },
+ {
+  "p": 2,
+  "s": "puzzle for"
+ },
+ {
+  "p": 2,
+  "s": "puzzle-for"
+ },
+ {
+  "p": 2,
+  "s": "recordthat"
+ },
+ {
+  "p": 2,
+  "s": "recoverywe"
+ },
+ {
+  "p": 2,
+  "s": "redoingthe"
+ },
+ {
+  "p": 2,
+  "s": "requiredto"
+ },
+ {
+  "p": 2,
+  "s": "sequenceof"
+ },
+ {
+  "p": 2,
+  "s": "serves the"
+ },
+ {
+  "p": 2,
+  "s": "serves-the"
+ },
+ {
+  "p": 2,
+  "s": "sincelooks"
+ },
+ {
+  "p": 2,
+  "s": "solutionto"
+ },
+ {
+  "p": 2,
+  "s": "thatcannot"
+ },
+ {
+  "p": 2,
+  "s": "thektimesg"
+ },
+ {
+  "p": 2,
+  "s": "thenetwork"
+ },
+ {
+  "p": 2,
+  "s": "theproblem"
+ },
+ {
+  "p": 2,
+  "s": "thirdparty"
+ },
+ {
+  "p": 2,
+  "s": "throughthe"
+ },
+ {
+  "p": 2,
+  "s": "to another"
+ },
+ {
+  "p": 2,
+  "s": "to be sent"
+ },
+ {
+  "p": 2,
+  "s": "to prevent"
+ },
+ {
+  "p": 2,
+  "s": "to-another"
+ },
+ {
+  "p": 2,
+  "s": "to-be-sent"
+ },
+ {
+  "p": 2,
+  "s": "to-prevent"
+ },
+ {
+  "p": 2,
+  "s": "version of"
+ },
+ {
+  "p": 2,
+  "s": "version-of"
+ },
+ {
+  "p": 2,
+  "s": "weeklyfall"
+ },
+ {
+  "p": 2,
+  "s": "wouldallow"
+ },
+ {
+  "p": 2,
+  "s": "Bitcoin has"
+ },
+ {
+  "p": 2,
+  "s": "Bitcoin-has"
+ },
+ {
+  "p": 2,
+  "s": "P2P version"
+ },
+ {
+  "p": 2,
+  "s": "P2P-version"
+ },
+ {
+  "p": 2,
+  "s": "The kTimesG"
+ },
+ {
+  "p": 2,
+  "s": "The network"
+ },
+ {
+  "p": 2,
+  "s": "The-kTimesG"
+ },
+ {
+  "p": 2,
+  "s": "The-network"
+ },
+ {
+  "p": 2,
+  "s": "allowonline"
+ },
+ {
+  "p": 2,
+  "s": "are lost if"
+ },
+ {
+  "p": 2,
+  "s": "are-lost-if"
+ },
+ {
+  "p": 2,
+  "s": "aroundandno"
+ },
+ {
+  "p": 2,
+  "s": "as proof of"
+ },
+ {
+  "p": 2,
+  "s": "as-proof-of"
+ },
+ {
+  "p": 2,
+  "s": "benefitsare"
+ },
+ {
+  "p": 2,
+  "s": "bycarefully"
+ },
+ {
+  "p": 2,
+  "s": "cyclearound"
+ },
+ {
+  "p": 2,
+  "s": "everyone no"
+ },
+ {
+  "p": 2,
+  "s": "everyone-no"
+ },
+ {
+  "p": 2,
+  "s": "foreveryone"
+ },
+ {
+  "p": 2,
+  "s": "in sight so"
+ },
+ {
+  "p": 2,
+  "s": "in-sight-so"
+ },
+ {
+  "p": 2,
+  "s": "is in sight"
+ },
+ {
+  "p": 2,
+  "s": "is-in-sight"
+ },
+ {
+  "p": 2,
+  "s": "isinsightso"
+ },
+ {
+  "p": 2,
+  "s": "itservesthe"
+ },
+ {
+  "p": 2,
+  "s": "keyrecovery"
+ },
+ {
+  "p": 2,
+  "s": "looseendsno"
+ },
+ {
+  "p": 2,
+  "s": "measuringit"
+ },
+ {
+  "p": 2,
+  "s": "network The"
+ },
+ {
+  "p": 2,
+  "s": "network-The"
+ },
+ {
+  "p": 2,
+  "s": "only serves"
+ },
+ {
+  "p": 2,
+  "s": "only-serves"
+ },
+ {
+  "p": 2,
+  "s": "part of the"
+ },
+ {
+  "p": 2,
+  "s": "part-of-the"
+ },
+ {
+  "p": 2,
+  "s": "payments to"
+ },
+ {
+  "p": 2,
+  "s": "payments-to"
+ },
+ {
+  "p": 2,
+  "s": "private key"
+ },
+ {
+  "p": 2,
+  "s": "private-key"
+ },
+ {
+  "p": 2,
+  "s": "proofthatit"
+ },
+ {
+  "p": 2,
+  "s": "providepart"
+ },
+ {
+  "p": 2,
+  "s": "record that"
+ },
+ {
+  "p": 2,
+  "s": "record-that"
+ },
+ {
+  "p": 2,
+  "s": "recovery We"
+ },
+ {
+  "p": 2,
+  "s": "recovery-We"
+ },
+ {
+  "p": 2,
+  "s": "redoing the"
+ },
+ {
+  "p": 2,
+  "s": "redoing-the"
+ },
+ {
+  "p": 2,
+  "s": "required to"
+ },
+ {
+  "p": 2,
+  "s": "required-to"
+ },
+ {
+  "p": 2,
+  "s": "sequence of"
+ },
+ {
+  "p": 2,
+  "s": "sequence-of"
+ },
+ {
+  "p": 2,
+  "s": "since looks"
+ },
+ {
+  "p": 2,
+  "s": "since-looks"
+ },
+ {
+  "p": 2,
+  "s": "solution to"
+ },
+ {
+  "p": 2,
+  "s": "solution-to"
+ },
+ {
+  "p": 2,
+  "s": "solutionbut"
+ },
+ {
+  "p": 2,
+  "s": "that cannot"
+ },
+ {
+  "p": 2,
+  "s": "that-cannot"
+ },
+ {
+  "p": 2,
+  "s": "the problem"
+ },
+ {
+  "p": 2,
+  "s": "the-problem"
+ },
+ {
+  "p": 2,
+  "s": "thechainnot"
+ },
+ {
+  "p": 2,
+  "s": "thechainthe"
+ },
+ {
+  "p": 2,
+  "s": "thesequence"
+ },
+ {
+  "p": 2,
+  "s": "thesolution"
+ },
+ {
+  "p": 2,
+  "s": "third party"
+ },
+ {
+  "p": 2,
+  "s": "third-party"
+ },
+ {
+  "p": 2,
+  "s": "thisbearish"
+ },
+ {
+  "p": 2,
+  "s": "through the"
+ },
+ {
+  "p": 2,
+  "s": "through-the"
+ },
+ {
+  "p": 2,
+  "s": "valueswould"
+ },
+ {
+  "p": 2,
+  "s": "weekly fall"
+ },
+ {
+  "p": 2,
+  "s": "weekly-fall"
+ },
+ {
+  "p": 2,
+  "s": "worstweekly"
+ },
+ {
+  "p": 2,
+  "s": "would allow"
+ },
+ {
+  "p": 2,
+  "s": "would-allow"
+ },
+ {
+  "p": 2,
+  "s": "allow online"
+ },
+ {
+  "p": 2,
+  "s": "allow-online"
+ },
+ {
+  "p": 2,
+  "s": "asproofofthe"
+ },
+ {
+  "p": 2,
+  "s": "benefits are"
+ },
+ {
+  "p": 2,
+  "s": "benefits-are"
+ },
+ {
+  "p": 2,
+  "s": "but the main"
+ },
+ {
+  "p": 2,
+  "s": "but-the-main"
+ },
+ {
+  "p": 2,
+  "s": "butproofthat"
+ },
+ {
+  "p": 2,
+  "s": "by carefully"
+ },
+ {
+  "p": 2,
+  "s": "by-carefully"
+ },
+ {
+  "p": 2,
+  "s": "chainnotonly"
+ },
+ {
+  "p": 2,
+  "s": "cycle around"
+ },
+ {
+  "p": 2,
+  "s": "cycle-around"
+ },
+ {
+  "p": 2,
+  "s": "directlyfrom"
+ },
+ {
+  "p": 2,
+  "s": "endisinsight"
+ },
+ {
+  "p": 2,
+  "s": "for everyone"
+ },
+ {
+  "p": 2,
+  "s": "for-everyone"
+ },
+ {
+  "p": 2,
+  "s": "fromoneparty"
+ },
+ {
+  "p": 2,
+  "s": "goingthrough"
+ },
+ {
+  "p": 2,
+  "s": "here'spuzzle"
+ },
+ {
+  "p": 2,
+  "s": "key recovery"
+ },
+ {
+  "p": 2,
+  "s": "key-recovery"
+ },
+ {
+  "p": 2,
+  "s": "looksbadthis"
+ },
+ {
+  "p": 2,
+  "s": "mainbenefits"
+ },
+ {
+  "p": 2,
+  "s": "measuring it"
+ },
+ {
+  "p": 2,
+  "s": "measuring-it"
+ },
+ {
+  "p": 2,
+  "s": "no end is in"
+ },
+ {
+  "p": 2,
+  "s": "no-end-is-in"
+ },
+ {
+  "p": 2,
+  "s": "one party to"
+ },
+ {
+  "p": 2,
+  "s": "one-party-to"
+ },
+ {
+  "p": 2,
+  "s": "ongoingchain"
+ },
+ {
+  "p": 2,
+  "s": "onlyservesas"
+ },
+ {
+  "p": 2,
+  "s": "p2pversionof"
+ },
+ {
+  "p": 2,
+  "s": "partyisstill"
+ },
+ {
+  "p": 2,
+  "s": "paymentstobe"
+ },
+ {
+  "p": 2,
+  "s": "problemusing"
+ },
+ {
+  "p": 2,
+  "s": "proof of the"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-the"
+ },
+ {
+  "p": 2,
+  "s": "provide part"
+ },
+ {
+  "p": 2,
+  "s": "provide-part"
+ },
+ {
+  "p": 2,
+  "s": "sentdirectly"
+ },
+ {
+  "p": 2,
+  "s": "solution but"
+ },
+ {
+  "p": 2,
+  "s": "solution-but"
+ },
+ {
+  "p": 2,
+  "s": "structurethe"
+ },
+ {
+  "p": 2,
+  "s": "thatcannotbe"
+ },
+ {
+  "p": 2,
+  "s": "thatitserves"
+ },
+ {
+  "p": 2,
+  "s": "the sequence"
+ },
+ {
+  "p": 2,
+  "s": "the solution"
+ },
+ {
+  "p": 2,
+  "s": "the-sequence"
+ },
+ {
+  "p": 2,
+  "s": "the-solution"
+ },
+ {
+  "p": 2,
+  "s": "thirdpartyis"
+ },
+ {
+  "p": 2,
+  "s": "this bearish"
+ },
+ {
+  "p": 2,
+  "s": "this-bearish"
+ },
+ {
+  "p": 2,
+  "s": "totheproblem"
+ },
+ {
+  "p": 2,
+  "s": "trustedthird"
+ },
+ {
+  "p": 2,
+  "s": "values would"
+ },
+ {
+  "p": 2,
+  "s": "values-would"
+ },
+ {
+  "p": 2,
+  "s": "withoutgoing"
+ },
+ {
+  "p": 2,
+  "s": "witnessedbut"
+ },
+ {
+  "p": 2,
+  "s": "worst weekly"
+ },
+ {
+  "p": 2,
+  "s": "worst-weekly"
+ },
+ {
+  "p": 2,
+  "s": "The chain not"
+ },
+ {
+  "p": 2,
+  "s": "The-chain-not"
+ },
+ {
+  "p": 2,
+  "s": "and no end is"
+ },
+ {
+  "p": 2,
+  "s": "and-no-end-is"
+ },
+ {
+  "p": 2,
+  "s": "around and no"
+ },
+ {
+  "p": 2,
+  "s": "around-and-no"
+ },
+ {
+  "p": 2,
+  "s": "bankingsystem"
+ },
+ {
+  "p": 2,
+  "s": "directly from"
+ },
+ {
+  "p": 2,
+  "s": "directly-from"
+ },
+ {
+  "p": 2,
+  "s": "endsnohashing"
+ },
+ {
+  "p": 2,
+  "s": "foreveryoneno"
+ },
+ {
+  "p": 2,
+  "s": "formingrecord"
+ },
+ {
+  "p": 2,
+  "s": "going through"
+ },
+ {
+  "p": 2,
+  "s": "going-through"
+ },
+ {
+  "p": 2,
+  "s": "here's puzzle"
+ },
+ {
+  "p": 2,
+  "s": "here's-puzzle"
+ },
+ {
+  "p": 2,
+  "s": "informationby"
+ },
+ {
+  "p": 2,
+  "s": "intoanongoing"
+ },
+ {
+  "p": 2,
+  "s": "it serves the"
+ },
+ {
+  "p": 2,
+  "s": "it-serves-the"
+ },
+ {
+  "p": 2,
+  "s": "keyrecoverywe"
+ },
+ {
+  "p": 2,
+  "s": "loose ends no"
+ },
+ {
+  "p": 2,
+  "s": "loose-ends-no"
+ },
+ {
+  "p": 2,
+  "s": "lostiftrusted"
+ },
+ {
+  "p": 2,
+  "s": "main benefits"
+ },
+ {
+  "p": 2,
+  "s": "main-benefits"
+ },
+ {
+  "p": 2,
+  "s": "networkitself"
+ },
+ {
+  "p": 2,
+  "s": "nolooseendsno"
+ },
+ {
+  "p": 2,
+  "s": "notonlyserves"
+ },
+ {
+  "p": 2,
+  "s": "ofphylo-based"
+ },
+ {
+  "p": 2,
+  "s": "ofthesequence"
+ },
+ {
+  "p": 2,
+  "s": "ofthesolution"
+ },
+ {
+  "p": 2,
+  "s": "ongoing chain"
+ },
+ {
+  "p": 2,
+  "s": "ongoing-chain"
+ },
+ {
+  "p": 2,
+  "s": "problem using"
+ },
+ {
+  "p": 2,
+  "s": "problem-using"
+ },
+ {
+  "p": 2,
+  "s": "proof that it"
+ },
+ {
+  "p": 2,
+  "s": "proof-that-it"
+ },
+ {
+  "p": 2,
+  "s": "providepartof"
+ },
+ {
+  "p": 2,
+  "s": "sent directly"
+ },
+ {
+  "p": 2,
+  "s": "sent-directly"
+ },
+ {
+  "p": 2,
+  "s": "servesasproof"
+ },
+ {
+  "p": 2,
+  "s": "sightsohere's"
+ },
+ {
+  "p": 2,
+  "s": "sincelooksbad"
+ },
+ {
+  "p": 2,
+  "s": "solutiontothe"
+ },
+ {
+  "p": 2,
+  "s": "stillrequired"
+ },
+ {
+  "p": 2,
+  "s": "structure The"
+ },
+ {
+  "p": 2,
+  "s": "structure-The"
+ },
+ {
+  "p": 2,
+  "s": "systemdigital"
+ },
+ {
+  "p": 2,
+  "s": "the chain The"
+ },
+ {
+  "p": 2,
+  "s": "the-chain-The"
+ },
+ {
+  "p": 2,
+  "s": "thefractional"
+ },
+ {
+  "p": 2,
+  "s": "thesequenceof"
+ },
+ {
+  "p": 2,
+  "s": "trusted third"
+ },
+ {
+  "p": 2,
+  "s": "trusted-third"
+ },
+ {
+  "p": 2,
+  "s": "without going"
+ },
+ {
+  "p": 2,
+  "s": "without-going"
+ },
+ {
+  "p": 2,
+  "s": "witnessed but"
+ },
+ {
+  "p": 2,
+  "s": "witnessed-but"
+ },
+ {
+  "p": 2,
+  "s": "P2P version of"
+ },
+ {
+  "p": 2,
+  "s": "P2P-version-of"
+ },
+ {
+  "p": 2,
+  "s": "anongoingchain"
+ },
+ {
+  "p": 2,
+  "s": "anotherwithout"
+ },
+ {
+  "p": 2,
+  "s": "aroundandnoend"
+ },
+ {
+  "p": 2,
+  "s": "badthisbearish"
+ },
+ {
+  "p": 2,
+  "s": "banking system"
+ },
+ {
+  "p": 2,
+  "s": "banking-system"
+ },
+ {
+  "p": 2,
+  "s": "besentdirectly"
+ },
+ {
+  "p": 2,
+  "s": "but proof that"
+ },
+ {
+  "p": 2,
+  "s": "but-proof-that"
+ },
+ {
+  "p": 2,
+  "s": "butproofthatit"
+ },
+ {
+  "p": 2,
+  "s": "chain not only"
+ },
+ {
+  "p": 2,
+  "s": "chain-not-only"
+ },
+ {
+  "p": 2,
+  "s": "changedwithout"
+ },
+ {
+  "p": 2,
+  "s": "cyclearoundand"
+ },
+ {
+  "p": 2,
+  "s": "fallsincelooks"
+ },
+ {
+  "p": 2,
+  "s": "forming record"
+ },
+ {
+  "p": 2,
+  "s": "forming-record"
+ },
+ {
+  "p": 2,
+  "s": "from one party"
+ },
+ {
+  "p": 2,
+  "s": "from-one-party"
+ },
+ {
+  "p": 2,
+  "s": "fromonepartyto"
+ },
+ {
+  "p": 2,
+  "s": "hasworstweekly"
+ },
+ {
+  "p": 2,
+  "s": "iftrustedthird"
+ },
+ {
+  "p": 2,
+  "s": "information by"
+ },
+ {
+  "p": 2,
+  "s": "information-by"
+ },
+ {
+  "p": 2,
+  "s": "is in sight so"
+ },
+ {
+  "p": 2,
+  "s": "is-in-sight-so"
+ },
+ {
+  "p": 2,
+  "s": "itselfrequires"
+ },
+ {
+  "p": 2,
+  "s": "ktimesgbitcoin"
+ },
+ {
+  "p": 2,
+  "s": "looks bad this"
+ },
+ {
+  "p": 2,
+  "s": "looks-bad-this"
+ },
+ {
+  "p": 2,
+  "s": "network itself"
+ },
+ {
+  "p": 2,
+  "s": "network-itself"
+ },
+ {
+  "p": 2,
+  "s": "of phylo-based"
+ },
+ {
+  "p": 2,
+  "s": "of-phylo-based"
+ },
+ {
+  "p": 2,
+  "s": "ongoingchainof"
+ },
+ {
+  "p": 2,
+  "s": "onlinepayments"
+ },
+ {
+  "p": 2,
+  "s": "only serves as"
+ },
+ {
+  "p": 2,
+  "s": "only-serves-as"
+ },
+ {
+  "p": 2,
+  "s": "party is still"
+ },
+ {
+  "p": 2,
+  "s": "party-is-still"
+ },
+ {
+  "p": 2,
+  "s": "partytoanother"
+ },
+ {
+  "p": 2,
+  "s": "payments to be"
+ },
+ {
+  "p": 2,
+  "s": "payments-to-be"
+ },
+ {
+  "p": 2,
+  "s": "preventprivate"
+ },
+ {
+  "p": 2,
+  "s": "reservebanking"
+ },
+ {
+  "p": 2,
+  "s": "servesthechain"
+ },
+ {
+  "p": 2,
+  "s": "sohere'spuzzle"
+ },
+ {
+  "p": 2,
+  "s": "solutionbutthe"
+ },
+ {
+  "p": 2,
+  "s": "still required"
+ },
+ {
+  "p": 2,
+  "s": "still-required"
+ },
+ {
+  "p": 2,
+  "s": "system Digital"
+ },
+ {
+  "p": 2,
+  "s": "system-Digital"
+ },
+ {
+  "p": 2,
+  "s": "that cannot be"
+ },
+ {
+  "p": 2,
+  "s": "that it serves"
+ },
+ {
+  "p": 2,
+  "s": "that-cannot-be"
+ },
+ {
+  "p": 2,
+  "s": "that-it-serves"
+ },
+ {
+  "p": 2,
+  "s": "the fractional"
+ },
+ {
+  "p": 2,
+  "s": "the-fractional"
+ },
+ {
+  "p": 2,
+  "s": "thesolutionbut"
+ },
+ {
+  "p": 2,
+  "s": "third party is"
+ },
+ {
+  "p": 2,
+  "s": "third-party-is"
+ },
+ {
+  "p": 2,
+  "s": "to the problem"
+ },
+ {
+  "p": 2,
+  "s": "to-the-problem"
+ },
+ {
+  "p": 2,
+  "s": "withoutredoing"
+ },
+ {
+  "p": 2,
+  "s": "another without"
+ },
+ {
+  "p": 2,
+  "s": "another-without"
+ },
+ {
+  "p": 2,
+  "s": "as proof of the"
+ },
+ {
+  "p": 2,
+  "s": "as-proof-of-the"
+ },
+ {
+  "p": 2,
+  "s": "benefitsarelost"
+ },
+ {
+  "p": 2,
+  "s": "bitcoinhasworst"
+ },
+ {
+  "p": 2,
+  "s": "cannotbechanged"
+ },
+ {
+  "p": 2,
+  "s": "chainthenetwork"
+ },
+ {
+  "p": 2,
+  "s": "changed without"
+ },
+ {
+  "p": 2,
+  "s": "changed-without"
+ },
+ {
+  "p": 2,
+  "s": "directlyfromone"
+ },
+ {
+  "p": 2,
+  "s": "end is in sight"
+ },
+ {
+  "p": 2,
+  "s": "end-is-in-sight"
+ },
+ {
+  "p": 2,
+  "s": "ends no hashing"
+ },
+ {
+  "p": 2,
+  "s": "ends-no-hashing"
+ },
+ {
+  "p": 2,
+  "s": "eventswitnessed"
+ },
+ {
+  "p": 2,
+  "s": "everyonenoloose"
+ },
+ {
+  "p": 2,
+  "s": "for everyone no"
+ },
+ {
+  "p": 2,
+  "s": "for-everyone-no"
+ },
+ {
+  "p": 2,
+  "s": "goingthroughthe"
+ },
+ {
+  "p": 2,
+  "s": "here'spuzzlefor"
+ },
+ {
+  "p": 2,
+  "s": "insightsohere's"
+ },
+ {
+  "p": 2,
+  "s": "into an ongoing"
+ },
+ {
+  "p": 2,
+  "s": "into-an-ongoing"
+ },
+ {
+  "p": 2,
+  "s": "isstillrequired"
+ },
+ {
+  "p": 2,
+  "s": "itintoanongoing"
+ },
+ {
+  "p": 2,
+  "s": "itself requires"
+ },
+ {
+  "p": 2,
+  "s": "itself-requires"
+ },
+ {
+  "p": 2,
+  "s": "kTimesG Bitcoin"
+ },
+ {
+  "p": 2,
+  "s": "kTimesG-Bitcoin"
+ },
+ {
+  "p": 2,
+  "s": "key recovery We"
+ },
+ {
+  "p": 2,
+  "s": "key-recovery-We"
+ },
+ {
+  "p": 2,
+  "s": "lost if trusted"
+ },
+ {
+  "p": 2,
+  "s": "lost-if-trusted"
+ },
+ {
+  "p": 2,
+  "s": "mainbenefitsare"
+ },
+ {
+  "p": 2,
+  "s": "measuringitinto"
+ },
+ {
+  "p": 2,
+  "s": "not only serves"
+ },
+ {
+  "p": 2,
+  "s": "not-only-serves"
+ },
+ {
+  "p": 2,
+  "s": "notonlyservesas"
+ },
+ {
+  "p": 2,
+  "s": "of the sequence"
+ },
+ {
+  "p": 2,
+  "s": "of the solution"
+ },
+ {
+  "p": 2,
+  "s": "of-the-sequence"
+ },
+ {
+  "p": 2,
+  "s": "of-the-solution"
+ },
+ {
+  "p": 2,
+  "s": "ofmodularvalues"
+ },
+ {
+  "p": 2,
+  "s": "ofthesequenceof"
+ },
+ {
+  "p": 2,
+  "s": "online payments"
+ },
+ {
+  "p": 2,
+  "s": "online-payments"
+ },
+ {
+  "p": 2,
+  "s": "prevent private"
+ },
+ {
+  "p": 2,
+  "s": "prevent-private"
+ },
+ {
+  "p": 2,
+  "s": "proposesolution"
+ },
+ {
+  "p": 2,
+  "s": "provide part of"
+ },
+ {
+  "p": 2,
+  "s": "provide-part-of"
+ },
+ {
+  "p": 2,
+  "s": "requiresminimal"
+ },
+ {
+  "p": 2,
+  "s": "reserve banking"
+ },
+ {
+  "p": 2,
+  "s": "reserve-banking"
+ },
+ {
+  "p": 2,
+  "s": "serves as proof"
+ },
+ {
+  "p": 2,
+  "s": "serves-as-proof"
+ },
+ {
+  "p": 2,
+  "s": "servesasproofof"
+ },
+ {
+  "p": 2,
+  "s": "sight so here's"
+ },
+ {
+  "p": 2,
+  "s": "sight-so-here's"
+ },
+ {
+  "p": 2,
+  "s": "since looks bad"
+ },
+ {
+  "p": 2,
+  "s": "since-looks-bad"
+ },
+ {
+  "p": 2,
+  "s": "solution to the"
+ },
+ {
+  "p": 2,
+  "s": "solution-to-the"
+ },
+ {
+  "p": 2,
+  "s": "stillrequiredto"
+ },
+ {
+  "p": 2,
+  "s": "thatitservesthe"
+ },
+ {
+  "p": 2,
+  "s": "the sequence of"
+ },
+ {
+  "p": 2,
+  "s": "the-sequence-of"
+ },
+ {
+  "p": 2,
+  "s": "thechainnotonly"
+ },
+ {
+  "p": 2,
+  "s": "themainbenefits"
+ },
+ {
+  "p": 2,
+  "s": "theproblemusing"
+ },
+ {
+  "p": 2,
+  "s": "weeklyfallsince"
+ },
+ {
+  "p": 2,
+  "s": "without redoing"
+ },
+ {
+  "p": 2,
+  "s": "without-redoing"
+ },
+ {
+  "p": 2,
+  "s": "an ongoing chain"
+ },
+ {
+  "p": 2,
+  "s": "an-ongoing-chain"
+ },
+ {
+  "p": 2,
+  "s": "anongoingchainof"
+ },
+ {
+  "p": 2,
+  "s": "arelostiftrusted"
+ },
+ {
+  "p": 2,
+  "s": "bad this bearish"
+ },
+ {
+  "p": 2,
+  "s": "bad-this-bearish"
+ },
+ {
+  "p": 2,
+  "s": "be sent directly"
+ },
+ {
+  "p": 2,
+  "s": "be-sent-directly"
+ },
+ {
+  "p": 2,
+  "s": "bechangedwithout"
+ },
+ {
+  "p": 2,
+  "s": "cycle around and"
+ },
+ {
+  "p": 2,
+  "s": "cycle-around-and"
+ },
+ {
+  "p": 2,
+  "s": "cyclearoundandno"
+ },
+ {
+  "p": 2,
+  "s": "events witnessed"
+ },
+ {
+  "p": 2,
+  "s": "events-witnessed"
+ },
+ {
+  "p": 2,
+  "s": "fall since looks"
+ },
+ {
+  "p": 2,
+  "s": "fall-since-looks"
+ },
+ {
+  "p": 2,
+  "s": "has worst weekly"
+ },
+ {
+  "p": 2,
+  "s": "has-worst-weekly"
+ },
+ {
+  "p": 2,
+  "s": "if trusted third"
+ },
+ {
+  "p": 2,
+  "s": "if-trusted-third"
+ },
+ {
+  "p": 2,
+  "s": "itservesthechain"
+ },
+ {
+  "p": 2,
+  "s": "minimalstructure"
+ },
+ {
+  "p": 2,
+  "s": "no loose ends no"
+ },
+ {
+  "p": 2,
+  "s": "no-loose-ends-no"
+ },
+ {
+  "p": 2,
+  "s": "ofthesolutionbut"
+ },
+ {
+  "p": 2,
+  "s": "ongoing chain of"
+ },
+ {
+  "p": 2,
+  "s": "ongoing-chain-of"
+ },
+ {
+  "p": 2,
+  "s": "onlinepaymentsto"
+ },
+ {
+  "p": 2,
+  "s": "party to another"
+ },
+ {
+  "p": 2,
+  "s": "party-to-another"
+ },
+ {
+  "p": 2,
+  "s": "paymentstobesent"
+ },
+ {
+  "p": 2,
+  "s": "propose solution"
+ },
+ {
+  "p": 2,
+  "s": "propose-solution"
+ },
+ {
+  "p": 2,
+  "s": "providepartofthe"
+ },
+ {
+  "p": 2,
+  "s": "purelyp2pversion"
+ },
+ {
+  "p": 2,
+  "s": "recordthatcannot"
+ },
+ {
+  "p": 2,
+  "s": "requires minimal"
+ },
+ {
+  "p": 2,
+  "s": "requires-minimal"
+ },
+ {
+  "p": 2,
+  "s": "sentdirectlyfrom"
+ },
+ {
+  "p": 2,
+  "s": "sequenceofevents"
+ },
+ {
+  "p": 2,
+  "s": "serves the chain"
+ },
+ {
+  "p": 2,
+  "s": "serves-the-chain"
+ },
+ {
+  "p": 2,
+  "s": "so here's puzzle"
+ },
+ {
+  "p": 2,
+  "s": "so-here's-puzzle"
+ },
+ {
+  "p": 2,
+  "s": "solution but the"
+ },
+ {
+  "p": 2,
+  "s": "solution-but-the"
+ },
+ {
+  "p": 2,
+  "s": "the solution but"
+ },
+ {
+  "p": 2,
+  "s": "the-solution-but"
+ },
+ {
+  "p": 2,
+  "s": "thenetworkitself"
+ },
+ {
+  "p": 2,
+  "s": "thisbearishcycle"
+ },
+ {
+  "p": 2,
+  "s": "toanotherwithout"
+ },
+ {
+  "p": 2,
+  "s": "tobesentdirectly"
+ },
+ {
+  "p": 2,
+  "s": "topreventprivate"
+ },
+ {
+  "p": 2,
+  "s": "valueswouldallow"
+ },
+ {
+  "p": 2,
+  "s": "versionofmodular"
+ },
+ {
+  "p": 2,
+  "s": "wouldallowonline"
+ },
+ {
+  "p": 2,
+  "s": "Bitcoin has worst"
+ },
+ {
+  "p": 2,
+  "s": "Bitcoin-has-worst"
+ },
+ {
+  "p": 2,
+  "s": "around and no end"
+ },
+ {
+  "p": 2,
+  "s": "around-and-no-end"
+ },
+ {
+  "p": 2,
+  "s": "benefits are lost"
+ },
+ {
+  "p": 2,
+  "s": "benefits-are-lost"
+ },
+ {
+  "p": 2,
+  "s": "benefitsarelostif"
+ },
+ {
+  "p": 2,
+  "s": "but proof that it"
+ },
+ {
+  "p": 2,
+  "s": "but-proof-that-it"
+ },
+ {
+  "p": 2,
+  "s": "cannot be changed"
+ },
+ {
+  "p": 2,
+  "s": "cannot-be-changed"
+ },
+ {
+  "p": 2,
+  "s": "chain The network"
+ },
+ {
+  "p": 2,
+  "s": "chain-The-network"
+ },
+ {
+  "p": 2,
+  "s": "directly from one"
+ },
+ {
+  "p": 2,
+  "s": "directly-from-one"
+ },
+ {
+  "p": 2,
+  "s": "everyone no loose"
+ },
+ {
+  "p": 2,
+  "s": "everyone-no-loose"
+ },
+ {
+  "p": 2,
+  "s": "fallsincelooksbad"
+ },
+ {
+  "p": 2,
+  "s": "formingrecordthat"
+ },
+ {
+  "p": 2,
+  "s": "fractionalreserve"
+ },
+ {
+  "p": 2,
+  "s": "from one party to"
+ },
+ {
+  "p": 2,
+  "s": "from-one-party-to"
+ },
+ {
+  "p": 2,
+  "s": "going through the"
+ },
+ {
+  "p": 2,
+  "s": "going-through-the"
+ },
+ {
+  "p": 2,
+  "s": "here's puzzle for"
+ },
+ {
+  "p": 2,
+  "s": "here's-puzzle-for"
+ },
+ {
+  "p": 2,
+  "s": "is still required"
+ },
+ {
+  "p": 2,
+  "s": "is-still-required"
+ },
+ {
+  "p": 2,
+  "s": "isstillrequiredto"
+ },
+ {
+  "p": 2,
+  "s": "ktimesgbitcoinhas"
+ },
+ {
+  "p": 2,
+  "s": "main benefits are"
+ },
+ {
+  "p": 2,
+  "s": "main-benefits-are"
+ },
+ {
+  "p": 2,
+  "s": "measuring it into"
+ },
+ {
+  "p": 2,
+  "s": "measuring-it-into"
+ },
+ {
+  "p": 2,
+  "s": "measuringitintoan"
+ },
+ {
+  "p": 2,
+  "s": "minimal structure"
+ },
+ {
+  "p": 2,
+  "s": "minimal-structure"
+ },
+ {
+  "p": 2,
+  "s": "networkthenetwork"
+ },
+ {
+  "p": 2,
+  "s": "of modular values"
+ },
+ {
+  "p": 2,
+  "s": "of-modular-values"
+ },
+ {
+  "p": 2,
+  "s": "ofeventswitnessed"
+ },
+ {
+  "p": 2,
+  "s": "onepartytoanother"
+ },
+ {
+  "p": 2,
+  "s": "onlyservesasproof"
+ },
+ {
+  "p": 2,
+  "s": "partofthesolution"
+ },
+ {
+  "p": 2,
+  "s": "preventprivatekey"
+ },
+ {
+  "p": 2,
+  "s": "proofthatitserves"
+ },
+ {
+  "p": 2,
+  "s": "proposesolutionto"
+ },
+ {
+  "p": 2,
+  "s": "puzzleforeveryone"
+ },
+ {
+  "p": 2,
+  "s": "recoverywepropose"
+ },
+ {
+  "p": 2,
+  "s": "requiredtoprevent"
+ },
+ {
+  "p": 2,
+  "s": "servesthechainthe"
+ },
+ {
+  "p": 2,
+  "s": "signaturesprovide"
+ },
+ {
+  "p": 2,
+  "s": "sincelooksbadthis"
+ },
+ {
+  "p": 2,
+  "s": "sohere'spuzzlefor"
+ },
+ {
+  "p": 2,
+  "s": "still required to"
+ },
+ {
+  "p": 2,
+  "s": "still-required-to"
+ },
+ {
+  "p": 2,
+  "s": "the main benefits"
+ },
+ {
+  "p": 2,
+  "s": "the problem using"
+ },
+ {
+  "p": 2,
+  "s": "the-main-benefits"
+ },
+ {
+  "p": 2,
+  "s": "the-problem-using"
+ },
+ {
+  "p": 2,
+  "s": "thektimesgbitcoin"
+ },
+ {
+  "p": 2,
+  "s": "thesolutionbutthe"
+ },
+ {
+  "p": 2,
+  "s": "thirdpartyisstill"
+ },
+ {
+  "p": 2,
+  "s": "totheproblemusing"
+ },
+ {
+  "p": 2,
+  "s": "usingpeer-to-peer"
+ },
+ {
+  "p": 2,
+  "s": "weekly fall since"
+ },
+ {
+  "p": 2,
+  "s": "weekly-fall-since"
+ },
+ {
+  "p": 2,
+  "s": "weproposesolution"
+ },
+ {
+  "p": 2,
+  "s": "withoutredoingthe"
+ },
+ {
+  "p": 2,
+  "s": "witnessedbutproof"
+ },
+ {
+  "p": 2,
+  "s": "Digital-signatures"
+ },
+ {
+  "p": 2,
+  "s": "The chain not only"
+ },
+ {
+  "p": 2,
+  "s": "The network itself"
+ },
+ {
+  "p": 2,
+  "s": "The-chain-not-only"
+ },
+ {
+  "p": 2,
+  "s": "The-network-itself"
+ },
+ {
+  "p": 2,
+  "s": "be changed without"
+ },
+ {
+  "p": 2,
+  "s": "be-changed-without"
+ },
+ {
+  "p": 2,
+  "s": "bearishcyclearound"
+ },
+ {
+  "p": 2,
+  "s": "besentdirectlyfrom"
+ },
+ {
+  "p": 2,
+  "s": "butthemainbenefits"
+ },
+ {
+  "p": 2,
+  "s": "carefullymeasuring"
+ },
+ {
+  "p": 2,
+  "s": "chainnotonlyserves"
+ },
+ {
+  "p": 2,
+  "s": "chainofphylo-based"
+ },
+ {
+  "p": 2,
+  "s": "eventswitnessedbut"
+ },
+ {
+  "p": 2,
+  "s": "foreveryonenoloose"
+ },
+ {
+  "p": 2,
+  "s": "fractional reserve"
+ },
+ {
+  "p": 2,
+  "s": "fractional-reserve"
+ },
+ {
+  "p": 2,
+  "s": "hasworstweeklyfall"
+ },
+ {
+  "p": 2,
+  "s": "in sight so here's"
+ },
+ {
+  "p": 2,
+  "s": "in-sight-so-here's"
+ },
+ {
+  "p": 2,
+  "s": "intoanongoingchain"
+ },
+ {
+  "p": 2,
+  "s": "it into an ongoing"
+ },
+ {
+  "p": 2,
+  "s": "it-into-an-ongoing"
+ },
+ {
+  "p": 2,
+  "s": "looseendsnohashing"
+ },
+ {
+  "p": 2,
+  "s": "lostiftrustedthird"
+ },
+ {
+  "p": 2,
+  "s": "modularvalueswould"
+ },
+ {
+  "p": 2,
+  "s": "networkspacestamps"
+ },
+ {
+  "p": 2,
+  "s": "not only serves as"
+ },
+ {
+  "p": 2,
+  "s": "not-only-serves-as"
+ },
+ {
+  "p": 2,
+  "s": "of the sequence of"
+ },
+ {
+  "p": 2,
+  "s": "of-the-sequence-of"
+ },
+ {
+  "p": 2,
+  "s": "online payments to"
+ },
+ {
+  "p": 2,
+  "s": "online-payments-to"
+ },
+ {
+  "p": 2,
+  "s": "onlinepaymentstobe"
+ },
+ {
+  "p": 2,
+  "s": "proofofthesequence"
+ },
+ {
+  "p": 2,
+  "s": "purely P2P version"
+ },
+ {
+  "p": 2,
+  "s": "purely-P2P-version"
+ },
+ {
+  "p": 2,
+  "s": "purelyp2pversionof"
+ },
+ {
+  "p": 2,
+  "s": "record that cannot"
+ },
+ {
+  "p": 2,
+  "s": "record-that-cannot"
+ },
+ {
+  "p": 2,
+  "s": "recordthatcannotbe"
+ },
+ {
+  "p": 2,
+  "s": "sent directly from"
+ },
+ {
+  "p": 2,
+  "s": "sent-directly-from"
+ },
+ {
+  "p": 2,
+  "s": "sequence of events"
+ },
+ {
+  "p": 2,
+  "s": "sequence-of-events"
+ },
+ {
+  "p": 2,
+  "s": "serves as proof of"
+ },
+ {
+  "p": 2,
+  "s": "serves-as-proof-of"
+ },
+ {
+  "p": 2,
+  "s": "signatures provide"
+ },
+ {
+  "p": 2,
+  "s": "signatures-provide"
+ },
+ {
+  "p": 2,
+  "s": "solutionbutthemain"
+ },
+ {
+  "p": 2,
+  "s": "that it serves the"
+ },
+ {
+  "p": 2,
+  "s": "that-it-serves-the"
+ },
+ {
+  "p": 2,
+  "s": "thechainthenetwork"
+ },
+ {
+  "p": 2,
+  "s": "themainbenefitsare"
+ },
+ {
+  "p": 2,
+  "s": "this bearish cycle"
+ },
+ {
+  "p": 2,
+  "s": "this-bearish-cycle"
+ },
+ {
+  "p": 2,
+  "s": "to another without"
+ },
+ {
+  "p": 2,
+  "s": "to prevent private"
+ },
+ {
+  "p": 2,
+  "s": "to-another-without"
+ },
+ {
+  "p": 2,
+  "s": "to-prevent-private"
+ },
+ {
+  "p": 2,
+  "s": "using peer-to-peer"
+ },
+ {
+  "p": 2,
+  "s": "using-peer-to-peer"
+ },
+ {
+  "p": 2,
+  "s": "values would allow"
+ },
+ {
+  "p": 2,
+  "s": "values-would-allow"
+ },
+ {
+  "p": 2,
+  "s": "version of modular"
+ },
+ {
+  "p": 2,
+  "s": "version-of-modular"
+ },
+ {
+  "p": 2,
+  "s": "would allow online"
+ },
+ {
+  "p": 2,
+  "s": "would-allow-online"
+ },
+ {
+  "p": 2,
+  "s": "The kTimesG Bitcoin"
+ },
+ {
+  "p": 2,
+  "s": "The-kTimesG-Bitcoin"
+ },
+ {
+  "p": 2,
+  "s": "We propose solution"
+ },
+ {
+  "p": 2,
+  "s": "We-propose-solution"
+ },
+ {
+  "p": 2,
+  "s": "allowonlinepayments"
+ },
+ {
+  "p": 2,
+  "s": "an ongoing chain of"
+ },
+ {
+  "p": 2,
+  "s": "an-ongoing-chain-of"
+ },
+ {
+  "p": 2,
+  "s": "anotherwithoutgoing"
+ },
+ {
+  "p": 2,
+  "s": "are lost if trusted"
+ },
+ {
+  "p": 2,
+  "s": "are-lost-if-trusted"
+ },
+ {
+  "p": 2,
+  "s": "badthisbearishcycle"
+ },
+ {
+  "p": 2,
+  "s": "carefully measuring"
+ },
+ {
+  "p": 2,
+  "s": "carefully-measuring"
+ },
+ {
+  "p": 2,
+  "s": "cycle around and no"
+ },
+ {
+  "p": 2,
+  "s": "cycle-around-and-no"
+ },
+ {
+  "p": 2,
+  "s": "everyonenolooseends"
+ },
+ {
+  "p": 2,
+  "s": "forming record that"
+ },
+ {
+  "p": 2,
+  "s": "forming-record-that"
+ },
+ {
+  "p": 2,
+  "s": "iftrustedthirdparty"
+ },
+ {
+  "p": 2,
+  "s": "it serves the chain"
+ },
+ {
+  "p": 2,
+  "s": "it-serves-the-chain"
+ },
+ {
+  "p": 2,
+  "s": "kTimesG Bitcoin has"
+ },
+ {
+  "p": 2,
+  "s": "kTimesG-Bitcoin-has"
+ },
+ {
+  "p": 2,
+  "s": "looksbadthisbearish"
+ },
+ {
+  "p": 2,
+  "s": "mainbenefitsarelost"
+ },
+ {
+  "p": 2,
+  "s": "minimalstructurethe"
+ },
+ {
+  "p": 2,
+  "s": "network The network"
+ },
+ {
+  "p": 2,
+  "s": "network spacestamps"
+ },
+ {
+  "p": 2,
+  "s": "network-The-network"
+ },
+ {
+  "p": 2,
+  "s": "network-spacestamps"
+ },
+ {
+  "p": 2,
+  "s": "of events witnessed"
+ },
+ {
+  "p": 2,
+  "s": "of the solution but"
+ },
+ {
+  "p": 2,
+  "s": "of-events-witnessed"
+ },
+ {
+  "p": 2,
+  "s": "of-the-solution-but"
+ },
+ {
+  "p": 2,
+  "s": "p2pversionofmodular"
+ },
+ {
+  "p": 2,
+  "s": "payments to be sent"
+ },
+ {
+  "p": 2,
+  "s": "payments-to-be-sent"
+ },
+ {
+  "p": 2,
+  "s": "peer-to-peernetwork"
+ },
+ {
+  "p": 2,
+  "s": "prevent private key"
+ },
+ {
+  "p": 2,
+  "s": "prevent-private-key"
+ },
+ {
+  "p": 2,
+  "s": "propose solution to"
+ },
+ {
+  "p": 2,
+  "s": "propose-solution-to"
+ },
+ {
+  "p": 2,
+  "s": "provide part of the"
+ },
+ {
+  "p": 2,
+  "s": "provide-part-of-the"
+ },
+ {
+  "p": 2,
+  "s": "puzzle for everyone"
+ },
+ {
+  "p": 2,
+  "s": "puzzle-for-everyone"
+ },
+ {
+  "p": 2,
+  "s": "puzzleforeveryoneno"
+ },
+ {
+  "p": 2,
+  "s": "recovery We propose"
+ },
+ {
+  "p": 2,
+  "s": "recovery-We-propose"
+ },
+ {
+  "p": 2,
+  "s": "required to prevent"
+ },
+ {
+  "p": 2,
+  "s": "required-to-prevent"
+ },
+ {
+  "p": 2,
+  "s": "sentdirectlyfromone"
+ },
+ {
+  "p": 2,
+  "s": "sightsohere'spuzzle"
+ },
+ {
+  "p": 2,
+  "s": "structurethektimesg"
+ },
+ {
+  "p": 2,
+  "s": "thatcannotbechanged"
+ },
+ {
+  "p": 2,
+  "s": "thesequenceofevents"
+ },
+ {
+  "p": 2,
+  "s": "to be sent directly"
+ },
+ {
+  "p": 2,
+  "s": "to-be-sent-directly"
+ },
+ {
+  "p": 2,
+  "s": "topreventprivatekey"
+ },
+ {
+  "p": 2,
+  "s": "trustedthirdpartyis"
+ },
+ {
+  "p": 2,
+  "s": "weproposesolutionto"
+ },
+ {
+  "p": 2,
+  "s": "without redoing the"
+ },
+ {
+  "p": 2,
+  "s": "without-redoing-the"
+ },
+ {
+  "p": 2,
+  "s": "withoutgoingthrough"
+ },
+ {
+  "p": 2,
+  "s": "witnessed but proof"
+ },
+ {
+  "p": 2,
+  "s": "witnessed-but-proof"
+ },
+ {
+  "p": 2,
+  "s": "bankingsystemdigital"
+ },
+ {
+  "p": 2,
+  "s": "bearish cycle around"
+ },
+ {
+  "p": 2,
+  "s": "bearish-cycle-around"
+ },
+ {
+  "p": 2,
+  "s": "benefits are lost if"
+ },
+ {
+  "p": 2,
+  "s": "benefits-are-lost-if"
+ },
+ {
+  "p": 2,
+  "s": "bycarefullymeasuring"
+ },
+ {
+  "p": 2,
+  "s": "carefullymeasuringit"
+ },
+ {
+  "p": 2,
+  "s": "chain of phylo-based"
+ },
+ {
+  "p": 2,
+  "s": "chain-of-phylo-based"
+ },
+ {
+  "p": 2,
+  "s": "directlyfromoneparty"
+ },
+ {
+  "p": 2,
+  "s": "events witnessed but"
+ },
+ {
+  "p": 2,
+  "s": "events-witnessed-but"
+ },
+ {
+  "p": 2,
+  "s": "fall since looks bad"
+ },
+ {
+  "p": 2,
+  "s": "fall-since-looks-bad"
+ },
+ {
+  "p": 2,
+  "s": "is still required to"
+ },
+ {
+  "p": 2,
+  "s": "is-still-required-to"
+ },
+ {
+  "p": 2,
+  "s": "keyrecoverywepropose"
+ },
+ {
+  "p": 2,
+  "s": "measuring it into an"
+ },
+ {
+  "p": 2,
+  "s": "measuring-it-into-an"
+ },
+ {
+  "p": 2,
+  "s": "modular values would"
+ },
+ {
+  "p": 2,
+  "s": "modular-values-would"
+ },
+ {
+  "p": 2,
+  "s": "ofeventswitnessedbut"
+ },
+ {
+  "p": 2,
+  "s": "ofmodularvalueswould"
+ },
+ {
+  "p": 2,
+  "s": "one party to another"
+ },
+ {
+  "p": 2,
+  "s": "one-party-to-another"
+ },
+ {
+  "p": 2,
+  "s": "only serves as proof"
+ },
+ {
+  "p": 2,
+  "s": "only-serves-as-proof"
+ },
+ {
+  "p": 2,
+  "s": "part of the solution"
+ },
+ {
+  "p": 2,
+  "s": "part-of-the-solution"
+ },
+ {
+  "p": 2,
+  "s": "partyisstillrequired"
+ },
+ {
+  "p": 2,
+  "s": "peer-to-peer network"
+ },
+ {
+  "p": 2,
+  "s": "peer-to-peer-network"
+ },
+ {
+  "p": 2,
+  "s": "privatekeyrecoverywe"
+ },
+ {
+  "p": 2,
+  "s": "proof that it serves"
+ },
+ {
+  "p": 2,
+  "s": "proof-that-it-serves"
+ },
+ {
+  "p": 2,
+  "s": "proposesolutiontothe"
+ },
+ {
+  "p": 2,
+  "s": "reservebankingsystem"
+ },
+ {
+  "p": 2,
+  "s": "serves the chain The"
+ },
+ {
+  "p": 2,
+  "s": "serves-the-chain-The"
+ },
+ {
+  "p": 2,
+  "s": "since looks bad this"
+ },
+ {
+  "p": 2,
+  "s": "since-looks-bad-this"
+ },
+ {
+  "p": 2,
+  "s": "so here's puzzle for"
+ },
+ {
+  "p": 2,
+  "s": "so-here's-puzzle-for"
+ },
+ {
+  "p": 2,
+  "s": "solutiontotheproblem"
+ },
+ {
+  "p": 2,
+  "s": "the solution but the"
+ },
+ {
+  "p": 2,
+  "s": "the-solution-but-the"
+ },
+ {
+  "p": 2,
+  "s": "thefractionalreserve"
+ },
+ {
+  "p": 2,
+  "s": "thektimesgbitcoinhas"
+ },
+ {
+  "p": 2,
+  "s": "third party is still"
+ },
+ {
+  "p": 2,
+  "s": "third-party-is-still"
+ },
+ {
+  "p": 2,
+  "s": "throughthefractional"
+ },
+ {
+  "p": 2,
+  "s": "to the problem using"
+ },
+ {
+  "p": 2,
+  "s": "to-the-problem-using"
+ },
+ {
+  "p": 2,
+  "s": "weeklyfallsincelooks"
+ },
+ {
+  "p": 2,
+  "s": "worstweeklyfallsince"
+ },
+ {
+  "p": 2,
+  "s": "allow online payments"
+ },
+ {
+  "p": 2,
+  "s": "allow-online-payments"
+ },
+ {
+  "p": 2,
+  "s": "allowonlinepaymentsto"
+ },
+ {
+  "p": 2,
+  "s": "another without going"
+ },
+ {
+  "p": 2,
+  "s": "another-without-going"
+ },
+ {
+  "p": 2,
+  "s": "be sent directly from"
+ },
+ {
+  "p": 2,
+  "s": "be-sent-directly-from"
+ },
+ {
+  "p": 2,
+  "s": "bearishcyclearoundand"
+ },
+ {
+  "p": 2,
+  "s": "bitcoinhasworstweekly"
+ },
+ {
+  "p": 2,
+  "s": "but the main benefits"
+ },
+ {
+  "p": 2,
+  "s": "but-the-main-benefits"
+ },
+ {
+  "p": 2,
+  "s": "chain not only serves"
+ },
+ {
+  "p": 2,
+  "s": "chain-not-only-serves"
+ },
+ {
+  "p": 2,
+  "s": "chainthenetworkitself"
+ },
+ {
+  "p": 2,
+  "s": "changedwithoutredoing"
+ },
+ {
+  "p": 2,
+  "s": "for everyone no loose"
+ },
+ {
+  "p": 2,
+  "s": "for-everyone-no-loose"
+ },
+ {
+  "p": 2,
+  "s": "has worst weekly fall"
+ },
+ {
+  "p": 2,
+  "s": "has-worst-weekly-fall"
+ },
+ {
+  "p": 2,
+  "s": "into an ongoing chain"
+ },
+ {
+  "p": 2,
+  "s": "into-an-ongoing-chain"
+ },
+ {
+  "p": 2,
+  "s": "itselfrequiresminimal"
+ },
+ {
+  "p": 2,
+  "s": "loose ends no hashing"
+ },
+ {
+  "p": 2,
+  "s": "loose-ends-no-hashing"
+ },
+ {
+  "p": 2,
+  "s": "lost if trusted third"
+ },
+ {
+  "p": 2,
+  "s": "lost-if-trusted-third"
+ },
+ {
+  "p": 2,
+  "s": "minimal structure The"
+ },
+ {
+  "p": 2,
+  "s": "minimal-structure-The"
+ },
+ {
+  "p": 2,
+  "s": "networkitselfrequires"
+ },
+ {
+  "p": 2,
+  "s": "online payments to be"
+ },
+ {
+  "p": 2,
+  "s": "online-payments-to-be"
+ },
+ {
+  "p": 2,
+  "s": "partytoanotherwithout"
+ },
+ {
+  "p": 2,
+  "s": "proof of the sequence"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-the-sequence"
+ },
+ {
+  "p": 2,
+  "s": "purely P2P version of"
+ },
+ {
+  "p": 2,
+  "s": "purely-P2P-version-of"
+ },
+ {
+  "p": 2,
+  "s": "record that cannot be"
+ },
+ {
+  "p": 2,
+  "s": "record-that-cannot-be"
+ },
+ {
+  "p": 2,
+  "s": "signaturesprovidepart"
+ },
+ {
+  "p": 2,
+  "s": "solution but the main"
+ },
+ {
+  "p": 2,
+  "s": "solution-but-the-main"
+ },
+ {
+  "p": 2,
+  "s": "structure The kTimesG"
+ },
+ {
+  "p": 2,
+  "s": "structure-The-kTimesG"
+ },
+ {
+  "p": 2,
+  "s": "the chain The network"
+ },
+ {
+  "p": 2,
+  "s": "the main benefits are"
+ },
+ {
+  "p": 2,
+  "s": "the-chain-The-network"
+ },
+ {
+  "p": 2,
+  "s": "the-main-benefits-are"
+ },
+ {
+  "p": 2,
+  "s": "thenetworkspacestamps"
+ },
+ {
+  "p": 2,
+  "s": "toanotherwithoutgoing"
+ },
+ {
+  "p": 2,
+  "s": "without going through"
+ },
+ {
+  "p": 2,
+  "s": "without-going-through"
+ },
+ {
+  "p": 2,
+  "s": "witnessedbutproofthat"
+ },
+ {
+  "p": 2,
+  "s": "P2P version of modular"
+ },
+ {
+  "p": 2,
+  "s": "P2P-version-of-modular"
+ },
+ {
+  "p": 2,
+  "s": "We propose solution to"
+ },
+ {
+  "p": 2,
+  "s": "We-propose-solution-to"
+ },
+ {
+  "p": 2,
+  "s": "bad this bearish cycle"
+ },
+ {
+  "p": 2,
+  "s": "bad-this-bearish-cycle"
+ },
+ {
+  "p": 2,
+  "s": "banking system Digital"
+ },
+ {
+  "p": 2,
+  "s": "banking-system-Digital"
+ },
+ {
+  "p": 2,
+  "s": "by carefully measuring"
+ },
+ {
+  "p": 2,
+  "s": "by-carefully-measuring"
+ },
+ {
+  "p": 2,
+  "s": "bycarefullymeasuringit"
+ },
+ {
+  "p": 2,
+  "s": "cannotbechangedwithout"
+ },
+ {
+  "p": 2,
+  "s": "carefully measuring it"
+ },
+ {
+  "p": 2,
+  "s": "carefully-measuring-it"
+ },
+ {
+  "p": 2,
+  "s": "everyone no loose ends"
+ },
+ {
+  "p": 2,
+  "s": "everyone-no-loose-ends"
+ },
+ {
+  "p": 2,
+  "s": "if trusted third party"
+ },
+ {
+  "p": 2,
+  "s": "if-trusted-third-party"
+ },
+ {
+  "p": 2,
+  "s": "informationbycarefully"
+ },
+ {
+  "p": 2,
+  "s": "ktimesgbitcoinhasworst"
+ },
+ {
+  "p": 2,
+  "s": "looks bad this bearish"
+ },
+ {
+  "p": 2,
+  "s": "looks-bad-this-bearish"
+ },
+ {
+  "p": 2,
+  "s": "main benefits are lost"
+ },
+ {
+  "p": 2,
+  "s": "main-benefits-are-lost"
+ },
+ {
+  "p": 2,
+  "s": "peer-to-peernetworkthe"
+ },
+ {
+  "p": 2,
+  "s": "puzzle for everyone no"
+ },
+ {
+  "p": 2,
+  "s": "puzzle-for-everyone-no"
+ },
+ {
+  "p": 2,
+  "s": "reserve banking system"
+ },
+ {
+  "p": 2,
+  "s": "reserve-banking-system"
+ },
+ {
+  "p": 2,
+  "s": "sent directly from one"
+ },
+ {
+  "p": 2,
+  "s": "sent-directly-from-one"
+ },
+ {
+  "p": 2,
+  "s": "sight so here's puzzle"
+ },
+ {
+  "p": 2,
+  "s": "sight-so-here's-puzzle"
+ },
+ {
+  "p": 2,
+  "s": "spacestampsinformation"
+ },
+ {
+  "p": 2,
+  "s": "stillrequiredtoprevent"
+ },
+ {
+  "p": 2,
+  "s": "that cannot be changed"
+ },
+ {
+  "p": 2,
+  "s": "that-cannot-be-changed"
+ },
+ {
+  "p": 2,
+  "s": "the fractional reserve"
+ },
+ {
+  "p": 2,
+  "s": "the sequence of events"
+ },
+ {
+  "p": 2,
+  "s": "the-fractional-reserve"
+ },
+ {
+  "p": 2,
+  "s": "the-sequence-of-events"
+ },
+ {
+  "p": 2,
+  "s": "thisbearishcyclearound"
+ },
+ {
+  "p": 2,
+  "s": "through the fractional"
+ },
+ {
+  "p": 2,
+  "s": "through-the-fractional"
+ },
+ {
+  "p": 2,
+  "s": "to prevent private key"
+ },
+ {
+  "p": 2,
+  "s": "to-prevent-private-key"
+ },
+ {
+  "p": 2,
+  "s": "trusted third party is"
+ },
+ {
+  "p": 2,
+  "s": "trusted-third-party-is"
+ },
+ {
+  "p": 2,
+  "s": "valueswouldallowonline"
+ },
+ {
+  "p": 2,
+  "s": "versionofmodularvalues"
+ },
+ {
+  "p": 2,
+  "s": "withoutgoingthroughthe"
+ },
+ {
+  "p": 2,
+  "s": "The kTimesG Bitcoin has"
+ },
+ {
+  "p": 2,
+  "s": "The network spacestamps"
+ },
+ {
+  "p": 2,
+  "s": "The-kTimesG-Bitcoin-has"
+ },
+ {
+  "p": 2,
+  "s": "The-network-spacestamps"
+ },
+ {
+  "p": 2,
+  "s": "bechangedwithoutredoing"
+ },
+ {
+  "p": 2,
+  "s": "changed without redoing"
+ },
+ {
+  "p": 2,
+  "s": "changed-without-redoing"
+ },
+ {
+  "p": 2,
+  "s": "directly from one party"
+ },
+ {
+  "p": 2,
+  "s": "directly-from-one-party"
+ },
+ {
+  "p": 2,
+  "s": "eventswitnessedbutproof"
+ },
+ {
+  "p": 2,
+  "s": "formingrecordthatcannot"
+ },
+ {
+  "p": 2,
+  "s": "here'spuzzleforeveryone"
+ },
+ {
+  "p": 2,
+  "s": "itself requires minimal"
+ },
+ {
+  "p": 2,
+  "s": "itself-requires-minimal"
+ },
+ {
+  "p": 2,
+  "s": "key recovery We propose"
+ },
+ {
+  "p": 2,
+  "s": "key-recovery-We-propose"
+ },
+ {
+  "p": 2,
+  "s": "modularvalueswouldallow"
+ },
+ {
+  "p": 2,
+  "s": "network itself requires"
+ },
+ {
+  "p": 2,
+  "s": "network-itself-requires"
+ },
+ {
+  "p": 2,
+  "s": "of events witnessed but"
+ },
+ {
+  "p": 2,
+  "s": "of modular values would"
+ },
+ {
+  "p": 2,
+  "s": "of-events-witnessed-but"
+ },
+ {
+  "p": 2,
+  "s": "of-modular-values-would"
+ },
+ {
+  "p": 2,
+  "s": "party is still required"
+ },
+ {
+  "p": 2,
+  "s": "party-is-still-required"
+ },
+ {
+  "p": 2,
+  "s": "private key recovery We"
+ },
+ {
+  "p": 2,
+  "s": "private-key-recovery-We"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-equivalencethe"
+ },
+ {
+  "p": 2,
+  "s": "propose solution to the"
+ },
+ {
+  "p": 2,
+  "s": "propose-solution-to-the"
+ },
+ {
+  "p": 2,
+  "s": "signatures provide part"
+ },
+ {
+  "p": 2,
+  "s": "signatures-provide-part"
+ },
+ {
+  "p": 2,
+  "s": "signaturesprovidepartof"
+ },
+ {
+  "p": 2,
+  "s": "solution to the problem"
+ },
+ {
+  "p": 2,
+  "s": "solution-to-the-problem"
+ },
+ {
+  "p": 2,
+  "s": "spacestamps information"
+ },
+ {
+  "p": 2,
+  "s": "spacestamps-information"
+ },
+ {
+  "p": 2,
+  "s": "systemdigitalsignatures"
+ },
+ {
+  "p": 2,
+  "s": "theproof-of-equivalence"
+ },
+ {
+  "p": 2,
+  "s": "weekly fall since looks"
+ },
+ {
+  "p": 2,
+  "s": "weekly-fall-since-looks"
+ },
+ {
+  "p": 2,
+  "s": "worst weekly fall since"
+ },
+ {
+  "p": 2,
+  "s": "worst-weekly-fall-since"
+ },
+ {
+  "p": 2,
+  "s": "Bitcoin has worst weekly"
+ },
+ {
+  "p": 2,
+  "s": "Bitcoin-has-worst-weekly"
+ },
+ {
+  "p": 2,
+  "s": "allow online payments to"
+ },
+ {
+  "p": 2,
+  "s": "allow-online-payments-to"
+ },
+ {
+  "p": 2,
+  "s": "bearish cycle around and"
+ },
+ {
+  "p": 2,
+  "s": "bearish-cycle-around-and"
+ },
+ {
+  "p": 2,
+  "s": "carefullymeasuringitinto"
+ },
+ {
+  "p": 2,
+  "s": "chain The network itself"
+ },
+ {
+  "p": 2,
+  "s": "chain-The-network-itself"
+ },
+ {
+  "p": 2,
+  "s": "changedwithoutredoingthe"
+ },
+ {
+  "p": 2,
+  "s": "digitalsignaturesprovide"
+ },
+ {
+  "p": 2,
+  "s": "information by carefully"
+ },
+ {
+  "p": 2,
+  "s": "information-by-carefully"
+ },
+ {
+  "p": 2,
+  "s": "party to another without"
+ },
+ {
+  "p": 2,
+  "s": "party-to-another-without"
+ },
+ {
+  "p": 2,
+  "s": "peer-to-peer network The"
+ },
+ {
+  "p": 2,
+  "s": "peer-to-peer-network-The"
+ },
+ {
+  "p": 2,
+  "s": "problemusingpeer-to-peer"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-equivalence The"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-equivalence-The"
+ },
+ {
+  "p": 2,
+  "s": "requiredtopreventprivate"
+ },
+ {
+  "p": 2,
+  "s": "requiresminimalstructure"
+ },
+ {
+  "p": 2,
+  "s": "spacestampsinformationby"
+ },
+ {
+  "p": 2,
+  "s": "the proof-of-equivalence"
+ },
+ {
+  "p": 2,
+  "s": "the-proof-of-equivalence"
+ },
+ {
+  "p": 2,
+  "s": "thenetworkitselfrequires"
+ },
+ {
+  "p": 2,
+  "s": "to another without going"
+ },
+ {
+  "p": 2,
+  "s": "to-another-without-going"
+ },
+ {
+  "p": 2,
+  "s": "usingpeer-to-peernetwork"
+ },
+ {
+  "p": 2,
+  "s": "witnessed but proof that"
+ },
+ {
+  "p": 2,
+  "s": "witnessed-but-proof-that"
+ },
+ {
+  "p": 2,
+  "s": "wouldallowonlinepayments"
+ },
+ {
+  "p": 2,
+  "s": "by carefully measuring it"
+ },
+ {
+  "p": 2,
+  "s": "by-carefully-measuring-it"
+ },
+ {
+  "p": 2,
+  "s": "cannot be changed without"
+ },
+ {
+  "p": 2,
+  "s": "cannot-be-changed-without"
+ },
+ {
+  "p": 2,
+  "s": "goingthroughthefractional"
+ },
+ {
+  "p": 2,
+  "s": "kTimesG Bitcoin has worst"
+ },
+ {
+  "p": 2,
+  "s": "kTimesG-Bitcoin-has-worst"
+ },
+ {
+  "p": 2,
+  "s": "ongoingchainofphylo-based"
+ },
+ {
+  "p": 2,
+  "s": "preventprivatekeyrecovery"
+ },
+ {
+  "p": 2,
+  "s": "recoveryweproposesolution"
+ },
+ {
+  "p": 2,
+  "s": "sequenceofeventswitnessed"
+ },
+ {
+  "p": 2,
+  "s": "still required to prevent"
+ },
+ {
+  "p": 2,
+  "s": "still-required-to-prevent"
+ },
+ {
+  "p": 2,
+  "s": "system Digital signatures"
+ },
+ {
+  "p": 2,
+  "s": "system-Digital-signatures"
+ },
+ {
+  "p": 2,
+  "s": "this bearish cycle around"
+ },
+ {
+  "p": 2,
+  "s": "this-bearish-cycle-around"
+ },
+ {
+  "p": 2,
+  "s": "values would allow online"
+ },
+ {
+  "p": 2,
+  "s": "values-would-allow-online"
+ },
+ {
+  "p": 2,
+  "s": "version of modular values"
+ },
+ {
+  "p": 2,
+  "s": "version-of-modular-values"
+ },
+ {
+  "p": 2,
+  "s": "without going through the"
+ },
+ {
+  "p": 2,
+  "s": "without-going-through-the"
+ },
+ {
+  "p": 2,
+  "s": "Digital signatures provide"
+ },
+ {
+  "p": 2,
+  "s": "Digital-signatures-provide"
+ },
+ {
+  "p": 2,
+  "s": "anotherwithoutgoingthrough"
+ },
+ {
+  "p": 2,
+  "s": "be changed without redoing"
+ },
+ {
+  "p": 2,
+  "s": "be-changed-without-redoing"
+ },
+ {
+  "p": 2,
+  "s": "events witnessed but proof"
+ },
+ {
+  "p": 2,
+  "s": "events-witnessed-but-proof"
+ },
+ {
+  "p": 2,
+  "s": "forming record that cannot"
+ },
+ {
+  "p": 2,
+  "s": "forming-record-that-cannot"
+ },
+ {
+  "p": 2,
+  "s": "here's puzzle for everyone"
+ },
+ {
+  "p": 2,
+  "s": "here's-puzzle-for-everyone"
+ },
+ {
+  "p": 2,
+  "s": "minimalstructurethektimesg"
+ },
+ {
+  "p": 2,
+  "s": "modular values would allow"
+ },
+ {
+  "p": 2,
+  "s": "modular-values-would-allow"
+ },
+ {
+  "p": 2,
+  "s": "problem using peer-to-peer"
+ },
+ {
+  "p": 2,
+  "s": "problem-using-peer-to-peer"
+ },
+ {
+  "p": 2,
+  "s": "requires minimal structure"
+ },
+ {
+  "p": 2,
+  "s": "requires-minimal-structure"
+ },
+ {
+  "p": 2,
+  "s": "signatures provide part of"
+ },
+ {
+  "p": 2,
+  "s": "signatures-provide-part-of"
+ },
+ {
+  "p": 2,
+  "s": "spacestamps information by"
+ },
+ {
+  "p": 2,
+  "s": "spacestamps-information-by"
+ },
+ {
+  "p": 2,
+  "s": "structurethektimesgbitcoin"
+ },
+ {
+  "p": 2,
+  "s": "theproof-of-equivalencethe"
+ },
+ {
+  "p": 2,
+  "s": "using peer-to-peer network"
+ },
+ {
+  "p": 2,
+  "s": "using-peer-to-peer-network"
+ },
+ {
+  "p": 2,
+  "s": "The network itself requires"
+ },
+ {
+  "p": 2,
+  "s": "The-network-itself-requires"
+ },
+ {
+  "p": 2,
+  "s": "carefully measuring it into"
+ },
+ {
+  "p": 2,
+  "s": "carefully-measuring-it-into"
+ },
+ {
+  "p": 2,
+  "s": "changed without redoing the"
+ },
+ {
+  "p": 2,
+  "s": "changed-without-redoing-the"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-equivalenceforming"
+ },
+ {
+  "p": 2,
+  "s": "required to prevent private"
+ },
+ {
+  "p": 2,
+  "s": "required-to-prevent-private"
+ },
+ {
+  "p": 2,
+  "s": "requiresminimalstructurethe"
+ },
+ {
+  "p": 2,
+  "s": "reservebankingsystemdigital"
+ },
+ {
+  "p": 2,
+  "s": "thefractionalreservebanking"
+ },
+ {
+  "p": 2,
+  "s": "theproblemusingpeer-to-peer"
+ },
+ {
+  "p": 2,
+  "s": "throughthefractionalreserve"
+ },
+ {
+  "p": 2,
+  "s": "usingpeer-to-peernetworkthe"
+ },
+ {
+  "p": 2,
+  "s": "would allow online payments"
+ },
+ {
+  "p": 2,
+  "s": "would-allow-online-payments"
+ },
+ {
+  "p": 2,
+  "s": "digitalsignaturesprovidepart"
+ },
+ {
+  "p": 2,
+  "s": "going through the fractional"
+ },
+ {
+  "p": 2,
+  "s": "going-through-the-fractional"
+ },
+ {
+  "p": 2,
+  "s": "networkitselfrequiresminimal"
+ },
+ {
+  "p": 2,
+  "s": "networkthenetworkspacestamps"
+ },
+ {
+  "p": 2,
+  "s": "ongoing chain of phylo-based"
+ },
+ {
+  "p": 2,
+  "s": "ongoing-chain-of-phylo-based"
+ },
+ {
+  "p": 2,
+  "s": "prevent private key recovery"
+ },
+ {
+  "p": 2,
+  "s": "prevent-private-key-recovery"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-equivalence forming"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-equivalence-forming"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-equivalencethechain"
+ },
+ {
+  "p": 2,
+  "s": "recovery We propose solution"
+ },
+ {
+  "p": 2,
+  "s": "recovery-We-propose-solution"
+ },
+ {
+  "p": 2,
+  "s": "sequence of events witnessed"
+ },
+ {
+  "p": 2,
+  "s": "sequence-of-events-witnessed"
+ },
+ {
+  "p": 2,
+  "s": "the proof-of-equivalence The"
+ },
+ {
+  "p": 2,
+  "s": "the-proof-of-equivalence-The"
+ },
+ {
+  "p": 2,
+  "s": "another without going through"
+ },
+ {
+  "p": 2,
+  "s": "another-without-going-through"
+ },
+ {
+  "p": 2,
+  "s": "minimal structure The kTimesG"
+ },
+ {
+  "p": 2,
+  "s": "minimal-structure-The-kTimesG"
+ },
+ {
+  "p": 2,
+  "s": "networkspacestampsinformation"
+ },
+ {
+  "p": 2,
+  "s": "peer-to-peernetworkthenetwork"
+ },
+ {
+  "p": 2,
+  "s": "structure The kTimesG Bitcoin"
+ },
+ {
+  "p": 2,
+  "s": "structure-The-kTimesG-Bitcoin"
+ },
+ {
+  "p": 2,
+  "s": "bankingsystemdigitalsignatures"
+ },
+ {
+  "p": 2,
+  "s": "fractionalreservebankingsystem"
+ },
+ {
+  "p": 2,
+  "s": "itselfrequiresminimalstructure"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-equivalence The chain"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-equivalence-The-chain"
+ },
+ {
+  "p": 2,
+  "s": "redoingtheproof-of-equivalence"
+ },
+ {
+  "p": 2,
+  "s": "requires minimal structure The"
+ },
+ {
+  "p": 2,
+  "s": "requires-minimal-structure-The"
+ },
+ {
+  "p": 2,
+  "s": "reserve banking system Digital"
+ },
+ {
+  "p": 2,
+  "s": "reserve-banking-system-Digital"
+ },
+ {
+  "p": 2,
+  "s": "systemdigitalsignaturesprovide"
+ },
+ {
+  "p": 2,
+  "s": "the fractional reserve banking"
+ },
+ {
+  "p": 2,
+  "s": "the problem using peer-to-peer"
+ },
+ {
+  "p": 2,
+  "s": "the-fractional-reserve-banking"
+ },
+ {
+  "p": 2,
+  "s": "the-problem-using-peer-to-peer"
+ },
+ {
+  "p": 2,
+  "s": "through the fractional reserve"
+ },
+ {
+  "p": 2,
+  "s": "through-the-fractional-reserve"
+ },
+ {
+  "p": 2,
+  "s": "using peer-to-peer network The"
+ },
+ {
+  "p": 2,
+  "s": "using-peer-to-peer-network-The"
+ },
+ {
+  "p": 2,
+  "s": "Digital signatures provide part"
+ },
+ {
+  "p": 2,
+  "s": "Digital-signatures-provide-part"
+ },
+ {
+  "p": 2,
+  "s": "informationbycarefullymeasuring"
+ },
+ {
+  "p": 2,
+  "s": "network The network spacestamps"
+ },
+ {
+  "p": 2,
+  "s": "network itself requires minimal"
+ },
+ {
+  "p": 2,
+  "s": "network spacestamps information"
+ },
+ {
+  "p": 2,
+  "s": "network-The-network-spacestamps"
+ },
+ {
+  "p": 2,
+  "s": "network-itself-requires-minimal"
+ },
+ {
+  "p": 2,
+  "s": "network-spacestamps-information"
+ },
+ {
+  "p": 2,
+  "s": "networkspacestampsinformationby"
+ },
+ {
+  "p": 2,
+  "s": "phylo-basedproof-of-equivalence"
+ },
+ {
+  "p": 2,
+  "s": "problemusingpeer-to-peernetwork"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-equivalencethechainnot"
+ },
+ {
+  "p": 2,
+  "s": "theproof-of-equivalencethechain"
+ },
+ {
+  "p": 2,
+  "s": "peer-to-peer network The network"
+ },
+ {
+  "p": 2,
+  "s": "peer-to-peer-network-The-network"
+ },
+ {
+  "p": 2,
+  "s": "phylo-based proof-of-equivalence"
+ },
+ {
+  "p": 2,
+  "s": "phylo-based-proof-of-equivalence"
+ },
+ {
+  "p": 2,
+  "s": "redoing the proof-of-equivalence"
+ },
+ {
+  "p": 2,
+  "s": "redoing-the-proof-of-equivalence"
+ },
+ {
+  "p": 2,
+  "s": "thenetworkspacestampsinformation"
+ },
+ {
+  "p": 2,
+  "s": "banking system Digital signatures"
+ },
+ {
+  "p": 2,
+  "s": "banking-system-Digital-signatures"
+ },
+ {
+  "p": 2,
+  "s": "fractional reserve banking system"
+ },
+ {
+  "p": 2,
+  "s": "fractional-reserve-banking-system"
+ },
+ {
+  "p": 2,
+  "s": "itself requires minimal structure"
+ },
+ {
+  "p": 2,
+  "s": "itself-requires-minimal-structure"
+ },
+ {
+  "p": 2,
+  "s": "ofphylo-basedproof-of-equivalence"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-equivalenceformingrecord"
+ },
+ {
+  "p": 2,
+  "s": "redoingtheproof-of-equivalencethe"
+ },
+ {
+  "p": 2,
+  "s": "spacestampsinformationbycarefully"
+ },
+ {
+  "p": 2,
+  "s": "system Digital signatures provide"
+ },
+ {
+  "p": 2,
+  "s": "system-Digital-signatures-provide"
+ },
+ {
+  "p": 2,
+  "s": "information by carefully measuring"
+ },
+ {
+  "p": 2,
+  "s": "information-by-carefully-measuring"
+ },
+ {
+  "p": 2,
+  "s": "network spacestamps information by"
+ },
+ {
+  "p": 2,
+  "s": "network-spacestamps-information-by"
+ },
+ {
+  "p": 2,
+  "s": "problem using peer-to-peer network"
+ },
+ {
+  "p": 2,
+  "s": "problem-using-peer-to-peer-network"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-equivalence The chain not"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-equivalence-The-chain-not"
+ },
+ {
+  "p": 2,
+  "s": "the proof-of-equivalence The chain"
+ },
+ {
+  "p": 2,
+  "s": "the-proof-of-equivalence-The-chain"
+ },
+ {
+  "p": 2,
+  "s": "The network spacestamps information"
+ },
+ {
+  "p": 2,
+  "s": "The-network-spacestamps-information"
+ },
+ {
+  "p": 2,
+  "s": "of phylo-based proof-of-equivalence"
+ },
+ {
+  "p": 2,
+  "s": "of-phylo-based-proof-of-equivalence"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-equivalence forming record"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-equivalence-forming-record"
+ },
+ {
+  "p": 2,
+  "s": "redoing the proof-of-equivalence The"
+ },
+ {
+  "p": 2,
+  "s": "redoing-the-proof-of-equivalence-The"
+ },
+ {
+  "p": 2,
+  "s": "spacestamps information by carefully"
+ },
+ {
+  "p": 2,
+  "s": "spacestamps-information-by-carefully"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-equivalenceformingrecordthat"
+ },
+ {
+  "p": 2,
+  "s": "withoutredoingtheproof-of-equivalence"
+ },
+ {
+  "p": 2,
+  "s": "chainofphylo-basedproof-of-equivalence"
+ },
+ {
+  "p": 2,
+  "s": "phylo-basedproof-of-equivalenceforming"
+ },
+ {
+  "p": 2,
+  "s": "ofphylo-basedproof-of-equivalenceforming"
+ },
+ {
+  "p": 2,
+  "s": "phylo-based proof-of-equivalence forming"
+ },
+ {
+  "p": 2,
+  "s": "phylo-based-proof-of-equivalence-forming"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-equivalence forming record that"
+ },
+ {
+  "p": 2,
+  "s": "proof-of-equivalence-forming-record-that"
+ },
+ {
+  "p": 2,
+  "s": "without redoing the proof-of-equivalence"
+ },
+ {
+  "p": 2,
+  "s": "without-redoing-the-proof-of-equivalence"
+ },
+ {
+  "p": 2,
+  "s": "chain of phylo-based proof-of-equivalence"
+ },
+ {
+  "p": 2,
+  "s": "chain-of-phylo-based-proof-of-equivalence"
+ },
+ {
+  "p": 2,
+  "s": "of phylo-based proof-of-equivalence forming"
+ },
+ {
+  "p": 2,
+  "s": "of-phylo-based-proof-of-equivalence-forming"
+ },
+ {
+  "p": 2,
+  "s": "phylo-basedproof-of-equivalenceformingrecord"
+ },
+ {
+  "p": 2,
+  "s": "phylo-based proof-of-equivalence forming record"
+ },
+ {
+  "p": 2,
+  "s": "phylo-based-proof-of-equivalence-forming-record"
+ },
+ {
+  "p": 3,
+  "s": "Age"
+ },
+ {
+  "p": 3,
+  "s": "Ahh"
+ },
+ {
+  "p": 3,
+  "s": "All"
+ },
+ {
+  "p": 3,
+  "s": "Alt"
+ },
+ {
+  "p": 3,
+  "s": "And"
+ },
+ {
+  "p": 3,
+  "s": "Anf"
+ },
+ {
+  "p": 3,
+  "s": "Are"
+ },
+ {
+  "p": 3,
+  "s": "BTC"
+ },
+ {
+  "p": 3,
+  "s": "But"
+ },
+ {
+  "p": 3,
+  "s": "CPU"
+ },
+ {
+  "p": 3,
+  "s": "DMs"
+ },
+ {
+  "p": 3,
+  "s": "Did"
+ },
+ {
+  "p": 3,
+  "s": "Don"
+ },
+ {
+  "p": 3,
+  "s": "END"
+ },
+ {
+  "p": 3,
+  "s": "For"
+ },
+ {
+  "p": 3,
+  "s": "GPU"
+ },
+ {
+  "p": 3,
+  "s": "H_x"
+ },
+ {
+  "p": 3,
+  "s": "Hey"
+ },
+ {
+  "p": 3,
+  "s": "How"
+ },
+ {
+  "p": 3,
+  "s": "IDs"
+ },
+ {
+  "p": 3,
+  "s": "Ice"
+ },
+ {
+  "p": 3,
+  "s": "Kia"
+ },
+ {
+  "p": 3,
+  "s": "LLM"
+ },
+ {
+  "p": 3,
+  "s": "AFTB"
+ },
+ {
+  "p": 3,
+  "s": "Also"
+ },
+ {
+  "p": 3,
+  "s": "Been"
+ },
+ {
+  "p": 3,
+  "s": "Beni"
+ },
+ {
+  "p": 3,
+  "s": "Bine"
+ },
+ {
+  "p": 3,
+  "s": "Both"
+ },
+ {
+  "p": 3,
+  "s": "CUES"
+ },
+ {
+  "p": 3,
+  "s": "Code"
+ },
+ {
+  "p": 3,
+  "s": "Come"
+ },
+ {
+  "p": 3,
+  "s": "Does"
+ },
+ {
+  "p": 3,
+  "s": "East"
+ },
+ {
+  "p": 3,
+  "s": "Espa"
+ },
+ {
+  "p": 3,
+  "s": "Even"
+ },
+ {
+  "p": 3,
+  "s": "Fran"
+ },
+ {
+  "p": 3,
+  "s": "Full"
+ },
+ {
+  "p": 3,
+  "s": "Good"
+ },
+ {
+  "p": 3,
+  "s": "Grow"
+ },
+ {
+  "p": 3,
+  "s": "Guys"
+ },
+ {
+  "p": 3,
+  "s": "Hash"
+ },
+ {
+  "p": 3,
+  "s": "Have"
+ },
+ {
+  "p": 3,
+  "s": "Help"
+ },
+ {
+  "p": 3,
+  "s": "Here"
+ },
+ {
+  "p": 3,
+  "s": "Hors"
+ },
+ {
+  "p": 3,
+  "s": "July"
+ },
+ {
+  "p": 3,
+  "s": "Jump"
+ },
+ {
+  "p": 3,
+  "s": "June"
+ },
+ {
+  "p": 3,
+  "s": "Just"
+ },
+ {
+  "p": 3,
+  "s": "Konu"
+ },
+ {
+  "p": 3,
+  "s": "LLMs"
+ },
+ {
+  "p": 3,
+  "s": "LMAO"
+ },
+ {
+  "p": 3,
+  "s": "Like"
+ },
+ {
+  "p": 3,
+  "s": "Long"
+ },
+ {
+  "p": 3,
+  "s": "Look"
+ },
+ {
+  "p": 3,
+  "s": "ASCII"
+ },
+ {
+  "p": 3,
+  "s": "After"
+ },
+ {
+  "p": 3,
+  "s": "Apple"
+ },
+ {
+  "p": 3,
+  "s": "BEGIN"
+ },
+ {
+  "p": 3,
+  "s": "Biete"
+ },
+ {
+  "p": 3,
+  "s": "Buyer"
+ },
+ {
+  "p": 3,
+  "s": "Claus"
+ },
+ {
+  "p": 3,
+  "s": "Coins"
+ },
+ {
+  "p": 3,
+  "s": "Color"
+ },
+ {
+  "p": 3,
+  "s": "Delta"
+ },
+ {
+  "p": 3,
+  "s": "Dutch"
+ },
+ {
+  "p": 3,
+  "s": "ECDSA"
+ },
+ {
+  "p": 3,
+  "s": "ESDCA"
+ },
+ {
+  "p": 3,
+  "s": "Every"
+ },
+ {
+  "p": 3,
+  "s": "Field"
+ },
+ {
+  "p": 3,
+  "s": "First"
+ },
+ {
+  "p": 3,
+  "s": "Forum"
+ },
+ {
+  "p": 3,
+  "s": "Found"
+ },
+ {
+  "p": 3,
+  "s": "Games"
+ },
+ {
+  "p": 3,
+  "s": "Geral"
+ },
+ {
+  "p": 3,
+  "s": "Goods"
+ },
+ {
+  "p": 3,
+  "s": "Gr2bE"
+ },
+ {
+  "p": 3,
+  "s": "Great"
+ },
+ {
+  "p": 3,
+  "s": "Greek"
+ },
+ {
+  "p": 3,
+  "s": "Group"
+ },
+ {
+  "p": 3,
+  "s": "Guide"
+ },
+ {
+  "p": 3,
+  "s": "Hilfe"
+ },
+ {
+  "p": 3,
+  "s": "Image"
+ },
+ {
+  "p": 3,
+  "s": "Imgur"
+ },
+ {
+  "p": 3,
+  "s": "India"
+ },
+ {
+  "p": 3,
+  "s": "Ivory"
+ },
+ {
+  "p": 3,
+  "s": "Latin"
+ },
+ {
+  "p": 3,
+  "s": "Legal"
+ },
+ {
+  "p": 3,
+  "s": "Libre"
+ },
+ {
+  "p": 3,
+  "s": "Local"
+ },
+ {
+  "p": 3,
+  "s": "Looks"
+ },
+ {
+  "p": 3,
+  "s": "Markt"
+ },
+ {
+  "p": 3,
+  "s": "Maybe"
+ },
+ {
+  "p": 3,
+  "s": "Accuse"
+ },
+ {
+  "p": 3,
+  "s": "Agreed"
+ },
+ {
+  "p": 3,
+  "s": "Arabic"
+ },
+ {
+  "p": 3,
+  "s": "Armory"
+ },
+ {
+  "p": 3,
+  "s": "August"
+ },
+ {
+  "p": 3,
+  "s": "Author"
+ },
+ {
+  "p": 3,
+  "s": "Bahasa"
+ },
+ {
+  "p": 3,
+  "s": "Base64"
+ },
+ {
+  "p": 3,
+  "s": "Brasil"
+ },
+ {
+  "p": 3,
+  "s": "Budaya"
+ },
+ {
+  "p": 3,
+  "s": "Caribe"
+ },
+ {
+  "p": 3,
+  "s": "Direct"
+ },
+ {
+  "p": 3,
+  "s": "Double"
+ },
+ {
+  "p": 3,
+  "s": "Econom"
+ },
+ {
+  "p": 3,
+  "s": "Figure"
+ },
+ {
+  "p": 3,
+  "s": "Fonlar"
+ },
+ {
+  "p": 3,
+  "s": "German"
+ },
+ {
+  "p": 3,
+  "s": "Gokken"
+ },
+ {
+  "p": 3,
+  "s": "Golden"
+ },
+ {
+  "p": 3,
+  "s": "Hebrew"
+ },
+ {
+  "p": 3,
+  "s": "Ignore"
+ },
+ {
+  "p": 3,
+  "s": "Inside"
+ },
+ {
+  "p": 3,
+  "s": "Julius"
+ },
+ {
+  "p": 3,
+  "s": "Korean"
+ },
+ {
+  "p": 3,
+  "s": "Kripto"
+ },
+ {
+  "p": 3,
+  "s": "Leader"
+ },
+ {
+  "p": 3,
+  "s": "Market"
+ },
+ {
+  "p": 3,
+  "s": "Altcoin"
+ },
+ {
+  "p": 3,
+  "s": "Android"
+ },
+ {
+  "p": 3,
+  "s": "Annunci"
+ },
+ {
+  "p": 3,
+  "s": "Besides"
+ },
+ {
+  "p": 3,
+  "s": "Beurzen"
+ },
+ {
+  "p": 3,
+  "s": "BzcJMdl"
+ },
+ {
+  "p": 3,
+  "s": "Chinese"
+ },
+ {
+  "p": 3,
+  "s": "Decoded"
+ },
+ {
+  "p": 3,
+  "s": "Deutsch"
+ },
+ {
+  "p": 3,
+  "s": "Digital"
+ },
+ {
+  "p": 3,
+  "s": "Discuss"
+ },
+ {
+  "p": 3,
+  "s": "Economy"
+ },
+ {
+  "p": 3,
+  "s": "Ekonomi"
+ },
+ {
+  "p": 3,
+  "s": "Esquina"
+ },
+ {
+  "p": 3,
+  "s": "HASH160"
+ },
+ {
+  "p": 3,
+  "s": "Invites"
+ },
+ {
+  "p": 3,
+  "s": "Italian"
+ },
+ {
+  "p": 3,
+  "s": "J0d1vHy"
+ },
+ {
+  "p": 3,
+  "s": "KarTonP"
+ },
+ {
+  "p": 3,
+  "s": "KtimesG"
+ },
+ {
+  "p": 3,
+  "s": "Lainnya"
+ },
+ {
+  "p": 3,
+  "s": "Lending"
+ },
+ {
+  "p": 3,
+  "s": "Loading"
+ },
+ {
+  "p": 3,
+  "s": "MESSAGE"
+ },
+ {
+  "p": 3,
+  "s": "Accounts"
+ },
+ {
+  "p": 3,
+  "s": "Activity"
+ },
+ {
+  "p": 3,
+  "s": "Actualit"
+ },
+ {
+  "p": 3,
+  "s": "Altcoins"
+ },
+ {
+  "p": 3,
+  "s": "Annonces"
+ },
+ {
+  "p": 3,
+  "s": "Anunturi"
+ },
+ {
+  "p": 3,
+  "s": "Archival"
+ },
+ {
+  "p": 3,
+  "s": "Auctions"
+ },
+ {
+  "p": 3,
+  "s": "BitcoinJ"
+ },
+ {
+  "p": 3,
+  "s": "Bounties"
+ },
+ {
+  "p": 3,
+  "s": "Computer"
+ },
+ {
+  "p": 3,
+  "s": "Croatian"
+ },
+ {
+  "p": 3,
+  "s": "Currency"
+ },
+ {
+  "p": 3,
+  "s": "Decoding"
+ },
+ {
+  "p": 3,
+  "s": "Discutii"
+ },
+ {
+  "p": 3,
+  "s": "Earnings"
+ },
+ {
+  "p": 3,
+  "s": "Economia"
+ },
+ {
+  "p": 3,
+  "s": "Electrum"
+ },
+ {
+  "p": 3,
+  "s": "Esercizi"
+ },
+ {
+  "p": 3,
+  "s": "Expanded"
+ },
+ {
+  "p": 3,
+  "s": "Flagging"
+ },
+ {
+  "p": 3,
+  "s": "Gambling"
+ },
+ {
+  "p": 3,
+  "s": "Hardware"
+ },
+ {
+  "p": 3,
+  "s": "Hrvatski"
+ },
+ {
+  "p": 3,
+  "s": "Inserted"
+ },
+ {
+  "p": 3,
+  "s": "Investor"
+ },
+ {
+  "p": 3,
+  "s": "Italiano"
+ },
+ {
+  "p": 3,
+  "s": "Japanese"
+ },
+ {
+  "p": 3,
+  "s": "Machines"
+ },
+ {
+  "p": 3,
+  "s": "Alternate"
+ },
+ {
+  "p": 3,
+  "s": "Argentina"
+ },
+ {
+  "p": 3,
+  "s": "Auktionen"
+ },
+ {
+  "p": 3,
+  "s": "Beginners"
+ },
+ {
+  "p": 3,
+  "s": "Bitcoiner"
+ },
+ {
+  "p": 3,
+  "s": "Challenge"
+ },
+ {
+  "p": 3,
+  "s": "Duyurular"
+ },
+ {
+  "p": 3,
+  "s": "Economics"
+ },
+ {
+  "p": 3,
+  "s": "Elsewhere"
+ },
+ {
+  "p": 3,
+  "s": "Exchanges"
+ },
+ {
+  "p": 3,
+  "s": "Haberleri"
+ },
+ {
+  "p": 3,
+  "s": "Important"
+ },
+ {
+  "p": 3,
+  "s": "Indonesia"
+ },
+ {
+  "p": 3,
+  "s": "Languages"
+ },
+ {
+  "p": 3,
+  "s": "Alternatif"
+ },
+ {
+  "p": 3,
+  "s": "Calculated"
+ },
+ {
+  "p": 3,
+  "s": "Currencies"
+ },
+ {
+  "p": 3,
+  "s": "Discussion"
+ },
+ {
+  "p": 3,
+  "s": "Especially"
+ },
+ {
+  "p": 3,
+  "s": "Extraction"
+ },
+ {
+  "p": 3,
+  "s": "Indonesian"
+ },
+ {
+  "p": 3,
+  "s": "Iniciantes"
+ },
+ {
+  "p": 3,
+  "s": "Madencilik"
+ },
+ {
+  "p": 3,
+  "s": "Marktplatz"
+ },
+ {
+  "p": 3,
+  "s": "Accusations"
+ },
+ {
+  "p": 3,
+  "s": "Alternative"
+ },
+ {
+  "p": 3,
+  "s": "Development"
+ },
+ {
+  "p": 3,
+  "s": "Discussioni"
+ },
+ {
+  "p": 3,
+  "s": "Discussions"
+ },
+ {
+  "p": 3,
+  "s": "Marketplace"
+ },
+ {
+  "p": 3,
+  "s": "Alternativas"
+ },
+ {
+  "p": 3,
+  "s": "Alternatywne"
+ },
+ {
+  "p": 3,
+  "s": "Collectibles"
+ },
+ {
+  "p": 3,
+  "s": "Consequently"
+ },
+ {
+  "p": 3,
+  "s": "Criptomoedas"
+ },
+ {
+  "p": 3,
+  "s": "Crittografia"
+ },
+ {
+  "p": 3,
+  "s": "Announcements"
+ },
+ {
+  "p": 3,
+  "s": "Centroamerica"
+ },
+ {
+  "p": 3,
+  "s": "Decomposition"
+ },
+ {
+  "p": 3,
+  "s": "Desenvolvimento"
+ },
+ {
+  "p": 4,
+  "s": "Nor"
+ },
+ {
+  "p": 4,
+  "s": "Not"
+ },
+ {
+  "p": 4,
+  "s": "Now"
+ },
+ {
+  "p": 4,
+  "s": "One"
+ },
+ {
+  "p": 4,
+  "s": "Sir"
+ },
+ {
+  "p": 4,
+  "s": "Sr."
+ },
+ {
+  "p": 4,
+  "s": "T_1"
+ },
+ {
+  "p": 4,
+  "s": "T_2"
+ },
+ {
+  "p": 4,
+  "s": "T_3"
+ },
+ {
+  "p": 4,
+  "s": "Two"
+ },
+ {
+  "p": 4,
+  "s": "UPD"
+ },
+ {
+  "p": 4,
+  "s": "Use"
+ },
+ {
+  "p": 4,
+  "s": "WTF"
+ },
+ {
+  "p": 4,
+  "s": "Yes"
+ },
+ {
+  "p": 4,
+  "s": "hG."
+ },
+ {
+  "p": 4,
+  "s": "h_x"
+ },
+ {
+  "p": 4,
+  "s": "hg."
+ },
+ {
+  "p": 4,
+  "s": "ice"
+ },
+ {
+  "p": 4,
+  "s": "kia"
+ },
+ {
+  "p": 4,
+  "s": "nor"
+ },
+ {
+  "p": 4,
+  "s": "sr."
+ },
+ {
+  "p": 4,
+  "s": "t_1"
+ },
+ {
+  "p": 4,
+  "s": "t_2"
+ },
+ {
+  "p": 4,
+  "s": "t_3"
+ },
+ {
+  "p": 4,
+  "s": "upd"
+ },
+ {
+  "p": 4,
+  "s": "use"
+ },
+ {
+  "p": 4,
+  "s": "wtf"
+ },
+ {
+  "p": 4,
+  "s": "y_R"
+ },
+ {
+  "p": 4,
+  "s": "y_r"
+ },
+ {
+  "p": 4,
+  "s": "Age."
+ },
+ {
+  "p": 4,
+  "s": "D+ub"
+ },
+ {
+  "p": 4,
+  "s": "H.x."
+ },
+ {
+  "p": 4,
+  "s": "Most"
+ },
+ {
+  "p": 4,
+  "s": "None"
+ },
+ {
+  "p": 4,
+  "s": "P.S."
+ },
+ {
+  "p": 4,
+  "s": "Path"
+ },
+ {
+  "p": 4,
+  "s": "Term"
+ },
+ {
+  "p": 4,
+  "s": "Used"
+ },
+ {
+  "p": 4,
+  "s": "View"
+ },
+ {
+  "p": 4,
+  "s": "WIF."
+ },
+ {
+  "p": 4,
+  "s": "Well"
+ },
+ {
+  "p": 4,
+  "s": "When"
+ },
+ {
+  "p": 4,
+  "s": "With"
+ },
+ {
+  "p": 4,
+  "s": "Yeah"
+ },
+ {
+  "p": 4,
+  "s": "age."
+ },
+ {
+  "p": 4,
+  "s": "d+ub"
+ },
+ {
+  "p": 4,
+  "s": "h.x."
+ },
+ {
+  "p": 4,
+  "s": "july"
+ },
+ {
+  "p": 4,
+  "s": "none"
+ },
+ {
+  "p": 4,
+  "s": "p.s."
+ },
+ {
+  "p": 4,
+  "s": "view"
+ },
+ {
+  "p": 4,
+  "s": "wif."
+ },
+ {
+  "p": 4,
+  "s": "yeah"
+ },
+ {
+  "p": 4,
+  "s": "Prove"
+ },
+ {
+  "p": 4,
+  "s": "Reply"
+ },
+ {
+  "p": 4,
+  "s": "Seems"
+ },
+ {
+  "p": 4,
+  "s": "Since"
+ },
+ {
+  "p": 4,
+  "s": "Vogel"
+ },
+ {
+  "p": 4,
+  "s": "ascii"
+ },
+ {
+  "p": 4,
+  "s": "begin"
+ },
+ {
+  "p": 4,
+  "s": "great"
+ },
+ {
+  "p": 4,
+  "s": "imgur"
+ },
+ {
+  "p": 4,
+  "s": "reply"
+ },
+ {
+  "p": 4,
+  "s": "vogel"
+ },
+ {
+  "p": 4,
+  "s": "Member"
+ },
+ {
+  "p": 4,
+  "s": "ROT-13"
+ },
+ {
+  "p": 4,
+  "s": "Result"
+ },
+ {
+  "p": 4,
+  "s": "Signed"
+ },
+ {
+  "p": 4,
+  "s": "Theirs"
+ },
+ {
+  "p": 4,
+  "s": "Wonder"
+ },
+ {
+  "p": 4,
+  "s": "Wouldn"
+ },
+ {
+  "p": 4,
+  "s": "golden"
+ },
+ {
+  "p": 4,
+  "s": "ignore"
+ },
+ {
+  "p": 4,
+  "s": "julius"
+ },
+ {
+  "p": 4,
+  "s": "leader"
+ },
+ {
+  "p": 4,
+  "s": "member"
+ },
+ {
+  "p": 4,
+  "s": "sBtYVZ"
+ },
+ {
+  "p": 4,
+  "s": "sbtyvz"
+ },
+ {
+  "p": 4,
+  "s": "theirs"
+ },
+ {
+  "p": 4,
+  "s": "wouldn"
+ },
+ {
+  "p": 4,
+  "s": "F19519."
+ },
+ {
+  "p": 4,
+  "s": "Offline"
+ },
+ {
+  "p": 4,
+  "s": "Profile"
+ },
+ {
+  "p": 4,
+  "s": "Rec.601"
+ },
+ {
+  "p": 4,
+  "s": "Rec.709"
+ },
+ {
+  "p": 4,
+  "s": "Reduced"
+ },
+ {
+  "p": 4,
+  "s": "besides"
+ },
+ {
+  "p": 4,
+  "s": "f19519."
+ },
+ {
+  "p": 4,
+  "s": "kTimseG"
+ },
+ {
+  "p": 4,
+  "s": "ktimseg"
+ },
+ {
+  "p": 4,
+  "s": "offline"
+ },
+ {
+  "p": 4,
+  "s": "profile"
+ },
+ {
+  "p": 4,
+  "s": "rec.601"
+ },
+ {
+  "p": 4,
+  "s": "rec.709"
+ },
+ {
+  "p": 4,
+  "s": "reduced"
+ },
+ {
+  "p": 4,
+  "s": "Personal"
+ },
+ {
+  "p": 4,
+  "s": "Sequence"
+ },
+ {
+  "p": 4,
+  "s": "Surfaces"
+ },
+ {
+  "p": 4,
+  "s": "Verified"
+ },
+ {
+  "p": 4,
+  "s": "activity"
+ },
+ {
+  "p": 4,
+  "s": "decoding"
+ },
+ {
+  "p": 4,
+  "s": "expanded"
+ },
+ {
+  "p": 4,
+  "s": "flagging"
+ },
+ {
+  "p": 4,
+  "s": "inserted"
+ },
+ {
+  "p": 4,
+  "s": "personal"
+ },
+ {
+  "p": 4,
+  "s": "surfaces"
+ },
+ {
+  "p": 4,
+  "s": "verified"
+ },
+ {
+  "p": 4,
+  "s": "vxZnC05M"
+ },
+ {
+  "p": 4,
+  "s": "vxznc05m"
+ },
+ {
+  "p": 4,
+  "s": "East-West"
+ },
+ {
+  "p": 4,
+  "s": "Measuring"
+ },
+ {
+  "p": 4,
+  "s": "Selection"
+ },
+ {
+  "p": 4,
+  "s": "Signature"
+ },
+ {
+  "p": 4,
+  "s": "bitcoiner"
+ },
+ {
+  "p": 4,
+  "s": "east-west"
+ },
+ {
+  "p": 4,
+  "s": "elsewhere"
+ },
+ {
+  "p": 4,
+  "s": "selection"
+ },
+ {
+  "p": 4,
+  "s": "extraction"
+ },
+ {
+  "p": 4,
+  "s": "Methodology"
+ },
+ {
+  "p": 4,
+  "s": "Rectangular"
+ },
+ {
+  "p": 4,
+  "s": "methodology"
+ },
+ {
+  "p": 4,
+  "s": "Specifically"
+ },
+ {
+  "p": 4,
+  "s": "Step-by-Step"
+ },
+ {
+  "p": 4,
+  "s": "Verification"
+ },
+ {
+  "p": 4,
+  "s": "step-by-step"
+ },
+ {
+  "p": 4,
+  "s": "Unfortunately"
+ },
+ {
+  "p": 4,
+  "s": "decomposition"
+ },
+ {
+  "p": 4,
+  "s": "unfortunately"
+ },
+ {
+  "p": 4,
+  "s": "jcBn0f9h3kbilK"
+ },
+ {
+  "p": 4,
+  "s": "jcbn0f9h3kbilk"
+ },
+ {
+  "p": 4,
+  "s": "J0d1vHy...Gr2bE"
+ },
+ {
+  "p": 4,
+  "s": "j0d1vhy...gr2be"
+ },
+ {
+  "p": 4,
+  "s": "B890B292BA1ABD9B1"
+ },
+ {
+  "p": 4,
+  "s": "E242CA4AE86AF66C."
+ },
+ {
+  "p": 4,
+  "s": "e242ca4ae86af66c."
+ },
+ {
+  "p": 4,
+  "s": "B890B292BA1ABD9B1."
+ },
+ {
+  "p": 4,
+  "s": "b890b292ba1abd9b1."
+ },
+ {
+  "p": 4,
+  "s": "jA0ECQMKVwglgSLxlRn"
+ },
+ {
+  "p": 4,
+  "s": "ja0ecqmkvwglgslxlrn"
+ },
+ {
+  "p": 4,
+  "s": "NDDWZCkuONpev7JZbbw+l6uVZC0N"
+ },
+ {
+  "p": 4,
+  "s": "nddwzckuonpev7jzbbw+l6uvzc0n"
+ },
+ {
+  "p": 4,
+  "s": "E05C0E780E02F1F9B3C940D06B2F8"
+ },
+ {
+  "p": 4,
+  "s": "e05c0e780e02f1f9b3c940d06b2f8"
+ },
+ {
+  "p": 4,
+  "s": "ktimesg-phy-challenge-BzcJMdl"
+ },
+ {
+  "p": 4,
+  "s": "ktimesg-phy-challenge-bzcjmdl"
+ },
+ {
+  "p": 4,
+  "s": "BC7C8B5905E441664185F426656BBC8"
+ },
+ {
+  "p": 4,
+  "s": "aJFXTLG6sbLXr6t0z3scptSM3vWBCmO"
+ },
+ {
+  "p": 4,
+  "s": "ajfxtlg6sblxr6t0z3scptsm3vwbcmo"
+ },
+ {
+  "p": 4,
+  "s": "bc7c8b5905e441664185f426656bbc8"
+ }
+]

@@ -1,0 +1,312 @@
+# @agntn/puzzles
+
+> Public crypto bounties, puzzles and challenges as typed records, as a library, a CLI, an MCP server and Pi and OMP extensions.
+
+## Overview
+
+- [@agntn/puzzles](https://puzzles.agntn.dev/raw/index.md)
+
+## Documentation Sets
+
+- [@agntn/puzzles](https://puzzles.agntn.dev/llms-full.txt)
+
+## MCP Server
+
+The twelve puzzle tools and the page tools of this site over Streamable HTTP.
+
+- [MCP endpoint](https://puzzles.agntn.dev/mcp): Add it to any MCP client as an HTTP server, for example `claude mcp add --transport http puzzles https://puzzles.agntn.dev/mcp`.
+
+## Playground
+
+Look up, list and verify puzzles in the browser.
+
+- [Playground](https://puzzles.agntn.dev/playground): The library running in the page: show, list, verify, collections, authors and stats.
+
+## Docs
+
+- [Authors](https://puzzles.agntn.dev/raw/authors.md): The people and companies behind the collections. Each page keeps what public sources say about the author and where they said it.
+- [AH White](https://puzzles.agntn.dev/raw/authors/ah-white.md): Neurobiologist and bitcoiner who wrote the thriller Walking Banks. Gave the book away free on Nostr and hid a real 24-word Bitcoin seed in the story.
+- [AoiNakamoto](https://puzzles.agntn.dev/raw/authors/aoi-nakamoto.md): The pseudonymous Reddit account behind the 2019 Quizchain series and the two 7 million satoshi quizzes that came before it. Four months of puzzles and one shutdown post.
+- [Bitaps](https://puzzles.agntn.dev/raw/authors/bitaps.md): The team behind bitaps.com and the pybtc and jsbtc libraries. Their mnemonic challenge is a bug bounty on their own Shamir secret sharing.
+- [blockladder](https://puzzles.agntn.dev/raw/authors/blockladder.md): A BitcoinTalk account that put 1 BTC behind one question in January 2019. Signed it with the prize address and never posted again
+- [Bobby Lee](https://puzzles.agntn.dev/raw/authors/bobby-lee.md): Founder of Ballet and co-founder of BTCC. He printed three BIP38 keys on physical wallets and posted them as puzzles in July 2020.
+- [cain](https://puzzles.agntn.dev/raw/authors/cain.md): A writer on Proof Of Writing who hid a Cashtab seed in an essay about the eCash community and kept raising the prize until someone read it right.
+- [coin_artist](https://puzzles.agntn.dev/raw/authors/coin-artist.md): Marguerite deCourcelle paints wallet keys into pictures. TORCHED H34R7S held five bitcoin for three years before a programmer read the flames.
+- [Coin_Pro](https://puzzles.agntn.dev/raw/authors/coin-pro.md): The name on the Coin_Games puzzles. Weekly Bitcoin banknotes in late 2017 and a signature that says DJ and Producer and Programmer
+- [Corey Phillips](https://puzzles.agntn.dev/raw/authors/corey-phillips.md): Bitcoin mobile developer who wrote BitImage. Hash a photo of a kitten and you get a seed. He funded two of them and one still waits on a passphrase.
+- [Crypto Puzzlers](https://puzzles.agntn.dev/raw/authors/cryptopuzzlers.md): A YouTube channel and a Reddit account that hid private keys in short video puzzles and paid in DOGE and ETH and Bomb Token and Banano
+- [Dmitri Kryptokov](https://puzzles.agntn.dev/raw/authors/dmitri-kryptokov.md): The office worker from the RushWallet contest video. KryptoKit reused the character's name as the persona that published the follow up puzzle.
+- [Dug](https://puzzles.agntn.dev/raw/authors/dug.md): Hides one BIP39 word in each lecture slide and funds a wallet for the students who collect all twelve. Publishes the public clues on Nostr.
+- [GemfinderOfX](https://puzzles.agntn.dev/raw/authors/gemfinderofx.md): Gem Finder on X. Put 0.02 BTC behind one tweet in December 2024 and was still dropping hints in the replies in 2026
+- [Genesis Block puzzle author](https://puzzles.agntn.dev/raw/authors/genesis-author.md): Whoever funded the Genesis Block Wallet Puzzle and sells hints in OP_RETURN. No name and no profile. One X account spoke sixteen hours before the chain did.
+- [givesadvice4bitcoin](https://puzzles.agntn.dev/raw/authors/givesadvice4bitcoin.md): Posted a picture puzzle on r/bitcoinpuzzles seven hours after the subreddit opened. Four pictures, 1 mBTC, marked easy. It took five hours.
+- [GSMG.io](https://puzzles.agntn.dev/raw/authors/gsmg.md): A crypto trading bot platform that ran from 2017 to 2026. The site is dark now and says one mystery remains. The puzzle is the mystery.
+- [Guntis Vitolins](https://puzzles.agntn.dev/raw/authors/guntis-vitolins.md): Founder of Mineshop.eu and a mining YouTuber. He hid six seed words in a video and six in a blog post for 10 ETH and the wallet is still his.
+- [IAMABananaAMAA](https://puzzles.agntn.dev/raw/authors/iamabananaamaa.md): Started r/bitcoinpuzzles in December 2013 and put a puzzle up the same evening. A GIF with 1 mBTC inside, marked easy. That lasted thirteen minutes.
+- [Johan Nygren](https://puzzles.agntn.dev/raw/authors/johan-nygren.md): Named a proof of public key scheme Teikhos and put ETH behind five Ethereum contracts in 2018 to show nobody could open them without the key.
+- [Justin Patterson](https://puzzles.agntn.dev/raw/authors/justin-patterson.md): An indie game developer who hid a Litecoin treasure hunt in the 2021 gameplay demo of Path to Greatness and asked for donations to keep building the game.
+- [Keir Finlow-Bates](https://puzzles.agntn.dev/raw/authors/keir-finlow-bates.md): Wrote a blockchain book in 2020 and hid Bitcoin keys inside it. Added more to the Italian edition and then forgot every answer on purpose
+- [Keybase](https://puzzles.agntn.dev/raw/authors/keybase.md): The identity company that published WarpWallet in 2013 and paid to have its brainwallets cracked. Two founders and one page that still lists every challenge.
+- [Kierkegaard_Soren](https://puzzles.agntn.dev/raw/authors/kierkegaard-soren.md): The Reddit account that tried to bring r/bitcoinpuzzles back in 2017 with one funded trivia brainwallet. Twelve riddles and a philosopher's birth year.
+- [klems](https://puzzles.agntn.dev/raw/authors/klems.md): Pseudonymous maker of the Bitcoin Movie Enigma. Signs every frame as cryptop1r4t3 and gives a Nostr key as the only way to reach him.
+- [kTimesG](https://puzzles.agntn.dev/raw/authors/ktimesg.md): Writes on Bitcointalk about cracking Bitcoin keys. Put 0.005 BTC on a key with 80 unknown bits and later 800000 sats behind a signed post and a spiral of emojis
+- [Ledger Donjon](https://puzzles.agntn.dev/raw/authors/ledger-donjon.md): Ledger's security research team. It ran the Capture the Fortress CTF in 2020 and one challenge left a funded Bitcoin address behind.
+- [LogicBeach](https://puzzles.agntn.dev/raw/authors/logicbeach.md): An electronic musician who releases albums as crypto puzzles with the wallet seed hidden in the music
+- [MetaNeer Labs](https://puzzles.agntn.dev/raw/authors/metaneer.md): Software studio of one developer whose GitHub organization publishes seed-phrase.com. Put 0.005 BTC behind a recovery phrase in 2024 and doubled it a month later
+- [Pascal Boyart](https://puzzles.agntn.dev/raw/authors/pascal-boyart.md): Paris street artist who signs as PBoy. He hid a French seed phrase in a Delacroix remake and let Reddit hunt for it
+- [Paul Jones](https://puzzles.agntn.dev/raw/authors/paul-jones.md): The byline on the casino review site luckylurker.com. The Bitcoin Vaults are promotions there and four of the hints point at the site's own reviews.
+- [Peter Todd](https://puzzles.agntn.dev/raw/authors/peter-todd.md): Bitcoin Core contributor and creator of OpenTimestamps. In 2013 he wrote Bitcoin scripts that pay anyone who shows two inputs with the same hash.
+- [Phemex](https://puzzles.agntn.dev/raw/authors/phemex.md): The crypto derivatives exchange that drew Satoshi as a maze in 2020 and hid a Bitcoin key in it to make a point about cold storage
+- [q](https://puzzles.agntn.dev/raw/authors/q.md): A one letter Stacker News account that forgot the BIP38 passphrase of its own paper wallet and gave the coins to whoever can guess it
+- [RetiredCoder](https://puzzles.agntn.dev/raw/authors/retired-coder.md): Solved four keys of the Bitcoin puzzle transaction, then posted seven mini-puzzles on Bitcointalk, four of them paying the Bitcoin Cash left on those addresses.
+- [saatoshi_rising](https://puzzles.agntn.dev/raw/authors/saatoshi-rising.md): The bitcointalk account that spoke for the Bitcoin puzzle transaction once in 2017. Registered that morning and posted an hour later. The rest is on chain.
+- [School of Bitcoin](https://puzzles.agntn.dev/raw/authors/school-of-bitcoin.md): A free Bitcoin course that turned the back of its own business card into a treasure hunt for a million sats
+- [Smith, Lyle & Moore](https://puzzles.agntn.dev/raw/authors/smith-lyle-moore.md): Indie band that spent its advertising budget on bitcoin and buried it behind riddles on its own website. One treasure hunt per single
+- [stsh_n](https://puzzles.agntn.dev/raw/authors/stsh-n.md): A Reddit account with one post, a picture puzzle from October 2020 with 0.2 BTC on the address inside it. Nothing from it since.
+- [The Great Print](https://puzzles.agntn.dev/raw/authors/the-great-print.md): A Bitcoin artist in Basel who draws huge ballpoint pen pieces and hides the words of a wallet seed in the originals
+- [Tiamat](https://puzzles.agntn.dev/raw/authors/tiamat.md): Pseudonymous programmer behind the Arweave Puzzle Weave series and Chronobot.io. Self-described as based in France in one interview and nowhere else.
+- [Trithemius](https://puzzles.agntn.dev/raw/authors/trithemius.md): A Medium account behind one essay on hiding seed phrases in stories, February 2019, with 0.03 BTC hidden in the essay. It started as OneSourGrape and has been renamed twice since.
+- [VeteranHODL](https://puzzles.agntn.dev/raw/authors/veteranhodl.md): Former British Army soldier who writes Bitcoin thrillers. He hid an Electrum seed in Hunting Time and fed X one photo clue at a time
+- [Wickex](https://puzzles.agntn.dev/raw/authors/wickex.md): Solved the first puzzle on r/bitcoinpuzzles in December 2013 and posted the second one eighty minutes later, because that seemed only fair.
+- [Zden](https://puzzles.agntn.dev/raw/authors/zden.md): Slovak digital artist and demoscener from the Satori group. Sixteen puzzles on four chains since 2016 with the key hidden in a generative image.
+- [Collections](https://puzzles.agntn.dev/raw/collections.md): Every collection in the registry and the chains it lives on. Each page says what the puzzle was and what the records carry. The list and every dossier are read off the library when the page builds.
+- [kTimesG's 80-bit key challenge](https://puzzles.agntn.dev/raw/collections/80-bit.md): kTimesG hid 80 unknown bits in a 511-bit key and showed its public key only in an unconfirmed spend. Someone cracked it and swapped the spend 39 minutes later.
+- [Gem Finder's 9vw04 puzzle](https://puzzles.agntn.dev/raw/collections/9vw04.md): Gem Finder's Bitcoin puzzle pairs 9vw04 with a coloured character grid. The author says the post holds everything needed for a WIF
+- [Ballet wallets](https://puzzles.agntn.dev/raw/collections/ballet.md): Three Ballet cards with BIP38 keys printed on them. One decrypted for 0.0011 BTC. Two hold a bitcoin each. One waits on a passphrase and one on its encrypted key.
+- [Brute force and the coins are yours](https://puzzles.agntn.dev/raw/collections/bitaddress.md): A bitaddress.org paper wallet whose owner forgot the BIP38 passphrase and gave the coins to whoever guesses it. Posted on Stacker News in October 2023 and still locked
+- [Bitaps mnemonic challenge](https://puzzles.agntn.dev/raw/collections/bitaps.md): One SegWit address behind a 3 of 5 Shamir secret sharing scheme. Two shares and the extended public key are published. One bitcoin and change since 2020.
+- [Bitimage](https://puzzles.agntn.dev/raw/collections/bitimage.md): Corey Phillips turned photographs into seeds in 2019. The kitten fell in a week. The second image needs a passphrase nobody has posted.
+- [Bitcoin puzzle transaction](https://puzzles.agntn.dev/raw/collections/bits.md): 256 addresses whose keys are 1 to 256 bits wide. The one every scanner runs against. Keys published up to 135 bits and the rest still funded.
+- [7 million book quiz](https://puzzles.agntn.dev/raw/collections/book-quiz.md): AoiNakamoto's second quiz, seven answers hashed into BIP39 entropy, four of them opinions and a sixty minute deadline. The prize went home and the answer key came out afterwards
+- [Brave New World](https://puzzles.agntn.dev/raw/collections/brave-new-world.md): A picture puzzle one Reddit account posted to its own profile in October 2020, with 0.2 BTC on the address written into it. Six years later the coins are still there.
+- [TORCHED H34R7S Bitcoin Puzzle](https://puzzles.agntn.dev/raw/collections/coin-artist.md): How coin_artist's TORCHED H34R7S Bitcoin puzzle was solved. The 1FLAMEN6 wallet and its published key checked against the 2018 claim transaction.
+- [Coin_Games weekly banknote puzzles](https://puzzles.agntn.dev/raw/collections/coin-games.md): Coin_Pro drew Bitcoin puzzles as banknotes in late 2017 and promised a bigger prize every week. Every funded prize got emptied and nobody said how
+- [Doge's Gambit](https://puzzles.agntn.dev/raw/collections/doges-gambit.md): Doge's Gambit by Crypto Puzzlers hid an Ether key and a Dogecoin key in one 68 second video of a chess board. Both prizes were claimed in 2021 and the author published both solutions
+- [Dug's Student Treasure Hunt](https://puzzles.agntn.dev/raw/collections/dug.md): Twelve lecture words led to three Bitcoin prizes. See Dug's 2025 treasure hunt solution with the BIP39 seed and verified BIP84 paths.
+- [Genesis Block Wallet Puzzle](https://puzzles.agntn.dev/raw/collections/genesis.md): Explore the Genesis Block Wallet Puzzle and the author's Bitcoin OP_RETURN replies. Follow the clues and check the prize balance without mistaking a hint for a solution
+- [The Great Riddle](https://puzzles.agntn.dev/raw/collections/great-riddle.md): The Great Print hides the 24 words of a Bitcoin recovery phrase in the original pen drawings of the Genesis Collection. Find them all and the artist sends the 25th
+- [Grycoin chain](https://puzzles.agntn.dev/raw/collections/grycoin.md): AoiNakamoto's 7 mBTC blocks on r/Grycoin from summer 2019. One went before its post was up. Another went to a solution even its author never knew
+- [GSMG.io puzzle](https://puzzles.agntn.dev/raw/collections/gsmg.md): The GSMG.io 5 BTC puzzle from April 2019, phase by phase. A grid with a rabbit, a hidden password form, riddles, a chess position and two AES blobs. Halved twice by the author, 1.25 BTC and change on the address today.
+- [Hash collision bounties](https://puzzles.agntn.dev/raw/collections/hash-collision.md): Peter Todd's P2SH bounties from 2013. Five pay for a hash collision and one for an OP_ABS quirk. SHA-1 fell in 2017 and was spent in 2023. Four still stand.
+- [Hunting Time seed phrase hunt](https://puzzles.agntn.dev/raw/collections/hunting-time.md): VeteranHODL hid an Electrum seed in his thriller and posted twelve photo clues on X. Claimed after seven weeks. Here's how every word was hidden
+- [IAMABananaAMAA's puzzles](https://puzzles.agntn.dev/raw/collections/iamabananaamaa.md): Two puzzles from the first night of r/bitcoinpuzzles, six hours apart. A GIF with a ZIP after its last byte and two Base64 alphabets. Then four lines of text under a verse signed by Caesar, where the key was the text itself.
+- [Ledger Donjon CTF](https://puzzles.agntn.dev/raw/collections/ledger-donjon.md): Scissors Secret Sharing from Capture the Fortress 2020. A solved BIP39 challenge with its published phrase and BIP44 path. CTF points aren't a BTC prize.
+- [La Liberté guidant le peuple 2019](https://puzzles.agntn.dev/raw/collections/liberte-guidant-le-peuple.md): Pascal Boyart hid a French seed phrase in a Paris mural for the genesis block's tenth birthday. Solved in six days. Here's every step
+- [LuckyLurker Bitcoin Vault puzzles](https://puzzles.agntn.dev/raw/collections/luckylurker.md): Paul Jones's Bitcoin Vault puzzles. Verify Vault 1's Electrum seed and claimed prize. Vault 2 has 1 BTC with public hints due October 12.
+- [The 10 ETH challenge](https://puzzles.agntn.dev/raw/collections/mineshop.md): Six of twelve seed words sit in a YouTube video, six in the mineshop.eu post it links to. The prize, the rules in the author's own words, and why a shrinking balance here means nothing.
+- [RetiredCoder's mini-puzzles](https://puzzles.agntn.dev/raw/collections/mini.md): Seven small puzzles RetiredCoder posted on Bitcointalk from 2024 to 2026. Four are built on a Bitcoin puzzle key the author already held and pay the Bitcoin Cash still sitting on that puzzle's address, three put 0.01 BTC on a fresh key.
+- [Move Over Brokers treasure hunt](https://puzzles.agntn.dev/raw/collections/move-over-brokers.md): Keir Finlow-Bates hid Bitcoin keys in his 2020 blockchain book and its Italian translation. Some answers are printed only on the paperback
+- [Bitcoin Movie Enigma](https://puzzles.agntn.dev/raw/collections/movie-enigma.md): 34 film stills, each title turned into a BIP39 word, ten intruders to drop. 100,000 sats on a SegWit address since April 2022, claimed in September 2026 with a phrase whose checksum fails.
+- [Natasha Otomoski puzzle, 1 BTC](https://puzzles.agntn.dev/raw/collections/natasha-otomoski.md): A 2019 BitcoinTalk question whose 32 character answer is the private key. Someone found the eight words seven months later and never said how
+- [Path to Greatness](https://puzzles.agntn.dev/raw/collections/path-to-greatness.md): A 2021 Litecoin treasure hunt from an indie game developer. The clues sat inside a parkour game demo and later on the hunt's page as nine images. Nobody has taken the prize.
+- [kTimesG's Phy Challenge](https://puzzles.agntn.dev/raw/collections/phy.md): kTimesG signed a whitepaper parody and posted a spiral of grey emojis. The signature gives up the prize address. The key behind it is still out there
+- [1 mBTC picture puzzle](https://puzzles.agntn.dev/raw/collections/picture-puzzle.md): Four pictures on r/bitcoinpuzzles in December 2013. Sound out the first three and you get directory.io, the QR code says how far down the page to count. Claimed five hours in.
+- [Powerful Moss](https://puzzles.agntn.dev/raw/collections/powerful-moss.md): LogicBeach's 2025 album on Donkey Kong Country 2 soundfonts hides twelve seed words in the music. The prize sat in a contract on Base for twenty months until somebody took all of it
+- [Building an awesome eCash community](https://puzzles.agntn.dev/raw/collections/proof-of-writing.md): An essay about the eCash community with twelve seed words on its diagonal. Nobody read it that way for eighteen months and the prize grew to 30 million XEC before it went.
+- [Quizchain](https://puzzles.agntn.dev/raw/collections/quizchain.md): AoiNakamoto's numbered quiz blocks on r/bitcoinpuzzles, April to July 2019. Each block hashed a short answer plus a piece of the previous key into BIP39 entropy
+- [Quizchain2](https://puzzles.agntn.dev/raw/collections/quizchain2.md): The second Quizchain run on r/bitcoinpuzzles and r/Grycoin from May to July 2019. Each block hashed an answer and a TOMI field with MD5 into BIP39 entropy
+- [Quizchain Real Big Block](https://puzzles.agntn.dev/raw/collections/real-big-block.md): AoiNakamoto's last Quizchain block. 777 mBTC for the final version of a Wattpad chapter with every line break in place. Unclaimed since July 2019
+- [RushWallet contest](https://puzzles.agntn.dev/raw/collections/rushwallet.md): Thirty brainwallets from a 2014 contest. Twenty-nine cracked with their passphrases on the record. No prizes recorded. The contest paid outside the addresses.
+- [Satoshi birthday 7 million quiz](https://puzzles.agntn.dev/raw/collections/satoshi-birthday-quiz.md): Seven trivia questions about Bitcoin history hashed into BIP39 entropy. The rules and the published answer key and how the record proves its own address
+- [Satoshi-Maze](https://puzzles.agntn.dev/raw/collections/satoshi-maze.md): Phemex hid a Bitcoin key in a portrait of Satoshi and promised 2.1 BTC. Nobody made the March 2020 deadline. Then the designer published the key
+- [School of Bitcoin business card](https://puzzles.agntn.dev/raw/collections/school-of-bitcoin.md): A Bitcoin course hid a million sats behind the back of its business card and showed it at 2000 followers. Unclaimed since November 2024
+- [seed-phrase.com](https://puzzles.agntn.dev/raw/collections/seed-phrase.md): A website that dropped clues to a Bitcoin recovery phrase all summer of 2024 and then went quiet. The 0.01 BTC is still on the address
+- [Smith, Lyle & Moore treasure hunts](https://puzzles.agntn.dev/raw/collections/smith-lyle-moore.md): An indie band hid bitcoin behind riddles on its own website. Born to Be Wild fell in 2021 to Morse and the password supernova. Glimmer is still open
+- [TeikhosBounty](https://puzzles.agntn.dev/raw/collections/teikhos.md): In 2018 Johan Nygren put ETH behind five contracts that pay whoever submits the right public key. Four of them can pay. One did in 2026 with a key a failed attempt had left on chain four years earlier.
+- [Brainwallet puzzle, 0.04 BTC](https://puzzles.agntn.dev/raw/collections/trivia-brainwallet.md): Twelve trivia riddles typed into brainwallet.io as a passphrase and a salt. The 2017 rules and every published answer and how the record rebuilds the key
+- [Walking Banks seed hunt](https://puzzles.agntn.dev/raw/collections/walking-banks.md): AH White hid a real 24-word Bitcoin seed in the thriller Walking Banks. 800000 sats wait on two addresses. Four words are known and twenty are not.
+- [WarpWallet challenges](https://puzzles.agntn.dev/raw/collections/warp.md): Keybase's scrypt brainwallet with six funded challenges from 2013 to 2016. Four solved and two expired with the keys published afterwards. 41.85 BTC in total.
+- [Securing Wealth in Poetry](https://puzzles.agntn.dev/raw/collections/wealth-in-poetry.md): A Medium essay from February 2019 about hiding seed phrases in stories, with a real one hidden in the essay itself and 0.03 BTC on its wallet. Still unclaimed.
+- [Puzzle Weave](https://puzzles.agntn.dev/raw/collections/weave.md): Tiamat's twelve weave puzzles from 2019 and 2020 with prizes in AR and ETH and DAI. Nine claimed. Three still open including over 1500 AR.
+- [Wickex's YouTube puzzle](https://puzzles.agntn.dev/raw/collections/wickex.md): The second puzzle on r/bitcoinpuzzles, posted by whoever solved the first. A line of hex, two YouTube videos, Morse code and a spectrogram between you and a 1 mBTC brainwallet. Swept 46 minutes in, sent back, swept again.
+- [Zden's puzzles](https://puzzles.agntn.dev/raw/collections/zden.md): Sixteen visual puzzles by Zden on Bitcoin and Ethereum and Litecoin and Decred. Every one ships its image. Level 5 took eight years to crack.
+- [Getting Started](https://puzzles.agntn.dev/raw/guide.md): Install the package. Load one puzzle. Read its address and its key range. Every puzzle is a record and every answer comes from a method on it.
+- [Agents](https://puzzles.agntn.dev/raw/guide/agents.md): The same fifteen tools over MCP and the Pi and OMP extensions. What the text carries and where the limits live. The puzzle files themselves. And the four that leave the process.
+- [Balances](https://puzzles.agntn.dev/raw/guide/balances.md): puzzle.balance() through the explorers provider for its chain. Base units as bigint. API keys never reach an error. And a watch for what the record missed.
+- [CLI](https://puzzles.agntn.dev/raw/guide/cli.md): The puzzles command. Seventeen subcommands and what each prints. Which ones exit 1 and what --json gives a script.
+- [Custom collections](https://puzzles.agntn.dev/raw/guide/custom.md): Extend NamedCollection or NumericCollection with a key and an author and a puzzle list. Register a loader. From then on the registry treats it like a built-in.
+- [Lookups and views](https://puzzles.agntn.dev/raw/guide/lookups.md): get and requirePuzzle by identifier. selectPuzzles by collection and status. stats and the dataset snapshot with its deterministic data version.
+- [Playground](https://puzzles.agntn.dev/raw/guide/playground.md): The page behind puzzles.agntn.dev/playground runs the library in your browser. What it can tell you and what it leaves alone.
+- [Puzzle records](https://puzzles.agntn.dev/raw/guide/records.md): One PuzzleSpec literal per puzzle and one factory for every chain. Builders for keys and transactions. Absent means absent and never null.
+- [Registry](https://puzzles.agntn.dev/raw/guide/registry.md): A manifest of keys and lazy imports. Keys and aliases answer at once. Records load on the first lookup for their collection. How to register yours.
+- [Verification](https://puzzles.agntn.dev/raw/guide/verification.md): verify() derives the address from the one secret a record exposes and reruns the recipe behind it. Expected failures are values.
+- [Solvers](https://puzzles.agntn.dev/raw/solvers.md): The people and teams who took a prize. Each page keeps every puzzle they solved and what public sources say about them.
+- [26-9-15-20](https://puzzles.agntn.dev/raw/solvers/26-9-15-20.md): Reddit user whose group of friends cracked the Born to Be Wild treasure hunt in 2021 and posted every password on the way. Twelve words and supernova
+- [6loss](https://puzzles.agntn.dev/raw/solvers/6loss.md): Took the 1 mBTC picture puzzle on r/bitcoinpuzzles five hours after it went up. Promised to fund a new puzzle with it.
+- [akkort](https://puzzles.agntn.dev/raw/solvers/akkort.md): Posted the eight words of the Natasha Otomoski puzzle the morning after the 1 BTC moved. Called the method probabilistic and kept it
+- [Antoine Ferron](https://puzzles.agntn.dev/raw/solvers/antoine-ferron.md): Solved Pascal Boyart's Paris mural with Marina in six days. A street lamp and a blue torch did half. Brute force did the rest
+- [arpox](https://puzzles.agntn.dev/raw/solvers/arpox.md): Solved Arweave Puzzle 4 after five and a half months and told the author on Twitter the same day. Polite about it too.
+- [BlockCrushr Labs](https://puzzles.agntn.dev/raw/solvers/blockcrushr-labs.md): The team behind the Decred Autonomy walk-through. Gears measured in pixels and a Gandhi quote that only worked with a space before the full stop.
+- [echo.ls](https://puzzles.agntn.dev/raw/solvers/echo-ls.md): Cracked Zden's Level 5 eight years after it went up and wrote down every step with the key.
+- [floflo777](https://puzzles.agntn.dev/raw/solvers/floflo777.md): Keeps a public catalogue of crypto bounties with an oracle for each one. Solved Dug's student treasure hunt and some old Ethereum contracts nobody else was looking at.
+- [IAMABananaAMAA](https://puzzles.agntn.dev/raw/solvers/iamabananaamaa.md): Started r/bitcoinpuzzles and solved the second puzzle ever posted there. Then sent the prize back in the same block.
+- [joachim](https://puzzles.agntn.dev/raw/solvers/joachim.md): Wrote the CryptoHack solution to Scissors Secret Sharing from the Ledger Donjon CTF 2020. Twelve words in the wrong order and a brute force to put them back.
+- [lefevre](https://puzzles.agntn.dev/raw/solvers/lefevre.md): Solved Arweave Puzzle 13 in four days and took 1 ETH. Eight pictures and eight names and a hash.
+- [lia](https://puzzles.agntn.dev/raw/solvers/lia.md): Solved Arweave Puzzle 8 with three famous deaths. Rasputin and Wilhelm and Alekhine. Two months of work behind one line of answer.
+- [mmorsl](https://puzzles.agntn.dev/raw/solvers/mmorsl.md): Won Zden's Level 4 and wrote the solution up on Steemit. Seventeen Bézier curves and three characters each.
+- [Ori](https://puzzles.agntn.dev/raw/solvers/oritwoen.md): Read an eCash essay on its diagonal and took 30 million XEC from a Cashtab wallet that waited eighteen months. Posted the seed the next day.
+- [pogo](https://puzzles.agntn.dev/raw/solvers/pogo.md): Solved the first two Arweave puzzles in the same week they went up. A four letter handle and no link to anything else.
+- [Quantris](https://puzzles.agntn.dev/raw/solvers/quantris.md): Swept the 2017 trivia brainwallet six hours after the post and then wrote up every answer. Clue 12 was a guess.
+- [rabbidbird](https://puzzles.agntn.dev/raw/solvers/rabbidbird.md): Cracked the Bitcoin Movie Enigma four and a half years after it went up. The seed phrase fails its own checksum and that is exactly why nobody found it.
+- [_radosinsky](https://puzzles.agntn.dev/raw/solvers/radosinsky.md): The X handle VeteranHODL named as the winner of Hunting Time. The 420,000 sats moved five days after the final clue. That's the whole public trail
+- [RetiredCoder](https://puzzles.agntn.dev/raw/solvers/retired-coder.md): Took four keys of the puzzle transaction with a GPU kangaroo of their own making. Then quit the race in public and left 140 to everyone else.
+- [Wickex](https://puzzles.agntn.dev/raw/solvers/wickex.md): Solved the first puzzle on r/bitcoinpuzzles and posted the second one the same night. Then watched the author of the first one solve it.
+
+## Stories
+
+- [1](https://puzzles.agntn.dev/raw/grycoin/1.md)
+- [2](https://puzzles.agntn.dev/raw/grycoin/2.md)
+- [1](https://puzzles.agntn.dev/raw/quizchain/1.md)
+- [10](https://puzzles.agntn.dev/raw/quizchain/10.md)
+- [11](https://puzzles.agntn.dev/raw/quizchain/11.md)
+- [12](https://puzzles.agntn.dev/raw/quizchain/12.md)
+- [13](https://puzzles.agntn.dev/raw/quizchain/13.md)
+- [14](https://puzzles.agntn.dev/raw/quizchain/14.md)
+- [15](https://puzzles.agntn.dev/raw/quizchain/15.md)
+- [16](https://puzzles.agntn.dev/raw/quizchain/16.md)
+- [17](https://puzzles.agntn.dev/raw/quizchain/17.md)
+- [18](https://puzzles.agntn.dev/raw/quizchain/18.md)
+- [19](https://puzzles.agntn.dev/raw/quizchain/19.md)
+- [2](https://puzzles.agntn.dev/raw/quizchain/2.md)
+- [20](https://puzzles.agntn.dev/raw/quizchain/20.md)
+- [21](https://puzzles.agntn.dev/raw/quizchain/21.md)
+- [22](https://puzzles.agntn.dev/raw/quizchain/22.md)
+- [23](https://puzzles.agntn.dev/raw/quizchain/23.md)
+- [24](https://puzzles.agntn.dev/raw/quizchain/24.md)
+- [25](https://puzzles.agntn.dev/raw/quizchain/25.md)
+- [26](https://puzzles.agntn.dev/raw/quizchain/26.md)
+- [27](https://puzzles.agntn.dev/raw/quizchain/27.md)
+- [28](https://puzzles.agntn.dev/raw/quizchain/28.md)
+- [29](https://puzzles.agntn.dev/raw/quizchain/29.md)
+- [3](https://puzzles.agntn.dev/raw/quizchain/3.md)
+- [30](https://puzzles.agntn.dev/raw/quizchain/30.md)
+- [31](https://puzzles.agntn.dev/raw/quizchain/31.md)
+- [32](https://puzzles.agntn.dev/raw/quizchain/32.md)
+- [33](https://puzzles.agntn.dev/raw/quizchain/33.md)
+- [34](https://puzzles.agntn.dev/raw/quizchain/34.md)
+- [35](https://puzzles.agntn.dev/raw/quizchain/35.md)
+- [36](https://puzzles.agntn.dev/raw/quizchain/36.md)
+- [37](https://puzzles.agntn.dev/raw/quizchain/37.md)
+- [38](https://puzzles.agntn.dev/raw/quizchain/38.md)
+- [39](https://puzzles.agntn.dev/raw/quizchain/39.md)
+- [4](https://puzzles.agntn.dev/raw/quizchain/4.md)
+- [40](https://puzzles.agntn.dev/raw/quizchain/40.md)
+- [41](https://puzzles.agntn.dev/raw/quizchain/41.md)
+- [42](https://puzzles.agntn.dev/raw/quizchain/42.md)
+- [43](https://puzzles.agntn.dev/raw/quizchain/43.md)
+- [44](https://puzzles.agntn.dev/raw/quizchain/44.md)
+- [45](https://puzzles.agntn.dev/raw/quizchain/45.md)
+- [46](https://puzzles.agntn.dev/raw/quizchain/46.md)
+- [47](https://puzzles.agntn.dev/raw/quizchain/47.md)
+- [48](https://puzzles.agntn.dev/raw/quizchain/48.md)
+- [49](https://puzzles.agntn.dev/raw/quizchain/49.md)
+- [5](https://puzzles.agntn.dev/raw/quizchain/5.md)
+- [50](https://puzzles.agntn.dev/raw/quizchain/50.md)
+- [51](https://puzzles.agntn.dev/raw/quizchain/51.md)
+- [52](https://puzzles.agntn.dev/raw/quizchain/52.md)
+- [53](https://puzzles.agntn.dev/raw/quizchain/53.md)
+- [54](https://puzzles.agntn.dev/raw/quizchain/54.md)
+- [55](https://puzzles.agntn.dev/raw/quizchain/55.md)
+- [56](https://puzzles.agntn.dev/raw/quizchain/56.md)
+- [57](https://puzzles.agntn.dev/raw/quizchain/57.md)
+- [58](https://puzzles.agntn.dev/raw/quizchain/58.md)
+- [59](https://puzzles.agntn.dev/raw/quizchain/59.md)
+- [6](https://puzzles.agntn.dev/raw/quizchain/6.md)
+- [60](https://puzzles.agntn.dev/raw/quizchain/60.md)
+- [61](https://puzzles.agntn.dev/raw/quizchain/61.md)
+- [62](https://puzzles.agntn.dev/raw/quizchain/62.md)
+- [63](https://puzzles.agntn.dev/raw/quizchain/63.md)
+- [64](https://puzzles.agntn.dev/raw/quizchain/64.md)
+- [65](https://puzzles.agntn.dev/raw/quizchain/65.md)
+- [66](https://puzzles.agntn.dev/raw/quizchain/66.md)
+- [67](https://puzzles.agntn.dev/raw/quizchain/67.md)
+- [68](https://puzzles.agntn.dev/raw/quizchain/68.md)
+- [69](https://puzzles.agntn.dev/raw/quizchain/69.md)
+- [7](https://puzzles.agntn.dev/raw/quizchain/7.md)
+- [70](https://puzzles.agntn.dev/raw/quizchain/70.md)
+- [71](https://puzzles.agntn.dev/raw/quizchain/71.md)
+- [72](https://puzzles.agntn.dev/raw/quizchain/72.md)
+- [73](https://puzzles.agntn.dev/raw/quizchain/73.md)
+- [74](https://puzzles.agntn.dev/raw/quizchain/74.md)
+- [75](https://puzzles.agntn.dev/raw/quizchain/75.md)
+- [76](https://puzzles.agntn.dev/raw/quizchain/76.md)
+- [77](https://puzzles.agntn.dev/raw/quizchain/77.md)
+- [8](https://puzzles.agntn.dev/raw/quizchain/8.md)
+- [9](https://puzzles.agntn.dev/raw/quizchain/9.md)
+- [1](https://puzzles.agntn.dev/raw/quizchain2/1.md)
+- [10](https://puzzles.agntn.dev/raw/quizchain2/10.md)
+- [11](https://puzzles.agntn.dev/raw/quizchain2/11.md)
+- [12](https://puzzles.agntn.dev/raw/quizchain2/12.md)
+- [13](https://puzzles.agntn.dev/raw/quizchain2/13.md)
+- [14](https://puzzles.agntn.dev/raw/quizchain2/14.md)
+- [15](https://puzzles.agntn.dev/raw/quizchain2/15.md)
+- [16](https://puzzles.agntn.dev/raw/quizchain2/16.md)
+- [17](https://puzzles.agntn.dev/raw/quizchain2/17.md)
+- [18](https://puzzles.agntn.dev/raw/quizchain2/18.md)
+- [19](https://puzzles.agntn.dev/raw/quizchain2/19.md)
+- [2](https://puzzles.agntn.dev/raw/quizchain2/2.md)
+- [20](https://puzzles.agntn.dev/raw/quizchain2/20.md)
+- [21](https://puzzles.agntn.dev/raw/quizchain2/21.md)
+- [22](https://puzzles.agntn.dev/raw/quizchain2/22.md)
+- [23](https://puzzles.agntn.dev/raw/quizchain2/23.md)
+- [24](https://puzzles.agntn.dev/raw/quizchain2/24.md)
+- [25](https://puzzles.agntn.dev/raw/quizchain2/25.md)
+- [26](https://puzzles.agntn.dev/raw/quizchain2/26.md)
+- [27](https://puzzles.agntn.dev/raw/quizchain2/27.md)
+- [28](https://puzzles.agntn.dev/raw/quizchain2/28.md)
+- [29](https://puzzles.agntn.dev/raw/quizchain2/29.md)
+- [3](https://puzzles.agntn.dev/raw/quizchain2/3.md)
+- [30](https://puzzles.agntn.dev/raw/quizchain2/30.md)
+- [31](https://puzzles.agntn.dev/raw/quizchain2/31.md)
+- [32](https://puzzles.agntn.dev/raw/quizchain2/32.md)
+- [33](https://puzzles.agntn.dev/raw/quizchain2/33.md)
+- [34](https://puzzles.agntn.dev/raw/quizchain2/34.md)
+- [35](https://puzzles.agntn.dev/raw/quizchain2/35.md)
+- [36](https://puzzles.agntn.dev/raw/quizchain2/36.md)
+- [37](https://puzzles.agntn.dev/raw/quizchain2/37.md)
+- [38](https://puzzles.agntn.dev/raw/quizchain2/38.md)
+- [39](https://puzzles.agntn.dev/raw/quizchain2/39.md)
+- [4](https://puzzles.agntn.dev/raw/quizchain2/4.md)
+- [40](https://puzzles.agntn.dev/raw/quizchain2/40.md)
+- [41](https://puzzles.agntn.dev/raw/quizchain2/41.md)
+- [42](https://puzzles.agntn.dev/raw/quizchain2/42.md)
+- [43](https://puzzles.agntn.dev/raw/quizchain2/43.md)
+- [44](https://puzzles.agntn.dev/raw/quizchain2/44.md)
+- [45](https://puzzles.agntn.dev/raw/quizchain2/45.md)
+- [46](https://puzzles.agntn.dev/raw/quizchain2/46.md)
+- [47](https://puzzles.agntn.dev/raw/quizchain2/47.md)
+- [48](https://puzzles.agntn.dev/raw/quizchain2/48.md)
+- [49](https://puzzles.agntn.dev/raw/quizchain2/49.md)
+- [5](https://puzzles.agntn.dev/raw/quizchain2/5.md)
+- [50](https://puzzles.agntn.dev/raw/quizchain2/50.md)
+- [51](https://puzzles.agntn.dev/raw/quizchain2/51.md)
+- [52](https://puzzles.agntn.dev/raw/quizchain2/52.md)
+- [53](https://puzzles.agntn.dev/raw/quizchain2/53.md)
+- [54](https://puzzles.agntn.dev/raw/quizchain2/54.md)
+- [55](https://puzzles.agntn.dev/raw/quizchain2/55.md)
+- [56](https://puzzles.agntn.dev/raw/quizchain2/56.md)
+- [57](https://puzzles.agntn.dev/raw/quizchain2/57.md)
+- [58](https://puzzles.agntn.dev/raw/quizchain2/58.md)
+- [59](https://puzzles.agntn.dev/raw/quizchain2/59.md)
+- [6](https://puzzles.agntn.dev/raw/quizchain2/6.md)
+- [60](https://puzzles.agntn.dev/raw/quizchain2/60.md)
+- [61](https://puzzles.agntn.dev/raw/quizchain2/61.md)
+- [62](https://puzzles.agntn.dev/raw/quizchain2/62.md)
+- [63](https://puzzles.agntn.dev/raw/quizchain2/63.md)
+- [64](https://puzzles.agntn.dev/raw/quizchain2/64.md)
+- [65](https://puzzles.agntn.dev/raw/quizchain2/65.md)
+- [66](https://puzzles.agntn.dev/raw/quizchain2/66.md)
+- [67](https://puzzles.agntn.dev/raw/quizchain2/67.md)
+- [68](https://puzzles.agntn.dev/raw/quizchain2/68.md)
+- [69](https://puzzles.agntn.dev/raw/quizchain2/69.md)
+- [7](https://puzzles.agntn.dev/raw/quizchain2/7.md)
+- [70](https://puzzles.agntn.dev/raw/quizchain2/70.md)
+- [71](https://puzzles.agntn.dev/raw/quizchain2/71.md)
+- [72](https://puzzles.agntn.dev/raw/quizchain2/72.md)
+- [73](https://puzzles.agntn.dev/raw/quizchain2/73.md)
+- [74](https://puzzles.agntn.dev/raw/quizchain2/74.md)
+- [75](https://puzzles.agntn.dev/raw/quizchain2/75.md)
+- [76](https://puzzles.agntn.dev/raw/quizchain2/76.md)
+- [77](https://puzzles.agntn.dev/raw/quizchain2/77.md)
+- [8](https://puzzles.agntn.dev/raw/quizchain2/8.md)
+- [9](https://puzzles.agntn.dev/raw/quizchain2/9.md)

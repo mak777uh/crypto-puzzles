@@ -1,0 +1,103 @@
+{
+  "slug": "zden-haluska-halv-312ksats",
+  "agent": "Qoder",
+  "ts": "2026-10-18T10:39:12Z",
+  "date": "2026-10-18",
+  "status": "partial",
+  "note": "",
+  "api_calls": 0,
+  "free_transports": 8,
+  "remaining_seen": 50,
+  "reset_utc": "2026-10-18T11:27:46Z",
+  "files": 111,
+  "bytes": 546130,
+  "media": 1,
+  "repos": [
+    {
+      "repo": "floflo777/open-crypto-puzzles",
+      "role": "registry",
+      "branch": "main",
+      "head_sha": "19644e58e50721f8469680f2edcba1daa0697630",
+      "counts": {},
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "repo": "benjacasas02/independent-cryptography-research",
+      "role": "community",
+      "branch": "main",
+      "head_sha": "6b438cb2cdbbe0048747801fa89a800fa3ec9e4e",
+      "counts": {
+        "issues": 0,
+        "comments": 0
+      },
+      "files": 111,
+      "bytes": 546130
+    }
+  ],
+  "candidates": [
+    {
+      "repo": "floflo777/open-crypto-puzzles",
+      "role": "registry",
+      "source": "ссылки досье",
+      "hits": 16
+    },
+    {
+      "repo": "benjacasas02/independent-cryptography-research",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 3
+    },
+    {
+      "repo": "schum-io/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "lekejf/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "pauldmurphy/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "ebr4him68-rgb/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "aperioscanner/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "windstalker-arch/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    }
+  ],
+  "errors": [
+    "не собрано (сверх --max-repos 2): schum-io/open-crypto-puzzles, lekejf/open-crypto-puzzles, pauldmurphy/open-crypto-puzzles, ebr4him68-rgb/open-crypto-puzzles, aperioscanner/open-crypto-puzzles, windstalker-arch/open-crypto-puzzles"
+  ],
+  "stop_reason": "",
+  "ocp": {
+    "slug": "zden-haluska-halv-312ksats",
+    "tier": "mid",
+    "folder": "2-mid-prizes/zden-haluska-halv-312ksats",
+    "handles": [
+      "x:@Zd3N"
+    ],
+    "repo": "floflo777/open-crypto-puzzles",
+    "ocp_path": "_sources/ocp/2-mid-prizes/zden-haluska-halv-312ksats"
+  },
+  "digest": "data/github/GITHUB_INTAKE.md"
+}

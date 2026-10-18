@@ -1,0 +1,45 @@
+---
+name: puzzles
+description: Look up public crypto puzzles, bounties and challenges in the @agntn/puzzles dataset through its puzzles_* agent tools or the `puzzles` CLI. Use when a task asks what puzzles exist, which address belongs to which puzzle, what the author hinted, whether a recorded key checks out, or how much is still on a prize address. For code that imports the package use puzzles-library; for adding or fixing a record use puzzles-records.
+metadata:
+  author: oritwoen
+  version: "0.21.2"
+---
+
+# puzzles
+
+The dataset grows, so this skill does not list what is in it. Ask the tools. They read the same registry as the library and answer from the installed version, which is the only list that is never stale.
+
+## Find your way in
+
+1. **What exists.** `puzzles_collections` gives every collection with its author and status counts. `puzzles_stats` gives dataset totals. Both are local and cheap.
+2. **Which puzzles.** `puzzles_list` with a `collection`, `chain`, `status` or `withPubkey` filter. Holding an address, pass it as `address` instead of paging. An empty result means no puzzle pays there, unless it names a puzzle the other filters left out.
+3. **One puzzle.** `puzzles_show` with an identifier taken from a list row. Then `puzzles_hints` for what the author and the community said, with sources, and `puzzles_stages` when the puzzle runs in several stages, to see which ones already have a public answer. `puzzles_assets` reads the puzzle's own files and the archived threads behind its hints, checked against the record, so work from those instead of a page that may have changed.
+4. **Checks.** `puzzles_verify` derives the address from the recorded key material, locally. Give it a filter such as `technique` instead of an `id` and it checks every match in one call, printing only the misses in full. `puzzles_balance`, `puzzles_watch` and `puzzles_eligibility` reach the network. Call `puzzles_eligibility` before working on a prize: one record with the source, the address, lifetime totals, the status with its evidence, the carriers and what counts as a solution, plus a `missing` row for each field nobody can fill. Call `puzzles_watch` before trusting a prize or a transaction list: it names the deposits and spends the record misses, and with `since` a source page that changed. A finding is for a person to review, never a record to edit on your own.
+5. **Who.** `puzzles_authors` and `puzzles_author` for who published a collection and what public pages say about them. `puzzles_solvers` and `puzzles_solver` for who took a prize and what else they solved; `puzzles_solver` also takes a puzzle identifier, so `bits/135` answers with its solver.
+
+No tools in this harness? The CLI prints the same answers: `puzzles collections`, `puzzles list`, `puzzles show <id>`, `puzzles hints <id>`, `puzzles stages <id>`, `puzzles verify <id>`, `puzzles balance <id>`, `puzzles watch <id>`, `puzzles eligibility <id|address>`, `puzzles authors [key]`, `puzzles solvers [key]`. Run it without installing through `pnpm dlx @agntn/puzzles <command>`, or expose the tools with `puzzles mcp`.
+
+## Identifiers
+
+An identifier is `collection/name`, for example `bits/90`. A collection with a single puzzle uses its key alone, like `gsmg`, with no slash. Do not build identifiers from a pattern you expect. Copy them from a `puzzles_list` row. A miss is cheap anyway: it names the known collections, or how many puzzles the collection holds with one real identifier. Ask for a whole collection like `quizchain` and the miss hands back its first and last puzzle, so the next call names one of them.
+
+## Reading the answers
+
+- **Status** is recorded, never guessed from the chain. `solved` means the solution is public. `claimed` means the prize is gone and the key is not published. `swept` means someone took it after the public key leaked. `expired` means the author took it back. Everything else is `unsolved`.
+- **Absent means unknown.** A record leaves out what nobody published: no key, no solver, no prize. Nothing is null, and a missing field is not a zero.
+- **A hint is not a fact.** `official` comes from the puzzle's author, `community` from anyone else, and neither says the hint is right. The `source` is where it was published. A published `answer` responds to one hint and is not a verified key.
+- **An unverifiable puzzle is an answer.** `puzzles_verify` reports `unverifiable` when the record holds no key material. That is a result, not a tool error. `not verified` is the one to worry about: the recorded key does not derive the address.
+- **Balances are live.** Ethereum reads Blockscout without a key and Etherscan with one, through `apiKey` or `ETHERSCAN_API_KEY`; Bitcoin Cash and eCash take `BLOCKCHAIR_API_KEY` once Blockchair starts refusing. The balance counts the chain's own coin, so the 100 DAI of `weave/9` is not in it. There is no retry or rate limiting, so don't loop the call over hundreds of addresses.
+
+## Pitfalls
+
+- Listing the whole dataset to find one address or one collection. Use the filter the tool already takes.
+- Raising `limit` to see more rows. Follow the returned next offset with the same filters instead.
+- Treating a status count or a balance from an earlier call as current after the dataset or the chain moved.
+- Reading `unsolved` as "nobody knows anything". Check `puzzles_hints` first, since part of the answer may already be public.
+
+## Related
+
+- [puzzles-library](../puzzles-library/SKILL.md) for the TypeScript API behind the tools.
+- [puzzles-records](../puzzles-records/SKILL.md) for adding or fixing a record in the repository.

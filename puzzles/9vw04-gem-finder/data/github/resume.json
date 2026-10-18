@@ -1,0 +1,17 @@
+{
+  "done": [
+    "agntn/puzzles",
+    "floflo777/open-crypto-puzzles",
+    "canalqb/puzzle_bc1qr5mssp6snmduqp9enx4dzmcxvk7qw83lceyy2v"
+  ],
+  "left": [
+    "canalqb/agentehermes",
+    "canalqb/blogforlinkedin",
+    "canalqb/bot_telegram",
+    "canalqb/puzzle",
+    "canalqb/puzzle-67-neon",
+    "onyxdeveloper/webpack-simple"
+  ],
+  "ts": "2026-10-18T10:33:35Z",
+  "reason": "исчерпан --api-budget (0 запросов)"
+}

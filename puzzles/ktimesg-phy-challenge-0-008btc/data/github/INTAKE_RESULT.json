@@ -1,0 +1,133 @@
+{
+  "slug": "ktimesg-phy-challenge-0-008btc",
+  "agent": "Qoder",
+  "ts": "2026-10-18T10:40:17Z",
+  "date": "2026-10-18",
+  "status": "partial",
+  "note": "",
+  "api_calls": 25,
+  "free_transports": 8,
+  "remaining_seen": 54,
+  "reset_utc": "2026-10-18T11:24:45Z",
+  "files": 16,
+  "bytes": 2834557,
+  "media": 5,
+  "repos": [
+    {
+      "repo": "agntn/puzzles",
+      "role": "community",
+      "branch": "main",
+      "head_sha": "decdd4db731a8ea6da7bbc30d4e234711fa9b0cd",
+      "counts": {
+        "issues": 300,
+        "comments": 500,
+        "releases": 47
+      },
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "repo": "arturfromtheblock/emoji-mapping-tool",
+      "role": "community",
+      "branch": "main",
+      "head_sha": "8ad6c1742d7c3ccd6a3aead64de19830a8d49f92",
+      "counts": {
+        "issues": 0,
+        "comments": 0,
+        "releases": 0
+      },
+      "files": 8,
+      "bytes": 2471476
+    },
+    {
+      "repo": "arturfromtheblock/ballet-wallet-hunter",
+      "role": "author",
+      "branch": "master",
+      "head_sha": "b8f74de35cba437a64dec075357f81d1b5e15e69",
+      "counts": {
+        "issues": 0,
+        "comments": 0,
+        "releases": 0
+      },
+      "files": 8,
+      "bytes": 363081
+    },
+    {
+      "repo": "olawale20r/puzzles",
+      "role": "fork",
+      "branch": "main",
+      "head_sha": "c36ac913f1f0ded9a9d43253c1273d5037048fa5",
+      "counts": {
+        "issues": 1,
+        "comments": 1,
+        "releases": 0
+      },
+      "files": 0,
+      "bytes": 0
+    }
+  ],
+  "candidates": [
+    {
+      "repo": "agntn/puzzles",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 15
+    },
+    {
+      "repo": "arturfromtheblock/emoji-mapping-tool",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 4
+    },
+    {
+      "repo": "arturfromtheblock/ballet-wallet-hunter",
+      "role": "author",
+      "source": "репо владельца arturfromtheblock",
+      "hits": 0
+    },
+    {
+      "repo": "olawale20r/puzzles",
+      "role": "fork",
+      "source": "форки agntn/puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "cryptocool/boha",
+      "role": "fork",
+      "source": "форки agntn/puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "scitechindian/cbpcdl",
+      "role": "fork",
+      "source": "форки agntn/puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "procgro/boha",
+      "role": "fork",
+      "source": "форки agntn/puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "alexhardwormer/boha",
+      "role": "fork",
+      "source": "форки agntn/puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "alexanderkud/boha",
+      "role": "fork",
+      "source": "форки agntn/puzzles",
+      "hits": 0
+    }
+  ],
+  "errors": [
+    "не собрано (сверх --max-repos 4): cryptocool/boha, scitechindian/cbpcdl, procgro/boha, alexhardwormer/boha, alexanderkud/boha",
+    "agntn/puzzles: репозиторий больше --max-mb (25 МБ) — содержимое НЕ распаковано, только метаданные и API",
+    "olawale20r/puzzles: репозиторий больше --max-mb (25 МБ) — содержимое НЕ распаковано, только метаданные и API"
+  ],
+  "stop_reason": "",
+  "ocp": null,
+  "digest": "data/github/GITHUB_INTAKE.md"
+}

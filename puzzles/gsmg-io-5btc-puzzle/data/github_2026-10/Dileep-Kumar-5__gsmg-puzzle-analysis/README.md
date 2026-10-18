@@ -1,0 +1,600 @@
+# GSMG.IO 5 BTC Puzzle — reproducible analysis
+
+Tooling and results for the [GSMG.IO 5 BTC puzzle](https://github.com/puzzlehunt/gsmgio-5btc-puzzle).
+
+**The puzzle is not solved here.** What this repo provides is a verified,
+reproducible base and a large body of *eliminated* space — including disproof of
+the two artifacts the solver community currently treats as its frontier.
+
+Prize address [`1GSMG1JC9wtdSwfwApgj2xcmJPAwx7prBe`](https://www.blockchain.com/btc/address/1GSMG1JC9wtdSwfwApgj2xcmJPAwx7prBe)
+holds ~1.256 BTC, unmoved. (5 BTC halved twice, per the creator's rules.)
+
+---
+
+## Setup
+
+```bash
+pip install coincurve pycryptodome pillow jpeglib brotli
+git clone https://github.com/puzzlehunt/gsmgio-5btc-puzzle.git
+python pipeline.py     # reproduce phases 1 -> 3.2 from real ciphertext
+python oracle.py       # verify the on-chain public key, arm the key test
+```
+
+`corpus/` is rebuilt from the Wayback Machine (`fetch_wayback.py`) because
+**gsmg.io is a parked, for-sale domain** — every live path now returns the same
+~28KB parking page. The puzzle text exists only in archived snapshots.
+
+---
+
+## The one test that matters
+
+The prize address has spent, so its public key is on-chain:
+
+```
+04f4d1bbd91e65e2a019566a17574e97dae908b784b388891848007e4f55d5a464
+  9c73d25fc5ed8fd7227cab0be4e576c0c6404db5aa546286563e4be12bf33559
+```
+
+`oracle.py` verifies this hashes back to the prize address (**uncompressed**
+serialisation — checking compressed-only makes every candidate silently fail),
+then gives you a network-free test at libsecp256k1 speed:
+
+```python
+from oracle import check, search
+check(some_32_bytes)        # True iff it is the prize key
+search(candidate_generator) # returns the winner or None
+```
+
+Use it before believing any claimed solution, including your own. A self-test
+pins address derivation against privkey=1 so a broken base58 routine can never
+masquerade as "candidate was wrong".
+
+---
+
+## Verified chain
+
+`pipeline.py` reproduces every solved stage from published inputs, asserting
+against a known checkpoint at each step. If an assert fires, nothing downstream
+is trustworthy.
+
+| Stage | Checkpoint |
+|---|---|
+| 14×14 matrix, counterclockwise spiral | `gsmg.io/theseedisplanted` |
+| `SHA256(causality)` | `eb3efb51…` |
+| `SHA256(7 concatenated parts)` | `1a57c572…` |
+| Phase 3.2 AES blob | full decrypt from real ciphertext |
+| Beaufort, key `THEMATRIXHASYOU` | Architect speech |
+| SalPhaseIon entry hash | `89727c59…` |
+| Token extraction (abba + a-i/o) | `matrixsumlist`, `enter`, `lastwordsbeforearchichoice`, `thispassword` |
+
+**Practical finding:** the phase 3.2 blob needs `-md sha256`, not MD5. A bare
+`openssl enc` on 1.0.x gives `bad decrypt` with the correct password. Anyone who
+tried this in 2020 and gave up hit that, not a wrong answer.
+
+---
+
+## The ciphertexts
+
+Five exist. The repo README publishes only two of them.
+
+| blob | salt | ct bytes | status |
+|---|---|---|---|
+| phase 2/3 | `06286612d43ed7ed` | 656 | solved — `sha256(causality)` |
+| phase 3 | `9fbc451d13d071f4` | 4096 | solved — `sha256(7 parts)` |
+| **Cosmic Duality** | `2d3f6fe06dc950e6` | 1328 | **unsolved** |
+| **SalPhaseIon** | `3ab585348552415d` | 80 | **unsolved** |
+| **phase 3.2 trailing** | `b45a5e3d827593ca` | 80 | **unsolved** |
+
+The 656- and 4096-byte ciphertexts were recovered from archived pages
+(`blobs.py`, `decrypt_recovered.py`) — the repo published their *plaintexts* but
+never their ciphertexts, so until now nobody could check the published passwords
+actually worked. Both decrypt cleanly, and the phase-3 plaintext's embedded
+phase-3.2 blob is byte-identical to the README's. Nothing was truncated.
+
+The **phase 3.2 trailing blob** sat in the repo README for years, unattacked.
+
+---
+
+## Disproved
+
+### `cosmic_decrypted.bin` is a padding false positive
+
+The community's frontier artifact (sha256 `4f7a1e4e…`, 1327 bytes) reproduces
+exactly from PR #68's master key — and is noise.
+
+```
+entropy 7.870 bits/byte   (os.urandom of same length: 7.876)
+255/256 byte values present, longest ASCII run 7 chars
+0.33% of RANDOM keys produce an identical-looking 1327-byte "success"
+```
+
+1327 bytes from 1328 means **one** padding byte, which a wrong key yields 1 time
+in 256. The community has tried far more than 256 passwords, so survivors are
+expected, not evidence. Corroborated three independent ways.
+
+### The 96-byte blob's `1449a217…` milestone is the same class
+
+Password `matrixsumlist enter lastwordsbeforearchichoice thispassword matrixsumlist`
+(MD5 KDF) reproduces it exactly. Also 1 padding byte, printable 0.38.
+`body[0:32]` gives address `1GKJzHQkgTBwwEGeXetsTMDoUzvwzs9yb4` — not the prize.
+48 sliding windows, their SHA256s, and the reversed body: no match.
+
+### PR #68's master key rests on invented tokens
+
+`yourlastcommand` and `secondanswer` originate from on-chain OP_RETURN dust
+posted by solvers — messages **the creator explicitly disavowed**. Two of the
+five tokens are fabricated. Combined with the entropy result, every
+`chain4` / `cosmic_A` / `row1-4` / Phase-5/6 derivation downstream is unfounded.
+
+The creator confirmed this independently (2025-04-28): *"Did anyone found
+yingyang? I don't think so… It's the next phase, but I await the day someone
+finally gets there."* **Nobody has passed SalPhaseIon.**
+
+### Blue/yellow encodes nothing
+
+`colours.py` measures the original image (byte-identical to the archived
+`gsmg.io/puzzle`, sha256 `38125bbdf1ea…`) and verifies the extracted bit matrix
+against the README's before drawing conclusions.
+
+```
+census: white 86, black 86, blue 15, yellow 9   (196 cells)
+```
+
+All 24 coloured squares sit at spiral position ≡ 7 (mod 8) — the **last bit of
+each of the 24 URL characters**, each marked exactly once. Blue = bit 1,
+yellow = bit 0. It is exactly the ASCII parity of `gsmg.io/theseedisplanted`,
+carrying zero information beyond the URL.
+
+Also identifies the cell that has confused every census in the issue tracker:
+**(6,7) is a white cell overlaid by the rabbit drawing**, reading 50/50.
+
+### No steganography in the images
+
+`stego.py` — 19 recovered originals plus 6 repo images. Trailing data after
+PNG `IEND` / JPEG `EOI`, full chunk inventory, LSB across
+R/G/B/A/RGB × row/column × MSB/LSB (20 extractions each), WIF- and hex64-shaped
+runs, palette and alpha anomalies. Nothing. Only Adobe XMP boilerplate on the
+favicons and logo.
+
+`dct.py` — the Decentraland JPEG at the DCT-coefficient level (libjpeg), where
+real JPEG stego lives. 12 coefficient LSB streams, all noise (printable
+0.23–0.39 against ~0.37 for random). The file has no EXIF and a bare JFIF header
+at q≈85 — a re-encode fingerprint, and coefficient payloads don't survive
+re-encoding.
+
+> Two histogram indicators I initially flagged (`|1|/|2|` ratio, a chi-square on
+> Cb) did **not** survive a control: re-encoding the same image swings both
+> further than the original. They're dominated by compression history, not
+> embedding. Withdrawn — the conclusion rests on the extraction test and
+> provenance alone.
+
+---
+
+## RUN0 — the largest unanalyzed object
+
+The SalPhaseIon textarea's first run. The repo README decodes four small pieces
+and says *"only some are currently decoded"*; the bulk is untouched, and no
+issue, PR, or external writeup analyzes it.
+
+Structure: `RUN0  z  RUN1  z  RUN2  z  "shabef our first hint is your last command"`,
+where RUN1/RUN2 decode to `lastwordsbeforearchichoice` / `thispassword`.
+
+RUN0 splits at a spliced binary run decoding to `matrixsumlist` — so that token
+is a **label naming the run**, not a password.
+
+| | `dbbi` (91) | `faed` (570) |
+|---|---|---|
+| IoC | **0.1509** | 0.1181 |
+| uniform baseline (9 symbols) | 0.1111 | 0.1111 |
+| top symbols | `b` 27.5%, `e` 19.8% | `g` 18.8% (flat) |
+| periodicity (coset IoC, p=1…40) | no lift | no lift |
+| repeated 6-grams | 0 | 0 |
+
+- Alphabet is exactly `{a..i}` — the **only run with no `o`**, and the creator's
+  hint says *"some characters need to be 'zeroed out'"*.
+- Under `a=0…i=8`, `b` and `e` are digits **1 and 4** — the exact escape digits
+  of the solved phase-3.2.2 checkerboard, recovered independently from frequency
+  shape alone (best of 72 combinations).
+- **661 is prime** — the rejoined run cannot form a rectangle under any width,
+  which argues `dbbi` and `faed` are separate runs, not one spliced run.
+
+### Eliminated, each with a control where one was meaningful
+
+| hypothesis | scope | control | result |
+|---|---|---|---|
+| direct checkerboard | 4 mappings × 5 targets | — | noise |
+| columnar transposition by token length | 114 pipelines | — | 0.044 vs 0.440 |
+| substitution hill-climb | 300 restarts | shuffled scored **higher** | refuted |
+| `dbbi` as index/key into `faed` | ~38 constructions × 3 decoders | 0.208 vs 0.250 | refuted |
+| `dbbi` as book cipher into puzzle plaintexts | 7 modes × 5 targets × 2 mappings | 0.286 vs 0.342 | refuted |
+
+The length coincidences are real but unexploited:
+`91 = 7×13` and `len("matrixsumlist") = 13`;
+`570 = 15×38` and `len("lastwordsbeforearchichoice"+"thispassword") = 38`.
+
+### Proven complete: no number-base reading works
+
+`RUN1`/`RUN2` decode as *symbols → decimal integer → base 16 → ASCII*. That
+method pins its own output length: 63 symbols → 26 chars and 29 → 12, a ratio of
+2.42, which is just `log(10)/log(16)`. `dbbi`'s 91 symbols do produce 38 bytes
+under every mapping. So the *encoding* is right and only the symbol→digit
+assignment is unknown — and that space is finite.
+
+`permute.py` and `permute9.py` exhaust it:
+
+| run | base | mappings | best lowercase ratio |
+|---|---|---|---|
+| `dbbi` | 10 (from `1..9`, then any 9 of `0..9`) | 3,991,680 | 0.395 |
+| `dbbi` | 9 | 362,880 | 0.417 |
+| `faed` | 10 | 3,991,680 | 0.211 |
+| `faed` | 9 | 362,880 | 0.208 |
+
+**8,709,120 mappings, both bases, both runs.** A correct mapping scores 1.00 —
+`RUN1` and `RUN2` are re-derived as a positive control in the same run and do
+score 1.00. Nothing comes close.
+
+This is exhaustion, not sampling. **No positional number-base reading of `dbbi`
+or `faed` yields ASCII text under any symbol→digit assignment.** Despite sharing
+the `{a..i}` alphabet and the same textarea, they are not the same kind of
+object as `RUN1`/`RUN2` — which is a structural fact about the puzzle, not a
+failed attempt.
+
+### faed is a payload, not a cipher of text
+
+`faed` fails every classical test — and the reason is now measurable.
+
+Chi-square on its symbol frequencies is 43.7 on 8 df (p<0.001), but **69% of
+that comes from a single symbol**: `g` at 107 against 63.3 expected. Removing it
+is decisive:
+
+```
+drop 'g'            chi2 10.8 on 7 df    UNIFORM (p ~ 0.15)
+drop any other      chi2 39.0 - 43.7     still highly skewed
+```
+
+`g` is the only symbol whose removal leaves the rest uniform, and the separation
+is not marginal. So `faed` is **eight uniform symbols plus a ninth**, i.e. 463
+symbols of maximum-entropy data — about 174 bytes — with 107 `g`s interleaved.
+
+Uniform means no structure to find. That is why the IoC sits at 0.1181, why no
+period appears at any lag 1–40, why there are no repeated 6-grams, and why
+fractionation, transposition and substitution all fail. **`faed` is encrypted or
+compressed payload, not an enciphered message.**
+
+What the `g`s are is still open, but several readings are closed
+(`nulls.py`, `gmask.py`, `fraction.py`):
+
+| reading | result |
+|---|---|
+| positions are prime (per the creator's hint) | 24/107 prime = 22.4% vs 18.4% by chance |
+| positions carry a bit-mask payload | mask bytes printable 0.24; no key |
+| deliberately placed nulls | gaps are geometric (28,16,11,10,7,…) = random placement |
+| escape prefix, hex-style | 17 tokens, chi2 278.6 — nowhere near uniform |
+| base-8 reading of the remainder | best lowercase ratio 0.201 |
+| fractionation + transposition (ADFGVX family) | control ceiling **beats** best result |
+
+The consequence matters for the whole map: if `faed` is payload, it needs a key
+like the Cosmic blob does. It is not a layer waiting to be read cleverly — it
+sits *inside* the dependency cycle rather than offering a way out of it.
+
+### Is the key simply sitting in them? No — exhausted
+
+Uniform high-entropy data is exactly what a 32-byte private key looks like, so
+`faed`'s flatness is consistent with a key hiding in it rather than evidence
+against one. That deserved a real check rather than a shrug.
+
+`oracle_aligned.py` and `oracle_full.py` run every base-9 symbol mapping against
+the verified on-chain public key:
+
+| run | coverage | checks | result |
+|---|---|---|---|
+| `dbbi` | **all** 6 windows × 362,880 mappings | 2,177,280 | no match |
+| `faed` | **all** 195 windows × 362,880 mappings | 70,761,600 | no match |
+
+**73M elliptic-curve operations. Complete coverage.** The prize key is not
+present, in the clear, in any base-9 decoding of either run.
+
+Two details that matter for anyone re-running this. Byte width is computed from
+`(9**n - 1).bit_length()`, not estimated — 91 base-9 digits need **37** bytes,
+where a rounded `91*log2(9)/8` gives 36, and the first attempt crashed on
+exactly that. And the output is left-padded to fixed width, because
+`format(n,'x')` drops leading zeros and would otherwise make a given offset mean
+something different in each mapping.
+
+### Nor is it an interleaving
+
+Every test above transforms `faed`'s *values*. Uniformity is a property of the
+sequence as read, though — an interleaving of two streams looks uniform in
+aggregate while its components need not be. `reorder.py` tests the ORDER:
+reversed, read down columns at every divisor width, and every stride/offset
+substream for k up to 15.
+
+```
+best real   digraph-IoC 0.02769   (stride 13 offset 4)
+control     digraph-IoC 0.03077   (stride 14 offset 6)   <- control WINS
+```
+
+No component is structured. `faed` is not an interleaving.
+
+*Method note.* The first version of this test ranked on chi-square, which
+measures the **multiset** and is therefore identical for every permutation of a
+run — reversal and column-reads scored exactly 43.7 by construction, and the
+statistic could not see order at all. Only the strides (subsets, not
+permutations) were meaningfully tested. Ranking now uses adjacent-pair
+repetition, which is order-sensitive.
+
+### Nor is it a container
+
+If `faed` were a container rather than raw bytes it should announce itself —
+every other stage of this puzzle used openssl base64 blobs, which begin
+`Salted__`. `container.py` sweeps every mapping and applies five tests that
+need no key: known magics, printable fraction, base64/hex charset,
+zlib-compressibility, and long zero runs.
+
+```
+control (the real SalPhaseIon blob) -> "openssl salted blob magic at offset 0"
+
+faed minus 'g', base 8,  40,320 mappings -> 0 signatures
+faed whole,     base 9, 362,880 mappings -> 0 signatures
+```
+
+So `faed` is raw high-entropy bytes with no self-describing structure. Together
+with the exhausted key search and the exhausted text search, it can only be
+interpreted with external knowledge — a key, or knowing what it represents.
+
+*Method note.* The first version of this detector reported 215 "hits", all of
+them 2-byte zlib headers at arbitrary offsets. Measured on real random data, a
+2-byte magic appears in a 174-byte string 0.7% of the time, predicting ~298
+hits across 40,320 mappings — so 215 was noise, not signal. Magics now count
+only at offset 0, or anywhere if at least 4 bytes long. This is the same
+short-signature trap already fixed once in `stego.py`.
+
+A note on a wrong turn: the search was first restricted to 16-byte-aligned
+offsets on the reasoning that "a key would sit at a byte boundary." That is
+wrong here. Converting a base-9 digit string to binary does not respect byte
+boundaries at all — where a key lands depends on the total digit count, which is
+arbitrary. Aligned offsets were never the privileged case, so the full 195 were
+swept.
+
+### The checkerboard reading, and why it stalls
+
+`dbbi`'s distribution is the one fact that survives everything above: two
+symbols carry 47% of the run (`b` 27.5%, `e` 19.8%) while the other seven decay.
+That is not what sums look like — it is what **escape digits** look like in a
+straddling checkerboard, which prefix 20 of 28 slots. Under `a=0…i=8` those two
+symbols are digits **1 and 4**, the exact escape pair of the solved phase 3.2.2
+checkerboard, recovered independently as the best-shaped of 72 parses
+(`dbbi.py`).
+
+The phase 3.2.2 alphabet does not fit `dbbi`, so the alphabet would differ —
+which reduces `dbbi` to a substitution over ~19 slots. That cannot be solved
+directly: 63 tokens is far too short, and a hill-climb on shuffled input
+out-scores the real run (`solve_sub.py`).
+
+So the alphabet has to come from a hint, as phase 3.2.2's did — it was built
+from *"A fubcd-king & oracle-queen, thingky mvps…"*, whose nonsense words supply
+21 distinct letters in 22 characters.
+
+`alphabets.py` sweeps the puzzle's plaintexts and the creator's hints for that
+signature: rare words with high distinct-letter ratio, clustered inside ordinary
+prose. It validates by independently recovering `['fubcd', 'thingky', 'mvps']`
+from the phase 3.2 plaintext, then finds **exactly one such cluster in the whole
+corpus — that same known one.** The only other clusters are `ado shown` (7
+distinct letters) and `aes cbc` (5), against the ~21 an alphabet requires.
+
+**No second alphabet hint exists in any text we possess.** Combined with the
+creator's statement that yin-yang is an unreached phase, the likely reading is
+that `dbbi`'s alphabet hint lives there. `dbbi` is blocked by missing input, not
+by insufficient analysis.
+
+#### Nor is its plaintext anything we have seen
+
+A substitution does not have to be recovered statistically if the plaintext can
+be guessed, and this puzzle reuses its own vocabulary constantly. A checkerboard
+mapping is **bijective** — each slot decodes to one letter, each letter has one
+code — so a candidate plaintext can be tested by consistency rather than by any
+score a control could fool. A wrong guess dies on its first collision.
+
+`crib.py` tests every window of every puzzle plaintext, plus token
+concatenations, against all 36 escape pairs:
+
+```
+23,406 candidates survived length and alphabet-size filters
+     0 passed the bijection test
+```
+
+`crib_control.py` validates the procedure on the solved phase 3.2.2, whose
+plaintext sits in the same corpus:
+
+```
+direct bijection on the known plaintext : PASS, 21/21 pairs match the
+                                          published alphabet
+blind sweep : 2,328 candidates, exactly 1 consistent -> the true plaintext
+```
+
+Sensitivity and specificity both confirmed — it finds a real answer and produces
+zero false positives. So the zero on `dbbi` means what it says.
+
+`dbbi`'s plaintext is **not** a rearrangement of anything the puzzle has shown
+us. It is novel text, readable only with its alphabet, which exists nowhere in
+the corpus.
+
+(A first version of this detector scored whole phrases by letter diversity and
+FAILED its own control — the real sentence scores 0.333, because the ordinary
+English around the nonsense words dilutes it. Kept as a caution: a sweep that
+cannot find its known positive proves nothing.)
+
+Also eliminated in passing: `dbbi` read as a literal "matrix sum list"
+(`dbbi2.py` — both 7×13 rectangles, row/column sums, row- and column-major fill,
+a1z26); and each symbol in turn standing in for the missing zero
+(`zeroout.py` — 90 assignments per run, single and paired, keep-value and
+re-ranked).
+
+---
+
+## Password search: ~38.5M trials, all negative
+
+Everything sat on the random padding floor (0.39%), best printable ratio 0.646
+against >0.95 for real text.
+
+| run | scope |
+|---|---|
+| `sweep.py` | every word in the README and all decrypted plaintexts |
+| `attack.py` | 1–12 word phrase windows of every recovered plaintext |
+| `creator.py` | the creator's element list, 6k orderings |
+| `recipe.py` | the 4-ingredient recipe with **measured** values, 417k concatenations × 3 blobs |
+| `assembly.py` | XOR-of-hashes, `sha256(xor)`, double-`sha256`, chained folding; raw AES key with 6 IV derivations |
+
+### Why this was structurally doomed
+
+The creator's 2023-02-23 Telegram hint decodes to the only first-party statement
+of what the key contains:
+
+```
+yellowblueprimes  matrixsumlist  lastwordsbeforearchichoice  yinyang
+wewontgiveawaythepassword itsinfrontofyoureyesbutyourenotseeingit
+verylaststepisatruegiveaway promised
+```
+
+Four ingredients (`yellowblueprimes` is one token). Three are computable. The
+fourth — `yinyang` — is by the creator's own account **the output of a phase
+nobody has reached**. It was never going to fall out of spelling variants.
+Every public attempt at this recipe, including this one, guesses at a value that
+is by construction not guessable.
+
+```
+RUN0 (unsolved) -> yin-yang -> 4-ingredient recipe -> Cosmic key -> private key
+```
+
+**No shortcut exists.** The prize address is a *vanity* address (`1GSMG1`
+brute-forced), so its private key is random — no brainwallet, no split-key, no
+derivation. The key exists only as plaintext inside a blob.
+
+---
+
+## The yin-yang phase, and a dependency cycle
+
+The creator's statements constrain what the unreached phase is:
+
+| statement | implication |
+|---|---|
+| "internet not required to solve, only to claim" (2023-11) | **not a hosted page** — built offline from data in hand |
+| "you'll solve it the same day" / "2 hours max" (2023, 2025) | **recognisable on sight** |
+| it is the 4th ingredient in the 2023 recipe | it yields a **string**, not just a milestone |
+
+Recognisable-on-sight plus offline-constructible fits this creator's signature
+move exactly: *render data as a picture, read the picture*. He has done it
+twice — phase 1 is a bitmap read as bits, and the Decentraland hint is an audio
+file whose spectrogram draws `HASHTHETEXT`. A yin-yang is a shape.
+
+`bitmaps.py` tests that directly: every run laid out at every width its length
+admits, binarised 20 ways, scored by vertical continuity (in a drawing a pixel
+matches the one above it; in noise it does not), each against a shuffled control
+swept over the same number of layouts.
+
+```
+faed  best +0.0672   control ceiling +0.0397   (110 layouts each)
+dbbi  best +0.1421   control ceiling +0.1284   — does not beat control
+RUN0  no usable widths (661 is prime)
+```
+
+`faed`'s top layout clears the threshold numerically, so it is printed in full
+— and it is visibly noise. A real drawing scores well above 0.10 and is
+unmistakable at a glance. Neither object renders as an image.
+
+`duality.py` likewise rules out the most concrete "half and better half"
+reading: the two ciphertexts of exactly 80 bytes (the SalPhaseIon blob and the
+one trailing the phase 3.2 plaintext) are unrelated. Their XOR has entropy 6.037
+bits/byte — which is *exactly* random for an 80-byte sample, since 80 bytes can
+hold at most 80 distinct values — one zero byte where chance predicts one, and
+no derived 32-byte quantity matches the prize key.
+
+**The cycle.** Every route to yin-yang traced so far runs back through the
+Cosmic plaintext, and the Cosmic key runs through yin-yang:
+
+```
+Cosmic plaintext <- Cosmic key <- yin-yang <- ? -> (only large source is the Cosmic plaintext)
+```
+
+As publicly known, the puzzle is not in a solvable state. Some input breaks the
+cycle and has not been recognised as one — which is what *"it's in front of your
+eyes but you're not seeing it"* would mean operationally. Everything currently
+identified as in-the-clear (`dbbi`, `faed`, the grid, the colours, the images)
+is now measured, and none of it is that input.
+
+## Method notes
+
+Two things did most of the work and are worth reusing:
+
+**Controls.** Every "hit" was re-run with shuffled input. Three separate false
+positives died this way, including one that produced legible English
+(`PWALMSSETURCEEARETTDOOFYRORRIGLPREIISPWISSSTLEDTHEPSALLITATENCE` — from
+shuffled input, scoring *better* than the real run). At 63 letters, substitution
+hill-climbing manufactures plausible English from anything.
+
+**Padding is weak evidence.** A wrong AES key passes PKCS#7 about 1 time in 256.
+Any search over more than a few hundred candidates *will* produce survivors.
+Treat "it decrypted without error" as no evidence at all unless the plaintext is
+independently checkable.
+
+`attack.py` exploits the same fact for speed: padding lives only in the final
+block, so a candidate is rejected with **one** AES block operation instead of 83.
+For CBC, that check is also IV-independent — one test covers every IV variant.
+
+---
+
+## Files
+
+**Core** — `pipeline.py` (verified chain) · `oracle.py` (key test) ·
+`vic.py` (straddling-checkerboard decoder, validated exactly against solved
+phase 3.2.2) · `attack.py` (fast sweep harness)
+
+**Corpus** — `fetch_wayback.py` · `fetch_corpus.ps1` · `fetch_images.py` ·
+`blobs.py` · `decrypt_recovered.py`
+
+**Analysis** — `analyze.py` (entropy) · `cosmic.py` · `keycheck.py` ·
+`check79.py` · `colours.py` · `stego.py` · `dct.py` · `jpeg_struct.py`
+
+**RUN0** — `salpha.py` · `bigrun.py` · `analyze_run0.py` · `dbbi.py` ·
+`transpose.py` · `solve_sub.py` · `indexed.py` · `bookcipher.py` · `primes.py`
+
+**Sweeps** — `sweep.py` · `creator.py` · `recipe.py` · `assembly.py`
+
+**Not part of this work.** `kangaroo_est.py`, `check_layout.py`,
+`test_distfield.py`, `verify_target.py` concern Pollard-kangaroo attacks on the
+*other* Bitcoin puzzle series (75–160), against the `Kangaroo/` solver and
+`cuda-toolkit/` also present in this working tree. Both are gitignored —
+third-party, ~420 MB combined, and `Kangaroo/` carries its own `.git`.
+Unrelated to GSMG; provenance unestablished.
+
+Note that a kangaroo attack is irrelevant to GSMG regardless: the prize key is a
+uniformly random 256-bit scalar, not confined to a small interval, so there is
+no reduced search space to exploit.
+
+---
+
+## If you continue
+
+Do not resume password sweeping. The remaining leverage is in the **assembly
+rule** and in **RUN0**, not in search space.
+
+`dbbi` is the tractable object: 91 symbols, clearly non-random (IoC 0.1509),
+labelled `matrixsumlist` by the binary spliced next to it. A "matrix sum list"
+of `91 = 7×13` values in range 1–9 literally describes a table of sums. `faed`
+is flat, aperiodic and free of long repeats — which is what modern ciphertext
+looks like, and if it is that, classical analysis will not touch it.
+
+Verify anything you find with `oracle.check()` before believing it, and control
+anything that looks like a partial decryption before reporting it.
+
+## Sources
+
+[puzzlehunt/gsmgio-5btc-puzzle](https://github.com/puzzlehunt/gsmgio-5btc-puzzle) ·
+[gsmg-archive.org](https://gsmg-archive.org/) (mirror of the dead site) ·
+[bitcointalk 5151725](https://bitcointalk.org/index.php?topic=5151725.0) ·
+[r/bitcoinpuzzles](https://www.reddit.com/r/bitcoinpuzzles/comments/dfwcqk/gsmgio_5_btc_puzzle/) ·
+[privatekeys.pw](https://privatekeys.pw/puzzles/gsmg-puzzle)
+
+Creator hints are quoted from a parsed Telegram export circulating in the issue
+tracker and mirrors; treat any single quote as second-hand unless you can see
+the screenshot.

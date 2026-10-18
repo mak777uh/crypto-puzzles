@@ -141,3 +141,14 @@ eader.recognize(img, horizontal_list=<bbox ячеек>) (без детектор
 - Незакрытые снаружи поверхности вынесены в data/external2/NEED_USER_DOWNLOAD.md: X-реплаи (92+20+15+4,
   логин), чат альянса bitcoinpuzzles.io #7 (37 участников, живой), bitcointalk-поиск (DNS+логин),
   GitHub code-search (разовый токен), аудио KryoTutorias-видео без субтитров, 4chan-архивы (Cloudflare).
+
+## 2026-10-18, 13:33 — Qoder (github_intake) — GITHUB INTAKE (шлюз)
+- Делал: python tools/github_intake.py run 9vw04-gem-finder --agent Qoder
+- Кандидаты: agntn/puzzles (community, ссылки досье), floflo777/open-crypto-puzzles (registry, ссылки досье), canalqb/puzzle_bc1qr5mssp6snmduqp9enx4dzmcxvk7qw83lceyy2v (community, ссылки досье), canalqb/agentehermes (community, ссылки досье), canalqb/blogforlinkedin (community, ссылки досье), canalqb/bot_telegram (community, ссылки досье), canalqb/puzzle (community, ссылки досье), canalqb/puzzle-67-neon (community, ссылки досье), onyxdeveloper/webpack-simple (community, ссылки досье)
+- Скачано: репо=3 (файлов 0, 0 Б; медиа 0), issues=0, comments=0, PR=0, releases=0, gists=0, wiki=нет
+- Бюджет: api.github.com запросов = 0 (remaining 34, reset 2026-10-18T10:33:40Z); бесплатных транспортов (codeload/ls-remote/git) = 3
+- Негативы: кандидаты отсечены как шум одного владельца (39 из 48): canalqb/briefcase, canalqb/canalqb.github.io, canalqb/canalqb_wallet, canalqb/cpuminer, canalqb/cpuminer-multi, canalqb/electrum_config, canalqb/engaja, canalqb/ESP_ambiente…; репо владельца agntn: пропущено (исчерпан --api-budget (0 запросов)); форки agntn/puzzles: пропущено (исчерпан --api-budget (0 запросов)); не собрано (сверх --max-repos 3): canalqb/agentehermes, canalqb/blogforlinkedin, canalqb/bot_telegram, canalqb/puzzle, canalqb/puzzle-67-neon, onyxdeveloper/webpack-simple; agntn/puzzles: не собрано: исчерпан --api-budget (0 запросов); canalqb/puzzle_bc1qr5mssp6snmduqp9enx4dzmcxvk7qw83lceyy2v: не собрано: исчерпан --api-budget
+- Артефакты: data/github/GITHUB_INTAKE.md, data/github/INTAKE_RESULT.json, data/github/_legacy_pointers.md, data/github/<owner>__<repo>/{files,raw,REPO_META.json}
+- Статус шлюза: partial (исчерпан --api-budget (0 запросов)); остаток в data/github/resume.json
+- Ссылки/доказательства: agntn/puzzles, floflo777/open-crypto-puzzles, canalqb/puzzle_bc1qr5mssp6snmduqp9enx4dzmcxvk7qw83lceyy2v
+

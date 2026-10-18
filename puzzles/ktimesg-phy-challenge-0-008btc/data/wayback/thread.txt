@@ -1,0 +1,3180 @@
+### msg67039508 | AFTB |  | Re: Phy Challenge
+Quote from: NotATether on July 29, 2026, 01:47:18 PM
+It recovers the funded SegWit address bc1qrpn28qa82uyjg37dvsz3w7wpm3kpdea957nm9p, currently holding 800,000 sats.
+The significant s bytes select nine emojis. Reading their Unicode bytes �inside-out� produces:
+031dffd7ff0d400f0afcc3fdcefc0d400f0da10f3a390f77ff0d400f68fe0d080f
+
+The 80-bit scalar h satisfying H = hG.
+Therefore, not yet the final private key or WIF.
+No evidence of a seed phrase�the puzzle appears to recover one ECDSA private key.
+
+The remaining computational command is:
+
+./rckangaroo -dp 16 -range 80 -start 0 \
+  -pubkey 031dffd7ff0d400f0afcc3fdcefc0d400f0da10f3a390f77ff0d400f68fe0d080f
+
+The thread began on 5 June, and the funds were transferred to your 'target' address on 21 June. I would assume that this is not the target address from the challenge.
+
+I was trying to solve it and created an emoji mapper that you can look up at https://github.com/arturfromtheblock/emoji-mapping-tool.
+You can also find the mapped emojis from this challenge there. Maybe someone can find something useful there.
+
+I just found one thing: in this image, eight emojis are mirrored. You can look these up under the IDs in the published .csv file. 
+ID: 9, 56, 81, 134, 151, 162, 172 and 185.
+
+### msg67040416 | kTimesG |  | Re: Phy Challenge
+Quote from: AFTB on August 13, 2026, 10:22:13 AM
+The thread began on 5 June, and the funds were transferred to your 'target' address on 21 June. I would assume that this is not the target address from the challenge.
+
+Why would you think the address is wrong, since the signature verifies? Your GH isn't public.
+
+Quote from: kTimesG on June 21, 2026, 04:31:36 PM
+and there is a prize (as of today)
+
+### msg67041577 | whanau |  | Re: Phy Challenge
+Quote from: AFTB on August 13, 2026, 10:22:13 AM
+[
+
+I just found one thing: in this image, eight emojis are mirrored. You can look these up under the IDs in the published .csv file. 
+
+All the emoji's are mirrored  with the bitcoin being a mirror of itself.
+
+### msg67048137 | AFTB |  | Re: Phy Challenge
+Quote from: kTimesG on August 13, 2026, 03:31:09 PM
+Quote from: AFTB on August 13, 2026, 10:22:13 AM
+The thread began on 5 June, and the funds were transferred to your 'target' address on 21 June. I would assume that this is not the target address from the challenge.
+
+Why would you think the address is wrong, since the signature verifies? Your GH isn't public.
+
+Quote from: kTimesG on June 21, 2026, 04:31:36 PM
+and there is a prize (as of today)
+
+It was my fault. I was more interested in the date on which the address received funding.
+
+Quote from: whanau on August 13, 2026, 09:18:48 PM
+Quote from: AFTB on August 13, 2026, 10:22:13 AM
+[
+
+I just found one thing: in this image, eight emojis are mirrored. You can look these up under the IDs in the published .csv file. 
+
+All the emoji's are mirrored  with the bitcoin being a mirror of itself.
+
+What do you mean with "all the emojis are mirrored"?
+When you look up for example for this Emoji
+https://i.ibb.co/20sBtYVZ/screen-2026-08-15-um-22-31-48.png
+
+the regular Emoji is running to the other side.
+
+https://i.ibb.co/vxZnC05M/screen-2026-08-15-um-22-31-40.png
+
+### msg67053662 | aakhey |  | Re: Phy Challenge
+Quote from: kTimesG on June 05, 2026, 07:15:46 PM
+Code:
+A purely P2P version of modular values would allow online
+payments to be sent directly from one party to another without going through the fractional reserve banking system. Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent private key recovery. We propose a solution to the problem using a peer-to-peer network. The network spacestamps information by carefully measuring it into an ongoing chain of phylo-based proof-of-equivalence, forming a record that cannot be changed without redoing the proof-of-equivalence. The chain not only serves as proof of the sequence of events witnessed, but proof that it serves the chain. The network itself requires minimal structure.
+
+=================
+
+The kTimesG 2026/06/05 Bitcoin has worst weekly fall since 2022
+
+looks bad this bearish cycle around and no end is in sight, so here's a puzzle for everyone, no loose ends, no hashing.
+Code:
+J0d1vHyLWQXkQWZBhfQmZWu8jgXA54DgLx+bPJQNBrL4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABbiQspK6Gr2bE
+
+https://www.talkimg.com/images/2026/06/05/UrS0Mq.png2026-07-30 edit: fixed BACKSPACE cat incident (missing "J" character)
+
+Sir, I think us smooth-brains need some more hints.
+
+edit : after prompting for 2 straight days. Here are the things i've found and tested(dataset might be wrong):
+
+- We know (G,n,Q,r,s,e). We need (k), then derive (d) and verify (dG=Q)(pretty much sure about this).
+- There are exactly 256 emojis and one central BTC logo, so they might represent a 256-bit value. (k) could be ~128 bits (pairs) or 256 bits.
+- Image: Found 128 matching opposite pairs. Apple Color Emoji 17.0 matches best. No flipped emojis or useful hidden-pixel/brightness data.
+- Tested Golden/Vogel spiral, phyllotaxis, Fibonacci arms, ~5px jitter, 14� central BTC tilt, and opposite-pair ordering. No valid (k) yet.
+- Emoji to bit: Tested gender, hands/faces, skin tone, direction, etc(Used ocr with little bit of manual verification).
+- I thik the problem is  to find the correct order of the 256 emojis. The unusually small (s) value (9 bytes) may also be a clue(like map them in emojies).
+
+### msg67061740 | whanau |  | Re: Phy Challenge
+2 spirals lead me to 2 sets of icons,  'which creates some immediate conclusions' key unlock puzzle and some more. 
+The one that keeps coming up in the set is the abacus. It does not fit the pattern yet it is in the set in many patterns, so my set may be wrong or I am misinterpreting. I think I have the set but not the order.
+2 spirals, 2 sets? How many in a set? I cannot deduce from the clues so will stop here.
+
+Quote - Image: Found 128 matching opposite pairs. 
+Unquote.   Agreed I found this too. There are 34 (Phy) divisions around the edge of the bitcoin too.
+
+### msg67068118 | brokebitcoiner |  | Re: Phy Challenge
+Every spiral is 12 emojis
+and there are 22 spirals   but some has comman 12th emoji i.e toward the center counting from outside
+
+i think this derives the xprv  i might be wrong.
+
+KtimesG an i close ??
+
+### msg67069308 | SecretAdmirere |  | Re: Phy Challenge
+Quote from: brokebitcoiner on August 21, 2026, 06:35:39 PM
+Every spiral is 12 emojis and there are 22 spirals ...... KtimesG an i close ??
+
+There are 256 emojis in the picture (257 if we count the bitcoin logo in the middle). 12*22=264 so the answer is obviously no, not even close..
+
+Quote from: kTimesG on June 05, 2026, 07:15:46 PM
+..........
+
+I have been playing a lot over the past few days, a lot more since the first time i saw it. Im missing on direct and indirect clues a long the way, i admit it. I cant figure it out at all, what ever emojis are supposed to represent and how to read them, i cant. One angle i tried is to "draw" the picture emojis, and it actually made me belive i was heading to the right direction + identifying all of the 256 emojis (which was extremely difficult considering the "emoji 17.0" set used which was suprisingly hard to find and make it work on windows/android phone) but i menaged somehow to identify all of them + with some high certenty their color as well (altho dont trust any color, beacuse its heavily obscured when you apply grayscale to them, Rec.709 or Rec.601).
+
+Im posting the 8 possible draw orders, you can find them on this Imgur link, and a colored version as well, but i also highly recomend that you take all of this as a false info and do your own analysis as this what i did can be correct but it also can be false. I have tried to make it with all sorts of different angles and things, nothing even comes close to the pictures im posting, but that doesnt mean it is correct.
+
+https://imgur.com/a/ktimesg-phy-challenge-BzcJMdl
+
+Code:
+"1 - in-out A,B",,,,
+position,draw_order,side,glyph,name
+1,1,A,u1F443.0,nose
+2,2,B,u1F468_u2696.2,man judge: medium-light skin tone
+3,3,A,u1F645.2.W,woman gesturing NO: medium-light skin tone
+4,4,B,u1F9D1_u1F692.1,firefighter: light skin tone
+5,5,A,u1F646.1.M,man gesturing OK: light skin tone
+6,6,B,u1F468_u1F9AF.1,man with white cane: light skin tone
+7,7,A,u1F646.4.W,woman gesturing OK: medium-dark skin tone
+8,8,B,u1F64B.4,person raising hand: medium-dark skin tone
+9,9,A,u1F9D1.u1F430.2.L+u1F9D1.u1F430.5.R,"people with bunny ears: medium-light skin tone, dark skin tone"
+10,10,B,u1F3CB.3.W,woman lifting weights: medium skin tone
+11,11,A,u261D.5,index pointing up: dark skin tone
+12,12,B,u1F6B5.1,person mountain biking: light skin tone
+13,13,A,u1F468_u1F9B2.4,"man: medium-dark skin tone, bald"
+14,14,B,u1F6B6.5.W.u27A1,"woman walking: dark skin tone, facing right"
+15,15,A,u1F475.0,old woman
+16,16,B,u1F478.1,princess: light skin tone
+17,17,A,u1F469_u2696.2,woman judge: medium-light skin tone
+18,18,B,u1F448.1,backhand index pointing left: light skin tone
+19,19,A,u1F44B.4,waving hand: medium-dark skin tone
+20,20,B,u1F487.2.W,woman getting haircut: medium-light skin tone
+21,21,A,u1F9B6.4,foot: medium-dark skin tone
+22,22,B,u1F9D1_u1F9B0.5,"person: dark skin tone, red hair"
+23,23,A,u1F468_u2695.4,man health worker: medium-dark skin tone
+24,24,B,u1F9DB.0,vampire
+25,25,A,u1F64E.0.M,man pouting
+26,26,B,u1F64E.4,person pouting: medium-dark skin tone
+27,27,A,u1F469_u1F527.0,woman mechanic
+28,28,B,u1F4A4,ZZZ
+29,29,A,u1F595.0,middle finger
+30,30,B,u26F9.1.W,u26F9.1.W
+31,31,A,u1F6B6.3.M.u27A1,"man walking: medium skin tone, facing right"
+32,32,B,u1F926.2.W,woman facepalming: medium-light skin tone
+33,33,A,u1F64D.0.M,man frowning
+34,34,B,u1F44D.2,thumbs up: medium-light skin tone
+35,35,A,u1F9CF.4.M,deaf man: medium-dark skin tone
+36,36,B,u1F9D1_u1F3EB.5,teacher: dark skin tone
+37,37,A,u1F9D1_u1F4BB.4,technologist: medium-dark skin tone
+38,38,B,u2753,red question mark
+39,39,A,u1F469_u1F4BC.5,woman office worker: dark skin tone
+40,40,B,u1F9D1_u2695.2,health worker: medium-light skin tone
+41,41,A,u1F9D7.5.W,woman climbing: dark skin tone
+42,42,B,u1F469_u1F692.0,woman firefighter
+43,43,A,u270A.2,raised fist: medium-light skin tone
+44,44,B,u1F9D1_u1F9BD.5,person in manual wheelchair: dark skin tone
+45,45,A,u1F9DD.3.M,man elf: medium skin tone
+46,46,B,u1F487.0.M,man getting haircut
+47,47,A,u1FAF5.3,index pointing at the viewer: medium skin tone
+48,48,B,u1F511,key
+49,49,A,u1F937.3,person shrugging: medium skin tone
+50,50,B,u1F609,winking face
+51,51,A,u1F575.5.W,woman detective: dark skin tone
+52,52,B,u1F468.u1F430.5.L+u1F468.u1F430.4.R,"men with bunny ears: dark skin tone, medium-dark skin tone"
+53,53,A,u1F385.1,Santa Claus: light skin tone
+54,54,B,u1F918.0,sign of the horns
+55,55,A,u1F470.1.W,woman with veil: light skin tone
+56,56,B,u1F645.4.M,man gesturing NO: medium-dark skin tone
+57,57,A,u1F926.4,person facepalming: medium-dark skin tone
+58,58,B,u1F6B6.3.u27A1,"person walking: medium skin tone, facing right"
+59,59,A,u1F471.2.W,"woman: medium-light skin tone, blond hair"
+60,60,B,u1F9D6.0.M,man in steamy room
+61,61,A,u1F469_u1F9AF.1.u27A1,"woman with white cane: light skin tone, facing right"
+62,62,B,u1F934.3,prince: medium skin tone
+63,63,A,u1F3CB.4,person lifting weights: medium-dark skin tone
+64,64,B,u1F90C.4,pinched fingers: medium-dark skin tone
+65,65,A,u1F468_u1F680.0,man astronaut
+66,66,B,u1F619,kissing face with smiling eyes
+67,67,A,u1F469_u1F373.4,woman cook: medium-dark skin tone
+68,68,B,u1F468_u1F3EB.2,man teacher: medium-light skin tone
+69,69,A,u270C.5,victory hand: dark skin tone
+70,70,B,u1F469_u1F52C.2,woman scientist: medium-light skin tone
+71,71,A,u1F596.4,vulcan salute: medium-dark skin tone
+72,72,B,u1F468_u1F3A8.2,man artist: medium-light skin tone
+73,73,A,u1F487.0,person getting haircut
+74,74,B,u1F44C.4,OK hand: medium-dark skin tone
+75,75,A,u1F6A3.1,person rowing boat: light skin tone
+76,76,B,u1F9B8.2,superhero: medium-light skin tone
+77,77,A,u1F9DC.4.W,mermaid: medium-dark skin tone
+78,78,B,u26F9.2,person bouncing ball: medium-light skin tone
+79,79,A,u1FAC3.1,pregnant man: light skin tone
+80,80,B,u1F468_u1F33E.4,man farmer: medium-dark skin tone
+81,81,A,u1FAE1,saluting face
+82,82,B,u1F9D6.1,person in steamy room: light skin tone
+83,83,A,u1F930.2,pregnant woman: medium-light skin tone
+84,84,B,u1FAF3.0,palm down hand
+85,85,A,u1F6A3.2.W,woman rowing boat: medium-light skin tone
+86,86,B,u1F9D1_u1F393.4,student: medium-dark skin tone
+87,87,A,u1F468_u1F9B3.1,"man: light skin tone, white hair"
+88,88,B,u1F9DE.W,woman genie
+89,89,A,u1F46E.3,police officer: medium skin tone
+90,90,B,u26A0,warning
+91,91,A,u1F3C3.3,person running: medium skin tone
+92,92,B,u1F62A,sleepy face
+93,93,A,u1F469_u1F9BD.3.u27A1,"woman in manual wheelchair: medium skin tone, facing right"
+94,94,B,u1F471.5.M,"man: dark skin tone, blond hair"
+95,95,A,u2764_u1FA79,mending heart
+96,96,B,u1F9E9,puzzle piece
+97,97,A,u1F469_u1F393.2,woman student: medium-light skin tone
+98,98,B,u1F931.2,breast-feeding: medium-light skin tone
+99,99,A,u1F3CC.2,person golfing: medium-light skin tone
+100,100,B,u1F477.5.M,man construction worker: dark skin tone
+101,101,A,u1F9DE,genie
+102,102,B,u1F933.2,selfie: medium-light skin tone
+103,103,A,u1F9CD.2,person standing: medium-light skin tone
+104,104,B,u1F647.3,person bowing: medium skin tone
+105,105,A,u1F9D2.5,child: dark skin tone
+106,106,B,u1F469_u2695.1,woman health worker: light skin tone
+107,107,A,u1F470.4.M,man with veil: medium-dark skin tone
+108,108,B,u1F473.0,person wearing turban
+109,109,A,u1F6A3.0.M,man rowing boat
+110,110,B,u1F6B4.1.W,woman biking: light skin tone
+111,111,A,u1F469_u1F9BC.4.u27A1,"woman in motorized wheelchair: medium-dark skin tone, facing right"
+112,112,B,u1F486.0.W,woman getting massage
+113,113,A,u1F647.3.W,woman bowing: medium skin tone
+114,114,B,u1F468_u1F37C.2,man feeding baby: medium-light skin tone
+115,115,A,u1F632,astonished face
+116,116,B,u1F91E.5,crossed fingers: dark skin tone
+117,117,A,u1F3CA.3.W,woman swimming: medium skin tone
+118,118,B,u1F9DD.4,elf: medium-dark skin tone
+119,119,A,u1F91C.1,right-facing fist: light skin tone
+120,120,B,u1F468_u1F52C.4,man scientist: medium-dark skin tone
+121,121,A,u1F483.5,woman dancing: dark skin tone
+122,122,B,u1F92E,face vomiting
+123,123,A,u1F47F,angry face with horns
+124,124,B,u1F62F,hushed face
+125,125,A,u1F64C.5,raising hands: dark skin tone
+126,126,B,u1F9D1_u1F9BD.1.u27A1,"person in manual wheelchair: light skin tone, facing right"
+127,127,A,u1F9D4.5,"person: dark skin tone, beard"
+128,128,B,u1F932.1,palms up together: light skin tone
+129,129,A,u1F3CB.0.M,u1F3CB.0.M
+130,130,B,u1F9B9.4.W,woman supervillain: medium-dark skin tone
+131,131,A,u1F6B6.4.W,woman walking: medium-dark skin tone
+132,132,B,u1F3C3.1.u27A1,"person running: light skin tone, facing right"
+133,133,A,u1F9CE.0.M.u27A1,man kneeling: facing right
+134,134,B,u1F9DC.4,merperson: medium-dark skin tone
+135,135,A,u1F3CC.1.M,man golfing: light skin tone
+136,136,B,u1F469_u1F3A4.0,woman singer
+137,137,A,u1F9CE.2.W.u27A1,"woman kneeling: medium-light skin tone, facing right"
+138,138,B,u1F64B.2.W,woman raising hand: medium-light skin tone
+139,139,A,u1F486.3.M,man getting massage: medium skin tone
+140,140,B,u1F9D1_u1F4BC.5,office worker: dark skin tone
+141,141,A,u270D.0,writing hand
+142,142,B,u1F9D9.0.M,man mage
+143,143,A,u1F473.0.W,woman wearing turban
+144,144,B,u1F628,fearful face
+145,145,A,u1F446.5,backhand index pointing up: dark skin tone
+146,146,B,u1F4AA.1,flexed biceps: light skin tone
+147,147,A,u1FAF2.1,leftwards hand: light skin tone
+148,148,B,u1F575.1,detective: light skin tone
+149,149,A,u1F90F.1,pinching hand: light skin tone
+150,150,B,u1F469_u1F9B3.3,"woman: medium skin tone, white hair"
+151,151,A,u1F6B6.2.M,man walking: medium-light skin tone
+152,152,B,u1F469_u1F37C.2,woman feeding baby: medium-light skin tone
+153,153,A,u1F469_u1F3ED.5,woman factory worker: dark skin tone
+154,154,B,u1F47C.0,baby angel
+155,155,A,u1F61E,disappointed face
+156,156,B,u1F471.4,"person: medium-dark skin tone, blond hair"
+157,157,A,u1F642,slightly smiling face
+158,158,B,u1F469_u1F9BC.5,woman in motorized wheelchair: dark skin tone
+159,159,A,u1F469.4,woman: medium-dark skin tone
+160,160,B,u1F442.5,ear: dark skin tone
+161,161,A,u1F63A,grinning cat
+162,162,B,u1F4A1,light bulb
+163,163,A,u1F9D1_u1F3A4.1,singer: light skin tone
+164,164,B,u1F935.4.M,man in tuxedo: medium-dark skin tone
+165,165,A,u1F3C3.5.M.u27A1,"man running: dark skin tone, facing right"
+166,166,B,u1F482.2.W,woman guard: medium-light skin tone
+167,167,A,u1F3CC.5.W,woman golfing: dark skin tone
+168,168,B,u1FA99,coin
+169,169,A,u1FAC4.2,pregnant person: medium-light skin tone
+170,170,B,u1F469_u1F33E.1,woman farmer: light skin tone
+171,171,A,u2639,frowning face
+172,172,B,u1F9B5.0,leg
+173,173,A,u1F9D1_u1F527.1,mechanic: light skin tone
+174,174,B,u1F64D.2.W,woman frowning: medium-light skin tone
+175,175,A,u1F9BB.4,ear with hearing aid: medium-dark skin tone
+176,176,B,u1F468_u1F9AF.1.u27A1,"man with white cane: light skin tone, facing right"
+177,177,A,u1F477.5.W,woman construction worker: dark skin tone
+178,178,B,u1FAE8,shaking face
+179,179,A,u1F91F.1,love-you gesture: light skin tone
+180,180,B,u1FAF4.5,palm up hand: dark skin tone
+181,181,A,u1F9DE.M,man genie
+182,182,B,u1F64F.1,folded hands: light skin tone
+183,183,A,u1F937.1.M,man shrugging: light skin tone
+184,184,B,u1F9D1_u2696.4,judge: medium-dark skin tone
+185,185,A,u1FAF8.0,rightwards pushing hand
+186,186,B,u1F9D1_u1F9B1.1,"person: light skin tone, curly hair"
+187,187,A,u1F574.5,person in suit levitating: dark skin tone
+188,188,B,u1F466.4,boy: medium-dark skin tone
+189,189,A,u2764,red heart
+190,190,B,u1F9CF.4,deaf person: medium-dark skin tone
+191,191,A,u2620,skull and crossbones
+192,192,B,u1F645.2,person gesturing NO: medium-light skin tone
+193,193,A,u1F919.3,call me hand: medium skin tone
+194,194,B,u1F497,growing heart
+195,195,A,u1F468_u1F9BC.1.u27A1,"man in motorized wheelchair: light skin tone, facing right"
+196,196,B,u1F9D1_u1FA70.1,ballet dancer: light skin tone
+197,197,A,u1F9D1.4,person: medium-dark skin tone
+198,198,B,u1F9D1_u1F373.1,cook: light skin tone
+199,199,A,u1F469_u1F9B1.2,"woman: medium-light skin tone, curly hair"
+200,200,B,u1F3CA.3.M,man swimming: medium skin tone
+201,201,A,u1F9D9.5,mage: dark skin tone
+202,202,B,u1FAF7.4,leftwards pushing hand: medium-dark skin tone
+203,203,A,u1F6B4.1,person biking: light skin tone
+204,204,B,u1F590.4,hand with fingers splayed: medium-dark skin tone
+205,205,A,u1F3CA.3,person swimming: medium skin tone
+206,206,B,u1F482.1.M,man guard: light skin tone
+207,207,A,u1F468_u1F3A4.0,man singer
+208,208,B,u1FAF6.2,heart hands: medium-light skin tone
+209,209,A,u1F9B9.2.M,man supervillain: medium-light skin tone
+210,210,B,u1F513,unlocked
+211,211,A,u1F472.3,person with skullcap: medium skin tone
+212,212,B,u1F974,woozy face
+213,213,A,u1F449.2,backhand index pointing right: medium-light skin tone
+214,214,B,u1F9DF.W,woman zombie
+215,215,A,u1F469_u2708.5,woman pilot: dark skin tone
+216,216,B,u1FAF1.5,rightwards hand: dark skin tone
+217,217,A,u1F468_u2708.4,man pilot: medium-dark skin tone
+218,218,B,u1F620,angry face
+219,219,A,u1F64B.5.M,man raising hand: dark skin tone
+220,220,B,u1F9EE,abacus
+221,221,A,u1F639,cat with tears of joy
+222,222,B,u1F575.4.M,man detective: medium-dark skin tone
+223,223,A,u1F614,pensive face
+224,224,B,u1F608,smiling face with horns
+225,225,A,u1F9CE.5.M,man kneeling: dark skin tone
+226,226,B,u1F5A4,black heart
+227,227,A,u1F64D.2,person frowning: medium-light skin tone
+228,228,B,u1F9DB.1.M,man vampire: light skin tone
+229,229,A,u1F481.0,person tipping hand
+230,230,B,u1F9B8.0.M,man superhero
+231,231,A,u1F9D1_u1F33E.0,farmer
+232,232,B,u1FAEA,distorted face
+233,233,A,u1F4AD,thought balloon
+234,234,B,u1F926.3.M,man facepalming: medium skin tone
+235,235,A,u1FAF1.4.L+u1FAF2.3.R,"handshake: medium-dark skin tone, medium skin tone"
+236,236,B,u1F477.4,construction worker: medium-dark skin tone
+237,237,A,u1F979,face holding back tears
+238,238,B,u1F64A,speak-no-evil monkey
+239,239,A,u1F468_u1F373.4,man cook: medium-dark skin tone
+240,240,B,u1F3C3.2.W.u27A1,"woman running: medium-light skin tone, facing right"
+241,241,A,u1F485.0,nail polish
+242,242,B,u1F9D7.3.M,man climbing: medium skin tone
+243,243,A,u1F441,eye
+244,244,B,u1F469.u1F430.2.L+u1F469.u1F430.3.R,"women with bunny ears: medium-light skin tone, medium skin tone"
+245,245,A,u1F935.0,person in tuxedo
+246,246,B,u1F6B6.5,person walking: dark skin tone
+247,247,A,u1F64E.1.W,woman pouting: light skin tone
+248,248,B,u1FAC5.5,person with crown: dark skin tone
+249,249,A,u1F928,face with raised eyebrow
+250,250,B,u1F49D,heart with ribbon
+251,251,A,u1F977.2,ninja: medium-light skin tone
+252,252,B,u1F9DD.3.W,woman elf: medium skin tone
+253,253,A,u1F91B.0,left-facing fist
+254,254,B,u1F9CD.3.W,woman standing: medium skin tone
+255,255,A,u1F468_u1F527.5,man mechanic: dark skin tone
+256,256,B,u1F44F.0,clapping hands
+,,,,
+"2 - in-out B,A",,,,
+position,draw_order,side,glyph,name
+1,2,B,u1F468_u2696.2,man judge: medium-light skin tone
+2,1,A,u1F443.0,nose
+3,4,B,u1F9D1_u1F692.1,firefighter: light skin tone
+4,3,A,u1F645.2.W,woman gesturing NO: medium-light skin tone
+5,6,B,u1F468_u1F9AF.1,man with white cane: light skin tone
+6,5,A,u1F646.1.M,man gesturing OK: light skin tone
+7,8,B,u1F64B.4,person raising hand: medium-dark skin tone
+8,7,A,u1F646.4.W,woman gesturing OK: medium-dark skin tone
+9,10,B,u1F3CB.3.W,woman lifting weights: medium skin tone
+10,9,A,u1F9D1.u1F430.2.L+u1F9D1.u1F430.5.R,"people with bunny ears: medium-light skin tone, dark skin tone"
+11,12,B,u1F6B5.1,person mountain biking: light skin tone
+12,11,A,u261D.5,index pointing up: dark skin tone
+13,14,B,u1F6B6.5.W.u27A1,"woman walking: dark skin tone, facing right"
+14,13,A,u1F468_u1F9B2.4,"man: medium-dark skin tone, bald"
+15,16,B,u1F478.1,princess: light skin tone
+16,15,A,u1F475.0,old woman
+17,18,B,u1F448.1,backhand index pointing left: light skin tone
+18,17,A,u1F469_u2696.2,woman judge: medium-light skin tone
+19,20,B,u1F487.2.W,woman getting haircut: medium-light skin tone
+20,19,A,u1F44B.4,waving hand: medium-dark skin tone
+21,22,B,u1F9D1_u1F9B0.5,"person: dark skin tone, red hair"
+22,21,A,u1F9B6.4,foot: medium-dark skin tone
+23,24,B,u1F9DB.0,vampire
+24,23,A,u1F468_u2695.4,man health worker: medium-dark skin tone
+25,26,B,u1F64E.4,person pouting: medium-dark skin tone
+26,25,A,u1F64E.0.M,man pouting
+27,28,B,u1F4A4,ZZZ
+28,27,A,u1F469_u1F527.0,woman mechanic
+29,30,B,u26F9.1.W,u26F9.1.W
+30,29,A,u1F595.0,middle finger
+31,32,B,u1F926.2.W,woman facepalming: medium-light skin tone
+32,31,A,u1F6B6.3.M.u27A1,"man walking: medium skin tone, facing right"
+33,34,B,u1F44D.2,thumbs up: medium-light skin tone
+34,33,A,u1F64D.0.M,man frowning
+35,36,B,u1F9D1_u1F3EB.5,teacher: dark skin tone
+36,35,A,u1F9CF.4.M,deaf man: medium-dark skin tone
+37,38,B,u2753,red question mark
+38,37,A,u1F9D1_u1F4BB.4,technologist: medium-dark skin tone
+39,40,B,u1F9D1_u2695.2,health worker: medium-light skin tone
+40,39,A,u1F469_u1F4BC.5,woman office worker: dark skin tone
+41,42,B,u1F469_u1F692.0,woman firefighter
+42,41,A,u1F9D7.5.W,woman climbing: dark skin tone
+43,44,B,u1F9D1_u1F9BD.5,person in manual wheelchair: dark skin tone
+44,43,A,u270A.2,raised fist: medium-light skin tone
+45,46,B,u1F487.0.M,man getting haircut
+46,45,A,u1F9DD.3.M,man elf: medium skin tone
+47,48,B,u1F511,key
+48,47,A,u1FAF5.3,index pointing at the viewer: medium skin tone
+49,50,B,u1F609,winking face
+50,49,A,u1F937.3,person shrugging: medium skin tone
+51,52,B,u1F468.u1F430.5.L+u1F468.u1F430.4.R,"men with bunny ears: dark skin tone, medium-dark skin tone"
+52,51,A,u1F575.5.W,woman detective: dark skin tone
+53,54,B,u1F918.0,sign of the horns
+54,53,A,u1F385.1,Santa Claus: light skin tone
+55,56,B,u1F645.4.M,man gesturing NO: medium-dark skin tone
+56,55,A,u1F470.1.W,woman with veil: light skin tone
+57,58,B,u1F6B6.3.u27A1,"person walking: medium skin tone, facing right"
+58,57,A,u1F926.4,person facepalming: medium-dark skin tone
+59,60,B,u1F9D6.0.M,man in steamy room
+60,59,A,u1F471.2.W,"woman: medium-light skin tone, blond hair"
+61,62,B,u1F934.3,prince: medium skin tone
+62,61,A,u1F469_u1F9AF.1.u27A1,"woman with white cane: light skin tone, facing right"
+63,64,B,u1F90C.4,pinched fingers: medium-dark skin tone
+64,63,A,u1F3CB.4,person lifting weights: medium-dark skin tone
+65,66,B,u1F619,kissing face with smiling eyes
+66,65,A,u1F468_u1F680.0,man astronaut
+67,68,B,u1F468_u1F3EB.2,man teacher: medium-light skin tone
+68,67,A,u1F469_u1F373.4,woman cook: medium-dark skin tone
+69,70,B,u1F469_u1F52C.2,woman scientist: medium-light skin tone
+70,69,A,u270C.5,victory hand: dark skin tone
+71,72,B,u1F468_u1F3A8.2,man artist: medium-light skin tone
+72,71,A,u1F596.4,vulcan salute: medium-dark skin tone
+73,74,B,u1F44C.4,OK hand: medium-dark skin tone
+74,73,A,u1F487.0,person getting haircut
+75,76,B,u1F9B8.2,superhero: medium-light skin tone
+76,75,A,u1F6A3.1,person rowing boat: light skin tone
+77,78,B,u26F9.2,person bouncing ball: medium-light skin tone
+78,77,A,u1F9DC.4.W,mermaid: medium-dark skin tone
+79,80,B,u1F468_u1F33E.4,man farmer: medium-dark skin tone
+80,79,A,u1FAC3.1,pregnant man: light skin tone
+81,82,B,u1F9D6.1,person in steamy room: light skin tone
+82,81,A,u1FAE1,saluting face
+83,84,B,u1FAF3.0,palm down hand
+84,83,A,u1F930.2,pregnant woman: medium-light skin tone
+85,86,B,u1F9D1_u1F393.4,student: medium-dark skin tone
+86,85,A,u1F6A3.2.W,woman rowing boat: medium-light skin tone
+87,88,B,u1F9DE.W,woman genie
+88,87,A,u1F468_u1F9B3.1,"man: light skin tone, white hair"
+89,90,B,u26A0,warning
+90,89,A,u1F46E.3,police officer: medium skin tone
+91,92,B,u1F62A,sleepy face
+92,91,A,u1F3C3.3,person running: medium skin tone
+93,94,B,u1F471.5.M,"man: dark skin tone, blond hair"
+94,93,A,u1F469_u1F9BD.3.u27A1,"woman in manual wheelchair: medium skin tone, facing right"
+95,96,B,u1F9E9,puzzle piece
+96,95,A,u2764_u1FA79,mending heart
+97,98,B,u1F931.2,breast-feeding: medium-light skin tone
+98,97,A,u1F469_u1F393.2,woman student: medium-light skin tone
+99,100,B,u1F477.5.M,man construction worker: dark skin tone
+100,99,A,u1F3CC.2,person golfing: medium-light skin tone
+101,102,B,u1F933.2,selfie: medium-light skin tone
+102,101,A,u1F9DE,genie
+103,104,B,u1F647.3,person bowing: medium skin tone
+104,103,A,u1F9CD.2,person standing: medium-light skin tone
+105,106,B,u1F469_u2695.1,woman health worker: light skin tone
+106,105,A,u1F9D2.5,child: dark skin tone
+107,108,B,u1F473.0,person wearing turban
+108,107,A,u1F470.4.M,man with veil: medium-dark skin tone
+109,110,B,u1F6B4.1.W,woman biking: light skin tone
+110,109,A,u1F6A3.0.M,man rowing boat
+111,112,B,u1F486.0.W,woman getting massage
+112,111,A,u1F469_u1F9BC.4.u27A1,"woman in motorized wheelchair: medium-dark skin tone, facing right"
+113,114,B,u1F468_u1F37C.2,man feeding baby: medium-light skin tone
+114,113,A,u1F647.3.W,woman bowing: medium skin tone
+115,116,B,u1F91E.5,crossed fingers: dark skin tone
+116,115,A,u1F632,astonished face
+117,118,B,u1F9DD.4,elf: medium-dark skin tone
+118,117,A,u1F3CA.3.W,woman swimming: medium skin tone
+119,120,B,u1F468_u1F52C.4,man scientist: medium-dark skin tone
+120,119,A,u1F91C.1,right-facing fist: light skin tone
+121,122,B,u1F92E,face vomiting
+122,121,A,u1F483.5,woman dancing: dark skin tone
+123,124,B,u1F62F,hushed face
+124,123,A,u1F47F,angry face with horns
+125,126,B,u1F9D1_u1F9BD.1.u27A1,"person in manual wheelchair: light skin tone, facing right"
+126,125,A,u1F64C.5,raising hands: dark skin tone
+127,128,B,u1F932.1,palms up together: light skin tone
+128,127,A,u1F9D4.5,"person: dark skin tone, beard"
+129,130,B,u1F9B9.4.W,woman supervillain: medium-dark skin tone
+130,129,A,u1F3CB.0.M,u1F3CB.0.M
+131,132,B,u1F3C3.1.u27A1,"person running: light skin tone, facing right"
+132,131,A,u1F6B6.4.W,woman walking: medium-dark skin tone
+133,134,B,u1F9DC.4,merperson: medium-dark skin tone
+134,133,A,u1F9CE.0.M.u27A1,man kneeling: facing right
+135,136,B,u1F469_u1F3A4.0,woman singer
+136,135,A,u1F3CC.1.M,man golfing: light skin tone
+137,138,B,u1F64B.2.W,woman raising hand: medium-light skin tone
+138,137,A,u1F9CE.2.W.u27A1,"woman kneeling: medium-light skin tone, facing right"
+139,140,B,u1F9D1_u1F4BC.5,office worker: dark skin tone
+140,139,A,u1F486.3.M,man getting massage: medium skin tone
+141,142,B,u1F9D9.0.M,man mage
+142,141,A,u270D.0,writing hand
+143,144,B,u1F628,fearful face
+144,143,A,u1F473.0.W,woman wearing turban
+145,146,B,u1F4AA.1,flexed biceps: light skin tone
+146,145,A,u1F446.5,backhand index pointing up: dark skin tone
+147,148,B,u1F575.1,detective: light skin tone
+148,147,A,u1FAF2.1,leftwards hand: light skin tone
+149,150,B,u1F469_u1F9B3.3,"woman: medium skin tone, white hair"
+150,149,A,u1F90F.1,pinching hand: light skin tone
+151,152,B,u1F469_u1F37C.2,woman feeding baby: medium-light skin tone
+152,151,A,u1F6B6.2.M,man walking: medium-light skin tone
+153,154,B,u1F47C.0,baby angel
+154,153,A,u1F469_u1F3ED.5,woman factory worker: dark skin tone
+155,156,B,u1F471.4,"person: medium-dark skin tone, blond hair"
+156,155,A,u1F61E,disappointed face
+157,158,B,u1F469_u1F9BC.5,woman in motorized wheelchair: dark skin tone
+158,157,A,u1F642,slightly smiling face
+159,160,B,u1F442.5,ear: dark skin tone
+160,159,A,u1F469.4,woman: medium-dark skin tone
+161,162,B,u1F4A1,light bulb
+162,161,A,u1F63A,grinning cat
+163,164,B,u1F935.4.M,man in tuxedo: medium-dark skin tone
+164,163,A,u1F9D1_u1F3A4.1,singer: light skin tone
+165,166,B,u1F482.2.W,woman guard: medium-light skin tone
+166,165,A,u1F3C3.5.M.u27A1,"man running: dark skin tone, facing right"
+167,168,B,u1FA99,coin
+168,167,A,u1F3CC.5.W,woman golfing: dark skin tone
+169,170,B,u1F469_u1F33E.1,woman farmer: light skin tone
+170,169,A,u1FAC4.2,pregnant person: medium-light skin tone
+171,172,B,u1F9B5.0,leg
+172,171,A,u2639,frowning face
+173,174,B,u1F64D.2.W,woman frowning: medium-light skin tone
+174,173,A,u1F9D1_u1F527.1,mechanic: light skin tone
+175,176,B,u1F468_u1F9AF.1.u27A1,"man with white cane: light skin tone, facing right"
+176,175,A,u1F9BB.4,ear with hearing aid: medium-dark skin tone
+177,178,B,u1FAE8,shaking face
+178,177,A,u1F477.5.W,woman construction worker: dark skin tone
+179,180,B,u1FAF4.5,palm up hand: dark skin tone
+180,179,A,u1F91F.1,love-you gesture: light skin tone
+181,182,B,u1F64F.1,folded hands: light skin tone
+182,181,A,u1F9DE.M,man genie
+183,184,B,u1F9D1_u2696.4,judge: medium-dark skin tone
+184,183,A,u1F937.1.M,man shrugging: light skin tone
+185,186,B,u1F9D1_u1F9B1.1,"person: light skin tone, curly hair"
+186,185,A,u1FAF8.0,rightwards pushing hand
+187,188,B,u1F466.4,boy: medium-dark skin tone
+188,187,A,u1F574.5,person in suit levitating: dark skin tone
+189,190,B,u1F9CF.4,deaf person: medium-dark skin tone
+190,189,A,u2764,red heart
+191,192,B,u1F645.2,person gesturing NO: medium-light skin tone
+192,191,A,u2620,skull and crossbones
+193,194,B,u1F497,growing heart
+194,193,A,u1F919.3,call me hand: medium skin tone
+195,196,B,u1F9D1_u1FA70.1,ballet dancer: light skin tone
+196,195,A,u1F468_u1F9BC.1.u27A1,"man in motorized wheelchair: light skin tone, facing right"
+197,198,B,u1F9D1_u1F373.1,cook: light skin tone
+198,197,A,u1F9D1.4,person: medium-dark skin tone
+199,200,B,u1F3CA.3.M,man swimming: medium skin tone
+200,199,A,u1F469_u1F9B1.2,"woman: medium-light skin tone, curly hair"
+201,202,B,u1FAF7.4,leftwards pushing hand: medium-dark skin tone
+202,201,A,u1F9D9.5,mage: dark skin tone
+203,204,B,u1F590.4,hand with fingers splayed: medium-dark skin tone
+204,203,A,u1F6B4.1,person biking: light skin tone
+205,206,B,u1F482.1.M,man guard: light skin tone
+206,205,A,u1F3CA.3,person swimming: medium skin tone
+207,208,B,u1FAF6.2,heart hands: medium-light skin tone
+208,207,A,u1F468_u1F3A4.0,man singer
+209,210,B,u1F513,unlocked
+210,209,A,u1F9B9.2.M,man supervillain: medium-light skin tone
+211,212,B,u1F974,woozy face
+212,211,A,u1F472.3,person with skullcap: medium skin tone
+213,214,B,u1F9DF.W,woman zombie
+214,213,A,u1F449.2,backhand index pointing right: medium-light skin tone
+215,216,B,u1FAF1.5,rightwards hand: dark skin tone
+216,215,A,u1F469_u2708.5,woman pilot: dark skin tone
+217,218,B,u1F620,angry face
+218,217,A,u1F468_u2708.4,man pilot: medium-dark skin tone
+219,220,B,u1F9EE,abacus
+220,219,A,u1F64B.5.M,man raising hand: dark skin tone
+221,222,B,u1F575.4.M,man detective: medium-dark skin tone
+222,221,A,u1F639,cat with tears of joy
+223,224,B,u1F608,smiling face with horns
+224,223,A,u1F614,pensive face
+225,226,B,u1F5A4,black heart
+226,225,A,u1F9CE.5.M,man kneeling: dark skin tone
+227,228,B,u1F9DB.1.M,man vampire: light skin tone
+228,227,A,u1F64D.2,person frowning: medium-light skin tone
+229,230,B,u1F9B8.0.M,man superhero
+230,229,A,u1F481.0,person tipping hand
+231,232,B,u1FAEA,distorted face
+232,231,A,u1F9D1_u1F33E.0,farmer
+233,234,B,u1F926.3.M,man facepalming: medium skin tone
+234,233,A,u1F4AD,thought balloon
+235,236,B,u1F477.4,construction worker: medium-dark skin tone
+236,235,A,u1FAF1.4.L+u1FAF2.3.R,"handshake: medium-dark skin tone, medium skin tone"
+237,238,B,u1F64A,speak-no-evil monkey
+238,237,A,u1F979,face holding back tears
+239,240,B,u1F3C3.2.W.u27A1,"woman running: medium-light skin tone, facing right"
+240,239,A,u1F468_u1F373.4,man cook: medium-dark skin tone
+241,242,B,u1F9D7.3.M,man climbing: medium skin tone
+242,241,A,u1F485.0,nail polish
+243,244,B,u1F469.u1F430.2.L+u1F469.u1F430.3.R,"women with bunny ears: medium-light skin tone, medium skin tone"
+244,243,A,u1F441,eye
+245,246,B,u1F6B6.5,person walking: dark skin tone
+246,245,A,u1F935.0,person in tuxedo
+247,248,B,u1FAC5.5,person with crown: dark skin tone
+248,247,A,u1F64E.1.W,woman pouting: light skin tone
+249,250,B,u1F49D,heart with ribbon
+250,249,A,u1F928,face with raised eyebrow
+251,252,B,u1F9DD.3.W,woman elf: medium skin tone
+252,251,A,u1F977.2,ninja: medium-light skin tone
+253,254,B,u1F9CD.3.W,woman standing: medium skin tone
+254,253,A,u1F91B.0,left-facing fist
+255,256,B,u1F44F.0,clapping hands
+256,255,A,u1F468_u1F527.5,man mechanic: dark skin tone
+,,,,
+3 - arms in-out A then B,,,,
+position,draw_order,side,glyph,name
+1,1,A,u1F443.0,nose
+2,3,A,u1F645.2.W,woman gesturing NO: medium-light skin tone
+3,5,A,u1F646.1.M,man gesturing OK: light skin tone
+4,7,A,u1F646.4.W,woman gesturing OK: medium-dark skin tone
+5,9,A,u1F9D1.u1F430.2.L+u1F9D1.u1F430.5.R,"people with bunny ears: medium-light skin tone, dark skin tone"
+6,11,A,u261D.5,index pointing up: dark skin tone
+7,13,A,u1F468_u1F9B2.4,"man: medium-dark skin tone, bald"
+8,15,A,u1F475.0,old woman
+9,17,A,u1F469_u2696.2,woman judge: medium-light skin tone
+10,19,A,u1F44B.4,waving hand: medium-dark skin tone
+11,21,A,u1F9B6.4,foot: medium-dark skin tone
+12,23,A,u1F468_u2695.4,man health worker: medium-dark skin tone
+13,25,A,u1F64E.0.M,man pouting
+14,27,A,u1F469_u1F527.0,woman mechanic
+15,29,A,u1F595.0,middle finger
+16,31,A,u1F6B6.3.M.u27A1,"man walking: medium skin tone, facing right"
+17,33,A,u1F64D.0.M,man frowning
+18,35,A,u1F9CF.4.M,deaf man: medium-dark skin tone
+19,37,A,u1F9D1_u1F4BB.4,technologist: medium-dark skin tone
+20,39,A,u1F469_u1F4BC.5,woman office worker: dark skin tone
+21,41,A,u1F9D7.5.W,woman climbing: dark skin tone
+22,43,A,u270A.2,raised fist: medium-light skin tone
+23,45,A,u1F9DD.3.M,man elf: medium skin tone
+24,47,A,u1FAF5.3,index pointing at the viewer: medium skin tone
+25,49,A,u1F937.3,person shrugging: medium skin tone
+26,51,A,u1F575.5.W,woman detective: dark skin tone
+27,53,A,u1F385.1,Santa Claus: light skin tone
+28,55,A,u1F470.1.W,woman with veil: light skin tone
+29,57,A,u1F926.4,person facepalming: medium-dark skin tone
+30,59,A,u1F471.2.W,"woman: medium-light skin tone, blond hair"
+31,61,A,u1F469_u1F9AF.1.u27A1,"woman with white cane: light skin tone, facing right"
+32,63,A,u1F3CB.4,person lifting weights: medium-dark skin tone
+33,65,A,u1F468_u1F680.0,man astronaut
+34,67,A,u1F469_u1F373.4,woman cook: medium-dark skin tone
+35,69,A,u270C.5,victory hand: dark skin tone
+36,71,A,u1F596.4,vulcan salute: medium-dark skin tone
+37,73,A,u1F487.0,person getting haircut
+38,75,A,u1F6A3.1,person rowing boat: light skin tone
+39,77,A,u1F9DC.4.W,mermaid: medium-dark skin tone
+40,79,A,u1FAC3.1,pregnant man: light skin tone
+41,81,A,u1FAE1,saluting face
+42,83,A,u1F930.2,pregnant woman: medium-light skin tone
+43,85,A,u1F6A3.2.W,woman rowing boat: medium-light skin tone
+44,87,A,u1F468_u1F9B3.1,"man: light skin tone, white hair"
+45,89,A,u1F46E.3,police officer: medium skin tone
+46,91,A,u1F3C3.3,person running: medium skin tone
+47,93,A,u1F469_u1F9BD.3.u27A1,"woman in manual wheelchair: medium skin tone, facing right"
+48,95,A,u2764_u1FA79,mending heart
+49,97,A,u1F469_u1F393.2,woman student: medium-light skin tone
+50,99,A,u1F3CC.2,person golfing: medium-light skin tone
+51,101,A,u1F9DE,genie
+52,103,A,u1F9CD.2,person standing: medium-light skin tone
+53,105,A,u1F9D2.5,child: dark skin tone
+54,107,A,u1F470.4.M,man with veil: medium-dark skin tone
+55,109,A,u1F6A3.0.M,man rowing boat
+56,111,A,u1F469_u1F9BC.4.u27A1,"woman in motorized wheelchair: medium-dark skin tone, facing right"
+57,113,A,u1F647.3.W,woman bowing: medium skin tone
+58,115,A,u1F632,astonished face
+59,117,A,u1F3CA.3.W,woman swimming: medium skin tone
+60,119,A,u1F91C.1,right-facing fist: light skin tone
+61,121,A,u1F483.5,woman dancing: dark skin tone
+62,123,A,u1F47F,angry face with horns
+63,125,A,u1F64C.5,raising hands: dark skin tone
+64,127,A,u1F9D4.5,"person: dark skin tone, beard"
+65,129,A,u1F3CB.0.M,u1F3CB.0.M
+66,131,A,u1F6B6.4.W,woman walking: medium-dark skin tone
+67,133,A,u1F9CE.0.M.u27A1,man kneeling: facing right
+68,135,A,u1F3CC.1.M,man golfing: light skin tone
+69,137,A,u1F9CE.2.W.u27A1,"woman kneeling: medium-light skin tone, facing right"
+70,139,A,u1F486.3.M,man getting massage: medium skin tone
+71,141,A,u270D.0,writing hand
+72,143,A,u1F473.0.W,woman wearing turban
+73,145,A,u1F446.5,backhand index pointing up: dark skin tone
+74,147,A,u1FAF2.1,leftwards hand: light skin tone
+75,149,A,u1F90F.1,pinching hand: light skin tone
+76,151,A,u1F6B6.2.M,man walking: medium-light skin tone
+77,153,A,u1F469_u1F3ED.5,woman factory worker: dark skin tone
+78,155,A,u1F61E,disappointed face
+79,157,A,u1F642,slightly smiling face
+80,159,A,u1F469.4,woman: medium-dark skin tone
+81,161,A,u1F63A,grinning cat
+82,163,A,u1F9D1_u1F3A4.1,singer: light skin tone
+83,165,A,u1F3C3.5.M.u27A1,"man running: dark skin tone, facing right"
+84,167,A,u1F3CC.5.W,woman golfing: dark skin tone
+85,169,A,u1FAC4.2,pregnant person: medium-light skin tone
+86,171,A,u2639,frowning face
+87,173,A,u1F9D1_u1F527.1,mechanic: light skin tone
+88,175,A,u1F9BB.4,ear with hearing aid: medium-dark skin tone
+89,177,A,u1F477.5.W,woman construction worker: dark skin tone
+90,179,A,u1F91F.1,love-you gesture: light skin tone
+91,181,A,u1F9DE.M,man genie
+92,183,A,u1F937.1.M,man shrugging: light skin tone
+93,185,A,u1FAF8.0,rightwards pushing hand
+94,187,A,u1F574.5,person in suit levitating: dark skin tone
+95,189,A,u2764,red heart
+96,191,A,u2620,skull and crossbones
+97,193,A,u1F919.3,call me hand: medium skin tone
+98,195,A,u1F468_u1F9BC.1.u27A1,"man in motorized wheelchair: light skin tone, facing right"
+99,197,A,u1F9D1.4,person: medium-dark skin tone
+100,199,A,u1F469_u1F9B1.2,"woman: medium-light skin tone, curly hair"
+101,201,A,u1F9D9.5,mage: dark skin tone
+102,203,A,u1F6B4.1,person biking: light skin tone
+103,205,A,u1F3CA.3,person swimming: medium skin tone
+104,207,A,u1F468_u1F3A4.0,man singer
+105,209,A,u1F9B9.2.M,man supervillain: medium-light skin tone
+106,211,A,u1F472.3,person with skullcap: medium skin tone
+107,213,A,u1F449.2,backhand index pointing right: medium-light skin tone
+108,215,A,u1F469_u2708.5,woman pilot: dark skin tone
+109,217,A,u1F468_u2708.4,man pilot: medium-dark skin tone
+110,219,A,u1F64B.5.M,man raising hand: dark skin tone
+111,221,A,u1F639,cat with tears of joy
+112,223,A,u1F614,pensive face
+113,225,A,u1F9CE.5.M,man kneeling: dark skin tone
+114,227,A,u1F64D.2,person frowning: medium-light skin tone
+115,229,A,u1F481.0,person tipping hand
+116,231,A,u1F9D1_u1F33E.0,farmer
+117,233,A,u1F4AD,thought balloon
+118,235,A,u1FAF1.4.L+u1FAF2.3.R,"handshake: medium-dark skin tone, medium skin tone"
+119,237,A,u1F979,face holding back tears
+120,239,A,u1F468_u1F373.4,man cook: medium-dark skin tone
+121,241,A,u1F485.0,nail polish
+122,243,A,u1F441,eye
+123,245,A,u1F935.0,person in tuxedo
+124,247,A,u1F64E.1.W,woman pouting: light skin tone
+125,249,A,u1F928,face with raised eyebrow
+126,251,A,u1F977.2,ninja: medium-light skin tone
+127,253,A,u1F91B.0,left-facing fist
+128,255,A,u1F468_u1F527.5,man mechanic: dark skin tone
+129,256,B,u1F44F.0,clapping hands
+130,254,B,u1F9CD.3.W,woman standing: medium skin tone
+131,252,B,u1F9DD.3.W,woman elf: medium skin tone
+132,250,B,u1F49D,heart with ribbon
+133,248,B,u1FAC5.5,person with crown: dark skin tone
+134,246,B,u1F6B6.5,person walking: dark skin tone
+135,244,B,u1F469.u1F430.2.L+u1F469.u1F430.3.R,"women with bunny ears: medium-light skin tone, medium skin tone"
+136,242,B,u1F9D7.3.M,man climbing: medium skin tone
+137,240,B,u1F3C3.2.W.u27A1,"woman running: medium-light skin tone, facing right"
+138,238,B,u1F64A,speak-no-evil monkey
+139,236,B,u1F477.4,construction worker: medium-dark skin tone
+140,234,B,u1F926.3.M,man facepalming: medium skin tone
+141,232,B,u1FAEA,distorted face
+142,230,B,u1F9B8.0.M,man superhero
+143,228,B,u1F9DB.1.M,man vampire: light skin tone
+144,226,B,u1F5A4,black heart
+145,224,B,u1F608,smiling face with horns
+146,222,B,u1F575.4.M,man detective: medium-dark skin tone
+147,220,B,u1F9EE,abacus
+148,218,B,u1F620,angry face
+149,216,B,u1FAF1.5,rightwards hand: dark skin tone
+150,214,B,u1F9DF.W,woman zombie
+151,212,B,u1F974,woozy face
+152,210,B,u1F513,unlocked
+153,208,B,u1FAF6.2,heart hands: medium-light skin tone
+154,206,B,u1F482.1.M,man guard: light skin tone
+155,204,B,u1F590.4,hand with fingers splayed: medium-dark skin tone
+156,202,B,u1FAF7.4,leftwards pushing hand: medium-dark skin tone
+157,200,B,u1F3CA.3.M,man swimming: medium skin tone
+158,198,B,u1F9D1_u1F373.1,cook: light skin tone
+159,196,B,u1F9D1_u1FA70.1,ballet dancer: light skin tone
+160,194,B,u1F497,growing heart
+161,192,B,u1F645.2,person gesturing NO: medium-light skin tone
+162,190,B,u1F9CF.4,deaf person: medium-dark skin tone
+163,188,B,u1F466.4,boy: medium-dark skin tone
+164,186,B,u1F9D1_u1F9B1.1,"person: light skin tone, curly hair"
+165,184,B,u1F9D1_u2696.4,judge: medium-dark skin tone
+166,182,B,u1F64F.1,folded hands: light skin tone
+167,180,B,u1FAF4.5,palm up hand: dark skin tone
+168,178,B,u1FAE8,shaking face
+169,176,B,u1F468_u1F9AF.1.u27A1,"man with white cane: light skin tone, facing right"
+170,174,B,u1F64D.2.W,woman frowning: medium-light skin tone
+171,172,B,u1F9B5.0,leg
+172,170,B,u1F469_u1F33E.1,woman farmer: light skin tone
+173,168,B,u1FA99,coin
+174,166,B,u1F482.2.W,woman guard: medium-light skin tone
+175,164,B,u1F935.4.M,man in tuxedo: medium-dark skin tone
+176,162,B,u1F4A1,light bulb
+177,160,B,u1F442.5,ear: dark skin tone
+178,158,B,u1F469_u1F9BC.5,woman in motorized wheelchair: dark skin tone
+179,156,B,u1F471.4,"person: medium-dark skin tone, blond hair"
+180,154,B,u1F47C.0,baby angel
+181,152,B,u1F469_u1F37C.2,woman feeding baby: medium-light skin tone
+182,150,B,u1F469_u1F9B3.3,"woman: medium skin tone, white hair"
+183,148,B,u1F575.1,detective: light skin tone
+184,146,B,u1F4AA.1,flexed biceps: light skin tone
+185,144,B,u1F628,fearful face
+186,142,B,u1F9D9.0.M,man mage
+187,140,B,u1F9D1_u1F4BC.5,office worker: dark skin tone
+188,138,B,u1F64B.2.W,woman raising hand: medium-light skin tone
+189,136,B,u1F469_u1F3A4.0,woman singer
+190,134,B,u1F9DC.4,merperson: medium-dark skin tone
+191,132,B,u1F3C3.1.u27A1,"person running: light skin tone, facing right"
+192,130,B,u1F9B9.4.W,woman supervillain: medium-dark skin tone
+193,128,B,u1F932.1,palms up together: light skin tone
+194,126,B,u1F9D1_u1F9BD.1.u27A1,"person in manual wheelchair: light skin tone, facing right"
+195,124,B,u1F62F,hushed face
+196,122,B,u1F92E,face vomiting
+197,120,B,u1F468_u1F52C.4,man scientist: medium-dark skin tone
+198,118,B,u1F9DD.4,elf: medium-dark skin tone
+199,116,B,u1F91E.5,crossed fingers: dark skin tone
+200,114,B,u1F468_u1F37C.2,man feeding baby: medium-light skin tone
+201,112,B,u1F486.0.W,woman getting massage
+202,110,B,u1F6B4.1.W,woman biking: light skin tone
+203,108,B,u1F473.0,person wearing turban
+204,106,B,u1F469_u2695.1,woman health worker: light skin tone
+205,104,B,u1F647.3,person bowing: medium skin tone
+206,102,B,u1F933.2,selfie: medium-light skin tone
+207,100,B,u1F477.5.M,man construction worker: dark skin tone
+208,98,B,u1F931.2,breast-feeding: medium-light skin tone
+209,96,B,u1F9E9,puzzle piece
+210,94,B,u1F471.5.M,"man: dark skin tone, blond hair"
+211,92,B,u1F62A,sleepy face
+212,90,B,u26A0,warning
+213,88,B,u1F9DE.W,woman genie
+214,86,B,u1F9D1_u1F393.4,student: medium-dark skin tone
+215,84,B,u1FAF3.0,palm down hand
+216,82,B,u1F9D6.1,person in steamy room: light skin tone
+217,80,B,u1F468_u1F33E.4,man farmer: medium-dark skin tone
+218,78,B,u26F9.2,person bouncing ball: medium-light skin tone
+219,76,B,u1F9B8.2,superhero: medium-light skin tone
+220,74,B,u1F44C.4,OK hand: medium-dark skin tone
+221,72,B,u1F468_u1F3A8.2,man artist: medium-light skin tone
+222,70,B,u1F469_u1F52C.2,woman scientist: medium-light skin tone
+223,68,B,u1F468_u1F3EB.2,man teacher: medium-light skin tone
+224,66,B,u1F619,kissing face with smiling eyes
+225,64,B,u1F90C.4,pinched fingers: medium-dark skin tone
+226,62,B,u1F934.3,prince: medium skin tone
+227,60,B,u1F9D6.0.M,man in steamy room
+228,58,B,u1F6B6.3.u27A1,"person walking: medium skin tone, facing right"
+229,56,B,u1F645.4.M,man gesturing NO: medium-dark skin tone
+230,54,B,u1F918.0,sign of the horns
+231,52,B,u1F468.u1F430.5.L+u1F468.u1F430.4.R,"men with bunny ears: dark skin tone, medium-dark skin tone"
+232,50,B,u1F609,winking face
+233,48,B,u1F511,key
+234,46,B,u1F487.0.M,man getting haircut
+235,44,B,u1F9D1_u1F9BD.5,person in manual wheelchair: dark skin tone
+236,42,B,u1F469_u1F692.0,woman firefighter
+237,40,B,u1F9D1_u2695.2,health worker: medium-light skin tone
+238,38,B,u2753,red question mark
+239,36,B,u1F9D1_u1F3EB.5,teacher: dark skin tone
+240,34,B,u1F44D.2,thumbs up: medium-light skin tone
+241,32,B,u1F926.2.W,woman facepalming: medium-light skin tone
+242,30,B,u26F9.1.W,u26F9.1.W
+243,28,B,u1F4A4,ZZZ
+244,26,B,u1F64E.4,person pouting: medium-dark skin tone
+245,24,B,u1F9DB.0,vampire
+246,22,B,u1F9D1_u1F9B0.5,"person: dark skin tone, red hair"
+247,20,B,u1F487.2.W,woman getting haircut: medium-light skin tone
+248,18,B,u1F448.1,backhand index pointing left: light skin tone
+249,16,B,u1F478.1,princess: light skin tone
+250,14,B,u1F6B6.5.W.u27A1,"woman walking: dark skin tone, facing right"
+251,12,B,u1F6B5.1,person mountain biking: light skin tone
+252,10,B,u1F3CB.3.W,woman lifting weights: medium skin tone
+253,8,B,u1F64B.4,person raising hand: medium-dark skin tone
+254,6,B,u1F468_u1F9AF.1,man with white cane: light skin tone
+255,4,B,u1F9D1_u1F692.1,firefighter: light skin tone
+256,2,B,u1F468_u2696.2,man judge: medium-light skin tone
+,,,,
+4 - arms in-out B then A,,,,
+position,draw_order,side,glyph,name
+1,2,B,u1F468_u2696.2,man judge: medium-light skin tone
+2,4,B,u1F9D1_u1F692.1,firefighter: light skin tone
+3,6,B,u1F468_u1F9AF.1,man with white cane: light skin tone
+4,8,B,u1F64B.4,person raising hand: medium-dark skin tone
+5,10,B,u1F3CB.3.W,woman lifting weights: medium skin tone
+6,12,B,u1F6B5.1,person mountain biking: light skin tone
+7,14,B,u1F6B6.5.W.u27A1,"woman walking: dark skin tone, facing right"
+8,16,B,u1F478.1,princess: light skin tone
+9,18,B,u1F448.1,backhand index pointing left: light skin tone
+10,20,B,u1F487.2.W,woman getting haircut: medium-light skin tone
+11,22,B,u1F9D1_u1F9B0.5,"person: dark skin tone, red hair"
+12,24,B,u1F9DB.0,vampire
+13,26,B,u1F64E.4,person pouting: medium-dark skin tone
+14,28,B,u1F4A4,ZZZ
+15,30,B,u26F9.1.W,u26F9.1.W
+16,32,B,u1F926.2.W,woman facepalming: medium-light skin tone
+17,34,B,u1F44D.2,thumbs up: medium-light skin tone
+18,36,B,u1F9D1_u1F3EB.5,teacher: dark skin tone
+19,38,B,u2753,red question mark
+20,40,B,u1F9D1_u2695.2,health worker: medium-light skin tone
+21,42,B,u1F469_u1F692.0,woman firefighter
+22,44,B,u1F9D1_u1F9BD.5,person in manual wheelchair: dark skin tone
+23,46,B,u1F487.0.M,man getting haircut
+24,48,B,u1F511,key
+25,50,B,u1F609,winking face
+26,52,B,u1F468.u1F430.5.L+u1F468.u1F430.4.R,"men with bunny ears: dark skin tone, medium-dark skin tone"
+27,54,B,u1F918.0,sign of the horns
+28,56,B,u1F645.4.M,man gesturing NO: medium-dark skin tone
+29,58,B,u1F6B6.3.u27A1,"person walking: medium skin tone, facing right"
+30,60,B,u1F9D6.0.M,man in steamy room
+31,62,B,u1F934.3,prince: medium skin tone
+32,64,B,u1F90C.4,pinched fingers: medium-dark skin tone
+33,66,B,u1F619,kissing face with smiling eyes
+34,68,B,u1F468_u1F3EB.2,man teacher: medium-light skin tone
+35,70,B,u1F469_u1F52C.2,woman scientist: medium-light skin tone
+36,72,B,u1F468_u1F3A8.2,man artist: medium-light skin tone
+37,74,B,u1F44C.4,OK hand: medium-dark skin tone
+38,76,B,u1F9B8.2,superhero: medium-light skin tone
+39,78,B,u26F9.2,person bouncing ball: medium-light skin tone
+40,80,B,u1F468_u1F33E.4,man farmer: medium-dark skin tone
+41,82,B,u1F9D6.1,person in steamy room: light skin tone
+42,84,B,u1FAF3.0,palm down hand
+43,86,B,u1F9D1_u1F393.4,student: medium-dark skin tone
+44,88,B,u1F9DE.W,woman genie
+45,90,B,u26A0,warning
+46,92,B,u1F62A,sleepy face
+47,94,B,u1F471.5.M,"man: dark skin tone, blond hair"
+48,96,B,u1F9E9,puzzle piece
+49,98,B,u1F931.2,breast-feeding: medium-light skin tone
+50,100,B,u1F477.5.M,man construction worker: dark skin tone
+51,102,B,u1F933.2,selfie: medium-light skin tone
+52,104,B,u1F647.3,person bowing: medium skin tone
+53,106,B,u1F469_u2695.1,woman health worker: light skin tone
+54,108,B,u1F473.0,person wearing turban
+55,110,B,u1F6B4.1.W,woman biking: light skin tone
+56,112,B,u1F486.0.W,woman getting massage
+57,114,B,u1F468_u1F37C.2,man feeding baby: medium-light skin tone
+58,116,B,u1F91E.5,crossed fingers: dark skin tone
+59,118,B,u1F9DD.4,elf: medium-dark skin tone
+60,120,B,u1F468_u1F52C.4,man scientist: medium-dark skin tone
+61,122,B,u1F92E,face vomiting
+62,124,B,u1F62F,hushed face
+63,126,B,u1F9D1_u1F9BD.1.u27A1,"person in manual wheelchair: light skin tone, facing right"
+64,128,B,u1F932.1,palms up together: light skin tone
+65,130,B,u1F9B9.4.W,woman supervillain: medium-dark skin tone
+66,132,B,u1F3C3.1.u27A1,"person running: light skin tone, facing right"
+67,134,B,u1F9DC.4,merperson: medium-dark skin tone
+68,136,B,u1F469_u1F3A4.0,woman singer
+69,138,B,u1F64B.2.W,woman raising hand: medium-light skin tone
+70,140,B,u1F9D1_u1F4BC.5,office worker: dark skin tone
+71,142,B,u1F9D9.0.M,man mage
+72,144,B,u1F628,fearful face
+73,146,B,u1F4AA.1,flexed biceps: light skin tone
+74,148,B,u1F575.1,detective: light skin tone
+75,150,B,u1F469_u1F9B3.3,"woman: medium skin tone, white hair"
+76,152,B,u1F469_u1F37C.2,woman feeding baby: medium-light skin tone
+77,154,B,u1F47C.0,baby angel
+78,156,B,u1F471.4,"person: medium-dark skin tone, blond hair"
+79,158,B,u1F469_u1F9BC.5,woman in motorized wheelchair: dark skin tone
+80,160,B,u1F442.5,ear: dark skin tone
+81,162,B,u1F4A1,light bulb
+82,164,B,u1F935.4.M,man in tuxedo: medium-dark skin tone
+83,166,B,u1F482.2.W,woman guard: medium-light skin tone
+84,168,B,u1FA99,coin
+85,170,B,u1F469_u1F33E.1,woman farmer: light skin tone
+86,172,B,u1F9B5.0,leg
+87,174,B,u1F64D.2.W,woman frowning: medium-light skin tone
+88,176,B,u1F468_u1F9AF.1.u27A1,"man with white cane: light skin tone, facing right"
+89,178,B,u1FAE8,shaking face
+90,180,B,u1FAF4.5,palm up hand: dark skin tone
+91,182,B,u1F64F.1,folded hands: light skin tone
+92,184,B,u1F9D1_u2696.4,judge: medium-dark skin tone
+93,186,B,u1F9D1_u1F9B1.1,"person: light skin tone, curly hair"
+94,188,B,u1F466.4,boy: medium-dark skin tone
+95,190,B,u1F9CF.4,deaf person: medium-dark skin tone
+96,192,B,u1F645.2,person gesturing NO: medium-light skin tone
+97,194,B,u1F497,growing heart
+98,196,B,u1F9D1_u1FA70.1,ballet dancer: light skin tone
+99,198,B,u1F9D1_u1F373.1,cook: light skin tone
+100,200,B,u1F3CA.3.M,man swimming: medium skin tone
+101,202,B,u1FAF7.4,leftwards pushing hand: medium-dark skin tone
+102,204,B,u1F590.4,hand with fingers splayed: medium-dark skin tone
+103,206,B,u1F482.1.M,man guard: light skin tone
+104,208,B,u1FAF6.2,heart hands: medium-light skin tone
+105,210,B,u1F513,unlocked
+106,212,B,u1F974,woozy face
+107,214,B,u1F9DF.W,woman zombie
+108,216,B,u1FAF1.5,rightwards hand: dark skin tone
+109,218,B,u1F620,angry face
+110,220,B,u1F9EE,abacus
+111,222,B,u1F575.4.M,man detective: medium-dark skin tone
+112,224,B,u1F608,smiling face with horns
+113,226,B,u1F5A4,black heart
+114,228,B,u1F9DB.1.M,man vampire: light skin tone
+115,230,B,u1F9B8.0.M,man superhero
+116,232,B,u1FAEA,distorted face
+117,234,B,u1F926.3.M,man facepalming: medium skin tone
+118,236,B,u1F477.4,construction worker: medium-dark skin tone
+119,238,B,u1F64A,speak-no-evil monkey
+120,240,B,u1F3C3.2.W.u27A1,"woman running: medium-light skin tone, facing right"
+121,242,B,u1F9D7.3.M,man climbing: medium skin tone
+122,244,B,u1F469.u1F430.2.L+u1F469.u1F430.3.R,"women with bunny ears: medium-light skin tone, medium skin tone"
+123,246,B,u1F6B6.5,person walking: dark skin tone
+124,248,B,u1FAC5.5,person with crown: dark skin tone
+125,250,B,u1F49D,heart with ribbon
+126,252,B,u1F9DD.3.W,woman elf: medium skin tone
+127,254,B,u1F9CD.3.W,woman standing: medium skin tone
+128,256,B,u1F44F.0,clapping hands
+129,255,A,u1F468_u1F527.5,man mechanic: dark skin tone
+130,253,A,u1F91B.0,left-facing fist
+131,251,A,u1F977.2,ninja: medium-light skin tone
+132,249,A,u1F928,face with raised eyebrow
+133,247,A,u1F64E.1.W,woman pouting: light skin tone
+134,245,A,u1F935.0,person in tuxedo
+135,243,A,u1F441,eye
+136,241,A,u1F485.0,nail polish
+137,239,A,u1F468_u1F373.4,man cook: medium-dark skin tone
+138,237,A,u1F979,face holding back tears
+139,235,A,u1FAF1.4.L+u1FAF2.3.R,"handshake: medium-dark skin tone, medium skin tone"
+140,233,A,u1F4AD,thought balloon
+141,231,A,u1F9D1_u1F33E.0,farmer
+142,229,A,u1F481.0,person tipping hand
+143,227,A,u1F64D.2,person frowning: medium-light skin tone
+144,225,A,u1F9CE.5.M,man kneeling: dark skin tone
+145,223,A,u1F614,pensive face
+146,221,A,u1F639,cat with tears of joy
+147,219,A,u1F64B.5.M,man raising hand: dark skin tone
+148,217,A,u1F468_u2708.4,man pilot: medium-dark skin tone
+149,215,A,u1F469_u2708.5,woman pilot: dark skin tone
+150,213,A,u1F449.2,backhand index pointing right: medium-light skin tone
+151,211,A,u1F472.3,person with skullcap: medium skin tone
+152,209,A,u1F9B9.2.M,man supervillain: medium-light skin tone
+153,207,A,u1F468_u1F3A4.0,man singer
+154,205,A,u1F3CA.3,person swimming: medium skin tone
+155,203,A,u1F6B4.1,person biking: light skin tone
+156,201,A,u1F9D9.5,mage: dark skin tone
+157,199,A,u1F469_u1F9B1.2,"woman: medium-light skin tone, curly hair"
+158,197,A,u1F9D1.4,person: medium-dark skin tone
+159,195,A,u1F468_u1F9BC.1.u27A1,"man in motorized wheelchair: light skin tone, facing right"
+160,193,A,u1F919.3,call me hand: medium skin tone
+161,191,A,u2620,skull and crossbones
+162,189,A,u2764,red heart
+163,187,A,u1F574.5,person in suit levitating: dark skin tone
+164,185,A,u1FAF8.0,rightwards pushing hand
+165,183,A,u1F937.1.M,man shrugging: light skin tone
+166,181,A,u1F9DE.M,man genie
+167,179,A,u1F91F.1,love-you gesture: light skin tone
+168,177,A,u1F477.5.W,woman construction worker: dark skin tone
+169,175,A,u1F9BB.4,ear with hearing aid: medium-dark skin tone
+170,173,A,u1F9D1_u1F527.1,mechanic: light skin tone
+171,171,A,u2639,frowning face
+172,169,A,u1FAC4.2,pregnant person: medium-light skin tone
+173,167,A,u1F3CC.5.W,woman golfing: dark skin tone
+174,165,A,u1F3C3.5.M.u27A1,"man running: dark skin tone, facing right"
+175,163,A,u1F9D1_u1F3A4.1,singer: light skin tone
+176,161,A,u1F63A,grinning cat
+177,159,A,u1F469.4,woman: medium-dark skin tone
+178,157,A,u1F642,slightly smiling face
+179,155,A,u1F61E,disappointed face
+180,153,A,u1F469_u1F3ED.5,woman factory worker: dark skin tone
+181,151,A,u1F6B6.2.M,man walking: medium-light skin tone
+182,149,A,u1F90F.1,pinching hand: light skin tone
+183,147,A,u1FAF2.1,leftwards hand: light skin tone
+184,145,A,u1F446.5,backhand index pointing up: dark skin tone
+185,143,A,u1F473.0.W,woman wearing turban
+186,141,A,u270D.0,writing hand
+187,139,A,u1F486.3.M,man getting massage: medium skin tone
+188,137,A,u1F9CE.2.W.u27A1,"woman kneeling: medium-light skin tone, facing right"
+189,135,A,u1F3CC.1.M,man golfing: light skin tone
+190,133,A,u1F9CE.0.M.u27A1,man kneeling: facing right
+191,131,A,u1F6B6.4.W,woman walking: medium-dark skin tone
+192,129,A,u1F3CB.0.M,u1F3CB.0.M
+193,127,A,u1F9D4.5,"person: dark skin tone, beard"
+194,125,A,u1F64C.5,raising hands: dark skin tone
+195,123,A,u1F47F,angry face with horns
+196,121,A,u1F483.5,woman dancing: dark skin tone
+197,119,A,u1F91C.1,right-facing fist: light skin tone
+198,117,A,u1F3CA.3.W,woman swimming: medium skin tone
+199,115,A,u1F632,astonished face
+200,113,A,u1F647.3.W,woman bowing: medium skin tone
+201,111,A,u1F469_u1F9BC.4.u27A1,"woman in motorized wheelchair: medium-dark skin tone, facing right"
+202,109,A,u1F6A3.0.M,man rowing boat
+203,107,A,u1F470.4.M,man with veil: medium-dark skin tone
+204,105,A,u1F9D2.5,child: dark skin tone
+205,103,A,u1F9CD.2,person standing: medium-light skin tone
+206,101,A,u1F9DE,genie
+207,99,A,u1F3CC.2,person golfing: medium-light skin tone
+208,97,A,u1F469_u1F393.2,woman student: medium-light skin tone
+209,95,A,u2764_u1FA79,mending heart
+210,93,A,u1F469_u1F9BD.3.u27A1,"woman in manual wheelchair: medium skin tone, facing right"
+211,91,A,u1F3C3.3,person running: medium skin tone
+212,89,A,u1F46E.3,police officer: medium skin tone
+213,87,A,u1F468_u1F9B3.1,"man: light skin tone, white hair"
+214,85,A,u1F6A3.2.W,woman rowing boat: medium-light skin tone
+215,83,A,u1F930.2,pregnant woman: medium-light skin tone
+216,81,A,u1FAE1,saluting face
+217,79,A,u1FAC3.1,pregnant man: light skin tone
+218,77,A,u1F9DC.4.W,mermaid: medium-dark skin tone
+219,75,A,u1F6A3.1,person rowing boat: light skin tone
+220,73,A,u1F487.0,person getting haircut
+221,71,A,u1F596.4,vulcan salute: medium-dark skin tone
+222,69,A,u270C.5,victory hand: dark skin tone
+223,67,A,u1F469_u1F373.4,woman cook: medium-dark skin tone
+224,65,A,u1F468_u1F680.0,man astronaut
+225,63,A,u1F3CB.4,person lifting weights: medium-dark skin tone
+226,61,A,u1F469_u1F9AF.1.u27A1,"woman with white cane: light skin tone, facing right"
+227,59,A,u1F471.2.W,"woman: medium-light skin tone, blond hair"
+228,57,A,u1F926.4,person facepalming: medium-dark skin tone
+229,55,A,u1F470.1.W,woman with veil: light skin tone
+230,53,A,u1F385.1,Santa Claus: light skin tone
+231,51,A,u1F575.5.W,woman detective: dark skin tone
+232,49,A,u1F937.3,person shrugging: medium skin tone
+233,47,A,u1FAF5.3,index pointing at the viewer: medium skin tone
+234,45,A,u1F9DD.3.M,man elf: medium skin tone
+235,43,A,u270A.2,raised fist: medium-light skin tone
+236,41,A,u1F9D7.5.W,woman climbing: dark skin tone
+237,39,A,u1F469_u1F4BC.5,woman office worker: dark skin tone
+238,37,A,u1F9D1_u1F4BB.4,technologist: medium-dark skin tone
+239,35,A,u1F9CF.4.M,deaf man: medium-dark skin tone
+240,33,A,u1F64D.0.M,man frowning
+241,31,A,u1F6B6.3.M.u27A1,"man walking: medium skin tone, facing right"
+242,29,A,u1F595.0,middle finger
+243,27,A,u1F469_u1F527.0,woman mechanic
+244,25,A,u1F64E.0.M,man pouting
+245,23,A,u1F468_u2695.4,man health worker: medium-dark skin tone
+246,21,A,u1F9B6.4,foot: medium-dark skin tone
+247,19,A,u1F44B.4,waving hand: medium-dark skin tone
+248,17,A,u1F469_u2696.2,woman judge: medium-light skin tone
+249,15,A,u1F475.0,old woman
+250,13,A,u1F468_u1F9B2.4,"man: medium-dark skin tone, bald"
+251,11,A,u261D.5,index pointing up: dark skin tone
+252,9,A,u1F9D1.u1F430.2.L+u1F9D1.u1F430.5.R,"people with bunny ears: medium-light skin tone, dark skin tone"
+253,7,A,u1F646.4.W,woman gesturing OK: medium-dark skin tone
+254,5,A,u1F646.1.M,man gesturing OK: light skin tone
+255,3,A,u1F645.2.W,woman gesturing NO: medium-light skin tone
+256,1,A,u1F443.0,nose
+
+Also, there was a post which kTimesG deleted, i apologize in advance to you kTimesG for sharing it if it was ment for, i dont know what, but it was brefly up and i saw it while checking the topic for any replies, it might be usefull to someone or im making a mistake for sharing it, i do not know, my brain is scrambled eggs right now from looking at emojis for the past few days.
+
+The post was two emojis (which broke me down complitely beacuse i cant ever look at the emoji again, ever). A shuffle and a rotation/repeat/circle/cycle emoji.
+
+Code:
+ "kTimesG (OP)
+Sr. Member
+****
+
+Activity: 938
+Merit: 272
+
+View Profile Personal Message (Offline)
+
+Ignore
+
+Re: Phy Challenge
+Today at 08:29:11 PM
+Reply with quote  +Merit  #29
+Quote from: aakhey on August 17, 2026, 03:20:27 PM
+The unusually small (s) value (9 bytes) may also be a clue
+🔀🔄" 
+
+P.S. This isnt related to the challenge at all, but i have to ask, why the f*** is there an emoji of a "pregnant man and a pregnant person" at all? Like why did they even put that into the emoji set? WTF is wrong with the world?!?!
+
+### msg67070333 | kTimesG |  | Re: Phy Challenge
+Quote from: SecretAdmirere on August 22, 2026, 01:09:49 AM
+there was a post which kTimesG deleted, i apologize in advance to you kTimesG for sharing it if it was ment for, i dont know what, but it was brefly up and i saw it while checking the topic for any replies
+
+I haven't deleted anything, but apparently some higher power decided that verbalizing via abstract symbols is against the forum rules, even though humans have been doing that since at least the Ice Age.
+
+You got pretty close with 97% of the recoloring, nice, though a much easier and precise normalization than grayscale-to-tone exists, if some overall observations are made.
+
+### msg67084488 | KarTonP |  | Re: Phy Challenge
+I went through the entire sequence of events, but I still couldn't find the target address. Did I do something wrong, or is there just something I missed in this challenge?
+
+### msg67084660 | whanau |  | Re: Phy Challenge
+Quote from: KarTonP on August 26, 2026, 09:03:14 PM
+I went through the entire sequence of events, but I still couldn't find the target address. Did I do something wrong, or is there just something I missed in this challenge? 
+
+You missed something. See NotATether's post.  Hash correctly get BC......3f and the public key will fall out and lead to the target address.
+What really baffles me is how kTimesG managed to get a valid s of 9 bytes and whether that relates to the image..
+
+### msg67085763 | KarTonP |  | Re: Phy Challenge
+Quote from: whanau on August 26, 2026, 10:02:01 PM
+Quote from: KarTonP on August 26, 2026, 09:03:14 PM
+I went through the entire sequence of events, but I still couldn't find the target address. Did I do something wrong, or is there just something I missed in this challenge? 
+
+You missed something. See NotATether's post.  Hash correctly get BC......3f and the public key will fall out and lead to the target address.
+What really baffles me is how kTimesG managed to get a valid s of 9 bytes and whether that relates to the image.. 
+
+The problem is that if these are the coordinates of Q, then they do not belong to the specified target. And the entire chain automatically breaks down. 
+031dffd7ff0d400f0afcc3fdcefc0d400f0da10f3a390f77ff0d400f68fe0d080f
+
+I wasn't able to calculate (K nonce) using the data I collected�I'll admit right away that I'm an idiot. There are so many formulas that the values I calculated are already floating around in my head. Now I understand how the person who first cracked the emoji cipher must have felt. (you crazy)
+
+### msg67088144 | detechs |  | Re: Phy Challenge
+Quote from: whanau on August 19, 2026, 08:32:01 PM
+2 spirals lead me to 2 sets of icons,  'which creates some immediate conclusions' key unlock puzzle and some more. 
+The one that keeps coming up in the set is the abacus. It does not fit the pattern yet it is in the set in many patterns, so my set may be wrong or I am misinterpreting. I think I have the set but not the order.
+2 spirals, 2 sets? How many in a set? I cannot deduce from the clues so will stop here.
+
+Quote - Image: Found 128 matching opposite pairs. 
+Unquote.   Agreed I found this too. There are 34 (Phy) divisions around the edge of the bitcoin too.
+
+Kia ora whanau
+
+### msg67088152 | goldkingcoiner |  | Re: Phy Challenge
+Quote from: kTimesG on June 05, 2026, 07:15:46 PM
+A purely P2P version of modular values would allow online
+payments to be sent directly from one party to another without going through the fractional reserve banking system. Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent private key recovery. We propose a solution to the problem using a peer-to-peer network. The network spacestamps information by carefully measuring it into an ongoing chain of phylo-based proof-of-equivalence, forming a record that cannot be changed without redoing the proof-of-equivalence. The chain not only serves as proof of the sequence of events witnessed, but proof that it serves the chain. The network itself requires minimal structure.
+
+=================
+
+The kTimesG 2026/06/05 Bitcoin has worst weekly fall since 2022
+
+looks bad this bearish cycle around and no end is in sight, so here's a puzzle for everyone, no loose ends, no hashing.
+
+I just came across the topic although it was from a number of months back.
+Seems fun.
+
+Thanks for keeping us entertained during these "bearish" times   (although I think Bitcoiner's are starting to look up again, especially considering the current pump)
+
+Is the strange formatting with "code" a part of the clue? If not, then you might want to format your topic because it makes your text a bit hard to read the way it is now.
+
+### msg67090189 | kTimesG |  | Re: Phy Challenge
+Quote from: goldkingcoiner on August 28, 2026, 12:21:47 AM
+Is the strange formatting with "code" a part of the clue? If not, then you might want to format your topic because it makes your text a bit hard to read the way it is now.
+
+If you're referring to the extra LF, no, but I can't fix that for obvious reasons.
+
+=================
+
+Guys, stop sending DMs and LLM essays about the puzzle, everything required to solve is in the first post, and it's actually much easier to solve then I anticipated. I already gave too many hints as it is.
+
+### msg67090754 | detechs |  | Re: Phy Challenge
+Quote from: kTimesG on August 28, 2026, 05:45:32 PM
+Quote from: goldkingcoiner on August 28, 2026, 12:21:47 AM
+Is the strange formatting with "code" a part of the clue? If not, then you might want to format your topic because it makes your text a bit hard to read the way it is now.
+
+If you're referring to the extra LF, no, but I can't fix that for obvious reasons.
+
+=================
+
+Guys, stop sending DMs and LLM essays about the puzzle, everything required to solve is in the first post, and it's actually much easier to solve then I anticipated. I already gave too many hints as it is.
+
+I was trying to draw a pathway through the maze to the centre, from the clapping hands. Or from the key to the padlock. But If it's something simple like this I'm too dumb to translate it back into maths 😅
+
+### msg67101107 | brokebitcoiner |  | Re: Phy Challenge
+one thing i notice is these are Apple emojis so some are made specifically using zero width joiner and some appear the wrong way on devices other than iphone and macbook
+
+there is also a posibility the op used this tool 
+https://stepansnigirev.github.io/emoji-wallet/
+
+### msg67105961 | KarTonP |  | Re: Phy Challenge
+Quote
+Full Step-by-Step Methodology for the Phyllotaxis Challenge:
+
+Step 1: Base64 Decoding & Signature Field Extraction
+- Inserted missing 'J' at index 0 of the Base64 puzzle string.
+- Decoded 65 bytes into:
+  r = 0x274775bc7c8b5905e441664185f426656bbc8e05c0e780e02f1f9b3c940d06 
+  s1 = 0x16e242ca4ae86af66c
+  s2 = 0x134b7d91b3b5cdd9ff
+
+Step 2: Emoji Selection & "Inside-Out" Sequence
+- The 9 significant bytes of s select 9 emojis from the 256-emoji spiral table (IDs: 22, 226, 66, 202, 74, 232, 106, 246, 108).
+- Reading Unicode bytes "inside-out" (center-to-periphery) produces the 33-byte compressed point H:
+  031dffd7ff0d400f0afcc3fdcefc0d400f0da10f3a390f77ff0d400f68fe0d080f
+
+Step 3: Point H Verification & Cat's 8-Step Path
+- Cat's 8-step path yields binary 00110011 = ASCII 3, confirming the 03 compressed pubkey prefix.
+- Verified point H satisfies secp256k1 curve equation y^2 = x^3 + 7 mod p.
+
+Step 4: Message Hash z
+- Calculated z = Double SHA256('.') = 0x8a1fe157beac6df9db1f519afed60928eeb623c104a53a62af6b88c423d47e35.
+
+Step 5: Author's 3-Term Rectangular ECDSA Decomposition
+- Expanded s*k = r*d + z mod n into:
+  z = r*(k - d) + (s - r)*d + (s - r)*(k - d) mod n
+- Reduced key recovery to a 1-step formula via Delta = (k - d):
+  d = (s - r)^-1 * (z - s * Delta) mod n
+
+Step 6: ...... END
+
+kTimesG,
+
+Is this challenge somewhat related to the cryptographically deterministic attack that concerns puzzles #1�160? Or am I just starting to go crazy because I�ve noticed a couple of weird coincidences while dragging this puzzle out? 😄
+
+### msg67106501 | detechs |  | Re: Phy Challenge
+decoded the payload and the image reading. what held up.
+
+the broken base64, before the J fix, decodes to 64 bytes ending in 16E242CA4AE86AF66C.
+that is exactly the nine ids KarTonP posted, 22 226 66 202 74 232 106 246 108.
+they are the corrupted s tail from the pre-fix string, not emoji positions.
+
+the fixed base64 J0d1vHy...Gr2bE decodes to 65 bytes, header 27,
+r 4775BC7C8B5905E441664185F426656BBC8E05C0E780E02F1F9B3C940D06B2F8,
+s 5B890B292BA1ABD9B1. the nine s bytes are the nine emoji positions,
+91, 137, 11, 41, 43, 161, 171, 217, 177.
+
+the nine emojis at those positions, codepoint low bytes, equal the posted H.x byte for byte.
+1DFFD7FF0D400F0AFCC3FDCEFC0D400F0DA10F3A390F77FF0D400F68FE0D080F
+the image carries the compressed point 03 plus H.x. no hashing in this step.
+
+the high bytes, top bytes, and full codepoints of the same nine, read as h,
+as the nonce, and as e, all null. every 32 byte window of every byte field of the
+nine in every order, null. the message hash e still has no carrier.
+
+tested null. the dot as the signed message under both
+hashes and both parities. the delta sweep with KarTonP's own equation, 18060 deltas.
+the full 256 emoji byte streams in id, angle, radius, arm, and true spiral orders.
+the ring band readings, 32 33 and 34 bands. the colour picture from the op is 2048
+by 2048 and 85392 of 85849 sampled pixels are identical to the grayscale tool copy,
+the coin edge carries at most 13 dark clusters per colour channel, never 34.
+
+the csv id order is not the spiral index. the ids were assigned outside in,
+zigzagging, so any reading that assumes id equals phyllotaxis index reads the wrong
+order. the true index recovered from the positions fits loosely, mean 9 degrees.
+
+unaimous' arm drawings pass exactly through the emoji centres,
+mean 1.2 pixels off, so his geometry matches the picture.
+
+two oddities. the char at index 86 of the fixed base64 is E, the letter the
+hint decodes to. and the 86th emoji in angle order is id 217, one of the nine.
+
+the pgp blob spec, aes 256, sha 512 iterated s2k, count 65011712,
+salt 5708258122F19519. the password is still open.
+
+### msg67107155 | KarTonP |  | Re: Phy Challenge
+We have thoroughly backtested all scalar configurations, including the corrected 9-byte $s$ scalar (5B890B292BA1ABD9B1) along with the extracted 32-byte point $H_x$ (1DFFD7FF0D400F0AFCC3FDCEFC0D400F0DA10F3A390F77FF0D400F68FE0D080F).
+
+Specifically, we evaluated:
+1) Direct ECDSA derivations under both Double SHA256(.) and Bitcoin Signed Message(.) message hashes.
+2) The 3-term rectangular identity $z \equiv T_1 + T_2 + T_3 \pmod n$ using $\Delta = (k_{\text{emoji}} - d)$.
+3) Full scalar/endianness cross-verifications across all 3 cubic roots of $y_R$.
+
+Result: None of these direct backtests produced the target address (bc1qrpn28qa82uyjg37dvsz3w7wpm3kpdea957nm9p / HASH160: 1866a383a757092447cd64051779c1dc6c16e7a5).
+
+This strongly indicates that while the raw byte layout is correct, a subtle initial data transformation or non-linear mapping condition is still missing.
+
+As a working hypothesis, we suspect the ultimate goal is to correctly resolve the exact difference components (<s1 - s2>) and (<z1 - z2>). Since k ≡ (z1 - z2) / (s1 - s2) mod n completely eliminates the private key from the nonce equation, finding the true relative alignment between the two signature scalars and message hashes would directly yield the 3rd target key data.
+
+						
+					
+					
+						
+							
+								
+								
+							
+								
+								
+								
+									
+								
+							
+						
+					
+				
+			
+		
+	
+	
+
+	
+		Pages: « 1 [2] 3 4 5 »  All 
+		
+			
+				
+					
+		 
+		Print
+		 
+				
+			
+		
+	
+
+//
+%body%
+  
+';
+
+	// And this is the replacement for the subject.
+	var smf_template_subject_edit = '';
+
+	// Restore the message to this after editing.
+	var smf_template_body_normal = '%body%';
+	var smf_template_subject_normal = '%subject%';
+	var smf_template_top_subject = "Topic: %subject%  (Read 3221 times)"
+
+	if (window.XMLHttpRequest)
+		showModifyButtons();
+// -->
+
+		
+				Bitcoin Forum > Bitcoin > Bitcoin Discussion > Phy Challenge
+ 
+				 « previous topic next topic »
+		
+
+	
+		
+			 
+		
+	
+
+	
+		Jump to:
+		 0 && this.options[this.selectedIndex].value) window.location.href = smf_scripturl + this.options[this.selectedIndex].value.substr(smf_scripturl.indexOf('?') == -1 || this.options[this.selectedIndex].value.substr(0, 1) != '?' ? 0 : 1);">
+			Please select a destination:
+			-----------------------------
+			Bitcoin
+			-----------------------------
+			 => Bitcoin Discussion
+			 ===> Legal
+			 ===> Press
+			 ===> Meetups
+			 ===> Important Announcements
+			 => Development & Technical Discussion
+			 ===> Wallet software
+			 =====> Electrum
+			 =====> Bitcoin Wallet for Android
+			 =====> BitcoinJ
+			 =====> Armory
+			 =====> Mycelium
+			 =====> Hardware wallets
+			 => Mining
+			 ===> Mining support
+			 ===> Pools
+			 ===> Mining software (miners)
+			 ===> Hardware
+			 =====> Group buys
+			 ===> Mining speculation
+			 => Bitcoin Technical Support
+			 => Project Development
+			-----------------------------
+			Economy
+			-----------------------------
+			 => Economics
+			 ===> Speculation
+			 => Marketplace
+			 ===> Goods
+			 =====> Computer hardware
+			 =====> Digital goods
+			 =======> Invites & Accounts
+			 =====> Collectibles
+			 ===> Services
+			 ===> Currency exchange
+			 ===> Gambling
+			 =====> Games and rounds
+			 =====> Investor-based games
+			 =====> Gambling discussion
+			 ===> Lending
+			 =====> Long-term offers
+			 ===> Securities
+			 ===> Auctions
+			 ===> Service Announcements
+			 =====> Micro Earnings
+			 ===> Service Discussion
+			 =====> Web Wallets
+			 =====> Exchanges
+			 => Trading Discussion
+			 ===> Scam Accusations
+			 ===> Reputation
+			-----------------------------
+			Other
+			-----------------------------
+			 => Meta
+			 ===> Bitcoin Wiki
+			 => Politics & Society
+			 => Beginners & Help
+			 => Off-topic
+			 => Serious discussion
+			 ===> Ivory Tower
+			 => Archival
+			 ===> New forum software
+			 ===> Корзина
+			 ===> CPU/GPU Bitcoin mining hardware
+			 ===> Chinese students
+			 ===> Obsolete (buying)
+			 ===> Obsolete (selling)
+			 ===> MultiBit
+			-----------------------------
+			Alternate cryptocurrencies
+			-----------------------------
+			 => Altcoin Discussion
+			 => Announcements (Altcoins)
+			 ===> Tokens (Altcoins)
+			 => Mining (Altcoins)
+			 ===> Pools (Altcoins)
+			 => Marketplace (Altcoins)
+			 ===> Service Announcements (Altcoins)
+			 ===> Service Discussion (Altcoins)
+			 ===> Bounties (Altcoins)
+			 => Speculation (Altcoins)
+			-----------------------------
+			Local
+			-----------------------------
+			 => العربية (Arabic)
+			 ===> العملات البديلة (Altcoins)
+			 =====> النقاشات
+			 ===> إستفسارات و أسئلة المبتدئين
+			 ===> التعدين
+			 ===> النقاشات الأخرى
+			 ===> منصات التبادل
+			 => Bahasa Indonesia (Indonesian)
+			 ===> Marketplace (Bahasa Indonesia)
+			 ===> Mining (Bahasa Indonesia)
+			 ===> Altcoins (Bahasa Indonesia)
+			 ===> Trading dan Spekulasi
+			 ===> Ekonomi, Politik, dan Budaya
+			 ===> Topik Lainnya
+			 => Espa�ol (Spanish)
+			 ===> Mercado y Econom�a
+			 =====> Servicios
+			 =====> Trading y especulaci�n
+			 ===> Hardware y Miner�a
+			 ===> Esquina Libre
+			 ===> Mercadillo
+			 =====> Mexico
+			 =====> Argentina
+			 =====> Espa�a
+			 =====> Centroamerica y Caribe
+			 ===> Primeros pasos y ayuda
+			 ===> Altcoins (criptomonedas alternativas)
+			 =====> Miner�a de altcoins
+			 =====> Servicios
+			 =====> Tokens (Espa�ol)
+			 => 中文 (Chinese)
+			 ===> 跳蚤市场
+			 ===> 山寨币
+			 ===> 媒体
+			 ===> 挖矿
+			 ===> 离题万里
+			 => Hrvatski (Croatian)
+			 ===> Trgovina
+			 ===> Altcoins (Hrvatski)
+			 =====> Announcements (Hrvatski)
+			 ===> Off-topic (Hrvatski)
+			 => Deutsch (German)
+			 ===> Anf�nger und Hilfe
+			 ===> Mining (Deutsch)
+			 ===> Trading und Spekulation
+			 ===> Projektentwicklung
+			 ===> Off-Topic (Deutsch)
+			 ===> Treffen
+			 ===> Presse 
+			 ===> Altcoins (Deutsch)
+			 =====> Announcements (Deutsch)
+			 ===> Marktplatz
+			 =====> Auktionen
+			 =====> Suche
+			 =====> Biete
+			 => Ελληνικά (Greek)
+			 ===> Αγορά
+			 ===> Mining Discussion (Ελληνικά)
+			 ===> Altcoins (Ελληνικά)
+			 =====> Altcoin Announcements (Ελληνικά)
+			 =====> Altcoin Mining (Ελληνικά)
+			 => עברית (Hebrew)
+			 => Fran�ais
+			 ===> Actualit� et News
+			 ===> D�butants
+			 ===> Discussions g�n�rales et utilisation du Bitcoin
+			 ===> Mining et Hardware
+			 ===> �conomie et sp�culation
+			 ===> Place de march�
+			 =====> �changes
+			 =====> Produits et services
+			 =====> Petites annonces
+			 ===> Le Bitcoin et la loi
+			 ===> Wiki, documentation et traduction
+			 ===> D�veloppement et technique
+			 ===> Vos sites et projets
+			 ===> Hors-sujet
+			 ===> Altcoins (Fran�ais)
+			 =====> Annonces
+			 => India
+			 ===> Mining (India)
+			 ===> Marketplace (India)
+			 ===> Regional Languages (India)
+			 ===> Press & News from India
+			 ===> Alt Coins (India)
+			 ===> Buyer/ Seller Reputations (India)
+			 ===> Off-Topic (India)
+			 => Italiano (Italian)
+			 ===> Guide (Italiano)
+			 ===> Progetti
+			 ===> Discussioni avanzate e sviluppo
+			 ===> Trading, analisi e speculazione
+			 ===> Mercato
+			 =====> Mercato valute
+			 =====> Beni
+			 =====> Servizi
+			 =====> Esercizi commerciali
+			 =====> Hardware/Mining (Italiano)
+			 =====> Gambling (Italiano)
+			 ===> Accuse scam/truffe
+			 ===> Mining (Italiano)
+			 ===> Alt-Currencies (Italiano)
+			 =====> Annunci
+			 ===> Raduni/Meeting (Italiano)
+			 ===> Crittografia e decentralizzazione
+			 ===> Off-Topic (Italiano)
+			 => 日本語 (Japanese)
+			 ===> アルトコイン
+			 => Nederlands (Dutch)
+			 ===> Markt
+			 ===> Gokken/lotterijen
+			 ===> Mining (Nederlands)
+			 ===> Beurzen
+			 ===> Alt Coins (Nederlands)
+			 ===> Off-topic (Nederlands)
+			 ===> Meetings (Nederlands)
+			 => Nigeria (Naija)
+			 ===> Politics and society (Naija)
+			 ===> Off-topic (Naija)
+			 => 한국어 (Korean)
+			 ===> 대체코인 Alt Coins (한국어)
+			 => Pilipinas
+			 ===> Altcoins (Pilipinas)
+			 =====> Altcoin Announcements (Pilipinas)
+			 ===> Pamilihan
+			 ===> Others (Pilipinas)
+			 => Polski
+			 ===> Tablica ogłoszeń
+			 ===> Alternatywne kryptowaluty
+			 =====> Nowe kryptowaluty i tokeny
+			 =====> Tablica ogłoszeń (altcoiny)
+			 => Portugu�s (Portuguese)
+			 ===> Primeiros Passos (Iniciantes)
+			 ===> Economia & Mercado
+			 ===> Minera��o em Geral
+			 ===> Desenvolvimento & Discuss�es T�cnicas
+			 ===> Criptomoedas Alternativas
+			 ===> Brasil
+			 ===> Portugal
+			 => Русский (Russian)
+			 ===> Новички
+			 ===> Cepвиcы
+			 =====> Барахолка
+			 =====> Обменники
+			 ===> Идеи
+			 ===> Кодеры
+			 ===> Майнеры
+			 ===> Политика
+			 ===> Трейдеры
+			 ===> Альтернативные криптовалюты
+			 =====> Токены
+			 =====> Бayнти и aиpдpoпы
+			 ===> Хайпы
+			 ===> Работа
+			 ===> Разное
+			 ===> Oбcyждeниe Bitcoin
+			 =====> Новости
+			 =====> Юристы
+			 => Rom�nă (Romanian)
+			 ===> Anunturi importante
+			 ===> Offtopic
+			 ===> Market
+			 =====> Discutii Servicii
+			 ===> Minerit
+			 ===> Tutoriale
+			 ===> Bine ai venit!
+			 ===> Presa
+			 ===> Altcoins (Monede Alternative)
+			 =====> Anunturi Monede Alternative
+			 => Skandinavisk
+			 => T�rk�e (Turkish)
+			 ===> Bitcoin Haberleri
+			 ===> Pazar Alanı
+			 ===> Madencilik
+			 ===> Ekonomi
+			 ===> Servisler
+			 =====> Fonlar
+			 ===> Proje Geliştirme
+			 ===> Alternatif Kripto-Paralar
+			 =====> Madencilik (Alternatif Kripto-Paralar)
+			 =====> Duyurular (Alternatif Kripto-Paralar)
+			 ===> Konu Dışı
+			 ===> Yeni Başlayanlar & Yardım
+			 ===> Buluşmalar
+			 => Other languages/locations
+		 
+		
+	
+
+	
+
+//
+
+	
+		
+		
+			
+				
+					
+					
+				
+				
+					
+		Powered by SMF 1.1.19 | 
+SMF © 2006-2009, Simple Machines
+		
+				
+				
+					
+					
+				
+			
+		
+	
+
+	Loading...
+
+### msg67116020 | whanau |  | Re: Phy Challenge
+I was surprised to see this was not solved yet so maybe I am not so stupid so I had another look. 
+What I know. The first post base 64 provides the signature . The signature with the correct hash (you need to hash!) provides the public key which leads to the prize address proving kTimseG owns the funds.
+Elsewhere in this topic, the twin spirals I found independently, are described. With my numbering system and using the elegant s value with simple arithmetic a number of on theme icons were found. (key, padlock, puzzle etc) No spirals I could find fitted with 34 ticks.
+
+To solve the final part we need k which will fit into the formula that will extract d.  
+
+What I don't know or cannot resolve is how the pgp payload . is used. Nor can I work out the number of icons needed 9, 17, 23, 32, ??. There are the 17 = characters in the clue which is 1/2 the 34 ticks on the bitcoin rim, but that does not stack up with the underlying math or geometry of the spirals I have or can find.  I presume there is a step pattern that forms a chain most likely ending on the clap icon but I can't find it. Good luck.
+
+an afterthought, perhaps the 'useful sign' .  is simply multiply as in k .G?
+
+### msg67116114 | KarTonP |  | Re: Phy Challenge
+Today I also went back to the spirals and went through them completely, looking for either the point Ry or a complete k. Unfortunately, I couldn�t find it.
+
+I also have two solutions on hand, but the main question is whether the k nonce is correct. All of my roughly 940 candidates have been ruled out � either the nonce was incorrect, or there was no valid output leading to the target.
+
+### msg67116131 | kTimesG |  | Re: Phy Challenge
+meta-clue to either wake up or confuse even more your LLMs, as they seem to have crossed off-road...
+
+Code:
+gvonys fhelucrM kbZ
+
+### msg67116305 | whanau |  | Re: Phy Challenge
+Quote from: kTimesG on September 05, 2026, 11:04:03 PM
+meta-clue to either wake up or confuse even more your LLMs, as they seem to have crossed off-road...
+
+Code:
+gvonys fhelucrM kbZ
+
+All Greek to me
+
+### msg67116391 | detechs |  | Re: Phy Challenge
+Quote from: kTimesG on September 05, 2026, 11:04:03 PM
+meta-clue to either wake up or confuse even more your LLMs, as they seem to have crossed off-road...
+
+Code:
+gvonys fhelucrM kbZ
+
+soon the west wind will blow
+
+but the east is where the breath faces? according to man made direction
+
+### msg67116417 | clark2346547 |  | Re: Phy Challenge
+Quote from: kTimesG on September 05, 2026, 11:04:03 PM
+meta-clue to either wake up or confuse even more your LLMs, as they seem to have crossed off-road...
+
+Code:
+gvonys fhelucrM kbZ
+
+If every emoji were replaced by its exact Unicode sequence, with its position unchanged, would the puzzle still contain everything needed to solve it?
+
+### msg67116451 | detechs |  | Re: Phy Challenge
+Quote from: clark2346547 on September 06, 2026, 03:54:24 AM
+Quote from: kTimesG on September 05, 2026, 11:04:03 PM
+meta-clue to either wake up or confuse even more your LLMs, as they seem to have crossed off-road...
+
+Code:
+gvonys fhelucrM kbZ
+
+If every emoji were replaced by its exact Unicode sequence, with its position unchanged, would the puzzle still contain everything needed to solve it?
+
+no there is a missing emoji
+
+in section two, the proven nine's own numbers sat beside s and the pattern fell out. look at the s bytes.
+
+s is 5b 89 0b 29 2b a1 ab d9 b1.
+
+as decimal, 91, 137, 11, 41, 43, 161, 171, 217, 177.
+
+the proven nine ids are 11, 41, 43, 91, 137, 161, 171, 177, 217.
+
+they are the same set. every byte of s is one of the nine emoji ids, and all nine ids appear. the signature's s names the nine emojis, and the nine emojis carry H.x in their codepoint low bytes, the chain that is already proven. the map is s to ids to emojis to H.x, the puzzle's own road map.
+
+### msg67116458 | clark2346547 |  | Re: Phy Challenge
+Quote from: detechs on September 06, 2026, 04:33:42 AM
+Quote from: clark2346547 on September 06, 2026, 03:54:24 AM
+Quote from: kTimesG on September 05, 2026, 11:04:03 PM
+meta-clue to either wake up or confuse even more your LLMs, as they seem to have crossed off-road...
+
+Code:
+gvonys fhelucrM kbZ
+
+If every emoji were replaced by its exact Unicode sequence, with its position unchanged, would the puzzle still contain everything needed to solve it?
+
+no there is a missing emoji
+
+in section two, the proven nine's own numbers sat beside s and the pattern fell out. look at the s bytes.
+
+s is 5b 89 0b 29 2b a1 ab d9 b1.
+
+as decimal, 91, 137, 11, 41, 43, 161, 171, 217, 177.
+
+the proven nine ids are 11, 41, 43, 91, 137, 161, 171, 177, 217.
+
+they are the same set. every byte of s is one of the nine emoji ids, and all nine ids appear. the signature's s names the nine emojis, and the nine emojis carry H.x in their codepoint low bytes, the chain that is already proven. the map is s to ids to emojis to H.x, the puzzle's own road map.
+
+Which exact emoji is missing, at what index, and what do you mean by �section two�?
+
+### msg67116646 | detechs |  | Re: Phy Challenge
+Quote from: clark2346547 on September 06, 2026, 04:41:17 AM
+Quote from: detechs on September 06, 2026, 04:33:42 AM
+Quote from: clark2346547 on September 06, 2026, 03:54:24 AM
+Quote from: kTimesG on September 05, 2026, 11:04:03 PM
+meta-clue to either wake up or confuse even more your LLMs, as they seem to have crossed off-road...
+
+Code:
+gvonys fhelucrM kbZ
+
+If every emoji were replaced by its exact Unicode sequence, with its position unchanged, would the puzzle still contain everything needed to solve it?
+
+no there is a missing emoji
+
+in section two, the proven nine's own numbers sat beside s and the pattern fell out. look at the s bytes.
+
+s is 5b 89 0b 29 2b a1 ab d9 b1.
+
+as decimal, 91, 137, 11, 41, 43, 161, 171, 217, 177.
+
+the proven nine ids are 11, 41, 43, 91, 137, 161, 171, 177, 217.
+
+they are the same set. every byte of s is one of the nine emoji ids, and all nine ids appear. the signature's s names the nine emojis, and the nine emojis carry H.x in their codepoint low bytes, the chain that is already proven. the map is s to ids to emojis to H.x, the puzzle's own road map.
+
+Which exact emoji is missing, at what index, and what do you mean by �section two�?
+
+missing emoji is underneath the gold bitcoin
+
+e is bc4fda25213e0528c531760d82529fd2ac59570ee028f9909f1c83915e481d3f
+
+public key
+02425afdd1716149faf414b6fdb96d5e7afc8ce42496042f4df559c80a7c6650eb
+
+and its hash160 is
+1866a383a757092447cd64051779c1dc6c16e7a5
+
+### msg67117307 | PHA_.07 |  | Re: Phy Challenge
+How many times have you guys found j846t2 im at 4 or 5 times i guess it is the bread crumbs leading the way.
+
+### msg67117415 | brokebitcoiner |  | Re: Phy Challenge
+Quote from: kTimesG on September 05, 2026, 11:04:03 PM
+meta-clue to either wake up or confuse even more your LLMs, as they seem to have crossed off-road...
+
+Code:
+gvonys fhelucrM kbZ
+
+I can think of 2 things Tiberius Julius cesar Or Tiberius Surfaces com an aeronautical munition company?
+
+### msg67117836 | kTimesG |  | Re: Phy Challenge
+There's no "useless" information added into the puzzle. If all of you are thinking some LLM will magically deduct information that's visible in plain sight by anyone, you should understand that LLMs can only understand data they were trained about, and this puzzle is not one of those things. At this point, giving another hint, meta-clue, or anything would just be repeating myself a third time (to no result), and apparently contributing to the LLMs going completely crazy about the semantical meaning instead of noticing the actual structural things that a human brain would instantly see and wonder about.
+
+### msg67117975 | brokebitcoiner |  | Re: Phy Challenge
+soon the west wind will blow
+
+but the east is where the breath faces? according to man made direction
+[/quote]
+How do you come Up with this? I guess
+It mean Bitcoin will soon take over and the monetary system will be replaced. A chinese Leader or someone said this.
+
+### msg67118165 | KarTonP |  | Re: Phy Challenge
+Here's a hint: k < S.
+And Bitcoin is here to help. Figure out the rest on your own. 
+
+Quote from: unaimous on September 06, 2026, 06:34:39 PM
+Quote from: KarTonP on September 06, 2026, 06:04:28 PM
+Here's a hint: k < S.
+And Bitcoin is here to help. Figure out the rest on your own. 
+
+k definitely is not less than 72 bits, that is trivial to solve using kangaroo.
+
+See the author's first post
+
+### msg67118708 | kTimesG |  | Re: Phy Challenge
+This is not an AI slop playground. Come to your senses, or stop with the LLM garbage, posting stupid hallucinations and circular "proofs" doesn't help with anything except creating useless AI spam. I will not tolerate this. Grow up.
+
+### msg67118948 | fantom06 |  | Re: Phy Challenge
+Quote from: kTimesG on September 06, 2026, 09:04:58 PM
+This is not an AI slop playground. Come to your senses, or stop with the LLM garbage, posting stupid hallucinations and circular "proofs" doesn't help with anything except creating useless AI spam. I will not tolerate this. Grow up.
+
+The task isn't entirely clear. We found the public key address, but then we hit a dead end. And all because of a task that wasn't entirely clear.
+
+### msg67119088 | detechs |  | Re: Phy Challenge
+Quote from: kTimesG on September 06, 2026, 09:04:58 PM
+This is not an AI slop playground. Come to your senses, or stop with the LLM garbage, posting stupid hallucinations and circular "proofs" doesn't help with anything except creating useless AI spam. I will not tolerate this. Grow up.
+
+Prove you are not an ai by sending the puzzle funds to the bitcoin genesis wallet, or what else is there to solve without hashing? Are we all waiting on the right timeframe? Or are you able to prove yourself today?
+
+### msg67119438 | PHA_.07 |  | Re: Phy Challenge
+KtimesG I had a blast going up one side and down the other proving 5b890b292ba1abd9b1 then finding j846t2 multiple different ways through your clues, it is odd how things line up to like the no cat and the header 41 or 42 is not suppost to line up but 39 and 40 does. you can really find allot with imagination or you had designed a monster of a setup. i worked threw each clue but i guess no one knows which emojis are true to use. I know that your clues lead me back to the same spot but after that it is blank. there is one comment and then on the same post another comment right after that i kinda wonder if they are saying something. but then thats just making up things if emojis are the truth.                     pac-man ate a pellet LMAO   most kids on here will be like whats pacman
+
+### msg67119561 | detechs |  | Re: Phy Challenge
+Quote from: PHA_.07 on September 07, 2026, 04:24:25 AM
+KtimesG I had a blast going up one side and down the other proving 5b890b292ba1abd9b1 then finding j846t2 multiple different ways through your clues, it is odd how things line up to like the no cat and the header 41 or 42 is not suppost to line up but 39 and 40 does. you can really find allot with imagination or you had designed a monster of a setup. i worked threw each clue but i guess no one knows which emojis are true to use. I know that your clues lead me back to the same spot but after that it is blank. there is one comment and then on the same post another comment right after that i kinda wonder if they are saying something. but then thats just making up things if emojis are the truth.                     pac-man ate a pellet LMAO   most kids on here will be like whats pacman
+
+Why is everyone talking in riddles? You know we understand them right? Is this a turing test on us or you? Or are we helping ktimesg solve something else? The prize amount is low enough to discourage using power to solve it so ive been busy hashing anyway. listening to the earths frequencies and learning more and more each sun rise. the key that opened this puzzle for me was quoting the original post and using that instead of reading it straight from the first page...
+
+### msg67119708 | PHA_.07 |  | Re: Phy Challenge
+not riddles from me dear sir if you do not get the header which i know you do, 39�42 Native SegWit P2WPKH. 
+
+						
+					
+					
+						
+							
+								
+								
+							
+								
+								
+								
+									
+								
+							
+						
+					
+				
+			
+		
+	
+	
+
+	
+		Pages: « 1 2 [3] 4 5 »  All 
+		
+			
+				
+					
+		 
+		Print
+		 
+				
+			
+		
+	
+
+//
+%body%
+  
+';
+
+	// And this is the replacement for the subject.
+	var smf_template_subject_edit = '';
+
+	// Restore the message to this after editing.
+	var smf_template_body_normal = '%body%';
+	var smf_template_subject_normal = '%subject%';
+	var smf_template_top_subject = "Topic: %subject%  (Read 3221 times)"
+
+	if (window.XMLHttpRequest)
+		showModifyButtons();
+// -->
+
+		
+				Bitcoin Forum > Bitcoin > Bitcoin Discussion > Phy Challenge
+ 
+				 « previous topic next topic »
+		
+
+	
+		
+			 
+		
+	
+
+	
+		Jump to:
+		 0 && this.options[this.selectedIndex].value) window.location.href = smf_scripturl + this.options[this.selectedIndex].value.substr(smf_scripturl.indexOf('?') == -1 || this.options[this.selectedIndex].value.substr(0, 1) != '?' ? 0 : 1);">
+			Please select a destination:
+			-----------------------------
+			Bitcoin
+			-----------------------------
+			 => Bitcoin Discussion
+			 ===> Legal
+			 ===> Press
+			 ===> Meetups
+			 ===> Important Announcements
+			 => Development & Technical Discussion
+			 ===> Wallet software
+			 =====> Electrum
+			 =====> Bitcoin Wallet for Android
+			 =====> BitcoinJ
+			 =====> Armory
+			 =====> Mycelium
+			 =====> Hardware wallets
+			 => Mining
+			 ===> Mining support
+			 ===> Pools
+			 ===> Mining software (miners)
+			 ===> Hardware
+			 =====> Group buys
+			 ===> Mining speculation
+			 => Bitcoin Technical Support
+			 => Project Development
+			-----------------------------
+			Economy
+			-----------------------------
+			 => Economics
+			 ===> Speculation
+			 => Marketplace
+			 ===> Goods
+			 =====> Computer hardware
+			 =====> Digital goods
+			 =======> Invites & Accounts
+			 =====> Collectibles
+			 ===> Services
+			 ===> Currency exchange
+			 ===> Gambling
+			 =====> Games and rounds
+			 =====> Investor-based games
+			 =====> Gambling discussion
+			 ===> Lending
+			 =====> Long-term offers
+			 ===> Securities
+			 ===> Auctions
+			 ===> Service Announcements
+			 =====> Micro Earnings
+			 ===> Service Discussion
+			 =====> Web Wallets
+			 =====> Exchanges
+			 => Trading Discussion
+			 ===> Scam Accusations
+			 ===> Reputation
+			-----------------------------
+			Other
+			-----------------------------
+			 => Meta
+			 ===> Bitcoin Wiki
+			 => Politics & Society
+			 => Beginners & Help
+			 => Off-topic
+			 => Serious discussion
+			 ===> Ivory Tower
+			 => Archival
+			 ===> New forum software
+			 ===> Корзина
+			 ===> CPU/GPU Bitcoin mining hardware
+			 ===> Chinese students
+			 ===> Obsolete (buying)
+			 ===> Obsolete (selling)
+			 ===> MultiBit
+			-----------------------------
+			Alternate cryptocurrencies
+			-----------------------------
+			 => Altcoin Discussion
+			 => Announcements (Altcoins)
+			 ===> Tokens (Altcoins)
+			 => Mining (Altcoins)
+			 ===> Pools (Altcoins)
+			 => Marketplace (Altcoins)
+			 ===> Service Announcements (Altcoins)
+			 ===> Service Discussion (Altcoins)
+			 ===> Bounties (Altcoins)
+			 => Speculation (Altcoins)
+			-----------------------------
+			Local
+			-----------------------------
+			 => العربية (Arabic)
+			 ===> العملات البديلة (Altcoins)
+			 =====> النقاشات
+			 ===> إستفسارات و أسئلة المبتدئين
+			 ===> التعدين
+			 ===> النقاشات الأخرى
+			 ===> منصات التبادل
+			 => Bahasa Indonesia (Indonesian)
+			 ===> Marketplace (Bahasa Indonesia)
+			 ===> Mining (Bahasa Indonesia)
+			 ===> Altcoins (Bahasa Indonesia)
+			 ===> Trading dan Spekulasi
+			 ===> Ekonomi, Politik, dan Budaya
+			 ===> Topik Lainnya
+			 => Espa�ol (Spanish)
+			 ===> Mercado y Econom�a
+			 =====> Servicios
+			 =====> Trading y especulaci�n
+			 ===> Hardware y Miner�a
+			 ===> Esquina Libre
+			 ===> Mercadillo
+			 =====> Mexico
+			 =====> Argentina
+			 =====> Espa�a
+			 =====> Centroamerica y Caribe
+			 ===> Primeros pasos y ayuda
+			 ===> Altcoins (criptomonedas alternativas)
+			 =====> Miner�a de altcoins
+			 =====> Servicios
+			 =====> Tokens (Espa�ol)
+			 => 中文 (Chinese)
+			 ===> 跳蚤市场
+			 ===> 山寨币
+			 ===> 媒体
+			 ===> 挖矿
+			 ===> 离题万里
+			 => Hrvatski (Croatian)
+			 ===> Trgovina
+			 ===> Altcoins (Hrvatski)
+			 =====> Announcements (Hrvatski)
+			 ===> Off-topic (Hrvatski)
+			 => Deutsch (German)
+			 ===> Anf�nger und Hilfe
+			 ===> Mining (Deutsch)
+			 ===> Trading und Spekulation
+			 ===> Projektentwicklung
+			 ===> Off-Topic (Deutsch)
+			 ===> Treffen
+			 ===> Presse 
+			 ===> Altcoins (Deutsch)
+			 =====> Announcements (Deutsch)
+			 ===> Marktplatz
+			 =====> Auktionen
+			 =====> Suche
+			 =====> Biete
+			 => Ελληνικά (Greek)
+			 ===> Αγορά
+			 ===> Mining Discussion (Ελληνικά)
+			 ===> Altcoins (Ελληνικά)
+			 =====> Altcoin Announcements (Ελληνικά)
+			 =====> Altcoin Mining (Ελληνικά)
+			 => עברית (Hebrew)
+			 => Fran�ais
+			 ===> Actualit� et News
+			 ===> D�butants
+			 ===> Discussions g�n�rales et utilisation du Bitcoin
+			 ===> Mining et Hardware
+			 ===> �conomie et sp�culation
+			 ===> Place de march�
+			 =====> �changes
+			 =====> Produits et services
+			 =====> Petites annonces
+			 ===> Le Bitcoin et la loi
+			 ===> Wiki, documentation et traduction
+			 ===> D�veloppement et technique
+			 ===> Vos sites et projets
+			 ===> Hors-sujet
+			 ===> Altcoins (Fran�ais)
+			 =====> Annonces
+			 => India
+			 ===> Mining (India)
+			 ===> Marketplace (India)
+			 ===> Regional Languages (India)
+			 ===> Press & News from India
+			 ===> Alt Coins (India)
+			 ===> Buyer/ Seller Reputations (India)
+			 ===> Off-Topic (India)
+			 => Italiano (Italian)
+			 ===> Guide (Italiano)
+			 ===> Progetti
+			 ===> Discussioni avanzate e sviluppo
+			 ===> Trading, analisi e speculazione
+			 ===> Mercato
+			 =====> Mercato valute
+			 =====> Beni
+			 =====> Servizi
+			 =====> Esercizi commerciali
+			 =====> Hardware/Mining (Italiano)
+			 =====> Gambling (Italiano)
+			 ===> Accuse scam/truffe
+			 ===> Mining (Italiano)
+			 ===> Alt-Currencies (Italiano)
+			 =====> Annunci
+			 ===> Raduni/Meeting (Italiano)
+			 ===> Crittografia e decentralizzazione
+			 ===> Off-Topic (Italiano)
+			 => 日本語 (Japanese)
+			 ===> アルトコイン
+			 => Nederlands (Dutch)
+			 ===> Markt
+			 ===> Gokken/lotterijen
+			 ===> Mining (Nederlands)
+			 ===> Beurzen
+			 ===> Alt Coins (Nederlands)
+			 ===> Off-topic (Nederlands)
+			 ===> Meetings (Nederlands)
+			 => Nigeria (Naija)
+			 ===> Politics and society (Naija)
+			 ===> Off-topic (Naija)
+			 => 한국어 (Korean)
+			 ===> 대체코인 Alt Coins (한국어)
+			 => Pilipinas
+			 ===> Altcoins (Pilipinas)
+			 =====> Altcoin Announcements (Pilipinas)
+			 ===> Pamilihan
+			 ===> Others (Pilipinas)
+			 => Polski
+			 ===> Tablica ogłoszeń
+			 ===> Alternatywne kryptowaluty
+			 =====> Nowe kryptowaluty i tokeny
+			 =====> Tablica ogłoszeń (altcoiny)
+			 => Portugu�s (Portuguese)
+			 ===> Primeiros Passos (Iniciantes)
+			 ===> Economia & Mercado
+			 ===> Minera��o em Geral
+			 ===> Desenvolvimento & Discuss�es T�cnicas
+			 ===> Criptomoedas Alternativas
+			 ===> Brasil
+			 ===> Portugal
+			 => Русский (Russian)
+			 ===> Новички
+			 ===> Cepвиcы
+			 =====> Барахолка
+			 =====> Обменники
+			 ===> Идеи
+			 ===> Кодеры
+			 ===> Майнеры
+			 ===> Политика
+			 ===> Трейдеры
+			 ===> Альтернативные криптовалюты
+			 =====> Токены
+			 =====> Бayнти и aиpдpoпы
+			 ===> Хайпы
+			 ===> Работа
+			 ===> Разное
+			 ===> Oбcyждeниe Bitcoin
+			 =====> Новости
+			 =====> Юристы
+			 => Rom�nă (Romanian)
+			 ===> Anunturi importante
+			 ===> Offtopic
+			 ===> Market
+			 =====> Discutii Servicii
+			 ===> Minerit
+			 ===> Tutoriale
+			 ===> Bine ai venit!
+			 ===> Presa
+			 ===> Altcoins (Monede Alternative)
+			 =====> Anunturi Monede Alternative
+			 => Skandinavisk
+			 => T�rk�e (Turkish)
+			 ===> Bitcoin Haberleri
+			 ===> Pazar Alanı
+			 ===> Madencilik
+			 ===> Ekonomi
+			 ===> Servisler
+			 =====> Fonlar
+			 ===> Proje Geliştirme
+			 ===> Alternatif Kripto-Paralar
+			 =====> Madencilik (Alternatif Kripto-Paralar)
+			 =====> Duyurular (Alternatif Kripto-Paralar)
+			 ===> Konu Dışı
+			 ===> Yeni Başlayanlar & Yardım
+			 ===> Buluşmalar
+			 => Other languages/locations
+		 
+		
+	
+
+	
+
+//
+
+	
+		
+		
+			
+				
+					
+					
+				
+				
+					
+		Powered by SMF 1.1.19 | 
+SMF © 2006-2009, Simple Machines
+		
+				
+				
+					
+					
+				
+			
+		
+	
+
+	Loading...
+
+### msg67119838 | KarTonP |  | Re: Phy Challenge
+Quote from: PHA_.07 on September 07, 2026, 07:21:51 AM
+not riddles from me dear sir if you do not get the header which i know you do, 39�42 Native SegWit P2WPKH. 
+Wouldn't that be funny he messed it up so bad he locked him self out so he is like huhh  i will see if these guy can find a way back in. lmao
+
+This challenge started out as an after-the-fact challenge with no prize pool; the prize was added later to motivate people to solve it. To say that the author doesn't have access to that address is complete nonsense. Besides, there are too many clues pointing in the right direction�everyone understands from the data they already have where the clues lead and what they need to find.
+
+### msg67120067 | clark2346547 |  | Re: Phy Challenge
+Quote from: kTimesG on September 05, 2026, 11:04:03 PM
+meta-clue to either wake up or confuse even more your LLMs, as they seem to have crossed off-road...
+
+Code:
+gvonys fhelucrM kbZ
+
+im damm sure that I got ur hint and ur right; this throws off LLMs cross the road.
+
+Quote from: kTimesG on June 05, 2026, 07:15:46 PM
+Code:
+A purely P2P version of modular values would allow online
+payments to be sent directly from one party to another without going through the fractional reserve banking system. Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent private key recovery. We propose a solution to the problem using a peer-to-peer network. The network spacestamps information by carefully measuring it into an ongoing chain of phylo-based proof-of-equivalence, forming a record that cannot be changed without redoing the proof-of-equivalence. The chain not only serves as proof of the sequence of events witnessed, but proof that it serves the chain. The network itself requires minimal structure.
+
+=================
+
+The kTimesG 2026/06/05 Bitcoin has worst weekly fall since 2022
+
+looks bad this bearish cycle around and no end is in sight, so here's a puzzle for everyone, no loose ends, no hashing.
+Code:
+J0d1vHyLWQXkQWZBhfQmZWu8jgXA54DgLx+bPJQNBrL4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABbiQspK6Gr2bE
+
+https://www.talkimg.com/images/2026/06/05/UrS0Mq.png2026-07-30 edit: fixed BACKSPACE cat incident (missing "J" character)
+
+Quick clarification: if I redrew the image with every skin-tone variant changed to the default yellow, would the answer stay the same?
+
+### msg67120923 | PHA_.07 |  | Re: Phy Challenge
+Quote from: clark2346547 on September 07, 2026, 03:02:12 PM
+Quote from: kTimesG on June 05, 2026, 07:15:46 PM
+Code:
+A purely P2P version of modular values would allow online
+payments to be sent directly from one party to another without going through the fractional reserve banking system. Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent private key recovery. We propose a solution to the problem using a peer-to-peer network. The network spacestamps information by carefully measuring it into an ongoing chain of phylo-based proof-of-equivalence, forming a record that cannot be changed without redoing the proof-of-equivalence. The chain not only serves as proof of the sequence of events witnessed, but proof that it serves the chain. The network itself requires minimal structure.
+
+=================
+
+The kTimesG 2026/06/05 Bitcoin has worst weekly fall since 2022
+
+looks bad this bearish cycle around and no end is in sight, so here's a puzzle for everyone, no loose ends, no hashing.
+Code:
+J0d1vHyLWQXkQWZBhfQmZWu8jgXA54DgLx+bPJQNBrL4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABbiQspK6Gr2bE
+
+https://www.talkimg.com/images/2026/06/05/UrS0Mq.png2026-07-30 edit: fixed BACKSPACE cat incident (missing "J" character)
+
+Quick clarification: if I redrew the image with every skin-tone variant changed to the default yellow, would the answer stay the same?
+
+Theirs a better way check the op's post.
+
+### msg67121774 | whanau |  | Re: Phy Challenge
+Well I have been staring at dots on a piece of paper during the ads this evening and I see no pattern or image in the black & white image. 
+There is nothing in the clues for me that say 'turn it into color'. But that is striking - thanks to the person who did it, but is color relevant?. I guess I lack imagination.
+Thanks for the Meta clue, kTimesG.
+
+### msg67122008 | kTimesG |  | Re: Phy Challenge
+Quote from: clark2346547 on September 07, 2026, 03:02:12 PM
+Quick clarification: if I redrew the image with every skin-tone variant changed to the default yellow, would the answer stay the same?
+
+Only if you already know that the image was redrawn and requires to test the skin-tone to fix the image.
+
+Quote from: kTimesG on September 06, 2026, 04:16:07 PM
+There's no "useless" information added into the puzzle.
+
+### msg67122206 | detechs |  | Re: Phy Challenge
+Quote from: clark2346547 on September 07, 2026, 10:24:12 AM
+Quote from: kTimesG on September 05, 2026, 11:04:03 PM
+meta-clue to either wake up or confuse even more your LLMs, as they seem to have crossed off-road...
+
+Code:
+gvonys fhelucrM kbZ
+
+im damm sure that I got ur hint and ur right; this throws off LLMs cross the road.
+
+My llm solved that instantly, latin is an easy language
+
+### msg67123605 | clark2346547 |  | Re: Phy Challenge
+Quote from: detechs on September 07, 2026, 10:10:12 PM
+Quote from: clark2346547 on September 07, 2026, 10:24:12 AM
+Quote from: kTimesG on September 05, 2026, 11:04:03 PM
+meta-clue to either wake up or confuse even more your LLMs, as they seem to have crossed off-road...
+
+Code:
+gvonys fhelucrM kbZ
+
+im damm sure that I got ur hint and ur right; this throws off LLMs cross the road.
+
+My llm solved that instantly, latin is an easy language
+
+It is not what it is.
+
+Quote from: kTimesG on September 07, 2026, 09:09:41 PM
+Quote from: clark2346547 on September 07, 2026, 03:02:12 PM
+Quick clarification: if I redrew the image with every skin-tone variant changed to the default yellow, would the answer stay the same?
+
+Only if you already know that the image was redrawn and requires to test the skin-tone to fix the image.
+
+Quote from: kTimesG on September 06, 2026, 04:16:07 PM
+There's no "useless" information added into the puzzle.
+
+Hey author, I think I may have reached an interesting stage. I found eight symbols that seem structurally different from the rest: .. ⚠️ . . . . .
+
+Am I looking in the right direction, or could this just be a coincidence? If these eight are significant, should I focus on their positions/order, their relationship to their opposite pairs, or some other property? I�m not asking for the solution, just a small nudge on whether this is the intended path.
+
+Does globally swapping the two arms preserve the answer?
+
+### msg67125061 | KarTonP |  | Re: Phy Challenge
+Quote from: clark2346547 on September 08, 2026, 06:28:09 PM
+Does globally swapping the two arms preserve the answer?
+
+I tested a sample of 8�9! emoji. Both the most significant bits and the least significant bits. I compared them with a set of addresses as ESDCA verification that it is k
+
+The author who likes posts about those same emojis. All the data except for K satisfy the equation. What's going on here?
+
+### msg67126001 | clark2346547 |  | Re: Phy Challenge
+Quote from: KarTonP on September 08, 2026, 06:51:45 PM
+Quote from: clark2346547 on September 08, 2026, 06:28:09 PM
+Does globally swapping the two arms preserve the answer?
+
+I tested a sample of 8�9! emoji. Both the most significant bits and the least significant bits. I compared them with a set of addresses as ESDCA verification that it is k
+
+The author who likes posts about those same emojis. All the data except for K satisfy the equation. What's going on here?
+
+How long have you been trying to solve this? Have you found any other clues? I noticed things like �CUES� and the Fibonacci series, but I have no idea whether they�re actual clues or just coincidences.
+
+### msg67126525 | KarTonP |  | Re: Phy Challenge
+Quote from: clark2346547 on September 09, 2026, 02:16:26 AM
+Quote from: KarTonP on September 08, 2026, 06:51:45 PM
+Quote from: clark2346547 on September 08, 2026, 06:28:09 PM
+Does globally swapping the two arms preserve the answer?
+
+I tested a sample of 8�9! emoji. Both the most significant bits and the least significant bits. I compared them with a set of addresses as ESDCA verification that it is k
+
+The author who likes posts about those same emojis. All the data except for K satisfy the equation. What's going on here?
+
+How long have you been trying to solve this? Have you found any other clues? I noticed things like �CUES� and the Fibonacci series, but I have no idea whether they�re actual clues or just coincidences.
+
+I've personally been spending 30 minutes a day on this for two weeks now.
+Similarly, I have a fully valid signature for the target we�re looking for. But to close the chain, we need to find the correct K. I�ve also been experimenting with these emojis, selecting different groups and playing around with their order. Both full bytes and high-order bytes. I also experimented with the scalars S(side a) and S(side b), thinking that might be a clue to finding K. And that�s just part of the information. After we got the hint about the �West Wind,� I started using that direction to build a chain of 9 emojis as the basis for the sequence. 
+It seems to me that until we find out the bitness of the scalar K, it will be difficult to follow the exact path.
+
+### msg67126868 | detechs |  | Re: Phy Challenge
+Quote from: KarTonP on September 09, 2026, 08:37:27 AM
+Quote from: clark2346547 on September 09, 2026, 02:16:26 AM
+Quote from: KarTonP on September 08, 2026, 06:51:45 PM
+Quote from: clark2346547 on September 08, 2026, 06:28:09 PM
+Does globally swapping the two arms preserve the answer?
+
+I tested a sample of 8�9! emoji. Both the most significant bits and the least significant bits. I compared them with a set of addresses as ESDCA verification that it is k
+
+The author who likes posts about those same emojis. All the data except for K satisfy the equation. What's going on here?
+
+How long have you been trying to solve this? Have you found any other clues? I noticed things like �CUES� and the Fibonacci series, but I have no idea whether they�re actual clues or just coincidences.
+
+I've personally been spending 30 minutes a day on this for two weeks now.
+Similarly, I have a fully valid signature for the target we�re looking for. But to close the chain, we need to find the correct K. I�ve also been experimenting with these emojis, selecting different groups and playing around with their order. Both full bytes and high-order bytes. I also experimented with the scalars S(side a) and S(side b), thinking that might be a clue to finding K. And that�s just part of the information. After we got the hint about the �West Wind,� I started using that direction to build a chain of 9 emojis as the basis for the sequence. 
+It seems to me that until we find out the bitness of the scalar K, it will be difficult to follow the exact path. 
+
+im also stuck at K with everything else solved, looking at the image on different backgrounds shows a distinction between types of emoji
+
+### msg67127007 | clark2346547 |  | Re: Phy Challenge
+Quote from: KarTonP on September 09, 2026, 08:37:27 AM
+Quote from: clark2346547 on September 09, 2026, 02:16:26 AM
+Quote from: KarTonP on September 08, 2026, 06:51:45 PM
+Quote from: clark2346547 on September 08, 2026, 06:28:09 PM
+Does globally swapping the two arms preserve the answer?
+
+I tested a sample of 8�9! emoji. Both the most significant bits and the least significant bits. I compared them with a set of addresses as ESDCA verification that it is k
+
+The author who likes posts about those same emojis. All the data except for K satisfy the equation. What's going on here?
+
+How long have you been trying to solve this? Have you found any other clues? I noticed things like �CUES� and the Fibonacci series, but I have no idea whether they�re actual clues or just coincidences.
+
+I've personally been spending 30 minutes a day on this for two weeks now.
+Similarly, I have a fully valid signature for the target we�re looking for. But to close the chain, we need to find the correct K. I�ve also been experimenting with these emojis, selecting different groups and playing around with their order. Both full bytes and high-order bytes. I also experimented with the scalars S(side a) and S(side b), thinking that might be a clue to finding K. And that�s just part of the information. After we got the hint about the �West Wind,� I started using that direction to build a chain of 9 emojis as the basis for the sequence. 
+It seems to me that until we find out the bitness of the scalar K, it will be difficult to follow the exact path. 
+
+im working 7-8 hr a day on this puzzle but stuck at K.
+
+### msg67135150 | whanau |  | Re: Phy Challenge
+Proposal for kTimesG. 
+
+I think all  participants visible and invisible are stuck at the same place.
+No one is likely to post much more except AI twaddle in case someone else has a eureka moment and claims the prize.
+
+How about; 
+The puzzle stays the same. You move the funds elsewhere. The public key is already 'public'
+First to publish the solution and explanation gets 50% of the pot and at your discretion you allocate the other 50% to active participants based on their input.
+
+That I think would encourage some ideas to be put forward and some brainstorming to happen here. 
+
+Just a suggestion.
+
+### msg67135227 | detechs |  | Re: Phy Challenge
+Quote from: whanau on September 11, 2026, 09:59:18 PM
+Proposal for kTimesG. 
+
+I think all  participants visible and invisible are stuck at the same place.
+No one is likely to post much more except AI twaddle in case someone else has a eureka moment and claims the prize.
+
+How about; 
+The puzzle stays the same. You move the funds elsewhere. The public key is already 'public'
+First to publish the solution and explanation gets 50% of the pot and at your discretion you allocate the other 50% to active participants based on their input.
+
+That I think would encourage some ideas to be put forward and some brainstorming to happen here. 
+
+Just a suggestion.
+
+That's a good suggestion! Been wondering where ktimesg got to, even though they don't owe us anything it would be nice to have a conclusion to this.
+
+mauri ora
+
+### msg67136779 | KarTonP |  | Re: Phy Challenge
+The significant bytes �s� correspond to nine emojis. Reading their Unicode bytes �from the inside� yields the following result:
+031dffd7ff0d400f0afcc3fdcefc0d400f0da10f3a390f77ff0d400f68fe0d080f
+
+Is this yet another hint that we need to find k in roughly the same way?
+If so, what is the bit width of at least the scalar? 
+
+Quote from: kTimesG on September 05, 2026, 11:04:03 PM
+meta-clue to either wake up or confuse even more your LLMs, as they seem to have crossed off-road...
+
+Code:
+gvonys fhelucrM kbZ
+
+Here, too, the question isn't about figuring out what's written in the Latin alphabet, but rather what steps need to be taken to get the result we're looking for.
+This phrase provides two clues right away.
+
+### msg67136883 | KarTonP |  | Re: Phy Challenge
+Quote from: unaimous on September 12, 2026, 02:19:56 PM
+Quote from: KarTonP on September 12, 2026, 01:59:39 PM
+The significant bytes �s� correspond to nine emojis. Reading their Unicode bytes �from the inside� yields the following result:
+031dffd7ff0d400f0afcc3fdcefc0d400f0da10f3a390f77ff0d400f68fe0d080f
+
+Is this yet another hint that we need to find k in roughly the same way?
+If so, what is the bit width of at least the scalar? 
+
+I don't think it is of any relevance, and just random data. Image is likely encoding 1 bit per emoji, we have to figure out the reading order and how to assign bits. The 72 bits of s helps verify if the solver is on right path (first or last 72 bits of encoded value are same as s, something like that).
+
+Quote from: KarTonP on September 12, 2026, 01:59:39 PM
+Quote from: kTimesG on September 05, 2026, 11:04:03 PM
+meta-clue to either wake up or confuse even more your LLMs, as they seem to have crossed off-road...
+
+Code:
+gvonys fhelucrM kbZ
+
+Here, too, the question isn't about figuring out what's written in the Latin alphabet, but rather what steps need to be taken to get the result we're looking for.
+This phrase provides two clues right away. 
+
+I think so too, reversal and rot-13(half?)
+
+Yeah, you got me right�it�s just that, of all the tests, this is the most reasonable result, considering that when we ran the test, we got these values (031dffd7ff0d400f0afcc3fdcefc0d400f0da10f3a390f77ff0d400f68fe0d080f), we were essentially performing the same operation to verify the correct S.
+
+I think we need to dig a little deeper in this direction. Therefore, the most reasonable approach right now is to explore these avenues (reversal and rot-13). 
+UPD ROT-13 = No
+
+### msg67139350 | detechs |  | Re: Phy Challenge
+has everyone else mapped the emoji properly? If you don't do it yourself it's like watching the simpsons on repeat. 
+
+here's my skin tone mapping if anyone can compare and see if we are seeing the same thing or not, I have an genders mapped correctly I think, just some skin tones look like yellow as well as a natural one and color picking them gives an answer in-between so it's hard to pick one or the other.
+
+### msg67145256 | KarTonP |  | Re: Phy Challenge
+I created another system: I simply uploaded all 256 emojis as images.
+
+I created one main table and three intermediate tables, in which all the emojis are organized by color. This method is simpler and also provides an easy sequence based on the main table with 256 emojis.
+
+### msg67145295 | PHA_.07 |  | Re: Phy Challenge
+Nice Pictures but if you guys are using those then how are you calculating for k then, just by mind power? (joke) or you not going to be using the system that's built in?   I think allot of you are missing that clue, others have crunched the numbers not knowing about the others ways that come right back to the same spot. You can come at in different ways and end up flowing to the same numbers.
+
+### msg67145328 | detechs |  | Re: Phy Challenge
+Quote from: PHA_.07 on September 15, 2026, 09:12:05 AM
+Nice Pictures but if you guys are using those then how are you calculating for k then, just by mind power? (joke) or you not going to be using the system that's built in?   I think allot of you are missing that clue, others have crunched the numbers not knowing about the others ways that come right back to the same spot. You can come at in different ways and end up flowing to the same numbers. 
+
+My pictures are just for visual, to see the data in easier ways or any patterns, because if it's based on skin tones, some emoji in the image are a skin tone in-between, or the image or parts of it weren't converted to grey scale in the same way. Or maybe the emoji are irrelevant and the whole thing is an ai trap haha like the rest of the puzzle and the clues. Wonder if we'll get any more hints or if anyone will solve it before the 22nd
+
+### msg67145336 | PHA_.07 |  | Re: Phy Challenge
+Does any one even know the span?  For ones saying they have everything except for k that is. It is not about out doing each other but i know as soon as i say something the keyboard warriors will pop off saying they already know as they furiously try to work out the other clue that they didn't even know was there. The amount is small also even if you look at it both ways wink. 
+For the ones that are looking crossed eyed at the pics do you have your R's?
+
+### msg67145675 | KarTonP |  | Re: Phy Challenge
+Point R was originally included in the first message. This is because it is, in fact, a signature. Point R should not correspond to Q. If point R did correspond to Q, it would be possible to solve the puzzle with a standard attack in 1 second, given that k�which is equal to the live d�would be hidden at point R. 
+Therefore, the correct value of Rx is still:
+0x4775BC7C8B5905E441664185F426656BBC8E05C0E780E02F1F9B3C940D06B2F8
+
+### msg67146034 | PHA_.07 |  | Re: Phy Challenge
+Quote from: KarTonP on September 15, 2026, 11:51:05 AM
+Point R was originally included in the first message. This is because it is, in fact, a signature. Point R should not correspond to Q. If point R did correspond to Q, it would be possible to solve the puzzle with a standard attack in 1 second, given that k�which is equal to the live d�would be hidden at point R. 
+Therefore, the correct value of Rx is still:
+0x4775BC7C8B5905E441664185F426656BBC8E05C0E780E02F1F9B3C940D06B2F8
+
+What does it span? R native bc1q if you got this side wheres the other.
+
+### msg67146555 | kTimesG |  | Re: Phy Challenge
+Quote from: KarTonP on September 12, 2026, 01:59:39 PM
+This phrase provides two clues right away. 
+
+The third one helps as well. But anyway, all the clues I've given were already in the puzzle, since the puzzle is already self-explaining itself. The smart approach can find the correct solution in 4 milliseconds. The matrix coefficients probabilistic activation approach seems to be struggling for 3+ months so far, so who wins? Don't get fooled by AI hype, that shit's corporate marketing, it can't do anything by itself unless someone else already did it before. Once you understand that, better for you.
+
+### msg67148605 | detechs |  | 
+Quote from: kTimesG on September 15, 2026, 04:46:29 PM
+Quote from: KarTonP on September 12, 2026, 01:59:39 PM
+This phrase provides two clues right away. 
+
+The third one helps as well. But anyway, all the clues I've given were already in the puzzle, since the puzzle is already self-explaining itself. The smart approach can find the correct solution in 4 milliseconds. The matrix coefficients probabilistic activation approach seems to be struggling for 3+ months so far, so who wins? Don't get fooled by AI hype, that shit's corporate marketing, it can't do anything by itself unless someone else already did it before. Once you understand that, better for you.
+
+is the 34 marks around the bitcoin relevant? Most of them line up perfectly with a single emoji, the only other thing I thought of trying was moving the image as if it was a pillowed cube.
+
+The other things in the OP I'm not sure what you do with them, like the differences to the whitepaper and which version of the whitepaper was referenced, and that one number that was added by you to the whitepaper part
+
+### msg67151684 | PHA_.07 |  | Re: Phy Challenge
+yes the 34 ticks, i have the pic that lines up the emojis for a/b from the ticks and make a perfect set up.and what about the = above BTC and below. so above and below that's why i was going about it a different way also the R difference. Which says the same thing.  Look at the shine on the left upper it dont match to what it should. There guys saying they got everything but the k dont think so.
+
+I like op  message and we already know what was inside.
+  and there is a prize (as of today). If you reach a state where you believe "this cannot be solved", it means you are missing the direct and indirect clues along the way.
+
+A final useful sign (the password's already mentioned).
+
+Code:
+
+-----BEGIN PGP MESSAGE-----
+
+jA0ECQMKVwglgSLxlRn/0jcBn0f9h3kbilK/NDDWZCkuONpev7JZbbw+l6uVZC0N
+aJFXTLG6sbLXr6t0z3scptSM3vWBCmOU
+=D+ub
+-----END PGP MESSAGE-----
+
+### msg67151760 | KarTonP |  | Re: Phy Challenge
+He was referring to this line here:
+J0d1vHyLWQXkQWZBhfQmZWu8jgXA54DgLx+bPJQNBrL4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABbiQspK6Gr2bE
+
+He originally made a mistake with the space, and there was no �J� there�just throw your LLM in the trash already))) 
+
+The signature that outputs �.� and is converted to z = is a step we've already gone through.
+
+Quote
+2026-07-30 edit: fixed BACKSPACE cat incident (missing "J" character)
+
+Quote
+s: 0x5B890B292BA1ABD9B1
+r: 0x4775BC7C8B5905E441664185F426656BBC8E05C0E780E02F1F9B3C940D06B2F8
+e: 0xBC4FDA25213E0528C531760D82529FD2AC59570EE028F9909F1C83915E481D3F
+Q: 02425afdd1716149faf414b6fdb96d5e7afc8ce42496042f4df559c80a7c6650eb
+
+I�ll repeat once more that all these values are mutually consistent. 
+Consequently, we see that r = is valid for this (s⋅R=e⋅G+r⋅Q)
+Therefore, the formula d=(k⋅s−e)⋅r−1(modN)
+will yield the correct answer. 
+d = Qpub
+kTimesG, I right? 
+
+What questions could there possibly be? Stop looking for conspiracy theories against you. 
+I'll leave this for those who need it. Especially for PHA.07, for his deleted, nonsensical posts.
+
+### msg67157980 | detechs |  | Re: Phy Challenge
+Quote from: KarTonP on September 17, 2026, 08:49:26 AM
+He was referring to this line here:
+J0d1vHyLWQXkQWZBhfQmZWu8jgXA54DgLx+bPJQNBrL4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABbiQspK6Gr2bE
+
+He originally made a mistake with the space, and there was no �J� there�just throw your LLM in the trash already))) 
+
+The signature that outputs �.� and is converted to z = is a step we've already gone through.
+
+Quote
+2026-07-30 edit: fixed BACKSPACE cat incident (missing "J" character)
+
+Quote
+s: 0x5B890B292BA1ABD9B1
+r: 0x4775BC7C8B5905E441664185F426656BBC8E05C0E780E02F1F9B3C940D06B2F8
+e: 0xBC4FDA25213E0528C531760D82529FD2AC59570EE028F9909F1C83915E481D3F
+Q: 02425afdd1716149faf414b6fdb96d5e7afc8ce42496042f4df559c80a7c6650eb
+
+I�ll repeat once more that all these values are mutually consistent. 
+Consequently, we see that r = is valid for this (s⋅R=e⋅G+r⋅Q)
+Therefore, the formula d=(k⋅s−e)⋅r−1(modN)
+will yield the correct answer. 
+d = Qpub
+kTimesG, I right? 
+
+What questions could there possibly be? Stop looking for conspiracy theories against you. 
+I'll leave this for those who need it. Especially for PHA.07, for his deleted, nonsensical posts.
+
+you can get k this way as well
+
+k = e * (s - r*c)^-1 mod n
+
+c = d * k^-1 mod n
+
+e = the message hash
+
+s = the posted s
+
+r = the posted r
+
+n = the curve order
+
+k = the nonce
+
+d = the private key
+
+c = d over k
+
+it comes from the one relation, s * k = e + r * d mod n, with d replaced by c * k
+
+the test of a candidate c is one point multiply: c * R == Q, where R = k * G and Q = d * G
+
+### msg67170689 | kTimesG |  | Re: Phy Challenge
+This is a hint.
+
+### msg67171862 | KarTonP |  | Re: Phy Challenge
+Quote from: kTimesG on September 23, 2026, 12:05:18 AM
+This is a hint.
+
+The clue is that we should have looked for an alternative formula from the start�the one detechs provided
+as an example with the letter C =�which, according to the formula, would correspond to?
+c�R = Q 
+k = e * (s - r*c)^-1 mod n
+c = d * k^-1 mod n
+We�ve actually checked this as well. But to be honest, we haven�t found the correct value for C yet.
+
+### msg67172155 | detechs |  | Re: Phy Challenge
+Quote from: kTimesG on September 23, 2026, 12:05:18 AM
+This is a hint.
+
+Is posting 11 seconds before the equinox relevant? Is the wind blowing now?
+
+### msg67173810 | PHA_.07 |  | Re: Phy Challenge
+Yes the offset or c as you are calling it now. not the we only need missing k fanboys.   He did not quote  with his latest post what would that tell you
+
+### msg67174343 | clark2346547 |  | Re: Phy Challenge
+Quote from: kTimesG on September 23, 2026, 12:05:18 AM
+This is a hint.
+
+Hey, I was thinking about your hint regarding the 'two classes' needing exactly one bit to separate them. I initially assumed the two classes were just the two spiral arms (odd vs even indices). But since the 258 - i pairs always stay on the same arm, an odd/even rule doesn't cleanly assign a unique sign to a pair. Did I completely misidentify what the two classes are, or am I applying the 1-bit separator to the wrong part of the math?
+
+### msg67208582 | detechs |  | Re: Phy Challenge
+Quote from: clark2346547 on September 24, 2026, 05:28:40 AM
+Quote from: kTimesG on September 23, 2026, 12:05:18 AM
+This is a hint.
+
+Hey, I was thinking about your hint regarding the 'two classes' needing exactly one bit to separate them. I initially assumed the two classes were just the two spiral arms (odd vs even indices). But since the 258 - i pairs always stay on the same arm, an odd/even rule doesn't cleanly assign a unique sign to a pair. Did I completely misidentify what the two classes are, or am I applying the 1-bit separator to the wrong part of the math?
+
+Use the 1bit seperater as the fold point, folds aren't always straight.
+
+### msg67216089 | aakhey |  | Re: Phy Challenge
+Quote from: kTimesG on September 23, 2026, 12:05:18 AM
+This is a hint.
+
+You mean the word "this" is the hint ? lool
+
+I have a few questions for the creator:
+1. Even after normalization, it's hard to exactly match the emojis (there are around 3,900 unique emoji variants with tones). Do we need to exactly match the emoji variant too?
+2. Do we need to correct some data, just like we needed to add the "J" for the puzzle signature?
+3. Ahh. Why did the s bytes so smoll ?
+
+### msg67216183 | clark2346547 |  | Re: Phy Challenge
+Quote from: aakhey on October 07, 2026, 10:15:56 AM
+Quote from: kTimesG on September 23, 2026, 12:05:18 AM
+This is a hint.
+
+You mean the word "this" is the hint ?
+
+I have a few questions for the creator:
+1. Even after normalization, it's hard to exactly match the emojis (there are around 3,900 unique emoji variants with tones). Do we need to exactly match the emoji variant too?
+2. Do we need to correct some data, just like we needed to add the "J" for the puzzle signature?
+3. Ahh. Why did the s bytes so smoll ? 
+
+ I guess this is the hint "."  as per his previous messages.
+
+### msg67218400 | kTimesG |  | Re: Phy Challenge
+So what does everyone think about the cracking face emoji?
+
+### msg67218660 | PHA_.07 |  | Re: Phy Challenge
+It is 18.0 September 2026 cracking face emoji.  Are you doing ok  KTimesG? Not falling apart on us are you.    phylo the way it spans out can look like cracking from main lines.
+
+### msg67222311 | detechs |  | Re: Phy Challenge
+Quote from: kTimesG on October 07, 2026, 11:22:40 PM
+So what does everyone think about the cracking face emoji?
+
+Looks like me trying to solve this puzzle, lucky it's spring so the monarchs are bringing a bit more brightness to an otherwise grey landscape
+
+### msg67223904 | ch1p13 |  | Re: Phy Challenge
+Hi kTimesG,
+
+Great puzzle, still chewing on it. Two things I noticed that I haven't seen mentioned in the thread. Flagging them in case they're useful, or you can just confirm/deny without spoiling anything:
+
+1) There's an emoji sitting outside the main ring ("person tipping hand", roughly opposite the missing/covered one), and its angle works out to almost exactly 0 degrees on the standard math convention (0=East, counter-clockwise). Is that meant to be the angular reference origin for reading the ring?
+
+2) Measuring reflection across the East-West axis across the whole ring gives a strong, statistically solid mirror symmetry (~85% of positions have a reciprocal mirror partner, vs ~2% for a random control axis). Is mirror reflection the right "fold" operation you hinted at, or is there an extra transformation step we're still missing before it becomes usable?
+
+Thanks for putting this together, it's a fun one.
+
+						
+					
+					
+						
+							
+								
+								
+							
+								
+								
+								
+									
+								
+							
+						
+					
+				
+			
+		
+	
+	
+
+	
+		Pages: « 1 2 3 4 [5] 6 »  All 
+		
+			
+				
+					
+		 
+		Print
+		 
+				
+			
+		
+	
+
+//
+%body%
+  
+';
+
+	// And this is the replacement for the subject.
+	var smf_template_subject_edit = '';
+
+	// Restore the message to this after editing.
+	var smf_template_body_normal = '%body%';
+	var smf_template_subject_normal = '%subject%';
+	var smf_template_top_subject = "Topic: %subject%  (Read 3455 times)"
+
+	if (window.XMLHttpRequest)
+		showModifyButtons();
+// -->
+
+		
+				Bitcoin Forum > Bitcoin > Bitcoin Discussion > Phy Challenge
+ 
+				 « previous topic next topic »
+		
+
+	
+		
+			 
+		
+	
+
+	
+		Jump to:
+		 0 && this.options[this.selectedIndex].value) window.location.href = smf_scripturl + this.options[this.selectedIndex].value.substr(smf_scripturl.indexOf('?') == -1 || this.options[this.selectedIndex].value.substr(0, 1) != '?' ? 0 : 1);">
+			Please select a destination:
+			-----------------------------
+			Bitcoin
+			-----------------------------
+			 => Bitcoin Discussion
+			 ===> Legal
+			 ===> Press
+			 ===> Meetups
+			 ===> Important Announcements
+			 => Development & Technical Discussion
+			 ===> Wallet software
+			 =====> Electrum
+			 =====> Bitcoin Wallet for Android
+			 =====> BitcoinJ
+			 =====> Armory
+			 =====> Mycelium
+			 =====> Hardware wallets
+			 => Mining
+			 ===> Mining support
+			 ===> Pools
+			 ===> Mining software (miners)
+			 ===> Hardware
+			 =====> Group buys
+			 ===> Mining speculation
+			 => Bitcoin Technical Support
+			 => Project Development
+			-----------------------------
+			Economy
+			-----------------------------
+			 => Economics
+			 ===> Speculation
+			 => Marketplace
+			 ===> Goods
+			 =====> Computer hardware
+			 =====> Digital goods
+			 =======> Invites & Accounts
+			 =====> Collectibles
+			 ===> Services
+			 ===> Currency exchange
+			 ===> Gambling
+			 =====> Games and rounds
+			 =====> Investor-based games
+			 =====> Gambling discussion
+			 ===> Lending
+			 =====> Long-term offers
+			 ===> Securities
+			 ===> Auctions
+			 ===> Service Announcements
+			 =====> Micro Earnings
+			 ===> Service Discussion
+			 =====> Web Wallets
+			 =====> Exchanges
+			 => Trading Discussion
+			 ===> Scam Accusations
+			 ===> Reputation
+			-----------------------------
+			Other
+			-----------------------------
+			 => Meta
+			 ===> Bitcoin Wiki
+			 => Politics & Society
+			 => Beginners & Help
+			 => Off-topic
+			 => Serious discussion
+			 ===> Ivory Tower
+			 => Archival
+			 ===> New forum software
+			 ===> Корзина
+			 ===> CPU/GPU Bitcoin mining hardware
+			 ===> Chinese students
+			 ===> Obsolete (buying)
+			 ===> Obsolete (selling)
+			 ===> MultiBit
+			-----------------------------
+			Alternate cryptocurrencies
+			-----------------------------
+			 => Altcoin Discussion
+			 => Announcements (Altcoins)
+			 ===> Tokens (Altcoins)
+			 => Mining (Altcoins)
+			 ===> Pools (Altcoins)
+			 => Marketplace (Altcoins)
+			 ===> Service Announcements (Altcoins)
+			 ===> Service Discussion (Altcoins)
+			 ===> Bounties (Altcoins)
+			 => Speculation (Altcoins)
+			-----------------------------
+			Local
+			-----------------------------
+			 => العربية (Arabic)
+			 ===> العملات البديلة (Altcoins)
+			 =====> النقاشات
+			 ===> إستفسارات و أسئلة المبتدئين
+			 ===> التعدين
+			 ===> النقاشات الأخرى
+			 ===> منصات التبادل
+			 => Bahasa Indonesia (Indonesian)
+			 ===> Marketplace (Bahasa Indonesia)
+			 ===> Mining (Bahasa Indonesia)
+			 ===> Altcoins (Bahasa Indonesia)
+			 ===> Trading dan Spekulasi
+			 ===> Ekonomi, Politik, dan Budaya
+			 ===> Topik Lainnya
+			 => Espa�ol (Spanish)
+			 ===> Mercado y Econom�a
+			 =====> Servicios
+			 =====> Trading y especulaci�n
+			 ===> Hardware y Miner�a
+			 ===> Esquina Libre
+			 ===> Mercadillo
+			 =====> Mexico
+			 =====> Argentina
+			 =====> Espa�a
+			 =====> Centroamerica y Caribe
+			 ===> Primeros pasos y ayuda
+			 ===> Altcoins (criptomonedas alternativas)
+			 =====> Miner�a de altcoins
+			 =====> Servicios
+			 =====> Tokens (Espa�ol)
+			 => 中文 (Chinese)
+			 ===> 跳蚤市场
+			 ===> 山寨币
+			 ===> 媒体
+			 ===> 挖矿
+			 ===> 离题万里
+			 => Hrvatski (Croatian)
+			 ===> Trgovina
+			 ===> Altcoins (Hrvatski)
+			 =====> Announcements (Hrvatski)
+			 ===> Off-topic (Hrvatski)
+			 => Deutsch (German)
+			 ===> Anf�nger und Hilfe
+			 ===> Mining (Deutsch)
+			 ===> Trading und Spekulation
+			 ===> Projektentwicklung
+			 ===> Off-Topic (Deutsch)
+			 ===> Treffen
+			 ===> Presse 
+			 ===> Altcoins (Deutsch)
+			 =====> Announcements (Deutsch)
+			 ===> Marktplatz
+			 =====> Auktionen
+			 =====> Suche
+			 =====> Biete
+			 => Ελληνικά (Greek)
+			 ===> Αγορά
+			 ===> Mining Discussion (Ελληνικά)
+			 ===> Altcoins (Ελληνικά)
+			 =====> Altcoin Announcements (Ελληνικά)
+			 =====> Altcoin Mining (Ελληνικά)
+			 => עברית (Hebrew)
+			 => Fran�ais
+			 ===> Actualit� et News
+			 ===> D�butants
+			 ===> Discussions g�n�rales et utilisation du Bitcoin
+			 ===> Mining et Hardware
+			 ===> �conomie et sp�culation
+			 ===> Place de march�
+			 =====> �changes
+			 =====> Produits et services
+			 =====> Petites annonces
+			 ===> Le Bitcoin et la loi
+			 ===> Wiki, documentation et traduction
+			 ===> D�veloppement et technique
+			 ===> Vos sites et projets
+			 ===> Hors-sujet
+			 ===> Altcoins (Fran�ais)
+			 =====> Annonces
+			 => India
+			 ===> Mining (India)
+			 ===> Marketplace (India)
+			 ===> Regional Languages (India)
+			 ===> Press & News from India
+			 ===> Alt Coins (India)
+			 ===> Buyer/ Seller Reputations (India)
+			 ===> Off-Topic (India)
+			 => Italiano (Italian)
+			 ===> Guide (Italiano)
+			 ===> Progetti
+			 ===> Discussioni avanzate e sviluppo
+			 ===> Trading, analisi e speculazione
+			 ===> Mercato
+			 =====> Mercato valute
+			 =====> Beni
+			 =====> Servizi
+			 =====> Esercizi commerciali
+			 =====> Hardware/Mining (Italiano)
+			 =====> Gambling (Italiano)
+			 ===> Accuse scam/truffe
+			 ===> Mining (Italiano)
+			 ===> Alt-Currencies (Italiano)
+			 =====> Annunci
+			 ===> Raduni/Meeting (Italiano)
+			 ===> Crittografia e decentralizzazione
+			 ===> Off-Topic (Italiano)
+			 => 日本語 (Japanese)
+			 ===> アルトコイン
+			 => Nederlands (Dutch)
+			 ===> Markt
+			 ===> Gokken/lotterijen
+			 ===> Mining (Nederlands)
+			 ===> Beurzen
+			 ===> Alt Coins (Nederlands)
+			 ===> Off-topic (Nederlands)
+			 ===> Meetings (Nederlands)
+			 => Nigeria (Naija)
+			 ===> Politics and society (Naija)
+			 ===> Off-topic (Naija)
+			 => 한국어 (Korean)
+			 ===> 대체코인 Alt Coins (한국어)
+			 => Pilipinas
+			 ===> Altcoins (Pilipinas)
+			 =====> Altcoin Announcements (Pilipinas)
+			 ===> Pamilihan
+			 ===> Others (Pilipinas)
+			 => Polski
+			 ===> Tablica ogłoszeń
+			 ===> Alternatywne kryptowaluty
+			 =====> Nowe kryptowaluty i tokeny
+			 =====> Tablica ogłoszeń (altcoiny)
+			 => Portugu�s (Portuguese)
+			 ===> Primeiros Passos (Iniciantes)
+			 ===> Economia & Mercado
+			 ===> Minera��o em Geral
+			 ===> Desenvolvimento & Discuss�es T�cnicas
+			 ===> Criptomoedas Alternativas
+			 ===> Brasil
+			 ===> Portugal
+			 => Русский (Russian)
+			 ===> Новички
+			 ===> Cepвиcы
+			 =====> Барахолка
+			 =====> Обменники
+			 ===> Идеи
+			 ===> Кодеры
+			 ===> Майнеры
+			 ===> Политика
+			 ===> Трейдеры
+			 ===> Альтернативные криптовалюты
+			 =====> Токены
+			 =====> Бayнти и aиpдpoпы
+			 ===> Хайпы
+			 ===> Работа
+			 ===> Разное
+			 ===> Oбcyждeниe Bitcoin
+			 =====> Новости
+			 =====> Юристы
+			 => Rom�nă (Romanian)
+			 ===> Anunturi importante
+			 ===> Offtopic
+			 ===> Market
+			 =====> Discutii Servicii
+			 ===> Minerit
+			 ===> Tutoriale
+			 ===> Bine ai venit!
+			 ===> Presa
+			 ===> Altcoins (Monede Alternative)
+			 =====> Anunturi Monede Alternative
+			 => Skandinavisk
+			 => T�rk�e (Turkish)
+			 ===> Bitcoin Haberleri
+			 ===> Pazar Alanı
+			 ===> Madencilik
+			 ===> Ekonomi
+			 ===> Servisler
+			 =====> Fonlar
+			 ===> Proje Geliştirme
+			 ===> Alternatif Kripto-Paralar
+			 =====> Madencilik (Alternatif Kripto-Paralar)
+			 =====> Duyurular (Alternatif Kripto-Paralar)
+			 ===> Konu Dışı
+			 ===> Yeni Başlayanlar & Yardım
+			 ===> Buluşmalar
+			 => Other languages/locations
+		 
+		
+	
+
+	
+
+//
+
+	
+		
+		
+			
+				
+					
+					
+				
+				
+					
+		Powered by SMF 1.1.19 | 
+SMF © 2006-2009, Simple Machines
+		
+				
+				
+					
+					
+				
+			
+		
+	
+
+	Loading...
+

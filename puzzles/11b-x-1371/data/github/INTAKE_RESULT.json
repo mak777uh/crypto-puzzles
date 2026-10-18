@@ -1,0 +1,21 @@
+{
+  "slug": "11b-x-1371",
+  "agent": "Qoder",
+  "ts": "2026-10-18T10:46:30Z",
+  "date": "2026-10-18",
+  "status": "none",
+  "note": "репозиториев нет: в досье прочитано 489.7 КБ знаков, github.com-ссылок 0, запись OCP: нет записи; репо автора/форки/поиск: бюджет 0 запросов — не запрашивались",
+  "api_calls": 0,
+  "free_transports": 0,
+  "remaining_seen": 54,
+  "reset_utc": "2026-10-18T11:24:45Z",
+  "files": 0,
+  "bytes": 0,
+  "media": 0,
+  "repos": [],
+  "candidates": [],
+  "errors": [],
+  "stop_reason": "",
+  "ocp": null,
+  "digest": "data/github/GITHUB_INTAKE.md"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "gsmg-io-5btc-puzzle",
+  "agent": "BigPickle",
+  "model": "",
+  "note": "",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T08:47:42Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-18T11:04:51Z",
+  "heartbeat_utc": "2026-10-18T09:04:51Z",
+  "released_utc": "2026-10-18T09:11:45Z",
+  "released_by": "BigPickle"
+}

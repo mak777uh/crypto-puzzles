@@ -1,0 +1,474 @@
+
+Phy Challenge: a signed Bitcointalk post, a spiral of emojis and 800,000 sats - @agntn/puzzles
+@agntn/
+puzzles
+v0.30.0
+Search…
+ 
+k
+Docs
+Playground
+Changelog
+Search…
+ 
+k
+ Guide
+ Collections
+ Authors
+ Solvers
+ Collections
+Index
+Overview
+Bitcoin puzzle transaction
+RushWallet contest
+Zden's puzzles
+Puzzle Weave
+WarpWallet challenges
+Hash collision bounties
+Ballet wallets
+Bitimage
+Bitaps mnemonic challenge
+GSMG.io puzzle
+Bitcoin Movie Enigma
+Ledger Donjon CTF
+LuckyLurker
+Dug
+Genesis
+TORCHED H34R7S Bitcoin Puzzle
+10 ETH challenge
+Birthday quiz
+Book quiz
+Quizchain
+80-bit challenge
+IAMABananaAMAA
+Wickex
+Picture puzzle
+Mini-puzzles
+TeikhosBounty
+Brave New World
+Wealth in Poetry
+Path to Greatness
+Proof Of Writing
+Brute force
+Doge's Gambit
+Powerful Moss
+Trivia brainwallet
+Quizchain2
+The Great Riddle
+Satoshi-Maze
+Natasha Otomoski
+Move Over Brokers
+Walking Banks
+Phy Challenge
+seed-phrase.com
+Grycoin chain
+Smith, Lyle & Moore
+Real Big Block
+School of Bitcoin
+La Liberté 2019
+Hunting Time
+Coin_Games
+9vw04
+Collections
+kTimesG's Phy Challenge
+Copy page
+kTimesG signed a whitepaper parody and posted a spiral of grey emojis. The signature gives up the prize address. The key behind it is still out there
+June 5, 2026. Bitcoin had its worst week since 2022, and 
+kTimesG
+ answered with a 
+puzzle
+. Same kTimesG as the 
+80-bit challenge
+, different game. This time there's no range to search. The post promises "no loose ends, no hashing."
++
++
+ID
+phy
+30 / 50
+1 puzzle · 2026-06-05
+Collection
+kTimesG's Phy Challenge
+bitcoin
+A signed forum post, a signature the author's cat cut one character short, and grey emojis spiralling around a gold coin. The signature gives up the address. The key behind it, and 800,000 sats, nobody has found yet.
+Author
+kTimesG
+Prize recorded
+0.008 BTC
+Still unsolved
+1 · 0.008 BTC
+closed 0 / 1
+Census 
+[ 1 puzzle ]
+unsolved
+1
+100%
+public keys
+1
+100%
+private keys
+0
+0%
+Access 
+[ library · tools ]
+Load
+getCollection
+(
+"phy"
+)
+Show
+phy
+ in the playground
+→ 
+kTimesG
+→ 
+All collections
+local dataset / no network · 
+data 1495 99af 0065
+What's in the first post
+Three things, and the author keeps saying that's all you need.
+A text that sounds familiar. It's the abstract of the Bitcoin whitepaper with words swapped. "Electronic cash" became "modular values". Timestamps became "spacestamps", proof of work became "phylo-based proof-of-equivalence". Then a news headline and the line about a puzzle for everyone.
+A Base64 string under it. That's a signed message signature, and it signs the whole text above it.
+And a 
+picture
+, 2048 by 2048. Grey emojis in a spiral around one golden Bitcoin coin. Hands, faces, a cat, a key, a padlock. All in greyscale, except the coin.
+The prize showed up two weeks later
+On June 21 the author 
+came back
+: there's a prize "as of today", and one character is missing from the second code. Plus a PGP message, with "the password's already mentioned." The same evening, 
+800,000 sats
+ landed on a native SegWit address.
+Nobody had posted that address yet. Where does it come from?
+The cat ate a J
+The Base64 came out at 64 and a half bytes, and a signed message signature takes 65. People tried E, A, H. Someone decoded the PGP hint and got told "Congrats on decoding the puzzle hint. But it's not the missing char."
+On July 29 NotATether 
+posted
+ "It's J." With the J in front, the signature verifies against the whole signed text, no trailing newline. It recovers the public key 
+02425afd…6650eb
+ and the address 
+bc1qrpn28qa82uyjg37dvsz3w7wpm3kpdea957nm9p
+. The funded one.
+kTimesG fixed the post the same day. The explanation is the best line in the thread: "My cat is not part of this puzzle, yet somehow he managed to create the J incident." Ouch. Three days of building and checking the puzzle, and the cat got the last word.
+Later someone doubted the address. The author's 
+answer
+ was short: "Why would you think the address is wrong, since the signature verifies?"
+A signature that looks wrong on purpose
+Decode the Base64 and look at 
+s
+. 23 zero bytes, then 9 bytes of data. A random signature never looks like that. Somebody built this one.
+So what does the post really hold? Everyone in the thread got stuck around here. NotATether ran Kangaroo over almost the whole 80-bit range. Nothing. The author's verdict: "no idea where it was ever hinted anything about using Kangaroo." The data speaks for itself, apparently.
+The hints since
+kTimesG doesn't hand out much. The record keeps 
+19
+ hints, the author's own plus two from other players. The ones people keep quoting:
+July: "the hints are already inside-out", and everyone is "stuck at the ASCII 8 cat incident".
+September: a meta clue, 
+gvonys fhelucrM kbZ
+, to "wake up or confuse even more your LLMs".
+Skin tones are part of it. Paint every emoji default yellow and the answer holds only "if you already know that the image was redrawn."
+"The smart approach can find the correct solution in 4 milliseconds."
+On September 23, a post that just says "This is a hint."
+And on October 7, a question back at the thread: "So what does everyone think about the cracking face emoji?"
+Best 
+answer
+ so far: "Looks like me trying to solve this puzzle". Fair.
+Four milliseconds. Not a GPU farm, not a week of Kangaroo. Whatever the trick is, it's small. Is it hiding in plain sight?
+What the Phy record carries
+ts
+src/collections/phy.ts
+ copy
+export
+ const
+ phyChallenge 
+=
+ puzzle
+({
+  id: 
+"phy"
+,
+  chain: 
+"bitcoin"
+,
+  address: 
+"bc1qrpn28qa82uyjg37dvsz3w7wpm3kpdea957nm9p"
+,
+  sourceUrl: OP,
+  startedAt: 
+"2026-06-05 19:15:46"
+,
+  pubkey: 
+compressed
+(
+"02425afdd1716149faf414b6fdb96d5e7afc8ce42496042f4df559c80a7c6650eb"
+),
+  prize: 0.008,
+  hints: [
+/* the author's posts, the missing J with its answer, two from the thread */
+],
+  transactions: [
+funding
+(
+/* 800,000 sats on June 21 */
+)],
+  assets: 
+assets
+({ puzzle: 
+"puzzle.png"
+, sourceUrl: PICTURE, digests: [
+digest
+(
+/* … */
+)] }),
+});
+The address comes from the signature
+No post by the author ever spelled out the address. It comes from the signed text, and anyone can check it with 
+keys_message_recover
+ from 
+@agntn/keys
+. Feed it the post and the signature with the J, plus the 
+=
+ padding the post leaves off. Out comes 
+02425afd…6650eb
+ and the funded address. Feed it only the last line and some other address comes out. That's the whole proof, and the record keeps the public key it gives.
+The same hint, twice
+The June 21 post looks different today. When kTimesG fixed the J, the sentence about the missing character got struck through. The record keeps the original wording, with a 
+June 29 capture
+ as confirmation. The J itself is the hint's answer, credited to NotATether.
+No technique yet
+Nobody published how the puzzle works, so the record names no technique. Guessing one from the thread would be the kind of LLM essay the author keeps asking people to stop sending. Once a solution is out, it gets one.
+The Phy Challenge record
++
++
+ID
+phy
+2026-06-05
+Puzzle / 
+phy
+bitcoin
+p2wpkh
+ unsolved
+Record 
+[ as written ]
+ copy
+puzzle
+({
+  
+chain
+: 
+"bitcoin"
+,
+  
+address
+: 
+"bc1qrpn28qa8…a957nm9p"
+,
+})
+Prize
+0.008 BTC
+Key material
+none published
+Verification
+unverifiable
+Solved
+not yet
+tx 1
+Trail 
+[ where it lives ]
+Explorer
+blockstream.info
+Source
+bitcointalk.org/index.php?topic=5584952.msg66802369
+Try
+phy
+ in the playground
+ Address 
+[ p2wpkh ]
+ copy
+bc1qrpn28qa82uyjg37dvsz3w7wpm3kpdea957nm9p
+hash160 1866a383a757092447cd64051779c1dc6c16e7a5
+Balance 
+[ explorer ]
+ asking the explorer 
+Key 
+[ on the record ]
+public key · compressed
+02425afdd1716149faf414b6fdb96d5e7afc8ce42496042f4df559c80a7c6650eb
+Transactions 
+[ 1 ]
+funding
+2026-06-21
+0.008 BTC
+2ba79d0b37…5964d3
+Files 
+[ open any of 1 ]
+puzzle
+puzzle.png
+1.6 MB
+From
+talkimg.com/images/2026/06/05/UrS0Mq.png
+Hints 
+[ who said it, where · 19 ]
+2026-06-05
+official
+looks bad this bearish cycle around and no end is in sight, so here's a puzzle for everyone, no loose ends, no hashing.
+Source
+bitcointalk.org/index.php?topic=5584952.msg66802369
+Confirm
+web.archive.org
+2026-06-21
+official
+There is currently a missing char in the second code of the first post. I will fix it after/if someone figures it out.
+Source
+bitcointalk.org/index.php?topic=5584952.msg66860784
+Confirm
+web.archive.org
+Published answer
+J
+2026-07-29
+bitcointalk.org/index.php?topic=5584952.msg66990855
+2026-06-21
+official
+The rest of the provided parts are all correct and complete, and there is a prize (as of today). If you reach a state where you believe "this cannot be solved", it means you are missing the direct and indirect clues along the way.
+Source
+bitcointalk.org/index.php?topic=5584952.msg66860784
+Confirm
+web.archive.org
+2026-06-21
+official
+A final useful sign (the password's already mentioned). -----BEGIN PGP MESSAGE----- jA0ECQMKVwglgSLxlRn/0jcBn0f9h3kbilK/NDDWZCkuONpev7JZbbw+l6uVZC0N aJFXTLG6sbLXr6t0z3scptSM3vWBCmOU =D+ub -----END PGP MESSAGE-----
+Source
+bitcointalk.org/index.php?topic=5584952.msg66860784
+Confirm
+web.archive.org
+2026-06-29
+official
+Congrats on decoding the puzzle hint. But it's not the missing char.
+Source
+bitcointalk.org/index.php?topic=5584952.msg66888088
+2026-07-23
+official
+I don't know what to hint at, when the hints are already inside-out, and everyone seems to be stuck at the ASCII 8 cat incident, or don't want to share what they found.
+Source
+bitcointalk.org/index.php?topic=5584952.msg66971742
+2026-07-29
+official
+To progress before wasting any compute power, the data speaks for itself, which creates some immediate conclusions, so no idea where it was ever hinted anything about using Kangaroo.
+Source
+bitcointalk.org/index.php?topic=5584952.msg66991304
+2026-08-13
+official
+Why would you think the address is wrong, since the signature verifies?
+Source
+bitcointalk.org/index.php?topic=5584952.msg67040416
+2026-08-22
+official
+You got pretty close with 97% of the recoloring, nice, though a much easier and precise normalization than grayscale-to-tone exists, if some overall observations are made.
+Source
+bitcointalk.org/index.php?topic=5584952.msg67070333
+2026-08-28
+official
+If you're referring to the extra LF, no, but I can't fix that for obvious reasons.
+Source
+bitcointalk.org/index.php?topic=5584952.msg67090189
+2026-08-28
+official
+Guys, stop sending DMs and LLM essays about the puzzle, everything required to solve is in the first post, and it's actually much easier to solve then I anticipated. I already gave too many hints as it is.
+Source
+bitcointalk.org/index.php?topic=5584952.msg67090189
+2026-09-05
+official
+meta-clue to either wake up or confuse even more your LLMs, as they seem to have crossed off-road... gvonys fhelucrM kbZ
+Source
+bitcointalk.org/index.php?topic=5584952.msg67116131
+2026-09-06
+official
+There's no "useless" information added into the puzzle. If all of you are thinking some LLM will magically deduct information that's visible in plain sight by anyone, you should understand that LLMs can only understand data they were trained about, and this puzzle is not one of those things.
+Source
+bitcointalk.org/index.php?topic=5584952.msg67117836
+2026-09-07
+official
+Only if you already know that the image was redrawn and requires to test the skin-tone to fix the image.
+Source
+bitcointalk.org/index.php?topic=5584952.msg67122008
+2026-09-15
+official
+The third one helps as well. But anyway, all the clues I've given were already in the puzzle, since the puzzle is already self-explaining itself. The smart approach can find the correct solution in 4 milliseconds.
+Source
+bitcointalk.org/index.php?topic=5584952.msg67146555
+2026-09-23
+official
+This is a hint.
+Source
+bitcointalk.org/index.php?topic=5584952.msg67170689
+2026-10-07
+official
+So what does everyone think about the cracking face emoji?
+Source
+bitcointalk.org/index.php?topic=5584952.msg67218400
+2026-06-20
+community
+Phyllotaxis ?
+Source
+bitcointalk.org/index.php?topic=5584952.msg66855641
+2026-07-29
+community
+The signature signs the complete OP text with no trailing newline. It recovers the funded SegWit address bc1qrpn28qa82uyjg37dvsz3w7wpm3kpdea957nm9p, currently holding 800,000 sats.
+Source
+bitcointalk.org/index.php?topic=5584952.msg66990855
+03
+ Full tool response
+04
+ Serialized record
+local record / balance from the explorer
+Edit this page
+or
+Report an issue
++
++
+previous
+Walking Banks
+AH White hid a real 24-word Bitcoin seed in the thriller Walking Banks. 800000 sats wait on two addresses. Four words are known and twenty are not.
+/collections/walking-banks
++
++
+next
+seed-phrase.com
+A website that dropped clues to a Bitcoin recovery phrase all summer of 2024 and then went quiet. The 0.01 BTC is still on the address
+/collections/seed-phrase
+On this page
+01
+What's in the first post
+02
+The prize showed up two weeks later
+03
+The cat ate a J
+04
+A signature that looks wrong on purpose
+05
+The hints since
+06
+What the Phy record carries
+The address comes from the signature
+The same hint, twice
+No technique yet
+07
+The Phy Challenge record
+On this page
+On this page
+What's in the first post
+The prize showed up two weeks later
+The cat ate a J
+A signature that looks wrong on purpose
+The hints since
+What the Phy record carries
+The address comes from the signature
+The same hint, twice
+No technique yet
+The Phy Challenge record
+Menu
+On this page
+ID
+@agntn/puzzles
+/
+v0.30.0
+MIT license
+ Public data about public puzzles. Balances come from the chains' explorers through the worker, cached for five minutes. Every key here was public before it landed in a record. 

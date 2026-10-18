@@ -532,3 +532,7 @@ The one puzzle in this collection, the way its page shows it.
 - Влияние на оценку: лид «читать chain4 40+ способами» закрыт; приоритет — «третья дверь», MD5-KDF + сырые
   пароли против 80-байтовых блобов, авторский инструмент. Приз без изменений.
 - Подробности: LOG.md (часть 6).
+
+## Обновление GitHub-интейка (2026-10-18, Qoder)
+- GitHub-интейк: **partial** (2026-10-18) — исчерпан --api-budget (14 запросов, remaining 36); собраны 4 репо (puzzlehunt, naddiseo, OCP-кэш, jackdevs66), 112 issues + 500 comments; остаток в `data/github/resume.json` репо: 4; путь дайдеста: `data/github/GITHUB_INTAKE.md`
+- Освежить (0 запросов при неизменном HEAD): `python tools/github_intake.py run gsmg-io-5btc-puzzle --agent <имя>`

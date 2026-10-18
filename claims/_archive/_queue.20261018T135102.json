@@ -1,0 +1,13 @@
+{
+  "slug": "_queue",
+  "agent": "Qoder",
+  "model": "",
+  "note": "github-intake rollout: отчёт + строка текущей задачи",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T10:48:55Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-18T12:50:53Z",
+  "heartbeat_utc": "2026-10-18T10:50:53Z",
+  "released_utc": "2026-10-18T10:51:02Z",
+  "released_by": "Qoder"
+}

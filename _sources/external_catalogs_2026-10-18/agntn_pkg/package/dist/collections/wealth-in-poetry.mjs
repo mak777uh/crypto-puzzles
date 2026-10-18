@@ -1,0 +1,44 @@
+import { assets, digest, fact, funding, increase, official, party, profile, technique } from "../_chunks/parts.mjs";
+import { puzzle } from "../_chunks/puzzle.mjs";
+import { SingletonCollection } from "../_chunks/collection.mjs";
+const ARTICLE = "https://medium.com/coinmonks/securing-bitcoin-seed-phrases-in-stories-d8eb43a02254";
+const CAPTURE = `https://web.archive.org/web/20190211203952/${ARTICLE}`;
+const RESPONSES = "https://web.archive.org/web/20200924153242/https://medium.com/@onesourgrape/responses";
+const PROFILE = "https://web.archive.org/web/20250902124612/https://medium.com/@Trithemius";
+const wealthInPoetryPuzzle = puzzle({
+	id: "wealth-in-poetry",
+	chain: "bitcoin",
+	address: "1K4ezpLybootYF23TM4a8Y4NyP7auysnRo",
+	sourceUrl: ARTICLE,
+	startedAt: "2019-02-11 15:34:04",
+	techniques: [technique("hidden-seed-words", ARTICLE)],
+	prize: .0312463,
+	hints: [official("The beauty of trithemian seeds is that they hide in plain sight. If you’ve read this far, you’ve read every word required to access a wallet with .03 BTC. Good luck!", ARTICLE)],
+	transactions: [funding("0a9ddd15961d507d77cd281c230151ea5980be24e4a22ceb38f3c78737f9f60c", "2019-02-10 14:47:11", .03050269), increase("b3c9d8cc52234419642edf6824b1d004e0873432cd4b9e127bf557cfc9990dcf", "2019-04-08 17:37:36", 74361e-8)],
+	assets: assets({
+		puzzle: "puzzle.txt",
+		sourceUrl: CAPTURE,
+		digests: [digest("puzzle.txt", "d9d7cb69d8316f200f8a40c0154fa5f0bcf37e9a51fcf3bbec558164b2740e34", 15938)]
+	})
+});
+var WealthInPoetryCollection = class WealthInPoetryCollection extends SingletonCollection {
+	static key = "wealth-in-poetry";
+	static author = party("Trithemius", {
+		key: "trithemius",
+		aliases: ["OneSourGrape", "Sharon & Philippe"],
+		about: "Medium account, first @onesourgrape, that published one essay on hiding seed phrases in stories in February 2019, with 0.03 BTC on a wallet hidden in its own text.",
+		profiles: [profile("medium", "https://medium.com/@Trithemius")],
+		facts: [
+			fact("Published Securing Wealth in Poetry in Coinmonks as OneSourGrape, handle @onesourgrape, an essay on trithemian seeds that ends with a .03 BTC wallet hidden in the essay itself.", ARTICLE, { date: "2019-02-11" }),
+			fact("Promised in the article to donate the contents of the wallet to GiveDirectly.org/refugees if nobody accessed it by the end of 2020.", ARTICLE, { date: "2019-02-11" }),
+			fact("Went by Sharon & Philippe in 2020, with the bio \"Designer, Miner, Grape.\", and the two replies to readers on the article show under that name.", RESPONSES),
+			fact("Renamed the account to Trithemius, handle @Trithemius, bio \"Designer, Miner\". Medium keeps the same user id, 89cc82722605, that published the essay as @onesourgrape.", PROFILE)
+		]
+	});
+	static puzzles = [wealthInPoetryPuzzle];
+	constructor() {
+		super(WealthInPoetryCollection.key, WealthInPoetryCollection.author, WealthInPoetryCollection.puzzles);
+	}
+};
+const wealthInPoetry = new WealthInPoetryCollection();
+export { WealthInPoetryCollection, wealthInPoetry, wealthInPoetryPuzzle };

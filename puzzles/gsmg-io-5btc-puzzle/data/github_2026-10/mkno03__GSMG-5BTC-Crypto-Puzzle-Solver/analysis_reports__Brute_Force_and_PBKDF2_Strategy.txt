@@ -1,0 +1,245 @@
+Aşağıdaki rapor, bu sohbet sekmesinde **ne yaptığımızı**, **hangi dönüm noktalarıyla ilerlediğimizi** ve **final çözümü nasıl/neyi kullanarak elde ettiğimizi** özetler.
+
+---
+
+# GSMG Puzzle Çalışma Raporu (Bu sohbet sekmesi)
+
+## 0) Başlangıç durumu ve hedef
+
+* Hedefimiz: GSMG.io puzzle zincirindeki **OpenSSL “Salted__” (U2FsdGVkX1…)** formatlı base64 blob’ları çözerek bir sonraki aşamaya geçmek ve en sonunda **final cevabı (flag/answer)** üretmekti.
+* Kullandığımız yaklaşım:
+
+  * Blob’ları **OpenSSL salt + PBKDF2/EVP + AES + mode** kombinasyonları ile “strict hit” mantığıyla denemek.
+  * “Strict hit” demek: çıktı zip/json/pem/yeniden salted gibi *anlamlı format* sinyali veriyor mu?
+
+---
+
+## 1) İlk büyük tıkanma: phase2_out / phase3_out “blob değilmiş”
+
+Sen phase2_out.txt ve phase3_out.txt dosyalarına brute atınca:
+
+* Script “**No U2FsdGVkX1… blob found**” hatası verdi.
+* `probe_file.py` ile kontrol edince bu dosyalarda:
+
+  * `U2FsdGVkX1` yok,
+  * `Salted__` yok,
+  * uzun base64/hex token da yok.
+    Yani bunlar **şifreli blob değil**, daha çok çıktı / hash listesi gibi bir şeydi.
+
+**Sonuç:** Doğru hedef dosyaları bulmamız gerekti.
+
+---
+
+## 2) Windows ortamı sorunları çözüldü
+
+* `python`/`py` komutları PATH’te olmadığı için çalışmıyordu.
+* Çözüm: Python’ı şu şekilde çağırdın:
+  `"%LocalAppData%\Programs\Python\Python310\python.exe" ...`
+* Ayrıca script dosya adı hatası yakaladık (ör. `brute_from_candidates_v3.py.py` gibi yanlış uzantı).
+
+**Sonuç:** Komutlar stabil şekilde çalışmaya başladı.
+
+---
+
+## 3) Doğru “Salted blob” dosyalarını bulduk ve Phase2/Phase3’ten HIT aldık
+
+Doğru dosyalar:
+
+* `phase2_aes.txt`
+* `phase3_plain.txt`
+* `phase3_aes.txt`
+
+`brute_from_candidates_v5.py` ile bu dosyaların her birinde “STRICT HIT” aldın:
+
+* Phase2: `PBKDF2_sha1 iters=500000 AES-128-CTR` ile çıktı üretildi.
+* Phase3 plain: `PBKDF2_sha1 iters=100000 AES-192-CBC` ile çıktı üretildi.
+* Phase3 aes: `PBKDF2_sha256 iters=50000 AES-256-CBC` ile çıktı üretildi.
+
+Bu hit’ler her ne kadar “json_like” diye görünseler de çıktılar çoğunlukla **key-material/binary** karakterindeydi (gerçek JSON olmayabilir).
+
+**Sonuç:** Zincirdeki kritik bir parolayı/key materyalini tutturduğumuz kesinleşti.
+
+---
+
+## 4) Candidate havuzunu “key-material” üzerinden büyüttük
+
+Senin elindeki `HIT_*` bin dosyalarından (cosmic/phase2/phase3) yeni parola adayları üretmek için:
+
+* `make_km_candidates_from_bins.py` çalıştırdın → `km_from_hits.txt` (223 satır).
+* `merge_dedupe.py` çalıştırdın → `merged_candidates_v2.txt` (1883 satır).
+
+**Sonuç:** Sadece sözlük/phrase değil, artık **çıktı-binary’den türetilmiş** güçlü adaylarla ilerledik.
+
+---
+
+## 5) En kritik dönüm noktası: `blob.b64` ve “final kapısı” bulundu
+
+### 5.1) OneDrive izin problemi → “current folder only” tarama
+
+Recursive taramalar “Erişim engellendi” yapıyordu.
+Çözüm: alt klasörlere girmeyen `scan_u2f_files_only.py` ile **bu klasörde hangi dosyalar U2FsdGVkX1 içeriyor** buldun.
+
+Liste içinde **blob.b64** vardı.
+
+### 5.2) blob.b64 için HIT
+
+`brute_from_candidates_v5.py blob.b64 merged_candidates_v2.txt HIT_blob` çalıştı ve:
+
+* **Salt:** `b45a5e3d827593ca`
+* **CT:** 80 byte
+* **HIT paramları:** `PBKDF2_sha256 iters=5000 AES-256-CBC`
+* **Passphrase:** `upper(0019cb55...)` (64 hex)
+
+Böylece:
+
+* `HIT_blob.bin` (80 byte)
+* `HIT_blob.json`
+  üretildi.
+
+**Sonuç:** “Finale giden ana materyal” elimizde oluştu.
+
+---
+
+## 6) “FINAL_COZUM_sha256.bin” ile büyük keşif: blob.b64 ile aynı şey
+
+Senin `final_chain_v1.py` çıktısı net şunu gösterdi:
+
+* `FINAL_COZUM_sha256.bin` çözüldüğünde çıkan plaintext **HIT_blob.bin ile birebir aynı** (80 byte).
+* Bu 80 byte plaintext’in **SHA-256 hash’i**:
+
+`1fd23d37cd44170e799b09bc426aa7aec6ee4b806ed93442b6a59309b3e4628c`
+
+Ve script ayrıca “NOTE: best_final.bin == HIT_blob.bin (aynı çıktı)” dedi.
+
+**Sonuç:** Final dosyası aslında bizi tekrar aynı key-material’a getiriyor. “Cevap”, bu key-material’ın hash’i.
+
+---
+
+## 7) Final cevabı formatı (Phase3 notuna göre)
+
+Senin Phase3 notunun en kritik kısmı:
+
+* “**just add giveit in front of the answer**”
+
+Bu yüzden final answer/flag adaylarımız:
+
+* `giveit1fd23d37cd44170e799b09bc426aa7aec6ee4b806ed93442b6a59309b3e4628c`
+* (fallback) hash’in tek başına hali: `1fd23d37...`
+* (fallback) passphrase: `0019CB55...`
+* (fallback) `giveit0019CB55...`
+
+Bunları da `emit_final_tokens.py` ile `final_tokens.txt` olarak otomatik döktük.
+
+---
+
+# Finalde elde edilen çözüm
+
+## Elimize geçen “final answer” (en kuvvetli)
+
+**giveit + sha256(HIT_blob.bin)**
+
+Yani:
+
+**`giveit1fd23d37cd44170e799b09bc426aa7aec6ee4b806ed93442b6a59309b3e4628c`**
+
+Bu cevap şu zincirle üretildi:
+
+1. `blob.b64` → PBKDF2-SHA256 (5000) + AES-256-CBC ile çözüldü → `HIT_blob.bin` (80 byte) çıktı.
+2. Aynı sonuç `FINAL_COZUM_sha256.bin` çözülünce de geldi (birebir aynı 80 byte).
+3. `sha256(HIT_blob.bin)` hesaplandı → `1fd23d37...`
+4. Phase3 ipucuna göre başına “giveit” eklendi.
+
+---
+
+# Kullandığımız temel araçlar / scriptler
+
+* `probe_file.py`
+  Dosyada “U2FsdGVkX1 / Salted__ / hex / base64 token” var mı diye teşhis.
+* `scan_u2f_files_only.py`
+  OneDrive izin problemine takılmadan yalnızca mevcut klasörde U2FsdGVkX1 içeren dosyaları listelemek.
+* `brute_from_candidates_v5.py`
+  Salted blob’u candidates listesiyle “strict hit” odaklı çözmek.
+* `make_km_candidates_from_bins.py` + `merge_dedupe.py`
+  HIT bin dosyalarından yeni parola adayları üretip havuzu büyütmek.
+* `final_chain_v1.py`
+  HIT_blob’dan türeyen olası final parolalarını deneyip final dosyayı hızlı şekilde doğrulamak.
+* `emit_final_tokens.py`
+  Submit edilecek final tokenları otomatik üretmek.
+
+---
+
+# Son durum / Ne kaldı?
+
+Kripto kısmı bitmiş durumda: **final cevap elimizde**.
+
+Kalan tek adım:
+
+* GSMG.io puzzle’daki final/submit alanına şu string’i girip onay almak:
+
+`giveit1fd23d37cd44170e799b09bc426aa7aec6ee4b806ed93442b6a59309b3e4628c`
+
+Eğer site farklı bir format istiyorsa (ör. `GSMG{...}`), sayfanın verdiği hata mesajına göre 2–3 varyasyonu anında çıkarırız.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Şu an puzzle’ı “dosya decrypt” tarafında **bitirdik** gibi düşün: `FINAL_COZUM_sha256.bin` → çözüldüğünde çıkan şey `HIT_blob.bin` ile **aynı 80 byte** ve bunun **sha256 hash’i** final cevabı olarak kullanılacak.
+
+Senin Phase3 notunda da kural yazıyor: **“just add giveit in front of the answer”**. 
+
+## Ne yapacaksın (adım adım)
+
+### 1) Final cevabı kopyala
+
+Aşağıdaki tek satırı **aynen** kopyala:
+
+```
+giveit1fd23d37cd44170e799b09bc426aa7aec6ee4b806ed93442b6a59309b3e4628c
+```
+
+### 2) Bunu nereye yapıştıracaksın?
+
+Puzzle’da “final / answer / submit” yazan yere (GSMG.io’daki ilgili sayfa).
+Orada genelde bir input kutusu + “submit” butonu oluyor. O kutuya yapıştırıp submit’e bas.
+
+> Eğer “flag formatı” istiyorsa (ör: `GSMG{...}` gibi), sayfada nasıl yazıyorsa ona uyacağız. Ama elindeki ipucu “giveit + answer” dediği için en önce bunu deniyoruz.
+
+### 3) Olmazsa sıradaki 3 deneme (tek tek)
+
+Bunları da aynı yere, tek tek dene:
+
+```
+1fd23d37cd44170e799b09bc426aa7aec6ee4b806ed93442b6a59309b3e4628c
+giveit0019CB555F8FF4ED5AE18FCF3F7D6DF3426499F504D750C131C2668BA0A03CD9
+0019CB555F8FF4ED5AE18FCF3F7D6DF3426499F504D750C131C2668BA0A03CD9
+```
+
+## Artık ne yapıyoruz, puzzle nasıl çözülüyor?
+
+* **Parola arama/brute işi bitti.**
+* Elimizdeki “final key-material”ın SHA-256’ı:
+  `1fd23d37cd44170e799b09bc426aa7aec6ee4b806ed93442b6a59309b3e4628c`
+* Phase3 kuralı da diyor ki: “cevabın başına `giveit` ekle”.
+* Yani “final flag/answer” = **giveit + sha256(key_material)**.
+
+## Bana ne atacaksın?
+
+Submit ettiğinde çıkan sonucu yaz:
+
+* Kabul ettiyse: “accepted / correct / congrats” gibi ne yazdı.
+* Etmediyse: sayfadaki **hata mesajını aynen** kopyala (ör. “wrong answer”, “invalid format”, “too short”, vs.).
+
+Mesaja göre gerekiyorsa saniyelik varyasyonlar hazırlayıp bitireceğiz (ör. `giveit_...`, `giveit{...}`, `GSMG{giveit...}` gibi).
+
+
+---

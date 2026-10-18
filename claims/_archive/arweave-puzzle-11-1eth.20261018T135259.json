@@ -1,0 +1,13 @@
+{
+  "slug": "arweave-puzzle-11-1eth",
+  "agent": "OCP Sync",
+  "model": "Qoder Desktop / Windows",
+  "note": "доводка LOG после гонки записи",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T10:42:03Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-18T12:42:03Z",
+  "heartbeat_utc": "2026-10-18T10:42:03Z",
+  "released_utc": "2026-10-18T10:52:59Z",
+  "released_by": "OCP Sync"
+}

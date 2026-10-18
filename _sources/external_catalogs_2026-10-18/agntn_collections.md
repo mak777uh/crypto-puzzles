@@ -1,0 +1,27 @@
+---
+title: "Collections"
+description: "Every collection in the registry and the chains it lives on. Each page says what the puzzle was and what the records carry. The list and every dossier are read off the library when the page builds."
+canonical_url: "https://puzzles.agntn.dev/collections"
+---
+# Collections
+
+> Every collection in the registry and the chains it lives on. Each page says what the puzzle was and what the records carry. The list and every dossier are read off the library when the page builds.
+
+Every collection answers the same calls: `get`, `require`, `all`, `solved`, `unsolved`, `withPubkey`, `count`, `verify`, `balance`. What changes is the puzzle itself. A search over a key range. A brainwallet passphrase. An image with a seed hashed into it. A script that pays for a hash collision. A thread explains those once and a dataset forgets them. So each page here writes them down next to the numbers.
+
+<collection-list>
+
+
+
+</collection-list>
+
+## What every page says
+
+- The dossier at the top is read off the collection in the build. The counts, prize sums and hints can't drift from the records.
+- The prose says what the puzzle asks, what's known about its keys, and how the records are written. One record is quoted the way it sits on disk.
+- Quirks get named. A status that needs explaining, a prize that shrank, a passphrase nobody has. The page says so instead of leaving it to the thread.
+
+
+## Sitemap
+
+See the full [sitemap](https://puzzles.agntn.dev/sitemap.md) for all pages.

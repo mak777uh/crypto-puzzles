@@ -1,0 +1,243 @@
+{
+  "slug": "gsmg-io-5btc-puzzle",
+  "agent": "Qoder",
+  "ts": "2026-10-18T10:31:37Z",
+  "date": "2026-10-18",
+  "status": "partial",
+  "note": "",
+  "api_calls": 14,
+  "free_transports": 4,
+  "remaining_seen": 36,
+  "reset_utc": "2026-10-18T10:33:40Z",
+  "files": 6,
+  "bytes": 13918,
+  "media": 0,
+  "repos": [
+    {
+      "repo": "puzzlehunt/gsmgio-5btc-puzzle",
+      "role": "community",
+      "branch": "master",
+      "head_sha": "fb92dd15487c6e2d275adb8c923698b7166c328e",
+      "counts": {
+        "issues": 112,
+        "comments": 500,
+        "releases": 0
+      },
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "repo": "naddiseo/gsmgio-5btc-puzzle",
+      "role": "maintainer",
+      "branch": "master",
+      "head_sha": "9e61693404ef74e8e681598116d371924f399ffa",
+      "counts": {
+        "issues": 17,
+        "comments": 0
+      },
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "repo": "floflo777/open-crypto-puzzles",
+      "role": "registry",
+      "branch": "main",
+      "head_sha": "19644e58e50721f8469680f2edcba1daa0697630",
+      "counts": {},
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "repo": "jackdevs66/gsmg5_cduality",
+      "role": "community",
+      "branch": "main",
+      "head_sha": "8f47839251a8b49e67a41ecb8d964fddd5e9270c",
+      "counts": {},
+      "files": 6,
+      "bytes": 13918
+    }
+  ],
+  "candidates": [
+    {
+      "repo": "puzzlehunt/gsmgio-5btc-puzzle",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 1103,
+      "legacy": "data/puzzlehunt/"
+    },
+    {
+      "repo": "naddiseo/gsmgio-5btc-puzzle",
+      "role": "maintainer",
+      "source": "ссылки досье",
+      "hits": 41,
+      "legacy": "naddiseo-fork/"
+    },
+    {
+      "repo": "floflo777/open-crypto-puzzles",
+      "role": "registry",
+      "source": "ссылки досье",
+      "hits": 14
+    },
+    {
+      "repo": "jackdevs66/gsmg5_cduality",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 6
+    },
+    {
+      "repo": "alexdepario/5-btc-puzzle-cosmic-duality",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 5
+    },
+    {
+      "repo": "hossein2002426/gsmgio-5btc-puzzle",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 5
+    },
+    {
+      "repo": "jwerle/libbeaufort",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 5
+    },
+    {
+      "repo": "hosterjackagv/gsmg-5btc-puzzle",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 3
+    },
+    {
+      "repo": "kaibuzz0/gsmg.io-solution",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 2
+    },
+    {
+      "repo": "corunethron/salph-cosmic-better-solution",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 1
+    },
+    {
+      "repo": "corunethron/salph-cosmic-extra-solution",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 1
+    },
+    {
+      "repo": "corunethron/salph-cosmic-final-solution",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 1
+    },
+    {
+      "repo": "corunethron/salph-cosmic-great-solution",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 1
+    },
+    {
+      "repo": "corunethron/salph-cosmic-super-solution",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 1
+    },
+    {
+      "repo": "corunethron/salph-cosmic-ultra-solution",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 1
+    },
+    {
+      "repo": "dinhoka/gsmgio-5btc-puzzle",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 1
+    },
+    {
+      "repo": "halbgott29a/gsmgio-5btc-puzzle",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 1
+    },
+    {
+      "repo": "jconorgrogan/lost-eth",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 1
+    },
+    {
+      "repo": "seed-safe/btc-balance",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 1
+    },
+    {
+      "repo": "silveranth/gsmgio-5btc-puzzle",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 1
+    },
+    {
+      "repo": "turjaun985123/gsmgiopuzzle",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 1
+    },
+    {
+      "repo": "abkr1/gsmgio-5btc-puzzle",
+      "role": "fork",
+      "source": "форки puzzlehunt/gsmgio-5btc-puzzle",
+      "hits": 0
+    },
+    {
+      "repo": "liam-dow/gsmgio-5btc-puzzle",
+      "role": "fork",
+      "source": "форки puzzlehunt/gsmgio-5btc-puzzle",
+      "hits": 0
+    },
+    {
+      "repo": "powerversed01/gsmgio-5btc-puzzle",
+      "role": "fork",
+      "source": "форки puzzlehunt/gsmgio-5btc-puzzle",
+      "hits": 0
+    },
+    {
+      "repo": "devjotaduo/gsmgio-5btc-puzzle",
+      "role": "fork",
+      "source": "форки puzzlehunt/gsmgio-5btc-puzzle",
+      "hits": 0
+    },
+    {
+      "repo": "udoka-am/gsmgio-5btc-puzzle",
+      "role": "fork",
+      "source": "форки puzzlehunt/gsmgio-5btc-puzzle",
+      "hits": 0
+    },
+    {
+      "repo": "bescllc/gsmgio-5btc-puzzle",
+      "role": "fork",
+      "source": "форки puzzlehunt/gsmgio-5btc-puzzle",
+      "hits": 0
+    }
+  ],
+  "errors": [
+    "не собрано (сверх --max-repos 4): alexdepario/5-btc-puzzle-cosmic-duality, hossein2002426/gsmgio-5btc-puzzle, jwerle/libbeaufort, hosterjackagv/gsmg-5btc-puzzle, kaibuzz0/gsmg.io-solution, corunethron/salph-cosmic-better-solution, corunethron/salph-cosmic-extra-solution, corunethron/salph-cosmic-final-solution, corunethron/salph-cosmic-great-solution, corunethron/salph-cosmic-super-solution, corunethron/salph-cosmic-ultra-solution, dinhoka/gsmgio-5btc-puzzle, halbgott29a/gsmgio-5btc-puzzle, jconorgrogan/lost-eth, seed-safe/btc-balance, silveranth/gsmgio-5btc-puzzle, turjaun985123/gsmgiopuzzle, abkr1/gsmgio-5btc-puzzle, liam-dow/gsmgio-5btc-puzzle, powerversed01/gsmgio-5btc-puzzle, devjotaduo/gsmgio-5btc-puzzle, udoka-am/gsmgio-5btc-puzzle, bescllc/gsmgio-5btc-puzzle",
+    "naddiseo/gsmgio-5btc-puzzle: comments: остановлено на стр.1: исчерпан --api-budget (14 запросов)",
+    "jackdevs66/gsmg5_cduality: не собрано: исчерпан --api-budget (14 запросов)"
+  ],
+  "stop_reason": "исчерпан --api-budget (14 запросов)",
+  "ocp": {
+    "slug": "gsmg-io-5btc-puzzle",
+    "tier": "big",
+    "folder": "1-big-prizes/gsmg-io-5btc-puzzle",
+    "handles": [
+      "telegram:@SoWut"
+    ],
+    "repo": "floflo777/open-crypto-puzzles",
+    "ocp_path": "_sources/ocp/1-big-prizes/gsmg-io-5btc-puzzle"
+  },
+  "digest": "data/github/GITHUB_INTAKE.md"
+}

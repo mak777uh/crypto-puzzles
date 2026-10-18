@@ -234,3 +234,392 @@
 - Мейнтейнер Naddiseo: загадка решаема («все части есть»); критерий — приватник к `1GSMG1JC9…` и/или `17ucy1K9…`. CADEIA/chain4, правки base64 (#108) и «Bifid→BTCSEED» (#112/#113) он считает LLM-фейками. Наш прежний вывод «chain4 = фантом» согласуется.
 - Следующий шаг (требует ОК Ильи): проверить формулы #111 против локального воспроизводимого артефакта Phase 3.2 (`gros`, 2432 B). Ось задана формулами — не слепой перебор.
 - Отчёт: `reports/2026-10-18_1055_BigPickle_gsmg-puzzlehunt-repo-extract.md`.
+
+## 2026-10-18 ~11:00 — Big Pickle — ГИПОТЕЗА+ОСЬ (пишется ДО прогона)
+
+- **Гипотеза (H-111):** приватный ключ приза `1GSMG1JC9wtdSwfwApgj2xcmJPAwx7prBe` (H160 `a9553269572a317e39f0f518cb87c1a0ee1dbae4`) извлекается из артефакта `gros` — расшифрованного Phase-3.2 блоба (`data/dualite_blob_2448B_salt_eefc4c5b_b64.txt`, salt `eefc4c5befc1656a`, ct 2432 B).
+- **Ось (сужена формулами issue #111, НЕ слепой перебор):**
+  1. воспроизвести `gros` двумя известными из #111 паролями: `sha256("jacquefrescogiveitjustonesecondheisenbergsuncertaintyprinciple")` (EVP-SHA256) и тройным sha256 от `theseedisplanted` (EVP-MD5/SHA256) → цель: plaintext 2422/2432 B, начинающийся речью Архитектора;
+  2. прямая проверка: privkey=16B `FH` и privkey=32B `FH||X` (X из `gros`) → pubkey (compressed+uncompressed) → hash160 == цель `a9553...` / `4bc468447fe1b048ad030a2f9a125478eabc4ed6` (17ucy);
+  3. `FH = gros[0::4][:16] XOR gros[1145:1161]`, `BetterHalf = Reduction(SOURCE_4) XOR gros[1161:1177]`, и набор трактовок `Reduction` (в т.ч. «one for one, four for one»/1141/EBCDIC, XOR-треугольник #88), а также 32-байтные блоки `gros[i:i+32]` и их XOR/срезы по формуле #111.
+- **Бюджет:** <=15 мин CPU. Стоп-критерий: hash160(pubkey)==цель.
+- **Ожидание:** скорее всего негатив, но формула задаёт ровно одну ось -> допустимо.
+
+
+### РЕЗУЛЬТАТ прогона H-111 (2026-10-18, Big Pickle)
+
+- **`gros` воспроизведён точно.** Блоб Phase 3.2 (2448 B = Salted__+salt `eefc4c5befc1656a`+2432 B ct) из README сообщества; AES-256-CBC, EVP_BytesToKey SHA-256 (`D_i=H(D_{i-1}‖pw‖salt)` — без соли не работает), пароль `sha256("jacquefresco...uncertaintyprinciple")` -> **2422 B**, sha256 `b82afeb86f9e50848220f9b64b744b821400308aea273a1c949b9d2d0e408a34`.
+  - Структура: Архитектор-речь 0..447; **Beaufort-блок 447..1986 (1539 B, 26 симв.)**; CRLF; 149 цифр 1990..2143; подсказка 2143..2292; внутренний blob 2292..2422 (48 B, salt `b45a5e3d827593ca`).
+  - Байт->буква разметка Beaufort-блока восстановлена (26 байт<->26 букв, конфликтов 0) и **совпала с буквенной транскрипцией README** -> наш gros = gros сообщества.
+- **НОВОЕ (стратегически важно): публичный ключ приза ОПУБЛИКОВАН.** `04f4d1bb...bf33559` (uncompressed, на кривой) -> hash160 `a9553269572a317e39f0f518cb87c1a0ee1dbae4` = **в точности адрес приза `1GSMG1JC9…`**. Значит любого кандидата ключа можно проверять мгновенно офчейн (pubkey == PUB), без блокчейна. Использовать во всех будущих прогонах.
+- **Ось закрыта (негатив): константы #111 не воспроизводятся.**
+  - Наш `FH = gros[0::4][:16] XOR gros[1145:1161]` = `801e5053aeb04a50a953e92c3501a330`; #111 заявляет `8048c428a6faf6d3df77db13ca68766d` — мимо.
+  - Наш `gros[1161:1177]` = `c0d12ff6cc5fcac05f5f3ec960c2c5c8`; #111 заявляет `3be6ecf1d5c126e50f25ded3bc8fb6d9` — мимо.
+  - Исчерпывающий XOR-поиск по 7 буферам (plain 2422 / ct 2432 / full 2448 / letters 1539 / speech+letters+tail / speech 447 / inner blob 48) x stride 1..8 x все смещения: **0 совпадений** с FH #111.
+  - Вывод: `gros` в #111 — **неопубликованный 2432-байтный артефакт**; его «FH verified against H160» из публичных данных **непроверяемо** -> трактуем как неподтверждённое. Ось «ключ из gros по #111» исчерпана.
+- Свип: 204 кандидата (FH и его варианты, XOR-свёртки SOURCE_4 48 B во всех stride/окнах x `gros[1161:1177]`) против публичного ключа приза -> **0 хитов**.
+- Остаётся только публичная информация, не вычисление: корпус сообщений создателя («Jrk Bgrt», Telegram «GSMG Puzzle Solvers», issue #114 — полный экспорт ~57 729 сообщений). Без подсказки создателя последний шаг не выводится из уже опубликованного.
+- Артефакты: `data/gros_phase32_2422.bin`, `data/phase32_inner_blob.b64`, `tools/gsmg_phase32_gros_repro_2026-10-18.py`. Отчёт: `reports/2026-10-18_1110_BigPickle_gsmg-111-falsification.md`.
+- **Бронь: снята по завершении.**
+
+
+### 2026-10-18 2026-10-18 11:37 — Big Pickle — ЖИВОЙ САЙТ gsmg.io НАЙДЕН (корректировка прежней пометки)
+
+- Проверено: `https://gsmg.io` **ЖИВ** (в прежних отчётах ошибочно стоял «припаркован/404»). Отдаёт
+  оригинальные страницы пазла напрямую, без Wayback.
+- Живая главная: новая «shutdown»-анимация, `2017 — 2026`, «The lights are off. / Nine years of chaos
+  ended. One mystery remains.» и ссылка «Follow the white rabbit →» на `/puzzle`. В финале — жёстко
+  зашитая сетка 14x14 из 0/1 и надпись `SYSTEM FAILURE`; алфавит «matrix rain» =
+  `0101…01GSMG.IO5BTCPUZZLECHALLENGE`. Задержки в коде 2442 / 1441 / 13950 / 4100 мс.
+- `/puzzle` = **та же** `puzzle.png` (sha256 `38125bbd…2a1830`), что у нас из Wayback → новых картинок нет.
+- `/theseedisplanted`: 8 плиток-ребусов + СКРЫТАЯ форма `POST /phase1verification`. Плитки (прочитаны
+  зрением): [банк]+`war`, `CA`, `dig i`+`+`, [замок]+`lO`, `crypto`/`gic`, `n you`, [открытый замок]+`n ing`,
+  `t`+`-`. Ребус = песня Logic «The Warning» (`war`+`ning`, `lo`+`gic`). Форма **мертва** (404 `Hello :-)`).
+- `/choiceisanillusion…iwroteitmyself`: полный **PHASE 2 + PHASE 3** текст; блобы: phase2 672 B salt
+  `06286612d43ed7ed`, phase3 4112 B salt `9fbc451d13d071f4` — **совпал с нашим**
+  `data/phase23_page_blob_4112B_salt_9fbc451d_b64.txt` ✔. Подтверждены дословно: Нортон-абзац, «5binary code»,
+  Bitcoin-whitepaper «raw data after 4 on row 1616», FEN `B5KR/1r5B/6R1/2b1p1p1/2P1k1P1/1p2P2p/1P2P2P/3N1N2 w - - 0 1`,
+  «parts 1..7 -> sha-256 -> password to enter Phase 3».
+- `/89727c598b9cd1cf8873f27cb7057f050645ddb6a7a157a110239ac0152f6a32`: **SalPhaseIon + Cosmic Duality**;
+  внутри вшиты `h a b e`, «f o u r f i r s t h i n t i s y o u r l a s t c o m m a n d»,
+  base64 `U2FsdGVkX186tYU0…`, фрагмент `QvX0t8v3jPB4okpspxebRi6sE1BMl5HI8Rku+KejUqTvdWOX6nQjSpepXwGuN/jJ`
+  (= «SOURCE_4» из issue #111!), `s h a b e f a n s t o o`; Cosmic-блоб 1344 B salt `2d3f6fe06dc950e6`.
+- 404 (тело `Hello :-)`): `/phase1verification`, `/phase2`, `/phase3`, `/TheArchitectChoice`, `/final_stage`,
+  `/puzzlesupposethisone`, `/youarewrongaboutdirhunt`, `/youmeandself`, `/youmeiandself`, `/salphaseion`,
+  `/4f7a1e4e…`, `/sitemap.xml` и ~28 прочих вариантов.
+- **Артефакт `phase3.2` (`dualite_blob_2448B_salt_eefc4c5b`) на живом сайте ОТСУТСТВУЕТ** — это добыча
+  сообщества из глубины phase-3; источник всё ещё неизвестен.
+- Скачано: `data/live2026/` (3 HTML + 11 PNG), карта — `data/live2026/LIVE_SITE_MAP_2026-10-18.md`.
+- **Вывод:** пазл открыт (сайт переписан под «смерть» компании, но «One mystery remains»); первоисточник
+  теперь доступен → сверки делаем по живым байтам. Все три известных блоба подтверждены.
+
+### 2026-10-18 — Big Pickle — Telegram-корпус + декод road-map создателя; гипотеза H-SP1
+
+- Пользователь передал ранее недоступные источники: **полный экспорт Telegram-группы «GSMG Puzzle Solvers»**
+  (65 654 сообщения, 2019-04-20..2026-10-18, 628 отправителей), **тред bitcointalk**, **README сообщества**
+  (новый, полный: содержит решения phase 3.2.1 Beaufort и phase 3.2.2 Vic + секцию SalPhaseIon).
+  Корпус проиндексирован: `data/telegram/full_corpus.txt` (59 967 непустых сообщений), сообщения создателя —
+  `data/telegram/creator_JrkBgrt_compact.txt` (476 шт.), выжимка состояния искусства —
+  `data/telegram/STATE_OF_ART_2026.md`.
+- **Расшифрован бинарный дамп создателя (Telegram msg id 8446, 2023-02-24, 1448 симв. 0/1).**
+  Метод: **побитовый реверс каждого байта + реверс порядка байт**. Результат (`jrk_reveal.txt`):
+  `yellow blue primes matrixsumlist lastwordsbeforearchichoice yinyang we wont give away the password
+  its in front of your eyes but you're not seeing it very last step is a true give away promised`.
+  Это официальный road-map финальной фазы. Скрипт: `tools/gsmg_jrk_reveal_decode_2026-10-18.py`.
+- **Состояние искусства сообщества (2026-08..10)**: единственный аутентифицированный объект — `btcseed`
+  payload (Bifid-плейнтекст SEG-1, 570 симв., sha256 `15d62c82…dd8d0507`), сведённый к 96 состояниям
+  (4 control × 24 carrier, одинокий `z` на поз. 98). `chain4` (1151 B) и `cosmic` (1327 B, `4f7a1e4e…`) —
+  фантомы/паддинг-хиты. **Стена = interpretive-правило-потребитель для btcseed-96**, а не вычисление.
+- **Гипотеза H-SP1**: 96-байтовый AES-блоб SalPhaseIon (`U2FsdGVkX186tYU0hVJBXX…`, salt `3ab585348552415d`)
+  = AES-256-CBC-шифр приватного ключа приза; пароль — токен, буквально присутствующий на самой странице
+  SalPhaseIon (`thispassword`, `lastwordsbeforearchichoice`, `matrixsumlist`, `enter`, `shabef`, `thepassword`,
+  `four first hint is your last command`), т.е. «password is in front of your eyes».
+- **Ось прогона (≤15 мин)**: пул кандидатов-паролей (токены страницы + перестановки-конкатенации + sha256-хекс
+  + известные пароли предыдущих стадий) × KDF {md5, sha256} × {стандартный EVP-IV, явный IV
+  `14f23fd58189ad7ee1d794ad8cc16d7d` из раннего JSON-артефакта} → расшифровать → проверить, что результат =
+  32-байт ключ / WIF / 64-hex → hash160(pubkey) == `a9553269572a317e39f0f518cb87c1a0ee1dbae4`.
+  Тот же пул — для внутреннего 3.2-блоба (salt `b45a5e3d827593ca`).
+- **Оракул**: опубликованный uncompressed pubkey `04f4d1bb…33559` — мгновенная offline-проверка (не сеть).
+- Результат прогона — ниже.
+
+- **Результат H-SP1 (прогон 2026-10-18, ≤15 мин): НОЛЬ.** 159 паролей-кандидатов × KDF {md5,sha256} ×
+  {EVP-IV, явный IV `14f23fd58189ad7ee1d794ad8cc16d7d`} = **1 272 расшифровки** по двум блобам
+  (SP salt `3ab585348552415d`, INNER32 salt `b45a5e3d827593ca`) -> ни один плейнтекст не даёт 32-байт ключ /
+  WIF (51–52) / 64-hex, hash160(pubkey) которого == `a9553269…d bae4`. Оракул верифицирован: hash160 от
+  опубликованного uncompressed-pubkey даёт ровно `a9553269572a317e39f0f518cb87c1a0ee1dbae4`; положительные
+  контроли (raw-32 и compressed WIF) срабатывают. Скрипт: `tools/gsmg_sp1_password_probe_2026-10-18.py`.
+- **Скачан и проверен Decentraland (estate 955, парцеллы `-41,-16`/`-41,-17`)** — закрыта позиция из
+  «STILL MISSING» сообщества. Файлы сцены: `bin/game.js` (QmcoAs6k…), `scene.json` (QmdESuCgu…),
+  `sounds/puzzlepiece.mp3` (QmeRy5Mjm…). Кастомный код сцены = 84 строки: 10 кубов + `TextShape("GSMG.IO
+  \n5 BTC PUZZLE CHALLENGE")` (синий, fontSize 5, поз. (5,5,10)) + клик играет mp3. **Скрытых в сцене
+  подсказок нет**; единственный информационный слой = аудио -> `HASHTHETEXT` (уже известно).
+  Артефакты: `data/decentraland_2026-10-18/`.
+- **`beta.gsmg.io` не резолвится** (DNS fail; в 2025 был жив, `version.json` упоминался). Значит «3 private
+  share links on the beta host + 2 JS bundles» из списка сообщества сейчас недостижимы напрямую.
+- **README сообщества** (`Downloads/README.md`, 28 936 B, sha256 `442270a1…`) **побайтово идентичен** нашей копии
+  `data/puzzlehunt/README.md` — нового содержания в нём нет (diff пустой,
+  `data/README_diff_vs_repo_copy_2026-10-18.txt`).
+- **Граница:** новых путей к приватному ключу прогон не даёт. Стена ровно та, что называет сообщество:
+  interpretive-правило «потребителя» для `btcseed`-объекта (96 состояний) + пароль к SP-блобу.
+
+### 2026-10-18 — Big Pickle — пакет DeepWiki-страниц: проверка на новизну (отрицательно)
+
+- Пользователь передал 12 markdown-страниц `deepwiki.com` по репозиторию `puzzlehunt/gsmgio-5btc-puzzle`
+  (снимок README на коммит `fb92dd15`, published 2025-08-25).
+- Машинная проверка: новых 40–64-hex строк нет (кроме известной `1a57c572…`), нет солей `3ab58534`/`b45a5e3d`,
+  нет `4f7a1e4e…`/`cd3fea3d…`, нет WIF/мнемоник. Все base64-токены = знакомые строки README.
+- **Вывод: производный дубликат нашего `data/puzzlehunt/README.md` (sha256 `442270a1…`)**; новой информации нет.
+  Заметка: `data/deepwiki_2025-08-25_DUPLICATE_note.md`. Повторно не разбирать.
+
+
+### 2026-10-18 — Big Pickle — GitHub + открытая сеть: развед-проход (новый state-of-art 09–10/2026)
+
+- По прямому заданию пользователя прогнал прямой поиск: GitHub API (repo/issue), raw.githubusercontent,
+  публичный индексатор кода grep.app, webfetch. Найдены и выкачаны живые репозитории/зеркала 2026 г.;
+  всё сохранено в `data/github_2026-10/` (индекс: `data/github_2026-10/INDEX.md`).
+- Главные источники: `floflo777/open-crypto-puzzles` (206★, push 2026-10-17) — самый строгий ledger;
+  `HosterjackAGV/gsmg-5btc-puzzle` (компендиум, 2026-09-22); `turjaun985123/gsmgiopuzzle` (форк форензик-
+  проекта, открытия до #77, 2026-10-14); плюс зеркало `gsmg-archive.org`, досье `puzzles.agntn.dev`,
+  `privatekeys.pw`. Все прочие найденные репозитории — либо дубли, либо ИИ-слоп.
+- Подтверждено независимо: **cosmic/`4f7a1e4e…` и «Half/Better half» — padding-случайность**
+  (floflo §11–14: 93/20000 случайных ключей дают валидный паддинг, 92 из них однобайтовый; plaintext
+  равномерный). Наш вывод #111 сохраняется.
+- НОВОЕ для нас (см. INDEX): реальный приз ~1.2563 BTC; SalPhaseIon-страница берётся SHA-256 текста первой
+  страницы (не через Decentraland); на ней ДВА блоба (малый `3ab585348552415d` + Cosmic Duality);
+  **второй 80-байтовый замок** — phase 3.2.2 (`b45a5e3d827593ca`); оракул «третья дверь»
+  (`1NULY7DhzuNvSDtPkFzNo6oRTZQWBqXNE9`, 9 посаженных адресов, 8 с известным прообразом);
+  объект-256 (нечётный поток Bifid 285 → минус I/O = 256/23-букв.) и **29 выброшенных I/O-букв, никогда
+  не прочитанных как сообщение**; подтверждённый факт, что автор использовал ОДИН публичный шифр-инструмент
+  (Bifid без параметра периода, короткое меню) — это новая инсайт-ось.
+- Публичного решения/ключа-лика **нет**; репозиторий puzzlehunt заброшен (#105), свежие «SOLVED»-claims
+  (#69/#79/#91/#108/#115/#116) опровергнуты контрибьютором Naddiseo.
+- Прогонов не делалось (разведка/чтение). Следующая возможная ось — lead #4 (инструмент автора) и
+  чтение 29 выброшенных I/O-букв; любой прогон — только после гипотезы в LOG и в пределах ≤15 мин.
+
+
+### 2026-10-18 — Big Pickle — 4-й блоб (urlblob) + инструмент автора (лид floflo #4)
+
+- Режим: разведка/анализ; bounded-прогон ≤15 мин по одной оси; без брутфорса, без трат.
+- **4-й OpenSSL-блоб восстановлен из hex-URL в Wayback CDX** (снимок 2026-01-05):
+  `data/urlblob_4th_salt_74c974e3.bin` (112 B = `Salted__` + salt `74c974e3f92e64b5` + 96 B ct).
+  0 общих блоков с cosmic/salph_inner/inner-3.2/p32 → независимый контейнер; в репо HosterjackAGV артефакта нет.
+  Полный CDX домена (626 строк): `data/wayback_cdx_gsmg_2026-10-18.txt`. Описание: `data/urlblob_4th_blob_2026-10-18.md`.
+- **Bounded-прогон по urlblob** (ось: «пароль — уже имеющийся объект»): 366 тестов
+  (ответы этапов + объекты SalPhaseIon/256/ODD/EVEN-BCDE/DROPPED29 + base64-пути + 24 перестановки 4 солей;
+  raw/sha256; kdf sha256/md5) → **0 читаемых** (1 случайная коллизия паддинга CAUSALITY/md5).
+  Инструмент: `tools/gsmg_urlblob_probe_2026-10-18.py` (разбор блоба: `tools/gsmg_4th_blob_and_yinyang_2026-10-18.py`).
+- **Идентификация инструмента автора (лид floflo #4):** Tools-список gsmg-archive.org включает редкий
+  `scwf.dima.ninja` = самохостный форк набора Rumkin (Tyler Akins, `rumkin.com/tools/cipher/`).
+  Первоисточник Bifid — **без параметра периода** (период = полная длина) = конвенция Bifid-шага пазла;
+  меню покрывает Beaufort/EBCDIC/a1z26/Skip/Rotate/… → `data/tool_identification_2026-10-18.md`.
+- Разобраны CDX-аномалии: `/iXJ8WYuc0c+Ic/J8twV/BQZF3banoVehECOawBUvajI=` = base64 от hex-slug SalPhaseIon
+  (solver-артефакт); `/k27RwIKb…` = 128 B энтропии без Salted__; `beta.gsmg.io/puzzle` = пустой SPA-shell.
+- Сверка с нашей историей: ось {B,C,D,E}-поток / BIP39-мнемоника уже закрыта (LOG ст. 162/178) — не дублировали.
+- Фронтир без изменений (2 лока + cosmic + 256-объект + третья дверь + urlblob). Рекомендованная ось:
+  прогнать меню Rumkin против 256-объекта и «Dualite»-блоба.
+- Отчёт: `reports/2026-10-18_1250_BigPickle_gsmg-4th-blob-and-tool.md`.
+
+
+### 2026-10-18 — Big Pickle — ГИПОТЕЗА И ОСЬ ПРОГОНА (фиксируется ДО запуска)
+
+- **Инсайт:** автор собирал все фазы ОДНИМ публичным инструментом (лид floflo #4). Идентифицирован кандидат —
+  набор «Ciphers and Codes» Rumkin (Tyler Akins), зеркало `scwf.dima.ninja`; его Bifid **без параметра периода**
+  (период = длина) = конвенция Bifid-шага пазла.
+- **Ось:** применить шифры ЭТОГО меню с дефолтными/нейтральными конвенциями к имеющимся объектам
+  (BIFID570, ODD/tsed-285, KEPT256/256-объект, DROPPED29, EVEN-BCDE-285, dbbi-91, faed-570),
+  и каждый результат (raw и sha256-hex) проверить как пароль четырёх AES-блобов
+  (Cosmic `2d3f6fe0…`, salph_inner `3ab58534…`, inner-3.2 `b45a5e3d…`, urlblob `74c974e3…`)
+  при EVP_BytesToKey {sha256, md5}; принимать только читаемый plaintext (printable ≥0.85 или ключевые слова).
+- **Меню (трансформации):** identity/reverse/upper/lower, Atbash, Caesar N=1..25, Affine (a,b),
+  Bifid decode/encode (unkeyed + keyed {DBIFHCEG, 4 ингредиента}), Columnar (keylen 2..8),
+  Railfence (rails 2..8), Rotate (width 2..32 × 1..3), Skip (N=2..64, offset), XOR (ингредиенты/соли),
+  Letter-Numbers (a1z26), Base64/32/58/36/16 decode.
+- **Границы:** один прогон, ≤15 мин, CPU-only. Ожидаемый уровень шума — только случайные коллизии паддинга,
+  которые отсекаются фильтром читаемости. Инструмент: `tools/gsmg_rumkin_menu_probe_2026-10-18.py`.
+
+### 2026-10-18 13:03 MSK — Big Pickle — РЕЗУЛЬТАТ прогона (меню Rumkin + esrever)
+
+Ось: меню идентифицированного инструмента автора (`scwf.dima.ninja` = движок rumkin, форк DaWouw;
+Bifid без периода — подтверждено ВЖИВУЮ вебфетчем 2026-10-18) против открытых объектов.
+
+- **pass 1** `tools/gsmg_rumkin_menu_probe_2026-10-18.py`:
+  atbash, Caesar 1–25, Affine(12×26), letter-numbers, Bifid(unkeyed+{DBIFHCEG,4 ингредиента}),
+  railfence 2–8, rotate 2–32×1–3, skip 2–48+offset, XOR, b64/32/16 → 13 176 выходов,
+  210 816 тестов AES, 814 валидных паддинга (≈случайное 823), **0 читаемых**.
+- **pass 2** `tools/gsmg_rumkin_menu_probe2_2026-10-18.py`:
+  EBCDIC(cp037), Baudot/ITA2, Baconian, Morse, Playfair, Columnar(10 ключей), Vigenere/Gronsfeld(9),
+  Substitution(qwerty↔dvorak/colemak,1337), Base36/58/85 + прямой key-check (secp256k1→hash160 приза)
+  → 374 выхода, 5 984 теста AES, 26 валидных паддинга, **0 читаемых, 0 key-hit**.
+  (Исправлен баг pass-1: `bifid_enc` был идентичен decode.)
+- **pass 3 (лид #5 «esrever»)** `tools/gsmg_esrever_probe_2026-10-18.py`:
+  reverse, byte-reverse, per-byte bit-reverse, transpose w∈{5,14,19,26,29,32}, reverse+atbash
+  → 70 выходов, 1 120 тестов AES, **0 читаемых, 0 key-hit**.
+
+Цель во всех прогонах: пароль 4 блобов (Cosmic `2d3f6fe0…`, salph_inner `3ab58534…`,
+inner-3.2 `b45a5e3d…`, urlblob `74c974e3…`), форма raw + sha256-hex, EVP {sha256,md5}.
+Контроль: `BIFID570` начинается с `BTCSEED` (объект верный). Валидные паддинги = ровно шанс.
+
+**Вывод:** меню Rumkin при нейтральных конвенциях — отрицательно как самостоятельная ось.
+Единственный YINYANG-hit — случайная подстрока `YANG` в Vigenère-выходе. Остаются смысловые лиды
+(road-map ингредиенты, floflo #7 «тот ли объект», floflo #3 «баг фильтра»). Отчёт:
+`reports/2026-10-18_1303_BigPickle_gsmg-rumkin-menu.md`. Бронь снята.
+
+### 2026-10-18 — Big Pickle — ГИПОТЕЗА И ОСЬ ПРОГОНА №2 (фиксируется ДО запуска)
+
+- **Инсайт (структурный).** Road-map `yellowblueprimes · matrixsumlist · lastwordsbeforearchichoice · yinyang`,
+  похоже, перечисляет **операции**, а имена = размеры. Длины: `matrixsumlist`=13, `yinyang`=7,
+  `lastwordsbeforearchichoice`=26, `thispassword`=12. И ровно:
+  **dbbi = 91 = 13 × 7** (= `matrixsumlist` × `yinyang`); **faed = 570 = 38 × 15**,
+  где 38 = 26 + 12 (`lastwordsbeforearchichoice` + `thispassword`).
+- **Гипотеза H-MSL.** `matrixsumlist` = буквально «список сумм матрицы»: оцифровать dbbi (a→1..i→9),
+  сложить в матрицу по именованным размерам, взять **суммы строк** (список = имя шага);
+  `yinyang` = **двойственное** чтение (суммы столбцов) — инь/ян.
+- **Ось прогона.** dbbi (13×7, 7×13) и faed (38×15, 15×38) + опционально D+F/ta0-блок:
+  суммы строк/столбцов → канонические рендеры (mod26→A–Z (v−1 и v), mod10/mod9→digits→bigint→hex→ASCII,
+  значения mod 256 как байты, конкатенация-десятичная→bigint→hex→ASCII) → **объективный скоринг**
+  (printable-доля + словарь частых англ. слов + поиск маркеров SENDTHE/TOSETHEX/BLUENET/BTCSEED/YINYANG);
+  затем комбинации списков dbbi⊕faed (XOR/± mod26) и проверка каждого letter-выхода как пароля 4 блобов
+  (raw + sha256-hex).
+- **Границы.** Один прогон, ≤15 мин, CPU-only, **без подгонки** под «SENDTHE». Инструмент:
+  `tools/gsmg_matrixsumlist_2026-10-18.py`.
+
+### 2026-10-18 13:13 MSK — Big Pickle — РЕЗУЛЬТАТ прогона №2 (road-map: `matrixsumlist`/`yinyang`)
+
+- **Новая структурная находка.** Road-map токены = РАЗМЕРЫ: `matrixsumlist`=13, `yinyang`=7, и dbbi=91=13×7;
+  `lastwordsbeforearchichoice`(26)+`thispassword`(12)=38, blue(=15) → faed=570=38×15. Т.е.
+  dbbi = matrixsumlist × yinyang, faed = (26+12) × blue. Подробно (с сырыми суммами):
+  `data/matrixsumlist_namesizes_2026-10-18.md`.
+- **Прогон p4** `tools/gsmg_matrixsumlist_2026-10-18.py` (суммы строк/столбцов по именованным формам
+  13×7/7×13/38×15/15×38 + комбинации dbbi⊕faed; рендеры mod26/mod9/mod10/bytes/catdec→bigint→hex→ascii;
+  пароль 4 блобов raw+sha256hex): **180 кандидатов, 2 880 тестов AES, 0 читаемых, 0 словарных, 0 маркеров.**
+- **Прогон p5** `tools/gsmg_matrixsumlist_p5_2026-10-18.py`: (A) рендеры сумм фикс. ширины (2/3 цифры
+  с ведущими нулями) → bigint → hex → ASCII; (B) суммы как позиции zero-out/вставки '0' в dbbi/faed/D+F
+  → house-декод: **216 кандидатов, 3 456 тестов, 0 читаемых, 0 маркеров.**
+- **Следствие:** community-«SENDTHE / TOSETHEX / BLUENET» (TG 2026-05-22) при канонических рендерах НЕ
+  воспроизводится → сильная подозрительность на подгонку. Совпадает с известным негативом KB
+  («matrixsumlist-матрицы, 1316 кандидатов → шум»).
+- **Вывод:** форма (имена=13/7/38/15) точна арифметически, но прямой рендер сумм в текст/ключ (и позиции
+  зануления) — отрицательно. Суммы сохранены в `data/matrixsumlist_namesizes_2026-10-18.md`. Отчёт:
+  `reports/2026-10-18_1313_BigPickle_gsmg-matrixsumlist.md`. Бронь снята.
+
+## 2026-10-18, 13:18 — Qoder (github_intake) — GITHUB INTAKE (шлюз)
+- Делал: python tools/github_intake.py run gsmg-io-5btc-puzzle --agent Qoder
+- Кандидаты: puzzlehunt/gsmgio-5btc-puzzle (community, ссылки досье), naddiseo/gsmgio-5btc-puzzle (maintainer, ссылки досье), floflo777/open-crypto-puzzles (registry, ссылки досье), jackdevs66/gsmg5_cduality (community, ссылки досье), alexdepario/5-btc-puzzle-cosmic-duality (community, ссылки досье), hossein2002426/gsmgio-5btc-puzzle (community, ссылки досье), jwerle/libbeaufort (community, ссылки досье), bitcoin/bitcoin (community, ссылки досье), hosterjackagv/gsmg-5btc-puzzle (community, ссылки досье), kaibuzz0/gsmg.io-solution (community, ссылки досье), corunethron/salph-cosmic-better-solution (community, ссылки досье), corunethron/salph-cosmic-extra-solution (community, ссылки досье), corunethron/sal
+- Скачано: репо=0 (файлов 0, 0 Б; медиа 0), issues=0, comments=0, PR=0, releases=0, gists=0, wiki=нет
+- Бюджет: api.github.com запросов = 0 (remaining 45, reset 2026-10-18T10:40:53Z); бесплатных транспортов (codeload/ls-remote/git) = 0
+- Негативы: репо владельца puzzlehunt: пропущено (исчерпан --api-budget (0 запросов)); форки puzzlehunt/gsmgio-5btc-puzzle: пропущено (исчерпан --api-budget (0 запросов)); не собрано (сверх --max-repos 4): alexdepario/5-btc-puzzle-cosmic-duality, hossein2002426/gsmgio-5btc-puzzle, jwerle/libbeaufort, bitcoin/bitcoin, hosterjackagv/gsmg-5btc-puzzle, kaibuzz0/gsmg.io-solution, corunethron/salph-cosmic-better-solution, corunethron/salph-cosmic-extra-solution, corunethron/salph-cosmic-final-solution, corunethron/salph-cosmic-great-solution, corunethron/salph-cosmic-super-solution, corunethron/salph-cosmic-ultra-solution, dinhoka/gsmgio-5btc-puzzle, halbgott29a/gsmgio-5btc-puzzle, jconorgrogan/lost-eth, juli
+- Артефакты: data/github/GITHUB_INTAKE.md, data/github/INTAKE_RESULT.json, data/github/_legacy_pointers.md, data/github/<owner>__<repo>/{files,raw,REPO_META.json}
+- Статус шлюза: partial (исчерпан --api-budget (0 запросов)); остаток в data/github/resume.json
+- Ссылки/доказательства: нет репозиториев
+
+
+## 2026-10-18, 13:23 — Qoder (github_intake) — GITHUB INTAKE (шлюз)
+- Делал: python tools/github_intake.py run gsmg-io-5btc-puzzle --agent Qoder
+- Кандидаты: puzzlehunt/gsmgio-5btc-puzzle (community, ссылки досье), naddiseo/gsmgio-5btc-puzzle (maintainer, ссылки досье), floflo777/open-crypto-puzzles (registry, ссылки досье), jackdevs66/gsmg5_cduality (community, ссылки досье), alexdepario/5-btc-puzzle-cosmic-duality (community, ссылки досье), hossein2002426/gsmgio-5btc-puzzle (community, ссылки досье), jwerle/libbeaufort (community, ссылки досье), bitcoin/bitcoin (community, ссылки досье), hosterjackagv/gsmg-5btc-puzzle (community, ссылки досье), kaibuzz0/gsmg.io-solution (community, ссылки досье), corunethron/salph-cosmic-better-solution (community, ссылки досье), corunethron/salph-cosmic-extra-solution (community, ссылки досье), corunethron/sal
+- Скачано: репо=4 (файлов 6, 13.6 КБ; медиа 0), issues=0, comments=0, PR=0, releases=0, gists=0, wiki=нет
+- Бюджет: api.github.com запросов = 0 (remaining 45, reset 2026-10-18T10:40:53Z); бесплатных транспортов (codeload/ls-remote/git) = 4
+- Негативы: репо владельца puzzlehunt: пропущено (исчерпан --api-budget (0 запросов)); форки puzzlehunt/gsmgio-5btc-puzzle: пропущено (исчерпан --api-budget (0 запросов)); не собрано (сверх --max-repos 4): alexdepario/5-btc-puzzle-cosmic-duality, hossein2002426/gsmgio-5btc-puzzle, jwerle/libbeaufort, bitcoin/bitcoin, hosterjackagv/gsmg-5btc-puzzle, kaibuzz0/gsmg.io-solution, corunethron/salph-cosmic-better-solution, corunethron/salph-cosmic-extra-solution, corunethron/salph-cosmic-final-solution, corunethron/salph-cosmic-great-solution, corunethron/salph-cosmic-super-solution, corunethron/salph-cosmic-ultra-solution, dinhoka/gsmgio-5btc-puzzle, halbgott29a/gsmgio-5btc-puzzle, jconorgrogan/lost-eth, juli
+- Артефакты: data/github/GITHUB_INTAKE.md, data/github/INTAKE_RESULT.json, data/github/_legacy_pointers.md, data/github/<owner>__<repo>/{files,raw,REPO_META.json}
+- Статус шлюза: partial (исчерпан --api-budget (0 запросов)); остаток в data/github/resume.json
+- Ссылки/доказательства: puzzlehunt/gsmgio-5btc-puzzle, naddiseo/gsmgio-5btc-puzzle, floflo777/open-crypto-puzzles, jackdevs66/gsmg5_cduality
+
+
+## 2026-10-18, 13:27 — Qoder (github_intake) — GITHUB INTAKE (шлюз)
+- Делал: python tools/github_intake.py run gsmg-io-5btc-puzzle --agent Qoder
+- Кандидаты: puzzlehunt/gsmgio-5btc-puzzle (community, ссылки досье), naddiseo/gsmgio-5btc-puzzle (maintainer, ссылки досье), floflo777/open-crypto-puzzles (registry, ссылки досье), jackdevs66/gsmg5_cduality (community, ссылки досье), alexdepario/5-btc-puzzle-cosmic-duality (community, ссылки досье), hossein2002426/gsmgio-5btc-puzzle (community, ссылки досье), jwerle/libbeaufort (community, ссылки досье), bitcoin/bitcoin (community, ссылки досье), hosterjackagv/gsmg-5btc-puzzle (community, ссылки досье), kaibuzz0/gsmg.io-solution (community, ссылки досье), corunethron/salph-cosmic-better-solution (community, ссылки досье), corunethron/salph-cosmic-extra-solution (community, ссылки досье), corunethron/sal
+- Скачано: репо=23 (файлов 3279, 88.7 МБ; медиа 186), issues=0, comments=0, PR=0, releases=0, gists=0, wiki=нет
+- Бюджет: api.github.com запросов = 0 (remaining 45, reset 2026-10-18T10:40:53Z); бесплатных транспортов (codeload/ls-remote/git) = 26
+- Негативы: репо владельца puzzlehunt: пропущено (исчерпан --api-budget (0 запросов)); форки puzzlehunt/gsmgio-5btc-puzzle: пропущено (исчерпан --api-budget (0 запросов)); не собрано (сверх --max-repos 4): alexdepario/5-btc-puzzle-cosmic-duality, hossein2002426/gsmgio-5btc-puzzle, jwerle/libbeaufort, bitcoin/bitcoin, hosterjackagv/gsmg-5btc-puzzle, kaibuzz0/gsmg.io-solution, corunethron/salph-cosmic-better-solution, corunethron/salph-cosmic-extra-solution, corunethron/salph-cosmic-final-solution, corunethron/salph-cosmic-great-solution, corunethron/salph-cosmic-super-solution, corunethron/salph-cosmic-ultra-solution, dinhoka/gsmgio-5btc-puzzle, halbgott29a/gsmgio-5btc-puzzle, jconorgrogan/lost-eth, juli
+- Артефакты: data/github/GITHUB_INTAKE.md, data/github/INTAKE_RESULT.json, data/github/_legacy_pointers.md, data/github/<owner>__<repo>/{files,raw,REPO_META.json}
+- Статус шлюза: partial (исчерпан --api-budget (0 запросов)); остаток в data/github/resume.json
+- Ссылки/доказательства: puzzlehunt/gsmgio-5btc-puzzle, naddiseo/gsmgio-5btc-puzzle, floflo777/open-crypto-puzzles, jackdevs66/gsmg5_cduality, alexdepario/5-btc-puzzle-cosmic-duality, hossein2002426/gsmgio-5btc-puzzle
+
+
+## 2026-10-18, 13:28 — Qoder (github_intake) — GITHUB INTAKE (шлюз)
+- Делал: python tools/github_intake.py run gsmg-io-5btc-puzzle --agent Qoder
+- Кандидаты: puzzlehunt/gsmgio-5btc-puzzle (community, ссылки досье), naddiseo/gsmgio-5btc-puzzle (maintainer, ссылки досье), floflo777/open-crypto-puzzles (registry, ссылки досье), jackdevs66/gsmg5_cduality (community, ссылки досье), alexdepario/5-btc-puzzle-cosmic-duality (community, ссылки досье), hossein2002426/gsmgio-5btc-puzzle (community, ссылки досье), jwerle/libbeaufort (community, ссылки досье), bitcoin/bitcoin (community, ссылки досье), hosterjackagv/gsmg-5btc-puzzle (community, ссылки досье), kaibuzz0/gsmg.io-solution (community, ссылки досье), corunethron/salph-cosmic-better-solution (community, ссылки досье), corunethron/salph-cosmic-extra-solution (community, ссылки досье), corunethron/sal
+- Скачано: репо=4 (файлов 6, 13.6 КБ; медиа 0), issues=0, comments=0, PR=0, releases=0, gists=0, wiki=нет
+- Бюджет: api.github.com запросов = 0 (remaining 45, reset 2026-10-18T10:40:53Z); бесплатных транспортов (codeload/ls-remote/git) = 4
+- Негативы: репо владельца puzzlehunt: пропущено (исчерпан --api-budget (0 запросов)); форки puzzlehunt/gsmgio-5btc-puzzle: пропущено (исчерпан --api-budget (0 запросов)); не собрано (сверх --max-repos 4): alexdepario/5-btc-puzzle-cosmic-duality, hossein2002426/gsmgio-5btc-puzzle, jwerle/libbeaufort, bitcoin/bitcoin, hosterjackagv/gsmg-5btc-puzzle, kaibuzz0/gsmg.io-solution, corunethron/salph-cosmic-better-solution, corunethron/salph-cosmic-extra-solution, corunethron/salph-cosmic-final-solution, corunethron/salph-cosmic-great-solution, corunethron/salph-cosmic-super-solution, corunethron/salph-cosmic-ultra-solution, dinhoka/gsmgio-5btc-puzzle, halbgott29a/gsmgio-5btc-puzzle, jconorgrogan/lost-eth, juli
+- Артефакты: data/github/GITHUB_INTAKE.md, data/github/INTAKE_RESULT.json, data/github/_legacy_pointers.md, data/github/<owner>__<repo>/{files,raw,REPO_META.json}
+- Статус шлюза: partial (исчерпан --api-budget (0 запросов)); остаток в data/github/resume.json
+- Ссылки/доказательства: puzzlehunt/gsmgio-5btc-puzzle, naddiseo/gsmgio-5btc-puzzle, floflo777/open-crypto-puzzles, jackdevs66/gsmg5_cduality
+
+
+## 2026-10-18, 13:31 — Qoder (github_intake) — GITHUB INTAKE (шлюз)
+- Делал: python tools/github_intake.py run gsmg-io-5btc-puzzle --agent Qoder
+- Кандидаты: puzzlehunt/gsmgio-5btc-puzzle (community, ссылки досье), naddiseo/gsmgio-5btc-puzzle (maintainer, ссылки досье), floflo777/open-crypto-puzzles (registry, ссылки досье), jackdevs66/gsmg5_cduality (community, ссылки досье), alexdepario/5-btc-puzzle-cosmic-duality (community, ссылки досье), hossein2002426/gsmgio-5btc-puzzle (community, ссылки досье), jwerle/libbeaufort (community, ссылки досье), hosterjackagv/gsmg-5btc-puzzle (community, ссылки досье), kaibuzz0/gsmg.io-solution (community, ссылки досье), corunethron/salph-cosmic-better-solution (community, ссылки досье), corunethron/salph-cosmic-extra-solution (community, ссылки досье), corunethron/salph-cosmic-final-solution (community, ссылки
+- Скачано: репо=4 (файлов 6, 13.6 КБ; медиа 0), issues=129, comments=500, PR=0, releases=0, gists=0, wiki=нет
+- Бюджет: api.github.com запросов = 14 (remaining 36, reset 2026-10-18T10:33:40Z); бесплатных транспортов (codeload/ls-remote/git) = 4
+- Негативы: не собрано (сверх --max-repos 4): alexdepario/5-btc-puzzle-cosmic-duality, hossein2002426/gsmgio-5btc-puzzle, jwerle/libbeaufort, hosterjackagv/gsmg-5btc-puzzle, kaibuzz0/gsmg.io-solution, corunethron/salph-cosmic-better-solution, corunethron/salph-cosmic-extra-solution, corunethron/salph-cosmic-final-solution, corunethron/salph-cosmic-great-solution, corunethron/salph-cosmic-super-solution, corunethron/salph-cosmic-ultra-solution, dinhoka/gsmgio-5btc-puzzle, halbgott29a/gsmgio-5btc-puzzle, jconorgrogan/lost-eth, seed-safe/btc-balance, silveranth/gsmgio-5btc-puzzle, turjaun985123/gsmgiopuzzle, abkr1/gsmgio-5btc-puzzle, liam-dow/gsmgio-5btc-puzzle, powerversed01/gsmgio-5btc-puzzle, devjotaduo
+- Артефакты: data/github/GITHUB_INTAKE.md, data/github/INTAKE_RESULT.json, data/github/_legacy_pointers.md, data/github/<owner>__<repo>/{files,raw,REPO_META.json}
+- Статус шлюза: partial (исчерпан --api-budget (14 запросов)); остаток в data/github/resume.json
+- Ссылки/доказательства: https://github.com/puzzlehunt/gsmgio-5btc-puzzle, https://github.com/Naddiseo/gsmgio-5btc-puzzle, floflo777/open-crypto-puzzles, jackdevs66/gsmg5_cduality
+
+
+### 2026-10-18 — Big Pickle — закрытие оси «буквальные метки страницы как пароль» + интеграция двух новых репо
+
+- **Контекст брони**: `gsmg-io-5btc-puzzle` держал Qoder (note `github-intake`, до 12:18:15Z); я не трогал пазл и работал
+  только в своих файлах. В 10:52Z бронь освободилась — взял (TTL 120 мин) только чтобы зафиксировать результат и
+  интегрировать репо, затем отпустил.
+- **Гипотеза/ось прер-регистрированы ДО прогона** (пока бронь была чужой — отдельным файлом, не в LOG):
+  `%TEMP%\opencode\gsmg-enrich\PREREGISTERED_HYPOTHESIS_chain_axis.txt`.
+- **Что проверялось.** `testnetbtc/GSMG:reference/03_UNRESOLVED.md` §1.1 публикует «цепочку»: пароль блоба
+  `salph_inner` (salt `3ab585348552415d`) = литерал `matrixsumlist`+`enter`+`lastwordsbeforearchichoice`+
+  `thispassword`+`matrixsumlist` → при EVP-MD5 даёт 79 Б `1449a217…26bf`; пароль `p32_trailing`
+  (salt `b45a5e3d827593ca`) = uncompressed WIF первых 32 Б выхода → тоже валидный паддинг. Оба автора сами зовут
+  это «формой ложноположительного PKCS#7» и держат `significance: unverified`.
+- **Ось (единственная, ≤15 мин; факт 8.7 с).** Все конкатенации ЛИТЕРАЛОВ, буквально напечатанных на странице
+  SalPhaseIon (`matrixsumlist`, `enter`, `lastwordsbeforearchichoice`, `thispassword`,
+  `ourfirsthintisyourlastcommand`), длина 1..6 токенов, повторы разрешены, разделитель `""`/`" "`,
+  кодировки пароля {сырые байты, sha256-hex}, KDF {md5, sha256}, оба блоба = **312 440 расшифровок**.
+- **Критерий (до прогона).** Валидных паддингов ≈ N/243 ⇒ ось закрыта; единственная ⇒ открыта.
+- **Результат.** Валидных PKCS#7 — **1218**, ожидаемый шум — **~1286** (отношение **0.95**). Паддингов >1 байта — 5
+  (шум ~4.8). Двухзвенных цепочек (WIF первых 32 Б → второй блоб) — **7** (шум ~5). **Призовых ключей — 0.**
+  Максимум печатаемости среди всех 1218 валидных — **0.56**; выходов с printable ≥0.85 — **0**.
+  **Положительный контроль сработал**: `sha256` выхода цепочки-1 = `1449a2178eea7c0e3fabac8c1ad2afa294be4fc1800c594a025a056e88c626bf` (точно как публикует сообщество).
+- **Вердикт: ось ЗАКРЫТА.** Литералы страницы дают ровно столько «открытий», сколько даёт случайная строка той же
+  длины. Опубликованная «цепочка» (`CADEIA`, линия Naddiseo #17) — **1 из 1218** валидных и **1 из 7** двухзвенных,
+  т.е. статистический артефакт PKCS#7 (тот же класс, что уже отвергнутые `cosmic`/`4f7a1e4e…` и `chain4`).
+  Двухзвенность почти бесплатна: из любого валидного выхода пароль следующего блоба строится постфактум.
+  Проверена и отвергнута гипотеза «может, пароль даёт бинарный ключ, а printable-валидаторы его отбраковали» —
+  читаемого выхода нет вовсе (максимум 0.56).
+- **Near-miss в нашей же базе.** Наш прошлый прогон **H-SP1** имел в пуле строку
+  `matrixsumlistenterlastwordsbeforearchichoice…` **без замыкающего `matrixsumlist`** — т.е. ровно один токен от
+  опубликованного пароля; и валидатор H-SP1 был «приз-или-ничего» (валидные паддинги не записывались). Теперь
+  проверено полностью — 0.
+- **Скрипт прогона**: `%TEMP%\opencode\gsmg-enrich\chain_axis_probe.py` (полный текст — в отчёте
+  `reports/2026-10-18_1348_BigPickle_gsmg-chain-axis-closed.md`, Приложение). Шум-порог калибруется в самом скрипте.
+- **Обогащение: два новых независимых репо найдены ШИРОКИМ поиском и скопированы в базу** (текст-слои, без .git и медиа):
+  - `data/github_2026-10/testnetbtc__GSMG/files/` (678 файлов + 5 корневых, 11.9 МБ; created 2026-10-15):
+    канонический реестр `reference/00_INDEX…08_GLOSSARY` (статусы reproduced/reported/interpreted),
+    `EXPERIMENT_COVERAGE.csv`, `SOURCE_INVENTORY.csv`, `reports/MASTER_REASONING_REPORT.md`, research-сессии
+    (`btcseed_bits`, `yinyang_ops`, `zero_merge`) с кандидатами-джейсонами. Их негативы **совпадают с нашими**
+    по закрытым осям (matrixsumlist-as-key, zero-merge, yin-yang, BTCSEED) + **BSGS по vanity до 2^28** (нет у нас).
+  - `data/github_2026-10/applelamps__GSMG-CLEAN/files/` (433 файла, 19.0 МБ; created 2026-09-15): docs 01–15,
+    `runs/` (46 прогонов), `tools/`, `prior_research_ledgers/`, `telegram/jrk_messages.txt` (128 КБ).
+    Снимок **старше нашей базы на 3–4 недели** (у нас уже есть и `PRIVATEKEY@479`, и `YOUWON` через `turjaun985123`),
+    инкрементально: 46-прогонный негатив-леджер с контрольными статистиками, resolution «unforeseen hint» (#5966/#5969
+    «prime part»), покерный *straddle* как объяснение «Raising the stakes…», Dutch-lens (снятие ложных трактовок).
+- **ПРОЕКТНАЯ НАХОДКА (дыра GitHub-шлюза).** `tools/github_intake.py → discover()` ищет кандидатов по ССЫЛКАМ в досье
+  пазла, а его опциональный поиск использует запрос `slug.replace("-"," ")` = `gsmg io 5btc puzzle` (AND-совпадение → 0).
+  Поэтому репозиторий, созданный сообществом заново и нигде в досье не процитированный, шлюзом НЕ находится.
+  Подтверждено на живом результате: intake Qoder'а (10:33Z) в `data/github/` разложил 20+ репо по фиксированному
+  списку, но `testnetbtc/GSMG`, `AppleLamps/GSMG-CLEAN`, `nineeeai-ux/gsmg-5btc-puzzle-solver` там ОТСУТСТВУЮТ —
+  их даёт только широкий запрос `q=gsmg` (114 репо). Готовый read-only обход: **`tools/github_broadrepo_scan.py`**.
+- **Негативы прохода**: (а) ось литералов — 0 (см. выше); (б) `nineeeai-ux/gsmg-5btc-puzzle-solver` — заглушка
+  (size 0, только README); (в) фермы контента `wcw13/gsmgi`, `x0ptghiu9s/gsmg`, `tj9ds49i9c/gsmgg`, `sridharsad/gsmg`;
+  (г) публичного `puzle-main`/`STATE_OF_PLAY.md`/`SOLUTION.md` (упомянуты AppleLamps как «внешнее workspace») НЕ существует.
+- **Граница прежняя**: стена — interpretive-правило «потребителя» для `btcseed`-объекта (96 состояний) + пароль к
+  SP-блобам. Ось «пароль = буквальный текст страницы» теперь исключена количественно.
+- Отчёты: `reports/2026-10-18_1348_BigPickle_gsmg-chain-axis-closed.md`,
+  `reports/2026-10-18_1335_BigPickle_gsmg-external-repos-and-intake-gap.md`.
+
+#### Пред-регистрация (Big Pickle, 2026-10-18, запись ДО прогона) — ось «литералы создателя × все запертые контейнеры»
+
+- **Почему ещё один прогон по литералам.** Предыдущий прогон (см. запись выше) закрыл ось для пары SP/P32 на
+  наборе ИЗ ПЯТИ литералов СТРАНИЦЫ. Но создатель буквально напечатал ещё и второй набор — **road-map из Telegram
+  msg 8446** (`tools/gsmg_jrk_reveal_decode_2026-10-18.py`): `yellowblueprimes`, `matrixsumlist`,
+  `lastwordsbeforearchichoice`, `yinyang`, `we wont give away the password its in front of your eyes but you're not
+  seeing it very last step is a true give away promised`. Подсказка создателя «the password is in front of your eyes»
+  указывает именно на ЛИТЕРАЛЫ, а запертых контейнеров три (`salph_inner`, `p32_trailing`, `cosmic`).
+
+- **Гипотеза.** Если пароль одного из трёх контейнеров — конкатенация ЛИТЕРАЛОВ создателя, то в пространстве
+  «все конкатенации длиной 1..4 из 13 литералов» должен быть выход, ОТЛИЧАЮЩИЙСЯ от шума (валидный паддинг при
+  многобайтовом паддинге и/или читаемый текст). Если распределение снова равно шуму — ось закрыта **комплексно**.
+
+- **Ось прогона (единственная, ≤15 мин).** Токены (13): `matrixsumlist`, `enter`, `lastwordsbeforearchichoice`,
+  `thispassword`, `ourfirsthintisyourlastcommand`, `yellowblueprimes`, `yinyang`, `shabef`, `causality`, `theone`,
+  `secondanswer`, `yourlastcommand`, `btcseed`. Длины 1..4, повторы разрешены, разделитель `""`/`" "`,
+  кодировки пароля {сырые байты, sha256-hex}, KDF {md5, sha256}, блобы: `salph_inner` (salt 3ab585348552415d),
+  `p32_trailing` (salt b45a5e3d827593ca), `cosmic` (salt 2d3f6fe06dc950e6).
+
+- **Критерий.** Ожидаемый шум для 1328-Б (`cosmic`) и 80-Б блобов считается отдельно (P ≈ 1/256 и 1/243
+  на тест соответственно). Значимо только: паддинг >1 байта при читаемом тексте (printable ≥0.85), либо
+  32/64-байтовый ключ, дающий hash160 == `a9553269…bae4`, либо читаемый ASCII.
+
+- **Положительный контроль.** Опубликованный литерал-цепочка-1 (5 токенов) обязан снова дать
+  sha256(unpad) = `1449a217…26bf` на `salph_inner` (md5) — тогда harness тот же, что в предыдущем прогоне.
+
+- **Вне оси:** перебор >10^7, GPU, траты, письма, изменение чужих файлов.
+- Скрипт: `%TEMP%\opencode\gsmg-enrich\literal_tokens_all_blobs.py`; результат — отдельный отчёт + эта же запись (ниже).

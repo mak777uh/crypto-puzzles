@@ -212,3 +212,6 @@ The June 21 post looks different today. When kTimesG fixed the J, the sentence a
 Nobody published how the puzzle works, so the record names no technique. Guessing one from the thread would be the kind of LLM essay the author keeps asking people to stop sending. Once a solution is out, it gets one.
 
 ## The Phy Challenge record
+
+## Обновление GitHub-интейка (2026-10-18, Qoder)
+- GitHub-интейк: **partial** — ; остаток в `data/github/resume.json` путь дайдеста: `data/github/GITHUB_INTAKE.md`

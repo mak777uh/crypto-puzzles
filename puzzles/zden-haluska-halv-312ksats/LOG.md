@@ -48,3 +48,47 @@
 - Результат: перенесено 6 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в базе, пропущено: 1. Статус по OCP: `open`.
 - Артефакты: `2-mid-prizes/zden-haluska-halv-312ksats/README.md`, `2-mid-prizes/zden-haluska-halv-312ksats/analysis/leads.md`, `2-mid-prizes/zden-haluska-halv-312ksats/analysis/tested.md`, `2-mid-prizes/zden-haluska-halv-312ksats/clues/author-posts.md`, `2-mid-prizes/zden-haluska-halv-312ksats/data/lobe-shape-sequence.csv`, `2-mid-prizes/zden-haluska-halv-312ksats/puzzle.json`, `2-mid-prizes/zden-haluska-halv-312ksats/tools/oracle.py`
 - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/zden-haluska-halv-312ksats ; полная дельта — `_sources/ocp_sync_2026-10-18/delta_report.md`.
+
+## 2026-10-18, 13:32 — Qoder (github_intake) — GITHUB INTAKE (шлюз)
+- Делал: python tools/github_intake.py run zden-haluska-halv-312ksats --agent Qoder
+- Кандидаты: floflo777/open-crypto-puzzles (registry, ссылки досье), benjacasas02/independent-cryptography-research (community, ссылки досье), schum-io/open-crypto-puzzles (fork, форки floflo777/open-crypto-puzzles), lekejf/open-crypto-puzzles (fork, форки floflo777/open-crypto-puzzles), pauldmurphy/open-crypto-puzzles (fork, форки floflo777/open-crypto-puzzles), ebr4him68-rgb/open-crypto-puzzles (fork, форки floflo777/open-crypto-puzzles), aperioscanner/open-crypto-puzzles (fork, форки floflo777/open-crypto-puzzles), windstalker-arch/open-crypto-puzzles (fork, форки floflo777/open-crypto-puzzles)
+- Скачано: репо=2 (файлов 111, 533.3 КБ; медиа 1), issues=0, comments=0, PR=0, releases=0, gists=0, wiki=нет
+- Бюджет: api.github.com запросов = 6 (remaining 56, reset 2026-10-18T11:22:04Z); бесплатных транспортов (codeload/ls-remote/git) = 4
+- Негативы: не собрано (сверх --max-repos 2): schum-io/open-crypto-puzzles, lekejf/open-crypto-puzzles, pauldmurphy/open-crypto-puzzles, ebr4him68-rgb/open-crypto-puzzles, aperioscanner/open-crypto-puzzles, windstalker-arch/open-crypto-puzzles
+- Артефакты: data/github/GITHUB_INTAKE.md, data/github/INTAKE_RESULT.json, data/github/_legacy_pointers.md, data/github/<owner>__<repo>/{files,raw,REPO_META.json}
+- Статус шлюза: partial (); остаток в data/github/resume.json
+- Ссылки/доказательства: floflo777/open-crypto-puzzles, https://github.com/benjacasas02/independent-cryptography-research
+
+
+## 2026-10-18, 13:32 — Qoder (github_intake) — GITHUB INTAKE (шлюз)
+- Делал: python tools/github_intake.py run zden-haluska-halv-312ksats --agent Qoder
+- Кандидаты: floflo777/open-crypto-puzzles (registry, ссылки досье), benjacasas02/independent-cryptography-research (community, ссылки досье), schum-io/open-crypto-puzzles (fork, форки floflo777/open-crypto-puzzles), lekejf/open-crypto-puzzles (fork, форки floflo777/open-crypto-puzzles), pauldmurphy/open-crypto-puzzles (fork, форки floflo777/open-crypto-puzzles), ebr4him68-rgb/open-crypto-puzzles (fork, форки floflo777/open-crypto-puzzles), aperioscanner/open-crypto-puzzles (fork, форки floflo777/open-crypto-puzzles), windstalker-arch/open-crypto-puzzles (fork, форки floflo777/open-crypto-puzzles)
+- Скачано: репо=2 (файлов 111, 533.3 КБ; медиа 1), issues=0, comments=0, PR=0, releases=0, gists=0, wiki=нет
+- Бюджет: api.github.com запросов = 0 (remaining 34, reset 2026-10-18T10:33:40Z); бесплатных транспортов (codeload/ls-remote/git) = 9
+- Негативы: не собрано (сверх --max-repos 2): schum-io/open-crypto-puzzles, lekejf/open-crypto-puzzles, pauldmurphy/open-crypto-puzzles, ebr4him68-rgb/open-crypto-puzzles, aperioscanner/open-crypto-puzzles, windstalker-arch/open-crypto-puzzles
+- Артефакты: data/github/GITHUB_INTAKE.md, data/github/INTAKE_RESULT.json, data/github/_legacy_pointers.md, data/github/<owner>__<repo>/{files,raw,REPO_META.json}
+- Статус шлюза: partial (); остаток в data/github/resume.json
+- Ссылки/доказательства: floflo777/open-crypto-puzzles, https://github.com/benjacasas02/independent-cryptography-research
+
+
+## 2026-10-18, 13:38 — Qoder (github_intake) — GITHUB INTAKE (шлюз)
+- Делал: python tools/github_intake.py run zden-haluska-halv-312ksats --agent Qoder
+- Кандидаты: floflo777/open-crypto-puzzles (registry, ссылки досье), benjacasas02/independent-cryptography-research (community, ссылки досье)
+- Скачано: репо=2 (файлов 111, 533.3 КБ; медиа 1), issues=0, comments=0, PR=0, releases=0, gists=0, wiki=нет
+- Бюджет: api.github.com запросов = 1 (remaining 54, reset 2026-10-18T11:32:22Z); бесплатных транспортов (codeload/ls-remote/git) = 2
+- Негативы: репо владельца benjacasas02: пропущено (исчерпан --api-budget (1 запросов)); форки floflo777/open-crypto-puzzles: пропущено (исчерпан --api-budget (1 запросов)); benjacasas02/independent-cryptography-research: не собрано: исчерпан --api-budget (1 запросов)
+- Артефакты: data/github/GITHUB_INTAKE.md, data/github/INTAKE_RESULT.json, data/github/_legacy_pointers.md, data/github/<owner>__<repo>/{files,raw,REPO_META.json}
+- Статус шлюза: partial (исчерпан --api-budget (1 запросов)); остаток в data/github/resume.json
+- Ссылки/доказательства: floflo777/open-crypto-puzzles, benjacasas02/independent-cryptography-research
+
+
+## 2026-10-18, 13:39 — Qoder (github_intake) — GITHUB INTAKE (шлюз)
+- Делал: python tools/github_intake.py run zden-haluska-halv-312ksats --agent Qoder
+- Кандидаты: floflo777/open-crypto-puzzles (registry, ссылки досье), benjacasas02/independent-cryptography-research (community, ссылки досье), schum-io/open-crypto-puzzles (fork, форки floflo777/open-crypto-puzzles), lekejf/open-crypto-puzzles (fork, форки floflo777/open-crypto-puzzles), pauldmurphy/open-crypto-puzzles (fork, форки floflo777/open-crypto-puzzles), ebr4him68-rgb/open-crypto-puzzles (fork, форки floflo777/open-crypto-puzzles), aperioscanner/open-crypto-puzzles (fork, форки floflo777/open-crypto-puzzles), windstalker-arch/open-crypto-puzzles (fork, форки floflo777/open-crypto-puzzles)
+- Скачано: репо=2 (файлов 111, 533.3 КБ; медиа 1), issues=0, comments=0, PR=0, releases=0, gists=0, wiki=нет
+- Бюджет: api.github.com запросов = 0 (remaining 50, reset 2026-10-18T11:27:46Z); бесплатных транспортов (codeload/ls-remote/git) = 8
+- Негативы: не собрано (сверх --max-repos 2): schum-io/open-crypto-puzzles, lekejf/open-crypto-puzzles, pauldmurphy/open-crypto-puzzles, ebr4him68-rgb/open-crypto-puzzles, aperioscanner/open-crypto-puzzles, windstalker-arch/open-crypto-puzzles
+- Артефакты: data/github/GITHUB_INTAKE.md, data/github/INTAKE_RESULT.json, data/github/_legacy_pointers.md, data/github/<owner>__<repo>/{files,raw,REPO_META.json}
+- Статус шлюза: partial (); остаток в data/github/resume.json
+- Ссылки/доказательства: floflo777/open-crypto-puzzles, https://github.com/benjacasas02/independent-cryptography-research
+

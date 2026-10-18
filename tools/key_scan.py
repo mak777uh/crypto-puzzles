@@ -78,6 +78,17 @@ def scan_files():
     seen = set()
     for dirpath, dirnames, filenames in os.walk(ROOT):
         dirnames[:] = [d for d in dirnames if d not in {".git", "node_modules", "__pycache__"}]
+        # GitHub-интейк (18.10.2026): сырые дампы чужих репозиториев НЕ коммитятся (.gitignore),
+        # поэтому pre-publish скан их не касается — иначе дерево разрастается на десятки тысяч файлов.
+        # Выжимки (GITHUB_INTAKE.md, REPO_META.json, media_index.md) по-прежнему сканируются.
+        rel = os.path.relpath(dirpath, ROOT).replace("\\", "/") + "/"
+        under_gh = "/data/github/" in ("/" + rel)
+        prune = rel.startswith("_sources/github/") or (
+            under_gh and (rel.endswith("/files/") or rel.endswith("/raw/") or rel.endswith("/wiki/")
+                          or "/files__" in rel))
+        if prune:
+            dirnames[:] = []
+            continue
         for fn in filenames:
             ext = os.path.splitext(fn)[1].lower()
             if ext not in EXTS:
