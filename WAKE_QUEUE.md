@@ -18,12 +18,10 @@
 - Секция «Текущая задача» ниже перезаписывается целиком агентом, держащим бронь очереди (`python tools/claims.py acquire _queue --agent <имя>`).
 - Журнал прежних проходов: `_archive/WAKE_JOURNAL_2026-10-17.md`. Решённые/закрытые пазлы: `solved/INDEX.md` — там не работать без новых данных.
 - Параллельная работа: брони пазлов — `python tools/claims.py`, правила — `AGENT_INSTRUCTIONS.md` (раздел «Параллельная работа»).
-- Параллельная работа: брони пазлов — `python tools/claims.py`, правила — `AGENT_INSTRUCTIONS.md` (раздел «Параллельная работа»).
-  Параллельная работа: брони пазлов — `python tools/claims.py`, правила — `AGENT_INSTRUCTIONS.md` (раздел «Параллельная работа»).
-  Параллельная работа: брони пазлов — `python tools/claims.py`, правила — `AGENT_INSTRUCTIONS.md` (раздел «Параллельная работа»).
-  Параллельная работа: брони пазлов — `python tools/claims.py`, правила — `AGENT_INSTRUCTIONS.md` (раздел «Параллельная работа»).
-- Параллельная работа: брони пазлов — `python tools/claims.py`, правила — `AGENT_INSTRUCTIONS.md` (раздел «Параллельная работа»).
-  Параллельная работа: брони пазлов — `python tools/claims.py`, правила — `AGENT_INSTRUCTIONS.md` (раздел «Параллельная работа»).
+- GitHub-интейк — обязательный первый шлюз (правило Ильи от 18.10.2026): пока `python tools/github_intake.py run <slug> --agent <Имя> --take-claim`
+  не зафиксирован в `LOG.md` пазла (оформленный негатив `none` тоже закрывает шлюз), агент не выставляет строку в `PROPOSALS.md` и не запускает проверочный прогон.
+- Режим «вся база»: один проход = одна цель (`python tools/github_intake.py backlog --n 5`), бюджет `api.github.com` 60/ч общий на IP всех агентов —
+  следы прогонов в `_sources/github/_api_ledger.json` (`python tools/github_intake.py ledger`), повторный прогон при неизменном HEAD стоит 0 запросов.
 
 ## Текущая задача (проход 11): каталог — импорт dsh-сессии (GLIMMER/отчёты) закрыт; Genesis — обе ночные батареи закрыты (174 897 прогонов, 0); сертификация relaxed; эскроу
 1. Genesis: батареи #4/#5 закрыты (calib7 29 598 + опечатки 3 999 + calib8 141 300 = 174 897 прогонов M1, ноль). Оракул ppZ — на паузе до решающего декодер-вопроса (2e915cad/e3373eb1); ждёт пополнения и ОК Ильи.
@@ -31,6 +29,13 @@
 3. Эскроу-мониторинг: tx_count>116 цепных; новые OP_RETURN — декодировать сразу (бесплатные данные сообщества).
 4. GLIMMER (smith-lyle-moore): оба оставшихся замка — deduction-only (печатной подсказки нет, нарушено привычное правило). Следующие ходы — только новые идеи; аудит §8 handoff на неперекрытые строки — по желанию.
 5. GSMG: chain4-выход (1151 B) / seg0 — по лидам; отчёт Илье + таймер 15 мин.
+
+### Добавлено проходом Qoder, 13:49: GitHub-интейк-шлюз внедрён — дальше только по одному объекту из очереди
+6. Шлюз теперь обязателен и автоматизирован: `python tools/github_intake.py run <slug> --agent <Имя> --take-claim`
+   (13 мин / 40 запросов; повтор при неизменном HEAD = 0 запросов). Статусы 80 папок — `_sources/GITHUB_INTAKE_STATUS.md`,
+   очередь — `_sources/github/INTAKE_BACKLOG.md` (75 pending). Следующие цели: `oobit-139-bitcoinpuzzles-io-0-01545btc`
+   (52 ссылки, ~28 req, брать с `--max-repos 3`), `1000-btc-challenge-bitcoin-puzzle-tx`, затем по списку.
+   Детали и известные ловушки — отчёт `reports/2026-10-18_1349_Qoder_github-intake-gate-rollout.md`.
 
 ---
 Журнал проходов (до 2026-10-17 включительно): `_archive/WAKE_JOURNAL_2026-10-17.md`.
@@ -321,74 +326,18 @@ WIF» (нули = якоря, шаг задаёт 9vw04). Проверено: в
 GitHub-токен для code-search, аудио KryoTutorias-видео. Артефакты: data/external2/, раздел «Поиск разборов v2»
 в data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
 
- data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
--- data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-## data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-П data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-(` data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-Н data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-Lu data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-п data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-П data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-Б data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-
- data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
--- data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-## data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
--  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
--  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
--  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
--  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
--  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
 -  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
 
- data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
--- data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-## data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-we data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-hu data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-б data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-н data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-80 data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
 
- data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
--- data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-## data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
 
- data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
 -  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
--  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
--  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
--  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
--  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
-   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+
+## 2026-10-18, 10:05 UTC (OCP Sync, Qoder Desktop / Windows) — снапшот open-crypto-puzzles `19644e58`: Genesis закрыт, введена rounds-ось <!-- ocp-snapshot:19644e58 -->
+- Делал: полный снапшот https://github.com/floflo777/open-crypto-puzzles (клон `_sources/ocp/`, 474 blob) → компаратор `tools/ocp_delta_scan.py` → раскладка дельт по папкам пазлов с provenance (`data/ocp/`, `tools/ocp/`, `SOURCE.md`). Дельта-отчёт: `_sources/ocp_sync_2026-10-18/delta_report.md`; отчёт прохода: `reports/2026-10-18_1000_OCP_Sync_ocp-full-sync.md`.
+- **Новых пазлов в OCP нет** (все 38 их папок — наши). Главная дельта — закрытие Genesis Block Wallet.
+- **GENESIS BLOCK WALLET — снять с активной очереди.** Решён и свипован 2026-10-17 03:40 UTC (блок 971803, tx `1c70c4745fad5bf891b9ee2a9f8b0b5cd3f328eb847eb09c9bebb92f5f7e900b`, нетто 935 266 сат, финальный приз 947 620 сат; наш on-chain-вист 18.10: эскроу 120 funded / 120 spent, баланс 0). Решатель — CaesarCoder (PR #44, Schum-io). Папка перенесена: `puzzles/genesis-block-wallet-puzzle-142ksats` → `solved/caesarcoder-genesis-block-wallet-puzzle-947ksats`. Решающий инсайт: **PBKDF2-HMAC-SHA512 rounds = 181 505 и 200 913 вместо 2 048** (время и дата генезис-блока) при пассфразе «Satoshi Nakamoto».
+- **Round-ось = новая задача-обзор (без прогонов).** Все наши негативы по BIP39/Electrum-пазлам жёстко фиксировали rounds=2048 и не покрывают пространство; у OCP CUDA-движки и `derive.py` фиксируют 2048 так же — их негативы имеют то же слепое пятно. Дешёвая проверка — читать генератор кошелька/спросить автора, а не перебирать. Запись добавлена в LOG: wealth-in-poetry, guntis-vitolins, bitcoin-coders-07, blm-brave-new-world, luckylurker-vault-2, smith-lyle-moore, aoi-nakamoto-quizchain. **ПРОГОН НЕ ЗАПУСКАТЬ** без инсайт-оси и письменного ОК Ильи. Не применяется к bitaddress-bip38 (scrypt), corey-phillips (raw SHA256), keir-finlow-bates (PoW).
+- Расхождение фактов (двойная фиксация, ничего не затираем): выше в очереди запись Big Pickle от 17.10 23:26 — «genesis-block-wallet (bc1qfkhx02…) … его sweep 17.10 03:40 — норма, не solve». По OCP (папка `4-solved/caesarcoder-…`, PR #44) и по нашему собственному висту 18.10 (120/120 spent, баланс 0, адрес опустошён) это решательский свип, а не dust-релей транзитного кошелька. Приоритет — собственный on-chain-вист; старую строку не правим.
+- Инцидент (OCP Sync, 18.10, 13:2x–13:4x локальное): параллельный проход ~13:05–13:12 переписал `MASTER_CATALOG.md` и хвосты нескольких LOG.md с дефектами генерации (одна строка повторена 3–25 раз в разных оформлениях, включая мусорные префиксы из 1–3 символов («we », «hu », «Lu », «80 », «(` »)); массовая запись ~13:31 вернула три LOG и этот файл к более старым снимкам — мои записи были сняты и восстановлены из raw-blob коммита `b08eab8`. Механические дубли убраны `tools/log_dedup.py` (правила 1–4; проверка: потеря уникальных строк 0).
+- ЦЕЛОЕ, что должен решить куратор: `MASTER_CATALOG.md` после чужого переформатирования не содержит 374 строки HEAD-версии (старая сетка «КАТЕГОРИЯ А/Б», заголовки `### A1…A5 / B1…B6`); целая копия — `_sources/MASTER_CATALOG_pre_reformat_2026-10-18_HEAD.md`. Восстанавливать из неё или жить с новой структурой — решение Ильи.
+- Прогонов, транзакций, трат и публикаций ключей в этом проходе не было; бронь по снятым пазлам отпущена (`tools/claims.py release`).

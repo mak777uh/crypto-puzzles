@@ -99,7 +99,6 @@
 - Focus: SHA-256 of genesis fields in binary/hex/decimal/ASCII forms; BIP39 12-word entropy; passphrase candidate 'Hal Finney' and variants.
 - Target: bc1qfkhx02v89u2qyyyljeczw6hu9sr437y44t7ae5yf09thrdukfqesnjg2wj.
 
- Target: bc1qfkhx02v89u2qyyyljeczw6hu9sr437y44t7ae5yf09thrdukfqesnjg2wj.
 
 ## 2026-10-17, 12:45 � Prize status check (OpenCode)
 - Address bc1qfkhx... now shows 117 spent txs / 946,540 sats spent of 947,220; prize appears claimed. Stop Genesis work.
@@ -110,9 +109,7 @@
 - Артефакты: `master/tools/balance_check_bigpick.py`, `master/tools/balance_check_bigpick_2026-10-17.txt`.
 - Ссылки: https://blockstream.info/address/bc1qfkhx02v89u2qyyyljeczw6hu9sr437y44t7ae5yf09thrdukfqesnjg2wj
 
- Ссылки: https://blockstream.info/address/bc1qfkhx02v89u2qyyyljeczw6hu9sr437y44t7ae5yf09thrdukfqesnjg2wj
 
-- Ссылки: https://blockstream.info/address/bc1qfkhx02v89u2qyyyljeczw6hu9sr437y44t7ae5yf09thrdukfqesnjg2wj
 
 - Ссылки: https://blockstream.info/address/bc1qfkhx02v89u2qyyyljeczw6hu9sr437y44t7ae5yf09thrdukfqesnjg2wj
 

@@ -27,7 +27,6 @@
 
  ЧАСТЬ 1: SEED-ФРАЗА / BIP39 ЗАГАДКИ (с призовыми фондами)
 
- ЧАСТЬ 1: SEED-ФРАЗА / BIP39 ЗАГАДКИ (с призовыми фондами)
 -  **Адрес**: `1K4ezpLybootYF23TM4a8Y4NyP7auysnRo` (P2PKH)
 -  **Баланс 14.10**: 3 124 630 сат, 2 входящих tx, трат 0
 -  **Источники**:
@@ -42,7 +41,6 @@
 -  **Файлы**: s26_bip39.py, s27_bip39.py, gps_engine.py, carrier.py
 -  **Вердикт если 0**: правило (b) не работает, остаётся (a) с телефонами вне статьи
 
- **Вердикт если 0**: правило (b) не работает, остаётся (a) с телефонами вне статьи
 -  **Адрес**: `bc1qfkhx02v89u2qyyyljeczw6hu9sr437y44t7ae5yf09thrdukfqesnjg2wj` (2-of-2 P2WSH)
 -  **Баланс**: 168 779 сат на 12.09.2026 (по OCP, 24 выхода; растёт); ранее в каталоге было 878 140 сат — устарело
 -  **Баланс (17.10.2026, Qoder)**: 936 040 сат (935 550 в 114 цепных tx + 490 сат в мемпуле от ответного tx автора `39a7dd0c…`), трат 0 — проверено blockstream.info
@@ -61,7 +59,6 @@
 -  **Остаток**: ~~relaxed 68 пар × 9 = 612 форм~~ **DONE 17.10.2026: 78 347 016 кандидатов, 0 хитов, сертифицировано** + satvar 255 вариантов Satoshi (не запускался). Переборная поверхность закрыта; открыт только оракул-путь (платный декодер-вопрос, нужен ОК Ильи) и мониторинг OP_RETURN.
 -  **Блокер**: Hal/Thomas/Finney исключены (не той длины по подтверждённой форме)
 
- **Блокер**: Hal/Thomas/Finney исключены (не той длины по подтверждённой форме)
 -  **Адрес**: `bc1q0akdjvrc2csau2n3gyxa3xcq0fss852x997m9y` (BIP84 m/84'/0'/0'/0/0)
 -  **Баланс 14.10**: 3 177 700 сат, трат 0
 -  **xpub**: xpub6CpNc58zqQvNGPHDGGTr68wgrmtfFDBWRuSDAxoDdrCE1iRAaZtyAD5T9uCJ3ELUYKCkx8Jkind2kwoR3Uxmg1ycQ6DWyGxZBMFvQqhNqVC
@@ -73,7 +70,6 @@
 -  **Остаток**: 12-е слово (за двумя замками) + passphrase (по паттерну Hunt #1 приходит в ответе на письмо с 12 словами — codebreaker@smithlylemoore.com, тема предзаполнена «I've Found Amphitrite, and All 12 Words»). ⚠ адрес .proton.me — фейк.
 -  **17.10.2026 (dsh-сессия + Qoder, ночь)**: оба замка — ~700 доп. последовательных запросов к Wix-оракулу, 0 хитов, 0 ошибок; гипотеза «пароли переиспользуются» закрыта надёжно (впервые без 429-искажений). jetkc разобран на глубину page JSON: печатной подсказки нет — оба замка «чистого вывода» (единственные такие на сайте). Детали: `puzzles/smith-lyle-moore-hunt-2-0-032btc/README.md` + `data/glimmer_dsh_reports_2026-10-17.md` + `data/GLIMMER_HANDOFF_2026-10-17.txt`.
 
- **17.10.2026 (dsh-сессия + Qoder, ночь)**: оба замка — ~700 доп. последовательных запросов к Wix-оракулу, 0 хитов, 0 ошибок; гипотеза «пароли переиспользуются» закрыта надёжно (впервые без 429-искажений). jetkc разобран на глубину page JSON: печатной подсказки нет — оба замка «чистого вывода» (единственные такие на сайте). Детали: `puzzles/smith-lyle-moore-hunt-2-0-032btc/README.md` + `data/glimmer_dsh_reports_2026-10-17.md` + `data/GLIMMER_HANDOFF_2026-10-17.txt`.
 -  **Адрес**: `LUtL7qnm3gzxKjHcfVLSjydqhhinTVmTmS`
 -  **Баланс 14.10**: 302 608 794 литоши, 8 tx, отправлено 0
 -  **OCP**: `2-mid-prizes/path-to-greatness-treasure-hunt-3ltc` (~5,7·10¹² негативов)
@@ -89,7 +85,6 @@
 -  **AES-оракул**: ~3,2·10⁶ ключей/с на ядро
 -  **Файлы**: seg.c, NOTES.md (104 КБ), INSIGHTS.md (84 КБ)
 
- **Файлы**: seg.c, NOTES.md (104 КБ), INSIGHTS.md (84 КБ)
 -  **#3**: `wHP6OPG5GMF5dedo_CD8AAy6x8La-gfI5b5pk65Tx_0` — 1000,1658 AR
 -  **#10**: `bkjJGw3NLxs8OAyRxgTL-QFpiB3lBJqZ76kDhWdB-Rs` — 500,0223 AR
 -  **#11 (ETH)**: `0xFF2142E98E09b5344994F9bEB9C56C95506B9F17` — 1,0 ETH
@@ -100,9 +95,7 @@
 -  **#10 подсказки**: кости 2,1,4/2,4; «6 3 18»; Палпатин; ключ «…nesis #28»
 -  **Скорость**: ~20 кандидатов/с на ядро (KDF дорогой)
 
- **Скорость**: ~20 кандидатов/с на ядро (KDF дорогой)
 
- **Скорость**: ~20 кандидатов/с на ядро (KDF дорогой)
 -  **Адрес**: `1KfZGvwZxsvSmemoCmEV75uqcNzYBHjkHZ` (P2PKH)
 -  **Баланс 14.10**: 20 107 284 сат, 5 входящих tx, трат 0
 -  **Автор**: u/stsh_n, Reddit 8.10.2020, «Bitcoin puzzle (2000$)»
@@ -135,7 +128,6 @@
 -  **Остаток (Илья)**: H2 (21 слово) ~1,2·10⁷, H3 (24 слова) ~2·10¹⁰ GPU
 -  **Гипотезы**: H1-H11, включая 18-word, 24-word, BREATHE passphrase
 
- **Гипотезы**: H1-H11, включая 18-word, 24-word, BREATHE passphrase
 -  **Адрес**: `14zMkTgaVXJcxdh4JdWi29MLRR44iUSG9W`
 -  **Старый адрес**: `1EFojcAo2vbhRGCGCa7q8Wwvzss28mhQYC` (пуст)
 -  **Источники**:
@@ -149,7 +141,6 @@
 -  **Проверено**: ~1,1·10¹⁰ MD5 + ~3,2·10⁸ у OCP
 -  **Нерешённый узел**: флип-правило Grycoin-2
 
- **Нерешённый узел**: флип-правило Grycoin-2
 -  **Адрес**: `1KKtnqLdK17ndRRwF8zaKZH6FSkSmTN6fk` (m/44'/0'/0'/0/0)
 -  **Источник**: https://bitcoinpuzzles.io/en/puzzles/139
 -  **Автор**: Mestre Caçatal, 02.06.2026
@@ -158,7 +149,6 @@
 -  **Модель «2 слова на клип»** не подтверждена
 -  **Платная подсказка**: 1 (~4588 CB, ~$1,8) — Илья отказался
 
- **Платная подсказка**: 1 (~4588 CB, ~$1,8) — Илья отказался
 -  **Адрес**: `bc1q8zfy6wvvtskzkg4s343x42pyf363nmejspgc02` (m/84'/0'/0'/0/0)
 -  **Источники**:
    - https://bitcoin.fr/chasse-au-tresor/ (14 подсказок, X @e_ducat, 15.08-25.12.2024)
@@ -169,7 +159,6 @@
 -  **Блокер**: книга €8,99-10, нужны картинки (yin-yang p.42, timbre p.101, bilan BCE p.99)
 -  **Проверено**: famA-D, ~10¹⁶ у решателей форума
 
- **Проверено**: famA-D, ~10¹⁶ у решателей форума
 -  **Адрес**: `bc1qrpn28qa82uyjg37dvsz3w7wpm3kpdea957nm9p` (P2WPKH)
 -  **Источники**:
    - https://bitcointalk.org/index.php?topic=5584952.0 (102 поста)
@@ -180,7 +169,6 @@
 -  **Подсказки автора**: «modular values», «fractional», «no loose ends, no hashing»
 -  **Проверено**: BSGS до 2⁴⁵, решётки LLL, ~10⁷ значений
 
- **Проверено**: BSGS до 2⁴⁵, решётки LLL, ~10⁷ значений
 -  **Кошелёк**: `DmDBmb7AEm6xRxkoBYq1mJYqsZP263gmXB53zA2dqjne`
 -  **Источники**:
    - https://solanapuzzles.com/puzzle4 (1536×1024)
@@ -189,7 +177,6 @@
 -  **12 подсказок**: ROT13, зеркальное, «The key is under the moonlight», 2^128+51 (SSS), 13°37'N 00°42'E, Σx=13058
 -  **QR → YouTube** QhXQo-h0lwc (numbers station, ASCII «evident agenda»)
 
- **QR → YouTube** QhXQo-h0lwc (numbers station, ASCII «evident agenda»)
 -  **Адрес**: `13Q8hJqagtd77ojTJcEZPjTz2sBFSsYxyj` (P2PKH, несжатый)
 -  **Баланс 14.10**: 1 000 000 сат (от 24.04.2015)
 -  **Источники**:
@@ -200,7 +187,6 @@
 -  **Морзе**: «DMITRI KNOWS THIS GAME IS NOT EASY… READ SATOSHI'S PAPER»
 -  **Блокер**: нужно видео выше 720p (лист в руке Дмитрия ~1:00)
 
- **Блокер**: нужно видео выше 720p (лист в руке Дмитрия ~1:00)
 -  **Адрес**: `1KDUcZh5Z6H1of4Pwoy5ojJtkQxcQBHhnH`
 -  **Внимание**: 8,5 BTC никогда не было на адресе (заявление ложно)
 -  **Источник**: commanderu.github.io, https://bitcointalk.org/index.php?topic=5573629
@@ -208,13 +194,11 @@
 -  **Найдено**: часть 1 (5JRd42nU1) и часть 4 (AhiF1tpuG)
 -  **Не найдено**: части 2, 5, 6 (перебор запрещён)
 
- **Не найдено**: части 2, 5, 6 (перебор запрещён)
 -  **Адрес**: `bc1qj7xsxrlgmnnrqwvlakacc5yrh33h2n3xaa0m09` (m/84'/0'/0'/0/0)
 -  **Механизм**: плитки 32×32 (34×46) = перемешанная комикс-страница 4×3 = 12 панелей
 -  **Узнано 5 панелей**: crane/cargo, lady/woman, tree, dragon/tattoo, diamond/crystal
 -  **Статус**: пауза, jigsaw-сборка (438 кластеров)
 
- **Статус**: пауза, jigsaw-сборка (438 кластеров)
 -  **Адрес**: `bc1qnepv9pcnqvndux9h9mcaxvk6u993rc0lew9fpp`
 -  **Финансирован**: 12.08.2026, tx 2314d7f0
 -  **Источники**:
@@ -226,9 +210,7 @@
 -  **Vault #1** (0.0008 BTC) решён
 -  **Модель**: Electrum SegWit seed без passphrase, m/0'/0/1
 
- **Модель**: Electrum SegWit seed без passphrase, m/0'/0/1
 
- **Модель**: Electrum SegWit seed без passphrase, m/0'/0/1
 -  **Адрес**: `bc1qyjwa0tf0en4x09magpuwmt2smpsrlaxwn85lh6` (BIP84)
 -  **Источник**: https://bitaps.com/mnemonic/challenge
 -  **Механизм**: 3-of-5 Shamir над GF(256). Опубликованы 2 доли:
@@ -236,7 +218,6 @@
    - S2: clock fresh security field caution effort gorilla speed plastic common tomato echo
 -  **Вердикт**: нерешаемо без третьей доли (≥2¹¹⁹)
 
- **Вердикт**: нерешаемо без третьей доли (≥2¹¹⁹)
 -  **Адрес**: `0x9C2F44EFAd0c1E852a09dF9939e6DaF061140CaF` (MetaMask m/44'/60'/0'/0/0)
 -  **Баланс 14.10**: 8,6125 ETH (nonce 7, автор тратит)
 -  **Источники**:
@@ -254,7 +235,6 @@
 -  **Механизм**: BIP38-карты, 16 из 18 символов видны на фото, 2 скрыты
 -  **3 карты**: одна решена (автором), две остаются
 
- **3 карты**: одна решена (автором), две остаются
 -  **Адрес**: `1GSMG1JC9wtdSwfwApgj2xcmJPAwx7prBe`
 -  **Источники**:
    - https://gsmg.io/puzzle
@@ -266,33 +246,26 @@
 -  **Приз**: 5 BTC → 1.256 BTC после халвингов
 -  **Статус 17.10.2026 (Qoder, часть 2)**: цепочки chain1–4 комьюнити **воспроизведены байт-в-байт** (KDF=EVP_BytesToKey **MD5**! пароли сырые, не sha256-дайджесты): оба 80-байтовых Salted__-блоба открыты; chain3 sha256=4f7a1e4e…, chain4 sha256=e4269ed5… — совпали. Структура SalPhaseIon расшифрована. Минус-свипы 5655+702+20+~48 = 0. Открыто: выход chain4 (1151 B шума), 661 цифра seg0. Детали: `puzzles/gsmg-io-5btc-puzzle/README.md`.
 
- **Статус 17.10.2026 (Qoder, часть 2)**: цепочки chain1–4 комьюнити **воспроизведены байт-в-байт** (KDF=EVP_BytesToKey **MD5**! пароли сырые, не sha256-дайджесты): оба 80-байтовых Salted__-блоба открыты; chain3 sha256=4f7a1e4e…, chain4 sha256=e4269ed5… — совпали. Структура SalPhaseIon расшифрована. Минус-свипы 5655+702+20+~48 = 0. Открыто: выход chain4 (1151 B шума), 661 цифра seg0. Детали: `puzzles/gsmg-io-5btc-puzzle/README.md`.
 -  **Адрес**: registry `0x71fB6afcD98c5BD611712ad4b8D314EF729aa69D`
 -  **Источник**: https://github.com/fe-lang/bountiful
 -  **Механизм**: claim() из нерешаемой «пятнашки» через баг компилятора Fe
 -  **Нужен газ** (lock + claim)
 -  **Статус 17.10.2026 (Qoder)**: аудит ЗАВЕРШЁН — исходники чистые; все 8 deployed-контрактов **байт-в-байт** совпали со сборкой fe 26.1.0 (Sourcify-пробел закрыт); 26+ поведенческих тестов на deployed-байткоде — 0 дефектов; полный dry-run lock→move→claim воспроизведён бесплатно через eth_simulateV1. Детали и артефакты: `puzzles/fe-lang-bountiful-compiler-bounty-1eth/` (README + data/).
 
- **Статус 17.10.2026 (Qoder)**: аудит ЗАВЕРШЁН — исходники чистые; все 8 deployed-контрактов **байт-в-байт** совпали со сборкой fe 26.1.0 (Sourcify-пробел закрыт); 26+ поведенческих тестов на deployed-байткоде — 0 дефектов; полный dry-run lock→move→claim воспроизведён бесплатно через eth_simulateV1. Детали и артефакты: `puzzles/fe-lang-bountiful-compiler-bounty-1eth/` (README + data/).
 
- **Статус 17.10.2026 (Qoder)**: аудит ЗАВЕРШЁН — исходники чистые; все 8 deployed-контрактов **байт-в-байт** совпали со сборкой fe 26.1.0 (Sourcify-пробел закрыт); 26+ поведенческих тестов на deployed-байткоде — 0 дефектов; полный dry-run lock→move→claim воспроизведён бесплатно через eth_simulateV1. Детали и артефакты: `puzzles/fe-lang-bountiful-compiler-bounty-1eth/` (README + data/).
 -  **Адрес**: `bc1qcyrndzgy036f6ax370g8zyvlw86ulawgt0246r`
 -  **Механизм**: BIP39-passphrase. Автор: «not meant to be solved»
 
- **Механизм**: BIP39-passphrase. Автор: «not meant to be solved»
 -  **Адрес**: `bc1qcsdfkaqgy9ux668vmzflzqsyg0qtspncymt5ed`
 -  **Механизм**: Морзе / Wingdings / QR → seed
 
- **Механизм**: Морзе / Wingdings / QR → seed
 -  **Адрес**: `bc1q7x3p3rkmkxgf20n3apkccqcmn5mdtsf8zx5227` (BIP84)
 -  **Источники**: https://seed-phrase.com, https://github.com/metaneer/seed-phrase
 -  **Суть**: датированные подсказки 2024 (стихи, эмодзи, загадки)
 
- **Суть**: датированные подсказки 2024 (стихи, эмодзи, загадки)
 -  **Адреса**: `bc1qxy4tf0s4n7x9w24rawf9qsxh2hyljrmvyrhwzt` + `bc1q4qc24xk5cehc4t7vr264zldsms2kmxf86jqjau`
 -  **Механизм**: 24 слова в романе, 4 известны
 
- **Механизм**: 24 слова в романе, 4 известны
 -  **Адреса**: `17Y9czcbcCz433QXsy1SGQjwLb27BBtLLZ`, `1DZ5NbUwDgxeJkKhQLgYcUUX36PtYso1pm`, `19kkawFcg2U2s6vq368MXD7FJU9JZvRrjA`
 -  **Механизм**: brainwallet-ответы из книги
 
@@ -301,54 +274,41 @@
 -  **Источник**: crypto.haluska.sk
 -  **Механизм**: raw key из геометрической картинки
 
- **Механизм**: raw key из геометрической картинки
 -  **Адрес**: `bc1qm3ayuhn7wppuqxaywu8ea0lggs8myy7543fekk`
 -  **Источник**: The Great Print (художник), февраль 2024
 -  **Механизм**: 24 слова BIP39 + passphrase (25-е слово). 4 из 24 выложены.
 -  **Слова в физических иллюстрациях** «Genesis Collection»
 
- **Слова в физических иллюстрациях** «Genesis Collection»
 -  **Механизм**: картинка с множеством подсказок
 
- **Механизм**: картинка с множеством подсказок
 -  **Механизм**: собрать 12 из 100 NFT
 
  **Механизм**: собрать 12 из 100 NFT
 -  **Адрес**: `bc1q5rjy2cdfy4n4dkk4r6pxtwqlm8tgjcc2dj0ee9`
 
- **Адрес**: `bc1q5rjy2cdfy4n4dkk4r6pxtwqlm8tgjcc2dj0ee9`
 -  **Адрес**: `1J7BVeP8JK4op2X3GN3Hy7xkTnGnQTMpou`
 -  **Источник**: stacker.news/items/275973
 -  **Механизм**: забытый BIP38-пароль владельца
 
- **Механизм**: забытый BIP38-пароль владельца
 -  **Адрес**: `0x1fa8Be9De5bBFE047C72dB8E8E3257128F7661ad`
 -  **Механизм**: raw key из серии картинок и видео
 
- **Механизм**: raw key из серии картинок и видео
 -  **Адреса**: `0x17e5e0910b…`, `0xd7c6d542f3…`, `0x973c2178b0…`
 -  **Механизм**: неопубликованный 256-битный ключ автора
 
- **Механизм**: неопубликованный 256-битный ключ автора
 -  3 из 4 этапов решены. Ч/Б PNG со стеганографией, шифрами, культурными отсылками
 
- 3 из 4 этапов решены. Ч/Б PNG со стеганографией, шифрами, культурными отсылками
 -  **Механизм**: кроссворд внутри NFT → Pillar Wallet seed
 
- **Механизм**: кроссворд внутри NFT → Pillar Wallet seed
 -  **Механизм**: почти известная seed-фраза, нужно найти 1 слово
 
- **Механизм**: почти известная seed-фраза, нужно найти 1 слово
 -  **Механизм**: brainwallets, текстовые шифры
 
- **Механизм**: brainwallets, текстовые шифры
 -  **Механизм**: литературные загадки в книгах, 25% роялти
 
- **Механизм**: литературные загадки в книгах, 25% роялти
 -  **Источник**: findveil.com
 -  **Механизм**: физический геокэшинг, QR-код в сундуке
 
- **Механизм**: физический геокэшинг, QR-код в сундуке
 -  **Приз**: $1,000 за каждую из 10 задач — **ЗАКРЫТО: все 10 решены `forwardsecrecy` 02.10.2026, приём до 31.07.2026 (проверено 17.10.2026)**
 -  **Источник**: Paradigm.xyz
 
@@ -356,30 +316,23 @@
 -  **Адрес**: `FindKEYLrVaahtkaVRk8KTspRMyWxfUi3i`
 -  **Источник**: groestlcoin.org/puzzle, bitcointalk 5137602
 
- **Источник**: groestlcoin.org/puzzle, bitcointalk 5137602
 -  **Программа**: `22AEUZtxpbi1ReJGrG9SyFob3uHGzZERERyVNp6uV8Y6`
 -  **Источник**: https://beforeqday.com/challenge
 
- **Источник**: https://beforeqday.com/challenge
 -  **Адреса**: `35Snmmy3…`, `3KyiQEGq…`, `39VXyuoc…`, `3DUQQvz4…`
 -  **Механизм**: коллизия SHA-256 / RIPEMD-160 / HASH160 / HASH256
 
- **Механизм**: коллизия SHA-256 / RIPEMD-160 / HASH160 / HASH256
 -  **Источник**: r/CryptoCurrency, 8 марта 2023, пользователь timelesssmidgen
 -  **Суть**: 24 слова BIP39 в случайном порядке. 24! ≈ 10²³. Практически нерешаемо.
 -  **12-словная версия** ($5 ALGO) решена за 30 часов
 
- **12-словная версия** ($5 ALGO) решена за 30 часов
 -  **Источник**: Trezor Security page
 -  **Механизм**: уязвимость → доступ к seed-фразе
 
--  **Механизм**: уязвимость → доступ к seed-фразе
+
 
 -  **Механизм**: уязвимость → доступ к seed-фразе
 
--  **Механизм**: уязвимость → доступ к seed-фразе
-
- **Механизм**: уязвимость → доступ к seed-фразе
 # ## B41. Genesis Block Brainwallet Puzzle
 
 ## B41. Genesis Block Brainwallet Puzzle
@@ -402,11 +355,7 @@
    - https://news.bitcoin.com/key-hunters-eye-58-87m-bitcoin-puzzle-as-916-btc-sits-unsolved-in-78-addresses/
    - https://github.com/alexanderthurn/1000-BTC-Challenge
 
- - https://github.com/alexanderthurn/1000-BTC-Challenge
 
- - https://github.com/alexanderthurn/1000-BTC-Challenge
-|  - https://github.com/alexanderthurn/1000-BTC-Challenge
-|- - https://github.com/alexanderthurn/1000-BTC-Challenge
 |  Пазл | Награда (BTC) | Бит | Тип | Публичный ключ |
 | ------|--------------|-----|-----|----------------|
 |  #71 | 7.1019 | 71 | Address-only | Нет |
@@ -509,7 +458,6 @@
 -  Автоматизированная публикация, личность неизвестна
 -  Считается завершённым, но большая часть данных не расшифрована
 
- Считается завершённым, но большая часть данных не расшифрована
 -  **Ссылка**: https://en.wikipedia.org/wiki/Markovian_Parallax_Denigrate
 -  Самая старая интернет-загадка
 -  Usenet, бессмысленные сообщения с цепями Маркова
@@ -521,7 +469,6 @@
 -  Кандидаты: Ник Сабо, Хэл Финни, Адам Бэк, Дориан Накамото, Крейг Райт
 -  Доказательство = подпись ранним ключом или движение монет
 
- Доказательство = подпись ранним ключом или движение монет
 -  **Ссылки**: https://neuroarg.miraheze.org, https://neuro-arg.github.io
 -  AI-персонаж, видео с AES-шифрованием
 -  Числовые загадки в кадрах
@@ -532,7 +479,6 @@
 -  Легенды о пропавших игроках
 -  Часть загадок possibly impossible by design
 
- Часть загадок possibly impossible by design
 -  **Ссылка**: https://paranormalis.com (оригинальные чаты)
 -  Форумный "путешественник во времени из 2036"
 -  Технические детали, предсказания
@@ -544,7 +490,6 @@
 -  Посольства, министерства, офис Далай-ламы
 -  Подозрение на Китай, прямых доказательств нет
 
- Подозрение на Китай, прямых доказательств нет
 -  **Ссылка**: https://en.wikipedia.org/wiki/Valor_por_Tamaulipas
 -  Анонимная Facebook-страница о наркоторговле в Мексике
 -  Администратор под угрозами, ушёл в 2014
@@ -556,7 +501,6 @@
 -  Google признал: тестирование качества видео
 -  Но аномальные видео (Rick Astley, Эйфелева башня, "Matei") не объяснены
 
- Но аномальные видео (Rick Astley, Эйфелева башня, "Matei") не объяснены
 #  ЧАСТЬ 4: КАТАЛОГИ, ИНСТРУМЕНТЫ, СООБЩЕСТВА
 
  ЧАСТЬ 4: КАТАЛОГИ, ИНСТРУМЕНТЫ, СООБЩЕСТВА
@@ -571,7 +515,6 @@
 -  https://lotterypzl.org/
 -  https://github.com/itsnex1s/crypto-puzzle-list
 
- https://github.com/itsnex1s/crypto-puzzle-list
 -  **btcrecover**: https://github.com/gurnec/btcrecover — BIP39 + Electrum, GPU, частичные seed
 -  **btc-seed-recovery**: Python, 1-2 недостающих слова
 -  **bip_utils**: Python библиотека (BIP39, BIP44, Electrum, etc.)
@@ -581,7 +524,6 @@
 -  **Autopsy, FTK Imager**: форензика
 -  **BitCrack, JeanLucPons Kangaroo, RCKangaroo, Keyhunt-CUDA**: GPU ECDLP
 
- **BitCrack, JeanLucPons Kangaroo, RCKangaroo, Keyhunt-CUDA**: GPU ECDLP
 -  Reddit: r/UnresolvedMysteries, r/Cicada, r/ARG, r/cryptography, r/bitcoinpuzzles, r/CryptoPuzzlers, r/Bitcoin
 -  4chan: /x/, /b/
 -  Unfiction: https://unfiction.com
@@ -589,9 +531,6 @@
 -  Discord/Telegram: приватные серверы
 -  Arctic Shift: https://arctic-shift.photon-reddit.com (Reddit API через curl)
 
- Arctic Shift: https://arctic-shift.photon-reddit.com (Reddit API через curl)
-|  Arctic Shift: https://arctic-shift.photon-reddit.com (Reddit API через curl)
-|- Arctic Shift: https://arctic-shift.photon-reddit.com (Reddit API через curl)
 |  Задача | Скорость |
 | --------|----------|
 |  BIP39 → BIP44 | ~1ms/фраза на ядро, ~770 деривизаций/с с 5 путями |
@@ -625,7 +564,6 @@
 -  Если адрес не существует/нулевой баланс → скам
 -  Информация от нескольких независимых источников
 
- Информация от нескольких независимых источников
 -  Публичные bounty с заявленным вознаграждением = легально
 -  Перебор чужих ключей без согласия = незаконно
 -  Использование эксплойтов = неэтично
@@ -635,20 +573,10 @@
 
 >  С 2026-10-17 папки решённых/закрытых/тупиковых пазлов физически перенесены в `solved/` (индекс: `solved/INDEX.md`); пути ниже обновлены.
 
- С 2026-10-17 папки решённых/закрытых/тупиковых пазлов физически перенесены в `solved/` (индекс: `solved/INDEX.md`); пути ниже обновлены.
-FT С 2026-10-17 папки решённых/закрытых/тупиковых пазлов физически перенесены в `solved/` (индекс: `solved/INDEX.md`); пути ниже обновлены.
-Sa С 2026-10-17 папки решённых/закрытых/тупиковых пазлов физически перенесены в `solved/` (индекс: `solved/INDEX.md`); пути ниже обновлены.
-Lu С 2026-10-17 папки решённых/закрытых/тупиковых пазлов физически перенесены в `solved/` (индекс: `solved/INDEX.md`); пути ниже обновлены.
-Pa С 2026-10-17 папки решённых/закрытых/тупиковых пазлов физически перенесены в `solved/` (индекс: `solved/INDEX.md`); пути ниже обновлены.
-WI С 2026-10-17 папки решённых/закрытых/тупиковых пазлов физически перенесены в `solved/` (индекс: `solved/INDEX.md`); пути ниже обновлены.
+
 
  С 2026-10-17 папки решённых/закрытых/тупиковых пазлов физически перенесены в `solved/` (индекс: `solved/INDEX.md`); пути ниже обновлены.
 
- С 2026-10-17 папки решённых/закрытых/тупиковых пазлов физически перенесены в `solved/` (индекс: `solved/INDEX.md`); пути ниже обновлены.
-Т С 2026-10-17 папки решённых/закрытых/тупиковых пазлов физически перенесены в `solved/` (индекс: `solved/INDEX.md`); пути ниже обновлены.
-н С 2026-10-17 папки решённых/закрытых/тупиковых пазлов физически перенесены в `solved/` (индекс: `solved/INDEX.md`); пути ниже обновлены.
-
- С 2026-10-17 папки решённых/закрытых/тупиковых пазлов физически перенесены в `solved/` (индекс: `solved/INDEX.md`); пути ниже обновлены.
 -  **WIF500 — НЕ закрыт.** Адрес `1PfNh5fRcE9JKDmicD2Rh3pexGwce1LqyU` держит **500,00035446 BTC, 0 потрачено**
    (проверено через Blockstream API: `funded_txo_sum = 50000035446`, `spent_txo_sum = 0`, 26 пополнений).
    В README фигурируют **12 неизвестных символов base58 ≈ 2⁷⁰**, а не 2⁵⁸. Слово «closed» означало «проект закрыт», а не «решён».
@@ -672,25 +600,20 @@ WI С 2026-10-17 папки решённых/закрытых/тупиковых
    (50+ коллекций; markdown-версии `/raw/collections/<slug>.md`; машинночитаемые данные
    https://raw.githubusercontent.com/agntn/puzzles/main/puzzles.json; индекс https://puzzles.agntn.dev/sitemap.md).
 
- https://raw.githubusercontent.com/agntn/puzzles/main/puzzles.json; индекс https://puzzles.agntn.dev/sitemap.md).
 
- https://raw.githubusercontent.com/agntn/puzzles/main/puzzles.json; индекс https://puzzles.agntn.dev/sitemap.md).
 #  ═══════════════════════════════════════════════════════════════════
 #  ЧАСТЬ 7: ОБНОВЛЕНИЯ И ДОПОЛНЕНИЯ (проверка 16.10.2026)
 #  ═══════════════════════════════════════════════════════════════════
 
- ═══════════════════════════════════════════════════════════════════
-
 -  ═══════════════════════════════════════════════════════════════════
+
 -  **A2 Genesis Block Wallet**: актуальный баланс 168 779 сат на 12.09.2026 (24 P2WSH-выхода, растёт; по verified_state puzzles.json). Ранее в каталоге было «878 140 сат» — это устаревшая/ошибочная оценка.
 -  **Part 6 «ЗАКРЫТЫ» исправлен**: Arweave #12, FTPK Season 2 и LogicBeach «Powerful Moss» были ошибочно отмечены как закрытые; на самом деле они **открыты** (см. ниже и OCP). Из закрытых убраны.
 -  **FTPK Season 4** подтверждённо решён (решение/выплата есть в OCP, кассовый tx 0x4c10…ffdd8f37, 181 USDC).
 -  **Сводка решённых (OCP, 10)** для сверки с Part 6: Andy Bauch COG; bc1q21 timelock L5; Bitcoin Movie Enigma; Dug Student Hunt; FTPK S4; Keysa; LuckyLurker Seed Riddles; VeteranHODL Hunting Time; Wonderabbit Prometheus; Zden LVL5. (Часть уже была в Part 6.)
 -  **Arweave серия**: #12 тоже открыт (ранее каталог упоминал только #3, #10, #11).
 
- **Arweave серия**: #12 тоже открыт (ранее каталог упоминал только #3, #10, #11).
 
- **Arweave серия**: #12 тоже открыт (ранее каталог упоминал только #3, #10, #11).
 -  **Адрес**: `XRGEfkMbCMHeTY9mZI9Lh6hf8EmA8RstmBFUjDm40fg` (Arweave)
 -  **Статус**: открыто (funded-unspent, проверено 16.08.2026)
 -  **Тип**: word-selection, geometry, text-cipher
@@ -703,7 +626,6 @@ WI С 2026-10-17 папки решённых/закрытых/тупиковых
    - Explorer: https://viewblock.io/arweave/address/XRGEfkMbCMHeTY9mZI9Lh6hf8EmA8RstmBFUjDm40fg
 -  **Суть**: кусок 3 решён, кусок 1 имеет сильное неподтверждённое чтение, открыто 18-символьное значение куска 2.
 
- **Суть**: кусок 3 решён, кусок 1 имеет сильное неподтверждённое чтение, открыто 18-символьное значение куска 2.
 -  **Сеть/контракт**: Ethereum, `0xb5fe4f1b6cb2bbe6a327f8c68f370da7df18b2dc` (USDT, нативный ETH = 0)
 -  **Статус**: открыто (funded-unspent, проверено 27.08.2026)
 -  **Тип**: bip39-seed, word-selection
@@ -718,7 +640,6 @@ WI С 2026-10-17 папки решённых/закрытых/тупиковых
    - OCP: https://github.com/floflo777/open-crypto-puzzles/tree/main/2-mid-prizes/ftpk-season-2-300usdt
 -  **Суть**: имя страницы (hash без пробелов), игры 1–11 + экстра; «черный конь» (15.06.2025). 0 из 12 слов подтверждены через оракул.
 
- **Суть**: имя страницы (hash без пробелов), игры 1–11 + экстра; «черный конь» (15.06.2025). 0 из 12 слов подтверждены через оракул.
 -  **Контракт**: `0x831102C7eb86f9EC8f79dF891bDeA187D54344Dd` (Base), min 0.25 ETH, растёт по кривой времени
 -  **Статус**: открыто (contract-holds-funds, проверено 16.08.2026)
 -  **Тип**: image-stego, bip39-seed, word-selection, smart-contract
@@ -731,7 +652,6 @@ WI С 2026-10-17 папки решённых/закрытых/тупиковых
    - OCP: https://github.com/floflo777/open-crypto-puzzles/tree/main/2-mid-prizes/logicbeach-powerful-moss-0-54eth
 -  **Суть**: носитель = картинка POAP-часов, порядок = позиция стрелки; 3 из 12 часов читаются однозначно, >3.3M kombinatsiy остальных отрицательны; блокер — разрешение картинки.
 
- **Суть**: носитель = картинка POAP-часов, порядок = позиция стрелки; 3 из 12 часов читаются однозначно, >3.3M kombinatsiy остальных отрицательны; блокер — разрешение картинки.
 -  **Контракт/адрес**: `0x18f87ec9c527aba1db44f715456bf28b0dae478d` (Ethereum), NFT «Magic Internet moneyGAN» (445/512)
 -  **Статус**: открыто (funded-unspent, проверено 16.08.2026)
 -  **Тип**: bip39-seed, word-selection
@@ -743,7 +663,6 @@ WI С 2026-10-17 папки решённых/закрытых/тупиковых
    - OCP: https://github.com/floflo777/open-crypto-puzzles/tree/main/2-mid-prizes/pindar-van-arman-cryptoartgan-nft
 -  **Суть**: нужно выбрать 11 «глитчей» из 12 опубликованных слов и их порядок; ~22.5M адресов и 9 полных наборов проверены, 0 совпадений.
 
- **Суть**: нужно выбрать 11 «глитчей» из 12 опубликованных слов и их порядок; ~22.5M адресов и 9 полных наборов проверены, 0 совпадений.
 -  **Сеть**: Ethereum. Открыты:
    - C1 `0x17e5e0910b9185b0ede564dcbf074ca910ad56a4` — 1.000002 ETH
    - C2 `0xd7c6d542f3dcdceda845112b8fd567b8f8655805` — 0.500002 ETH
@@ -761,9 +680,7 @@ WI С 2026-10-17 папки решённых/закрытых/тупиковых
    - OCP: https://github.com/floflo777/open-crypto-puzzles/tree/main/2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth
 -  **Суть**: криптография подтверждена (735B решили), но целевые pubkey C1/C2/9732 никогда не появлялись on-chain; реальный путь — информация от автора.
 
- **Суть**: криптография подтверждена (735B решили), но целевые pubkey C1/C2/9732 никогда не появлялись on-chain; реальный путь — информация от автора.
 
- **Суть**: криптография подтверждена (735B решили), но целевые pubkey C1/C2/9732 никогда не появлялись on-chain; реальный путь — информация от автора.
 |  **Суть**: криптография подтверждена (735B решили), но целевые pubkey C1/C2/9732 никогда не появлялись on-chain; реальный путь — информация от автора.
 |- **Суть**: криптография подтверждена (735B решили), но целевые pubkey C1/C2/9732 никогда не появлялись on-chain; реальный путь — информация от автора.
 |  Slug | Название | Приз | Статус/причина | Эскроу (если есть) |
@@ -782,11 +699,7 @@ WI С 2026-10-17 папки решённых/закрытых/тупиковых
 -  Для мёртвых пазлов оставлены причины из OCP: подделка/неизвлекаемый материал/автор умер/без финансирования/решено третьими/custodial/окно закрыто.
 -  «Onfo / Forsyth»: автор умер в 2023, половина материала (сегменты 6–10) не выходила.
 
- «Onfo / Forsyth»: автор умер в 2023, половина материала (сегменты 6–10) не выходила.
 
- «Onfo / Forsyth»: автор умер в 2023, половина материала (сегменты 6–10) не выходила.
-|  «Onfo / Forsyth»: автор умер в 2023, половина материала (сегменты 6–10) не выходила.
-|- «Onfo / Forsyth»: автор умер в 2023, половина материала (сегменты 6–10) не выходила.
 |  Slug | Статус | Цепь | Приз | Эскроу-адрес | Состояние (проверено) | Ссылка |
 | ---|---|---|---|---|---|---|
 |  aoi-nakamoto-quizchain-0-854btc | open | bitcoin | 0.777 BTC | `14zMkTgaVXJcxdh4JdWi29MLRR44iUSG9W` | funded-unspent (2026-08-27) | https://mempool.space/address/14zMkTgaVXJcxdh4JdWi29MLRR44iUSG9W |
@@ -859,7 +772,6 @@ WI С 2026-10-17 папки решённых/закрытых/тупиковых
 
  bam-askabitcoiner-seed-cipher | dead-end | bitcoin | 42100 sats | `3Q1Qzs6EmTVE4JeUWRJVNxi9v5UJLN2mtc` | swept (2026-08-16) | https://mempool.space/address/3Q1Qzs6EmTVE4JeUWRJVNxi9v5UJLN2mtc |
 
- bam-askabitcoiner-seed-cipher | dead-end | bitcoin | 42100 sats | `3Q1Qzs6EmTVE4JeUWRJVNxi9v5UJLN2mtc` | swept (2026-08-16) | https://mempool.space/address/3Q1Qzs6EmTVE4JeUWRJVNxi9v5UJLN2mtc |
 С bam-askabitcoiner-seed-cipher | dead-end | bitcoin | 42100 sats | `3Q1Qzs6EmTVE4JeUWRJVNxi9v5UJLN2mtc` | swept (2026-08-16) | https://mempool.space/address/3Q1Qzs6EmTVE4JeUWRJVNxi9v5UJLN2mtc |
 
  bam-askabitcoiner-seed-cipher | dead-end | bitcoin | 42100 sats | `3Q1Qzs6EmTVE4JeUWRJVNxi9v5UJLN2mtc` | swept (2026-08-16) | https://mempool.space/address/3Q1Qzs6EmTVE4JeUWRJVNxi9v5UJLN2mtc |
@@ -875,7 +787,6 @@ WI С 2026-10-17 папки решённых/закрытых/тупиковых
 -  **Mariana's Web / Deep-web мифология** — отдельная категория легенд. Источник: https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries
 -  **Lost Media (BFI 75 Most Wanted, Doctor Who и др.)** — не пазлы, но связанные расследования. Источник: https://mysteryatlas.pulsaa.net/topics/internet-mysteries
 
- **Lost Media (BFI 75 Most Wanted, Doctor Who и др.)** — не пазлы, но связанные расследования. Источник: https://mysteryatlas.pulsaa.net/topics/internet-mysteries
 -  WatchMojo, 48 unsolved internet mysteries: https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries
 -  Top Entertainment News, unsolved 2026: https://www.10enews.com/famous-internet-mysteries-which-are-still-unsolved-in-2026/
 -  Mystery Atlas, internet mysteries: https://mysteryatlas.pulsaa.net/topics/internet-mysteries
@@ -884,12 +795,10 @@ WI С 2026-10-17 папки решённых/закрытых/тупиковых
 -  Reddit r/InternetMysteries: https://www.reddit.com/r/InternetMysteries/
 -  Vibe List, cracked cases: https://vibelist.net/internet-pop-culture/internet-history/the-internets-most-baffling-unsolved-mysteries-the-few-that-were-eventually-cracked/
 
- Vibe List, cracked cases: https://vibelist.net/internet-pop-culture/internet-history/the-internets-most-baffling-unsolved-mysteries-the-few-that-were-eventually-cracked/
 -  В этой среде я не могу сам себя разбудить между сообщениями: reasoning-агент работает только при входящем сообщении/вызове.
 -  Что можно сделать: (а) я сделал большой пакет обновлений в этом проходе; (б) можно запустить фоновый скрипт (PowerShell-цикл), но сеть из shell часто недоступна (SSL), а без сети он не сможет проверять балансы; (в) самый надёжный путь — периодически присылать короткое «продолжай»/«обнови», либо настроить внешний планировщик (cron/GitHub Actions) на fetch-проверки и запись в файл.
 -  Предлагаю: при каждом вашем «продолжай» я повторяю цикл: проверить OCP puzzles.json, web-источники, дозаписать новые пазлы/ссылки/балансы, и кратко доложить.
 
- Предлагаю: при каждом вашем «продолжай» я повторяю цикл: проверить OCP puzzles.json, web-источники, дозаписать новые пазлы/ссылки/балансы, и кратко доложить.
 #  ═══════════════════════════════════════════════════════════════════
 #  ЧАСТЬ 8: БАЛАНСЫ И ПЛАНЫ (обновлено 16.10.2026)
 
@@ -902,7 +811,6 @@ WI С 2026-10-17 папки решённых/закрытых/тупиковых
 -  ~~A2 Genesis: 168 779 сат на 12.09.2026 (OCP) — используем это значение~~ → **РЕШЁН 17.10.2026**: свип 947 620 сат, баланс 0 (проверка 18.10, OCP Sync); `solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/`
 -  A5 Arweave #3/#10/#11/#12: см. OCP verified_state (таблица 7.4).
 
- A5 Arweave #3/#10/#11/#12: см. OCP verified_state (таблица 7.4).
 -  Цикл 3 (15 мин): (1) пройти 28 OCP README и вытащить clues/leads в appendix; (2) добавить 15 новых интернет-мистерий; (3) проверить 30 ссылок из Parts 3-4; (4) записать итог в WAKE_QUEUE.md.
 -  Цикл 4 (15 мин): (1) собрать балансы всех адресов из Parts 1-2 через API; (2) обновить "Баланс 14.10"; (3) дозаполнить источники для B9-B43.
 -  Цикл 5 (15 мин): (1) структурировать каталог (оглавление, якоря); (2) cross-reference; (3) экспорт tl;dr.
@@ -910,11 +818,7 @@ WI С 2026-10-17 папки решённых/закрытых/тупиковых
 
  Цикл 5 (15 мин): (1) структурировать каталог (оглавление, якоря); (2) cross-reference; (3) экспорт tl;dr.
 
- Цикл 5 (15 мин): (1) структурировать каталог (оглавление, якоря); (2) cross-reference; (3) экспорт tl;dr.
-В Цикл 5 (15 мин): (1) структурировать каталог (оглавление, якоря); (2) cross-reference; (3) экспорт tl;dr.
-И Цикл 5 (15 мин): (1) структурировать каталог (оглавление, якоря); (2) cross-reference; (3) экспорт tl;dr.
 
- Цикл 5 (15 мин): (1) структурировать каталог (оглавление, якоря); (2) cross-reference; (3) экспорт tl;dr.
 С Цикл 5 (15 мин): (1) структурировать каталог (оглавление, якоря); (2) cross-reference; (3) экспорт tl;dr.
 
  Цикл 5 (15 мин): (1) структурировать каталог (оглавление, якоря); (2) cross-reference; (3) экспорт tl;dr.
@@ -935,7 +839,6 @@ WI С 2026-10-17 папки решённых/закрытых/тупиковых
 -  **Часть 9 (добавлена внешней правкой в 23:07):** UVB-76 «The Buzzer», Project Architeuthis,
    Operation Mindfuck / Illuminatus-культура (остальные 11 записей Части 9 уже имели папки).
 
- Operation Mindfuck / Illuminatus-культура (остальные 11 записей Части 9 уже имели папки).
 С Operation Mindfuck / Illuminatus-культура (остальные 11 записей Части 9 уже имели папки).
 -  `B31 Kitten Passphrase Puzzle` = `puzzles/corey-phillips-kitten-passphrase-1msats` (в каталоге ошибка: 0,0010019 BTC;
    фактический адрес держит 1 001 900 сат = 0,010019 BTC).
@@ -943,15 +846,7 @@ WI С 2026-10-17 папки решённых/закрытых/тупиковых
 -  `B32 Move Over Brokers Treasure Hunt` = `puzzles/keir-finlow-bates-blockchain-book-600ksats`.
 -  `1000-BTC #135` учтён в папке 1000 BTC Challenge.
 
- `1000-BTC #135` учтён в папке 1000 BTC Challenge.
-а `1000-BTC #135` учтён в папке 1000 BTC Challenge.
-B3 `1000-BTC #135` учтён в папке 1000 BTC Challenge.
-B4 `1000-BTC #135` учтён в папке 1000 BTC Challenge.
-Pr `1000-BTC #135` учтён в папке 1000 BTC Challenge.
 
- `1000-BTC #135` учтён в папке 1000 BTC Challenge.
-п `1000-BTC #135` учтён в папке 1000 BTC Challenge.
-П `1000-BTC #135` учтён в папке 1000 BTC Challenge.
 
  `1000-BTC #135` учтён в папке 1000 BTC Challenge.
 #  ═══════════════════════════════════════════════════════════════════
@@ -969,7 +864,6 @@ Pr `1000-BTC #135` учтён в папке 1000 BTC Challenge.
 -  B13 Ballet AA009926: `1JxWyNrkgYvgsHu8hVQZqTXEB9RftRGP5m` — 100 003 481 сат (1.00003481 BTC).
 -  B16 Corey Phillips kitten: `bc1qcyrndzgy036f6ax370g8zyvlw86ulawgt0246r` — 1 001 900 сат.
 
- B16 Corey Phillips kitten: `bc1qcyrndzgy036f6ax370g8zyvlw86ulawgt0246r` — 1 001 900 сат.
 П B16 Corey Phillips kitten: `bc1qcyrndzgy036f6ax370g8zyvlw86ulawgt0246r` — 1 001 900 сат.
 #  ═══════════════════════════════════════════════════════════════════
 
@@ -988,41 +882,26 @@ Pr `1000-BTC #135` учтён в папке 1000 BTC Challenge.
 -  B25 Exitonly #14: 30 000 сат.
 -  B26 bitaddress BIP38: 529 700 сат (529700), из 3 806 300 получено, 3 276 600 потрачено (многоходовка).
 
- B26 bitaddress BIP38: 529 700 сат (529700), из 3 806 300 получено, 3 276 600 потрачено (многоходовка).
-П B26 bitaddress BIP38: 529 700 сат (529700), из 3 806 300 получено, 3 276 600 потрачено (многоходовка).
-Р B26 bitaddress BIP38: 529 700 сат (529700), из 3 806 300 получено, 3 276 600 потрачено (многоходовка).
 
- B26 bitaddress BIP38: 529 700 сат (529700), из 3 806 300 получено, 3 276 600 потрачено (многоходовка).
 #  ═══════════════════════════════════════════════════════════════════
 #  ЧАСТЬ 12: СВОДКА V2 (рабочие досье агентов Hark, 16.10.2026) — перенесено deepseek-flash
 #  ═══════════════════════════════════════════════════════════════════
 
  ═══════════════════════════════════════════════════════════════════
-П ═══════════════════════════════════════════════════════════════════
-« ═══════════════════════════════════════════════════════════════════
-Н ═══════════════════════════════════════════════════════════════════
 
- ═══════════════════════════════════════════════════════════════════
 
- ═══════════════════════════════════════════════════════════════════
 -  Части 1–7 — общий каталог (кратко). **ЧАСТЬ 8 — рабочие досье по каждой загадке, которой мы занимались**: механизм, подсказки, что установлено, что проверено и отброшено (с объёмами), что осталось, оракулы, скрипты, проекты Hark. Записи в Части 1, по которым есть досье, заменены ссылкой «→ ЧАСТЬ 8.x».
 -  Все рабочие папки уже существуют — **продолжать там, читать их NOTES.md, не начинать заново**: `/workspace/work/<имя>/` (genesis, trithemius, slm, glimmer, blm, quizchain, oobit139, rushwallet30, riddle85, bcoders07, luckylurker2, noizat, bitaps_sss, bountiful*, inv/phy, inv/qday, web3auto/puzzle4, mth202610, cardano_egg) и проект «работа» `/workspace/projects/b6983d3d-52f5-48f8-9974-b99dc8e31c55/work/` (ptg, arweave, guntis, kitten, bc07, sp, audit) + доска стратега `.../strategy/` (STRATEGY.md, QUEUE.md, IDEAS.md, LOG.md, dossiers/).
 -  Python-зависимости стратега: `PYTHONPATH=/workspace/projects/b6983d3d-52f5-48f8-9974-b99dc8e31c55/work/pylib` (системный pip сбрасывается; перед счётом проверять coincurve, mnemonic).
 
- Python-зависимости стратега: `PYTHONPATH=/workspace/projects/b6983d3d-52f5-48f8-9974-b99dc8e31c55/work/pylib` (системный pip сбрасывается; перед счётом проверять coincurve, mnemonic).
 
- Python-зависимости стратега: `PYTHONPATH=/workspace/projects/b6983d3d-52f5-48f8-9974-b99dc8e31c55/work/pylib` (системный pip сбрасывается; перед счётом проверять coincurve, mnemonic).
 -  **«Идеи и делайте, а не переборы» (16.10 11:33).** Каждый цикл = одна новая интерпретация из источника (текст/картинка/подсказки/прошлые загадки автора), проверка малым набором (≤10⁴ кандидатов). Массовые переборы >10⁶ запрещены; допустим только финальный счёт узко определённой идеи. Записывать идею в IDEAS (идея → основание → предсказание → результат).
 -  Ресурсы: песочница общая на все проекты — 2 CPU, ~7 ГБ. Не больше одного фонового счёта, `nice -n 19`, timeout ≤40 мин, прогресс в файл, резюмируемо.
 -  **Траты — только с явного согласия Ильи** (у агентов денег нет). Книги, платные подсказки, депозиты — спросить одной строкой. KYC нет. Ничего не публиковать и не писать от имени Ильи без его согласия (письмо автору SLM — черновик, не отправлено).
 -  Найденный ключ/seed — только в `.secret/` (chmod 600), никогда в чат/каталог. Сразу проверить адрес и вывести весь баланс (комиссия из приза) на адреса Ильи: BTC `bc1q4kgn8aj6j29j3zj9pfm4khcsx4hj7smkncz78a`, LTC `ltc1qkekjqn9yl0h5quwy42p7zqjuz3t4dmfarx8wtq`, EVM `0x724F6B03E8B1a5a4AE39082Ced21E88b9780125e`, SOL `3o15Gt7YLWDVEyS53UuJNJcYdyoaLNQx6hRsLCdyv4V9`, ADA `addr1q8v8qvdvjsycxc3mgfnrfwffnlzekfqvdyj8um8uazxtjj29zhytjrpn92yupre5cm29hzkpywrxljtqjmm9c9u76drsgnu4a2`. AR/GRS/ALGO — ключ в .secret и спросить Илью адрес.
 -  История: 14.10 22:00 Илья отменил все пазлы; 15.10 01:38 вернул призовые загадки из этого каталога стратегу проекта «работа» (b6983d3d), разрешил выносить перспективные в отдельные проекты.
 
- История: 14.10 22:00 Илья отменил все пазлы; 15.10 01:38 вернул призовые загадки из этого каталога стратегу проекта «работа» (b6983d3d), разрешил выносить перспективные в отдельные проекты.
 
- История: 14.10 22:00 Илья отменил все пазлы; 15.10 01:38 вернул призовые загадки из этого каталога стратегу проекта «работа» (b6983d3d), разрешил выносить перспективные в отдельные проекты.
-|  История: 14.10 22:00 Илья отменил все пазлы; 15.10 01:38 вернул призовые загадки из этого каталога стратегу проекта «работа» (b6983d3d), разрешил выносить перспективные в отдельные проекты.
-|- История: 14.10 22:00 Илья отменил все пазлы; 15.10 01:38 вернул призовые загадки из этого каталога стратегу проекта «работа» (b6983d3d), разрешил выносить перспективные в отдельные проекты.
 |  Загадка | Приз сейчас | Шанс (наш) | Где стоим | Кто ведёт |
 | ---|---|---|---|---|
 |  Zden HALV | 312 500 сат, не тронут | ~12% | Осциллограмма = 256 узлов × 4 уровня × 8 полос; все прямые упаковки 0; дальше — грамматика автора по решателям LVL1–5 | проект 294b2fcf (цикл 15 мин) |
@@ -1048,23 +927,17 @@ Pr `1000-BTC #135` учтён в папке 1000 BTC Challenge.
 
  Arweave #12 | **0 AR — забран** | — | Не брать | — |
 
- Arweave #12 | **0 AR — забран** | — | Не брать | — |
 
- Arweave #12 | **0 AR — забран** | — | Не брать | — |
 1. Arweave #12 | **0 AR — забран** | — | Не брать | — |
     - **Arweave Weave #12.** Адрес `XRGEfkMb…40fg`: баланс 0 AR, last_tx `gx0Ws1TP…`. В ocp_check «DRIFT: manifest says funded-unspent, chain says unfunded». Handoff 14.10 тоже пишет «#12 забран».
     - **FTPK Season 2.** Контракт `0xb5fe4f1b…dc`: USDT balanceOf = 0, nonce 6. ocp_check: «swept».
     - **LogicBeach «Powerful Moss»** (Base). Контракт `0x831102C7…44Dd`: баланс 0, nonce 1. В инвентаре: «claimed Oct 2026».
     - **Pindar Van Arman bitGAN.** Адрес `0x18f87e…478d`: 0 ETH (12.10 и 14.10). Приз здесь NFT, а владение NFT мы **не проверяли**, так что статус не подтверждён.
 2.  - **Pindar Van Arman bitGAN.** Адрес `0x18f87e…478d`: 0 ETH (12.10 и 14.10). Приз здесь NFT, а владение NFT мы **не проверяли**, так что статус не подтверждён.
-3.  - **Pindar Van Arman bitGAN.** Адрес `0x18f87e…478d`: 0 ETH (12.10 и 14.10). Приз здесь NFT, а владение NFT мы **не проверяли**, так что статус не подтверждён.
-4.  - **Pindar Van Arman bitGAN.** Адрес `0x18f87e…478d`: 0 ETH (12.10 и 14.10). Приз здесь NFT, а владение NFT мы **не проверяли**, так что статус не подтверждён.
 
   - **Pindar Van Arman bitGAN.** Адрес `0x18f87e…478d`: 0 ETH (12.10 и 14.10). Приз здесь NFT, а владение NFT мы **не проверяли**, так что статус не подтверждён.
 
-  - **Pindar Van Arman bitGAN.** Адрес `0x18f87e…478d`: 0 ETH (12.10 и 14.10). Приз здесь NFT, а владение NFT мы **не проверяли**, так что статус не подтверждён.
 
-  - **Pindar Van Arman bitGAN.** Адрес `0x18f87e…478d`: 0 ETH (12.10 и 14.10). Приз здесь NFT, а владение NFT мы **не проверяли**, так что статус не подтверждён.
 П  - **Pindar Van Arman bitGAN.** Адрес `0x18f87e…478d`: 0 ETH (12.10 и 14.10). Приз здесь NFT, а владение NFT мы **не проверяли**, так что статус не подтверждён.
 
   - **Pindar Van Arman bitGAN.** Адрес `0x18f87e…478d`: 0 ETH (12.10 и 14.10). Приз здесь NFT, а владение NFT мы **не проверяли**, так что статус не подтверждён.
@@ -1077,16 +950,12 @@ Pr `1000-BTC #135` учтён в папке 1000 BTC Challenge.
 -  [rcodes-1ojeu3c-5usd](puzzles/rcodes-1ojeu3c-5usd/README.md) — $5, транспозиция с цифрами.
 -  [purebasic-t85211-600eur](puzzles/purebasic-t85211-600eur/README.md) — 600 EUR, страница за Cloudflare 403.
 
- [purebasic-t85211-600eur](puzzles/purebasic-t85211-600eur/README.md) — 600 EUR, страница за Cloudflare 403.
 
- [purebasic-t85211-600eur](puzzles/purebasic-t85211-600eur/README.md) — 600 EUR, страница за Cloudflare 403.
 -  [dead-ends-registry](puzzles/dead-ends-registry/README.md) — **проверять перед началом любой работы**.
    Таблица из ~45 позиций с конкретной причиной смерти (swept / unfunded / solved / dead /
    not-ours / spend-required / off-chain) и датой проверки. Дубликаты с Частью 6 и 7.3 исключены.
 
- not-ours / spend-required / off-chain) и датой проверки. Дубликаты с Частью 6 и 7.3 исключены.
 
- not-ours / spend-required / off-chain) и датой проверки. Дубликаты с Частью 6 и 7.3 исключены.
 -  **Arweave Weave #12 — приз забран** (баланс 0 AR, last_tx `gx0Ws1TP…`); каталог 7.2 ошибочно считал открытым.
 -  **FTPK Season 2 — swept** (USDT balanceOf = 0); каталог 7.2 ошибался.
 -  **LogicBeach «Powerful Moss» — claimed Oct 2026** (контракт пуст); каталог 7.2 ошибался.
@@ -1103,11 +972,7 @@ Pr `1000-BTC #135` учтён в папке 1000 BTC Challenge.
    B30 Seed Phrase Crossword, B9 «серия» Bitcoin Coders #07, B37 QDay «Steal this vault»,
    B43 «20 подсказок из книги» (вероятно «The One Bitcoin Heist», DEF CON 33).
 
- B43 «20 подсказок из книги» (вероятно «The One Bitcoin Heist», DEF CON 33).
 
- B43 «20 подсказок из книги» (вероятно «The One Bitcoin Heist», DEF CON 33).
-П B43 «20 подсказок из книги» (вероятно «The One Bitcoin Heist», DEF CON 33).
-Р B43 «20 подсказок из книги» (вероятно «The One Bitcoin Heist», DEF CON 33).
 
  B43 «20 подсказок из книги» (вероятно «The One Bitcoin Heist», DEF CON 33).
 -  **Подтверждено живое (балансы не тронуты):** Oobit #139 — 1 545 000 сат; kTimesG Phy — 800 000 сат;
@@ -1120,9 +985,7 @@ Pr `1000-BTC #135` учтён в папке 1000 BTC Challenge.
    фото — твит Антонопулоса, автор — Кори Филлипс.
 -  **Veil Hunts:** «$1380-$2020» не подтверждено ($2500 для охоты #1); домен findveil.com не подтверждён.
 
- **Veil Hunts:** «$1380-$2020» не подтверждено ($2500 для охоты #1); домен findveil.com не подтверждён.
 
- **Veil Hunts:** «$1380-$2020» не подтверждено ($2500 для охоты #1); домен findveil.com не подтверждён.
 А **Veil Hunts:** «$1380-$2020» не подтверждено ($2500 для охоты #1); домен findveil.com не подтверждён.
 
  **Veil Hunts:** «$1380-$2020» не подтверждено ($2500 для охоты #1); домен findveil.com не подтверждён.
@@ -1134,40 +997,27 @@ Pr `1000-BTC #135` учтён в папке 1000 BTC Challenge.
 -  **403 / 429 / таймауты:** защита от автоматических запросов (Medium, Cloudflare, Lost Media Wiki,
    mempool.space, vercel) — в браузере открываются.
 
- mempool.space, vercel) — в браузере открываются.
 
- mempool.space, vercel) — в браузере открываются.
-В mempool.space, vercel) — в браузере открываются.
-р mempool.space, vercel) — в браузере открываются.
-** mempool.space, vercel) — в браузере открываются.
-ч mempool.space, vercel) — в браузере открываются.
 
  mempool.space, vercel) — в браузере открываются.
 
- mempool.space, vercel) — в браузере открываются.
 
- mempool.space, vercel) — в браузере открываются.
 #  ═══════════════════════════════════════════════════════════════════
 #  ЧАСТЬ 13: РЕЕСТР @agntn/puzzles — импорт 16.10.2026 (deepseek-flash)
 #  ═══════════════════════════════════════════════════════════════════
 
  ═══════════════════════════════════════════════════════════════════
-Р ═══════════════════════════════════════════════════════════════════
-М ═══════════════════════════════════════════════════════════════════
 
- ═══════════════════════════════════════════════════════════════════
 -  индекс всех страниц: https://puzzles.agntn.dev/sitemap.md
 -  markdown любой коллекции: `https://puzzles.agntn.dev/raw/collections/<slug>.md`
 -  машинные данные: https://raw.githubusercontent.com/agntn/puzzles/main/puzzles.json
 -  страницы авторов и решателей: `/raw/authors/<slug>.md`, `/raw/solvers/<slug>.md`
 -  гиды: балансы, верификация, CLI, реестр, playground — `/raw/guide/*.md`
 
- гиды: балансы, верификация, CLI, реестр, playground — `/raw/guide/*.md`
 В гиды: балансы, верификация, CLI, реестр, playground — `/raw/guide/*.md`
 
  гиды: балансы, верификация, CLI, реестр, playground — `/raw/guide/*.md`
 
- гиды: балансы, верификация, CLI, реестр, playground — `/raw/guide/*.md`
 -  [80-bit-ktimesg-key-challenge](solved/80-bit-ktimesg-key-challenge/README.md) — kTimesG's 80-bit key challenge
 -  [book-quiz-7-million](solved/book-quiz-7-million/README.md) — 7 million book quiz
 -  [coin-artist-torched-h34r7s](solved/coin-artist-torched-h34r7s/README.md) — TORCHED H34R7S Bitcoin Puzzle (coin_artist)
@@ -1187,23 +1037,11 @@ Pr `1000-BTC #135` учтён в папке 1000 BTC Challenge.
 -  [warpwallet-challenges](solved/warpwallet-challenges/README.md) — WarpWallet challenges
 -  [wickex-youtube-puzzle](solved/wickex-youtube-puzzle/README.md) — Wickex's YouTube puzzle
 
- [wickex-youtube-puzzle](solved/wickex-youtube-puzzle/README.md) — Wickex's YouTube puzzle
 
- [wickex-youtube-puzzle](solved/wickex-youtube-puzzle/README.md) — Wickex's YouTube puzzle
-В [wickex-youtube-puzzle](solved/wickex-youtube-puzzle/README.md) — Wickex's YouTube puzzle
-(� [wickex-youtube-puzzle](solved/wickex-youtube-puzzle/README.md) — Wickex's YouTube puzzle
-bi [wickex-youtube-puzzle](solved/wickex-youtube-puzzle/README.md) — Wickex's YouTube puzzle
-lu [wickex-youtube-puzzle](solved/wickex-youtube-puzzle/README.md) — Wickex's YouTube puzzle
-pr [wickex-youtube-puzzle](solved/wickex-youtube-puzzle/README.md) — Wickex's YouTube puzzle
-sm [wickex-youtube-puzzle](solved/wickex-youtube-puzzle/README.md) — Wickex's YouTube puzzle
-
- [wickex-youtube-puzzle](solved/wickex-youtube-puzzle/README.md) — Wickex's YouTube puzzle
-Д [wickex-youtube-puzzle](solved/wickex-youtube-puzzle/README.md) — Wickex's YouTube puzzle
-(# [wickex-youtube-puzzle](solved/wickex-youtube-puzzle/README.md) — Wickex's YouTube puzzle
 
  [wickex-youtube-puzzle](solved/wickex-youtube-puzzle/README.md) — Wickex's YouTube puzzle
 
- [wickex-youtube-puzzle](solved/wickex-youtube-puzzle/README.md) — Wickex's YouTube puzzle
+
 -  **Natasha Otomoski (1 BTC)** — ответ оказался ASCII-строкой: `SheHadTheIdeaWhileCombingHerHair`
    (32 символа, 8 camelCase-слов = приватный ключ напрямую, без хеширования). Решён `akkort` 22.08.2019,
    метод не раскрыт. Паттерн «ответ = ключ» полезен для других пазлов.
@@ -1214,30 +1052,18 @@ sm [wickex-youtube-puzzle](solved/wickex-youtube-puzzle/README.md) — Wickex's 
 -  **Coin_Games weekly banknote** — серия, уже разобранная (3/3 забраны 2017-18) — в реестре есть детали.
 -  **WarpWallet challenges** — параметры scrypt/PBKDF2-кошельков, полезны как оракулы.
 
- **WarpWallet challenges** — параметры scrypt/PBKDF2-кошельков, полезны как оракулы.
 
- **WarpWallet challenges** — параметры scrypt/PBKDF2-кошельков, полезны как оракулы.
 Р **WarpWallet challenges** — параметры scrypt/PBKDF2-кошельков, полезны как оракулы.
-Д **WarpWallet challenges** — параметры scrypt/PBKDF2-кошельков, полезны как оракулы.
-ч **WarpWallet challenges** — параметры scrypt/PBKDF2-кошельков, полезны как оракулы.
 
  **WarpWallet challenges** — параметры scrypt/PBKDF2-кошельков, полезны как оракулы.
 
- **WarpWallet challenges** — параметры scrypt/PBKDF2-кошельков, полезны как оракулы.
 #  ═══════════════════════════════════════════════════════════════════
 #  ЧАСТЬ 14: OCP puzzles.json — машинные данные в папках (16.10.2026, deepseek-flash)
 #  ═══════════════════════════════════════════════════════════════════
 
  ═══════════════════════════════════════════════════════════════════
-И ═══════════════════════════════════════════════════════════════════
-(s ═══════════════════════════════════════════════════════════════════
-Л ═══════════════════════════════════════════════════════════════════
 
- ═══════════════════════════════════════════════════════════════════
 
- ═══════════════════════════════════════════════════════════════════
-В ═══════════════════════════════════════════════════════════════════
-с ═══════════════════════════════════════════════════════════════════
 
  ═══════════════════════════════════════════════════════════════════
 -  `status` (+ `dead_end_reason`), `tier`, `chain`, `series`, `author` с хендлами;
@@ -1260,32 +1086,15 @@ sm [wickex-youtube-puzzle](solved/wickex-youtube-puzzle/README.md) — Wickex's 
 -  реестры, из которых пополнялся каталог: OCP (49), @agntn/puzzles (50 коллекций, локальный кэш
    `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
 
- `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
 
- `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
-И `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
-П `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
-к `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
 
 -  `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
 
--  `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
 
- `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
-|  `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
-|- `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
-|  `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
-В `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
 
 -  `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
 
--  `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
 
- `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
-К `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
-We `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
-с `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
-(� `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
 
  `C:\111\agntn_raw\`), плюс web-исследования по 21 «тонкой» записи и 22 интернет-мистериям.
 #  КОНЕЦ КАТАЛОГА
