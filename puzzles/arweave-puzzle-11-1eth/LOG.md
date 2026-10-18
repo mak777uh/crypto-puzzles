@@ -1,12 +1,14 @@
 #  LOG
 
  LOG
+#LOG
 -  Re-ran `tools/scan11.py data/puzzle11.png`: no direct 64-hex, no zlib/ASCII hits in LSB bitplanes; alpha has 26 values in 225..255 with 434 non-255 pixels.
 -  Generated `data/alpha_mask.png`; OCR returned no text.
 -  Tested row-major 5-bit packing of alpha deltas and L-channel LSBs at non-255 positions; no readable hex/ASCII result.
 -  Conclusion: no key recovered in this pass; stego likely requires visual/spatial interpretation or a different transform. No prize claimed.
 
  Conclusion: no key recovered in this pass; stego likely requires visual/spatial interpretation or a different transform. No prize claimed.
+#Conclusion: no key recovered in this pass; stego likely requires visual/spatial interpretation or a different transform. No prize claimed.
 -  Идентификация: agntn-коллекция `weave/weave/11` = ЭТОТ пазл (1 ETH, открыт (адрес 0xff2142… совпадает с нашим Arweave #11)). Карточка реестра (транзакции, хинты) сохранена: `data/agntn_weave_11.ts`.
 -  Примечание: серия weave (Tiamat) = группа наших Arweave-пазлов; в реестре 12 пазлов, 9 claimed; открытые в agntn без статуса: weave/3, weave/10, weave/11 (наши #3/#10/#11); weave/12 помечен Claimed — ПЕРЕПРОВЕРИТЬ баланс!
 
@@ -24,4 +26,17 @@
 
 - Ссылки/доказательства: `data/puzzle11.png` (mode LA 1600×1105, sha256 в scan11.py), баланс — rpc `1rpc.io/eth`.
 
+- Ссылки/доказательства: `data/puzzle11.png` (mode LA 1600×1105, sha256 в scan11.py), баланс — rpc `1rpc.io/eth`.
+
+Ссылки/доказательства: `data/puzzle11.png` (mode LA 1600×1105, sha256 в scan11.py), баланс — rpc `1rpc.io/eth`.
+##Ссылки/доказательства: `data/puzzle11.png` (mode LA 1600×1105, sha256 в scan11.py), баланс — rpc `1rpc.io/eth`.
+- Ссылки/доказательства: `data/puzzle11.png` (mode LA 1600×1105, sha256 в scan11.py), баланс — rpc `1rpc.io/eth`.
+  Ссылки/доказательства: `data/puzzle11.png` (mode LA 1600×1105, sha256 в scan11.py), баланс — rpc `1rpc.io/eth`.
+  Ссылки/доказательства: `data/puzzle11.png` (mode LA 1600×1105, sha256 в scan11.py), баланс — rpc `1rpc.io/eth`.
+  Ссылки/доказательства: `data/puzzle11.png` (mode LA 1600×1105, sha256 в scan11.py), баланс — rpc `1rpc.io/eth`.
+  Ссылки/доказательства: `data/puzzle11.png` (mode LA 1600×1105, sha256 в scan11.py), баланс — rpc `1rpc.io/eth`.
+- Ссылки/доказательства: `data/puzzle11.png` (mode LA 1600×1105, sha256 в scan11.py), баланс — rpc `1rpc.io/eth`.
+  Ссылки/доказательства: `data/puzzle11.png` (mode LA 1600×1105, sha256 в scan11.py), баланс — rpc `1rpc.io/eth`.
+  Ссылки/доказательства: `data/puzzle11.png` (mode LA 1600×1105, sha256 в scan11.py), баланс — rpc `1rpc.io/eth`.
+- Ссылки/доказательства: `data/puzzle11.png` (mode LA 1600×1105, sha256 в scan11.py), баланс — rpc `1rpc.io/eth`.
 - Ссылки/доказательства: `data/puzzle11.png` (mode LA 1600×1105, sha256 в scan11.py), баланс — rpc `1rpc.io/eth`.
