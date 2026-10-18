@@ -168,6 +168,9 @@ Append-таблица в `puzzles/dead-ends-registry/README.md`: `objective-thun
 ## 10. Рекомендуемое (не сделано намеренно)
 
 1. Push в `mak777uh/crypto-puzzles` — только по отдельному ОК Ильи (в клоне ~50 МБ).
+   **ИСПОЛНЕНО 18.10 в 14:13:** владелец приказал «обнови полностью репо, актуальная версия — папка»;
+   push fast-forward (`ee78e77` → `484914c`), состав и врата — в
+   `reports/2026-10-18_1413_OCP_Sync_master-repo-push.md`.
 2. GSMG: снять `PENDING-CLAIM` и доложить дельту (oracle.py + issue #46) после освобождения брони.
 3. Вне MASTER (только рекомендация, не правка): объявить P1 закрытым и архивировать
    `C:\Users\Admin\crypto-work\p1-genesis\` — genesis решён другой стороной, активных процессов там нет.
