@@ -1,0 +1,14 @@
+{
+ "repo": "puzzle",
+ "branch": "main",
+ "files": [
+  "privatekeys/readme.md",
+  "puzzle97/btc_address_deriver.py",
+  "puzzle97/entropy_shuffler.py",
+  "puzzle97/seed_to_bip44.py",
+  "puzzle99/README.md",
+  "puzzle99/bip39_text_parser.py",
+  "puzzle99/btc_phrase_scanner.py",
+  "puzzle99/documento.txt"
+ ]
+}

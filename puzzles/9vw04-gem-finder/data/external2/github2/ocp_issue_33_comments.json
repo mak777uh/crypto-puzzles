@@ -1,0 +1,49 @@
+[
+  {
+    "url": "https://api.github.com/repos/floflo777/open-crypto-puzzles/issues/comments/5822652797",
+    "html_url": "https://github.com/floflo777/open-crypto-puzzles/issues/33#issuecomment-5822652797",
+    "issue_url": "https://api.github.com/repos/floflo777/open-crypto-puzzles/issues/33",
+    "id": 5822652797,
+    "node_id": "IC_kwDOT6BV9M8AAAABWw6hfQ",
+    "user": {
+      "login": "floflo777",
+      "id": 50406817,
+      "node_id": "MDQ6VXNlcjUwNDA2ODE3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50406817?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/floflo777",
+      "html_url": "https://github.com/floflo777",
+      "followers_url": "https://api.github.com/users/floflo777/followers",
+      "following_url": "https://api.github.com/users/floflo777/following{/other_user}",
+      "gists_url": "https://api.github.com/users/floflo777/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/floflo777/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/floflo777/subscriptions",
+      "organizations_url": "https://api.github.com/users/floflo777/orgs",
+      "repos_url": "https://api.github.com/users/floflo777/repos",
+      "events_url": "https://api.github.com/users/floflo777/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/floflo777/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "created_at": "2026-09-24T21:37:14Z",
+    "updated_at": "2026-09-24T21:37:14Z",
+    "body": "Some of those are unsolvable or already in the repo but I'll add the other ones this week-end.",
+    "author_association": "OWNER",
+    "pin": null,
+    "reactions": {
+      "url": "https://api.github.com/repos/floflo777/open-crypto-puzzles/issues/comments/5822652797/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null,
+    "minimized": null
+  }
+]

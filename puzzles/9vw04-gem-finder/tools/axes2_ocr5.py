@@ -81,7 +81,7 @@ def orders(gr):
         sn += list(gr[r]) if r % 2 == 0 else list(gr[r])[::-1]
     o['snake'] = ''.join(sn)
     d1 = []
-    for d in range(-(R - 1), C):
+    for d in range(-(C - 1), R):   # 2026-10-18: исправлен диапазон (было -(R-1)..C, терялось 399 клеток)
         d1 += [gr[r][r - d] for r in range(R) if 0 <= r - d < C]
     o['diag_rc'] = ''.join(d1)
     d2 = []

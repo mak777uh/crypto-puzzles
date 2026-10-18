@@ -269,3 +269,48 @@ salt `2d3f6fe06dc950e6`). Новое: ребус Phase 1 прочитан зре
 - Внешний сбор завершён (0 solver-репо; транскрипция canalqb; 13 твитов verbatim; GIF мартовского хинта; on-chain: цель = compressed WIF 52). Сводка: puzzles/9vw04-gem-finder/data/EXTERNAL_DIGEST.md.
 - Сетка исправлена: data/grid_ocr5.json (+40 поправок O/Z; буквенный канал = избыточный цикл 26 букв, «mirror» подтверждён). Оракул 17.10 был сломан (len==34 вместо 38) — починен, self-test добавлен.
 - 3 цикла осей, ~9850 кандидатов, 0 валидных WIF. Строка «исчерпано» в PROPOSALS.md. Отчёты: reports/2026-10-18_1020_Qoder_9vw04-external-collection.md, reports/2026-10-18_1025_Qoder_9vw04-solve-pass.md. Бронь снята.
+
+
+## 2026-10-18 12:15 - Big Pickle (GSMG: корпус Telegram-подсказок + декод road-map создателя)
+
+Пользователь передал ранее недоступные источники: полный экспорт Telegram-группы «GSMG Puzzle Solvers»
+(65 654 сообщения, 2019-04-20..2026-10-18), тред bitcointalk, README сообщества. **Декодирован бинарный пост
+создателя (msg id 8446, 2023-02-24)**: метод = побитовый реверс каждого байта + реверс порядка байт ->
+`yellow blue primes matrixsumlist lastwordsbeforearchichoice yinyang / we wont give away the password its in
+front of your eyes but you're not seeing it / very last step is a true give away`. Это официальный road-map
+финальной фазы. Из постов сообщества (Boss Jimmy, sniper, peter chen, MrNobody, Mehdi и др.): закрыто почти
+всё, осталась одна стена — `btcseed`-payload (Bifid-плейнтекст, 570 симв., sha256 15d62c82:) надо свести к
+ключу через interpretive-правило (96 состояний); chain4/cosmic = фантомы. Ограниченный прогон H-SP1
+(96-байтовый AES-блоб SalPhaseIon = ключ приза? 159 паролей-кандидатов x KDF {md5,sha256} x 2 IV =
+1 272 расшифровки по двум блобам) -> **0 попаданий** (оракул = опубликованный pubkey приза верифицирован).
+Скачана сцена Decentraland estate 955: скрытых подсказок в коде сцены нет (10 кубов + синий текст
+«GSMG.IO 5 BTC PUZZLE CHALLENGE» + mp3). `beta.gsmg.io` не резолвится (DNS). README сообщества побайтово
+идентичен нашей копии. Артефакты: data/telegram/ (корпус + индекс), data/jrk_reveal_decode_2026-10-18.md,
+data/bitcointalk/, data/decentraland_2026-10-18/, tools/gsmg_jrk_reveal_decode_2026-10-18.py,
+tools/gsmg_sp1_password_probe_2026-10-18.py. Отчёт: reports/2026-10-18_1215_BigPickle_gsmg-telegram-corpus-mining.md.
+Бронь снята (ниже).
+
+
+## 2026-10-18 12:35 - Big Pickle (GSMG: пакет DeepWiki-страниц — дубликат)
+
+Пользователь передал 12 вики-страниц deepwiki.com по репо puzzlehunt/gsmgio-5btc-puzzle (снимок README,
+коммит fb92dd15, 2025-08-25). Машинная проверка на новизну: новых 40-64-hex нет (только известный 1a57c572:),
+нет солей 3ab58534:/b45a5e3d:, нет 4f7a1e4e:/cd3fea3d:, нет WIF/мнемоник; все base64-токены = знакомые строки
+README. Вывод: LLM-пересказ нашего data/puzzlehunt/README.md (sha256 442270a1:) — новой информации нет.
+Заметка: data/deepwiki_2025-08-25_DUPLICATE_note.md. Повторно не разбирать.
+
+
+## 2026-10-18 12:50 - Qoder (9vw04-gem-finder: чужие разборы v2, обогащение)
+
+Искал посторонние разборы (GitHub/сеть/форумы), не перебирая заново. Итог: единственный содержательный
+внешний инсайт — пост CanalQb 09.2026 с цитатой X-реплая Mixas «The number of 0 in the table is 52, like the
+WIF» (нули = якоря, шаг задаёт 9vw04). Проверено: в grid_ocr5 нулей ровно 52 (у canalqb — 72 из-за O→0), но
+распределение случайное и 52 = ожидаемая частота 525/10; ось H7 (306 кандидатов) и ось H8 «baby/giant step»
+(104 396 окон → 336 после алфавитного фильтра) → 0 валидных WIF, 0 хитов. Попутно найден и исправлен дефект
+обхода диагоналей во всех прежних порядках (651 клетка вместо 1050) — H1/axes2 перепрогнаны, результат тот же.
+Лента автора после 01.03.2026 (766 id через Wayback+fxtwitter) = мемкоин-щит, новых хинтов нет; старый ник —
+@IrrationalLibs. Reddit/GitHub/GitLab/bitcointalk/DDG/YouTube — пусто или red herring (imgur.com/9vw04 = мем).
+Нужно от пользователя (см. puzzles/9vw04-gem-finder/data/external2/NEED_USER_DOWNLOAD.md): X-реплаи анонса
+(92 ответа, логин), чат альянса bitcoinpuzzles.io #7 (37 участников, живой), bitcointalk-поиск, разовый
+GitHub-токен для code-search, аудио KryoTutorias-видео. Артефакты: data/external2/, раздел «Поиск разборов v2»
+в data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.

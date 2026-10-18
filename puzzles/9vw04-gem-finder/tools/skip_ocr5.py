@@ -48,7 +48,7 @@ def build_orders():
         snake += row if r % 2 == 0 else row[::-1]
     o['snake'] = snake
     d1 = []
-    for d in range(-(R - 1), C):
+    for d in range(-(C - 1), R):  # 2026-10-18: исправлен диапазон (терялось 399 клеток)
         for r in range(R):
             c = r - d
             if 0 <= c < C:

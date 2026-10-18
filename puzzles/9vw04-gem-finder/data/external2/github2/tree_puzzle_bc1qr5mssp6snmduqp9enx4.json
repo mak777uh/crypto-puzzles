@@ -1,0 +1,13 @@
+{
+ "repo": "puzzle_bc1qr5mssp6snmduqp9enx4dzmcxvk7qw83lceyy2v",
+ "branch": "main",
+ "files": [
+  "Baby_step_Giant_step/__init__.py",
+  "Baby_step_Giant_step/mask_debug.jpg",
+  "Baby_step_Giant_step/puzzle_decoder.py",
+  "Baby_step_Giant_step/readme.md",
+  "GfS12G-WUAE_Lt2.jpeg",
+  "README.md",
+  "puzzle_analyzer_01.py"
+ ]
+}
