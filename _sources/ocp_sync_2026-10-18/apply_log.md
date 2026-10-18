@@ -1,0 +1,40 @@
+# Раскладка снапшота `19644e58` (2026-10-18, агент OCP Sync)
+
+`puzzles/aoi-nakamoto-quizchain-0-854btc`: копий 9, ссылок на тяжёлые 0, LOG: append
+`puzzles/ballet-bobby-lee-2btc-cards`: копий 10, ссылок на тяжёлые 3, LOG: append
+`puzzles/bitaps-shamir-challenge-1btc`: копий 10, ссылок на тяжёлые 1, LOG: append
+`puzzles/blm-brave-new-world-0-2btc`: копий 11, ссылок на тяжёлые 1, LOG: append
+PENDING-CLAIM: `puzzles/gsmg-io-5btc-puzzle` — держит BigPickle, не трогаем
+`puzzles/guntis-vitolins-metamask-8-6eth`: копий 10, ссылок на тяжёлые 0, LOG: append
+`puzzles/peter-todd-hash-collision-bounties-0-59btc`: копий 5, ссылок на тяжёлые 0, LOG: append
+`puzzles/ah-white-walking-banks-800ksats`: копий 3, ссылок на тяжёлые 0, LOG: append
+`puzzles/arweave-puzzle-10-500ar`: копий 9, ссылок на тяжёлые 1, LOG: append
+`puzzles/arweave-puzzle-11-1eth`: копий 24, ссылок на тяжёлые 1, LOG: append
+`solved/arweave-puzzle-12-400ar`: копий 9, ссылок на тяжёлые 0, LOG: append
+`puzzles/arweave-puzzle-3-1000ar`: копий 20, ссылок на тяжёлые 1, LOG: append
+`puzzles/corey-phillips-kitten-passphrase-1msats`: копий 9, ссылок на тяжёлые 1, LOG: append
+`puzzles/fe-lang-bountiful-compiler-bounty-1eth`: копий 6, ссылок на тяжёлые 0, LOG: append
+`solved/ftpk-season-2-300usdt`: копий 2, ссылок на тяжёлые 0, LOG: append
+`puzzles/keir-finlow-bates-blockchain-book-600ksats`: копий 13, ссылок на тяжёлые 0, LOG: append
+`solved/logicbeach-powerful-moss-0-54eth`: копий 7, ссылок на тяжёлые 1, LOG: append
+`puzzles/path-to-greatness-treasure-hunt-3ltc`: копий 2, ссылок на тяжёлые 0, LOG: append
+`solved/pindar-van-arman-cryptoartgan-nft`: копий 3, ссылок на тяжёлые 0, LOG: append
+`puzzles/rushwallet-contest-30-1msats`: копий 3, ссылок на тяжёлые 0, LOG: append
+`puzzles/school-of-bitcoin-1msats`: копий 6, ссылок на тяжёлые 0, LOG: append
+`puzzles/smith-lyle-moore-hunt-2-0-032btc`: копий 10, ссылок на тяжёлые 0, LOG: append
+`puzzles/teikhos-bipedaljoe-solver-bounties-2eth`: копий 10, ссылок на тяжёлые 0, LOG: append
+`puzzles/wealth-in-poetry-0-03btc`: копий 2, ссылок на тяжёлые 0, LOG: append
+`puzzles/zden-haluska-halv-312ksats`: копий 7, ссылок на тяжёлые 0, LOG: append
+`puzzles/crypto-puzzles-2018-puzzle-2-0-05eth`: копий 4, ссылок на тяжёлые 0, LOG: append
+`puzzles/exitonly-challenge-14-30ksats`: копий 3, ссылок на тяжёлые 0, LOG: append
+`solved/andy-bauch-new-money-cog-428ksats`: копий 3, ссылок на тяжёлые 3, LOG: append
+`solved/bc1q21-timelock-challenge-l5-100ksats`: копий 3, ссылок на тяжёлые 0, LOG: append
+`solved/bitcoin-movie-enigma-100ksats`: копий 10, ссылок на тяжёлые 0, LOG: append
+`puzzles/genesis-block-wallet-puzzle-142ksats`: копий 26, ссылок на тяжёлые 0, LOG: append
+`solved/dug-student-treasure-hunt-63ksats`: копий 3, ссылок на тяжёлые 0, LOG: append
+`solved/ftpk-season-4-166usdc`: копий 2, ссылок на тяжёлые 0, LOG: append
+`solved/keysa-crack-the-seed-369ksats`: копий 9, ссылок на тяжёлые 1, LOG: append
+`solved/luckylurker-seed-riddles-80ksats`: копий 3, ссылок на тяжёлые 0, LOG: append
+`solved/veteranhodl-hunting-time-420ksats`: копий 3, ссылок на тяжёлые 0, LOG: append
+`solved/wonderabbit-prometheus-1msats`: копий 2, ссылок на тяжёлые 0, LOG: append
+`solved/zden-haluska-lvl5-555ksats`: копий 5, ссылок на тяжёлые 0, LOG: append

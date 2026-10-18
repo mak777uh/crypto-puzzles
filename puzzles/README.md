@@ -2,10 +2,22 @@
 
 Папка с подробной информацией по каждому пазлу. Глобальный справочник — [MASTER_CATALOG.md](../MASTER_CATALOG.md).
 
-Активных папок: **80**. Ещё 52 решённых/закрытых/тупиковых вынесены в [solved/INDEX.md](../solved/INDEX.md) — там не работать без новых данных.
+Активных папок-досье: **80** (+ реестр отбракованных `dead-ends-registry`). Из 5 новых нерешённых загадок, добавленных 18.10.2026
+(`reports/2026-10-18_1245_Qoder_catalog-search-plan-and-new-sources.md`), после прохода верификации 18.10: **3 остались активными**
+(gold-crystal, krypto-chase, lunarcrush — off-chain/физические, нерешены), **2 перенесены в solved/** (hunghuatang-8964 — решён автором;
+satoshis-treasure — сайт мёртв, верифицируемый bounty-адрес свипнут). Также 18.10 закрыта genesis (см. `reports/2026-10-18_1000_OCP_Sync_ocp-full-sync.md`).
+Ещё 55 решённых/закрытых/тупиковых вынесены в [solved/INDEX.md](../solved/INDEX.md) — там не работать без новых данных.
 
 **Перед началом работы по любой загадке** сначала проверьте [dead-ends-registry](dead-ends-registry/README.md) —
 там список проверенно мёртвых и отбракованных задач (не тратить время).
+
+**Второй обязательный шаг — GitHub-интейк** (правило Ильи от 18.10.2026): взяв цель и забронировав её, агент
+сначала собирает по этой загадке всё из репозиториев — `python tools/github_intake.py run <slug> --agent <Имя>`
+(репо загадки, автора/мейнтейнеров, форки, issues, PR, коммиты, релизы, gists, wiki + запись OCP офлайн).
+Пока шлюз не зафиксирован в `LOG.md` пазла (в том числе оформленный негатив «репо не найдено»), нельзя
+выставлять строку в `PROPOSALS.md` и запускать проверочный прогон. Порядок и лимиты — раздел
+«GitHub-интейк — обязательный первый шлюз» в [AGENT_INSTRUCTIONS.md](../AGENT_INSTRUCTIONS.md);
+статусы по всей базе — [_sources/GITHUB_INTAKE_STATUS.md](../_sources/GITHUB_INTAKE_STATUS.md).
 
 - [1000-btc-challenge-bitcoin-puzzle-tx](1000-btc-challenge-bitcoin-puzzle-tx/README.md) — 1000 BTC Challenge (Bitcoin Puzzle Transaction) (~916-989 BTC (~$58-60M))
 - [11b-x-1371](11b-x-1371/README.md) — 11B-X-1371 (2015)
@@ -37,8 +49,9 @@
 - [dead-ends-registry](dead-ends-registry/README.md) — Реестр мёртвых и отбракованных загадок (не тратить время)
 - [exitonly-challenge-14-30ksats](exitonly-challenge-14-30ksats/README.md) — Exitonly Bitcoin Challenge 14 (30000 sats (USD 18.9))
 - [fe-lang-bountiful-compiler-bounty-1eth](fe-lang-bountiful-compiler-bounty-1eth/README.md) — Bountiful: the Fe compiler bug bounty (1 ETH (USD 1880))
-- [genesis-block-wallet-puzzle-142ksats](genesis-block-wallet-puzzle-142ksats/README.md) — Genesis Block Wallet Puzzle (168779 sats (USD 106))
+- ~~[genesis-block-wallet-puzzle-142ksats](genesis-block-wallet-puzzle-142ksats/README.md) — Genesis Block Wallet Puzzle (168779 sats (USD 106))~~ → **РЕШЁН внешним решателем (CaesarCoder), свип 2026-10-17 03:40 UTC, баланс 0 (наша on-chain проверка 2026-10-18)** → перенесён: [solved/caesarcoder-genesis-block-wallet-puzzle-947ksats](../solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/README.md)
 - [ghostnet](ghostnet/README.md) — GhostNet (2009)
+- [gold-crystal-ubisoft-hunt-500k](gold-crystal-ubisoft-hunt-500k/README.md) — Gold & Crystal: The Lost Treasure of Edward Kenway (Ubisoft × Unsolved Hunts, **$500 000**, 15 загадок, нерешена; вне блокчейна)
 - [groestlcoin-puzzle-1000grs](groestlcoin-puzzle-1000grs/README.md) — Groestlcoin Puzzle (1000,0001 GRS)
 - [gsmg-io-5btc-puzzle](gsmg-io-5btc-puzzle/README.md) — GSMG.io Puzzle (1.2563451 BTC (USD 79150))
 - [guntis-vitolins-metamask-8-6eth](guntis-vitolins-metamask-8-6eth/README.md) — Guntis Vitolins: 10 ETH Challenge (8.612541554256945 ETH (USD 16192))
@@ -46,9 +59,11 @@
 - [john-titor](john-titor/README.md) — John Titor (2000-2001)
 - [keir-finlow-bates-blockchain-book-600ksats](keir-finlow-bates-blockchain-book-600ksats/README.md) — Keir Finlow-Bates: Move Over Brokers Treasure Hunt (600000 sats (USD 378))
 - [ktimesg-phy-challenge-0-008btc](ktimesg-phy-challenge-0-008btc/README.md) — kTimesG «Phy Challenge» (0,008 BTC)
+- [krypto-chase-skavengerz-1m](krypto-chase-skavengerz-1m/README.md) — Krypto Chase × Skavengerz (США, 50 штатов; $5 000 за квалификацию, **$1 000 000** финал; нерешена; вне блокчейна)
 - [lake-city-quiet-pills](lake-city-quiet-pills/README.md) — Lake City Quiet Pills (2010-е)
 - [lost-media-bfi-75-most-wanted](lost-media-bfi-75-most-wanted/README.md) — Lost Media (BFI 75 Most Wanted, Doctor Who и др.)
 - [luckylurker-vault-2-1btc](luckylurker-vault-2-1btc/README.md) — LuckyLurker Bitcoin Vault #2 (1,0 BTC)
+- [lunarcrush-lunar-vault-62btc](lunarcrush-lunar-vault-62btc/README.md) — LunarCrush Lunar Vault (62 BTC, ключ на луноходе MAPP; нерешена; адрес не опубликован)
 - [mapnificent-treasure-hunt-mth202610](mapnificent-treasure-hunt-mth202610/README.md) — Mapnificent Treasure Hunt MTH202610
 - [marianas-web](marianas-web/README.md) — Mariana's Web / мифология глубокого веба
 - [markovian-parallax-denigrate](markovian-parallax-denigrate/README.md) — Markovian Parallax Denigrate (1996)
@@ -97,7 +112,7 @@
   - **«Обновление (web-исследование)»** — независимая проверка по 21 загадке и 22 интернет-мистериям.
 - Дубликаты/алиасы каталога сведены к одной папке:
   - `B31 Kitten Passphrase Puzzle` = [corey-phillips-kitten-passphrase-1msats](corey-phillips-kitten-passphrase-1msats/README.md);
-  - `B41 Genesis Block Brainwallet` = [genesis-block-wallet-puzzle-142ksats](genesis-block-wallet-puzzle-142ksats/README.md);
+  - `B41 Genesis Block Brainwallet` = [caesarcoder-genesis-block-wallet-puzzle-947ksats](../solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/README.md) (был `puzzles/genesis-block-wallet-puzzle-142ksats`, закрыт 2026-10-18);
   - `B32 Move Over Brokers Treasure Hunt` = [keir-finlow-bates-blockchain-book-600ksats](keir-finlow-bates-blockchain-book-600ksats/README.md);
   - `Satoshi-Maze` = [phemex-dorian-nakamoto](phemex-dorian-nakamoto/README.md);
   - `1000-BTC #135` учтён в [1000-btc-challenge-bitcoin-puzzle-tx](1000-btc-challenge-bitcoin-puzzle-tx/README.md).

@@ -16,3 +16,9 @@
 - Отказ (3): https://github.com/floflo777/open-crypto-puzzles [FAIL: IncompleteRead(327680 bytes read) ]; https://bitcointalk.org/index.php?topic=793720.0 [FAIL: <urlopen error [Errno 11001] getad]; https://bitcointalk.org/index.php?topic=793720 [FAIL: <urlopen error [Errno 11001] getad]
 - Артефакты: `data/SOURCES.md` + скачанные файлы.
 - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+## 2026-10-18, 09:52 — OCP Sync (Qoder Desktop, Windows) <!-- ocp-snapshot:19644e58 -->
+- Делал: обогащение из внешнего репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) — раскладка дельты снапшота `19644e58` (клон `_sources/ocp/`, реестр `_sources/OCP_SNAPSHOT.md`). Протокол: `claims acquire/heartbeat/release` по `rushwallet-contest-30-1msats`. Прогонов/переборов не запускали, статус пазла и балансы не меняли, чужие файлы не перезатёрты (копии лежат отдельными деревами `data/ocp/` и `tools/ocp/` с provenance).
+- Результат: перенесено 2 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в базе, пропущено: 3. Статус по OCP: `open`.
+- Артефакты: `2-mid-prizes/rushwallet-contest-30-1msats/clues/author-posts.md`, `2-mid-prizes/rushwallet-contest-30-1msats/puzzle.json`, `2-mid-prizes/rushwallet-contest-30-1msats/tools/oracle.py`
+- Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/rushwallet-contest-30-1msats ; полная дельта — `_sources/ocp_sync_2026-10-18/delta_report.md`.

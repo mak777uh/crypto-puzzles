@@ -18,6 +18,12 @@
 - Секция «Текущая задача» ниже перезаписывается целиком агентом, держащим бронь очереди (`python tools/claims.py acquire _queue --agent <имя>`).
 - Журнал прежних проходов: `_archive/WAKE_JOURNAL_2026-10-17.md`. Решённые/закрытые пазлы: `solved/INDEX.md` — там не работать без новых данных.
 - Параллельная работа: брони пазлов — `python tools/claims.py`, правила — `AGENT_INSTRUCTIONS.md` (раздел «Параллельная работа»).
+- Параллельная работа: брони пазлов — `python tools/claims.py`, правила — `AGENT_INSTRUCTIONS.md` (раздел «Параллельная работа»).
+  Параллельная работа: брони пазлов — `python tools/claims.py`, правила — `AGENT_INSTRUCTIONS.md` (раздел «Параллельная работа»).
+  Параллельная работа: брони пазлов — `python tools/claims.py`, правила — `AGENT_INSTRUCTIONS.md` (раздел «Параллельная работа»).
+  Параллельная работа: брони пазлов — `python tools/claims.py`, правила — `AGENT_INSTRUCTIONS.md` (раздел «Параллельная работа»).
+- Параллельная работа: брони пазлов — `python tools/claims.py`, правила — `AGENT_INSTRUCTIONS.md` (раздел «Параллельная работа»).
+  Параллельная работа: брони пазлов — `python tools/claims.py`, правила — `AGENT_INSTRUCTIONS.md` (раздел «Параллельная работа»).
 
 ## Текущая задача (проход 11): каталог — импорт dsh-сессии (GLIMMER/отчёты) закрыт; Genesis — обе ночные батареи закрыты (174 897 прогонов, 0); сертификация relaxed; эскроу
 1. Genesis: батареи #4/#5 закрыты (calib7 29 598 + опечатки 3 999 + calib8 141 300 = 174 897 прогонов M1, ноль). Оракул ppZ — на паузе до решающего декодер-вопроса (2e915cad/e3373eb1); ждёт пополнения и ОК Ильи.
@@ -314,3 +320,75 @@ WIF» (нули = якоря, шаг задаёт 9vw04). Проверено: в
 (92 ответа, логин), чат альянса bitcoinpuzzles.io #7 (37 участников, живой), bitcointalk-поиск, разовый
 GitHub-токен для code-search, аудио KryoTutorias-видео. Артефакты: data/external2/, раздел «Поиск разборов v2»
 в data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+
+ data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+-- data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+## data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+П data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+(` data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+Н data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+Lu data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+п data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+П data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+Б data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+
+ data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+-- data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+## data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+-  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+-  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+-  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+-  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+-  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+-  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+
+ data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+-- data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+## data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+we data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+hu data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+б data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+н data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+80 data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+
+ data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+-- data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+## data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+
+ data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+-  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+-  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+-  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+-  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+-  data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.
+   data/EXTERNAL_DIGEST.md. Отчёт: reports/2026-10-18_1250_Qoder_9vw04-solve-hunts-v2.md. Бронь снята.

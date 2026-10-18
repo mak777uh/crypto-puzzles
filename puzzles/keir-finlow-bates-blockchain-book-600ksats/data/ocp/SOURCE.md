@@ -1,0 +1,17 @@
+# Provenance зеркал OCP в этой папке (`data/ocp`)
+
+Источник: https://github.com/floflo777/open-crypto-puzzles, коммит `19644e58e50721f8469680f2edcba1daa0697630`, снят 2026-10-18 агентом `OCP Sync` скриптом `tools/ocp_delta_scan.py`.
+Полный клон: `_sources/ocp/`; реестр снапшотов: `_sources/OCP_SNAPSHOT.md`.
+Файлы ниже — byte-exact копии чужого материала: не редактируем, не затираем, не переименовываем.
+Сверка при следующей синхронизации: `git -C _sources/ocp ls-tree -r 19644e58e50721f8469680f2edcba1daa0697630`.
+
+| файл здесь | путь в репо | blob | размер | url |
+|---|---|---|---|---|
+| `data/ocp/clues/author-posts.md` | `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/clues/author-posts.md` | `79a321330ba919956b3755d1e398ddf22dea5d6a` | 1980 | https://github.com/floflo777/open-crypto-puzzles/blob/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/clues/author-posts.md |
+| `data/ocp/data/pipeline-stages.json` | `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/data/pipeline-stages.json` | `a129a6f303c0304bf9905cf524068e1b7e1d5a89` | 899 | https://github.com/floflo777/open-crypto-puzzles/blob/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/data/pipeline-stages.json |
+| `data/ocp/data/pow-nonce-best.csv` | `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/data/pow-nonce-best.csv` | `2f37bc8536e299f23dd9ce167bb625a137dca7d7` | 1244 | https://github.com/floflo777/open-crypto-puzzles/blob/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/data/pow-nonce-best.csv |
+| `data/ocp/data/timeline.csv` | `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/data/timeline.csv` | `a4b57bce69de768dfe6bc83217ba3c370aa7ee51` | 1571 | https://github.com/floflo777/open-crypto-puzzles/blob/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/data/timeline.csv |
+| `data/ocp/images/01-pipeline-derivation.svg` | `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/images/01-pipeline-derivation.svg` | `10d4e6e442560b3d2a9773622ec2d69102eeca9c` | 3663 | https://github.com/floflo777/open-crypto-puzzles/blob/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/images/01-pipeline-derivation.svg |
+| `data/ocp/images/02-structure-lots.svg` | `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/images/02-structure-lots.svg` | `58308bd5805a4c0b06f458d2d49a24e0987241f3` | 6085 | https://github.com/floflo777/open-crypto-puzzles/blob/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/images/02-structure-lots.svg |
+| `data/ocp/images/03-timeline-funding.png` | `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/images/03-timeline-funding.png` | `ef17c1ebce7de2630eb5b58ac7bb6f6e72cc91c0` | 57377 | https://github.com/floflo777/open-crypto-puzzles/blob/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/images/03-timeline-funding.png |
+| `data/ocp/puzzle.json` | `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/puzzle.json` | `b2e8e7171c34f48cb472632ad256b4a43e206f44` | 11656 | https://github.com/floflo777/open-crypto-puzzles/blob/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/puzzle.json |

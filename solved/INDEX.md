@@ -9,7 +9,7 @@
   убрать строку отсюда, добавить в `puzzles/README.md`, отметить в `LOG.md` пазла и в отчёте `reports/`.
 - Внутри каждой папки: `README.md` (досье), `LOG.md` (хроника), `tools/`, `data/` — структура прежняя.
 
-## Решённые — приз снят (27)
+## Решённые — приз снят (29)
 
 Приз снят (нами или третьей стороной). Работать нечего; папки хранят методику и историю.
 
@@ -40,10 +40,11 @@
 | [veteranhodl-hunting-time-420ksats](veteranhodl-hunting-time-420ksats/README.md) | solved — решён читателем после публикации |
 | [warpwallet-challenges](warpwallet-challenges/README.md) | 4 из 6 решены, 2 истекли; ключи опубликованы |
 | [wickex-youtube-puzzle](wickex-youtube-puzzle/README.md) | swept через 46 минут |
+| [hunghuatang-8964-btc-puzzle](hunghuatang-8964-btc-puzzle/README.md) | решён 2026: автор @hunghuatang подтвердил победу @IndividualOk6204, приз 0.008964 BTC (проверка 18.10.2026) |
 | [wonderabbit-prometheus-1msats](wonderabbit-prometheus-1msats/README.md) | solved — приз снят |
 | [zden-haluska-lvl5-555ksats](zden-haluska-lvl5-555ksats/README.md) | solved — приз снят |
 
-## Закрытые — истёк / свипнут / завершён (наш выигрыш не зашёл) (11)
+## Закрытые — истёк / свипнут / завершён (наш выигрыш не зашёл) (12)
 
 Пазл истёк, свипнут или завершён без нашего выигрыша. Возвращать только при новых данных.
 
@@ -52,6 +53,7 @@
 | [a858de45f56d9bc9-reddit](a858de45f56d9bc9-reddit/README.md) | мистерия завершена, не решена |
 | [arweave-puzzle-12-400ar](arweave-puzzle-12-400ar/README.md) | свипнут, баланс 0 (наша проверка 12.10.2026; agntn: Claimed) |
 | [book-quiz-7-million](book-quiz-7-million/README.md) | дедлайн истёк, приз «ушёл домой» |
+| [caesarcoder-genesis-block-wallet-puzzle-947ksats](caesarcoder-genesis-block-wallet-puzzle-947ksats/README.md) | решён и свипнут третьей стороной 2026-10-17 (блок 971803, нетто 935 266 сат); баланс 0 — наша on-chain проверка 2026-10-18; инсайт: PBKDF2 rounds 181505/200913 вместо 2048 |
 | [cicada-3372](cicada-3372/README.md) | закрыта; предупреждение о скаме |
 | [ftpk-season-2-300usdt](ftpk-season-2-300usdt/README.md) | USDT = 0, swept (наша проверка 12.10.2026) |
 | [logicbeach-powerful-moss-0-54eth](logicbeach-powerful-moss-0-54eth/README.md) | контракт пуст, claimed Oct 2026 (наша проверка 12.10.2026) |
@@ -60,6 +62,7 @@
 | [phemex-dorian-nakamoto](phemex-dorian-nakamoto/README.md) | биржа свипнула 21.03.2020 и сама опубликовала решение; приз не выигран |
 | [proof-of-writing](proof-of-writing/README.md) | закрыт в каталоге (Часть 6), деталей нет |
 | [satoshi-maze](satoshi-maze/README.md) | алиас phemex-dorian-nakamoto; закрыт 21.03.2020 |
+| [satoshis-treasure-arg-1m](satoshis-treasure-arg-1m/README.md) | сайт мёртв (2019 ARG); единственный верифицируемый bounty-адрес 1899BGHGR4… потрачен (баланс 0, проверка 18.10.2026); основной ~$1M фонд физический/off-chain |
 
 ## Dead-end и не-пазлы — не тратить время (14)
 

@@ -1,0 +1,4283 @@
+{
+ "snapshot": {
+  "repo": "https://github.com/floflo777/open-crypto-puzzles",
+  "ref": "19644e58e50721f8469680f2edcba1daa0697630",
+  "scanned": "2026-10-18",
+  "agent": "OCP Sync",
+  "blobs": 474,
+  "entities": 38
+ },
+ "puzzles": [
+  {
+   "kind": "puzzle",
+   "ocp": "1-big-prizes/aoi-nakamoto-quizchain-0-854btc",
+   "slug": "aoi-nakamoto-quizchain-0-854btc",
+   "master": "puzzles/aoi-nakamoto-quizchain-0-854btc",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "Block 76 (0.077 BTC) was solved and swept by a reader on 2026-08-17; only Real Big Block (0.777 BTC) remains open",
+   "files": [
+    {
+     "ocp_path": "1-big-prizes/aoi-nakamoto-quizchain-0-854btc/README.md",
+     "rel": "README.md",
+     "blob": "cb1d3dea815bc35a26a802c936de478320469d5f",
+     "size": 23130,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/aoi-nakamoto-quizchain-0-854btc/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "8818241ff5d1ff3210013226b99903702fded795",
+     "size": 9109,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/aoi-nakamoto-quizchain-0-854btc/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "35736f595a27ca79ff15a3230584fcdb40dbd6a2",
+     "size": 17824,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/aoi-nakamoto-quizchain-0-854btc/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "0f1b097c80400fc133d0f2cd8a771b36f551854d",
+     "size": 4306,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/aoi-nakamoto-quizchain-0-854btc/data/blocks-structure.json",
+     "rel": "data/blocks-structure.json",
+     "blob": "224ea2d079ea25d85fca9e404be7223f0147aa93",
+     "size": 963,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/aoi-nakamoto-quizchain-0-854btc/data/pipeline-stages.json",
+     "rel": "data/pipeline-stages.json",
+     "blob": "50eb6ddf21de6fef7563d43425d578a6cdc70823",
+     "size": 632,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/aoi-nakamoto-quizchain-0-854btc/images/01-pipeline-derivation.svg",
+     "rel": "images/01-pipeline-derivation.svg",
+     "blob": "17fd4f0228747f4576f732bb30cb69ba7838b749",
+     "size": 3522,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/aoi-nakamoto-quizchain-0-854btc/images/02-structure-blocks.svg",
+     "rel": "images/02-structure-blocks.svg",
+     "blob": "6d47467def86fd15ca32e91a4d359dcba904940e",
+     "size": 3415,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/aoi-nakamoto-quizchain-0-854btc/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "23407104aa556b5fabc29197e4a3ae85272420df",
+     "size": 7584,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/aoi-nakamoto-quizchain-0-854btc/tools/fig_blocks.py",
+     "rel": "tools/fig_blocks.py",
+     "blob": "2f52b8759c71cafeecc4dfdc6ed2f283b586b7ad",
+     "size": 7061,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/aoi-nakamoto-quizchain-0-854btc/tools/fig_pipeline.py",
+     "rel": "tools/fig_pipeline.py",
+     "blob": "177b2d9b94a629dfdfa7cad48d5857382b5a3dca",
+     "size": 4670,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/aoi-nakamoto-quizchain-0-854btc/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "29058028d7f73ffbca3da3d7db51c86bbb28f5e7",
+     "size": 10434,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 9,
+   "link": 0,
+   "skip": 3
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "1-big-prizes/ballet-bobby-lee-2btc-cards",
+   "slug": "ballet-bobby-lee-2btc-cards",
+   "master": "puzzles/ballet-bobby-lee-2btc-cards",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "two independent cards, 1.00003481 BTC (AA009926) and 1.00003877 BTC (AA012381); a third card, AA007448, was solved and swept by a third party in 2020 and is not part of the live prize",
+   "files": [
+    {
+     "ocp_path": "1-big-prizes/ballet-bobby-lee-2btc-cards/README.md",
+     "rel": "README.md",
+     "blob": "8f93a902d7729801ea6cbfa408d476e7431be3a8",
+     "size": 11812,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/ballet-bobby-lee-2btc-cards/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "485c599741a1ec38324aaf3dd7354de1490e02da",
+     "size": 3653,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/ballet-bobby-lee-2btc-cards/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "dea72c8029c5806b150ccffc917ebb96d5305adf",
+     "size": 5948,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/ballet-bobby-lee-2btc-cards/clues/AA007448-puzzle.jpg",
+     "rel": "clues/AA007448-puzzle.jpg",
+     "blob": "ccb54a5cb184c233a43e6951575dee6387c0df86",
+     "size": 726927,
+     "status": "MISSING",
+     "action": "link",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/ballet-bobby-lee-2btc-cards/clues/AA009926-puzzle.jpg",
+     "rel": "clues/AA009926-puzzle.jpg",
+     "blob": "96034a2cc1f7a2440d06e7ce484bce2cfeeccdc6",
+     "size": 1566737,
+     "status": "MISSING",
+     "action": "link",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/ballet-bobby-lee-2btc-cards/clues/AA009926-revealed.jpg",
+     "rel": "clues/AA009926-revealed.jpg",
+     "blob": "bbac0d9ef05dc954b5bd165fbae6fc1b90f1dc97",
+     "size": 217605,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/ballet-bobby-lee-2btc-cards/clues/AA012381-puzzle.jpg",
+     "rel": "clues/AA012381-puzzle.jpg",
+     "blob": "04143896a486b41ca206720b5ffd3fc6ab6bc17f",
+     "size": 1372247,
+     "status": "MISSING",
+     "action": "link",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/ballet-bobby-lee-2btc-cards/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "09c61858579f8e01c5195c926d47388a101d3d18",
+     "size": 1212,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.15
+    },
+    {
+     "ocp_path": "1-big-prizes/ballet-bobby-lee-2btc-cards/data/card-faces.json",
+     "rel": "data/card-faces.json",
+     "blob": "7f2aed6fe5770ab27e3117081fd6fe2406afd466",
+     "size": 1291,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/ballet-bobby-lee-2btc-cards/data/pipeline-stages.json",
+     "rel": "data/pipeline-stages.json",
+     "blob": "97b0c2a22d649eedb0cb365823f74557f5d91c7b",
+     "size": 611,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/ballet-bobby-lee-2btc-cards/images/01-structure-card-faces.svg",
+     "rel": "images/01-structure-card-faces.svg",
+     "blob": "3b8f1f4b417fcb199e73f6314420ca114ab260c0",
+     "size": 3619,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/ballet-bobby-lee-2btc-cards/images/02-pipeline-derivation.svg",
+     "rel": "images/02-pipeline-derivation.svg",
+     "blob": "99f68f956278126212bd294b3023e0dc8bf64228",
+     "size": 3300,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/ballet-bobby-lee-2btc-cards/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "c983f2ff7868ddac2d8ea9925c03fc3be08fb408",
+     "size": 5403,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/ballet-bobby-lee-2btc-cards/tools/fig_cards.py",
+     "rel": "tools/fig_cards.py",
+     "blob": "4f6eb06c7661021efb768ff5caecd110a319b44b",
+     "size": 6659,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/ballet-bobby-lee-2btc-cards/tools/fig_pipeline.py",
+     "rel": "tools/fig_pipeline.py",
+     "blob": "828ab098b1ce6d85f70d8a141c427b43ed545fbc",
+     "size": 4700,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/ballet-bobby-lee-2btc-cards/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "0af73eca6b2e140552833449bb29bd5b60e919eb",
+     "size": 6894,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 10,
+   "link": 3,
+   "skip": 3
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "1-big-prizes/bitaps-shamir-challenge-1btc",
+   "slug": "bitaps-shamir-challenge-1btc",
+   "master": "puzzles/bitaps-shamir-challenge-1btc",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "single P2WPKH escrow, funded across 5 transactions ending 2022-10",
+   "files": [
+    {
+     "ocp_path": "1-big-prizes/bitaps-shamir-challenge-1btc/README.md",
+     "rel": "README.md",
+     "blob": "2eccbbe23b95c58acff5762bdfa386f45fca6a1f",
+     "size": 14417,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/bitaps-shamir-challenge-1btc/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "15fa67292933149807e75f4d5f38592d1a47a4b9",
+     "size": 3192,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/bitaps-shamir-challenge-1btc/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "c86a4989594789e510e91778ff712afbab1101ab",
+     "size": 17706,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/bitaps-shamir-challenge-1btc/challenge.warc",
+     "rel": "challenge.warc",
+     "blob": "3a54c50a66219721b56eac13f500fd68d3ce8f21",
+     "size": 72168,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/bitaps-shamir-challenge-1btc/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "4eb93d466de561a3162d4459fc5e67320c0bdea7",
+     "size": 3845,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.041
+    },
+    {
+     "ocp_path": "1-big-prizes/bitaps-shamir-challenge-1btc/data/channel_reads.csv",
+     "rel": "data/channel_reads.csv",
+     "blob": "a2cfa19df9b5aea24f8f3414a978df5e8b2a0cc1",
+     "size": 2417,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/bitaps-shamir-challenge-1btc/data/entropy_measurements.csv",
+     "rel": "data/entropy_measurements.csv",
+     "blob": "9a36ceb6d3f655bf3eccaedcaa0bcf0f2cf320ba",
+     "size": 983,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/bitaps-shamir-challenge-1btc/data/related_disclosures.csv",
+     "rel": "data/related_disclosures.csv",
+     "blob": "ef53d81f48c85cfdacbf8155854ac0d42e3d40cf",
+     "size": 1669,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/bitaps-shamir-challenge-1btc/offline.warc",
+     "rel": "offline.warc",
+     "blob": "dc6d4d388556e5837577092b691e17b83d838fe6",
+     "size": 1049626,
+     "status": "MISSING",
+     "action": "link",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/bitaps-shamir-challenge-1btc/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "ca5dcd204c7fda65882e0052d3d47cce779fec54",
+     "size": 5091,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/bitaps-shamir-challenge-1btc/tool-en.warc",
+     "rel": "tool-en.warc",
+     "blob": "3071eab79a20352281e4de61e552a8dc77054fbe",
+     "size": 120245,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/bitaps-shamir-challenge-1btc/tool-ru.warc",
+     "rel": "tool-ru.warc",
+     "blob": "dc54c4b8782886a59aadfb2fc666dcffac6f500b",
+     "size": 121525,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/bitaps-shamir-challenge-1btc/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "c1de8ba96889311fa6fd6deb0031fd74ce70f231",
+     "size": 10361,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.01
+    },
+    {
+     "ocp_path": "1-big-prizes/bitaps-shamir-challenge-1btc/tools/structured_candidates.py",
+     "rel": "tools/structured_candidates.py",
+     "blob": "e44aded78529b214decb6bf1e1b84f8edc1e21c7",
+     "size": 9385,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 10,
+   "link": 1,
+   "skip": 3
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "1-big-prizes/blm-brave-new-world-0-2btc",
+   "slug": "blm-brave-new-world-0-2btc",
+   "master": "puzzles/blm-brave-new-world-0-2btc",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "0.20107284 BTC, funded 2020-05-10 in 5 transactions, before the puzzle post",
+   "files": [
+    {
+     "ocp_path": "1-big-prizes/blm-brave-new-world-0-2btc/README.md",
+     "rel": "README.md",
+     "blob": "43a806f81184a13f6a3de9597c135d6e6931a657",
+     "size": 13011,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.007
+    },
+    {
+     "ocp_path": "1-big-prizes/blm-brave-new-world-0-2btc/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "a028f71197048774315a420b036594c49f7ad834",
+     "size": 2824,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/blm-brave-new-world-0-2btc/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "f0f7ad7643e27542b64bbb4e646b4603958c9dab",
+     "size": 10937,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/blm-brave-new-world-0-2btc/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "d811e5e6b00bd8e393ccaaaf859741c8ca2fa1fb",
+     "size": 854,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/blm-brave-new-world-0-2btc/clues/welcome-to-the-brave-new-world.png",
+     "rel": "clues/welcome-to-the-brave-new-world.png",
+     "blob": "e6a52abfa4d2752ecc3fbccfbc40ea0fed1521d7",
+     "size": 2383395,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/blm-brave-new-world-0-2btc/data/candidate-regions.json",
+     "rel": "data/candidate-regions.json",
+     "blob": "8a8c247e4ef2f9162e1cd2b227a85a65a0d3a99b",
+     "size": 1196,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/blm-brave-new-world-0-2btc/data/format-fork.json",
+     "rel": "data/format-fork.json",
+     "blob": "1e7b665188867f814fc217b2e1917e03cd0fa660",
+     "size": 812,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/blm-brave-new-world-0-2btc/images/01-annotated-regions.png",
+     "rel": "images/01-annotated-regions.png",
+     "blob": "e0be1cf6934063a37632f0238efad19d4175d35d",
+     "size": 306124,
+     "status": "MISSING",
+     "action": "link",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/blm-brave-new-world-0-2btc/images/02-format-fork.svg",
+     "rel": "images/02-format-fork.svg",
+     "blob": "91c94b72b80340b06d68921eb2a5cd8990d42ecd",
+     "size": 3158,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/blm-brave-new-world-0-2btc/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "6ea5d0dba40835a2ef5413c99941939ae8f11314",
+     "size": 4653,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/blm-brave-new-world-0-2btc/tools/fig_format_fork.py",
+     "rel": "tools/fig_format_fork.py",
+     "blob": "469d695040f19c10a55c3c4a0ec9b076a73edc33",
+     "size": 6291,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/blm-brave-new-world-0-2btc/tools/fig_regions.py",
+     "rel": "tools/fig_regions.py",
+     "blob": "45e9814b45eac607224981c8089b4cd7fa6b3f00",
+     "size": 3400,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/blm-brave-new-world-0-2btc/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "038c39d26385365a273c903034b12970ee3ed8c4",
+     "size": 8797,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.012
+    }
+   ],
+   "copy": 11,
+   "link": 1,
+   "skip": 1
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "1-big-prizes/gsmg-io-5btc-puzzle",
+   "slug": "gsmg-io-5btc-puzzle",
+   "master": "puzzles/gsmg-io-5btc-puzzle",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "the balance of the prize address 1GSMG1JC9wtdSwfwApgj2xcmJPAwx7prBe at the 2026-08-16 snapshot (1.25635374 BTC on 2026-09-03, the difference is third-party dust). The creator announced in April 2019 that the reward halves at every Bitcoin halving, and it did: 5 BTC funded 2019-04-13, 2.5 BTC moved out in block 630001 (2020-05-11) and 1.25 BTC on 2024-04-24 to 17ucy1K9ZUAaoY6JVtM932W9jUp5LXfyHa, which has never spent and has no published payout path. Those 3.7505531 BTC are listed as an address below but not counted as prize; the reading that the Dualite blob gates them is unconfirmed. Correction contributed by Y0lan in issue #15 (2026-09-02), verified on chain 2026-09-03",
+   "files": [
+    {
+     "ocp_path": "1-big-prizes/gsmg-io-5btc-puzzle/README.md",
+     "rel": "README.md",
+     "blob": "3750a9243587983b8f91eac8ac7cb5b1ae5a41ae",
+     "size": 30938,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/gsmg-io-5btc-puzzle/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "a0853516428e7d9f09a37eee235abe4de09e5119",
+     "size": 12216,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/gsmg-io-5btc-puzzle/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "ecf3b43b738498c3b3f5d294384df09e00d683ec",
+     "size": 26492,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/gsmg-io-5btc-puzzle/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "bf8af1a5134474a68d722a69853a19887dfce833",
+     "size": 3595,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/gsmg-io-5btc-puzzle/data/pipeline-stages.json",
+     "rel": "data/pipeline-stages.json",
+     "blob": "188a56247df47bce6eadbeeb8fb7fb48e375b209",
+     "size": 716,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/gsmg-io-5btc-puzzle/data/planted-addresses.csv",
+     "rel": "data/planted-addresses.csv",
+     "blob": "4d129b77f7fed6e1a47e5e74e17ac3fa482fa52d",
+     "size": 1792,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/gsmg-io-5btc-puzzle/data/stage-chain.json",
+     "rel": "data/stage-chain.json",
+     "blob": "747fc927dbcca9c9447492263a520e311bdd0c1e",
+     "size": 1040,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/gsmg-io-5btc-puzzle/images/01-structure-stages.svg",
+     "rel": "images/01-structure-stages.svg",
+     "blob": "9d2a914b5c4b48c0ec75dd1afe1b5c870bec168d",
+     "size": 4475,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/gsmg-io-5btc-puzzle/images/02-pipeline-derivation.svg",
+     "rel": "images/02-pipeline-derivation.svg",
+     "blob": "752e33410b20aba834ad86c5909cc01401bc67ce",
+     "size": 3603,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/gsmg-io-5btc-puzzle/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "8f7bb39d623cf91273202a759deac7363924bdcb",
+     "size": 8092,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/gsmg-io-5btc-puzzle/tools/fig_pipeline.py",
+     "rel": "tools/fig_pipeline.py",
+     "blob": "09e0b758ce9059a93c36e7b31572c187e075a178",
+     "size": 4860,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.114
+    },
+    {
+     "ocp_path": "1-big-prizes/gsmg-io-5btc-puzzle/tools/fig_stages.py",
+     "rel": "tools/fig_stages.py",
+     "blob": "ecc58261cfe07c9c1fdeac27b6ee1588b6928839",
+     "size": 6956,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.096
+    },
+    {
+     "ocp_path": "1-big-prizes/gsmg-io-5btc-puzzle/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "652afe0739250ef14e6c60c5f0e50987568789b7",
+     "size": 13132,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    }
+   ],
+   "copy": 5,
+   "link": 0,
+   "skip": 8
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "1-big-prizes/guntis-vitolins-metamask-8-6eth",
+   "slug": "guntis-vitolins-metamask-8-6eth",
+   "master": "puzzles/guntis-vitolins-metamask-8-6eth",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "wallet funded with 10 ETH on 2020-02-12; the author has withdrawn from it 7 times since 2021-05, most recently 2024-06-04, totaling approximately 1.377 ETH; he still holds and periodically uses this private key, so this is not a frozen escrow",
+   "files": [
+    {
+     "ocp_path": "1-big-prizes/guntis-vitolins-metamask-8-6eth/README.md",
+     "rel": "README.md",
+     "blob": "d96aba4903661bee0bb359f52d8e390ab68ce037",
+     "size": 17102,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/guntis-vitolins-metamask-8-6eth/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "ca55f49794d27a00907b652dcbb740932a168456",
+     "size": 11564,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/guntis-vitolins-metamask-8-6eth/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "fd89af6231f5421d981ee753ed00c7726fb79ab1",
+     "size": 19050,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/guntis-vitolins-metamask-8-6eth/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "b390bad6201a7e4930c5778209299f4741020213",
+     "size": 6436,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.03
+    },
+    {
+     "ocp_path": "1-big-prizes/guntis-vitolins-metamask-8-6eth/data/reading-order-pool.json",
+     "rel": "data/reading-order-pool.json",
+     "blob": "6f521631f0c53a72374097d6c21667e722475924",
+     "size": 1798,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/guntis-vitolins-metamask-8-6eth/data/seed-slots.json",
+     "rel": "data/seed-slots.json",
+     "blob": "40cff722b5cd9e8c2c67890cc3eae1bd8533a606",
+     "size": 1200,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/guntis-vitolins-metamask-8-6eth/data/video-onscreen-words.json",
+     "rel": "data/video-onscreen-words.json",
+     "blob": "457cb0614331dca68450697220a38ed2372fdda6",
+     "size": 3757,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/guntis-vitolins-metamask-8-6eth/images/01-seed-slot-grid.svg",
+     "rel": "images/01-seed-slot-grid.svg",
+     "blob": "e5734dc5c3f01ac437fdf755a9e42e1125a0128c",
+     "size": 4855,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/guntis-vitolins-metamask-8-6eth/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "ac3e3cce8451e5d67d4861b4a5a527980f8f520b",
+     "size": 4721,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/guntis-vitolins-metamask-8-6eth/tools/fig_slots.py",
+     "rel": "tools/fig_slots.py",
+     "blob": "45ec4f2fa2f68f14ccffe3057387792d41dbff26",
+     "size": 4303,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.097
+    },
+    {
+     "ocp_path": "1-big-prizes/guntis-vitolins-metamask-8-6eth/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "42806b5514c6a8ff767df01001b1dcf65bee42fb",
+     "size": 6102,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.189
+    },
+    {
+     "ocp_path": "1-big-prizes/guntis-vitolins-metamask-8-6eth/tools/sweep_coins.py",
+     "rel": "tools/sweep_coins.py",
+     "blob": "90c6c66648b4b220780b4e5a07eaafb8c8326e80",
+     "size": 12310,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.082
+    },
+    {
+     "ocp_path": "1-big-prizes/guntis-vitolins-metamask-8-6eth/tools/sweep_paths.py",
+     "rel": "tools/sweep_paths.py",
+     "blob": "7740ec82dead2288b7ca69e056f922ad7e67ac99",
+     "size": 11441,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.091
+    },
+    {
+     "ocp_path": "1-big-prizes/guntis-vitolins-metamask-8-6eth/tools/sweep_postword.py",
+     "rel": "tools/sweep_postword.py",
+     "blob": "b6900157b86a194deabab6fd4556149f9e7bd799",
+     "size": 9716,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.091
+    },
+    {
+     "ocp_path": "1-big-prizes/guntis-vitolins-metamask-8-6eth/tools/sweep_reading_order.py",
+     "rel": "tools/sweep_reading_order.py",
+     "blob": "df52663777cbbde6a9a2197d41a6caf72ca77ed2",
+     "size": 17786,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.083
+    }
+   ],
+   "copy": 10,
+   "link": 0,
+   "skip": 5
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "1-big-prizes/peter-todd-hash-collision-bounties-0-59btc",
+   "slug": "peter-todd-hash-collision-bounties-0-59btc",
+   "master": "puzzles/peter-todd-hash-collision-bounties-0-59btc",
+   "ocp_status": "watch",
+   "our_status": "open",
+   "status_conflict": "peter-todd-hash-collision-bounties-0-59btc: по OCP «watch», у нас папка в puzzles/",
+   "prize_note": "combined across 4 live P2SH scripts (SHA-256, RIPEMD-160, HASH160, HASH256); a 5th sibling (SHA-1) was claimed in 2023 and is not part of this total",
+   "files": [
+    {
+     "ocp_path": "1-big-prizes/peter-todd-hash-collision-bounties-0-59btc/README.md",
+     "rel": "README.md",
+     "blob": "b5f7834f36f40c83f7822d44d1eafb32fcf2ea86",
+     "size": 10218,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/peter-todd-hash-collision-bounties-0-59btc/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "84708f6140a1c6f365a3259b95149bb6004ce19a",
+     "size": 1304,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/peter-todd-hash-collision-bounties-0-59btc/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "594b23ec01b4e22f3d7c5b653e4d3bef84e46ee2",
+     "size": 3154,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "1-big-prizes/peter-todd-hash-collision-bounties-0-59btc/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "77db2fb0b4becd9ac03e0323d48fbdec04ec3f9c",
+     "size": 2821,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.222
+    },
+    {
+     "ocp_path": "1-big-prizes/peter-todd-hash-collision-bounties-0-59btc/data/redeem_scripts.csv",
+     "rel": "data/redeem_scripts.csv",
+     "blob": "94a4b0204a4d1143195ab6b0a194126cb276d64b",
+     "size": 938,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/peter-todd-hash-collision-bounties-0-59btc/data/timeline.csv",
+     "rel": "data/timeline.csv",
+     "blob": "7262845874c2fbe4a7e4f892d61ae8e2be369de1",
+     "size": 799,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/peter-todd-hash-collision-bounties-0-59btc/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "f40c722997a384bad1a4ecf765efa552fa5f583e",
+     "size": 5898,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "1-big-prizes/peter-todd-hash-collision-bounties-0-59btc/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "52572b4b5806109bac1e5fa9aa185e2dff1e12f0",
+     "size": 8938,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.018
+    }
+   ],
+   "copy": 5,
+   "link": 0,
+   "skip": 3
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "2-mid-prizes/ah-white-walking-banks-800ksats",
+   "slug": "ah-white-walking-banks-800ksats",
+   "master": "puzzles/ah-white-walking-banks-800ksats",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "split across two P2WPKH addresses derived from one published xpub, funded 2024-09-05",
+   "files": [
+    {
+     "ocp_path": "2-mid-prizes/ah-white-walking-banks-800ksats/README.md",
+     "rel": "README.md",
+     "blob": "c612c3ff77cae0a95151ca210f9652eefe85c1dd",
+     "size": 8751,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/ah-white-walking-banks-800ksats/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "fa37070c47521d076b7dc708c7d5b38e9e30cd7b",
+     "size": 1801,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/ah-white-walking-banks-800ksats/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "4ce7c9220f3fb5de087205dc6ce35299f9b20faa",
+     "size": 3875,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/ah-white-walking-banks-800ksats/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "3cdfb5f6d0d62e1cd5ffffd034f8a8f26bdfda33",
+     "size": 2699,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.029
+    },
+    {
+     "ocp_path": "2-mid-prizes/ah-white-walking-banks-800ksats/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "5aab2f7929bfda4ecb1b910090f46db8034f0a49",
+     "size": 3682,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/ah-white-walking-banks-800ksats/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "170804b01546a567f9eee3cdcd29310b7b05f7d4",
+     "size": 6865,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 3,
+   "link": 0,
+   "skip": 3
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "2-mid-prizes/arweave-puzzle-10-500ar",
+   "slug": "arweave-puzzle-10-500ar",
+   "master": "puzzles/arweave-puzzle-10-500ar",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "",
+   "files": [
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-10-500ar/README.md",
+     "rel": "README.md",
+     "blob": "47b402c069593186345ccb8dbe3389d14c7efca7",
+     "size": 10024,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-10-500ar/analysis/genesis28-results.json",
+     "rel": "analysis/genesis28-results.json",
+     "blob": "d2980133afd9289c29a64e7b13a4044bbd5e0418",
+     "size": 2079,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-10-500ar/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "eb15005b1cacd5edc03a57fef37a1d7a3e36bcba",
+     "size": 1560,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-10-500ar/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "3eaf2f4db9a3629e31a8bf1fb07fc62d0320539d",
+     "size": 7792,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-10-500ar/clues/puzzle-image.png",
+     "rel": "clues/puzzle-image.png",
+     "blob": "064b041039747a1181bbe13e2fed36de468aafbe",
+     "size": 658309,
+     "status": "MISSING",
+     "action": "link",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-10-500ar/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "f50d8c35ea20190dd316ed04b6ae4b6831177807",
+     "size": 4383,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-10-500ar/tools/REPRODUCE.md",
+     "rel": "tools/REPRODUCE.md",
+     "blob": "1265cd5e0b74a97105982938516e4d49c1afd0d1",
+     "size": 3959,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.048
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-10-500ar/tools/fetch_genesis28_inputs.py",
+     "rel": "tools/fetch_genesis28_inputs.py",
+     "blob": "30c5ec2b4cff77d1575404b29f9fc7006bf562f3",
+     "size": 1308,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-10-500ar/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "41d9ae61d93b77c384b13fe519234f57795dee62",
+     "size": 20323,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-10-500ar/tools/original_page_fixture.js",
+     "rel": "tools/original_page_fixture.js",
+     "blob": "00b8262a7dc30f63b33aea52475afe11f3ab5bc4",
+     "size": 1492,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-10-500ar/tools/search_genesis28.py",
+     "rel": "tools/search_genesis28.py",
+     "blob": "fb058d8753bd572ad01d01587730060a0c597704",
+     "size": 6766,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-10-500ar/tools/test_oracle.py",
+     "rel": "tools/test_oracle.py",
+     "blob": "eb25497a2d62b0b81da9491747e8d9dda604f602",
+     "size": 1293,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-10-500ar/tools/toolchain_selftest.py",
+     "rel": "tools/toolchain_selftest.py",
+     "blob": "a0812fe6a7741b2be7a480d491e3a80e07ee717e",
+     "size": 740,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 9,
+   "link": 1,
+   "skip": 3
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "2-mid-prizes/arweave-puzzle-11-1eth",
+   "slug": "arweave-puzzle-11-1eth",
+   "master": "puzzles/arweave-puzzle-11-1eth",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "1 ETH, address held as a plain EOA, never spent from since funding",
+   "files": [
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/README.md",
+     "rel": "README.md",
+     "blob": "3de37ad3d4d047cd2ec11439b50af1f11e4aa1c8",
+     "size": 11777,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/analysis/2026-09-05/barcode-result.json",
+     "rel": "analysis/2026-09-05/barcode-result.json",
+     "blob": "b15ec2dbb2838e3beba62a76119009cf40c3f9a7",
+     "size": 484,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/analysis/2026-09-05/bits-result.json",
+     "rel": "analysis/2026-09-05/bits-result.json",
+     "blob": "43314c816cdbe8e010b1a93fbc9eddb2ba7d3631",
+     "size": 860,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/analysis/2026-09-05/compressed-result.json",
+     "rel": "analysis/2026-09-05/compressed-result.json",
+     "blob": "afa274fe66a3e2e637987d1e5801aa78acb3cc5e",
+     "size": 1054,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/analysis/2026-09-05/funding-strokes.json",
+     "rel": "analysis/2026-09-05/funding-strokes.json",
+     "blob": "235d72ed64f7971e0a5d881cb4d73598f9620b53",
+     "size": 143,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/analysis/2026-09-05/funding.json",
+     "rel": "analysis/2026-09-05/funding.json",
+     "blob": "f411d0bc85656fb6c51ab7dd3e93c26691792c42",
+     "size": 143,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/analysis/2026-09-05/publication.json",
+     "rel": "analysis/2026-09-05/publication.json",
+     "blob": "0ca2b80e04adf14d7892e78d939c744e6c46fa57",
+     "size": 1616,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/analysis/2026-09-05/reproduction-check.json",
+     "rel": "analysis/2026-09-05/reproduction-check.json",
+     "blob": "a1036574425ccf9d485989dff051f2eab7b0419c",
+     "size": 1150,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/analysis/2026-09-05/sixteen-bars-result.json",
+     "rel": "analysis/2026-09-05/sixteen-bars-result.json",
+     "blob": "e805c89aaaaa2e2135b894c6140080dbae21113a",
+     "size": 2424,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/analysis/2026-09-05/top-row-result.json",
+     "rel": "analysis/2026-09-05/top-row-result.json",
+     "blob": "1b2100e9232aabd8d5cc55273292ea8571d6953e",
+     "size": 624,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "217542c94bde088adab2ec22ade77b8af83043fd",
+     "size": 2530,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "28503c84be04530a166601722a48869d8d87cf24",
+     "size": 9826,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/clues/arweave-puzzle-11.png",
+     "rel": "clues/arweave-puzzle-11.png",
+     "blob": "ce00412d27aefcc24f9525c584abffadd3e504a6",
+     "size": 704235,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "cfbdc66b4a5b7e7e9927835026bb0ac53c8f01f9",
+     "size": 2010,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json",
+     "rel": "data/geometry.json",
+     "blob": "73e6db323aa5e750c782c34ab56205f00a565f78",
+     "size": 1749,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/images/01-annotated-geometry.png",
+     "rel": "images/01-annotated-geometry.png",
+     "blob": "fcd97159b5eec671c7ddea4fe1c74a0ffb0cb930",
+     "size": 315890,
+     "status": "MISSING",
+     "action": "link",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "b61d2d837e1b7c687447f77d7eab2583afd2e52c",
+     "size": 4187,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/REPRODUCE.md",
+     "rel": "tools/REPRODUCE.md",
+     "blob": "1af27f4fdb64b78891381f9cdbed3fd8f01d8a7d",
+     "size": 3486,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/check_barcodes.py",
+     "rel": "tools/check_barcodes.py",
+     "blob": "4d0f62ce5c4c110a5b2f6348c840aba4f35d692b",
+     "size": 3903,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.033
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/check_sixteen_bars.py",
+     "rel": "tools/check_sixteen_bars.py",
+     "blob": "2b88cc10c9a08ea0b27332b18011cf7e4bfb02d8",
+     "size": 5062,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/fig_geometry.py",
+     "rel": "tools/fig_geometry.py",
+     "blob": "214f16a822dd3d406a95b29bf23752f0e3d1579c",
+     "size": 6428,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.024
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/requirements-research.txt",
+     "rel": "tools/requirements-research.txt",
+     "blob": "484a83a9188eb1805da35e7b7a350482240d7105",
+     "size": 89,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/research_run.py",
+     "rel": "tools/research_run.py",
+     "blob": "07c2e04cd4ea2c0085c3db2e09edfa30de9886b8",
+     "size": 653,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/scan_bits.py",
+     "rel": "tools/scan_bits.py",
+     "blob": "04f221809d3be9ea4f011b0bdcb537b57c1e4ab2",
+     "size": 4759,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.014
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/scan_compressed.py",
+     "rel": "tools/scan_compressed.py",
+     "blob": "e804e6a45fdfeb15b7f8f6dba6447e71edd56248",
+     "size": 5857,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.022
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/scan_top_row.py",
+     "rel": "tools/scan_top_row.py",
+     "blob": "36ac93c84c73cc424b6dba44d96f81e24ff81772",
+     "size": 4048,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.016
+    }
+   ],
+   "copy": 24,
+   "link": 1,
+   "skip": 1
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "2-mid-prizes/arweave-puzzle-12-400ar",
+   "slug": "arweave-puzzle-12-400ar",
+   "master": "solved/arweave-puzzle-12-400ar",
+   "ocp_status": "open",
+   "our_status": "solved",
+   "status_conflict": "arweave-puzzle-12-400ar: по OCP «open», у нас папка в solved/",
+   "prize_note": "the small amount above 400 AR is unsolicited dust received after the 2020-04-14 funding, not a partial withdrawal",
+   "files": [
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-12-400ar/README.md",
+     "rel": "README.md",
+     "blob": "cfb1f59e0808a41582a6eb9ffc9abbdab407d1ba",
+     "size": 9815,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-12-400ar/analysis/2026-09-05/funding.json",
+     "rel": "analysis/2026-09-05/funding.json",
+     "blob": "68b8bfdbcef79b03f60071252afc3308f1cd6dcc",
+     "size": 420,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-12-400ar/analysis/2026-09-05/q1-result.json",
+     "rel": "analysis/2026-09-05/q1-result.json",
+     "blob": "c8fb8a1c2bb24618dd4e94c1047d1b5cbab5670d",
+     "size": 983,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-12-400ar/analysis/2026-09-05/w1-result.json",
+     "rel": "analysis/2026-09-05/w1-result.json",
+     "blob": "79fc069d4e5ed6da0a382073f784e114b434b0a7",
+     "size": 972,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-12-400ar/analysis/2026-09-05/w2-result.json",
+     "rel": "analysis/2026-09-05/w2-result.json",
+     "blob": "cbd7e6b25c6da2bb22bee40845e01b72968e6c84",
+     "size": 973,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-12-400ar/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "f33472869e9ef3dad3762d77cbb8f61a763b2cc8",
+     "size": 6150,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-12-400ar/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "2c4497a256b7c9e55c07ba4fec6659346d679f94",
+     "size": 21157,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-12-400ar/clues/puzzle-image.jpg",
+     "rel": "clues/puzzle-image.jpg",
+     "blob": "3577ea50959c8c50538036001c67d9f48768409c",
+     "size": 209182,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-12-400ar/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "8377122e57ba3cc313700e5f7c9295cda51ea5fb",
+     "size": 4682,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-12-400ar/tools/REPRODUCE.md",
+     "rel": "tools/REPRODUCE.md",
+     "blob": "6248e253c7f56820d06e2e5478ee5d5141ddac94",
+     "size": 3323,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-12-400ar/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "d73a9195a417c929ec3861c4c9daddcaf816123a",
+     "size": 19698,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-12-400ar/tools/replay_readings.py",
+     "rel": "tools/replay_readings.py",
+     "blob": "62b5d4420fd140aad570576f15bf2047268f262f",
+     "size": 4161,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 9,
+   "link": 0,
+   "skip": 3
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "2-mid-prizes/arweave-puzzle-3-1000ar",
+   "slug": "arweave-puzzle-3-1000ar",
+   "master": "puzzles/arweave-puzzle-3-1000ar",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "balance drifts slightly above the original funding from unsolicited dust deposits over the years",
+   "files": [
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/README.md",
+     "rel": "README.md",
+     "blob": "d2412b49a6c9ca9c818d8e864da8e2d03bf4ab34",
+     "size": 11332,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/analysis/funding-2026-09-04.json",
+     "rel": "analysis/funding-2026-09-04.json",
+     "blob": "a2ed6ec6055a1f53bd3ad9a5b212cb130b8a7f60",
+     "size": 559,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/analysis/h1-result.json",
+     "rel": "analysis/h1-result.json",
+     "blob": "9fccb7fe3a73e67e11627224f58f32139868f4a1",
+     "size": 1229,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/analysis/h2-result.json",
+     "rel": "analysis/h2-result.json",
+     "blob": "e378b378eda873f06ef40349c9489b461b7436ab",
+     "size": 1372,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/analysis/h3-result.json",
+     "rel": "analysis/h3-result.json",
+     "blob": "646b771b5cb1c6ec5a2c61615f8b7d3a52f96bcd",
+     "size": 1210,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/analysis/h4-result.json",
+     "rel": "analysis/h4-result.json",
+     "blob": "6f1e5715f14a7e9364f95274db20e88ebac03c10",
+     "size": 1504,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/analysis/source-review.md",
+     "rel": "analysis/source-review.md",
+     "blob": "5b906adbec6a26d37e3f3d50bdb9723a0454fa92",
+     "size": 4893,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "28fbf534dc9309a37e787d6134b679c1b7d1464b",
+     "size": 6246,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/clues/puzzle-composite.png",
+     "rel": "clues/puzzle-composite.png",
+     "blob": "9e9e0b77743a9f2e2b9ecf7ed0dd41e167af91e0",
+     "size": 561791,
+     "status": "MISSING",
+     "action": "link",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/clues/slot-1.png",
+     "rel": "clues/slot-1.png",
+     "blob": "8cc7e1bc68cdb179496c0391bce79efe0759eacc",
+     "size": 50290,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/clues/slot-2.png",
+     "rel": "clues/slot-2.png",
+     "blob": "baf78685a5a696752e4ee68c2356bcbc4dcd803e",
+     "size": 59612,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/clues/slot-3.png",
+     "rel": "clues/slot-3.png",
+     "blob": "de2eddc717441c847240d1542269f386a04ea1fe",
+     "size": 53628,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/clues/slot-4.png",
+     "rel": "clues/slot-4.png",
+     "blob": "98c9749ccfe65301faf4ddfe894b1d067282a1d6",
+     "size": 51869,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/clues/slot-5.png",
+     "rel": "clues/slot-5.png",
+     "blob": "bd27dedbd228c86e24032368585089beabe36469",
+     "size": 67542,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/clues/slot-6.png",
+     "rel": "clues/slot-6.png",
+     "blob": "e41f7985c841df0e913f5460316a8c633f10af61",
+     "size": 72240,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/clues/slot-7.png",
+     "rel": "clues/slot-7.png",
+     "blob": "5d5ba44c89a6fddaaea631f71c6517708a3b1cd3",
+     "size": 68756,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/clues/slot-8.png",
+     "rel": "clues/slot-8.png",
+     "blob": "e72283a2d0f9133583fa63b23322ef4482680f42",
+     "size": 66944,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "1a7076b22e972cf6dfa34d12567f3262088bb807",
+     "size": 7764,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/tools/REPRODUCE.md",
+     "rel": "tools/REPRODUCE.md",
+     "blob": "ed701d950408200406e62cd8be4bcd52b1485076",
+     "size": 3938,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "1846f7aad6e9baccb79fd0582b3583304d7c59b3",
+     "size": 20323,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/tools/original_page_fixture.js",
+     "rel": "tools/original_page_fixture.js",
+     "blob": "df1e983be2783eff47038e8f730ea8f4f97145a9",
+     "size": 2122,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/tools/search_readings.py",
+     "rel": "tools/search_readings.py",
+     "blob": "ea37f0141d44076ae2dee0ffc4ab176f45b9d3de",
+     "size": 5910,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/arweave-puzzle-3-1000ar/tools/test_oracle.py",
+     "rel": "tools/test_oracle.py",
+     "blob": "b391c598da287f514c4e7a54dec0da53e6c3c8f3",
+     "size": 3937,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 20,
+   "link": 1,
+   "skip": 2
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "2-mid-prizes/corey-phillips-kitten-passphrase-1msats",
+   "slug": "corey-phillips-kitten-passphrase-1msats",
+   "master": "puzzles/corey-phillips-kitten-passphrase-1msats",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "2 funding UTXOs summing to 1,001,900 sats, 0 spent as of 2026-08-16",
+   "files": [
+    {
+     "ocp_path": "2-mid-prizes/corey-phillips-kitten-passphrase-1msats/README.md",
+     "rel": "README.md",
+     "blob": "024deb0688fb813cdb1790ed577697f09a09f826",
+     "size": 11667,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/corey-phillips-kitten-passphrase-1msats/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "2efa343f9a7df0a0c10f0f1d930e600bcc9cc4fc",
+     "size": 3209,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/corey-phillips-kitten-passphrase-1msats/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "92442fc5f6e9d799f5fdfbccc799ca4fa5cd41b3",
+     "size": 4035,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/corey-phillips-kitten-passphrase-1msats/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "10d729648327f6f8a67e6485023d943a66c24ce5",
+     "size": 2595,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/corey-phillips-kitten-passphrase-1msats/clues/kitten.jpeg",
+     "rel": "clues/kitten.jpeg",
+     "blob": "add72ff34e2e10fed4831ce8306e187d78c9332b",
+     "size": 265456,
+     "status": "MISSING",
+     "action": "link",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/corey-phillips-kitten-passphrase-1msats/data/coverage.csv",
+     "rel": "data/coverage.csv",
+     "blob": "236b4d2d87abb9b2d6a4becdd093c3977700d584",
+     "size": 1593,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/corey-phillips-kitten-passphrase-1msats/data/pipeline-stages.json",
+     "rel": "data/pipeline-stages.json",
+     "blob": "a612340922525beb841772412aac0f74e1aacff3",
+     "size": 800,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/corey-phillips-kitten-passphrase-1msats/images/01-pipeline-derivation.svg",
+     "rel": "images/01-pipeline-derivation.svg",
+     "blob": "0bd4c88d8a42e223b16c6469a9a9dab0656eda02",
+     "size": 3901,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/corey-phillips-kitten-passphrase-1msats/images/02-coverage-tested-space.png",
+     "rel": "images/02-coverage-tested-space.png",
+     "blob": "71abc6422ca0b824072ab48b99b59590bacf0fb1",
+     "size": 141137,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/corey-phillips-kitten-passphrase-1msats/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "09c7eb6506d32e325569e789a97b0810f8c7efd3",
+     "size": 4305,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/corey-phillips-kitten-passphrase-1msats/tools/fig_coverage.py",
+     "rel": "tools/fig_coverage.py",
+     "blob": "e5d6deb638a98c9c2f960ff3cccfbc98dea6248a",
+     "size": 2432,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/corey-phillips-kitten-passphrase-1msats/tools/fig_pipeline.py",
+     "rel": "tools/fig_pipeline.py",
+     "blob": "974d947298d47cfbc27fad89f63cb781888f0fdb",
+     "size": 5289,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/corey-phillips-kitten-passphrase-1msats/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "c8919df0f24b537e080381130e9c03a23bee221e",
+     "size": 7699,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 9,
+   "link": 1,
+   "skip": 3
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "2-mid-prizes/fe-lang-bountiful-compiler-bounty-1eth",
+   "slug": "fe-lang-bountiful-compiler-bounty-1eth",
+   "master": "puzzles/fe-lang-bountiful-compiler-bounty-1eth",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "the registry holds 1 ETH and each of the 7 registered challenges carries a 0.25 ETH prize, so the pot pays the first 4 claims and the 5th would revert; the 1 ETH balance, not the 1.75 ETH nominal total, is what the chain can pay today",
+   "files": [
+    {
+     "ocp_path": "2-mid-prizes/fe-lang-bountiful-compiler-bounty-1eth/README.md",
+     "rel": "README.md",
+     "blob": "dea6cd21addb0f9855328151dc001fc4f597c304",
+     "size": 13331,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/fe-lang-bountiful-compiler-bounty-1eth/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "8a7c058839b9dcbfcdf258f747d41b041edf0bd0",
+     "size": 4293,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/fe-lang-bountiful-compiler-bounty-1eth/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "ac5d1b905cbe9471e6a7bfa366f855bd688122d1",
+     "size": 3410,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/fe-lang-bountiful-compiler-bounty-1eth/data/challenges.json",
+     "rel": "data/challenges.json",
+     "blob": "4eb06dae2e131bd3996a651fad58e45347bb32f2",
+     "size": 3902,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/fe-lang-bountiful-compiler-bounty-1eth/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "c8cd3f64a790e49076ad02f14b7643ca39c5881a",
+     "size": 8067,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/fe-lang-bountiful-compiler-bounty-1eth/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "db812cb11caaca39457d74d9b249f01f56232757",
+     "size": 10191,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 6,
+   "link": 0,
+   "skip": 0
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "2-mid-prizes/ftpk-season-2-300usdt",
+   "slug": "ftpk-season-2-300usdt",
+   "master": "solved/ftpk-season-2-300usdt",
+   "ocp_status": "open",
+   "our_status": "solved",
+   "status_conflict": "ftpk-season-2-300usdt: по OCP «open», у нас папка в solved/",
+   "prize_note": "ERC-20 USDT; the escrow's native ETH balance is 0, the prize is entirely the token balance",
+   "files": [
+    {
+     "ocp_path": "2-mid-prizes/ftpk-season-2-300usdt/README.md",
+     "rel": "README.md",
+     "blob": "fad3a0ccf712a56eff7173c4ef38ed7ce6744e36",
+     "size": 12899,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/ftpk-season-2-300usdt/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "2f80dff6a2c58dd2d537be1b4c23d8514faf4e39",
+     "size": 31441,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/ftpk-season-2-300usdt/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "ae38bf92270eee4a6c71dc8df0774a72d6d463e9",
+     "size": 9513,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/ftpk-season-2-300usdt/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "95bdd9a522a9a281244eb7d2846bd57a11d38a16",
+     "size": 5698,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/ftpk-season-2-300usdt/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "a839b86f68da36ca6000cc792a370670cafb6efb",
+     "size": 3947,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 2,
+   "link": 0,
+   "skip": 3
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats",
+   "slug": "keir-finlow-bates-blockchain-book-600ksats",
+   "master": "puzzles/keir-finlow-bates-blockchain-book-600ksats",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "3 of 12 lots still open, 200,000 sats each; 9 lots already solved and swept (4 by me, 5 by the community before I started; I have since recovered the answers of 3 of those 5)",
+   "files": [
+    {
+     "ocp_path": "2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/README.md",
+     "rel": "README.md",
+     "blob": "bf6127493a42652aee761d50c29059ee6ecf7e66",
+     "size": 32884,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "adf83ca8aaaf90effb342db44c7b4230ed8b4369",
+     "size": 3980,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "c6921b8b7fd007ef5096de884e48a79a17c5ca61",
+     "size": 9191,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "79a321330ba919956b3755d1e398ddf22dea5d6a",
+     "size": 1980,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/data/lots.csv",
+     "rel": "data/lots.csv",
+     "blob": "87b09f1c379ac42049fcd8a8744af79d36295e1e",
+     "size": 1472,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/data/pipeline-stages.json",
+     "rel": "data/pipeline-stages.json",
+     "blob": "a129a6f303c0304bf9905cf524068e1b7e1d5a89",
+     "size": 899,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/data/pow-nonce-best.csv",
+     "rel": "data/pow-nonce-best.csv",
+     "blob": "2f37bc8536e299f23dd9ce167bb625a137dca7d7",
+     "size": 1244,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/data/timeline.csv",
+     "rel": "data/timeline.csv",
+     "blob": "a4b57bce69de768dfe6bc83217ba3c370aa7ee51",
+     "size": 1571,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/images/01-pipeline-derivation.svg",
+     "rel": "images/01-pipeline-derivation.svg",
+     "blob": "10d4e6e442560b3d2a9773622ec2d69102eeca9c",
+     "size": 3663,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/images/02-structure-lots.svg",
+     "rel": "images/02-structure-lots.svg",
+     "blob": "58308bd5805a4c0b06f458d2d49a24e0987241f3",
+     "size": 6085,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/images/03-timeline-funding.png",
+     "rel": "images/03-timeline-funding.png",
+     "blob": "ef17c1ebce7de2630eb5b58ac7bb6f6e72cc91c0",
+     "size": 57377,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "b2e8e7171c34f48cb472632ad256b4a43e206f44",
+     "size": 11656,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/tools/fig_lots.py",
+     "rel": "tools/fig_lots.py",
+     "blob": "3034437f050a18824f15b2d20856c9319b32bee9",
+     "size": 5405,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/tools/fig_pipeline.py",
+     "rel": "tools/fig_pipeline.py",
+     "blob": "01e78b24df06b9284f75fbdcd458fe0c8d6ae6d4",
+     "size": 4829,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/tools/fig_timeline.py",
+     "rel": "tools/fig_timeline.py",
+     "blob": "bdb40c6b41ff33c1cd40ca7a6855f2c613fadc5e",
+     "size": 4141,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "f4326851da7c90af31fe83bc94d4cb8de8b3303c",
+     "size": 11375,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/tools/pow_nonce_search.c",
+     "rel": "tools/pow_nonce_search.c",
+     "blob": "93433dcb2593c154b7a0e2e9fac73f5963bbe462",
+     "size": 3619,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 13,
+   "link": 0,
+   "skip": 4
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "2-mid-prizes/logicbeach-powerful-moss-0-54eth",
+   "slug": "logicbeach-powerful-moss-0-54eth",
+   "master": "solved/logicbeach-powerful-moss-0-54eth",
+   "ocp_status": "open",
+   "our_status": "solved",
+   "status_conflict": "logicbeach-powerful-moss-0-54eth: по OCP «open», у нас папка в solved/",
+   "prize_note": "the pot grows over time toward the contract's full balance; it was 0.54 ETH at the private research folder's prior check and 0.55 ETH on 2026-08-16, consistent with the contract's own time-based ramp, not a partial claim",
+   "files": [
+    {
+     "ocp_path": "2-mid-prizes/logicbeach-powerful-moss-0-54eth/README.md",
+     "rel": "README.md",
+     "blob": "d27ff21984af653e32d87b1409d19ea09b071493",
+     "size": 11029,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/logicbeach-powerful-moss-0-54eth/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "e759220839603fe5f4166f7459851293ce751d6e",
+     "size": 2056,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/logicbeach-powerful-moss-0-54eth/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "922dd0142626b446d468e18292e76041013b94a9",
+     "size": 4422,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/logicbeach-powerful-moss-0-54eth/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "bf33339923f9450a878c1678c243661bc0369b08",
+     "size": 1136,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/logicbeach-powerful-moss-0-54eth/clues/powerfulmoss-poap.png",
+     "rel": "clues/powerfulmoss-poap.png",
+     "blob": "5b0916e37b0b7d55781ff283629dee3f0697664d",
+     "size": 739399,
+     "status": "MISSING",
+     "action": "link",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/logicbeach-powerful-moss-0-54eth/data/seed-grid.json",
+     "rel": "data/seed-grid.json",
+     "blob": "41e795399d11ae044bd9a45c9ae4bb963520f111",
+     "size": 1946,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/logicbeach-powerful-moss-0-54eth/data/tracks.json",
+     "rel": "data/tracks.json",
+     "blob": "e4f5bb478f402e529004712b9f5c150399ba79a0",
+     "size": 613,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/logicbeach-powerful-moss-0-54eth/images/01-seed-grid.svg",
+     "rel": "images/01-seed-grid.svg",
+     "blob": "14f335917b4077a9db4ee70c44382420b3a22926",
+     "size": 5590,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/logicbeach-powerful-moss-0-54eth/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "eb517a8c1f73ac15fd873534d1efebdc9e72de7d",
+     "size": 4655,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/logicbeach-powerful-moss-0-54eth/tools/fig_seed_grid.py",
+     "rel": "tools/fig_seed_grid.py",
+     "blob": "8611b08f95a902a755ee54c8d5904e3d251ab244",
+     "size": 3105,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/logicbeach-powerful-moss-0-54eth/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "534b46b1af4535f3ae45f1bc73073674d7df05c5",
+     "size": 6942,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.022
+    }
+   ],
+   "copy": 7,
+   "link": 1,
+   "skip": 3
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc",
+   "slug": "path-to-greatness-treasure-hunt-3ltc",
+   "master": "puzzles/path-to-greatness-treasure-hunt-3ltc",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "302,608,794 litoshis. The pot is topped up by the public: the site invites donations straight into the prize address, which is why there are 8 incoming transactions. LTC was $54.17 when I read the price on 2026-09-12; the repository snapshot price of $54 is used here.",
+   "files": [
+    {
+     "ocp_path": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/README.md",
+     "rel": "README.md",
+     "blob": "42040b7fec8f36671ea80abe1527b8764b4f0586",
+     "size": 23404,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "128d4e41f3582372c9e61265e7a7e291f84a3dd7",
+     "size": 9775,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "1ac4c81d24b4f749f093fefc2f7b3f012ac78ea3",
+     "size": 14261,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/clues/00111111.jpg",
+     "rel": "clues/00111111.jpg",
+     "blob": "02925764da1c6b6eff9a54a8a92b34f4e58cfeaf",
+     "size": 506238,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/clues/Beach.png",
+     "rel": "clues/Beach.png",
+     "blob": "deacfffa62c5fd4fd25680423506eaf198d3270e",
+     "size": 142129,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/clues/Ship.png",
+     "rel": "clues/Ship.png",
+     "blob": "3502bf9568f2cda298fc229fc5631313e24c9651",
+     "size": 2896530,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "00fc2b9e4d5155669c2bfef93901df1020f55219",
+     "size": 8683,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/clues/clue1_imagine.jpg",
+     "rel": "clues/clue1_imagine.jpg",
+     "blob": "b94825d23e735d9cb523fdea37155155d1fb1b99",
+     "size": 564308,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/clues/clue2_scramble.jpg",
+     "rel": "clues/clue2_scramble.jpg",
+     "blob": "705e34ef1bfba2c19a50565357c651edcadba10d",
+     "size": 537001,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/clues/clue3_wasd.jpg",
+     "rel": "clues/clue3_wasd.jpg",
+     "blob": "536838ba1df08510782abd656a84be2448172603",
+     "size": 556777,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/clues/clue4_chess.jpg",
+     "rel": "clues/clue4_chess.jpg",
+     "blob": "581ce9987a904a23f002ae225903fb8c78d9dd2f",
+     "size": 575085,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/clues/clue5_wonders.jpg",
+     "rel": "clues/clue5_wonders.jpg",
+     "blob": "7ee52765d020412a6ca6de26a3aeed55e9169ff9",
+     "size": 609035,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/clues/computer_screen.jpg",
+     "rel": "clues/computer_screen.jpg",
+     "blob": "c1131e7ef9442a3b3328c28758ad1b5d093d7d02",
+     "size": 478546,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/clues/qr1.jpg",
+     "rel": "clues/qr1.jpg",
+     "blob": "5931cd5f43a2b5cdc26e719f91f882b1533f08e1",
+     "size": 13569,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/clues/qr2.jpg",
+     "rel": "clues/qr2.jpg",
+     "blob": "970d4807c463d6a3b37e15c3d1f08eb173fa3865",
+     "size": 14009,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/clues/treasure_chest.png",
+     "rel": "clues/treasure_chest.png",
+     "blob": "20599baa92e7e0cbc49570f42864eac75fcdbb0d",
+     "size": 304457,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "04fa340db1c943563ac4ab5ae02fcd65299aef21",
+     "size": 11460,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "0d298819248ec5f97309356de163bd663c82e164",
+     "size": 20545,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 2,
+   "link": 0,
+   "skip": 16
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "2-mid-prizes/pindar-van-arman-cryptoartgan-nft",
+   "slug": "pindar-van-arman-cryptoartgan-nft",
+   "master": "solved/pindar-van-arman-cryptoartgan-nft",
+   "ocp_status": "open",
+   "our_status": "solved",
+   "status_conflict": "pindar-van-arman-cryptoartgan-nft: по OCP «open», у нас папка в solved/",
+   "prize_note": "1 ERC-1155 NFT, \"Magic Internet moneyGAN\" (445/512); no market value recorded for this specific piece",
+   "files": [
+    {
+     "ocp_path": "2-mid-prizes/pindar-van-arman-cryptoartgan-nft/README.md",
+     "rel": "README.md",
+     "blob": "525e59dfc8c55f2bccdbd629a9ed03ce91d73a03",
+     "size": 6995,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/pindar-van-arman-cryptoartgan-nft/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "f333da823db2653a4b5178dd512cef17b31989da",
+     "size": 1533,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/pindar-van-arman-cryptoartgan-nft/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "3956533f904d7baef3c387134e10bde1f547a740",
+     "size": 2838,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/pindar-van-arman-cryptoartgan-nft/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "f65274380eff6f0b3d593958829fda5eb39da367",
+     "size": 1812,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/pindar-van-arman-cryptoartgan-nft/data/bitgans-attributes.csv",
+     "rel": "data/bitgans-attributes.csv",
+     "blob": "297d0258c7705211419d1cd337bce26e1549dfe2",
+     "size": 43057,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/pindar-van-arman-cryptoartgan-nft/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "9d38b806d394cd0137c6864591e9ec506c5ea076",
+     "size": 3137,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 3,
+   "link": 0,
+   "skip": 3
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "2-mid-prizes/rushwallet-contest-30-1msats",
+   "slug": "rushwallet-contest-30-1msats",
+   "master": "puzzles/rushwallet-contest-30-1msats",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "the escrow was funded 101,000,000 sats total: 100,000,000 sats on 2014-09-22 later returned to its own sender on 2015-03-25, and a separate 1,000,000 sats on 2015-04-24 that remains unspent; the 1,000,000 sats figure is the live prize",
+   "files": [
+    {
+     "ocp_path": "2-mid-prizes/rushwallet-contest-30-1msats/README.md",
+     "rel": "README.md",
+     "blob": "d81a3e46b2b8df30ce3c0c7b979cb9786bcf2721",
+     "size": 8117,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/rushwallet-contest-30-1msats/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "a95c345f1960ab41ac51a656d7bd66a89fb96356",
+     "size": 2107,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/rushwallet-contest-30-1msats/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "8353574a2c28dd369de1c85e66524d25c58c0ee2",
+     "size": 6148,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/rushwallet-contest-30-1msats/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "46aaf54477601ae105ddf2f4695b26c024c8597e",
+     "size": 2070,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.065
+    },
+    {
+     "ocp_path": "2-mid-prizes/rushwallet-contest-30-1msats/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "2d5106ecdee28dcfd6b129b3a681f00eeb7f3ee4",
+     "size": 3828,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/rushwallet-contest-30-1msats/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "881c82a051f68fc881a50126088a74af4be8e2e7",
+     "size": 4135,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.011
+    }
+   ],
+   "copy": 3,
+   "link": 0,
+   "skip": 3
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "2-mid-prizes/school-of-bitcoin-1msats",
+   "slug": "school-of-bitcoin-1msats",
+   "master": "puzzles/school-of-bitcoin-1msats",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "single funding transaction, 0.01 BTC",
+   "files": [
+    {
+     "ocp_path": "2-mid-prizes/school-of-bitcoin-1msats/README.md",
+     "rel": "README.md",
+     "blob": "be8217c8c30d4ccd2f3cbf371f1df32542dbee69",
+     "size": 7431,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/school-of-bitcoin-1msats/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "fed05d8c8a674415d573eb589f8c216bd3e9b105",
+     "size": 1386,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/school-of-bitcoin-1msats/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "9cc858a40380f0ef993d5f09c270d8ad02f20074",
+     "size": 2432,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/school-of-bitcoin-1msats/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "20a1815ebf252277305d646e75df693c870abe62",
+     "size": 1979,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/school-of-bitcoin-1msats/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "f92d4e65fb869ee3ee8ea2ab2b8db467efb9fc41",
+     "size": 2967,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/school-of-bitcoin-1msats/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "524e00fa7a079d4eeec029619e97692ad359b2ea",
+     "size": 5599,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 6,
+   "link": 0,
+   "skip": 0
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "2-mid-prizes/smith-lyle-moore-hunt-2-0-032btc",
+   "slug": "smith-lyle-moore-hunt-2-0-032btc",
+   "master": "puzzles/smith-lyle-moore-hunt-2-0-032btc",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "3,177,700 sats, funded in a single transaction on 2022-07-29, unspent",
+   "files": [
+    {
+     "ocp_path": "2-mid-prizes/smith-lyle-moore-hunt-2-0-032btc/README.md",
+     "rel": "README.md",
+     "blob": "15370915e006f8644dc4de7028379dfe458f9859",
+     "size": 11667,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.008
+    },
+    {
+     "ocp_path": "2-mid-prizes/smith-lyle-moore-hunt-2-0-032btc/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "72e06d1507e670af52868708060dcea2837d1d17",
+     "size": 3466,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/smith-lyle-moore-hunt-2-0-032btc/analysis/mechanism.md",
+     "rel": "analysis/mechanism.md",
+     "blob": "c70b76c272ff229062001d186dd693c2d70f6278",
+     "size": 5136,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/smith-lyle-moore-hunt-2-0-032btc/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "76598c00d850602b2182ecce9cc51f1c9f91b24a",
+     "size": 4135,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/smith-lyle-moore-hunt-2-0-032btc/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "75f505fb88e1dc63839d4f5e9bad6354d1d222c3",
+     "size": 2039,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/smith-lyle-moore-hunt-2-0-032btc/data/site-structure.csv",
+     "rel": "data/site-structure.csv",
+     "blob": "311c9b92447ad08cd7b289f6cb91f2e8526c0891",
+     "size": 895,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/smith-lyle-moore-hunt-2-0-032btc/images/02-structure-branches.svg",
+     "rel": "images/02-structure-branches.svg",
+     "blob": "98a20a9dfc33cf8d2a91d44bd8a9e12ff44568a8",
+     "size": 7601,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/smith-lyle-moore-hunt-2-0-032btc/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "36296893281191d8021f41fd751e56af639b4ddb",
+     "size": 3801,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/smith-lyle-moore-hunt-2-0-032btc/tools/fig_structure.py",
+     "rel": "tools/fig_structure.py",
+     "blob": "ead99e2eb358a8a5178a6d3894a7507011c37f48",
+     "size": 5355,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.068
+    },
+    {
+     "ocp_path": "2-mid-prizes/smith-lyle-moore-hunt-2-0-032btc/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "6f7b6b6eaefda097d30f7cad7e475446aa38f319",
+     "size": 7645,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.089
+    }
+   ],
+   "copy": 10,
+   "link": 0,
+   "skip": 0
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth",
+   "slug": "teikhos-bipedaljoe-solver-bounties-2eth",
+   "master": "puzzles/teikhos-bipedaljoe-solver-bounties-2eth",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "sum of the 3 open contracts: C1 1.000002 ETH, C2 0.500002 ETH, 9732 0.500002 ETH; a 4th contract, AEC7, holds 1.000012 ETH with no payout path for anyone; a 5th, 735B, was solved by me for 0.5 ETH and is now drained",
+   "files": [
+    {
+     "ocp_path": "2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth/README.md",
+     "rel": "README.md",
+     "blob": "bbdb265d1b53ca394cf5d09a5aa5dd645ab65d99",
+     "size": 16747,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "ea61ae81e5861cfec7d427a178ae371b2e62336b",
+     "size": 2210,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth/analysis/mechanism.md",
+     "rel": "analysis/mechanism.md",
+     "blob": "e4b8e330c0c41ba2e864707c6bbb288cc27745cb",
+     "size": 4462,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.019
+    },
+    {
+     "ocp_path": "2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "7898684d2a9ed8184a6cc6df90c2d2171fb1e197",
+     "size": 3151,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "82914ba79f4953350842600d75594d8f0cafa8a7",
+     "size": 2519,
+     "status": "PARTIAL-TEXT",
+     "action": "copy-data",
+     "line_coverage": 0.436
+    },
+    {
+     "ocp_path": "2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth/data/contracts.csv",
+     "rel": "data/contracts.csv",
+     "blob": "ea101112626afdee5ceff98bf05e29c02f0c9b12",
+     "size": 742,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth/data/pipeline-stages.json",
+     "rel": "data/pipeline-stages.json",
+     "blob": "1a4b67554ff929c3b859ac2e408315bc2f955c3e",
+     "size": 592,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth/images/01-pipeline-derivation.svg",
+     "rel": "images/01-pipeline-derivation.svg",
+     "blob": "82acc68f0ec5a7452605a709b4de8538e7c02221",
+     "size": 3177,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth/images/02-family-map.svg",
+     "rel": "images/02-family-map.svg",
+     "blob": "db96f52f8cd866e6e182a8242a17b69ecc4461ee",
+     "size": 3170,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "272b000afdf7407ce88d101d1eb1770acf4b501a",
+     "size": 6206,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth/tools/fig_family.py",
+     "rel": "tools/fig_family.py",
+     "blob": "c8006886c51d5224bc160f6a8d74730c2943319b",
+     "size": 3479,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth/tools/fig_pipeline.py",
+     "rel": "tools/fig_pipeline.py",
+     "blob": "9c73e95617db98af9b470c886a9dfe0ce9b4ff4b",
+     "size": 5349,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "2c9643f64fa37565bf83f1e3d9d7a331b8889931",
+     "size": 11564,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 10,
+   "link": 0,
+   "skip": 3
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "2-mid-prizes/wealth-in-poetry-0-03btc",
+   "slug": "wealth-in-poetry-0-03btc",
+   "master": "puzzles/wealth-in-poetry-0-03btc",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "0.0312463 BTC, 2 funding transactions, exact dates not recorded",
+   "files": [
+    {
+     "ocp_path": "2-mid-prizes/wealth-in-poetry-0-03btc/README.md",
+     "rel": "README.md",
+     "blob": "3a14cb624c0af48b225d6054e9d8b195de96c4e8",
+     "size": 8052,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/wealth-in-poetry-0-03btc/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "580347e038e969ae66283148557918d61c3a659a",
+     "size": 2013,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/wealth-in-poetry-0-03btc/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "87a0753a2d2c6611b90da7d22a11ad4a8b1af7f8",
+     "size": 3484,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/wealth-in-poetry-0-03btc/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "8311d3681117cadf43dcd49298f2a26578c41974",
+     "size": 1517,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/wealth-in-poetry-0-03btc/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "7519b12b11ed5421253aa9bd5d0cf5d9edc82a2e",
+     "size": 3284,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 2,
+   "link": 0,
+   "skip": 3
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "2-mid-prizes/zden-haluska-halv-312ksats",
+   "slug": "zden-haluska-halv-312ksats",
+   "master": "puzzles/zden-haluska-halv-312ksats",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "",
+   "files": [
+    {
+     "ocp_path": "2-mid-prizes/zden-haluska-halv-312ksats/README.md",
+     "rel": "README.md",
+     "blob": "b00b5c5b6e566827ad13863e4a7b3511c405e2ae",
+     "size": 6622,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/zden-haluska-halv-312ksats/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "7243c328b4182bc192b880678091462ac05c738b",
+     "size": 1698,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/zden-haluska-halv-312ksats/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "1f3b25dfe8c95d2ae2645233a9d6d847ee252753",
+     "size": 3397,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/zden-haluska-halv-312ksats/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "a8684b6d237fda87501ee70c970463fa7357ece1",
+     "size": 1068,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/zden-haluska-halv-312ksats/clues/cryptoHALV.png",
+     "rel": "clues/cryptoHALV.png",
+     "blob": "1d3be7f10cff93e3e24ddbd750343714b8523565",
+     "size": 61566,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "2-mid-prizes/zden-haluska-halv-312ksats/data/lobe-shape-sequence.csv",
+     "rel": "data/lobe-shape-sequence.csv",
+     "blob": "1bcbd9825aa9e8cc65b24a9a9adca2f979bc5f5e",
+     "size": 688,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/zden-haluska-halv-312ksats/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "64835cec93267109403f8c158e55049f11b52b3e",
+     "size": 2857,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "2-mid-prizes/zden-haluska-halv-312ksats/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "3fc9f1e457e1388215b5b7feafc713985014b5b9",
+     "size": 5346,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.045
+    }
+   ],
+   "copy": 7,
+   "link": 0,
+   "skip": 1
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "3-small-prizes/crypto-puzzles-2018-puzzle-2-0-05eth",
+   "slug": "crypto-puzzles-2018-puzzle-2-0-05eth",
+   "master": "puzzles/crypto-puzzles-2018-puzzle-2-0-05eth",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "single externally-owned account, never signed a transaction (nonce 0); that this address is Puzzle #2's escrow is a strong inference from the funder and amount matching Puzzle #1, not stated directly by the author",
+   "files": [
+    {
+     "ocp_path": "3-small-prizes/crypto-puzzles-2018-puzzle-2-0-05eth/README.md",
+     "rel": "README.md",
+     "blob": "2c572f5cb182e0304f952251a1f4182bdd17969d",
+     "size": 8160,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "3-small-prizes/crypto-puzzles-2018-puzzle-2-0-05eth/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "387da5abeacba9a0f5e1d5b759e32c00469221d0",
+     "size": 4072,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "3-small-prizes/crypto-puzzles-2018-puzzle-2-0-05eth/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "88f7fd189eea3a9b65ddefcea9c7e6571cf53b56",
+     "size": 6981,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "3-small-prizes/crypto-puzzles-2018-puzzle-2-0-05eth/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "3e92157e25176236ae4832ec21841d5e7c08af2f",
+     "size": 4098,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "3-small-prizes/crypto-puzzles-2018-puzzle-2-0-05eth/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "1bfb0ea24c5c4ed64da3cf8a6ca13453aa838421",
+     "size": 2997,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    }
+   ],
+   "copy": 4,
+   "link": 0,
+   "skip": 1
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "3-small-prizes/exitonly-challenge-14-30ksats",
+   "slug": "exitonly-challenge-14-30ksats",
+   "master": "puzzles/exitonly-challenge-14-30ksats",
+   "ocp_status": "open",
+   "our_status": "open",
+   "status_conflict": null,
+   "prize_note": "single P2WPKH escrow, one funding transaction",
+   "files": [
+    {
+     "ocp_path": "3-small-prizes/exitonly-challenge-14-30ksats/README.md",
+     "rel": "README.md",
+     "blob": "2b4434bf0561b2878e2a454db05efc04ad1c4e29",
+     "size": 7091,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "3-small-prizes/exitonly-challenge-14-30ksats/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "4010f3d5e0b11606ffea73b78dc63348b6a9b66b",
+     "size": 1836,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "3-small-prizes/exitonly-challenge-14-30ksats/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "7760f2e0746b12cf2bfd01600a3e0a8f0ba9d4a2",
+     "size": 3271,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "3-small-prizes/exitonly-challenge-14-30ksats/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "7f171546ed9d4f9271d7c579807d1270a126f207",
+     "size": 3721,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 3,
+   "link": 0,
+   "skip": 1
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "4-solved/andy-bauch-new-money-cog-428ksats",
+   "slug": "andy-bauch-new-money-cog-428ksats",
+   "master": "solved/andy-bauch-new-money-cog-428ksats",
+   "ocp_status": "solved",
+   "our_status": "solved",
+   "status_conflict": null,
+   "prize_note": "the escrow received 527,872 sats on 2017-07-01, that amount left on 2017-12-30 and was replaced by the same funder the next day, 2017-12-31, with the 428,206 sats that remains unspent today",
+   "files": [
+    {
+     "ocp_path": "4-solved/andy-bauch-new-money-cog-428ksats/README.md",
+     "rel": "README.md",
+     "blob": "7d67b56fd2e75b3480e473ebb1bfd38ba3b2e019",
+     "size": 9421,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/andy-bauch-new-money-cog-428ksats/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "13e59e25d6317d29d42c86bf04aad08680bbd79c",
+     "size": 2506,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/andy-bauch-new-money-cog-428ksats/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "9c80785349031d899aab402c42f05785d03719c7",
+     "size": 3665,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/andy-bauch-new-money-cog-428ksats/clues/COG_PANEL_1.jpg",
+     "rel": "clues/COG_PANEL_1.jpg",
+     "blob": "2f0bc147806272cf9703e18b1d21d51f715f0e93",
+     "size": 818511,
+     "status": "MISSING",
+     "action": "link",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/andy-bauch-new-money-cog-428ksats/clues/COG_PANEL_2.jpg",
+     "rel": "clues/COG_PANEL_2.jpg",
+     "blob": "23a6093bcda05707dff2e4ed052c588ce8bb61bb",
+     "size": 870556,
+     "status": "MISSING",
+     "action": "link",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/andy-bauch-new-money-cog-428ksats/clues/COG_PANEL_3.jpg",
+     "rel": "clues/COG_PANEL_3.jpg",
+     "blob": "6b992d8241548d8a7d8d33c21dbe28f6cf422f48",
+     "size": 866244,
+     "status": "MISSING",
+     "action": "link",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/andy-bauch-new-money-cog-428ksats/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "d6518501e1aa240359a9ad8950d85d91fcc8e58b",
+     "size": 3051,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/andy-bauch-new-money-cog-428ksats/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "b8021ffd9062b482cfd89ced5ac8e4b75d253565",
+     "size": 5614,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/andy-bauch-new-money-cog-428ksats/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "55118c241c7a0e8c730cc45770953238f21064fe",
+     "size": 6587,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 3,
+   "link": 3,
+   "skip": 3
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "4-solved/bc1q21-timelock-challenge-l5-100ksats",
+   "slug": "bc1q21-timelock-challenge-l5-100ksats",
+   "master": "solved/bc1q21-timelock-challenge-l5-100ksats",
+   "ocp_status": "solved",
+   "our_status": "solved",
+   "status_conflict": null,
+   "prize_note": "100,000 sats locked in the P2SH time lock; I received 99,604 sats after the 396 sat network fee",
+   "files": [
+    {
+     "ocp_path": "4-solved/bc1q21-timelock-challenge-l5-100ksats/README.md",
+     "rel": "README.md",
+     "blob": "7755f57e3abf668bab5a0693dfcaa561cf8d0c29",
+     "size": 8273,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/bc1q21-timelock-challenge-l5-100ksats/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "c5c2e74935ff78911b82abba519de93a8bb0283d",
+     "size": 1113,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/bc1q21-timelock-challenge-l5-100ksats/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "93ea7f5e79419e0783a031729b344a2473de9b09",
+     "size": 3851,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/bc1q21-timelock-challenge-l5-100ksats/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "ad340f0fdbb1ea41747c503b09e1c933f6bb5d97",
+     "size": 3399,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 3,
+   "link": 0,
+   "skip": 1
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "4-solved/bitcoin-movie-enigma-100ksats",
+   "slug": "bitcoin-movie-enigma-100ksats",
+   "master": "solved/bitcoin-movie-enigma-100ksats",
+   "ocp_status": "solved",
+   "our_status": "solved",
+   "status_conflict": null,
+   "prize_note": "single P2WPKH escrow, one funding transaction",
+   "files": [
+    {
+     "ocp_path": "4-solved/bitcoin-movie-enigma-100ksats/README.md",
+     "rel": "README.md",
+     "blob": "4cb3ed769079476b929be5d1af2de9f74255a621",
+     "size": 9058,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/bitcoin-movie-enigma-100ksats/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "6cf3c7e1c91feadffaad4dab67cfdf4ac04d400c",
+     "size": 7352,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/bitcoin-movie-enigma-100ksats/analysis/payout-verification-2026-09-07.json",
+     "rel": "analysis/payout-verification-2026-09-07.json",
+     "blob": "692d17662fdb8098cf3ef092197cb9a77e58e810",
+     "size": 1351,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/bitcoin-movie-enigma-100ksats/analysis/solution-verification-2026-09-07.json",
+     "rel": "analysis/solution-verification-2026-09-07.json",
+     "blob": "49f2bd5e57d3cb275ca7e61b343d943a6c6d58d7",
+     "size": 2330,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/bitcoin-movie-enigma-100ksats/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "b1b76960c1a55516742b318ff8fba69f19d2177e",
+     "size": 13391,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/bitcoin-movie-enigma-100ksats/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "af1f2042c5fce2ad7d9630c0c0b802396bce15e0",
+     "size": 4442,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/bitcoin-movie-enigma-100ksats/data/films.csv",
+     "rel": "data/films.csv",
+     "blob": "7c9a2819218bf61b9372492bc7dba8444358db3b",
+     "size": 3073,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/bitcoin-movie-enigma-100ksats/data/films_community_issue9.csv",
+     "rel": "data/films_community_issue9.csv",
+     "blob": "a2d23cad1ddb6b5220cc6497020efdc60fb57574",
+     "size": 2296,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/bitcoin-movie-enigma-100ksats/data/solution.json",
+     "rel": "data/solution.json",
+     "blob": "3cca696f85d1a1a38dca1db5c55aa091268ca4c0",
+     "size": 3265,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/bitcoin-movie-enigma-100ksats/images/02-panel-grid-identification.svg",
+     "rel": "images/02-panel-grid-identification.svg",
+     "blob": "ca604282963b78ebdd47eff9552cdd6d1dd380b0",
+     "size": 10704,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/bitcoin-movie-enigma-100ksats/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "df4fe97e854ad8a93cbabaeaa6efaa8ea5c53b35",
+     "size": 4887,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/bitcoin-movie-enigma-100ksats/tools/fig_panel_grid.py",
+     "rel": "tools/fig_panel_grid.py",
+     "blob": "cbd4e41b1cd8c56bb9a768dfa935a5997ea4f276",
+     "size": 4406,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/bitcoin-movie-enigma-100ksats/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "b755a435dc4613af78650e556b2a083b6c27d03f",
+     "size": 8149,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 10,
+   "link": 0,
+   "skip": 3
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats",
+   "slug": "caesarcoder-genesis-block-wallet-puzzle-947ksats",
+   "master": "puzzles/genesis-block-wallet-puzzle-142ksats",
+   "ocp_status": "solved",
+   "our_status": "open",
+   "status_conflict": "caesarcoder-genesis-block-wallet-puzzle-947ksats: по OCP «solved», у нас папка в puzzles/",
+   "prize_note": "the jackpot started at 25,000 sats and grew because the author relayed every paid question into the escrow; 947,620 sats in 120 outputs when it was swept on 2026-10-17",
+   "files": [
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/README.md",
+     "rel": "README.md",
+     "blob": "442e362b5e609d924a5d55b719b3b2c07c1be313",
+     "size": 16678,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/analysis/2026-09-05/direct-mnemonic-result.json",
+     "rel": "analysis/2026-09-05/direct-mnemonic-result.json",
+     "blob": "bbe80c9570abf5f6a732df758e6f80135c13e61a",
+     "size": 753,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/analysis/2026-09-05/funding.json",
+     "rel": "analysis/2026-09-05/funding.json",
+     "blob": "77cb422ef0e79d7b725bfced6b5faa9d1ef4f3ef",
+     "size": 299,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/analysis/2026-09-05/hardening-result.json",
+     "rel": "analysis/2026-09-05/hardening-result.json",
+     "blob": "968f053a530b10179f30d5305a22a83265208aa8",
+     "size": 2726,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/analysis/2026-09-05/numeric-date-result.json",
+     "rel": "analysis/2026-09-05/numeric-date-result.json",
+     "blob": "6c2b7b1e249cbd47a49c4d1c78120c7a1321dd00",
+     "size": 815,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/analysis/2026-09-05/path-result.json",
+     "rel": "analysis/2026-09-05/path-result.json",
+     "blob": "c1ee07f315e7678f1ee1400585442b90758620fe",
+     "size": 331,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/analysis/2026-09-05/prefix-result.json",
+     "rel": "analysis/2026-09-05/prefix-result.json",
+     "blob": "afebbac7d9ebd52bae40df507e1810f889841d30",
+     "size": 348,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/analysis/2026-09-05/publication.json",
+     "rel": "analysis/2026-09-05/publication.json",
+     "blob": "70cfb96cd6d1decd3c688218b423e50434bd4e24",
+     "size": 1641,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/analysis/2026-09-05/reproduction-check.json",
+     "rel": "analysis/2026-09-05/reproduction-check.json",
+     "blob": "53cf2f2cd6f2aa776a93172c46d8f05896b59770",
+     "size": 1343,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/analysis/2026-09-05/zero-root-result.json",
+     "rel": "analysis/2026-09-05/zero-root-result.json",
+     "blob": "8e19eb1ab9d44154234c0493cc6a67b618bd338c",
+     "size": 738,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "a9a03eb8b5984e671107fe847f04aea6fb3a65f1",
+     "size": 8191,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "8905e3d53d409a00867dc892b7f42609f2b4730e",
+     "size": 14374,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "fcfa6e702cc92b3cd2c39246200f3ae6cb1adcfd",
+     "size": 40210,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/data/genesis-block.hex",
+     "rel": "data/genesis-block.hex",
+     "blob": "d15b142e84d73dfb911802766517a368d8559193",
+     "size": 570,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/data/on-chain-dialogue.json",
+     "rel": "data/on-chain-dialogue.json",
+     "blob": "6b43c1f47bf3b1a7ba5bd9203c070e067a3fdb9c",
+     "size": 82035,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "9dfa0d24c25668a2b38ab69b203abc580c48ab4c",
+     "size": 6264,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/tools/REPRODUCE.md",
+     "rel": "tools/REPRODUCE.md",
+     "blob": "eaef2340d48988f2ce44729c0c7f10c47c4fa458",
+     "size": 2675,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/tools/candidates.py",
+     "rel": "tools/candidates.py",
+     "blob": "44eec2f047f861e237fb56a6c1b209778161d88c",
+     "size": 17910,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/tools/check_direct_mnemonic.py",
+     "rel": "tools/check_direct_mnemonic.py",
+     "blob": "d6644b8eddbdd9901f14b39f7da0fbe735a5c00c",
+     "size": 2467,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/tools/check_hardening.py",
+     "rel": "tools/check_hardening.py",
+     "blob": "e9dc2f461b9b509b4996a50761d82e1377eff2a5",
+     "size": 2876,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/tools/check_numeric_date.py",
+     "rel": "tools/check_numeric_date.py",
+     "blob": "ac4ac669e5c99a95eccb26a3b84bf0e4af424cbc",
+     "size": 2924,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/tools/check_text_constructions.py",
+     "rel": "tools/check_text_constructions.py",
+     "blob": "42a09dd368e2368b897d667b364ec681544c091b",
+     "size": 3173,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/tools/check_zero_root.py",
+     "rel": "tools/check_zero_root.py",
+     "blob": "5c3963c819a4cfb5f4dfe600f3c329b4daa9f4f5",
+     "size": 2738,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "2587adf2dc1a4d2b98aba832aa90fc81efbceb53",
+     "size": 7477,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/tools/requirements-research.txt",
+     "rel": "tools/requirements-research.txt",
+     "blob": "a04fce49d96e79219c898579927f9d6872aa417c",
+     "size": 19,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/tools/research_run.py",
+     "rel": "tools/research_run.py",
+     "blob": "07c2e04cd4ea2c0085c3db2e09edfa30de9886b8",
+     "size": 653,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/tools/verify_solution.py",
+     "rel": "tools/verify_solution.py",
+     "blob": "b5604e7f64a854fbe406e2f5e9b2825c99d66b14",
+     "size": 2527,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 26,
+   "link": 0,
+   "skip": 1
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "4-solved/dug-student-treasure-hunt-63ksats",
+   "slug": "dug-student-treasure-hunt-63ksats",
+   "master": "solved/dug-student-treasure-hunt-63ksats",
+   "ocp_status": "solved",
+   "our_status": "solved",
+   "status_conflict": null,
+   "prize_note": "the portion I recovered (index 1 of 3); a third party had already swept the larger index 0 plus index 2 portion, 95,792 sats, five weeks earlier",
+   "files": [
+    {
+     "ocp_path": "4-solved/dug-student-treasure-hunt-63ksats/README.md",
+     "rel": "README.md",
+     "blob": "562ab179e7f2077eaa63aa953340b475ce194ed0",
+     "size": 8747,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/dug-student-treasure-hunt-63ksats/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "345bfc866c96dff062432383ca176d7a96e2d307",
+     "size": 952,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/dug-student-treasure-hunt-63ksats/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "a098611156f273fbd4b56d4db8ab89d704fd8cd5",
+     "size": 4427,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/dug-student-treasure-hunt-63ksats/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "61697b8f18d5d31fea34a9bff29c05d6af01ee91",
+     "size": 4034,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 3,
+   "link": 0,
+   "skip": 1
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "4-solved/ftpk-season-4-166usdc",
+   "slug": "ftpk-season-4-166usdc",
+   "master": "solved/ftpk-season-4-166usdc",
+   "ocp_status": "solved",
+   "our_status": "solved",
+   "status_conflict": null,
+   "prize_note": "the author tops up this prize over time; it started at 150 USDC and has grown since, plus a small native ETH gas preload for the eventual winner",
+   "files": [
+    {
+     "ocp_path": "4-solved/ftpk-season-4-166usdc/README.md",
+     "rel": "README.md",
+     "blob": "78960967f784335034b9e74aedef0892175599e2",
+     "size": 8351,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/ftpk-season-4-166usdc/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "ddeb9efa44073778046e11451264e94312670c23",
+     "size": 3207,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/ftpk-season-4-166usdc/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "c05ea0854017ce172039e81ddd0d6085355a5116",
+     "size": 4449,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/ftpk-season-4-166usdc/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "816b873c5a81a22795f80bbe72c18b49a06dcbba",
+     "size": 3388,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 2,
+   "link": 0,
+   "skip": 2
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "4-solved/keysa-crack-the-seed-369ksats",
+   "slug": "keysa-crack-the-seed-369ksats",
+   "master": "solved/keysa-crack-the-seed-369ksats",
+   "ocp_status": "solved",
+   "our_status": "solved",
+   "status_conflict": null,
+   "prize_note": "the author never published the escrow address; I found it by matching the announced amount, 369,369 sats, as a near-unique fingerprint in a full blockchain balance dump, then corroborated it by script type (v0_p2wpkh, matching BIP84) and by funding time (2 minutes 28 seconds after the announcement post)",
+   "files": [
+    {
+     "ocp_path": "4-solved/keysa-crack-the-seed-369ksats/README.md",
+     "rel": "README.md",
+     "blob": "47cabd0dd260de4c9810b564e7e2fea40743e31a",
+     "size": 16002,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/keysa-crack-the-seed-369ksats/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "1574a6b0ff09de5258213d332dd733e1add13f72",
+     "size": 4720,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/keysa-crack-the-seed-369ksats/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "6e14c52711741e00a7b32ed6215a87bae02d7640",
+     "size": 13221,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/keysa-crack-the-seed-369ksats/clues/L9rQ.jpg",
+     "rel": "clues/L9rQ.jpg",
+     "blob": "02c53b4e77bb4fbc3b4de6abdd7c65ae43de93de",
+     "size": 86725,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/keysa-crack-the-seed-369ksats/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "8b11bcbe2f59b49e7b0a4d02ed8f14875b8e8414",
+     "size": 3900,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/keysa-crack-the-seed-369ksats/clues/qYkB.jpg",
+     "rel": "clues/qYkB.jpg",
+     "blob": "e0b4d2342ec7294f0100293b10ac5f3c4c99d1c4",
+     "size": 67433,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/keysa-crack-the-seed-369ksats/data/card-tokens.txt",
+     "rel": "data/card-tokens.txt",
+     "blob": "cd98ee351a8dcd03ee69888af36a8ceeb0a1d1d0",
+     "size": 927,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/keysa-crack-the-seed-369ksats/data/coverage.csv",
+     "rel": "data/coverage.csv",
+     "blob": "18aa0a70a1c17455ff85d2169c0e06de75e97aee",
+     "size": 894,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/keysa-crack-the-seed-369ksats/images/01-annotated-card-grid.png",
+     "rel": "images/01-annotated-card-grid.png",
+     "blob": "1a938ed6cc78d9ffa605d882e5a18a78ade90e52",
+     "size": 405876,
+     "status": "MISSING",
+     "action": "link",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/keysa-crack-the-seed-369ksats/images/02-coverage-tested-space.png",
+     "rel": "images/02-coverage-tested-space.png",
+     "blob": "0194479e33c3c84e67e9321ca4c97a297f67c0cf",
+     "size": 95760,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/keysa-crack-the-seed-369ksats/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "b52a03d7880cbd616f344a99f1ce0cb25c1e7982",
+     "size": 4985,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/keysa-crack-the-seed-369ksats/tools/fig_card_grid.py",
+     "rel": "tools/fig_card_grid.py",
+     "blob": "e53e2b2bfa0debb5c71defdb9144f88021c011f8",
+     "size": 5464,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/keysa-crack-the-seed-369ksats/tools/fig_coverage.py",
+     "rel": "tools/fig_coverage.py",
+     "blob": "f1180a1b4c0c12fc70e7cfb3c226337f9cefd5bc",
+     "size": 2520,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/keysa-crack-the-seed-369ksats/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "06bd27d4276f2358f2d55bfad876e27a6f571760",
+     "size": 5383,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.009
+    }
+   ],
+   "copy": 9,
+   "link": 1,
+   "skip": 4
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "4-solved/luckylurker-seed-riddles-80ksats",
+   "slug": "luckylurker-seed-riddles-80ksats",
+   "master": "solved/luckylurker-seed-riddles-80ksats",
+   "ocp_status": "solved",
+   "our_status": "solved",
+   "status_conflict": null,
+   "prize_note": "single P2WPKH escrow, 2 funding transactions of 40,000 sats each",
+   "files": [
+    {
+     "ocp_path": "4-solved/luckylurker-seed-riddles-80ksats/README.md",
+     "rel": "README.md",
+     "blob": "1c3942ae525c2e9da638ce46be6c076d1028ce1d",
+     "size": 6569,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/luckylurker-seed-riddles-80ksats/data/hints.csv",
+     "rel": "data/hints.csv",
+     "blob": "65d7831518772b29d07412dcc59e8997cfafe990",
+     "size": 1706,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/luckylurker-seed-riddles-80ksats/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "f36af7630e2adfa2a5e181123c8265bf2bda7c83",
+     "size": 3947,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/luckylurker-seed-riddles-80ksats/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "8804dffb68135b8a51631447187bf29d78ef8fae",
+     "size": 3195,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 3,
+   "link": 0,
+   "skip": 1
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "4-solved/veteranhodl-hunting-time-420ksats",
+   "slug": "veteranhodl-hunting-time-420ksats",
+   "master": "solved/veteranhodl-hunting-time-420ksats",
+   "ocp_status": "solved",
+   "our_status": "solved",
+   "status_conflict": null,
+   "prize_note": "funded in two tranches, 210000 sats on 2023-07-22 and 210000 sats on 2026-07-31, the day before the author's wallet-type announcement post",
+   "files": [
+    {
+     "ocp_path": "4-solved/veteranhodl-hunting-time-420ksats/README.md",
+     "rel": "README.md",
+     "blob": "9e9d51e23f31f3b3b3ad6a07097fb71bb389ad48",
+     "size": 6986,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/veteranhodl-hunting-time-420ksats/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "1fbd46e30f82085a7a0f99091f06ef10e0ce475b",
+     "size": 1620,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/veteranhodl-hunting-time-420ksats/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "13130a4bbf3dc73390e14871efecc81a9067d802",
+     "size": 1541,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/veteranhodl-hunting-time-420ksats/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "ba3cfa7933f34454e015ee8657c1526cee0e83f6",
+     "size": 2383,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/veteranhodl-hunting-time-420ksats/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "e0f586afcf597fa14b98c2ea47ff9aa001676d66",
+     "size": 3707,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/veteranhodl-hunting-time-420ksats/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "98a2030051d1b3bd010fdc954df925514f68b28a",
+     "size": 9574,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 3,
+   "link": 0,
+   "skip": 3
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "4-solved/wonderabbit-prometheus-1msats",
+   "slug": "wonderabbit-prometheus-1msats",
+   "master": "solved/wonderabbit-prometheus-1msats",
+   "ocp_status": "solved",
+   "our_status": "solved",
+   "status_conflict": null,
+   "prize_note": "current balance after a documented 21000-sats self-test transaction that the author sent to and from themselves before funding the prize; not the prize moving",
+   "files": [
+    {
+     "ocp_path": "4-solved/wonderabbit-prometheus-1msats/README.md",
+     "rel": "README.md",
+     "blob": "dd9002299d9f0d10c77f217df5a36c544727aad1",
+     "size": 8436,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/wonderabbit-prometheus-1msats/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "1cf41d2ffa6eb85f0b6b9b4c572e3bc0a4d70052",
+     "size": 1486,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/wonderabbit-prometheus-1msats/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "5e820d742dfddced657702b26e3d745dd5cafa93",
+     "size": 1749,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/wonderabbit-prometheus-1msats/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "541a4c3127fcd8e55caf1b9e37b8839670688a8f",
+     "size": 1813,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/wonderabbit-prometheus-1msats/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "8b11c7c2f97f45fd1acd3a44e9fbf0d9d7d3d502",
+     "size": 4229,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    }
+   ],
+   "copy": 2,
+   "link": 0,
+   "skip": 3
+  },
+  {
+   "kind": "puzzle",
+   "ocp": "4-solved/zden-haluska-lvl5-555ksats",
+   "slug": "zden-haluska-lvl5-555ksats",
+   "master": "solved/zden-haluska-lvl5-555ksats",
+   "ocp_status": "solved",
+   "our_status": "solved",
+   "status_conflict": null,
+   "prize_note": "",
+   "files": [
+    {
+     "ocp_path": "4-solved/zden-haluska-lvl5-555ksats/README.md",
+     "rel": "README.md",
+     "blob": "a4c20d36bb31397597566d6ede669993f40ffc78",
+     "size": 8957,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/zden-haluska-lvl5-555ksats/analysis/leads.md",
+     "rel": "analysis/leads.md",
+     "blob": "7ee03777a0983a7ec70ef00eb3b6409772203fe2",
+     "size": 1785,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/zden-haluska-lvl5-555ksats/analysis/tested.md",
+     "rel": "analysis/tested.md",
+     "blob": "3eab6d9d42fce198399f6f12d4a52a18be372ba7",
+     "size": 3862,
+     "status": "PRESENT-NORM",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/zden-haluska-lvl5-555ksats/clues/author-posts.md",
+     "rel": "clues/author-posts.md",
+     "blob": "4ed5b1f422bb07f5d00a213b07f52c4ddaa3aced",
+     "size": 1891,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/zden-haluska-lvl5-555ksats/clues/crypto5.png",
+     "rel": "clues/crypto5.png",
+     "blob": "f1ccc456bdae7e87f0e9249c153308e8d5e94d06",
+     "size": 4874,
+     "status": "PRESENT",
+     "action": "skip",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/zden-haluska-lvl5-555ksats/clues/crypto5fix.png",
+     "rel": "clues/crypto5fix.png",
+     "blob": "4a12f968ab68025dcb3272c264ebdc19ae54a9ef",
+     "size": 6798,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": null
+    },
+    {
+     "ocp_path": "4-solved/zden-haluska-lvl5-555ksats/data/rectangle-measurements.csv",
+     "rel": "data/rectangle-measurements.csv",
+     "blob": "f89c49f0eafa4b32432a27a155cab4b5c1c418f1",
+     "size": 1883,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/zden-haluska-lvl5-555ksats/puzzle.json",
+     "rel": "puzzle.json",
+     "blob": "0028a17b6e0af886af5ddafc3f7f5f9ade577565",
+     "size": 4843,
+     "status": "MISSING",
+     "action": "copy-data",
+     "line_coverage": 0.0
+    },
+    {
+     "ocp_path": "4-solved/zden-haluska-lvl5-555ksats/tools/oracle.py",
+     "rel": "tools/oracle.py",
+     "blob": "9eb281a4e272acb73d14b6d46c4fbdfeeda019e5",
+     "size": 5486,
+     "status": "MISSING",
+     "action": "copy-code",
+     "line_coverage": 0.009
+    }
+   ],
+   "copy": 5,
+   "link": 0,
+   "skip": 4
+  }
+ ],
+ "unmapped": [],
+ "service_files": [
+  ".github/workflows/prize-map.yml",
+  ".gitignore",
+  "1-big-prizes/README.md",
+  "2-mid-prizes/README.md",
+  "3-small-prizes/README.md",
+  "4-solved/README.md",
+  "AGENTS.md",
+  "CONTRIBUTING.md",
+  "LICENSE",
+  "LICENSE-CODE",
+  "README.md",
+  "archive/dead-ends/README.md",
+  "archive/dead-ends/commander-u-puzzle-8-5btc/README.md",
+  "archive/dead-ends/commander-u-puzzle-8-5btc/clues/author-posts.md",
+  "archive/dead-ends/commander-u-puzzle-8-5btc/puzzle.json",
+  "archive/dead-ends/objective-thune-licorne-0-21btc/README.md",
+  "archive/dead-ends/objective-thune-licorne-0-21btc/analysis/leads.md",
+  "archive/dead-ends/objective-thune-licorne-0-21btc/analysis/tested.md",
+  "archive/dead-ends/objective-thune-licorne-0-21btc/clues/author-posts.md",
+  "archive/dead-ends/objective-thune-licorne-0-21btc/data/funding.csv",
+  "archive/dead-ends/objective-thune-licorne-0-21btc/data/print_run_stock.csv",
+  "archive/dead-ends/objective-thune-licorne-0-21btc/puzzle.json",
+  "archive/dead-ends/objective-thune-licorne-0-21btc/tools/oracle.py",
+  "archive/dead-ends/onfo-forsyth-1btc/README.md",
+  "archive/dead-ends/onfo-forsyth-1btc/clues/author-posts.md",
+  "archive/dead-ends/onfo-forsyth-1btc/puzzle.json",
+  "archive/dead-ends/rows.json",
+  "archive/dead-ends/zodomo-11x11-pixel-puzzles-0-05eth/README.md",
+  "archive/dead-ends/zodomo-11x11-pixel-puzzles-0-05eth/clues/author-posts.md",
+  "archive/dead-ends/zodomo-11x11-pixel-puzzles-0-05eth/puzzle.json",
+  "archive/dead-ends/zodomo-11x11-pixel-puzzles-0-05eth/tools/oracle.py",
+  "assets/prize-map.svg",
+  "docs/glossary.md",
+  "docs/illustrations.md",
+  "docs/methodology.md",
+  "docs/style-guide.md",
+  "docs/templates/README.template.md",
+  "docs/templates/leads.template.md",
+  "docs/templates/puzzle.template.json",
+  "docs/templates/tested.template.md",
+  "docs/verify-funding.md",
+  "engines/.gitignore",
+  "engines/README.md",
+  "engines/arv_candfile.py",
+  "engines/arweave_var_engine.cu",
+  "engines/arweave_var_host.py",
+  "engines/bip39_passphrase_engine.cu",
+  "engines/bip39pass_eth.py",
+  "engines/bip39pass_oracle.py",
+  "engines/bip39pass_stream.py",
+  "engines/build.sh",
+  "engines/electrum_v1_engine.cu",
+  "engines/lib/__init__.py",
+  "engines/lib/bip39_english.txt",
+  "engines/lib/bip39_multipath.py",
+  "engines/lib/btc_p2pkh.py",
+  "engines/lib/rushwallet_derive.py",
+  "engines/p2wsh_2of2_pairs.cu",
+  "engines/perm11_eth_host.py",
+  "engines/pzl3_arweave_engine.cu",
+  "engines/pzl3_host.py",
+  "engines/secp256k1_hash160_engine.cu",
+  "puzzles.json",
+  "requirements.lock",
+  "schema/puzzle.schema.json",
+  "tools/build_index.py",
+  "tools/check_escrows.py",
+  "tools/derive.py",
+  "tools/fig_prize_bars.py",
+  "tools/requirements.txt",
+  "tools/validate.py"
+ ]
+}

@@ -16,3 +16,9 @@
 - Отказ (1): https://github.com/floflo777/open-crypto-puzzles [FAIL: IncompleteRead(327680 bytes read) ]
 - Артефакты: `data/SOURCES.md` + скачанные файлы.
 - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+## 2026-10-18, 09:52 — OCP Sync (Qoder Desktop, Windows) <!-- ocp-snapshot:19644e58 -->
+- Делал: обогащение из внешнего репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) — раскладка дельты снапшота `19644e58` (клон `_sources/ocp/`, реестр `_sources/OCP_SNAPSHOT.md`). Протокол: `claims acquire/heartbeat/release` по `zden-haluska-lvl5-555ksats`. Прогонов/переборов не запускали, статус пазла и балансы не меняли, чужие файлы не перезатёрты (копии лежат отдельными деревами `data/ocp/` и `tools/ocp/` с provenance).
+- Результат: перенесено 4 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в базе, пропущено: 4. Статус по OCP: `solved`.
+- Артефакты: `4-solved/zden-haluska-lvl5-555ksats/clues/author-posts.md`, `4-solved/zden-haluska-lvl5-555ksats/clues/crypto5fix.png`, `4-solved/zden-haluska-lvl5-555ksats/data/rectangle-measurements.csv`, `4-solved/zden-haluska-lvl5-555ksats/puzzle.json`, `4-solved/zden-haluska-lvl5-555ksats/tools/oracle.py`
+- Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/4-solved/zden-haluska-lvl5-555ksats ; полная дельта — `_sources/ocp_sync_2026-10-18/delta_report.md`.

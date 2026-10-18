@@ -16,3 +16,9 @@
 - Отказ (3): https://github.com/floflo777/open-crypto-puzzles [FAIL: IncompleteRead(327680 bytes read) ]; https://bitcointalk.org/index.php?topic=293382.0 [FAIL: <urlopen error [Errno 11001] getad]; https://github.com/oritwoen/boha [FAIL: IncompleteRead(327680 bytes read) ]
 - Артефакты: `data/SOURCES.md` + скачанные файлы.
 - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+## 2026-10-18, 09:52 — OCP Sync (Qoder Desktop, Windows) <!-- ocp-snapshot:19644e58 -->
+- Делал: обогащение из внешнего репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) — раскладка дельты снапшота `19644e58` (клон `_sources/ocp/`, реестр `_sources/OCP_SNAPSHOT.md`). Протокол: `claims acquire/heartbeat/release` по `peter-todd-hash-collision-bounties-0-59btc`. Прогонов/переборов не запускали, статус пазла и балансы не меняли, чужие файлы не перезатёрты (копии лежат отдельными деревами `data/ocp/` и `tools/ocp/` с provenance).
+- Результат: перенесено 4 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в базе, пропущено: 3. Статус по OCP: `watch`; **статусное расхождение с нашей базой** — фиксируем двойной записью, приоритет за собственным on-chain-подтверждением
+- Артефакты: `1-big-prizes/peter-todd-hash-collision-bounties-0-59btc/clues/author-posts.md`, `1-big-prizes/peter-todd-hash-collision-bounties-0-59btc/data/redeem_scripts.csv`, `1-big-prizes/peter-todd-hash-collision-bounties-0-59btc/data/timeline.csv`, `1-big-prizes/peter-todd-hash-collision-bounties-0-59btc/puzzle.json`, `1-big-prizes/peter-todd-hash-collision-bounties-0-59btc/tools/oracle.py`
+- Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/1-big-prizes/peter-todd-hash-collision-bounties-0-59btc ; полная дельта — `_sources/ocp_sync_2026-10-18/delta_report.md`.

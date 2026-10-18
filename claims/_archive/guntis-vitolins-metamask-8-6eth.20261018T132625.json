@@ -1,0 +1,13 @@
+{
+  "slug": "guntis-vitolins-metamask-8-6eth",
+  "agent": "OCP Sync",
+  "model": "Qoder Desktop (Windows)",
+  "note": "rounds-ось: фиксация гипотезы, без прогонов",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T10:03:42Z",
+  "ttl_min": 60,
+  "expires_utc": "2026-10-18T11:03:42Z",
+  "heartbeat_utc": "2026-10-18T10:03:42Z",
+  "released_utc": "2026-10-18T10:26:25Z",
+  "released_by": "OCP Sync"
+}

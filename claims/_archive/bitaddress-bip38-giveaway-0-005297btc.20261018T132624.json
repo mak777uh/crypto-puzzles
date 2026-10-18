@@ -1,0 +1,13 @@
+{
+  "slug": "bitaddress-bip38-giveaway-0-005297btc",
+  "agent": "OCP Sync",
+  "model": "",
+  "note": "OCP sync: раскладка дельт снапшота 19644e58",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T09:35:41Z",
+  "ttl_min": 600,
+  "expires_utc": "2026-10-18T19:35:41Z",
+  "heartbeat_utc": "2026-10-18T09:35:41Z",
+  "released_utc": "2026-10-18T10:26:24Z",
+  "released_by": "OCP Sync"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "genesis-block-wallet-puzzle-142ksats",
+  "agent": "OCP Sync",
+  "model": "Qoder Desktop (Windows)",
+  "note": "genesis: закрытие + перенос в solved",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T09:59:19Z",
+  "ttl_min": 180,
+  "expires_utc": "2026-10-18T12:59:19Z",
+  "heartbeat_utc": "2026-10-18T09:59:19Z",
+  "released_utc": "2026-10-18T10:26:24Z",
+  "released_by": "OCP Sync"
+}
