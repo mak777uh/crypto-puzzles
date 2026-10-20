@@ -51,3 +51,6 @@
 - **Файлы/скрипты**: `/workspace/projects/b6983d3d-52f5-48f8-9974-b99dc8e31c55/work/audit/grs.png`, `grs_small.png`, `grs_test.py` (pure-python secp256k1), `SOLVABILITY_AUDIT.md`; досье `/workspace/projects/b6983d3d-52f5-48f8-9974-b99dc8e31c55/strategy/dossiers/groestlcoin.md` (16.10).
 - **Проекты Hark и статус**: проект «Groestlcoin puzzle: 1000 GRS» (f3203026-f501-46ca-93bf-cb85cd7232d6) создан 14.10 13:25; его папки в workspace нет, заметок нет. У стратега вердикт 16.10 11:00: ярус 3, не брать.
 - **Оценка шансов**: ~3 %, приз мал.
+
+## Обновление GitHub-интейка (2026-10-19, Beam)
+- GitHub-интейк: **none** (2026-10-19) — репо не найдено, проверено по 0 запросам (0 бесплатных проверок ls-remote/OCP) репо: 0; путь дайдеста: `data/github/GITHUB_INTAKE.md`

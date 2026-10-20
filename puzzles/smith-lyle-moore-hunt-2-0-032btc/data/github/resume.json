@@ -1,0 +1,17 @@
+{
+  "done": [
+    "floflo777/open-crypto-puzzles",
+    "benjacasas02/independent-cryptography-research",
+    "diploux/unsolved-crypto-puzzles",
+    "schum-io/open-crypto-puzzles"
+  ],
+  "left": [
+    "lekejf/open-crypto-puzzles",
+    "pauldmurphy/open-crypto-puzzles",
+    "ebr4him68-rgb/open-crypto-puzzles",
+    "aperioscanner/open-crypto-puzzles",
+    "windstalker-arch/open-crypto-puzzles"
+  ],
+  "ts": "2026-10-18T11:18:56Z",
+  "reason": "срезано потолками: собрано 4 кандидатов из 9 (--max-repos/--max-mb)"
+}

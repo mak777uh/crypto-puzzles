@@ -22,7 +22,11 @@
 - 2026 — needlespace — https://needlespace.com/en/puzzle
 - 2026 — news.bitcoin.com — https://news.bitcoin.com/key-hunters-eye-58-87m-bitcoin-puzzle-as-916-btc-sits-unsolved-in-78-addresses/
 - 2026 — alexanderthurn — https://github.com/alexanderthurn/1000-BTC-Challenge
-
+- 2026 — privatekeys.pw — https://privatekeys.pw/puzzles/bitcoin-puzzle-tx (история, tx-ссылки, топ-решатели)
+- 2026 — BitcoinTalk 1306983 — https://bitcointalk.org/index.php?topic=1306983 (оригинальное описание)
+- 2026 — BitcoinTalk 5589799 — https://bitcointalk.org/index.php?topic=5589799 (Mini-puzzle #7, ключ #135)
+- 2026 — KuCoin insight — https://www.kucoin.com/news/insight/BTC/6a6fb9369bd794000857b01e (#135 этика)
+- 2026 — X @Hey_rabbit_here — https://x.com/Hey_rabbit_here/status/2084022752067961048 (снятие 13.5 BTC)
 ## Подробности
 - Прогресс #71: 0,864% просканировано, ~422 года при текущем темпе.
 - Address-only (#71-#134): полный брутфорс; RTX 4090 даёт ~1,5 млрд ключей/с.
@@ -117,6 +121,13 @@
 | #158 | 15.8000 | 157 | Known PK | ЕСТЬ |
 | #159 | 15.9000 | 158 | Known PK | ЕСТЬ |
 | #160 | 16.0011 | 159 | Known PK | ЕСТЬ |
+
+## Обновление (2026-10-19, Beam — обогащение из privatekeys.pw)
+- Тип: история / риск / источники
+- Суть: добавлена хронология с tx-ссылками (funding 2015, move 2017, PK exposure 2019, reward×10 2023, #66/#67/#68/#69, #135) и таблица топ-решателей; подтверждён операционный риск sniping (#66, #69). Файлы: data/privatekeys-pw-history.md, data/privatekeys-pw-top-solvers.md.
+- Источник: https://privatekeys.pw/puzzles/bitcoin-puzzle-tx
+- Проверено: да (blockstream/mempool для балансов не менялись; статус прежний).
+- Влияние на оценку: без изменения статуса; усилен акцент на private mining для #136–#160.
 
 ---
 ## Логирование (обязательно)
@@ -234,3 +245,6 @@ One page each: the record, the transactions and the live balance.
 <collection-puzzles collection="bits">
 
 </collection-puzzles>
+
+## Обновление GitHub-интейка (2026-10-19, Qoder)
+- GitHub-интейк: **partial** (2026-10-19) — срезано потолками: собрано 4 кандидатов из 13 (--max-repos/--max-mb); остаток в `data/github/resume.json` репо: 4; путь дайдеста: `data/github/GITHUB_INTAKE.md`

@@ -1,0 +1,9 @@
+Kubo RPC is not here.
+
+The /api/v0 Kubo RPC (https://docs.ipfs.tech/reference/kubo/rpc/) 
+is not part of IPFS Gateway Specs (https://specs.ipfs.tech/http-gateways/). 
+Consider refactoring your app to use different URL.
+
+If you still need this Kubo endpoint, please self-host a Kubo instance yourself: 
+https://docs.ipfs.tech/install/command-line/ with proper auth 
+https://github.com/ipfs/kubo/blob/master/docs/config.md#apiauthorizations

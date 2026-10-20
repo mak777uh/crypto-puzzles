@@ -1,0 +1,13 @@
+{
+  "slug": "bitaddress-bip38-giveaway-0-005297btc",
+  "agent": "Qoder",
+  "model": "",
+  "note": "BIP38 cap-axis remainder (5295/9240) + repeats/2-token axes",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T14:50:17Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-18T16:50:17Z",
+  "heartbeat_utc": "2026-10-18T14:50:17Z",
+  "released_utc": "2026-10-18T15:23:17Z",
+  "released_by": "Qoder"
+}

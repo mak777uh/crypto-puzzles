@@ -1,0 +1,56 @@
+=== ECDSA-экран призового EOA 0x9C2F44EFAd0c1E852a09dF9939e6DaF061140CaF ===
+опубликованный pubkey (несжатый): 04e1a30fe567710a3592a56eb479d251fe7456e1f0791c39bf54691a50edab08b44904515ff30c07f354815bb2a45d83576ee8e320ab52058b35e715611fbc4f9d
+транзакций по адресу получено: 13
+  0xfe3d0b81a5c8b62138a825cd90906fc2d3fa205a1abe4c2d4fe1e74df032b491  from=0x0000de0028  to=0x9C2F44EFAd  value=8675309  
+  0xe84fa359e4a901ed3555faf749c27710101ab124bc4395cbbeffe077d953f816  from=0xf755ad53ba  to=0x9C2F44EFAd  value=11000000000000  
+  0xf2debb3bcfd55e1af49593c5ee2e4e88c9f9f48ea6176618361d98b0a6617a7e  from=0xf755737d90  to=0x9C2F44EFAd  value=26698000000000  
+  0x3131dd70cd075e62d2d790e920f2049b7bb25d2640c8ecf534257aed01aa3134  from=0x9c2f44efad  to=0xf755aaAce2  value=266985625493923407  
+  0xe5e71ab1a3c08c3936926c8b64bff40d4c5db41f228057a1dabab56eb258553c  from=0xfd5270981d  to=0x9C2F44EFAd  value=505000000000000  
+  0x5ecca9595fa278b7cc348ceecd6bd784be3c13540ece7be9bde4cd611cd243de  from=0x9c2f44efad  to=0xf755aaAce2  value=400685974388152517  
+  0xd53379648d1eadcd779d4546dd877bce6c0ce976777ebe6feaa372df3b9d841e  from=0x9c2f44efad  to=0xa6Dc2F247e  value=221703927706783253  
+  0x459acd3020f1b6ba8b3123a44aa62df802c31641ad5424ecb3a34b2db0482c2b  from=0x9c2f44efad  to=0xE708D1496E  value=221843609129308203  
+  0x16e05bf1d527b82e1a08b100c7255d9512ac2f989a05a6aec43112fb3bb34adb  from=0x06157f1ecf  to=0x9C2F44EFAd  value=50000000000000  
+  0x751a87f5a2434a8a359e806fa446cf9873956a73e8c13e2de947fe0cd586c368  from=0x9c2f44efad  to=0xaAd9a1c759  value=66000000000000000  
+  0xd5fa39886433eed6bb2d18f3670ef881a9c7437768070ec3fc1749e5e89f8d7d  from=0x9c2f44efad  to=0x981aDA1172  value=100000000000000000  
+  0xcf21ccdc94b490435909056531d165ad26eb78b8a2c7ad585376cc5febca0d1a  from=0x9c2f44efad  to=0xBBC848f5d3  value=100000000000000000  
+  0xa0c970e0eacc199d3d8a617af84182861b886958fd4416399e9a7191f9dcfb70  from=0xa910f92acd  to=0x9C2F44EFAd  value=10000000000000000000  
+подписей ключа приза (исходящих): 7
+  0x3131dd70cd07 nonce=6 eip1559(cid=1) k=CONTROL-OK pubkey+адрес совпали
+  0x5ecca9595fa2 nonce=5 eip1559(cid=1) k=CONTROL-OK pubkey+адрес совпали
+  0xd53379648d1e nonce=4 eip1559(cid=1) k=CONTROL-OK pubkey+адрес совпали
+  0x459acd3020f1 nonce=3 eip1559(cid=1) k=CONTROL-OK pubkey+адрес совпали
+  0x751a87f5a243 nonce=2 eip155(cid=1) k=CONTROL-OK pubkey+адрес совпали
+  0xd5fa39886433 nonce=1 eip155(cid=1) k=CONTROL-OK pubkey+адрес совпали
+  0xcf21ccdc94b4 nonce=0 eip155(cid=1) k=CONTROL-OK pubkey+адрес совпали
+
+--- таблица подписей ---
+  blk=20017688 val=266985625493923407 r=3945159237a25c17a158194a90cf98a8cac028616751fc9b318a9aa2cdfd2bee
+            s=5195431bd190114cb0562ca747c5784b0833369520916ee35ba8d2a78147d662
+  blk=19191608 val=400685974388152517 r=67079e1eb496bf7d8da38788c0c93ba944818ec651a54c8761d2dd5e6c8d1464
+            s=45da2f0e30ffc5724116d933a5ccb50ed74d3199d1825c6e17fd802ef220b20b
+  blk=18962350 val=221703927706783253 r=31aa8e37f303b384611f6ef8432ac04b75cdc3b6ecefeffb14d0ba71e69f96a9
+            s=732eb970b5d17eddc97c831d04da145597a79d0f7ebc05f9824b1884824f9ff1
+  blk=18962348 val=221843609129308203 r=b39ee1f72e554311d15c2860c2d7cb1c674d29d3087c847b5e4e7753fa7d9851
+            s=524869cf79d4d8ecd63bdb2a5658f7bd6dfa0409ae5e546312db25e5b6a9d94d
+  blk=12534617 val=66000000000000000 r=829327dc6b190b7cd659110005dfa9a5cbb7c65a8df998603e5bd4153cc71941
+            s=420884f0f3c7a6c1db6221e9e1c0d1460edd20c129aa49f308aa49b9f881085f
+  blk=12406274 val=100000000000000000 r=e31634949300908123b3f5c33bced045e3c93c9fc2d9fd14cd246dbdfe87a8c9
+            s=6e3d627a2f1dbdac27ac5dcc93f3df5ec18ee9c02fb893fce46a8cffba61a51f
+  blk=12373604 val=100000000000000000 r=ebbe4f6541620a7664c531750d743502dab6b226faa4f552aa6956ac0073d426
+            s=31fb0d3e0ef1a52e2a2a9fb2a5ff9bf450ae5caeb4788cc7055fa9491b99be6e
+
+--- анализ нонсов/подписей ---
+повторов r нет (7 уникальных из 7)
+повторов s: 0
+  nonce=6  ведущих нулей в r: 2  (s бит: 255)
+  nonce=5  ведущих нулей в r: 1  (s бит: 255)
+  nonce=4  ведущих нулей в r: 2  (s бит: 255)
+  nonce=3  ведущих нулей в r: 0  (s бит: 255)
+  nonce=2  ведущих нулей в r: 0  (s бит: 255)
+  nonce=1  ведущих нулей в r: 0  (s бит: 255)
+  nonce=0  ведущих нулей в r: 0  (s бит: 254)
+
+--- вывод для HNP ---
+t = 7 подписей; порог утечки ℓ >= ceil(256/t) = 37 бит на подпись.
+Для НЕсломанного RNG ожидаемая утечка ℓ≈0 → атака НЕ применима;
+повтор r был бы решающим (не применили, если повторов нет).

@@ -1,0 +1,13 @@
+{
+  "slug": "9vw04-gem-finder",
+  "agent": "Qoder",
+  "model": "Qwen3.5",
+  "note": "H11 colored OMG pairs -> 60-digit scalar",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T11:54:40Z",
+  "ttl_min": 45,
+  "expires_utc": "2026-10-19T12:39:40Z",
+  "heartbeat_utc": "2026-10-19T11:54:40Z",
+  "released_utc": "2026-10-19T11:56:20Z",
+  "released_by": "Qoder"
+}

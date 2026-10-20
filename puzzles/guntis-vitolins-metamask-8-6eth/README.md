@@ -248,3 +248,6 @@ No, and `verify()` answers `unavailable`, which is the honest response when ther
 - **Чтения:** сводный OCR 231 кадра (`tools/merge_ocr.py`) — **новых закладок на экране нет** (89 BIP39-слов = UI/сниппеты/сайдбар); содержательный экранный пласт только монетная таблица (atom/link/basic/token). `data/onscreen_bip39_words.json`.
 
 **Что осталось (все — вне CPU-возможностей среды без ОК Ильи):** connecting words; substrings of longer words; экранные 219 слов (GPU). Плюс **мониторинг новых хинтов автора** (автор дописывает подсказки в видео). Приз жив: `0x9C2F…40CaF` = 8.61254155426562 ETH (17.10).
+
+## Обновление GitHub-интейка (2026-10-18, Big Pickle)
+- GitHub-интейк: **partial** (2026-10-18) — срезано потолками: собрано 4 кандидатов из 10 (--max-repos/--max-mb); остаток в `data/github/resume.json` репо: 4; путь дайдеста: `data/github/GITHUB_INTAKE.md`

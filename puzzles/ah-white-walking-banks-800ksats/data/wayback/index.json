@@ -1,0 +1,167 @@
+{
+ "generated_utc": "2026-10-19T17:42:08Z",
+ "cdx_rows": 35,
+ "text_urls": [
+  [
+   "http://www.walkingbanks.com/",
+   "warc/revisit"
+  ],
+  [
+   "https://www.walkingbanks.com/.well-known/ai-plugin.json",
+   "text/html"
+  ],
+  [
+   "https://www.walkingbanks.com/.well-known/assetlinks.json",
+   "text/html"
+  ],
+  [
+   "https://www.walkingbanks.com/.well-known/dnt-policy.txt",
+   "text/html"
+  ],
+  [
+   "https://www.walkingbanks.com/.well-known/gpc.json",
+   "text/html"
+  ],
+  [
+   "https://www.walkingbanks.com/.well-known/nodeinfo",
+   "text/html"
+  ],
+  [
+   "https://www.walkingbanks.com/.well-known/openid-configuration",
+   "text/html"
+  ],
+  [
+   "https://www.walkingbanks.com/.well-known/security.txt",
+   "text/html"
+  ],
+  [
+   "https://www.walkingbanks.com/.well-known/trust.txt",
+   "text/html"
+  ],
+  [
+   "https://www.walkingbanks.com/ads.txt",
+   "text/html"
+  ],
+  [
+   "https://www.walkingbanks.com/app-ads.txt",
+   "text/html"
+  ],
+  [
+   "https://www.walkingbanks.com/atom.xml",
+   "text/html"
+  ],
+  [
+   "https://walkingbanks.com/BitcoinSeedGame.html",
+   "text/html"
+  ],
+  [
+   "https://www.walkingbanks.com/feed/",
+   "text/html"
+  ],
+  [
+   "https://www.walkingbanks.com/feed.xml",
+   "text/html"
+  ],
+  [
+   "https://www.walkingbanks.com/feeds/all.atom.xml",
+   "text/html"
+  ],
+  [
+   "https://www.walkingbanks.com/index.xml",
+   "text/html"
+  ],
+  [
+   "https://www.walkingbanks.com/robots.txt",
+   "text/html"
+  ],
+  [
+   "https://www.walkingbanks.com/sitemap.xml",
+   "text/html"
+  ]
+ ],
+ "plan": [
+  {
+   "url": "http://www.walkingbanks.com/",
+   "ts": "20250402113442",
+   "digest": "QXUE3Q6CBSWSRTIJYBOI6KVP6VV5WFI5",
+   "mimetype": "warc/revisit",
+   "orig": "https://www.walkingbanks.com/"
+  },
+  {
+   "url": "http://www.walkingbanks.com/",
+   "ts": "20250515143055",
+   "digest": "B2ELCQN4F6TMDL4I7ABG7NK7YKESMHYJ",
+   "mimetype": "warc/revisit",
+   "orig": "https://www.walkingbanks.com/"
+  },
+  {
+   "url": "http://www.walkingbanks.com/",
+   "ts": "20250716082759",
+   "digest": "HNRUV75ZOTQUS4LT6HH2F3RT5IUMQV7Z",
+   "mimetype": "warc/revisit",
+   "orig": "https://walkingbanks.com/"
+  },
+  {
+   "url": "http://www.walkingbanks.com/",
+   "ts": "20261004195759",
+   "digest": "YMW7H4FHQB55IL7GPPTRCBQMFEB5UVHK",
+   "mimetype": "warc/revisit",
+   "orig": "https://www.walkingbanks.com/"
+  },
+  {
+   "url": "https://walkingbanks.com/BitcoinSeedGame.html",
+   "ts": "20250613004812",
+   "digest": "KRTHBZEUYHFJ2OCOCB5UTOG7EWRY7SR3",
+   "mimetype": "text/html",
+   "orig": "https://walkingbanks.com/BitcoinSeedGame.html"
+  }
+ ],
+ "saved": [
+  {
+   "url": "http://www.walkingbanks.com/",
+   "ts": "20250402113442",
+   "digest": "QXUE3Q6CBSWSRTIJYBOI6KVP6VV5WFI5",
+   "mimetype": "warc/revisit",
+   "orig": "https://www.walkingbanks.com/",
+   "file": "www.walkingbanks.com___20250402113442.html",
+   "bytes": 17804
+  },
+  {
+   "url": "http://www.walkingbanks.com/",
+   "ts": "20250515143055",
+   "digest": "B2ELCQN4F6TMDL4I7ABG7NK7YKESMHYJ",
+   "mimetype": "warc/revisit",
+   "orig": "https://www.walkingbanks.com/",
+   "file": "www.walkingbanks.com___20250515143055.html",
+   "bytes": 73360
+  },
+  {
+   "url": "http://www.walkingbanks.com/",
+   "ts": "20250716082759",
+   "digest": "HNRUV75ZOTQUS4LT6HH2F3RT5IUMQV7Z",
+   "mimetype": "warc/revisit",
+   "orig": "https://walkingbanks.com/",
+   "file": "www.walkingbanks.com___20250716082759.html",
+   "bytes": 73691
+  },
+  {
+   "url": "http://www.walkingbanks.com/",
+   "ts": "20261004195759",
+   "digest": "YMW7H4FHQB55IL7GPPTRCBQMFEB5UVHK",
+   "mimetype": "warc/revisit",
+   "orig": "https://www.walkingbanks.com/",
+   "file": "www.walkingbanks.com___20261004195759.html",
+   "bytes": 3932
+  },
+  {
+   "url": "https://walkingbanks.com/BitcoinSeedGame.html",
+   "ts": "20250613004812",
+   "digest": "KRTHBZEUYHFJ2OCOCB5UTOG7EWRY7SR3",
+   "mimetype": "text/html",
+   "orig": "https://walkingbanks.com/BitcoinSeedGame.html",
+   "file": "walkingbanks.com_BitcoinSeedGame.html__20250613004812.html",
+   "bytes": 115355
+  }
+ ],
+ "failed": []
+}

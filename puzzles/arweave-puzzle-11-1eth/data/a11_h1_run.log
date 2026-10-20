@@ -1,0 +1,7 @@
+носитель: sha256 c6ba4b50fd75181a, IDAT inflated 3537105 байт
+САМОТЕСТ: ПРОВАЛЕН (8.5 с)
+   byte_row_ascii               ok=True want=('L_row', 123456) found=[('L_row', 123456), ('L_nonwhite_row', 6717)]
+   byte_col_raw20               ok=False want=('L_col', 77777) found=[]
+   bitplane3_unaligned_raw20    ok=True want=('L3_row', 'msb', 32003) found=[('L3_row', 'msb', 32003)]
+   alpha_plane0_lsb_raw20       ok=True want=('A0_row', 'lsb', 16000) found=[('A0_row', 'lsb', 16000)]
+самотест не пройден - результат не выдаётся (см. C:\Users\Admin\OneDrive\Desktop\master\puzzles\arweave-puzzle-11-1eth\data\a11_h1_addr_hunt.json )

@@ -1,0 +1,39 @@
+Architect: len=1539  A[479:489]='PRIVATEKEY'
+--- КОНТРОЛИ ---
+  chain-1 (SP, md5): pid=1 sha256=1449a2178eea7c0e -> OK
+  cosmic SetB (md5): key=a795de117e472590 sha256(body)=4f7a1e4efe4bf6c5 -> OK
+  адрес-контроль 1AD2wfwXukZ1kUAy848hTQQ72aSBZPB75r   sha256  -> OK
+  адрес-контроль 1Jqq37KkZEt4F3Dt6qXdtyiMEFBBdawbkJ   sha256  -> OK
+  адрес-контроль 1K23RS1y2fnuZRkhw5nUpFr5Jk5WN11Zeq   sha256  -> OK
+  адрес-контроль 1GyT5WrLYpwFkuiVoPDJZa1Q6jtjbjuBff   sha256  -> OK
+  адрес-контроль 148XH2YBmLr4oAJXQcG84FpNYoBmqnVPHQ   raw     -> OK
+  адрес-контроль 13HGhjkmKUkP8sk9k63BLmhkxRjy7uK4Rp   bitsrev -> OK
+  адрес-контролей пройдено: 6 / 6
+метка REINSERTINGTHEPRIMEBASICS начинается на индексе 1089
+
+кандидатов сгенерировано: 365
+тестов (кандидат × регистр): 730  elapsed 1.4s
+
+(1) адресные совпадения по реестру: 0
+призовых hash160: 0
+
+(2) словарные попадания (самосогласованность): 6
+    EN     U win479|4                     PRIV
+    EN     L win479|4                     PRIV
+    EN     U win479|7                     PRIVATE
+    EN     L win479|7                     PRIVATE
+    PUZ    U win479|10                    PRIVATEKEY
+    PUZ    L win479|10                    PRIVATEKEY
+
+(3) конверты: pad-valid+printable>=0.90 — 0
+топ-8 по печатаемости (для глаза):
+    pr=0.475 pad=1 SALPH_INNER  raw       sha256 win484|7
+    pr=0.475 pad=1 SALPH_INNER  sha256hex sha256 win479|73
+    pr=0.463 pad=1 SALPH_INNER  raw       sha256 A|step7
+    pr=0.450 pad=1 SALPH_INNER  sha256hex md5    win479|11
+    pr=0.450 pad=1 SALPH_INNER  sha256hex sha256 win479|88
+    pr=0.425 pad=1 SALPH_INNER  sha256hex md5    win484|127
+    pr=0.400 pad=1 SALPH_INNER  sha256hex md5    win479noIO|7
+    pr=0.400 pad=1 SALPH_INNER  raw       md5    win484|89
+
+ИТОГ: адрес 0 / приз 0 / словарь 6 (информационно) / конверты 0

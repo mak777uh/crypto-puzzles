@@ -1,0 +1,753 @@
+{
+ "block": 26227181,
+ "price_usd": {
+  "ethereum": 2395.21,
+  "solana": 103.86,
+  "cardano": 0.216832,
+  "arweave": 3.77
+ },
+ "checked": 62,
+ "rows": [
+  {
+   "address": "0x9c2f44efad0c1e852a09df9939e6daf061140caf",
+   "wei": 8612541554265619929,
+   "eth": 8.61254155426562,
+   "usd": 20628.845656192556,
+   "contract": false,
+   "puzzles": [
+    "guntis-vitolins-metamask-8-6eth",
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "README.md"
+  },
+  {
+   "address": "0xad0ad88d27f49fe6a0c73fdb743f6b7304a2c357",
+   "wei": 2001811960438263628,
+   "eth": 2.0018119604382636,
+   "usd": 4794.760025761333,
+   "contract": false,
+   "puzzles": [
+    "fe-lang-bountiful-compiler-bounty-1eth",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "data\\ocp\\README.md"
+  },
+  {
+   "address": "0xaec7e8c221c3fd24e75c996e32289235fd899ebf",
+   "wei": 1000012026000000000,
+   "eth": 1.000012026,
+   "usd": 2395.23880479546,
+   "contract": true,
+   "puzzles": [
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc",
+    "teikhos-bipedaljoe-solver-bounties-2eth"
+   ],
+   "source": "data\\github\\schum-io__open-crypto-puzzles\\files\\puzzles.json"
+  },
+  {
+   "address": "0x17e5e0910b9185b0ede564dcbf074ca910ad56a4",
+   "wei": 1000002026000000000,
+   "eth": 1.000002026,
+   "usd": 2395.21485269546,
+   "contract": true,
+   "puzzles": [
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc",
+    "teikhos-bipedaljoe-solver-bounties-2eth"
+   ],
+   "source": "data\\github\\schum-io__open-crypto-puzzles\\files\\puzzles.json"
+  },
+  {
+   "address": "0x71fb6afcd98c5bd611712ad4b8d314ef729aa69d",
+   "wei": 1000000000000000000,
+   "eth": 1.0,
+   "usd": 2395.21,
+   "contract": true,
+   "puzzles": [
+    "fe-lang-bountiful-compiler-bounty-1eth",
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "README.md"
+  },
+  {
+   "address": "0xff2142e98e09b5344994f9beb9c56c95506b9f17",
+   "wei": 1000000000000000000,
+   "eth": 1.0,
+   "usd": 2395.21,
+   "contract": false,
+   "puzzles": [
+    "arweave-puzzle-11-1eth",
+    "arweave-puzzle-3-1000ar",
+    "path-to-greatness-treasure-hunt-3ltc"
+   ],
+   "source": "README.md"
+  },
+  {
+   "address": "0x973c2178b09225d1de3ab037d40b3f24af696255",
+   "wei": 500002026000000000,
+   "eth": 0.500002026,
+   "usd": 1197.60985269546,
+   "contract": true,
+   "puzzles": [
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc",
+    "teikhos-bipedaljoe-solver-bounties-2eth"
+   ],
+   "source": "data\\github\\schum-io__open-crypto-puzzles\\files\\puzzles.json"
+  },
+  {
+   "address": "0xd7c6d542f3dcdceda845112b8fd567b8f8655805",
+   "wei": 500002026000000000,
+   "eth": 0.500002026,
+   "usd": 1197.60985269546,
+   "contract": true,
+   "puzzles": [
+    "path-to-greatness-treasure-hunt-3ltc",
+    "teikhos-bipedaljoe-solver-bounties-2eth"
+   ],
+   "source": "data\\github\\schum-io__open-crypto-puzzles\\files\\puzzles.json"
+  },
+  {
+   "address": "0xcad621da75a66c7a8f4ff86d30a2bf981bfc8fdd",
+   "wei": 309739841708813211,
+   "eth": 0.3097398417088132,
+   "usd": 741.8919662593664,
+   "contract": false,
+   "puzzles": [
+    "timeless-1000-random-seed-puzzle-0-062eth"
+   ],
+   "source": "data\\04_transactions.json"
+  },
+  {
+   "address": "0xe708d1496ee95435ea50f3e4bc79c28a5f8fe859",
+   "wei": 221843609129308203,
+   "eth": 0.2218436091293082,
+   "usd": 531.3620310226103,
+   "contract": false,
+   "puzzles": [
+    "guntis-vitolins-metamask-8-6eth"
+   ],
+   "source": "data\\github\\GITHUB_INTAKE.md"
+  },
+  {
+   "address": "0xd28082cd48e1b279425346e8f6c651c45a9023c5",
+   "wei": 200000000000000000,
+   "eth": 0.2,
+   "usd": 479.04200000000003,
+   "contract": false,
+   "puzzles": [
+    "1000-btc-challenge-bitcoin-puzzle-tx"
+   ],
+   "source": "data\\github\\brichard19__bitcrack\\files\\README.md"
+  },
+  {
+   "address": "0x861ebcc056e0645cf7ba7f5bb528fae9fba8ba55",
+   "wei": 96521392706034844,
+   "eth": 0.09652139270603485,
+   "usd": 231.18900502342174,
+   "contract": false,
+   "puzzles": [
+    "guntis-vitolins-metamask-8-6eth"
+   ],
+   "source": "data\\github\\GITHUB_INTAKE.md"
+  },
+  {
+   "address": "0x0a937ec94abc55d92f5740a988a122ebdcab2e15",
+   "wei": 76799052163156550,
+   "eth": 0.07679905216315655,
+   "usd": 183.94985773171422,
+   "contract": false,
+   "puzzles": [
+    "crypto-puzzles-2018-puzzle-2-0-05eth",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "data\\ocp\\README.md"
+  },
+  {
+   "address": "0x1fa8be9de5bbfe047c72db8e8e3257128f7661ad",
+   "wei": 50000000000000000,
+   "eth": 0.05,
+   "usd": 119.76050000000001,
+   "contract": false,
+   "puzzles": [
+    "crypto-puzzles-2018-puzzle-2-0-05eth",
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "README.md"
+  },
+  {
+   "address": "0xaad9a1c75946d3db263141659a6111b6de1f57c6",
+   "wei": 19359796694290129,
+   "eth": 0.019359796694290127,
+   "usd": 46.37077864013066,
+   "contract": false,
+   "puzzles": [
+    "guntis-vitolins-metamask-8-6eth"
+   ],
+   "source": "data\\github\\GITHUB_INTAKE.md"
+  },
+  {
+   "address": "0x4c5d24a7ca972aea90cc040da6770a13fc7d4d9a",
+   "wei": 15393693868957443,
+   "eth": 0.015393693868957444,
+   "usd": 36.87112949186556,
+   "contract": false,
+   "puzzles": [
+    "smith-lyle-moore-hunt-2-0-032btc",
+    "teikhos-bipedaljoe-solver-bounties-2eth"
+   ],
+   "source": "data\\github\\GITHUB_INTAKE.md"
+  },
+  {
+   "address": "0x9c739dfa1674eae112dcdfb163653cf20d9d2070",
+   "wei": 10421207740109759,
+   "eth": 0.01042120774010976,
+   "usd": 24.960980991188297,
+   "contract": false,
+   "puzzles": [
+    "smith-lyle-moore-hunt-2-0-032btc",
+    "teikhos-bipedaljoe-solver-bounties-2eth"
+   ],
+   "source": "data\\github\\GITHUB_INTAKE.md"
+  },
+  {
+   "address": "0x5d801b2b0b216790a49898b322246282547b546b",
+   "wei": 3773000000000000,
+   "eth": 0.003773,
+   "usd": 9.03712733,
+   "contract": false,
+   "puzzles": [
+    "gsmg-io-5btc-puzzle"
+   ],
+   "source": "data\\decentraland_2026-10-18\\scene.json"
+  },
+  {
+   "address": "0x83e4b2a5a464bdfcd83057ac08447f533a595156",
+   "wei": 240222470768257,
+   "eth": 0.000240222470768257,
+   "usd": 0.5753832642088369,
+   "contract": false,
+   "puzzles": [
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc",
+    "teikhos-bipedaljoe-solver-bounties-2eth"
+   ],
+   "source": "data\\github\\schum-io__open-crypto-puzzles\\files\\puzzles.json"
+  },
+  {
+   "address": "0x97e9e65eda435ce80c95d554bf8fbb757fcfcbfe",
+   "wei": 99086978187769,
+   "eth": 9.9086978187769e-05,
+   "usd": 0.23733412102512622,
+   "contract": false,
+   "puzzles": [
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "data\\github\\schum-io__open-crypto-puzzles\\files\\puzzles.json"
+  },
+  {
+   "address": "0xa15585918e6ef74239246f4e1538acdf70b4743e",
+   "wei": 24535987966109,
+   "eth": 2.4535987966109e-05,
+   "usd": 0.058768843736303936,
+   "contract": false,
+   "puzzles": [
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "data\\github\\schum-io__open-crypto-puzzles\\files\\puzzles.json"
+  },
+  {
+   "address": "0xdf04a38f0d60c913b70b60255139e3f12cb43b94",
+   "wei": 23532200244000,
+   "eth": 2.3532200244e-05,
+   "usd": 0.05636456134643124,
+   "contract": false,
+   "puzzles": [
+    "fe-lang-bountiful-compiler-bounty-1eth"
+   ],
+   "source": "data\\ocp\\analysis\\tested.md"
+  },
+  {
+   "address": "0x635739254bde27d28301f25ad57c3cac3c3468f3",
+   "wei": 21487724202000,
+   "eth": 2.1487724202e-05,
+   "usd": 0.05146761188587242,
+   "contract": false,
+   "puzzles": [
+    "guntis-vitolins-metamask-8-6eth",
+    "logicbeach-powerful-moss-0-55eth",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "data\\community\\ocp_issues_recent.json"
+  },
+  {
+   "address": "0xf755aaace22fcfdcd4e300a3f26249000d95f1b2",
+   "wei": 4222932799000,
+   "eth": 4.222932799e-06,
+   "usd": 0.01011481086949279,
+   "contract": false,
+   "puzzles": [
+    "guntis-vitolins-metamask-8-6eth"
+   ],
+   "source": "data\\github\\GITHUB_INTAKE.md"
+  },
+  {
+   "address": "0xa468335485ce853f21a44451755bd88364e9d618",
+   "wei": 3843473728500,
+   "eth": 3.8434737285e-06,
+   "usd": 0.009205926709240485,
+   "contract": false,
+   "puzzles": [
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "data\\github\\schum-io__open-crypto-puzzles\\files\\puzzles.json"
+  },
+  {
+   "address": "0xf5d45c9d798aedb754b1ed8660af3ea79178b765",
+   "wei": 2034568899300,
+   "eth": 2.0345688993e-06,
+   "usd": 0.004873219773292353,
+   "contract": false,
+   "puzzles": [
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "data\\github\\schum-io__open-crypto-puzzles\\files\\puzzles.json"
+  },
+  {
+   "address": "0xa6dc2f247ea9b9f48c434ecc5071ac7ebb16c175",
+   "wei": 1000,
+   "eth": 1e-15,
+   "usd": 2.3952100000000003e-12,
+   "contract": false,
+   "puzzles": [
+    "guntis-vitolins-metamask-8-6eth"
+   ],
+   "source": "data\\github\\GITHUB_INTAKE.md"
+  },
+  {
+   "address": "0x046a3a4968282baa7ad6291723873c8275434623",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": true,
+   "puzzles": [
+    "fe-lang-bountiful-compiler-bounty-1eth",
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "README.md"
+  },
+  {
+   "address": "0x06460646ca1603a61953eeb385681f5d56401ede",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": false,
+   "puzzles": [
+    "cryptopuzzles-eth-easycore-numbers",
+    "dead-ends-registry"
+   ],
+   "source": "README.md"
+  },
+  {
+   "address": "0x18f87ec9c527aba1db44f715456bf28b0dae478d",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": false,
+   "puzzles": [
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "data\\github\\schum-io__open-crypto-puzzles\\files\\puzzles.json"
+  },
+  {
+   "address": "0x1a642f0e3c3af545e7acbd38b07251b3990914f1",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": true,
+   "puzzles": [
+    "arweave-puzzle-11-1eth",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "data\\ocp\\analysis\\tested.md"
+  },
+  {
+   "address": "0x1b3042778025b1316bc894c4fda6bbadf0fa9d67",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": false,
+   "puzzles": [
+    "timeless-1000-random-seed-puzzle-0-062eth"
+   ],
+   "source": "README.md"
+  },
+  {
+   "address": "0x2a9a616538098b7fdde16f53b13b218827acc113",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": false,
+   "puzzles": [
+    "gsmg-io-5btc-puzzle"
+   ],
+   "source": "data\\github_2026-10\\testnetbtc__GSMG\\files\\sources\\discussions\\puzzlehunt\\raw\\issues_p001.json"
+  },
+  {
+   "address": "0x3df9789634995546b0126bc28b9f9fcbcb129f18",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": true,
+   "puzzles": [
+    "fe-lang-bountiful-compiler-bounty-1eth",
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "README.md"
+  },
+  {
+   "address": "0x50d7e097e61121140c19871f06ea6feb6d14105b",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": false,
+   "puzzles": [
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "data\\github\\schum-io__open-crypto-puzzles\\files\\puzzles.json"
+  },
+  {
+   "address": "0x52bddc898eb45c8657da7dcfdc87266ab0bb59ee",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": false,
+   "puzzles": [
+    "gsmg-io-5btc-puzzle"
+   ],
+   "source": "data\\puzzlehunt\\issue_comments.json"
+  },
+  {
+   "address": "0x54b743d6055e3bbbf13eb2c748a3783516156e5b",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": true,
+   "puzzles": [
+    "actuarial-science-nft-hunt-10eth"
+   ],
+   "source": "README.md"
+  },
+  {
+   "address": "0x5d663791e869ca70c71e0a5f4cfd707f596265aa",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": true,
+   "puzzles": [
+    "zden-haluska-halv-312ksats"
+   ],
+   "source": "data\\zden_levels_groundtruth.json"
+  },
+  {
+   "address": "0x5e987b6aadd4dfc2236d21ede6d07feb04350b06",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": true,
+   "puzzles": [
+    "fe-lang-bountiful-compiler-bounty-1eth",
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "README.md"
+  },
+  {
+   "address": "0x60a5431a138b0320641408694562f624f3c977a8",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": false,
+   "puzzles": [
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "data\\github\\schum-io__open-crypto-puzzles\\files\\puzzles.json"
+  },
+  {
+   "address": "0x61200ac01e8b635e4c3fecbed73dbab898cae0a9",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": false,
+   "puzzles": [
+    "gsmg-io-5btc-puzzle"
+   ],
+   "source": "data\\github\\GITHUB_INTAKE.md"
+  },
+  {
+   "address": "0x6b2560b34c7469c561a8fce581c88bfb8cce73b2",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": false,
+   "puzzles": [
+    "zden-haluska-halv-312ksats"
+   ],
+   "source": "data\\zden_levels_groundtruth.json"
+  },
+  {
+   "address": "0x6f85d220c70abb69a1205b96b566c1ed5d9c3831",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": false,
+   "puzzles": [
+    "9vw04-gem-finder",
+    "guntis-vitolins-metamask-8-6eth",
+    "ktimesg-phy-challenge-0-008btc"
+   ],
+   "source": "data\\github\\agntn__puzzles\\raw\\comments_p2.json"
+  },
+  {
+   "address": "0x6f890b08fa4312135e1b4cf03929f8e389a866b4",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": false,
+   "puzzles": [
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "data\\github\\schum-io__open-crypto-puzzles\\files\\puzzles.json"
+  },
+  {
+   "address": "0x735ba26f91e1275fa4b504649b19ef74739fe7e7",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": true,
+   "puzzles": [
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc",
+    "teikhos-bipedaljoe-solver-bounties-2eth"
+   ],
+   "source": "data\\github\\schum-io__open-crypto-puzzles\\files\\puzzles.json"
+  },
+  {
+   "address": "0x76eb86d4f92901f2af0d10feddda0b3b4630700d",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": true,
+   "puzzles": [
+    "fe-lang-bountiful-compiler-bounty-1eth",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "data\\ocp\\analysis\\tested.md"
+  },
+  {
+   "address": "0x7777f6974ba9ba3bcfe75d2aa52db8ce633e592f",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": false,
+   "puzzles": [
+    "9vw04-gem-finder",
+    "guntis-vitolins-metamask-8-6eth",
+    "ktimesg-phy-challenge-0-008btc"
+   ],
+   "source": "data\\github\\agntn__puzzles\\raw\\issues_p2.json"
+  },
+  {
+   "address": "0x7e5f4552091a69125d5dfcb7b8c2659029395bdf",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": true,
+   "puzzles": [
+    "arweave-puzzle-11-1eth"
+   ],
+   "source": "data\\github\\GITHUB_INTAKE.md"
+  },
+  {
+   "address": "0x831102c7eb86f9ec8f79df891bdea187d54344dd",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": false,
+   "puzzles": [
+    "guntis-vitolins-metamask-8-6eth",
+    "logicbeach-powerful-moss-0-55eth",
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "data\\community\\ocp_issues_recent.json"
+  },
+  {
+   "address": "0x85b4d0b32b8a285111c244e52524b642f1a5ccfe",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": true,
+   "puzzles": [
+    "fe-lang-bountiful-compiler-bounty-1eth",
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "README.md"
+  },
+  {
+   "address": "0x86b7aece1503242fed29e593faede3b7b00a5a1d",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": true,
+   "puzzles": [
+    "fe-lang-bountiful-compiler-bounty-1eth",
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "README.md"
+  },
+  {
+   "address": "0x959e104e1a4db6317fa58f8295f586e1a978c297",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": true,
+   "puzzles": [
+    "gsmg-io-5btc-puzzle"
+   ],
+   "source": "data\\decentraland_2026-10-18\\estate_955.json"
+  },
+  {
+   "address": "0x9858effd232b4033e47d90003d41ec34ecaeda94",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": true,
+   "puzzles": [
+    "guntis-vitolins-metamask-8-6eth",
+    "logicbeach-powerful-moss-0-55eth",
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "data\\community\\ocp_issues_recent.json"
+  },
+  {
+   "address": "0x9cc846fe9b75a4cee897f605b240dd0030fcd5a2",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": false,
+   "puzzles": [
+    "path-to-greatness-treasure-hunt-3ltc",
+    "smith-lyle-moore-hunt-2-0-032btc"
+   ],
+   "source": "data\\github\\schum-io__open-crypto-puzzles\\files\\puzzles.json"
+  },
+  {
+   "address": "0xb5fe4f1b6cb2bbe6a327f8c68f370da7df18b2dc",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": false,
+   "puzzles": [
+    "path-to-greatness-treasure-hunt-3ltc"
+   ],
+   "source": "data\\github\\schum-io__open-crypto-puzzles\\files\\puzzles.json"
+  },
+  {
+   "address": "0xb6f420204511c7fe9dd3de14266a260e8f11ac37",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": false,
+   "puzzles": [
+    "timeless-1000-random-seed-puzzle-0-062eth"
+   ],
+   "source": "README.md"
+  },
+  {
+   "address": "0xc3761eb917cd790b30dad99f6cc5b4ff93c4f9ea",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": true,
+   "puzzles": [
+    "1000-btc-challenge-bitcoin-puzzle-tx"
+   ],
+   "source": "data\\github\\brichard19__bitcrack\\raw\\issues_p2.json"
+  },
+  {
+   "address": "0xc77c1cb208356d953439190a94f3c8a4c4f502a3",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": true,
+   "puzzles": [
+    "path-to-greatness-treasure-hunt-3ltc"
+   ],
+   "source": "data\\github\\schum-io__open-crypto-puzzles\\files\\puzzles.json"
+  },
+  {
+   "address": "0xc99a54eea6036115f913a13d6606e935bca47a8f",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": false,
+   "puzzles": [
+    "crypto-puzzles-2018-puzzle-2-0-05eth"
+   ],
+   "source": "data\\ocp\\README.md"
+  },
+  {
+   "address": "0xd07dc4262bcdbf85190c01c996b4c06a461d2430",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": true,
+   "puzzles": [
+    "actuarial-science-nft-hunt-10eth"
+   ],
+   "source": "README.md"
+  },
+  {
+   "address": "0xe959e7eca1afca6cf2bf8b07e25da355b6c8e8c7",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": true,
+   "puzzles": [
+    "fe-lang-bountiful-compiler-bounty-1eth",
+    "path-to-greatness-treasure-hunt-3ltc"
+   ],
+   "source": "README.md"
+  },
+  {
+   "address": "0xfb5423adfbac65ac675845bb4febf8aec128272e",
+   "wei": 0,
+   "eth": 0.0,
+   "usd": 0,
+   "contract": true,
+   "puzzles": [
+    "fe-lang-bountiful-compiler-bounty-1eth",
+    "path-to-greatness-treasure-hunt-3ltc"
+   ],
+   "source": "README.md"
+  }
+ ]
+}

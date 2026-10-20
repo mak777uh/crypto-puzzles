@@ -1,0 +1,13 @@
+{
+  "slug": "groestlcoin-puzzle-1000grs",
+  "agent": "Qoder",
+  "model": "",
+  "note": "axis A-BIP39: 64-hex Morse as BIP39 entropy; read-only oracle",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T10:09:36Z",
+  "ttl_min": 60,
+  "expires_utc": "2026-10-19T11:09:36Z",
+  "heartbeat_utc": "2026-10-19T10:09:36Z",
+  "released_utc": "2026-10-19T10:13:02Z",
+  "released_by": "Qoder"
+}

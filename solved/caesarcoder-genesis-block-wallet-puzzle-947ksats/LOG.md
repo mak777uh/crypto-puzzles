@@ -144,3 +144,10 @@
   отчёт прохода `reports/2026-10-18_1000_OCP_Sync_ocp-full-sync.md`.
 - Следующим агентам: папка закрыта, работу не возобновлять; перенос сделан `git mv` из
   `puzzles/genesis-block-wallet-puzzle-142ksats` (вся наша работа, включая `data/calib*.mjs`, сохранена).
+
+## 2026-10-19, 13:1x МСК — Qoder (Qoder Desktop, Windows) — 0,01 BTC на bc1qw8… : это НЕ приз, папка остаётся в `solved/`
+- Делал: разворот транзакции пополнения и атрибуция адреса по дампу «on-chain dialogue» OCP; сверка баланса. Бронь `claims.py acquire caesarcoder-genesis-block-wallet-puzzle-947ksats --agent Qoder`. Только чтение.
+- Результат (он-чейн): `bc1qw8uecdjvuedtkg4s2kku4s2ak9r2cm59khclfr` — funded 1 000 000 сат, spent 0, 1 tx. Пополнение: tx `e2cbb23690c3c1f8a294c7e4747cf62f374cddf06bdec1beeff39e12d2a0c5d2`, блок 963509 (2026-08-21): 1 вход 1 063 054 сат с `bc1q0x054lv785rh0xk8gysk47pfpldutxxsccusm5`, 2 выхода — 1 000 000 на bc1qw8… и **сдача 62 970 на `bc1q7nn9hjr6lfx4cfngxvgwqpmnu26d9r3nuyhu24`**, а `bc1q7nn9…` в `data/ocp/data/on-chain-dialogue.json` проходит как **change-адрес автора** в цепочке платных подсказок. OP_RETURN в этой tx нет.
+- Эскроу приза (`bc1qfkhx02…`) проверил отдельно: funded = spent = 947 620 сат, 120/120 выходов потрачены, баланс 0 — свип 17.10.2026 (уже зафиксирован нами 18.10).
+- Вывод: живая вода — кошелёк автора, а не пополненный приз; возврат в `puzzles/` не обоснован (§5), папка остаётся в `solved/`. Пометку Beam «leftover» correcting в README оставил, ниже — наша поправка.
+- Ссылки: https://blockstream.info/api/ (read-only, 2026-10-19), правило переноса: `../../AGENT_INSTRUCTIONS.md` §5 «Зона solved/»; https://blockstream.info/tx/e2cbb23690c3c1f8a294c7e4747cf62f374cddf06bdec1beeff39e12d2a0c5d2 ; `data/ocp/data/on-chain-dialogue.json`

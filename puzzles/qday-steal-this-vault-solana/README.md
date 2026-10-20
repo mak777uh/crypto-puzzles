@@ -63,3 +63,10 @@
 ## Поправка к каталогу v2 (16.10.2026) — QDay B37
 
 **QDay B37.** «Q-Day Prize (1 BTC)» Project Eleven — **другой конкурс**: выдан 24.04.2026 (Lelli, 15-битный ключ) и закрыт. Не путать с «Steal this vault». Источник: `/workspace/projects/b6983d3d-52f5-48f8-9974-b99dc8e31c55/strategy/LOG.md`, запись 16.10 18:15.
+
+## Аудит 19.10.2026 (Qoder) — что подтверждено и чем закрыт проход
+
+- **Challenge-vault подтверждён он-чейн**: state `B21V2LbYVnWTC6yCpCK7cZBpKMe6AQsrFuhWuVFmTXSX` → wallet `CzTEB1SUozi1mGQWsSXA8b6DX7dZjbuFtTKPraU7AvAz`, ровно **1.000000000 SOL**, `root_epoch=0`, `next_leaf=0`, `executed_count=0`, cosigner нет, heir-записи нет. Подписи этим vault не выпускались ни разу. Всего у программы 3 vault-состояния (второй — демо с одним execute, третий пуст).
+- **Исходники восстановлены полностью**: `/source` отдаёт 105 JS-чанков, декодированы в `data/src_raw/` (программа, `bunker-lms`, `bunker-core`, WASM, SDK, CLI и тесты атак). Задеплоенный ELF — `data/program.so`; upgrade authority — обычный Ed25519-ключ команды.
+- **Что проверено (отрицательно)**: фиксированные параметры LMS H10/W4 и типкоды; `q == leaf_index` до и после проверки; точные длины подписи/пути; домены и checksum RFC 8554; префикс сообщения связывает cluster/program/tag/state/epoch/leaf; канонический payload; пересчёт всех PDA; расход листа до CPI; резерв листа 1023; запрет алиасов wallet/state/sig_buffer; канонический ATA как source; `inherit` без подписи невозможен без heir-записи и наступившего deadline.
+- **Вывод**: эксплойта в этом проходе не найдено; путь «без подписи» не ведёт к 1 SOL. Приз живой, но требует новой логической ошибки в программе/верификаторе либо компрометации seed/upgrade-ключа. Транзакций не отправлялось, трат и работы с ключами не было. Подробности — `LOG.md` (запись 19.10 07:15 UTC).

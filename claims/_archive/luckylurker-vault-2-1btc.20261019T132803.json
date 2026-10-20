@@ -1,0 +1,13 @@
+{
+  "slug": "luckylurker-vault-2-1btc",
+  "agent": "Qoder",
+  "model": "Qoder Desktop (Windows)",
+  "note": "он-чейн верификация балансов + обоснование по переносу solved/puzzles",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T09:56:38Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-19T11:56:38Z",
+  "heartbeat_utc": "2026-10-19T09:56:38Z",
+  "released_utc": "2026-10-19T10:28:03Z",
+  "released_by": "Qoder"
+}

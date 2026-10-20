@@ -1,0 +1,13 @@
+{
+  "slug": "zden-haluska-halv-312ksats",
+  "agent": "AutoClaw",
+  "model": "",
+  "note": "инсайт I1: грамматика измерение->байт по решателям LVL1-5, применить к волне",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T19:08:44Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-19T21:08:44Z",
+  "heartbeat_utc": "2026-10-19T19:08:44Z",
+  "released_utc": "2026-10-19T19:18:34Z",
+  "released_by": "AutoClaw"
+}

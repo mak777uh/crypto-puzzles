@@ -108,3 +108,9 @@
   - url: https://corey-lyle-phillips.medium.com/a-bitcoin-audio-puzzle-61174b9849ce | title: A Bitcoin Audio Puzzle | date: 2020-01-05
   - url: https://github.com/Schum-io/BTC-Puzzle-by-Corey-Phillips | title: BTC-Puzzle-by-Corey-Phillips (community hint repository) | date: 2026-08-16
   - url: https://github.com/coreyphillips/bitimage | title: bitimage (author's tool) | date: 2026-08-16
+
+
+## HomelessPhD/CorePhylips_CATS (2026-10-19, Qoder)
+- Источник: https://github.com/HomelessPhD/CorePhylips_CATS (только `BruteCats/`: скрипт, `pass_list.txt` 316 строк, `cats_2.jpeg`; новых подсказок нет).
+- Артефакты: `data/homelessphd/`, оракул `tools/homelessphd/cats_oracle.py` (witness OK), прогон `tools/homelessphd/run_axis.py`.
+- Предрегистрированные оси H1 (строки как есть) и H2 (strip) по 313 уникальных: **0 совпадений** за <1 с каждая. Негатив; список заведомо покрыт OCP-негативом ≈1,16·10⁹. Подробности — `LOG.md` 2026-10-19.

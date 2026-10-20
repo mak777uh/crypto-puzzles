@@ -1,0 +1,13 @@
+{
+  "slug": "rcodes-1ojeu3c-5usd",
+  "agent": "AutoClaw",
+  "model": "",
+  "note": "триаж: ROT13-хвост, структура 31x10, негатив сеточных транспозиций",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T18:37:22Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-19T20:37:22Z",
+  "heartbeat_utc": "2026-10-19T18:37:22Z",
+  "released_utc": "2026-10-19T18:38:38Z",
+  "released_by": "AutoClaw"
+}

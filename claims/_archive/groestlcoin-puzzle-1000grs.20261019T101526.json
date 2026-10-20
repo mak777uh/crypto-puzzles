@@ -1,0 +1,13 @@
+{
+  "slug": "groestlcoin-puzzle-1000grs",
+  "agent": "Beam",
+  "model": "",
+  "note": "info gather pass",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T07:15:20Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-19T09:15:20Z",
+  "heartbeat_utc": "2026-10-19T07:15:20Z",
+  "released_utc": "2026-10-19T07:15:26Z",
+  "released_by": "Beam"
+}

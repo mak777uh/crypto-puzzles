@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- THE blessed bootstrap, byte-identical to every konsensus.net page: it must
+     stamp html[data-js] as well as the theme. assets/site-header.css reads a
+     missing data-js as "scripting is off" and, on a phone in portrait, swaps
+     the burger for a full-width stacked menu — so a page that adopts the
+     shared header without this line looks broken on every phone. -->
+<script>(function(){var t=null;try{t=localStorage.getItem('theme')}catch(e){}var h=document.documentElement;h.dataset.js='1';h.setAttribute('data-theme',t||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'))})()</script>
+<title>L&#39;énergie, face cachée de la monnaie by Pierre Noizat | Konsensus</title>
+<meta name="description" content="L&#39;énergie, face cachée de la monnaie by Pierre Noizat. Paperback shipped across the EU &amp; US, ebook available instantly from Konsensus.">
+<meta name="keywords" content="Pierre Noizat, econ, science">
+<link rel="canonical" href="https://konsensus.net/book/lenergie-face-cachee-de-la-monnaie">
+<link rel="alternate" hreflang="en" href="https://konsensus.net/book/energy-the-flip-side-of-money">
+<link rel="alternate" hreflang="fr" href="https://konsensus.net/book/lenergie-face-cachee-de-la-monnaie">
+<link rel="alternate" hreflang="x-default" href="https://konsensus.net/book/energy-the-flip-side-of-money">
+<meta property="og:type" content="book">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Konsensus">
+<meta property="og:title" content="L&#39;énergie, face cachée de la monnaie by Pierre Noizat | Konsensus">
+<meta property="og:description" content="L&#39;énergie, face cachée de la monnaie by Pierre Noizat. Paperback shipped across the EU &amp; US, ebook available instantly from Konsensus.">
+<meta property="og:url" content="https://konsensus.net/book/lenergie-face-cachee-de-la-monnaie">
+<meta property="og:image" content="https://konsensus.net/assets/books/energie-face-cachee.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@konsensusn">
+<meta name="twitter:title" content="L&#39;énergie, face cachée de la monnaie by Pierre Noizat | Konsensus">
+<meta name="twitter:description" content="L&#39;énergie, face cachée de la monnaie by Pierre Noizat. Paperback shipped across the EU &amp; US, ebook available instantly from Konsensus.">
+<meta name="twitter:image" content="https://konsensus.net/assets/books/energie-face-cachee.png">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="/assets/fonts.css"><!-- served by the shop worker on prod; proxied in local dev -->
+<link rel="stylesheet" href="/assets/reads.css"><!-- THE reading typography, single source; see konsensus-net/assets/reads.css -->
+<link rel="stylesheet" href="/assets/site-header.css"><!-- the ONE header styling -->
+<link rel="stylesheet" href="/assets/site-footer.css"><!-- the ONE footer styling -->
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+[data-theme=light]{--bg:#FAFAF8;--card:#fff;--text:#1A1A1A;--mut:#666;--border:#E8E6E2;--orange:#F7931A;--orange-text:#B45309}
+[data-theme=dark]{--bg:#110E0C;--card:#1C1815;--text:#F0F0F0;--mut:#999;--border:#2A2520;--orange:#F7931A;--orange-text:#F7931A}
+/* Scripting off: the bootstrap that stamps data-theme never ran, and every var()
+   above was empty — the primary buy button had no fill (2026-10-08). The same
+   two palettes, by the OS preference (konsensus-net's no-JS pattern, R7-18). */
+:root:not([data-theme]){--bg:#FAFAF8;--card:#fff;--text:#1A1A1A;--mut:#666;--border:#E8E6E2;--orange:#F7931A;--orange-text:#B45309}
+@media (prefers-color-scheme:dark){:root:not([data-theme]){--bg:#110E0C;--card:#1C1815;--text:#F0F0F0;--mut:#999;--border:#2A2520;--orange:#F7931A;--orange-text:#F7931A}}
+/* Orange as TEXT is --orange-text (DESIGN-GUIDE §2: #B45309 on light, AA);
+   --orange stays for fills, borders and markers (R7-10). */
+body{background:var(--bg);color:var(--text);font:16px/1.65 'Inter',-apple-system,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--orange-text);text-decoration:none}a:hover{text-decoration:underline}
+/* nav + footer styling lives in the shared /assets/site-header.css +
+   /assets/site-footer.css — never a second copy here. */
+/* The shared header is position:fixed, 60px (assets/site-header.css) — every
+   page that adopts it must open below it or its first line hides underneath
+   (the breadcrumb did, caught in preview 2026-08-03). 60px + the page's own
+   breathing room, matching what /blog/'s hero reserves. */
+main{max-width:880px;margin:0 auto;padding:calc(60px + clamp(20px,4vw,40px)) clamp(16px,4vw,24px) 60px}
+h1{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.15;margin-bottom:6px}
+h2{font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:1.3rem;margin:26px 0 10px}
+.crumb{color:var(--mut);font-size:.82rem;margin-bottom:18px}
+.book-hero{display:flex;gap:28px;flex-wrap:wrap;align-items:flex-start}
+.cover{width:240px;max-width:42vw;height:auto;border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,.25);background:var(--card)}
+.book-meta{flex:1;min-width:240px}
+.byline{color:var(--mut);font-size:1.05rem;margin:2px 0 4px}
+/* The anthology a story belongs to — printed, not just implied by a filename. */
+.series{color:var(--mut);font-size:.92rem;margin:0 0 12px}
+.series a{color:var(--orange-text)}
+.rating{color:var(--orange-text);font-weight:700;margin-bottom:12px}.rating span{color:var(--mut);font-weight:400;font-size:.9rem}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.chips.big{gap:12px;margin-top:24px}
+.chip{display:inline-block;padding:5px 13px;border:1px solid var(--border);border-radius:999px;font-size:.82rem;color:var(--text)}.chip:hover{border-color:var(--orange);text-decoration:none}.chip b{color:var(--orange-text)}
+.price{font-size:1.25rem;margin:0 0 12px}.price strong{color:var(--text)}.price .stock{color:var(--mut);font-size:.9rem;font-weight:400;margin-left:8px}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}.cta form{margin:0}.companion-note{flex-basis:100%;margin:2px 0 0;font-size:.82rem;font-weight:600;color:var(--orange-text);text-wrap:balance}
+/* Ships-To control on the buy rail — pill + menu styling comes from
+   assets/site-header.css (the ONE source); this only seats it in the
+   meta column and anchors the menu to the pill's LEFT edge so it can
+   never overhang the viewport on a phone. */
+.shipto-row{margin:2px 0 10px}.shipto-row .shipto-ctl{display:inline-block}
+.shipto-row .shipto-menu{left:0;right:auto;max-width:min(320px,92vw);z-index:40}/* under the fixed z-50 header: mid-page card must slide BEHIND it on scroll, never paint over it */
+.btn{display:inline-block;padding:11px 22px;border-radius:11px;border:1px solid var(--border);font-weight:600;font-size:.95rem;color:var(--text)}.btn:hover{border-color:var(--orange);text-decoration:none}
+/* The add-to-basket control is a real submit button, so it needs the UA button
+   defaults undone to sit next to the .btn links. Specificity: .btn.primary
+   (0,2,0) outranks button.btn (0,1,1), so the orange fill still wins. */
+button.btn{appearance:none;-webkit-appearance:none;background:none;font:inherit;font-weight:600;line-height:1.2;cursor:pointer}
+.btn.oos{color:var(--mut);border-style:dashed;cursor:default}
+.btn.primary{background:var(--orange);color:#000;border-color:var(--orange)}
+.desc{margin-top:30px;max-width:680px}.desc p{margin-bottom:14px;color:var(--text)}
+.library h1{margin-bottom:10px}.lead{color:var(--mut);font-size:1.05rem;margin-bottom:22px;max-width:640px}
+.lgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.lcard{display:flex;gap:14px;align-items:center;padding:12px;border:1px solid var(--border);border-radius:14px;background:var(--card);color:var(--text)}.lcard:hover{border-color:var(--orange);text-decoration:none}
+.lcard img{width:60px;height:90px;object-fit:cover;border-radius:6px;flex:0 0 auto}
+.lt{font-weight:600;line-height:1.3}.la{color:var(--mut);font-size:.85rem;margin-top:2px}
+/* Like — the SAME control the blog cards carry (konsensus-net blog/index.html);
+   server-rendered with its live count so it is right before any script runs,
+   and wired by the ONE behaviour source, /assets/likes.js. */
+.like-btn{display:inline-flex;align-items:center;gap:6px;background:transparent;border:1px solid var(--border);border-radius:999px;color:var(--mut);padding:7px 13px;font:inherit;font-size:.84rem;cursor:pointer;transition:border-color .2s,color .2s}
+.like-btn:hover{border-color:var(--orange);color:var(--orange-text)}
+.like-btn.liked{color:var(--orange-text);border-color:var(--orange)}
+.like-heart{font-size:1rem;line-height:1}
+/* measure + rhythm come from /assets/reads.css (.reads) — one source */
+/* The prose column starts where the headline starts: .reads centres itself with
+   margin 0 auto, which is right on a bare page and wrong here, because the h1
+   above is full-width and a centred body gave the two different left edges. */
+.article-body{margin-top:24px;margin-left:0;margin-right:0}/* Everything else that used to live here — paragraph margins, h2/h3, blockquote,
+   ul/li, hr, img and the img+em caption — was a SECOND copy of the reading
+   typography, and being inline it won the cascade over /assets/reads.css. Deleted:
+   reads.css is the one source, and the .reads class on the section adopts it. */
+.article-body li::marker{color:var(--orange)}.hero-img{width:100%;max-width:65ch;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:8px auto 0}
+.topiclist .lolist{list-style:none;display:flex;flex-direction:column;gap:14px;margin-top:20px}
+.lrow{display:flex;gap:14px;align-items:flex-start;padding:14px;border:1px solid var(--border);border-radius:14px;background:var(--card)}
+.lnum{font-family:'Playfair Display',Georgia,serif;font-size:1.3rem;color:var(--orange-text);min-width:1.4em;text-align:center;flex:0 0 auto}
+.lcov{width:72px;height:108px;object-fit:cover;border-radius:6px;flex:0 0 auto}
+.ltitle{font-size:1.05rem;margin:0}.ltitle a{color:var(--text)}
+.linfo{min-width:0}.linfo .la{color:var(--mut);font-size:.85rem;margin:2px 0 6px}
+.lwhy{font-size:.92rem;line-height:1.5}
+.faq{margin-top:34px}.faq h3{font-family:'Playfair Display',Georgia,serif;font-size:1.05rem;margin:16px 0 4px}
+.more{margin-top:30px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}.more h2{margin:0 8px 0 0}
+.pubnote{margin-top:24px;color:var(--mut);font-size:.88rem}
+.hub{margin:26px 0}.hub h2{margin-bottom:2px}.hubdesc{color:var(--mut);margin:2px 0 12px;max-width:640px}.seeall{display:inline-block;margin-top:8px;font-size:.9rem}
+.persona-hook{display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:space-between;padding:14px 18px;margin-bottom:20px;border:1px solid var(--border);border-left:3px solid var(--orange);border-radius:12px;background:var(--card)}.persona-hook p{margin:0;color:var(--text);font-size:.98rem}.persona-cta{white-space:nowrap;font-weight:600}
+.subjects{margin-top:38px}.subjects h2{font-size:1.1rem}
+/* ── The reader card, ported from the blog reader deleted in the no-JS Phase 4
+   (konsensus-net blog/index.html @ 9300cba^: .reader-header-actions :562,
+   .r-toc :693, .r-related :716). Same look, ZERO JavaScript: the TOC was
+   already a native <details>, and every control that used to be a <button>
+   with a click handler is now a real <a href>. The old file's --orange-subtle
+   was rgba(247,147,26,0.08) and --orange-text/--text-dim map onto this page's
+   --orange/--mut; those substitutions are the only visual liberty taken. */
+/* These three are SIBLINGS of .article-body, so they inherit main's 880px and
+   not the prose measure — measured 832px against a 663px column, overhanging it
+   by 169px. 65ch is the same cap .hero-img uses, which is what keeps the card
+   edge-aligned with the hero and the paragraphs instead of floating past them. */
+.r-actions,.r-toc,.r-related{max-width:65ch;margin-left:0;margin-right:0}
+.r-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:16px 0 2px}
+.r-share-top{display:inline-flex;align-items:center;gap:7px;height:36px;padding:0 14px;border-radius:999px;background:rgba(247,147,26,.08);color:var(--text);font-size:.8rem;font-weight:600}
+.r-share-top:hover{background:var(--orange);color:#000;text-decoration:none}
+.r-share-top svg{width:15px;height:15px;flex:0 0 auto}
+.r-toc{margin:22px 0 0;padding:6px 16px;border:1px solid var(--border);border-radius:12px;background:rgba(247,147,26,.08)}
+.r-toc>summary{cursor:pointer;list-style:none;padding:8px 0;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--text)}
+.r-toc>summary::-webkit-details-marker{display:none}
+.r-toc ul{list-style:none;margin:0 0 8px;padding:0}
+.r-toc li{margin:1px 0}.r-toc li.sub{padding-left:18px}
+.r-toc .r-toc-link{display:block;padding:6px 0;color:var(--orange-text);font-size:.9rem;line-height:1.4}
+.r-toc .r-toc-link:hover{text-decoration:underline}
+.r-related{margin-top:2.4em;padding-top:1.8em;border-top:1px solid var(--border)}
+.r-related h2{font-size:1.15rem;margin:0 0 14px}
+.r-related-cards{display:grid;gap:12px}
+.r-related-card{display:flex;gap:12px;align-items:center;padding:10px;background:rgba(247,147,26,.08);border:1px solid var(--border);border-radius:12px;color:var(--text);transition:border-color .15s,transform .15s}
+.r-related-card:hover{border-color:var(--orange);transform:translateY(-1px);text-decoration:none}
+.r-related-card img{width:52px;height:52px;object-fit:cover;border-radius:8px;flex-shrink:0}
+.r-related-card .rc-cat{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--mut)}
+.r-related-card .rc-title{font-size:.92rem;font-weight:600;line-height:1.3;margin-top:2px}
+@media(max-width:560px){.cover{width:160px}
+/* The pills wrapped to three rows on a phone; drop to icon-only, exactly what
+   the reader header did at this breakpoint (blog/index.html :910). */
+.r-share-top{width:36px;padding:0;justify-content:center}.r-share-top span{display:none}}
+.rv{margin:48px 0 0}
+.rv h2{font-family:'Playfair Display',Georgia,serif;font-size:1.5rem;margin:0 0 14px}
+.rv-summary{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0 0 6px;font-size:.95rem}
+.rv-summary b{font-size:1.15rem}
+.rv-summary span{color:var(--mut, var(--muted, #7a746c))}
+.rv-stars{display:inline-flex;gap:2px;vertical-align:-2px}
+.rv-star{fill:currentColor;opacity:.22}
+.rv-star.is-on{fill:#F7931A;opacity:1}
+.rv-verified{font-size:.85rem;color:var(--mut, var(--muted, #7a746c));margin:0 0 22px;max-width:60ch}
+.rv-list{list-style:none;margin:0;padding:0;display:grid;gap:20px}
+.rv-item{border:1px solid rgba(127,127,127,.18);border-radius:20px;padding:18px 20px;background:rgba(127,127,127,.05)}
+.rv-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 8px}
+.rv-title{font-size:1rem}
+.rv-body{margin:0 0 8px;line-height:1.6}
+.rv-by{margin:0;font-size:.85rem;color:var(--mut, var(--muted, #7a746c))}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://konsensus.net/#org","name":"Konsensus","legalName":"Konsensus Network OÜ","url":"https://konsensus.net","logo":"https://konsensus.net/assets/starfish-logo.svg","email":"shop@konsensus.net","description":"Independent publisher and bookshop — books on economics, freedom, sovereignty, and the future, in 15 languages.","alternateName":"Konsensus Network","slogan":"Books for sovereignty","address":{"@type":"PostalAddress","addressCountry":"EE"},"areaServed":"Worldwide","knowsAbout":[{"@type":"DefinedTerm","name":"Sound money","sameAs":"https://en.wikipedia.org/wiki/Hard_money_(policy)"},{"@type":"DefinedTerm","name":"Austrian school of economics","sameAs":"https://en.wikipedia.org/wiki/Austrian_School"},{"@type":"DefinedTerm","name":"Free-market economics","sameAs":"https://en.wikipedia.org/wiki/Free_market"},{"@type":"DefinedTerm","name":"Individual sovereignty","sameAs":"https://en.wikipedia.org/wiki/Self-ownership"},{"@type":"DefinedTerm","name":"Libertarianism","sameAs":"https://en.wikipedia.org/wiki/Libertarianism"},{"@type":"DefinedTerm","name":"Privacy","sameAs":"https://en.wikipedia.org/wiki/Privacy"},{"@type":"DefinedTerm","name":"Self-publishing","sameAs":"https://en.wikipedia.org/wiki/Self-publishing"}],"sameAs":["https://x.com/konsensusn","https://www.linkedin.com/company/konsensus-network","https://www.youtube.com/@KonsensusNetwork","https://maximumfreedom.substack.com/"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://konsensus.net/#website","name":"Konsensus","url":"https://konsensus.net","publisher":{"@id":"https://konsensus.net/#org"},"alternateName":"Konsensus Network","inLanguage":"en"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["Product","Book"],"name":"L'énergie, face cachée de la monnaie","author":{"@type":"Person","name":"Pierre Noizat"},"inLanguage":"fr","url":"https://konsensus.net/book/lenergie-face-cachee-de-la-monnaie","publisher":{"@type":"Organization","name":"Konsensus","url":"https://konsensus.net/","@id":"https://konsensus.net/#org"},"image":"https://konsensus.net/assets/books/energie-face-cachee.png","isbn":"9789916723869","sku":"9916723877","itemCondition":"https://schema.org/NewCondition","description":"« Rien ne se perd, rien ne se crée, tout se transforme. » Ce principe de Lavoisier, appris à l'école et vite oublié, devrait pourtant être au cœur de chaque…","offers":[{"@type":"Offer","sku":"9789916723869","gtin13":"9789916723869","name":"L'énergie, face cachée de la monnaie — Softcover","price":"21.00","priceCurrency":"EUR","availability":"https://schema.org/OutOfStock","url":"https://konsensus.net/book/lenergie-face-cachee-de-la-monnaie","itemCondition":"https://schema.org/NewCondition","priceValidUntil":"2027-12-31","ineligibleRegion":["US","CA"],"seller":{"@id":"https://konsensus.net/#org"},"hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","GB","US","CA"],"returnPolicyCategory":"https://schema.org/MerchantReturnFiniteReturnWindow","merchantReturnDays":14,"returnMethod":"https://schema.org/ReturnByMail","returnFees":"https://schema.org/ReturnFeesCustomerResponsibility","merchantReturnLink":"https://konsensus.net/returns/"}},{"@type":"Offer","sku":"9916723877","name":"L'énergie, face cachée de la monnaie — Ebook","price":"10.00","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"https://konsensus.net/book/lenergie-face-cachee-de-la-monnaie","itemCondition":"https://schema.org/NewCondition","priceValidUntil":"2027-12-31","ineligibleRegion":["US","CA"],"seller":{"@id":"https://konsensus.net/#org"},"hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","GB","US","CA"],"returnPolicyCategory":"https://schema.org/MerchantReturnNotPermitted","merchantReturnLink":"https://konsensus.net/returns/"}},{"@type":"Offer","sku":"9789916723869_AUDIO","name":"L'énergie, face cachée de la monnaie — Audiobook","price":"9.00","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"https://konsensus.net/book/lenergie-face-cachee-de-la-monnaie","itemCondition":"https://schema.org/NewCondition","priceValidUntil":"2027-12-31","ineligibleRegion":["US","CA"],"seller":{"@id":"https://konsensus.net/#org"},"hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","GB","US","CA"],"returnPolicyCategory":"https://schema.org/MerchantReturnNotPermitted","merchantReturnLink":"https://konsensus.net/returns/"}},{"@type":"Offer","sku":"9789916723869","gtin13":"9789916723869","name":"L'énergie, face cachée de la monnaie — Softcover","price":"23.00","priceCurrency":"USD","availability":"https://schema.org/OutOfStock","url":"https://konsensus.net/book/lenergie-face-cachee-de-la-monnaie","itemCondition":"https://schema.org/NewCondition","priceValidUntil":"2027-12-31","eligibleRegion":["US","CA"],"seller":{"@id":"https://konsensus.net/#org"},"hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","GB","US","CA"],"returnPolicyCategory":"https://schema.org/MerchantReturnFiniteReturnWindow","merchantReturnDays":14,"returnMethod":"https://schema.org/ReturnByMail","returnFees":"https://schema.org/ReturnFeesCustomerResponsibility","merchantReturnLink":"https://konsensus.net/returns/"}},{"@type":"Offer","sku":"9916723877","name":"L'énergie, face cachée de la monnaie — Ebook","price":"11.00","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://konsensus.net/book/lenergie-face-cachee-de-la-monnaie","itemCondition":"https://schema.org/NewCondition","priceValidUntil":"2027-12-31","eligibleRegion":["US","CA"],"seller":{"@id":"https://konsensus.net/#org"},"hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","GB","US","CA"],"returnPolicyCategory":"https://schema.org/MerchantReturnNotPermitted","merchantReturnLink":"https://konsensus.net/returns/"}},{"@type":"Offer","sku":"9789916723869_AUDIO","name":"L'énergie, face cachée de la monnaie — Audiobook","price":"10.00","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://konsensus.net/book/lenergie-face-cachee-de-la-monnaie","itemCondition":"https://schema.org/NewCondition","priceValidUntil":"2027-12-31","eligibleRegion":["US","CA"],"seller":{"@id":"https://konsensus.net/#org"},"hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","GB","US","CA"],"returnPolicyCategory":"https://schema.org/MerchantReturnNotPermitted","merchantReturnLink":"https://konsensus.net/returns/"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Books","item":"https://konsensus.net/books/"},{"@type":"ListItem","position":2,"name":"Economics","item":"https://konsensus.net/library/econ"},{"@type":"ListItem","position":3,"name":"L'énergie, face cachée de la monnaie","item":"https://konsensus.net/book/lenergie-face-cachee-de-la-monnaie"}]}</script>
+</head>
+<body>
+<nav class="site-header" data-site-header data-active="books" aria-label="Main navigation"><div class="nav-left"><a class="nav-brand" href="/" aria-label="Konsensus home"><img src="/assets/starfish_bright_orange.svg" alt="" width="28" height="28"><span class="nav-brand-text">Konsensus</span></a><button class="nav-burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav-links"><span></span><span></span><span></span></button><div class="nav-links" id="site-nav-links"><a href="/publish/">Publish</a><a href="/books/" class="active">Books</a><a href="/blog/">Read</a><a href="/partners/">Partners</a></div></div><div class="nav-right"><div data-lang-switch></div><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme"><span class="icon-sun">☀️</span><span class="icon-moon">🌙</span></button></div></nav>
+<main><script>try{if(!/bot|crawl|spider|slurp|bingpreview|facebookexternalhit|whatsapp|telegram|embedly|preview|google|headless|lighthouse/i.test(navigator.userAgent||'')){var q=location.search.replace(/^\?/,'');location.replace("/books/?b=lenergie-face-cachee-de-la-monnaie"+(q?'&'+q:''));}}catch(e){}</script>
+  <article class="book">
+    <nav class="crumb"><a href="/books/">Books</a> · <a href="/library/econ">Economics</a></nav>
+    <div class="book-hero">
+      <img class="cover" src="/assets/books/thumbs/energie-face-cachee.png.320.webp" srcset="/assets/books/thumbs/energie-face-cachee.png.320.webp 320w, /assets/books/thumbs/energie-face-cachee.png.640.webp 640w" sizes="(max-width: 560px) 160px, 240px" alt="L&#39;énergie, face cachée de la monnaie cover" width="240" height="360" loading="eager" fetchpriority="high">
+      <div class="book-meta">
+        <h1>L&#39;énergie, face cachée de la monnaie</h1>
+        <p class="byline">by Pierre Noizat</p>
+        <div class="rating">★ 4.5 <span>(44 ratings)</span></div>
+        <div class="chips"><a class="chip" href="/library/econ">Economics</a><a class="chip" href="/library/science">Science</a></div>
+        <p class="price"><strong>From €9.00</strong></p>
+        <div class="shipto-row"><details class="shipto-ctl" id="shipToCtl"><summary><svg class="shipto-ico" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M8 1.8 14 4.6v6.8L8 14.2 2 11.4V4.6L8 1.8Z"/><path d="M2 4.6 8 7.4l6-2.8M8 7.4v6.8"/></svg><span data-shipto-label>Ships to …</span></summary><div class="shipto-menu" data-shipto-menu><div class="shipto-group">European Union</div><a href="/api/shipto?c=AT&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Austria</a><a href="/api/shipto?c=BE&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Belgium</a><a href="/api/shipto?c=BG&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Bulgaria</a><a href="/api/shipto?c=HR&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Croatia</a><a href="/api/shipto?c=CY&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Cyprus</a><a href="/api/shipto?c=CZ&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Czechia</a><a href="/api/shipto?c=DK&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Denmark</a><a href="/api/shipto?c=EE&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Estonia</a><a href="/api/shipto?c=FI&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Finland</a><a href="/api/shipto?c=FR&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">France</a><a href="/api/shipto?c=DE&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Germany</a><a href="/api/shipto?c=GR&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Greece</a><a href="/api/shipto?c=HU&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Hungary</a><a href="/api/shipto?c=IE&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Ireland</a><a href="/api/shipto?c=IT&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Italy</a><a href="/api/shipto?c=LV&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Latvia</a><a href="/api/shipto?c=LT&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Lithuania</a><a href="/api/shipto?c=LU&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Luxembourg</a><a href="/api/shipto?c=MT&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Malta</a><a href="/api/shipto?c=NL&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Netherlands</a><a href="/api/shipto?c=PL&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Poland</a><a href="/api/shipto?c=PT&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Portugal</a><a href="/api/shipto?c=RO&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Romania</a><a href="/api/shipto?c=SK&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Slovakia</a><a href="/api/shipto?c=SI&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Slovenia</a><a href="/api/shipto?c=ES&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Spain</a><a href="/api/shipto?c=SE&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Sweden</a><div class="shipto-group">Outside the EU</div><a href="/api/shipto?c=GB&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">United Kingdom</a><a href="/api/shipto?c=NO&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Norway</a><a href="/api/shipto?c=US&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">United States</a><a href="/api/shipto?c=CA&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Canada</a><a href="/api/shipto?c=AU&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Australia</a><details class="shipto-more"><summary>Somewhere else…<svg class="shipto-chev" viewBox="0 0 12 12" width="11" height="11" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 2.5 8 6l-4 3.5"/></svg></summary><a href="/api/shipto?c=AF&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Afghanistan</a><a href="/api/shipto?c=AX&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Åland Islands</a><a href="/api/shipto?c=AL&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Albania</a><a href="/api/shipto?c=DZ&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Algeria</a><a href="/api/shipto?c=AS&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">American Samoa</a><a href="/api/shipto?c=AD&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Andorra</a><a href="/api/shipto?c=AO&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Angola</a><a href="/api/shipto?c=AI&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Anguilla</a><a href="/api/shipto?c=AG&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Antigua &amp; Barbuda</a><a href="/api/shipto?c=AR&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Argentina</a><a href="/api/shipto?c=AM&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Armenia</a><a href="/api/shipto?c=AW&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Aruba</a><a href="/api/shipto?c=AZ&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Azerbaijan</a><a href="/api/shipto?c=BS&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Bahamas</a><a href="/api/shipto?c=BH&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Bahrain</a><a href="/api/shipto?c=BD&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Bangladesh</a><a href="/api/shipto?c=BB&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Barbados</a><a href="/api/shipto?c=BZ&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Belize</a><a href="/api/shipto?c=BJ&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Benin</a><a href="/api/shipto?c=BM&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Bermuda</a><a href="/api/shipto?c=BT&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Bhutan</a><a href="/api/shipto?c=BO&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Bolivia</a><a href="/api/shipto?c=BA&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Bosnia &amp; Herzegovina</a><a href="/api/shipto?c=BW&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Botswana</a><a href="/api/shipto?c=BR&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Brazil</a><a href="/api/shipto?c=VG&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">British Virgin Islands</a><a href="/api/shipto?c=BN&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Brunei</a><a href="/api/shipto?c=BF&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Burkina Faso</a><a href="/api/shipto?c=BI&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Burundi</a><a href="/api/shipto?c=KH&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Cambodia</a><a href="/api/shipto?c=CM&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Cameroon</a><a href="/api/shipto?c=CV&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Cape Verde</a><a href="/api/shipto?c=KY&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Cayman Islands</a><a href="/api/shipto?c=CF&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Central African Republic</a><a href="/api/shipto?c=TD&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Chad</a><a href="/api/shipto?c=CL&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Chile</a><a href="/api/shipto?c=CN&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">China</a><a href="/api/shipto?c=CO&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Colombia</a><a href="/api/shipto?c=KM&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Comoros</a><a href="/api/shipto?c=CG&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Congo - Brazzaville</a><a href="/api/shipto?c=CD&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Congo - Kinshasa</a><a href="/api/shipto?c=CK&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Cook Islands</a><a href="/api/shipto?c=CR&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Costa Rica</a><a href="/api/shipto?c=CI&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Côte d’Ivoire</a><a href="/api/shipto?c=CW&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Curaçao</a><a href="/api/shipto?c=DJ&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Djibouti</a><a href="/api/shipto?c=DM&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Dominica</a><a href="/api/shipto?c=DO&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Dominican Republic</a><a href="/api/shipto?c=EC&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Ecuador</a><a href="/api/shipto?c=EG&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Egypt</a><a href="/api/shipto?c=SV&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">El Salvador</a><a href="/api/shipto?c=GQ&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Equatorial Guinea</a><a href="/api/shipto?c=ER&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Eritrea</a><a href="/api/shipto?c=SZ&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Eswatini</a><a href="/api/shipto?c=ET&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Ethiopia</a><a href="/api/shipto?c=FK&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Falkland Islands</a><a href="/api/shipto?c=FO&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Faroe Islands</a><a href="/api/shipto?c=FJ&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Fiji</a><a href="/api/shipto?c=GF&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">French Guiana</a><a href="/api/shipto?c=PF&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">French Polynesia</a><a href="/api/shipto?c=GA&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Gabon</a><a href="/api/shipto?c=GM&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Gambia</a><a href="/api/shipto?c=GE&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Georgia</a><a href="/api/shipto?c=GH&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Ghana</a><a href="/api/shipto?c=GI&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Gibraltar</a><a href="/api/shipto?c=GL&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Greenland</a><a href="/api/shipto?c=GD&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Grenada</a><a href="/api/shipto?c=GP&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Guadeloupe</a><a href="/api/shipto?c=GU&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Guam</a><a href="/api/shipto?c=GT&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Guatemala</a><a href="/api/shipto?c=GG&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Guernsey</a><a href="/api/shipto?c=GN&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Guinea</a><a href="/api/shipto?c=GW&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Guinea-Bissau</a><a href="/api/shipto?c=GY&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Guyana</a><a href="/api/shipto?c=HT&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Haiti</a><a href="/api/shipto?c=HN&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Honduras</a><a href="/api/shipto?c=HK&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Hong Kong SAR China</a><a href="/api/shipto?c=IS&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Iceland</a><a href="/api/shipto?c=IN&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">India</a><a href="/api/shipto?c=ID&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Indonesia</a><a href="/api/shipto?c=IQ&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Iraq</a><a href="/api/shipto?c=IM&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Isle of Man</a><a href="/api/shipto?c=IL&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Israel</a><a href="/api/shipto?c=JM&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Jamaica</a><a href="/api/shipto?c=JP&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Japan</a><a href="/api/shipto?c=JE&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Jersey</a><a href="/api/shipto?c=JO&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Jordan</a><a href="/api/shipto?c=KZ&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Kazakhstan</a><a href="/api/shipto?c=KE&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Kenya</a><a href="/api/shipto?c=KI&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Kiribati</a><a href="/api/shipto?c=XK&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Kosovo</a><a href="/api/shipto?c=KW&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Kuwait</a><a href="/api/shipto?c=KG&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Kyrgyzstan</a><a href="/api/shipto?c=LA&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Laos</a><a href="/api/shipto?c=LB&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Lebanon</a><a href="/api/shipto?c=LS&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Lesotho</a><a href="/api/shipto?c=LR&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Liberia</a><a href="/api/shipto?c=LY&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Libya</a><a href="/api/shipto?c=LI&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Liechtenstein</a><a href="/api/shipto?c=MO&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Macao SAR China</a><a href="/api/shipto?c=MG&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Madagascar</a><a href="/api/shipto?c=MW&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Malawi</a><a href="/api/shipto?c=MY&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Malaysia</a><a href="/api/shipto?c=MV&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Maldives</a><a href="/api/shipto?c=ML&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Mali</a><a href="/api/shipto?c=MH&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Marshall Islands</a><a href="/api/shipto?c=MQ&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Martinique</a><a href="/api/shipto?c=MR&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Mauritania</a><a href="/api/shipto?c=MU&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Mauritius</a><a href="/api/shipto?c=YT&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Mayotte</a><a href="/api/shipto?c=MX&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Mexico</a><a href="/api/shipto?c=FM&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Micronesia</a><a href="/api/shipto?c=MD&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Moldova</a><a href="/api/shipto?c=MC&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Monaco</a><a href="/api/shipto?c=MN&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Mongolia</a><a href="/api/shipto?c=ME&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Montenegro</a><a href="/api/shipto?c=MS&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Montserrat</a><a href="/api/shipto?c=MA&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Morocco</a><a href="/api/shipto?c=MZ&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Mozambique</a><a href="/api/shipto?c=MM&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Myanmar (Burma)</a><a href="/api/shipto?c=NA&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Namibia</a><a href="/api/shipto?c=NR&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Nauru</a><a href="/api/shipto?c=NP&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Nepal</a><a href="/api/shipto?c=NC&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">New Caledonia</a><a href="/api/shipto?c=NZ&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">New Zealand</a><a href="/api/shipto?c=NI&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Nicaragua</a><a href="/api/shipto?c=NE&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Niger</a><a href="/api/shipto?c=NG&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Nigeria</a><a href="/api/shipto?c=MK&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">North Macedonia</a><a href="/api/shipto?c=MP&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Northern Mariana Islands</a><a href="/api/shipto?c=OM&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Oman</a><a href="/api/shipto?c=PK&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Pakistan</a><a href="/api/shipto?c=PW&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Palau</a><a href="/api/shipto?c=PS&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Palestinian Territories</a><a href="/api/shipto?c=PA&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Panama</a><a href="/api/shipto?c=PG&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Papua New Guinea</a><a href="/api/shipto?c=PY&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Paraguay</a><a href="/api/shipto?c=PE&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Peru</a><a href="/api/shipto?c=PH&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Philippines</a><a href="/api/shipto?c=PR&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Puerto Rico</a><a href="/api/shipto?c=QA&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Qatar</a><a href="/api/shipto?c=RE&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Réunion</a><a href="/api/shipto?c=RW&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Rwanda</a><a href="/api/shipto?c=WS&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Samoa</a><a href="/api/shipto?c=SM&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">San Marino</a><a href="/api/shipto?c=ST&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">São Tomé &amp; Príncipe</a><a href="/api/shipto?c=SA&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Saudi Arabia</a><a href="/api/shipto?c=SN&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Senegal</a><a href="/api/shipto?c=RS&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Serbia</a><a href="/api/shipto?c=SC&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Seychelles</a><a href="/api/shipto?c=SL&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Sierra Leone</a><a href="/api/shipto?c=SG&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Singapore</a><a href="/api/shipto?c=SX&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Sint Maarten</a><a href="/api/shipto?c=SB&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Solomon Islands</a><a href="/api/shipto?c=SO&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Somalia</a><a href="/api/shipto?c=ZA&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">South Africa</a><a href="/api/shipto?c=KR&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">South Korea</a><a href="/api/shipto?c=SS&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">South Sudan</a><a href="/api/shipto?c=LK&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Sri Lanka</a><a href="/api/shipto?c=BL&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">St. Barthélemy</a><a href="/api/shipto?c=SH&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">St. Helena</a><a href="/api/shipto?c=KN&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">St. Kitts &amp; Nevis</a><a href="/api/shipto?c=LC&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">St. Lucia</a><a href="/api/shipto?c=MF&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">St. Martin</a><a href="/api/shipto?c=PM&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">St. Pierre &amp; Miquelon</a><a href="/api/shipto?c=VC&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">St. Vincent &amp; Grenadines</a><a href="/api/shipto?c=SD&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Sudan</a><a href="/api/shipto?c=SR&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Suriname</a><a href="/api/shipto?c=CH&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Switzerland</a><a href="/api/shipto?c=TW&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Taiwan</a><a href="/api/shipto?c=TJ&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Tajikistan</a><a href="/api/shipto?c=TZ&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Tanzania</a><a href="/api/shipto?c=TH&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Thailand</a><a href="/api/shipto?c=TL&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Timor-Leste</a><a href="/api/shipto?c=TG&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Togo</a><a href="/api/shipto?c=TO&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Tonga</a><a href="/api/shipto?c=TT&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Trinidad &amp; Tobago</a><a href="/api/shipto?c=TN&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Tunisia</a><a href="/api/shipto?c=TR&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Türkiye</a><a href="/api/shipto?c=TM&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Turkmenistan</a><a href="/api/shipto?c=TC&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Turks &amp; Caicos Islands</a><a href="/api/shipto?c=TV&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Tuvalu</a><a href="/api/shipto?c=VI&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">U.S. Virgin Islands</a><a href="/api/shipto?c=UG&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Uganda</a><a href="/api/shipto?c=UA&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Ukraine</a><a href="/api/shipto?c=AE&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">United Arab Emirates</a><a href="/api/shipto?c=UY&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Uruguay</a><a href="/api/shipto?c=UZ&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Uzbekistan</a><a href="/api/shipto?c=VU&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Vanuatu</a><a href="/api/shipto?c=VA&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Vatican City</a><a href="/api/shipto?c=VE&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Venezuela</a><a href="/api/shipto?c=VN&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Vietnam</a><a href="/api/shipto?c=WF&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Wallis &amp; Futuna</a><a href="/api/shipto?c=YE&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Yemen</a><a href="/api/shipto?c=ZM&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Zambia</a><a href="/api/shipto?c=ZW&amp;r=%2Fbook%2Flenergie-face-cachee-de-la-monnaie" rel="nofollow">Zimbabwe</a></details><div class="shipto-note">Ebooks and audiobooks deliver everywhere, and every book’s page links its Amazon edition.</div></div></details></div>
+        <div class="cta">
+          <span class="btn oos">Softcover €21.00 — out of stock</span>
+          <form class="buy" method="post" action="/basket/add"><input type="hidden" name="sku" value="9916723877"><button class="btn" type="submit">Add to basket — Ebook €10.00</button></form>
+          <form class="buy" method="post" action="/basket/add"><input type="hidden" name="sku" value="9789916723869_AUDIO"><button class="btn" type="submit">Add to basket — Audiobook €9.00</button></form>
+          <a class="btn" href="/b/lenergie-face-cachee-de-la-monnaie" rel="sponsored nofollow" data-buy-label="Buy on Amazon">Also on Amazon</a>
+          <a class="btn" href="/books/?b=lenergie-face-cachee-de-la-monnaie">See in shop</a>
+        </div>
+      </div>
+    </div>
+    <section class="desc"><h2>About this book</h2><p>« Rien ne se perd, rien ne se crée, tout se transforme. » Ce principe de Lavoisier, appris à l&#39;école et vite oublié, devrait pourtant être au cœur de chaque débat sur la « consommation » d&#39;énergie. Ces débats sont omniprésents mais ils reflètent rarement la réalité.</p><p>Transitions énergétique et numérique sont au cœur des préoccupations du public, mais les liens physiques entre énergie et information restent largement méconnus. Après avoir rappelé simplement les 3 principes thermodynamiques de base, ce livre décrit comment ils s&#39;appliquent dans nos vies à travers des exemples concrets — des phénomènes naturels aux comportements sociaux.</p><p>Ce que vous allez comprendre en lisant ce livre :</p><p>• Ce que signifie vraiment « utiliser » de l&#39;énergie — et pourquoi le terme « consommer » est trompeur 
+• Les notions d&#39;énergie potentielle et d&#39;entropie, expliquées simplement et illustrées par des exemples du quotidien 
+• La différence fondamentale entre données et information 
+• Les liens entre information, monnaie et énergie — et comment ils éclairent des débats souvent mal posés 
+• Pourquoi la monnaie est une représentation d&#39;énergie, qu&#39;elle soit une promesse (monnaie fiat) ou une preuve (or, Bitcoin). 
+À propos de l&#39;auteur 
+Essayiste, conférencier et ingénieur, Pierre Noizat se consacre depuis plus de dix ans à transmettre sa passion pour la science de l&#39;énergie et de l&#39;information. Il propose des explications et des solutions fondées sur les liens qu&#39;il trace entre ces disciplines. Read more</p></section>
+    
+    <section class="related"><h2>Books like L&#39;énergie, face cachée de la monnaie</h2><p class="lead">Readers of L&#39;énergie, face cachée de la monnaie also read these, from the Konsensus catalogue.</p><div class="lgrid">
+      <a class="lcard" href="/book/antifragile">
+        <img src="/assets/books/thumbs/antifragile.jpg.320.webp" srcset="/assets/books/thumbs/antifragile.jpg.320.webp 320w, /assets/books/thumbs/antifragile.jpg.640.webp 640w" sizes="60px" alt="Antifragile" width="60" height="90" loading="lazy">
+        <div><div class="lt">Antifragile</div><div class="la">Nassim Nicholas Taleb</div></div>
+      </a>
+      <a class="lcard" href="/book/the-black-swan">
+        <img src="/assets/books/thumbs/black-swan.jpg.320.webp" srcset="/assets/books/thumbs/black-swan.jpg.320.webp 320w, /assets/books/thumbs/black-swan.jpg.640.webp 640w" sizes="60px" alt="The Black Swan" width="60" height="90" loading="lazy">
+        <div><div class="lt">The Black Swan</div><div class="la">Nassim Nicholas Taleb</div></div>
+      </a>
+      <a class="lcard" href="/book/skin-in-the-game">
+        <img src="/assets/books/thumbs/skin-in-game.jpg.320.webp" srcset="/assets/books/thumbs/skin-in-game.jpg.320.webp 320w, /assets/books/thumbs/skin-in-game.jpg.640.webp 640w" sizes="60px" alt="Skin in the Game" width="60" height="90" loading="lazy">
+        <div><div class="lt">Skin in the Game</div><div class="la">Nassim Nicholas Taleb</div></div>
+      </a>
+      <a class="lcard" href="/book/economics-in-one-lesson">
+        <img src="/assets/books/thumbs/economics-one-lesson.jpg.320.webp" srcset="/assets/books/thumbs/economics-one-lesson.jpg.320.webp 320w, /assets/books/thumbs/economics-one-lesson.jpg.640.webp 640w" sizes="60px" alt="Economics in One Lesson" width="60" height="90" loading="lazy">
+        <div><div class="lt">Economics in One Lesson</div><div class="la">Henry Hazlitt</div></div>
+      </a>
+      <a class="lcard" href="/book/the-mandibles">
+        <img src="/assets/books/thumbs/mandibles.jpg.320.webp" srcset="/assets/books/thumbs/mandibles.jpg.320.webp 320w, /assets/books/thumbs/mandibles.jpg.640.webp 640w" sizes="60px" alt="The Mandibles: A Family, 2029–2047" width="60" height="90" loading="lazy">
+        <div><div class="lt">The Mandibles: A Family, 2029–2047</div><div class="la">Lionel Shriver</div></div>
+      </a>
+      <a class="lcard" href="/book/the-creature-from-jekyll-island">
+        <img src="/assets/books/thumbs/jekyll-island.jpg.320.webp" srcset="/assets/books/thumbs/jekyll-island.jpg.320.webp 320w, /assets/books/thumbs/jekyll-island.jpg.640.webp 640w" sizes="60px" alt="The Creature from Jekyll Island" width="60" height="90" loading="lazy">
+        <div><div class="lt">The Creature from Jekyll Island</div><div class="la">G. Edward Griffin</div></div>
+      </a></div></section>
+  </article>
+  <script>/* Ships-To (SHIPTO-SPEC): the SSR above is the NEUTRAL, cacheable view —
+  every buyable format shows its form, crawlers and no-JS visitors see exactly
+  today's page. With JS we resolve the visitor's delivery country (cookie, else
+  one /api/geo call) and swap any print form whose data-ship-lanes cannot reach
+  it for an honest one-liner; /basket re-gates server-side regardless, so this
+  can only ever HIDE a dead end, never create one. */
+  (function () {
+    var m = document.cookie.match(/(?:^|;\s*)kn_shipto=([A-Za-z]{2})/);
+    function name(c) {
+      try { return new Intl.DisplayNames(['en'], { type: 'region' }).of(c) || c; }
+      catch (e) { return c; }
+    }
+    function apply(raw) {
+      var c = String(raw || '').toUpperCase();
+      if (!/^[A-Z]{2}$/.test(c)) return;
+      var n = name(c);
+      var lb = document.querySelector('#shipToCtl [data-shipto-label]');
+      if (lb) lb.textContent = 'Ships to ' + n;
+      document.querySelectorAll('#shipToCtl .shipto-menu a').forEach(function (a) {
+        var cc = (a.getAttribute('href').match(/[?&]c=([A-Z]{2})/) || [])[1];
+        a.classList.toggle('current', cc === c);
+        if (cc === c) a.setAttribute('aria-current', 'true');
+        else a.removeAttribute('aria-current');
+        // This page is CACHEABLE, so the server renders the menu with no
+        // current country and this script personalises it. When the visitor's
+        // country lives inside the closed "Somewhere else…" disclosure, its
+        // current marker would be invisible — lift the link out, just above
+        // the disclosure, exactly as the /books shell pins it at render time.
+        if (cc === c) {
+          var more = a.closest('.shipto-more');
+          if (more && more.parentNode) more.parentNode.insertBefore(a, more);
+        }
+      });
+      // gated = a print form this visitor could have used was actually
+      // swapped out. "No form ships" is also true of a page that never had
+      // one (out of stock), and that page's stock line must stay what the
+      // SSR said (pre-ship gate 2026-09-27, seo-01).
+      var physicalShips = false, droppedPrimary = false, gated = false;
+      document.querySelectorAll('form.buy[data-ship-lanes]').forEach(function (f) {
+        var lanes = (f.getAttribute('data-ship-lanes') || '').split(' ');
+        if (lanes.indexOf(c) >= 0) { physicalShips = true; return; }
+        var btn = f.querySelector('.btn');
+        if (btn && btn.classList.contains('primary')) droppedPrimary = true;
+        var sp = document.createElement('span');
+        sp.className = 'btn oos';
+        sp.textContent = (f.getAttribute('data-ship-label') || 'This edition') + ' — can’t ship to ' + n;
+        f.replaceWith(sp);
+        gated = true;
+      });
+      // A digital form (no lanes) always sells here; it is the natural fallback CTA.
+      var digitalForm = document.querySelector('form.buy:not([data-ship-lanes]) .btn');
+      var sellsHere = physicalShips || !!digitalForm;
+      // If gating removed the primary print button, the page must keep ONE primary
+      // CTA: the digital button if there is one, else the affiliate /b/ link. When
+      // no PRINT ships at all, promote that /b/ link (SHIPTO-SPEC row #4) — a
+      // stock-only page has no /b/ link, so this is a no-op there (banned rule holds).
+      if (droppedPrimary && !physicalShips) {
+        if (digitalForm) { digitalForm.classList.add('primary'); }
+        else {
+          var az = document.querySelector('.cta a[href^="/b/"]');
+          // Promoted to primary — the ONLY way left to buy print — so its
+          // label must say that, not the SSR's secondary-option wording
+          // (C:C8-03). Read from data-buy-label, never a literal HERE: this
+          // script is unconditionally on every /book page (stock-only titles
+          // included), and the standing rule is that such a page's source
+          // never spells out this affiliate's name — see the render.js note
+          // beside where that attribute is written.
+          if (az) { az.classList.add('primary'); az.textContent = az.getAttribute('data-buy-label') || az.textContent; }
+        }
+      }
+      if (!physicalShips) {
+        var azp = document.querySelector('.cta a[href^="/b/"]');
+        if (azp && !document.querySelector('form.buy .btn.primary')) { azp.classList.add('primary'); azp.textContent = azp.getAttribute('data-buy-label') || azp.textContent; }
+        // The single-format summary price line says "In stock" unconditionally
+        // (render-time, cache-friendly); it never named a country. A single
+        // sold format that does not ship here is not "in stock" for this
+        // visitor — say what IS true (C:C8-03). Left alone for a digital-only
+        // page (no .stock span at all), for a multi-format page ("From €x",
+        // no .stock span either) — sellsHere still covers the digital fallback
+        // — and for a format with no copies (no form was gated: the cause is
+        // stock, and the SSR's own stock line is the truth; seo-01).
+        var stockEl = document.querySelector('.price .stock');
+        if (stockEl && gated && !sellsHere) stockEl.textContent = 'Doesn’t ship to ' + n;
+      }
+    }
+    if (m) { apply(m[1]); return; }
+    fetch('/api/geo', { credentials: 'omit' }).then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) {
+        if (!j || !j.country) return;
+        var c = String(j.country).toUpperCase();
+        try { document.cookie = 'kn_shipto=' + c + '; Path=/; Max-Age=31536000; SameSite=Lax' + (location.protocol === 'https:' ? '; Secure' : ''); } catch (e) {}
+        apply(c);
+      }).catch(function () {});
+  })();</script></main>
+<footer class="site-footer" data-site-footer role="contentinfo"><p class="footer-slogan">Books for sovereignty</p><p class="footer-badge"><a href="/privacy/">No&nbsp;tracking&nbsp;cookies&nbsp;&middot; No&nbsp;trackers&nbsp;&middot; No&nbsp;consent&nbsp;banner</a></p><p class="footer-legal"><a href="/shipping/">Shipping</a>&nbsp;&middot; <a href="/returns/">Returns</a>&nbsp;&middot; <a href="/contact/">Contact</a>&nbsp;&middot; <a href="https://konsensus.net/call/?utm_source=konsensus-site&amp;utm_medium=cta" target="_blank" rel="noopener noreferrer">Book a call</a>&nbsp;&middot; <a href="/library/">Library</a>&nbsp;&middot; <a href="/blog/">Read</a></p><p class="footer-legal"><a href="mailto:hello@konsensus.net">hello@konsensus.net</a>&nbsp;&middot; &copy;&nbsp;2026&nbsp;Konsensus.&nbsp;All&nbsp;rights&nbsp;reserved.&nbsp;&middot; <a href="/terms/">Terms</a>&nbsp;&middot; <a href="/privacy/">Privacy</a>&nbsp;&middot; <a href="/privacy/analytics/">How we count visits</a></p></footer>
+<script src="/assets/site-nav.js" defer></script><!-- burger + theme toggle; skips the already-filled mount -->
+<script src="/assets/likes.js" defer></script><!-- the ONE like behaviour (no-op where no control is rendered) -->
+<script src="/assets/analytics-beacon.js" defer></script><!-- dwell/CWV beacon → /api/hit (konsensus-net); joins this page's pageview -->
+</body>
+</html>

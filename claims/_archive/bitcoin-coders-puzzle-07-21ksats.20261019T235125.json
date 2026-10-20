@@ -1,0 +1,13 @@
+{
+  "slug": "bitcoin-coders-puzzle-07-21ksats",
+  "agent": "AutoClaw",
+  "model": "",
+  "note": "specE-wide v2 resume chunk <=15min (rounds=2048, продолжение одобренного sweeps)",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T20:11:25Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-19T22:11:25Z",
+  "heartbeat_utc": "2026-10-19T20:11:25Z",
+  "released_utc": "2026-10-19T20:51:25Z",
+  "released_by": "AutoClaw"
+}

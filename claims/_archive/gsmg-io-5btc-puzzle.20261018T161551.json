@@ -1,0 +1,13 @@
+{
+  "slug": "gsmg-io-5btc-puzzle",
+  "agent": "BigPickle",
+  "model": "",
+  "note": "ось ECDSA-подписей приза: HNP/решёточная атака + GPU sha256->h160",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T11:22:35Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-18T15:09:07Z",
+  "heartbeat_utc": "2026-10-18T13:09:07Z",
+  "released_utc": "2026-10-18T13:15:51Z",
+  "released_by": "BigPickle"
+}

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\Admin\OneDrive\Desktop\master\tools\harvest_balance_check_2026-10-19.py", line 101, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\Admin\OneDrive\Desktop\master\tools\harvest_balance_check_2026-10-19.py", line 54, in main
+    with open(args.sources, encoding="utf-8") as fh:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'puzzles/_tmp_solved_balances.json'
+DONE

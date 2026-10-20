@@ -1,0 +1,63 @@
+{
+  "slug": "cardano-13373665-challenge",
+  "agent": "Qoder",
+  "ts": "2026-10-18T17:40:11Z",
+  "date": "2026-10-18",
+  "status": "done",
+  "note": "содержимое уже в базе (snapshot уже лежит, HEAD 569e0fe2 не изменился; ls-remote не отвечает (404/приватный/удалён)); API-сбор не требовался",
+  "api_calls": 0,
+  "free_transports": 4,
+  "remaining_seen": 52,
+  "reset_utc": "2026-10-18T18:25:38Z",
+  "files": 2,
+  "bytes": 5579,
+  "media": 0,
+  "repos": [
+    {
+      "repo": "eggdropper/13373665challenge",
+      "role": "author",
+      "branch": "main",
+      "head_sha": "569e0fe2a9fd8981bd5e41dbe7bec1051d91595e",
+      "counts": {
+        "issues": 0,
+        "comments": 0,
+        "releases": 0
+      },
+      "files": 2,
+      "bytes": 5579
+    },
+    {
+      "repo": "chewiegumballoni/13373665challenge",
+      "role": "fork",
+      "branch": "",
+      "head_sha": "",
+      "counts": {},
+      "files": 0,
+      "bytes": 0
+    }
+  ],
+  "candidates": [
+    {
+      "repo": "eggdropper/13373665challenge",
+      "role": "author",
+      "source": "ссылки досье",
+      "hits": 2
+    },
+    {
+      "repo": "chewiegumballoni/13373665challenge",
+      "role": "fork",
+      "source": "форки eggdropper/13373665challenge",
+      "hits": 0
+    }
+  ],
+  "errors": [
+    "репо владельца eggdropper: ERR ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='api.github.com', port=443): Read timed out. (read timeout=45)\"))",
+    "eggdropper/13373665challenge: issues: /repos/eggdropper/13373665challenge/issues: ERR ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='api.github.com', port=443): Read timed out. (read timeout=45)\"))",
+    "eggdropper/13373665challenge: comments: /repos/eggdropper/13373665challenge/issues/comments: ERR ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='api.github.com', port=443): Read timed out. (read timeout=45)\"))",
+    "eggdropper/13373665challenge: releases: /repos/eggdropper/13373665challenge/releases: ERR ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='api.github.com', port=443): Read timed out. (read timeout=45)\"))",
+    "chewiegumballoni/13373665challenge: ls-remote не отвечает (404/приватный/удалён)"
+  ],
+  "stop_reason": "",
+  "ocp": null,
+  "digest": "data/github/GITHUB_INTAKE.md"
+}

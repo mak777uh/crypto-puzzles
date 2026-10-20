@@ -1,0 +1,437 @@
+{
+ "3NPZiNWiD7cCfXZa1D8tnEZBPgQ884cVw7": {
+  "bal": 0,
+  "tx": 24,
+  "files": [
+   "solved/INDEX.md",
+   "solved/310-btc-challenge-0-31btc/LOG.md",
+   "solved/310-btc-challenge-0-31btc/README.md"
+  ]
+ },
+ "3DaNeVNFqpirR9KEHjFuPPeErPaMTZyeBo": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/INDEX.md",
+   "solved/310-btc-challenge-0-31btc/LOG.md",
+   "solved/310-btc-challenge-0-31btc/README.md"
+  ]
+ },
+ "3FQZNoJR4vJyTgSPXwsE3PiV78se7fqDCG": {
+  "bal": 0,
+  "tx": 5,
+  "files": [
+   "solved/310-btc-challenge-0-31btc/LOG.md",
+   "solved/310-btc-challenge-0-31btc/README.md"
+  ]
+ },
+ "1446C8HqMtvWtEgu1JnjwLcPESSruhzkmV": {
+  "bal": 0,
+  "tx": 16,
+  "files": [
+   "solved/310-btc-challenge-0-31btc/README.md"
+  ]
+ },
+ "1G7qsUy5x9bUd1pRfhVZ7cuB5cMUP4hsfR": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/310-btc-challenge-0-31btc/README.md"
+  ]
+ },
+ "39uAUwEFDi5bBbdBm5ViD8sxDBBrz7SUP4": {
+  "bal": null,
+  "tx": "HTTP Error 429: Too Many Requests",
+  "files": [
+   "solved/310-btc-challenge-0-31btc/README.md"
+  ]
+ },
+ "1ECDLP8osCZHBB1LH5PVAUfFegeMgFb52q": {
+  "bal": 0,
+  "tx": 3,
+  "files": [
+   "solved/80-bit-ktimesg-key-challenge/README.md"
+  ]
+ },
+ "14q4SoQwENXXzsVT3GMwDrDUGiW5QZeiDg": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/80-bit-ktimesg-key-challenge/README.md"
+  ]
+ },
+ "1HLodS8H2GoWbnBXWcz7EkY773dKdD4JEv": {
+  "bal": 0,
+  "tx": 4,
+  "files": [
+   "solved/andy-bauch-new-money-cog-428ksats/README.md",
+   "solved/andy-bauch-new-money-cog-428ksats/LOG.md"
+  ]
+ },
+ "3Q1Qzs6EmTVE4JeUWRJVNxi9v5UJLN2mtc": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/bam-askabitcoiner-seed-cipher/LOG.md",
+   "solved/bam-askabitcoiner-seed-cipher/README.md"
+  ]
+ },
+ "37xcRXcYRht9VZJeLYWegDRC2fjX5XVnAp": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/bc1q21-timelock-challenge-l5-100ksats/LOG.md",
+   "solved/bc1q21-timelock-challenge-l5-100ksats/README.md"
+  ]
+ },
+ "bc1q3pwpgp7dkhtzj6qya39l8tu6dgdarv9gr9kx0r": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/bc1q21-timelock-challenge-l5-100ksats/README.md"
+  ]
+ },
+ "bc1q94ecsn0qk8lap2gefrycnms3ruepy889z969a6": {
+  "bal": null,
+  "tx": "HTTP Error 429: Too Many Requests",
+  "files": [
+   "solved/bitcoin-movie-enigma-100ksats/LOG.md",
+   "solved/bitcoin-movie-enigma-100ksats/README.md"
+  ]
+ },
+ "35h2x1Rqq3HmV1NX4KQAGZoz8Vmf42ktQT": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/bitcoin-movie-enigma-100ksats/README.md"
+  ]
+ },
+ "1PLa3c2xjtoP6YE1FvaLhsf4akSxvdv3Ta": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/book-quiz-7-million/README.md"
+  ]
+ },
+ "1B3X6xQxSGQYkE4JMR1BwbZ4S5J99SWd2V": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/book-quiz-7-million/README.md"
+  ]
+ },
+ "bc1qdu8mh9qjtjhy89mvhmcgf66ul6ld92rdr6qzad": {
+  "bal": 924704,
+  "tx": 6,
+  "files": [
+   "solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/LOG.md"
+  ]
+ },
+ "bc1qw8uecdjvuedtkg4s2kku4s2ak9r2cm59khclfr": {
+  "bal": 1000000,
+  "tx": 1,
+  "files": [
+   "solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/README.md"
+  ]
+ },
+ "1FLAMEN6rq2BqMnkUmsJBqCGWdwgVKcegd": {
+  "bal": 0,
+  "tx": 30,
+  "files": [
+   "solved/coin-artist-torched-h34r7s/README.md"
+  ]
+ },
+ "1KDUcZh5Z6H1of4Pwoy5ojJtkQxcQBHhnH": {
+  "bal": null,
+  "tx": "HTTP Error 429: Too Many Requests",
+  "files": [
+   "solved/commander-u-puzzle-8-5btc/README.md",
+   "solved/commander-u-puzzle-8-5btc/LOG.md"
+  ]
+ },
+ "13CiiWnD475JHMyY7jc42tEw9KgTsMbr1p": {
+  "bal": 546,
+  "tx": 1,
+  "files": [
+   "solved/commander-u-puzzle-8-5btc/README.md"
+  ]
+ },
+ "bc1qych2me6h85j38s3xmfwdkcvpqakpld3yr2y5ss": {
+  "bal": null,
+  "tx": "<urlopen error _ssl.c:1015: The handshake operation timed out>",
+  "files": [
+   "solved/dug-student-treasure-hunt-63ksats/README.md",
+   "solved/dug-student-treasure-hunt-63ksats/LOG.md"
+  ]
+ },
+ "bc1qphfklk568cf93267yetpngqsz0mthw4z4x2q69": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/dug-student-treasure-hunt-63ksats/README.md"
+  ]
+ },
+ "bc1qnclravnmv7vta9fhnp44hu3y85z3tfgz0n33wl": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/dug-student-treasure-hunt-63ksats/README.md"
+  ]
+ },
+ "129jw1GUGwiJbf4rL7qEANPbxvSRC5zfHN": {
+  "bal": 0,
+  "tx": 31,
+  "files": [
+   "solved/grycoin-chain/README.md",
+   "solved/quizchain2-series/README.md"
+  ]
+ },
+ "1GajcPPZYUCeCV8LQ126qM1iJjBYEFpf1g": {
+  "bal": 0,
+  "tx": 0,
+  "files": [
+   "solved/hunghuatang-8964-btc-puzzle/LOG.md"
+  ]
+ },
+ "1DprL7pbKGwjMKoJ4c6BEKrTmtbPB4AiNJ": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/iamabananaamaa-puzzles/README.md"
+  ]
+ },
+ "1wkQxZaewFqYrDJeVnxqrfMKfJykdRfr5": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/iamabananaamaa-puzzles/README.md"
+  ]
+ },
+ "37XTVuaWt1zyUPRgDDpsnoo5ioHk2Da6Fs": {
+  "bal": 0,
+  "tx": 10,
+  "files": [
+   "solved/iesta-1btc-hidden-in-plain-sight-2018/LOG.md",
+   "solved/iesta-1btc-hidden-in-plain-sight-2018/README.md"
+  ]
+ },
+ "3CcxyPhyvyc3S9UuPfu42GNZLvVVV11Uk8": {
+  "bal": 12510,
+  "tx": 13,
+  "files": [
+   "solved/iesta-1btc-hidden-in-plain-sight-2018/LOG.md",
+   "solved/iesta-1btc-hidden-in-plain-sight-2018/README.md"
+  ]
+ },
+ "31hK4EvopK8mYYXZ4zeSKmpSNz5bSdZPhC": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/iesta-1btc-hidden-in-plain-sight-2018/README.md"
+  ]
+ },
+ "33JcD412AN5wTSuw7aSUwYv6RqS7kwJHtv": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/iesta-1btc-hidden-in-plain-sight-2018/README.md"
+  ]
+ },
+ "bc1qcv84707v4sglaj306qezkcrun4eejh77k8cyjr": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/keysa-crack-the-seed-369ksats/README.md",
+   "solved/keysa-crack-the-seed-369ksats/LOG.md"
+  ]
+ },
+ "bc1q82gz5dnpxnqmvzrkusm8yc0nt4dcqp8gd3y59j": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/keysa-crack-the-seed-369ksats/README.md"
+  ]
+ },
+ "1EHiMwCPzcvMdeGowsowVF2X2PgLo67Qj7": {
+  "bal": 0,
+  "tx": 0,
+  "files": [
+   "solved/ledger-donjon-ctf/README.md"
+  ]
+ },
+ "1NqPwPp7hEXZ3Atj77Ue11xAEMmXqAXwrQ": {
+  "bal": 0,
+  "tx": 17,
+  "files": [
+   "solved/liberte-guidant-le-peuple-2019/README.md"
+  ]
+ },
+ "bc1q32e3dxcd0n2tlzdmchraf2057d0ax4xdwrk3jq": {
+  "bal": 0,
+  "tx": 3,
+  "files": [
+   "solved/luckylurker-vault-1-0-0008btc/README.md",
+   "solved/luckylurker-seed-riddles-80ksats/README.md",
+   "solved/luckylurker-seed-riddles-80ksats/LOG.md"
+  ]
+ },
+ "17oKQHHRxdQBiRaGKCoVDQJfebhPaZV3r7": {
+  "bal": 79638,
+  "tx": 1,
+  "files": [
+   "solved/luckylurker-vault-1-0-0008btc/README.md"
+  ]
+ },
+ "bc1qnepv9pcnqvndux9h9mcaxvk6u993rc0lew9fpp": {
+  "bal": 100000000,
+  "tx": 1,
+  "files": [
+   "solved/luckylurker-vault-1-0-0008btc/README.md"
+  ]
+ },
+ "16RGFo6hjq9ym6Pj7N5H7L1NR1rVPJyw2v": {
+  "bal": null,
+  "tx": "<urlopen error _ssl.c:1015: The handshake operation timed out>",
+  "files": [
+   "solved/mini-puzzles-retiredcoder/README.md"
+  ]
+ },
+ "1h8BNZkhsPiu6EKazP19WkGxDw3jHf9aT": {
+  "bal": null,
+  "tx": "HTTP Error 429: Too Many Requests",
+  "files": [
+   "solved/satoshi-maze/README.md",
+   "solved/phemex-dorian-nakamoto/LOG.md",
+   "solved/phemex-dorian-nakamoto/README.md"
+  ]
+ },
+ "1MeQumbMGbTDPUNtBbLwzfyZqeeZzpRnex": {
+  "bal": null,
+  "tx": "HTTP Error 429: Too Many Requests",
+  "files": [
+   "solved/picture-puzzle-1mbtc/README.md"
+  ]
+ },
+ "16NLaozWwi4JSTRMnMfi3oCkBjXBWVFgYR": {
+  "bal": null,
+  "tx": "HTTP Error 429: Too Many Requests",
+  "files": [
+   "solved/quizchain-series/README.md"
+  ]
+ },
+ "1HfaXQw45mg9VmxTHtvX5mrGNw8GX4tuHa": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/quizchain-series/README.md"
+  ]
+ },
+ "1Thanksg9t4MRoCH2CM3cArWq26JiNvMY": {
+  "bal": 2032998,
+  "tx": 5,
+  "files": [
+   "solved/quizchain2-series/README.md"
+  ]
+ },
+ "14jnHDoGcSLThfg2pWrCKKkgeA4KGDwFGj": {
+  "bal": 0,
+  "tx": 8,
+  "files": [
+   "solved/quizchain2-series/README.md"
+  ]
+ },
+ "16YUMnqAExU7yCCRaE1kfFrc4X9c4dMFjL": {
+  "bal": 2027060,
+  "tx": 3,
+  "files": [
+   "solved/quizchain2-series/README.md"
+  ]
+ },
+ "1FLVbrhTQBpR9qnTKCuPHdjfvx6YTCWuc1": {
+  "bal": 0,
+  "tx": 7,
+  "files": [
+   "solved/quizchain2-series/README.md"
+  ]
+ },
+ "1GNrvamE9WP4DL6hTicWy1aoqCUwFM2Jbz": {
+  "bal": 0,
+  "tx": 2,
+  "files": [
+   "solved/satoshi-birthday-7-million-quiz/README.md"
+  ]
+ },
+ "1AndrewYangForPresident2o2ozm6Pzd": {
+  "bal": 155400,
+  "tx": 2,
+  "files": [
+   "solved/satoshi-birthday-7-million-quiz/README.md"
+  ]
+ },
+ "1TRUMPforPresident2o2oxxxxxAvY6s": {
+  "bal": null,
+  "tx": "<urlopen error _ssl.c:1015: The handshake operation timed out>",
+  "files": [
+   "solved/satoshi-birthday-7-million-quiz/README.md"
+  ]
+ },
+ "1899BGHGR4itdmJEN8MFGxyVkAcis4brop": {
+  "bal": 0,
+  "tx": 4,
+  "files": [
+   "solved/satoshis-treasure-arg-1m/LOG.md"
+  ]
+ },
+ "1E3NARnUX25UgMvZd5EZTutD9yVHTVGDNC": {
+  "bal": null,
+  "tx": "HTTP Error 429: Too Many Requests",
+  "files": [
+   "solved/trivia-brainwallet-0-04btc/README.md"
+  ]
+ },
+ "1HB5XMLmzFVj8ALj6mfBsbifRoD4miY36v": {
+  "bal": 20148071,
+  "tx": 26717,
+  "files": [
+   "solved/trivia-brainwallet-0-04btc/README.md"
+  ]
+ },
+ "bc1qhzy6j4amw26z7e694mgfr7kvzl7xteu54f0a85": {
+  "bal": 0,
+  "tx": 3,
+  "files": [
+   "solved/veteranhodl-hunting-time-420ksats/README.md",
+   "solved/veteranhodl-hunting-time-420ksats/LOG.md"
+  ]
+ },
+ "1JKb1617p68H5MPkoNaMtaJCqKDU3h8qSn": {
+  "bal": 0,
+  "tx": 4,
+  "files": [
+   "solved/warpwallet-challenges/README.md"
+  ]
+ },
+ "1LhQZc57j9i3xofj5poayd6PnakN7xHwDA": {
+  "bal": 0,
+  "tx": 6,
+  "files": [
+   "solved/wickex-youtube-puzzle/README.md"
+  ]
+ },
+ "bc1q3nxe7436s3mlrkyrg3uv2a40yt5dcmfu7tggx5": {
+  "bal": 0,
+  "tx": 7,
+  "files": [
+   "solved/wonderabbit-prometheus-1msats/LOG.md",
+   "solved/wonderabbit-prometheus-1msats/README.md"
+  ]
+ },
+ "1cryptoGeCRiTzVgxBQcKFFjSVydN1GW7": {
+  "bal": 0,
+  "tx": 5,
+  "files": [
+   "solved/zden-haluska-lvl5-555ksats/README.md",
+   "solved/zden-haluska-lvl5-555ksats/LOG.md"
+  ]
+ }
+}

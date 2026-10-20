@@ -27,3 +27,12 @@
 - Результат: перенесено 2 файлов данных → `data/ocp/`, 7 кода → `tools/ocp/`,1 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в базе, пропущено: 3. Статус по OCP: `open`.
 - Артефакты: `2-mid-prizes/arweave-puzzle-10-500ar/analysis/genesis28-results.json`, `2-mid-prizes/arweave-puzzle-10-500ar/puzzle.json`, `2-mid-prizes/arweave-puzzle-10-500ar/tools/REPRODUCE.md`, `2-mid-prizes/arweave-puzzle-10-500ar/tools/fetch_genesis28_inputs.py`, `2-mid-prizes/arweave-puzzle-10-500ar/tools/oracle.py`, `2-mid-prizes/arweave-puzzle-10-500ar/tools/original_page_fixture.js`, `2-mid-prizes/arweave-puzzle-10-500ar/tools/search_genesis28.py`, `2-mid-prizes/arweave-puzzle-10-500ar/tools/test_oracle.py`, `2-mid-prizes/arweave-puzzle-10-500ar/tools/toolchain_selftest.py`
 - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/arweave-puzzle-10-500ar ; полная дельта — `_sources/ocp_sync_2026-10-18/delta_report.md`.
+
+## 2026-10-19 10:13 UTC — Qoder — ссылка Пользователя на HomelessPhD/AR_Puzzles (только сбор данных)
+
+- Контекст: ссылка Пользователя на клубный репозиторий https://github.com/HomelessPhD/AR_Puzzles (main). Состояние по README: **не решены #3, #10, #11**; решены #5, #7, #8, #12 (их решения — независимая калибровка оракула серии).
+- Скачано в `puzzles/arweave-puzzle-3-1000ar/data/homelessphd/`: `PZL3.md` (sha256 4dffc903…f5d6), `PZL10.md` (97ab34be…64fb), `ArweaveP_user_tweets.xlsx` (d60658b4…aab0), распакованный дамп `tweets.tsv` (403 твита @ArweaveP, 2019-05-27…2022+).
+- Проверка дампа: новых авторских подсказок по #3/#10/#11 нет. Найдены только уже известные: «Did anybody count the dots?», «N.1.7.0.0 → third pic obsolete», «0xFF2142… also included somewhere in the image», «format does not matter», «Next set of hints when AR reaches $100». Твит от 2020-05-23 раскрывает механизм решения другого пазла серии (sha256(hexagon) → 8 hex → ключ) — это решённый #7, не #11.
+- Прогонов в этом проходе не запускалось; балансы не менялись; транзакций нет. Он-чейн статусы — последние подтверждённые в README.
+
+- По #10: добавлен `PZL10.md` — это тот же разбор сообщества, что и в README репозитория; авторских подсказок о длине/алфавите по-прежнему нет (подтверждает запись README «no length or charset constraint»). Новых кандидатов не появилось; ось не запускалась.

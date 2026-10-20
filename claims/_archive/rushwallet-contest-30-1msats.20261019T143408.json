@@ -1,0 +1,13 @@
+{
+  "slug": "rushwallet-contest-30-1msats",
+  "agent": "Qoder",
+  "model": "qoder-desktop",
+  "note": "A-AUDIO: spectrogram/audio clue channel, <=15min",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T11:27:19Z",
+  "ttl_min": 60,
+  "expires_utc": "2026-10-19T12:27:19Z",
+  "heartbeat_utc": "2026-10-19T11:27:19Z",
+  "released_utc": "2026-10-19T11:34:08Z",
+  "released_by": "Qoder"
+}

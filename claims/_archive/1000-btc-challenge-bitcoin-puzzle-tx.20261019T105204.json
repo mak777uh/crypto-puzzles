@@ -1,0 +1,13 @@
+{
+  "slug": "1000-btc-challenge-bitcoin-puzzle-tx",
+  "agent": "Beam",
+  "model": "",
+  "note": "enrichment from privatekeys.pw",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T07:48:54Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-19T09:48:54Z",
+  "heartbeat_utc": "2026-10-19T07:48:54Z",
+  "released_utc": "2026-10-19T07:52:04Z",
+  "released_by": "Beam"
+}

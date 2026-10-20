@@ -1,0 +1,1109 @@
+[
+ {
+  "frame": "f_0001.png",
+  "items": []
+ },
+ {
+  "frame": "f_0002.png",
+  "items": []
+ },
+ {
+  "frame": "f_0003.png",
+  "items": [
+   {
+    "text": "Dmitri",
+    "conf": 1.0,
+    "y": 36,
+    "x": 61
+   }
+  ]
+ },
+ {
+  "frame": "f_0004.png",
+  "items": [
+   {
+    "text": "Dmitri",
+    "conf": 1.0,
+    "y": 36,
+    "x": 61
+   }
+  ]
+ },
+ {
+  "frame": "f_0005.png",
+  "items": []
+ },
+ {
+  "frame": "f_0006.png",
+  "items": [
+   {
+    "text": "B",
+    "conf": 0.977,
+    "y": 40,
+    "x": 77
+   },
+   {
+    "text": "B",
+    "conf": 0.995,
+    "y": 36,
+    "x": 201
+   },
+   {
+    "text": "B",
+    "conf": 0.96,
+    "y": 83,
+    "x": 248
+   }
+  ]
+ },
+ {
+  "frame": "f_0007.png",
+  "items": [
+   {
+    "text": "B",
+    "conf": 0.969,
+    "y": 83,
+    "x": 248
+   }
+  ]
+ },
+ {
+  "frame": "f_0008.png",
+  "items": []
+ },
+ {
+  "frame": "f_0009.png",
+  "items": [
+   {
+    "text": "Jucuntulco",
+    "conf": 0.363,
+    "y": 50,
+    "x": 186
+   }
+  ]
+ },
+ {
+  "frame": "f_0010.png",
+  "items": [
+   {
+    "text": "Jucuntulco",
+    "conf": 0.362,
+    "y": 50,
+    "x": 186
+   }
+  ]
+ },
+ {
+  "frame": "f_0011.png",
+  "items": [
+   {
+    "text": "Jucuntulco",
+    "conf": 0.31,
+    "y": 50,
+    "x": 186
+   }
+  ]
+ },
+ {
+  "frame": "f_0012.png",
+  "items": [
+   {
+    "text": "Jucunkulco",
+    "conf": 0.275,
+    "y": 50,
+    "x": 186
+   }
+  ]
+ },
+ {
+  "frame": "f_0013.png",
+  "items": [
+   {
+    "text": "Jucuntulca",
+    "conf": 0.362,
+    "y": 50,
+    "x": 186
+   }
+  ]
+ },
+ {
+  "frame": "f_0014.png",
+  "items": [
+   {
+    "text": "Jucuntulca",
+    "conf": 0.334,
+    "y": 50,
+    "x": 186
+   }
+  ]
+ },
+ {
+  "frame": "f_0015.png",
+  "items": [
+   {
+    "text": "Jucuntulca",
+    "conf": 0.325,
+    "y": 50,
+    "x": 186
+   }
+  ]
+ },
+ {
+  "frame": "f_0016.png",
+  "items": [
+   {
+    "text": "Jucuntulco",
+    "conf": 0.351,
+    "y": 50,
+    "x": 186
+   }
+  ]
+ },
+ {
+  "frame": "f_0017.png",
+  "items": []
+ },
+ {
+  "frame": "f_0018.png",
+  "items": []
+ },
+ {
+  "frame": "f_0019.png",
+  "items": []
+ },
+ {
+  "frame": "f_0020.png",
+  "items": []
+ },
+ {
+  "frame": "f_0021.png",
+  "items": []
+ },
+ {
+  "frame": "f_0022.png",
+  "items": [
+   {
+    "text": "cuick",
+    "conf": 0.511,
+    "y": 7,
+    "x": 164
+   }
+  ]
+ },
+ {
+  "frame": "f_0023.png",
+  "items": [
+   {
+    "text": "click",
+    "conf": 0.88,
+    "y": 8,
+    "x": 165
+   },
+   {
+    "text": "cLAck",
+    "conf": 0.451,
+    "y": 15,
+    "x": 156
+   },
+   {
+    "text": "cuch",
+    "conf": 0.336,
+    "y": 37,
+    "x": 161
+   }
+  ]
+ },
+ {
+  "frame": "f_0024.png",
+  "items": []
+ },
+ {
+  "frame": "f_0025.png",
+  "items": []
+ },
+ {
+  "frame": "f_0026.png",
+  "items": []
+ },
+ {
+  "frame": "f_0027.png",
+  "items": []
+ },
+ {
+  "frame": "f_0028.png",
+  "items": []
+ },
+ {
+  "frame": "f_0029.png",
+  "items": []
+ },
+ {
+  "frame": "f_0030.png",
+  "items": []
+ },
+ {
+  "frame": "f_0031.png",
+  "items": []
+ },
+ {
+  "frame": "f_0032.png",
+  "items": []
+ },
+ {
+  "frame": "f_0033.png",
+  "items": []
+ },
+ {
+  "frame": "f_0034.png",
+  "items": []
+ },
+ {
+  "frame": "f_0035.png",
+  "items": []
+ },
+ {
+  "frame": "f_0036.png",
+  "items": []
+ },
+ {
+  "frame": "f_0037.png",
+  "items": []
+ },
+ {
+  "frame": "f_0038.png",
+  "items": []
+ },
+ {
+  "frame": "f_0039.png",
+  "items": []
+ },
+ {
+  "frame": "f_0040.png",
+  "items": []
+ },
+ {
+  "frame": "f_0041.png",
+  "items": []
+ },
+ {
+  "frame": "f_0042.png",
+  "items": []
+ },
+ {
+  "frame": "f_0043.png",
+  "items": []
+ },
+ {
+  "frame": "f_0044.png",
+  "items": []
+ },
+ {
+  "frame": "f_0045.png",
+  "items": [
+   {
+    "text": "100*",
+    "conf": 0.864,
+    "y": 113,
+    "x": 148
+   }
+  ]
+ },
+ {
+  "frame": "f_0046.png",
+  "items": []
+ },
+ {
+  "frame": "f_0047.png",
+  "items": []
+ },
+ {
+  "frame": "f_0048.png",
+  "items": []
+ },
+ {
+  "frame": "f_0049.png",
+  "items": []
+ },
+ {
+  "frame": "f_0050.png",
+  "items": []
+ },
+ {
+  "frame": "f_0051.png",
+  "items": []
+ },
+ {
+  "frame": "f_0052.png",
+  "items": []
+ },
+ {
+  "frame": "f_0053.png",
+  "items": []
+ },
+ {
+  "frame": "f_0054.png",
+  "items": []
+ },
+ {
+  "frame": "f_0055.png",
+  "items": []
+ },
+ {
+  "frame": "f_0056.png",
+  "items": []
+ },
+ {
+  "frame": "f_0057.png",
+  "items": []
+ },
+ {
+  "frame": "f_0058.png",
+  "items": []
+ },
+ {
+  "frame": "f_0059.png",
+  "items": []
+ },
+ {
+  "frame": "f_0060.png",
+  "items": [
+   {
+    "text": "JdPrintcr",
+    "conf": 0.896,
+    "y": 36,
+    "x": 21
+   }
+  ]
+ },
+ {
+  "frame": "f_0061.png",
+  "items": [
+   {
+    "text": "Tonys",
+    "conf": 0.33,
+    "y": 24,
+    "x": 29
+   },
+   {
+    "text": "JdPrintcr",
+    "conf": 0.879,
+    "y": 36,
+    "x": 21
+   }
+  ]
+ },
+ {
+  "frame": "f_0062.png",
+  "items": [
+   {
+    "text": "Tonys",
+    "conf": 0.344,
+    "y": 24,
+    "x": 29
+   },
+   {
+    "text": "JdPrintcr",
+    "conf": 0.879,
+    "y": 36,
+    "x": 21
+   }
+  ]
+ },
+ {
+  "frame": "f_0063.png",
+  "items": [
+   {
+    "text": "Tonys",
+    "conf": 0.333,
+    "y": 24,
+    "x": 29
+   },
+   {
+    "text": "JdPrintcr",
+    "conf": 0.909,
+    "y": 36,
+    "x": 21
+   }
+  ]
+ },
+ {
+  "frame": "f_0064.png",
+  "items": [
+   {
+    "text": "Tonys",
+    "conf": 0.333,
+    "y": 24,
+    "x": 29
+   },
+   {
+    "text": "JdPrintcr",
+    "conf": 0.909,
+    "y": 36,
+    "x": 21
+   }
+  ]
+ },
+ {
+  "frame": "f_0065.png",
+  "items": [
+   {
+    "text": "Tonys",
+    "conf": 0.377,
+    "y": 24,
+    "x": 29
+   },
+   {
+    "text": "JdPrintcr",
+    "conf": 0.906,
+    "y": 36,
+    "x": 21
+   }
+  ]
+ },
+ {
+  "frame": "f_0066.png",
+  "items": [
+   {
+    "text": "Tonys",
+    "conf": 0.391,
+    "y": 24,
+    "x": 29
+   },
+   {
+    "text": "JdPrintcr",
+    "conf": 0.884,
+    "y": 36,
+    "x": 21
+   },
+   {
+    "text": "100*",
+    "conf": 0.742,
+    "y": 69,
+    "x": 31
+   }
+  ]
+ },
+ {
+  "frame": "f_0067.png",
+  "items": [
+   {
+    "text": "Tonys",
+    "conf": 0.34,
+    "y": 24,
+    "x": 29
+   },
+   {
+    "text": "JdPrintcr",
+    "conf": 0.889,
+    "y": 36,
+    "x": 21
+   },
+   {
+    "text": "100*",
+    "conf": 0.719,
+    "y": 69,
+    "x": 31
+   }
+  ]
+ },
+ {
+  "frame": "f_0068.png",
+  "items": [
+   {
+    "text": "Tonys",
+    "conf": 0.34,
+    "y": 24,
+    "x": 29
+   },
+   {
+    "text": "JdPrintcr",
+    "conf": 0.891,
+    "y": 36,
+    "x": 21
+   },
+   {
+    "text": "100*",
+    "conf": 0.761,
+    "y": 69,
+    "x": 31
+   }
+  ]
+ },
+ {
+  "frame": "f_0069.png",
+  "items": [
+   {
+    "text": "Sean'$ Outpost",
+    "conf": 0.857,
+    "y": 110,
+    "x": 87
+   },
+   {
+    "text": "seansoutdost-com",
+    "conf": 0.273,
+    "y": 137,
+    "x": 125
+   }
+  ]
+ },
+ {
+  "frame": "f_0070.png",
+  "items": [
+   {
+    "text": "Sean'$ Outpost",
+    "conf": 0.908,
+    "y": 110,
+    "x": 87
+   },
+   {
+    "text": "seansoutdost-com",
+    "conf": 0.292,
+    "y": 137,
+    "x": 125
+   }
+  ]
+ },
+ {
+  "frame": "f_0071.png",
+  "items": [
+   {
+    "text": "Sean'$ Outpost",
+    "conf": 0.704,
+    "y": 110,
+    "x": 87
+   },
+   {
+    "text": "seansoutdost-com",
+    "conf": 0.316,
+    "y": 137,
+    "x": 125
+   }
+  ]
+ },
+ {
+  "frame": "f_0072.png",
+  "items": [
+   {
+    "text": "Sean'$ Outpost",
+    "conf": 0.716,
+    "y": 110,
+    "x": 87
+   },
+   {
+    "text": "seansoutdost-com",
+    "conf": 0.296,
+    "y": 137,
+    "x": 125
+   }
+  ]
+ },
+ {
+  "frame": "f_0073.png",
+  "items": [
+   {
+    "text": "Sean'$ Outpost",
+    "conf": 0.687,
+    "y": 110,
+    "x": 87
+   },
+   {
+    "text": "seansoutdost-com",
+    "conf": 0.355,
+    "y": 137,
+    "x": 125
+   }
+  ]
+ },
+ {
+  "frame": "f_0074.png",
+  "items": [
+   {
+    "text": "Sean'$ Outpost",
+    "conf": 0.742,
+    "y": 110,
+    "x": 87
+   },
+   {
+    "text": "seansoutdost-com",
+    "conf": 0.355,
+    "y": 137,
+    "x": 125
+   }
+  ]
+ },
+ {
+  "frame": "f_0075.png",
+  "items": []
+ },
+ {
+  "frame": "f_0076.png",
+  "items": []
+ },
+ {
+  "frame": "f_0077.png",
+  "items": []
+ },
+ {
+  "frame": "f_0078.png",
+  "items": []
+ },
+ {
+  "frame": "f_0079.png",
+  "items": [
+   {
+    "text": "RushWallet",
+    "conf": 0.774,
+    "y": 16,
+    "x": 72
+   },
+   {
+    "text": "Tnc",
+    "conf": 0.35,
+    "y": 21,
+    "x": 174
+   }
+  ]
+ },
+ {
+  "frame": "f_0080.png",
+  "items": [
+   {
+    "text": "Rush Maye Fundraiser",
+    "conf": 0.75,
+    "y": 14,
+    "x": 71
+   },
+   {
+    "text": "rushwallet com",
+    "conf": 0.88,
+    "y": 150,
+    "x": 111
+   }
+  ]
+ },
+ {
+  "frame": "f_0081.png",
+  "items": [
+   {
+    "text": "Rush arypleit Fundraiser",
+    "conf": 0.382,
+    "y": 15,
+    "x": 71
+   },
+   {
+    "text": "rushwallet com",
+    "conf": 0.523,
+    "y": 149,
+    "x": 111
+   }
+  ]
+ },
+ {
+  "frame": "f_0082.png",
+  "items": [
+   {
+    "text": "rushwallet com",
+    "conf": 0.605,
+    "y": 149,
+    "x": 111
+   }
+  ]
+ },
+ {
+  "frame": "f_0083.png",
+  "items": [
+   {
+    "text": "Rush Wayueit Fundraiser",
+    "conf": 0.378,
+    "y": 15,
+    "x": 71
+   },
+   {
+    "text": "rushwallet com",
+    "conf": 0.623,
+    "y": 149,
+    "x": 111
+   }
+  ]
+ },
+ {
+  "frame": "f_0084.png",
+  "items": [
+   {
+    "text": "Rush Waueit Fundraiser",
+    "conf": 0.328,
+    "y": 15,
+    "x": 71
+   },
+   {
+    "text": "rushwallet com",
+    "conf": 0.589,
+    "y": 149,
+    "x": 111
+   }
+  ]
+ },
+ {
+  "frame": "f_0085.png",
+  "items": [
+   {
+    "text": "Rush Wayent",
+    "conf": 0.38,
+    "y": 15,
+    "x": 71
+   },
+   {
+    "text": "Fundraiser",
+    "conf": 1.0,
+    "y": 16,
+    "x": 159
+   },
+   {
+    "text": "rushwallet com",
+    "conf": 0.56,
+    "y": 149,
+    "x": 111
+   }
+  ]
+ },
+ {
+  "frame": "f_0086.png",
+  "items": [
+   {
+    "text": "Rush Maye Fundraiser",
+    "conf": 0.727,
+    "y": 14,
+    "x": 71
+   },
+   {
+    "text": "rushwallet com",
+    "conf": 0.549,
+    "y": 149,
+    "x": 111
+   }
+  ]
+ },
+ {
+  "frame": "f_0087.png",
+  "items": [
+   {
+    "text": "Rush Maye Fundraiser",
+    "conf": 0.703,
+    "y": 14,
+    "x": 71
+   },
+   {
+    "text": "rushwallet com",
+    "conf": 0.543,
+    "y": 149,
+    "x": 111
+   }
+  ]
+ },
+ {
+  "frame": "f_0088.png",
+  "items": [
+   {
+    "text": "Rush Marypeit",
+    "conf": 0.324,
+    "y": 15,
+    "x": 71
+   },
+   {
+    "text": "Fundraiser",
+    "conf": 0.85,
+    "y": 16,
+    "x": 159
+   },
+   {
+    "text": "rushwallet com",
+    "conf": 0.553,
+    "y": 149,
+    "x": 111
+   }
+  ]
+ },
+ {
+  "frame": "f_0089.png",
+  "items": [
+   {
+    "text": "Rush ayet",
+    "conf": 0.323,
+    "y": 14,
+    "x": 71
+   },
+   {
+    "text": "Fundraiser",
+    "conf": 0.85,
+    "y": 16,
+    "x": 159
+   },
+   {
+    "text": "rushwallet com",
+    "conf": 0.584,
+    "y": 149,
+    "x": 111
+   }
+  ]
+ },
+ {
+  "frame": "f_0090.png",
+  "items": [
+   {
+    "text": "Rush ayet",
+    "conf": 0.294,
+    "y": 14,
+    "x": 71
+   },
+   {
+    "text": "Fundraiser",
+    "conf": 0.831,
+    "y": 16,
+    "x": 159
+   },
+   {
+    "text": "rushwallet com",
+    "conf": 0.702,
+    "y": 149,
+    "x": 111
+   }
+  ]
+ },
+ {
+  "frame": "f_0091.png",
+  "items": [
+   {
+    "text": "Rush ayet",
+    "conf": 0.305,
+    "y": 14,
+    "x": 71
+   },
+   {
+    "text": "Fundraiser",
+    "conf": 1.0,
+    "y": 16,
+    "x": 159
+   },
+   {
+    "text": "rushwallet com",
+    "conf": 0.543,
+    "y": 149,
+    "x": 111
+   }
+  ]
+ },
+ {
+  "frame": "f_0092.png",
+  "items": [
+   {
+    "text": "rushwallet com",
+    "conf": 0.751,
+    "y": 150,
+    "x": 111
+   }
+  ]
+ },
+ {
+  "frame": "f_0093.png",
+  "items": []
+ },
+ {
+  "frame": "f_0094.png",
+  "items": []
+ },
+ {
+  "frame": "f_0095.png",
+  "items": []
+ },
+ {
+  "frame": "f_0096.png",
+  "items": []
+ },
+ {
+  "frame": "f_0097.png",
+  "items": []
+ },
+ {
+  "frame": "f_0098.png",
+  "items": [
+   {
+    "text": "Can you find the brainwallets?",
+    "conf": 0.782,
+    "y": 108,
+    "x": 128
+   }
+  ]
+ },
+ {
+  "frame": "f_0099.png",
+  "items": [
+   {
+    "text": "Can you find the brainwallets?",
+    "conf": 0.757,
+    "y": 109,
+    "x": 128
+   }
+  ]
+ },
+ {
+  "frame": "f_0100.png",
+  "items": [
+   {
+    "text": "Can you find the brainwallets?",
+    "conf": 0.821,
+    "y": 108,
+    "x": 128
+   }
+  ]
+ },
+ {
+  "frame": "f_0101.png",
+  "items": [
+   {
+    "text": "Can you find the brainwallets?",
+    "conf": 0.843,
+    "y": 108,
+    "x": 128
+   }
+  ]
+ },
+ {
+  "frame": "f_0102.png",
+  "items": [
+   {
+    "text": "Can you find the brainwallets?",
+    "conf": 0.768,
+    "y": 108,
+    "x": 128
+   }
+  ]
+ },
+ {
+  "frame": "f_0103.png",
+  "items": [
+   {
+    "text": "Want to win bitcoins?",
+    "conf": 0.939,
+    "y": 49,
+    "x": 124
+   }
+  ]
+ },
+ {
+  "frame": "f_0104.png",
+  "items": [
+   {
+    "text": "Want to win bitcoins?",
+    "conf": 0.954,
+    "y": 49,
+    "x": 124
+   }
+  ]
+ },
+ {
+  "frame": "f_0105.png",
+  "items": [
+   {
+    "text": "Want to win bitcoins?",
+    "conf": 0.671,
+    "y": 49,
+    "x": 124
+   },
+   {
+    "text": "rushwallet com/contest",
+    "conf": 0.668,
+    "y": 83,
+    "x": 110
+   }
+  ]
+ },
+ {
+  "frame": "f_0106.png",
+  "items": [
+   {
+    "text": "Want to win bitcoins?",
+    "conf": 0.796,
+    "y": 49,
+    "x": 124
+   },
+   {
+    "text": "rushwallet com/contest",
+    "conf": 0.802,
+    "y": 83,
+    "x": 110
+   }
+  ]
+ },
+ {
+  "frame": "f_0107.png",
+  "items": [
+   {
+    "text": "Want to win bitcoins?",
+    "conf": 0.658,
+    "y": 49,
+    "x": 124
+   },
+   {
+    "text": "rushwallet com/contest",
+    "conf": 0.806,
+    "y": 83,
+    "x": 110
+   }
+  ]
+ },
+ {
+  "frame": "f_0108.png",
+  "items": [
+   {
+    "text": "Want to win bitcoins?",
+    "conf": 0.951,
+    "y": 49,
+    "x": 124
+   },
+   {
+    "text": "rushwallet com/contest",
+    "conf": 0.538,
+    "y": 83,
+    "x": 110
+   }
+  ]
+ },
+ {
+  "frame": "f_0109.png",
+  "items": [
+   {
+    "text": "Want to win bitcoins?",
+    "conf": 0.943,
+    "y": 49,
+    "x": 124
+   },
+   {
+    "text": "rushwallet com/contest",
+    "conf": 0.728,
+    "y": 83,
+    "x": 110
+   }
+  ]
+ },
+ {
+  "frame": "f_0110.png",
+  "items": [
+   {
+    "text": "Want to win bitcoins?",
+    "conf": 0.926,
+    "y": 49,
+    "x": 124
+   },
+   {
+    "text": "rushwallet com/contest",
+    "conf": 0.574,
+    "y": 83,
+    "x": 110
+   }
+  ]
+ },
+ {
+  "frame": "f_0111.png",
+  "items": []
+ }
+]

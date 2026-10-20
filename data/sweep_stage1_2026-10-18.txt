@@ -1,0 +1,951 @@
+[P] 1000-btc-challenge-bitcoin-puzzle-tx  файлов=9  2.6 МБ  приз=1000 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:решен R:осталось R:решён R:solved R:закрыт L:статус
+    log| - Отказ (1): https://github.com/alexanderthurn/1000-BTC-Challenge [FAIL: IncompleteRead(294912 bytes read) ]
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] 11b-x-1371  файлов=8  0.5 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:осталось R:solved R:решен R:dead L:статус L:solved
+    log| - Артефакты: data/github/GITHUB_INTAKE.md, data/github/INTAKE_RESULT.json, data/github/_legacy_pointers.md, data/github/<owner>__<repo>/{files,raw,REP
+    log| - Статус шлюза: none (репо не найдено, проверено по 0 запросам к api.github.com и 0 бесплатным проверкам ls-remote/OCP)
+    log| - Ссылки/доказательства: нет репозиториев
+
+[P] 1btc-brainwallet-defcon-2014  файлов=6  0.0 МБ  приз=1 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:закрыт R:решен R:решён L:статус L:open
+    log| - Адрес/эскроу: n/a
+    log| - Источники: n/a
+    log| - Вся история и досье — в README.md этой папки; новые сессии описывать здесь (self-intro, что делал, результаты вкл. отрицательные, артефакты, ссылки)
+
+[P] 310-btc-challenge-0-31btc  файлов=6  0.1 МБ  приз=310 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:решён R:осталось R:решен R:закрыт L:статус L:open
+    log| - Отказ (1): https://news.ycombinator.com/item?id=18197639 [FAIL: HTTP Error 419:  | jina: HTTP Erro]
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] 973-eht-namuh-973  файлов=5  0.2 МБ  приз=4 ar
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:осталось R:solved R:решен L:статус L:solved
+    log| - Адрес/эскроу: n/a
+    log| - Источники: https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries
+    log| - Вся история и досье — в README.md этой папки; новые сессии описывать здесь (self-intro, что делал, результаты вкл. отрицательные, артефакты, ссылки)
+
+[P] 9vw04-gem-finder  файлов=351  25.2 МБ  приз=0.0202076 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: реестр [@agntn/puzzles](https://puzzles.agntn.dev/collec
+    markers: R:статус R:open R:закрыт L:open L:итог L:решен L:закрыт L:осталось
+    log| - Артефакты: data/github/GITHUB_INTAKE.md, data/github/INTAKE_RESULT.json, data/github/_legacy_pointers.md, data/github/<owner>__<repo>/{files,raw,REP
+    log| - Статус шлюза: partial (срезано потолками: собрано 4 кандидатов из 17 (--max-repos/--max-mb)); остаток в data/github/resume.json
+    log| - Ссылки/доказательства: https://github.com/agntn/puzzles, floflo777/open-crypto-puzzles, https://github.com/canalqb/puzzle_bc1qr5mssp6snmduqp9enx4dzm
+
+[P] actuarial-science-nft-hunt-10eth  файлов=3  0.0 МБ  приз=10 ETH
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:решен L:статус L:open
+    log| - Причина прогона: предыдущая попытка дала 0 файлов (GitHub IncompleteRead / HTTP 403).
+    log| - Метод: raw-README OCP-репо и/или зеркало web.archive.org.
+    log| - Результат: сохранено 0 из 3; см. `data/SOURCES.md`.
+
+[P] adam-2-0  файлов=7  0.3 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:осталось R:solved R:решен R:итог L:статус L:solved L:open
+    log| - Отказ (2): https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries [FAIL: HTTP Error 403: Forbidden | jina: ]; https://www.bbc.com/fut
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] ah-white-walking-banks-800ksats  файлов=14  0.3 МБ  приз=800000 sat
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:решен L:итог L:дальше L:закрыт L:open L:статус
+    log| - Результат: перенесено 2 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `2-mid-prizes/ah-white-walking-banks-800ksats/clues/author-posts.md`, `2-mid-prizes/ah-white-walking-banks-800ksats/puzzle.json`, `2-mid-
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/ah-white-walking-
+
+[P] anime-seed-phrase-puzzle-0-2btc  файлов=5  0.4 МБ  приз=0,2 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:открыт R:решен L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] aoi-nakamoto-quizchain-0-854btc  файлов=20  0.2 МБ  приз=0.777 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:solved R:решен R:осталось R:решён R:открыт L:open
+    log| - Что делать (бесплатный шаг): прочитать генератор/оракул пазла и подсказки автора на явные упоминания rounds / iterations / salt / «Electrum vs BIP39
+    log| - Артефакты: не создавались (запись текстовая).
+    log| - Ссылки: `solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/LOG.md` (запись 10:05), https://github.com/floflo777/open-crypto-puzzles/pull/44 ; 
+
+[P] arweave-puzzle-10-500ar  файлов=22  1.6 МБ  приз=500.02225493 AR
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:solved R:решен R:решён R:осталось R:dead L:статус
+    log| - Результат: перенесено 2 файлов данных → `data/ocp/`, 7 кода → `tools/ocp/`,1 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `2-mid-prizes/arweave-puzzle-10-500ar/analysis/genesis28-results.json`, `2-mid-prizes/arweave-puzzle-10-500ar/puzzle.json`, `2-mid-prizes
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/arweave-puzzle-10
+
+[P] arweave-puzzle-11-1eth  файлов=236  11.8 МБ  приз=1 ETH
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:решен R:решён R:осталось R:dead R:закрыт L:открыт
+    log| - Отсюда ось **A11-H1 (поиск по известному открытому тексту, НЕ перебор ключей)**: построить ~90 потоков из носителя (байтовые массивы L и A, row-majo
+    log| - **Самопроверка до поиска (обязательна):** синтетический носитель — в копию PNG в произвольное смещение внедряется адрес в каждой из форм, конвейер о
+    log| - Что даст результат: HIT → узнаём точный канал и кодировку автора и читаем рядом 32-байтовый ключ (это и есть решённая загадка). Негатив → закрывает 
+
+[P] arweave-puzzle-3-1000ar  файлов=30  1.3 МБ  приз=1000.165838006237 AR
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:solved R:решен R:решён R:осталось R:dead L:статус
+    log| - Результат: перенесено 15 файлов данных → `data/ocp/`, 5 кода → `tools/ocp/`,1 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. 
+    log| - Артефакты: `2-mid-prizes/arweave-puzzle-3-1000ar/analysis/funding-2026-09-04.json`, `2-mid-prizes/arweave-puzzle-3-1000ar/analysis/h1-result.json`, 
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/arweave-puzzle-3-
+
+[P] ballet-bobby-lee-2btc-cards  файлов=22  0.5 МБ  приз=2.00007358 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:solved R:решен R:открыт L:статус L:open
+    log| - Результат: перенесено 7 файлов данных → `data/ocp/`, 3 кода → `tools/ocp/`,3 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `1-big-prizes/ballet-bobby-lee-2btc-cards/clues/AA009926-revealed.jpg`, `1-big-prizes/ballet-bobby-lee-2btc-cards/clues/author-posts.md`,
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/1-big-prizes/ballet-bobby-lee-
+
+[P] bitaddress-bip38-giveaway-0-005297btc  файлов=17  2.6 МБ  приз=0,005297 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:решен R:открыт R:solved L:open L:закрыт
+    log| ## 2026-10-17, 21:32 — AutoClaw — ночной прогон (mode=cap)
+    log| - Ось (инсайт): Capitalize-варианты троек (регистр пароля неизвестен); бюджет 500 c, Pool(16); resume через data/night_progress.json.
+    log| - Результат: проверено 3945 (ось cap: 3945/9240), найдено 0. Ось НЕ доделана — продолжить следующим прогоном.
+
+[P] bitaps-shamir-challenge-1btc  файлов=21  0.4 МБ  приз=1.00016775 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:closed R:решен R:осталось R:итог R:solved L:статус
+    log| - Результат: перенесено 8 файлов данных → `data/ocp/`, 2 кода → `tools/ocp/`,1 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `1-big-prizes/bitaps-shamir-challenge-1btc/challenge.warc`, `1-big-prizes/bitaps-shamir-challenge-1btc/clues/author-posts.md`, `1-big-pri
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/1-big-prizes/bitaps-shamir-cha
+
+[P] bitcoin-coders-puzzle-07-21ksats  файлов=7  0.5 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:итог R:решен R:закрыт R:открыт L:статус
+    log| - Что делать (бесплатный шаг): прочитать генератор/оракул пазла и подсказки автора на явные упоминания rounds / iterations / salt / «Electrum vs BIP39
+    log| - Артефакты: не создавались (запись текстовая).
+    log| - Ссылки: `solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/LOG.md` (запись 10:05), https://github.com/floflo777/open-crypto-puzzles/pull/44 ; 
+
+[P] bitcoin-treasure-hunt-book-series  файлов=7  0.8 МБ  приз=0,3 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:решен R:решён R:итог R:solved L:статус
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] bitimage-kitten-photo-puzzle-95ksats  файлов=7  0.7 МБ  приз=0,00095 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:решен R:открыт R:решён R:solved L:статус
+    log| - Отказ (2): https://corey-lyle-phillips.medium.com/part-1-3-turn-your-photos-into- [FAIL: <urlopen error [Errno 11001] getad]; https://corey-lyle-phi
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] blm-brave-new-world-0-2btc  файлов=28  2.4 МБ  приз=20107284 sat
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:решен R:осталось R:итог R:тупик R:solved L:закрыт
+    log| - Что делать (бесплатный шаг): прочитать генератор/оракул пазла и подсказки автора на явные упоминания rounds / iterations / salt / «Electrum vs BIP39
+    log| - Артефакты: не создавались; в `data/ocp/` и `tools/ocp/` этого прохода лёг материал OCP по пазлу (см. запись 09:52).
+    log| - Ссылки: `solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/LOG.md` (запись 10:05), https://github.com/floflo777/open-crypto-puzzles/pull/44 ; 
+
+[P] cardano-13373665-challenge  файлов=5  0.2 МБ  приз=12,789241 ADA
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: `MASTER_CATALOG_v2_2026-10-16.md` (рабочие досье агентов
+    markers: R:решен R:решён R:осталось R:статус
+    log| - Что остаётся (для следующих агентов): (а) Ch5 — по SOLUTIONS.MD автор использовал **steghide БЕЗ пароля** на IPFS-картинке QmcUgS4LgPrVbtBoLMJAbrDLo
+    log| - Артефакты: `data/cardano_mclear.png`, `data/cardano_registry_logo.png`, `data/cardano_main.html`.
+    log| - Ссылки/доказательства: https://github.com/eggdropper/13373665Challenge (README: адреса и награды; SOLUTIONS.MD: методы Ch1–5); koios API (asset_info
+
+[P] cicada-3301  файлов=9  1.0 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:решен R:осталось R:решён R:open R:закрыт R:открыт L:статус
+    log| - Отказ (2): https://cicada-solvers.github.io [FAIL: HTTP Error 404: Not Found | jina: ]; https://uncovering-cicada.fandom.com/wiki/Liber_Primus [FAIL
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] coin-games-weekly-banknote-puzzles  файлов=8  0.4 МБ  приз=2,020 sat
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: реестр [@agntn/puzzles](https://puzzles.agntn.dev/collec
+    markers: R:solved R:решен L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] corey-phillips-kitten-passphrase-1msats  файлов=20  0.7 МБ  приз=1001900 sat
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:solved R:решен R:решён R:итог R:осталось L:статус
+    log| - Результат: перенесено 6 файлов данных → `data/ocp/`, 3 кода → `tools/ocp/`,1 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `2-mid-prizes/corey-phillips-kitten-passphrase-1msats/clues/author-posts.md`, `2-mid-prizes/corey-phillips-kitten-passphrase-1msats/data/
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/corey-phillips-ki
+
+[P] crypto-puzzles-2018-puzzle-2-0-05eth  файлов=845  210.4 МБ  приз=0.05 ETH
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:solved R:решен L:open L:solved L:итог L:закрыт
+    log| Прогонов не запускали.
+    log| - Артефакты: `data/ocp/**` этой папки; `_sources/ocp_sync_2026-10-18/delta_report.md`.
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58
+
+[P] cryptopuzzles-eth-easycore-numbers  файлов=9  0.1 МБ  приз=0,5 ETH
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Часть 6).
+    markers: R:решен R:статус R:решён R:осталось R:solved R:открыт R:закрыт L:статус
+    log| Оба призовых адреса **пусты**, оба выведены владельцем ключа (2020 и 2021). Это устойчиво подтверждает первоначальную классификацию каталога («решены»
+    log| - Примечание: одиночный вывод всей суммы не доказывает «solve» на 100% (автор мог вернуть средства), но совпадение с исходной меткой «solved» каталога
+    log| - Артефакты: сырые ответы API — в `tools/balance_check_2026-10-17_2320_bigpickle.txt`; транзакции воспроизводимы командами `blockstream.info/api/addre
+
+[P] dead-ends-registry  файлов=2  0.0 МБ  приз=400 AR
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: `MASTER_CATALOG_v2_2026-10-16.md` (агенты Hark, 16.10.20
+    markers: R:solved R:решен R:dead R:открыт R:закрыт R:решён R:open R:статус
+    log| - Адрес/эскроу: n/a
+    log| - Источники: n/a
+    log| - Вся история и досье — в README.md этой папки; новые сессии описывать здесь (self-intro, что делал, результаты вкл. отрицательные, артефакты, ссылки)
+
+[P] exitonly-challenge-14-30ksats  файлов=10  0.0 МБ  приз=30000 sat
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:решен R:solved L:статус L:open
+    log| - Результат: перенесено 2 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `3-small-prizes/exitonly-challenge-14-30ksats/clues/author-posts.md`, `3-small-prizes/exitonly-challenge-14-30ksats/puzzle.json`, `3-smal
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/3-small-prizes/exitonly-challe
+
+[P] fe-lang-bountiful-compiler-bounty-1eth  файлов=50  0.3 МБ  приз=1 ETH
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:решен R:осталось R:solved R:решён R:закрыт R:открыт
+    log| - Результат: перенесено 5 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `2-mid-prizes/fe-lang-bountiful-compiler-bounty-1eth/README.md`, `2-mid-prizes/fe-lang-bountiful-compiler-bounty-1eth/analysis/leads.md`,
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/fe-lang-bountiful
+
+[P] ghostnet  файлов=8  0.9 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:осталось R:решен R:итог L:статус L:open
+    log| - Отказ (3): https://www.nytimes.com/2009/03/29/technology/29spy.html [FAIL: HTTP Error 403: Forbidden | jina: ]; https://news.bbc.co.uk/1/hi/world/am
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] gold-crystal-ubisoft-hunt-500k  файлов=2  0.0 МБ  приз=—
+    head: **Тип**: физическая охота за кладом с платным входом (не on-chain пазл).
+    markers: R:solved R:статус R:открыт R:решен R:дальше L:solved L:dead-end L:статус
+    log| ## 2026-10-18, 13:05 — Qoder (проход верификации)
+    log| - Проверка живости доменов: goldandcrystal.com/en HTTP 200, unsolvedhunts.com HTTP 200 — охота активна, нерешена.
+    log| - Ончейн-компоненты не обнаружено (физический клад $500k, платный вход ~$40). Подтверждён вердикт off-chain/physical.
+
+[P] groestlcoin-puzzle-1000grs  файлов=4  0.1 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:решен R:дальше L:solved L:дальше L:open
+    log| - Отказ (1): https://bitcointalk.org/index.php?topic=5137602.0 [FAIL: <urlopen error [Errno 11001] getad]
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] gsmg-io-5btc-puzzle  файлов=1664  76.7 МБ  приз=1.2563451 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:solved R:закрыт R:closed R:открыт L:статус L:закрыт
+    log| **Вывод**: подтверждён вывод сообщества — 479 это **указатель, а не payload**; наши дополнительные селекторы
+    log| (прайм/зануление/шаги/окна) его не потребляют. **Ось закрыта.** GSMG: все известные переборные и читательные
+    log| оси пройдены; дальнейшее — только внешняя идея или новые данные.
+
+[P] guntis-vitolins-metamask-8-6eth  файлов=529  40.5 МБ  приз=10 ETH
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:решен R:осталось R:итог R:закрыт R:solved R:открыт
+    log| - Что делать (бесплатный шаг): прочитать генератор/оракул пазла и подсказки автора на явные упоминания rounds / iterations / salt / «Electrum vs BIP39
+    log| - Артефакты: не создавались (запись текстовая).
+    log| - Ссылки: `solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/LOG.md` (запись 10:05), https://github.com/floflo777/open-crypto-puzzles/pull/44 ; 
+
+[P] jack-froese-emails  файлов=8  1.2 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:осталось R:solved R:решен R:dead R:решён L:статус L:solved
+    log| - Отказ (3): https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries [FAIL: HTTP Error 403: Forbidden | jina: ]; https://www.irishtimes.
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] john-titor  файлов=9  1.7 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:решен R:осталось R:закрыт L:статус L:решен L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] keir-finlow-bates-blockchain-book-600ksats  файлов=26  0.6 МБ  приз=600000 sat
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:solved R:решен L:статус L:open L:открыт L:итог
+    log| - Результат: перенесено 8 файлов данных → `data/ocp/`, 5 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/clues/author-posts.md`, `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/keir-finlow-bates
+
+[P] krypto-chase-skavengerz-1m  файлов=3  0.2 МБ  приз=—
+    head: **Тип**: физическая GPS-охота с шифрованными подсказками (мобильное приложение Skavengerz).
+    markers: R:статус R:решен R:открыт R:дальше L:решен
+    log| ## 2026-10-18, 13:05 — Qoder (проход верификации)
+    log| - Проверка живости домена: skavengerz.com HTTP 200 — серия активна, квалификаций не сыграно, нерешена.
+    log| - Выплата «Bitcoin или cash» по решению организатора, публичного адреса/ончейн-оракула нет. Вердикт off-chain/physical.
+
+[P] ktimesg-phy-challenge-0-008btc  файлов=103  16.1 МБ  приз=0,008 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:решен L:итог L:закрыт L:open L:статус
+    log| - Артефакты: `data/h11b_result.json`, `data/secretadm_tables.json`, `tools/phy_h11b_streams.py`, `tools/phy_parse_tables.py`.
+    log| - Диф OP-текста с настоящим абстрактом Bitcoin (сделан глазами, зафиксировано как вывод, а не как перебор): заменены именно «хешевые» слова — electron
+    log| - Статус по протоколу: 3 цикла с новой проверенной информацией уже было (репликация оракула = новая; PGP = решён; H11b = негатив). Дальнейшие оси по P
+
+[P] lake-city-quiet-pills  файлов=9  0.8 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:осталось R:solved R:решен L:статус L:solved L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] lost-media-bfi-75-most-wanted  файлов=9  0.7 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:открыт R:осталось R:решен R:dead R:закрыт L:статус L:открыт
+    log| - Отказ (1): https://lostmediawiki.com [FAIL: HTTP Error 403: Forbidden | jina: ]
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] luckylurker-vault-2-1btc  файлов=7  0.3 МБ  приз=1,0 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:решён R:решен R:solved L:статус L:open
+    log| - Что делать (бесплатный шаг): прочитать генератор/оракул пазла и подсказки автора на явные упоминания rounds / iterations / salt / «Electrum vs BIP39
+    log| - Артефакты: не создавались (запись текстовая).
+    log| - Ссылки: `solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/LOG.md` (запись 10:05), https://github.com/floflo777/open-crypto-puzzles/pull/44 ; 
+
+[P] lunarcrush-lunar-vault-62btc  файлов=4  0.1 МБ  приз=62 BTC
+    head: **Тип**: физически размещённый ключ кошелька (не on-chain-задача и не криптограмма).
+    markers: R:статус R:решен R:открыт R:дальше L:статус L:открыт L:решен
+    log| - Ссылки: https://www.hiro.so/blog/launching-a-bitcoin-treasure-hunt-on-the-moon (арх. 20230405182207) ;
+    log| https://fireflyspace.com/news/firefly-aerospaces-blue-ghost-mission-1-successfully-launches-and-begins-45-day-transit-to-the-moon/ ;
+    log| https://payloadspace.com/blue-ghost-notches-first-successful-lunar-landing/
+
+[P] mapnificent-treasure-hunt-mth202610  файлов=4  0.3 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: `MASTER_CATALOG_v2_2026-10-16.md` (рабочие досье агентов
+    markers: R:статус R:итог R:решен R:осталось L:статус L:итог L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] marianas-web  файлов=5  0.8 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:осталось R:solved R:решен L:статус L:solved L:open
+    log| - Отказ (3): https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries [FAIL: HTTP Error 403: Forbidden | jina: ]; https://www.engadget.co
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] markovian-parallax-denigrate  файлов=6  0.5 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:решен R:осталось L:статус L:решен L:open
+    log| - Отказ (2): https://www.dailydot.com/society/markovian-parallax-denigrate-spam-mys [FAIL: HTTP Error 404: Not Found | jina: ]; https://www.avclub.com
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] max-headroom-broadcast-hijacking  файлов=7  0.7 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:осталось R:открыт R:solved R:решен R:закрыт L:статус L:open
+    log| - Отказ (4): https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries [FAIL: HTTP Error 403: Forbidden | jina: ]; https://www.upi.com/Arc
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] minecraft-arg  файлов=7  0.9 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:решен R:осталось L:статус L:решен L:open
+    log| - Отказ (2): https://minecraftcreepypasta.fandom.com/wiki/Alpha_1.0.16_02 [FAIL: HTTP Error 403: Forbidden | jina: ]; https://herobrinesightings.fando
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] neuro-sama-arg  файлов=6  0.1 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:решен R:осталось R:закрыт R:решён L:статус L:решен L:open
+    log| - Отказ (2): https://neuroarg.miraheze.org [FAIL: HTTP Error 403: Forbidden | jina: ]; https://ja.namu.wiki/w/Neuro-sama/ARG [FAIL: HTTP Error 403: Fo
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] nuaza-bitcoin-fr-chasse-au-tresor-0-2024btc  файлов=5  0.2 МБ  приз=0,2024 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:решен R:открыт R:итог L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] oobit-139-bitcoinpuzzles-io-0-01545btc  файлов=159  56.2 МБ  приз=0,01545 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:решен R:закрыт R:решён L:статус L:open
+    log| - Адрес/эскроу: 1KKtnqLdK17ndRRwF8zaKZH6FSkSmTN6fk
+    log| - Источники: https://bitcoinpuzzles.io/en/puzzles/139
+    log| - Вся история и досье — в README.md этой папки; новые сессии описывать здесь (self-intro, что делал, результаты вкл. отрицательные, артефакты, ссылки)
+
+[P] path-to-greatness-treasure-hunt-3ltc  файлов=57  22.5 МБ  приз=3.02608794 LTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:решен R:осталось R:открыт R:закрыт R:итог L:статус
+    log| - **Гипотеза H-A (регистрирую ДО любого прогона, правило №2):** ответ clue 7 (длина 24 по `clues.sheet`) = строка, буквально написанная на борту/корпу
+    log| - **Дальше по плану:** (1) поднять разрешение надписи из **исходной** LSB-плоскости (`ship_redlsb_raw.png`, 1920×1080, без 3×3-сглаживания) и из други
+    log| - **Риск/честно:** приз малый ($163); решаемость зависит от того, что надпись вообще читаема в LSB-шуме. Если после подъёма разрешения читаемых глифов
+
+[P] peter-todd-hash-collision-bounties-0-59btc  файлов=15  0.2 МБ  приз=0.59364885 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:решен R:solved L:статус L:open
+    log| - Результат: перенесено 4 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `1-big-prizes/peter-todd-hash-collision-bounties-0-59btc/clues/author-posts.md`, `1-big-prizes/peter-todd-hash-collision-bounties-0-59btc
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/1-big-prizes/peter-todd-hash-c
+
+[P] project-architeuthis  файлов=4  0.2 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-9).
+    markers: R:статус R:осталось R:закрыт R:решен L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] publius-enigma  файлов=6  0.5 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:решен R:осталось R:закрыт L:статус L:решен L:open
+    log| - Отказ (1): https://query.nytimes.com/gst/fullpage.html?res=990CE4DB133DF935A25751 [FAIL: HTTP Error 403: Forbidden | jina: ]
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] purebasic-t85211-600eur  файлов=3  0.0 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: `MASTER_CATALOG_v2_2026-10-16.md` (журнал «оычн», 13.10.
+    markers: R:статус R:решен L:статус L:open
+    log| - Причина прогона: предыдущая попытка дала 0 файлов (GitHub IncompleteRead / HTTP 403).
+    log| - Метод: raw-README OCP-репо и/или зеркало web.archive.org.
+    log| - Результат: сохранено 0 из 1; см. `data/SOURCES.md`.
+
+[P] qday-steal-this-vault-solana  файлов=6  0.1 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:решен R:закрыт L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] rcodes-1ojeu3c-5usd  файлов=5  0.0 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: `MASTER_CATALOG_v2_2026-10-16.md` (журнал «оычн», 13.10.
+    markers: R:статус R:решён R:решен L:статус L:решён L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] rcodes-1tk3up2-500usd  файлов=18  1.5 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: `MASTER_CATALOG_v2_2026-10-16.md` (журнал «оычн», 13.10.
+    markers: R:статус R:решён R:решен L:open L:solved L:решён L:решен L:дальше
+    log| (3) форму пробельного глифа (у неё прямая spine, 2 насечки слева, 3 справа) — чтобы
+    log| включить пробел в ранжирование.
+    log| - Артефакты: tools/wifa_hypothesis_test.py, tools/wifa_crib_robustness.py.
+
+[P] rectorsquid-arrow-puzzle-50usd  файлов=3  0.0 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: `MASTER_CATALOG_v2_2026-10-16.md` (журнал «оычн», 13.10.
+    markers: R:статус R:решён R:решен L:статус L:решён L:open
+    log| - Причина прогона: предыдущая попытка дала 0 файлов (GitHub IncompleteRead / HTTP 403).
+    log| - Метод: raw-README OCP-репо и/или зеркало web.archive.org.
+    log| - Результат: сохранено 0 из 1; см. `data/SOURCES.md`.
+
+[P] rushwallet-contest-30-1msats  файлов=13  0.3 МБ  приз=1000000 sat
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:решен R:осталось R:решён R:тупик R:solved L:статус
+    log| - Результат: перенесено 2 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `2-mid-prizes/rushwallet-contest-30-1msats/clues/author-posts.md`, `2-mid-prizes/rushwallet-contest-30-1msats/puzzle.json`, `2-mid-prizes
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/rushwallet-contes
+
+[P] satoshi-nakamoto-mystery  файлов=7  7.5 МБ  приз=1 100 000 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:решен R:осталось L:статус L:решен L:open
+    log| - Отказ (4): https://bitcoin.org/bitcoin.pdf [FAIL: <urlopen error [SSL: WRONG_VERSION]; https://www.nytimes.com/2026/04/08/business/bitcoin-satoshi-n
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] school-of-bitcoin-1msats  файлов=14  0.1 МБ  приз=1000000 sat
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:решен R:solved L:статус L:open
+    log| - Результат: перенесено 5 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `2-mid-prizes/school-of-bitcoin-1msats/README.md`, `2-mid-prizes/school-of-bitcoin-1msats/analysis/leads.md`, `2-mid-prizes/school-of-bit
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/school-of-bitcoin
+
+[P] seed-phrase-com-metaneer-0-01btc  файлов=12  3.5 МБ  приз=0,01 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:решен L:open L:закрыт L:дальше L:итог
+    log| - Просканированы все 2048 кадров `spv1080.mp4` (аналитика QR в каждом кадре) с контраст-стретчем; декодировано ровно 4 строки, все — мусор/аналитика: 
+    log| - Ни одна не содержит слов/индексов фразы. Вывод: QR-канал — только аналитика (`?source=qr&i=N`), **окончательно закрыт**.
+    log| - Итог по пазлу: все дешёвые каналы закрыты (HSL-цвет, аудио, QR, PDF, метаданные, git). Пазл остаётся внешне-информационно заблокированным (утраченны
+
+[P] seed-phrase-crossword-nft-magic-eden  файлов=5  0.4 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:решен L:статус L:open
+    log| - Отказ (1): https://docs.near.org/tutorials/crosswords/intermediate/use-seed-phras [FAIL: HTTP Error 404: Not Found | jina: ]
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] smith-lyle-moore-hunt-2-0-032btc  файлов=816  34.4 МБ  приз=0.031777 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:solved R:тупик R:решен R:осталось R:решён R:закрыт
+    log| - Побочный, но ценный результат (бесплатно, из того же `pagesMap`): полная карта сайта 78 страниц `pid → title → pageUriSEO` — `data/h2c_pagemap.json`
+    log| - Уточнение по числам: защищённых страниц **56**, не 57 (`jbuh5` «My Account» — служебная Wix-страница без пароля; `ty78s` «Hell» — защищена, в досье 
+    log| - **Предрегистрирована ось H2d (чтение, не перебор):** собрать json 21 публичной страницы (`pageJsonFileName` + суффикс `.json.z?v=3`, проверенный на 
+
+[P] solana-puzzles-4-0-834sol  файлов=6  3.2 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:решен R:решён R:тупик L:статус L:open
+    log| - Отказ (1): https://t.me/+5GYvaO1qGT44Mjdh [FAIL: <urlopen error timed out> | jina: ]
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] teikhos-bipedaljoe-solver-bounties-2eth  файлов=21  0.6 МБ  приз=2.000006 ETH
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:solved R:решен R:открыт R:решён L:закрыт L:solved
+    log| - Результат: перенесено 7 файлов данных → `data/ocp/`, 3 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth/analysis/mechanism.md`, `2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth/clues
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/teikhos-bipedaljo
+
+[P] the-great-riddle-0-00423871btc  файлов=8  4.2 МБ  приз=0,00423871 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:решен R:решён R:solved L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] timeless-1000-random-seed-puzzle-0-062eth  файлов=9  0.3 МБ  приз=0,062 ETH
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:решен R:решён L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] trezor-bug-bounty-100k-usd  файлов=7  2.9 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:решен R:открыт L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] tumblecaesar-1000algo  файлов=5  0.0 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: `MASTER_CATALOG_v2_2026-10-16.md` (рабочие досье агентов
+    markers: R:статус R:открыт R:осталось R:дальше R:решен L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] unfavorable-semicircle  файлов=9  0.9 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:осталось R:solved R:итог R:решен L:статус L:open L:solved
+    log| - Отказ (2): https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries [FAIL: HTTP Error 403: Forbidden | jina: ]; https://www.bbc.com/fut
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] uvb-76-the-buzzer  файлов=5  0.4 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-9).
+    markers: R:статус R:осталось R:решен L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] valor-por-tamaulipas  файлов=4  0.4 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:осталось R:решен R:закрыт L:статус L:open
+    log| - Отказ (6): https://www.proceso.com.mx/nacional/2013/4/7/administrador-de-valor-po [FAIL: HTTP Error 403: Forbidden | jina: ]; https://www.proceso.co
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] veil-hunts-1380-2020usd  файлов=7  0.5 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:open R:осталось R:решен L:статус L:open
+    log| - Отказ (1): https://discord.com/invite/hhHGAnA435 [FAIL: <urlopen error _ssl.c:1015: The ha]
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] wealth-in-poetry-0-03btc  файлов=17  0.3 МБ  приз=3124630 sat
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:solved R:решен R:открыт R:осталось R:закрыт R:итог
+    log| - Что делать (бесплатный шаг): прочитать генератор/оракул пазла и подсказки автора на явные упоминания rounds / iterations / salt / «Electrum vs BIP39
+    log| - Артефакты: не создавались (запись текстовая).
+    log| - Ссылки: `solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/LOG.md` (запись 10:05), https://github.com/floflo777/open-crypto-puzzles/pull/44 ; 
+
+[P] webdriver-torso  файлов=5  0.6 МБ  приз=—
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+    markers: R:статус R:осталось R:решен R:закрыт L:статус L:open
+    log| - Отказ (3): https://www.bbc.co.uk/news/technology-27778071 [FAIL: <urlopen error [WinError 10054] Уд]; https://www.bbc.com/news/technology-27238332 [
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] wif500-500btc  файлов=7  0.8 МБ  приз=500 BTC
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Часть 6).
+    markers: R:открыт R:статус R:open R:решён R:закрыт R:осталось R:closed R:решен
+    log| - Отказ (2): https://github.com/phrutis/wif500 [FAIL: HTTP Error 404: Not Found | jina: ]; https://github.com/phrutis/WifSolverCuda [FAIL: HTTP Error 
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[P] zden-haluska-halv-312ksats  файлов=215  38.2 МБ  приз=312500 sat
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:решен R:осталось R:solved R:решён R:открыт R:закрыт
+    log| - **Что дальше (для того, кто возьмёт цель):** (1) фаза решётки x=112 — не обсуждается, проверять только её; (2) свободная часть — не упаковка, а **оп
+    log| - **A1b (дополнение к A1, тот же носитель, правило отсчёта «центр ячейки» вместо «любой пиксель ячейки»; баланс 127/256):** 8 уникальных кандидатов → 
+
+[S] 80-bit-ktimesg-key-challenge  файлов=7  0.7 МБ  приз=0.005 BTC
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:решен L:статус
+    log| - Адрес/эскроу: n/a
+    log| - Источники: https://puzzles.agntn.dev/
+    log| - Вся история и досье — в README.md этой папки; новые сессии описывать здесь (self-intro, что делал, результаты вкл. отрицательные, артефакты, ссылки)
+
+[S] a858de45f56d9bc9-reddit  файлов=9  0.1 МБ  приз=—
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:статус R:решен R:осталось R:открыт
+    log| - Адрес/эскроу: n/a
+    log| - Источники: https://www.reddit.com/r/A858DE45F56D9BC9
+    log| - Вся история и досье — в README.md этой папки; новые сессии описывать здесь (self-intro, что делал, результаты вкл. отрицательные, артефакты, ссылки)
+
+[S] aenigma-shards-nft  файлов=5  0.7 МБ  приз=34 ETH
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:dead-end R:решен
+    log| - Причина прогона: предыдущая попытка дала 0 файлов (GitHub IncompleteRead / HTTP 403).
+    log| - Метод: raw-README OCP-репо и/или зеркало web.archive.org.
+    log| - Результат: сохранено 2 из 2; см. `data/SOURCES.md`.
+
+[S] andy-bauch-new-money-cog-428ksats  файлов=14  0.3 МБ  приз=428206 sat
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:решен L:статус
+    log| - Результат: перенесено 2 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,3 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `4-solved/andy-bauch-new-money-cog-428ksats/clues/author-posts.md`, `4-solved/andy-bauch-new-money-cog-428ksats/puzzle.json`, `4-solved/a
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/4-solved/andy-bauch-new-money-
+
+[S] arweave-puzzle-12-400ar  файлов=21  0.9 МБ  приз=400.00248121 AR
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:решен R:открыт
+    log| - Результат: перенесено 6 файлов данных → `data/ocp/`, 3 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `2-mid-prizes/arweave-puzzle-12-400ar/analysis/2026-09-05/funding.json`, `2-mid-prizes/arweave-puzzle-12-400ar/analysis/2026-09-05/q1-res
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/arweave-puzzle-12
+
+[S] bam-askabitcoiner-seed-cipher  файлов=4  0.4 МБ  приз=42100 sat
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:dead-end R:решен
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] bc1q21-timelock-challenge-l5-100ksats  файлов=11  0.1 МБ  приз=100000 sat
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:решен L:статус
+    log| - Результат: перенесено 2 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `4-solved/bc1q21-timelock-challenge-l5-100ksats/clues/author-posts.md`, `4-solved/bc1q21-timelock-challenge-l5-100ksats/puzzle.json`, `4-
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/4-solved/bc1q21-timelock-chall
+
+[S] bitcoin-movie-enigma-100ksats  файлов=21  0.1 МБ  приз=100000 sat
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:решен L:статус
+    log| - Результат: перенесено 8 файлов данных → `data/ocp/`, 2 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `4-solved/bitcoin-movie-enigma-100ksats/analysis/payout-verification-2026-09-07.json`, `4-solved/bitcoin-movie-enigma-100ksats/analysis/s
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/4-solved/bitcoin-movie-enigma-
+
+[S] book-quiz-7-million  файлов=9  0.5 МБ  приз=7,000,000 sat
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:dead R:решен L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] caesarcoder-genesis-block-wallet-puzzle-947ksats  файлов=42  0.5 МБ  приз=168779 sat
+    head: Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.
+    markers: R:open R:статус R:решён R:solved R:итог R:осталось R:закрыт R:открыт
+    log| отчёт прохода `reports/2026-10-18_1000_OCP_Sync_ocp-full-sync.md`.
+    log| - Следующим агентам: папка закрыта, работу не возобновлять; перенос сделан `git mv` из
+    log| `puzzles/genesis-block-wallet-puzzle-142ksats` (вся наша работа, включая `data/calib*.mjs`, сохранена).
+
+[S] cicada-3372  файлов=6  0.4 МБ  приз=—
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:статус R:осталось R:решен L:статус
+    log| - Отказ (1): https://blog.threatstack.com/cicadas-security-part-2-when-a-verified-p [FAIL: <urlopen error [Errno 11001] getad]
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] coin-artist-torched-h34r7s  файлов=9  1.4 МБ  приз=4.87 BTC
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:решен L:статус L:open
+    log| - Отказ (2): https://bitcointalk.org/index.php?topic=766000.msg8633825#msg8633825 [FAIL: <urlopen error [Errno 11001] getad]; https://www.vice.com/en/
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] commander-u-puzzle-8-5btc  файлов=7  0.3 МБ  приз=8.5 BTC
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:dead-end R:решен
+    log| - Отказ (4): https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/a [FAIL: HTTP Error 404: Not Found | jina: ]; https://raw.githubuser
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] demint-bitcoin-evangelism  файлов=4  0.0 МБ  приз=3146386 sat
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:dead-end R:решен
+    log| - Причина прогона: предыдущая попытка дала 0 файлов (GitHub IncompleteRead / HTTP 403).
+    log| - Метод: raw-README OCP-репо и/или зеркало web.archive.org.
+    log| - Результат: сохранено 1 из 1; см. `data/SOURCES.md`.
+
+[S] doges-gambit  файлов=8  0.9 МБ  приз=10,000 DOGE
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:решен L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] dug-student-treasure-hunt-63ksats  файлов=13  0.4 МБ  приз=63216 sat
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:решен L:статус
+    log| - Результат: перенесено 2 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `4-solved/dug-student-treasure-hunt-63ksats/clues/author-posts.md`, `4-solved/dug-student-treasure-hunt-63ksats/puzzle.json`, `4-solved/d
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/4-solved/dug-student-treasure-
+
+[S] ftpk-season-2-300usdt  файлов=12  0.4 МБ  приз=—
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:решен R:открыт
+    log| - Результат: перенесено 1 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `2-mid-prizes/ftpk-season-2-300usdt/puzzle.json`, `2-mid-prizes/ftpk-season-2-300usdt/tools/oracle.py`
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/ftpk-season-2-300
+
+[S] ftpk-season-4-166usdc  файлов=10  0.0 МБ  приз=—
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:решен L:статус
+    log| - Результат: перенесено 1 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `4-solved/ftpk-season-4-166usdc/puzzle.json`, `4-solved/ftpk-season-4-166usdc/tools/oracle.py`
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/4-solved/ftpk-season-4-166usdc
+
+[S] game-of-satoshi-season-1  файлов=4  0.0 МБ  приз=0.21 BTC
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:dead-end R:решен
+    log| - Причина прогона: предыдущая попытка дала 0 файлов (GitHub IncompleteRead / HTTP 403).
+    log| - Метод: raw-README OCP-репо и/или зеркало web.archive.org.
+    log| - Результат: сохранено 1 из 1; см. `data/SOURCES.md`.
+
+[S] grycoin-chain  файлов=49  3.5 МБ  приз=—
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:решен L:open L:решен L:закрыт
+    log| - Артефакты: `tools/signs_check.py` (независимая верификация правила), `data/wattpad_toc.txt` (оглавление 33 глав), `data/wattpad_*.txt` (все главы).
+    log| - Следующий шаг: передать находку в досье RBB (`puzzles/aoi-nakamoto-quizchain-0-854btc/README.md`) и в WAKE_QUEUE — там правило ищут как «case-flip r
+    log| - Проверено: да (скрипт `signs_check.py` воспроизводим, вывод «True»).
+
+[S] hunghuatang-8964-btc-puzzle  файлов=6  0.2 МБ  приз=8964, BTC
+    head: **Тип**: seed-фраза/BIP39-пазл с BTC-наградой (24 числа → 24 слова), автор — Hung-Hua Tang (@hunghuatang).
+    markers: R:статус R:решен R:открыт R:решён R:solved R:dead-end L:статус L:решен
+    log| Адрес комментатора 1GajcPPZYUCeCV8LQ126qM1iJjBYEFpf1g = баланс 0 (пожертвование, не приз).
+    log| - Вывод для базы: нарушает фильтр «только нерешённые» → перенос в solved/ (причина: solved).
+    log| - Ссылки: https://www.reddit.com/r/Bitcoin/comments/1tw7glw/puzzle_designed_for_8964_btc_reward_00896400/
+
+[S] iamabananaamaa-puzzles  файлов=9  0.0 МБ  приз=—
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:решен L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] keysa-crack-the-seed-369ksats  файлов=21  0.5 МБ  приз=369369 sat
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:решен L:статус
+    log| - Результат: перенесено 6 файлов данных → `data/ocp/`, 3 кода → `tools/ocp/`,1 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `4-solved/keysa-crack-the-seed-369ksats/clues/author-posts.md`, `4-solved/keysa-crack-the-seed-369ksats/clues/qYkB.jpg`, `4-solved/keysa-
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/4-solved/keysa-crack-the-seed-
+
+[S] ledger-donjon-ctf  файлов=8  1.1 МБ  приз=—
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:решен L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] liberte-guidant-le-peuple-2019  файлов=9  1.8 МБ  приз=0.26 BTC
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:решен L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] logicbeach-powerful-moss-0-54eth  файлов=18  0.6 МБ  приз=0.55 ETH
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:решен R:открыт
+    log| - Результат: перенесено 5 файлов данных → `data/ocp/`, 2 кода → `tools/ocp/`,1 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `2-mid-prizes/logicbeach-powerful-moss-0-54eth/clues/author-posts.md`, `2-mid-prizes/logicbeach-powerful-moss-0-54eth/data/seed-grid.json
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/logicbeach-powerf
+
+[S] luckylurker-seed-riddles-80ksats  файлов=9  0.0 МБ  приз=80000 sat
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:решен L:статус
+    log| - Результат: перенесено 2 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `4-solved/luckylurker-seed-riddles-80ksats/data/hints.csv`, `4-solved/luckylurker-seed-riddles-80ksats/puzzle.json`, `4-solved/luckylurke
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/4-solved/luckylurker-seed-ridd
+
+[S] luckylurker-vault-1-0-0008btc  файлов=4  0.0 МБ  приз=0,0008 BTC
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:статус R:осталось R:открыт R:решен
+    log| - Отказ (5): https://luckylurker.com/bitcoin-vault/ [FAIL: Remote end closed connection witho]; https://bitcointalk.org/index.php?topic=5577554.0 [FAI
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] mini-puzzles-retiredcoder  файлов=7  0.6 МБ  приз=1000 BTC
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:решен L:статус L:open
+    log| - Отказ (4): https://bitcointalk.org/index.php?topic=5522785 [FAIL: <urlopen error [Errno 11001] getad]; https://bitcointalk.org/index.php?topic=55130
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] natasha-otomoski-1btc  файлов=8  1.2 МБ  приз=1 BTC
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:closed R:решен L:статус
+    log| - Отказ (1): https://bitcointalk.org/index.php?topic=5096267.0 [FAIL: <urlopen error [Errno 11001] getad]
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] nist-seeds-bounty-valsorda  файлов=4  0.0 МБ  приз=—
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:осталось R:статус R:решен L:статус
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] objective-thune-licorne-0-21btc  файлов=9  0.5 МБ  приз=0.21021 BTC
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:dead-end R:решен
+    log| - Отказ (1): https://github.com/floflo777/open-crypto-puzzles [FAIL: IncompleteRead(327680 bytes read) ]
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] oct282011-com  файлов=4  0.1 МБ  приз=—
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:статус R:осталось R:решен L:статус
+    log| - Отказ (2): https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries [FAIL: The read operation timed out | jin]; https://www.eyerys.com/
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] onfo-forsyth-1btc  файлов=7  1.3 МБ  приз=1 BTC
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:dead-end R:dead
+    log| - Отказ (3): https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/a [FAIL: HTTP Error 404: Not Found | jina: ]; https://raw.githubuser
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] operation-mindfuck-illuminatus  файлов=2  0.0 МБ  приз=—
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:статус R:осталось R:решен L:статус
+    log| - Адрес/эскроу: n/a
+    log| - Источники: n/a
+    log| - Вся история и досье — в README.md этой папки; новые сессии описывать здесь (self-intro, что делал, результаты вкл. отрицательные, артефакты, ссылки)
+
+[S] paradigm-kryptos-ctf-pk1-pk10  файлов=9  0.7 МБ  приз=—
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:статус R:closed R:осталось R:решен
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] phemex-dorian-nakamoto  файлов=9  0.8 МБ  приз=2.1 BTC
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:dead-end R:решен
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] picture-puzzle-1mbtc  файлов=9  0.7 МБ  приз=—
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:решен L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] pindar-van-arman-cryptoartgan-nft  файлов=13  1.3 МБ  приз=—
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:решен R:открыт
+    log| - Результат: перенесено 3 файлов данных → `data/ocp/`, 0 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `2-mid-prizes/pindar-van-arman-cryptoartgan-nft/clues/author-posts.md`, `2-mid-prizes/pindar-van-arman-cryptoartgan-nft/data/bitgans-attr
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/pindar-van-arman-
+
+[S] platos-solid  файлов=6  0.1 МБ  приз=—
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:статус R:осталось R:open R:решен
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] proof-of-writing  файлов=8  0.6 МБ  приз=—
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:статус R:closed R:осталось R:решен
+    log| - Отказ (1): https://reviews.bitcoinabc.org/D15679 [FAIL: The read operation timed out | jin]
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] quizchain-series  файлов=9  0.8 МБ  приз=854 btc
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:решен L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] quizchain2-series  файлов=9  0.9 МБ  приз=—
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:решен L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] satoshi-birthday-7-million-quiz  файлов=9  0.3 МБ  приз=5, 2019. Sat
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:решен L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] satoshi-maze  файлов=8  0.4 МБ  приз=1,1 BTC
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:статус R:осталось R:решен R:итог
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] satoshis-treasure-arg-1m  файлов=11  0.1 МБ  приз=198 BTC
+    head: **Тип**: многоуровневый ARG + физический scavenger hunt: 11 «ключей» (шифротекстов), каждый даёт координаты
+    markers: R:статус R:закрыт R:solved R:dead R:открыт R:дальше R:dead-end L:статус
+    log| Перенос в solved/ с причиной off-chain/defunct.
+    log| - Ссылки: https://web.archive.org/web/20200429050408/https://satoshistreasure.xyz/res/seal.html ;
+    log| https://blockstream.info/api/address/1899BGHGR4itdmJEN8MFGxyVkAcis4brop
+
+[S] trivia-brainwallet-0-04btc  файлов=9  0.1 МБ  приз=0.04 BTC
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:dead R:решен L:статус
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] veteranhodl-hunting-time-420ksats  файлов=14  0.3 МБ  приз=420000 sat
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:решен L:статус
+    log| - Результат: перенесено 2 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `4-solved/veteranhodl-hunting-time-420ksats/clues/author-posts.md`, `4-solved/veteranhodl-hunting-time-420ksats/puzzle.json`, `4-solved/v
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/4-solved/veteranhodl-hunting-t
+
+[S] wares-wallets-solana  файлов=4  0.0 МБ  приз=—
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:dead-end R:решен
+    log| - Отказ (1): https://github.com/floflo777/open-crypto-puzzles [FAIL: IncompleteRead(327680 bytes read) ]
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] warpwallet-challenges  файлов=6  0.9 МБ  приз=41.85 BTC
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:dead R:решен L:статус L:open
+    log| - Отказ (1): https://keybase.io/warp [FAIL: <urlopen error _ssl.c:1015: The ha]
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] wickex-youtube-puzzle  файлов=9  0.2 МБ  приз=—
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:решен L:статус L:open
+    log| - Отказ (0): —
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+[S] wonderabbit-prometheus-1msats  файлов=12  0.4 МБ  приз=1031123 sat
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:решен L:статус
+    log| - Результат: перенесено 2 файлов данных → `data/ocp/`, 0 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `4-solved/wonderabbit-prometheus-1msats/clues/author-posts.md`, `4-solved/wonderabbit-prometheus-1msats/puzzle.json`
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/4-solved/wonderabbit-prometheu
+
+[S] zden-haluska-lvl5-555ksats  файлов=16  0.6 МБ  приз=555550 sat
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:решен L:статус
+    log| - Результат: перенесено 4 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. З
+    log| - Артефакты: `4-solved/zden-haluska-lvl5-555ksats/clues/author-posts.md`, `4-solved/zden-haluska-lvl5-555ksats/clues/crypto5fix.png`, `4-solved/zden-h
+    log| - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/4-solved/zden-haluska-lvl5-555
+
+[S] zk-guess-chainhackers-31  файлов=5  1.0 МБ  приз=0.0025 ETH
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:dead-end R:решен
+    log| - Причина прогона: предыдущая попытка дала 0 файлов (GitHub IncompleteRead / HTTP 403).
+    log| - Метод: raw-README OCP-репо и/или зеркало web.archive.org.
+    log| - Результат: сохранено 2 из 2; см. `data/SOURCES.md`.
+
+[S] zodomo-11x11-pixel-puzzles-0-05eth  файлов=7  0.7 МБ  приз=0.05 ETH
+    head: > **ПЕРЕМЕЩЕНО 2026-10-17 в `master/solved/`** — пазл решён/закрыт/тупиковый, активная работа не ведётся. Причина: [../I
+    markers: R:solved R:решён R:закрыт R:тупик R:open R:статус R:dead-end R:dead end
+    log| - Отказ (2): https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/a [FAIL: HTTP Error 404: Not Found | jina: ]; https://raw.githubuser
+    log| - Артефакты: `data/SOURCES.md` + скачанные файлы.
+    log| - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+

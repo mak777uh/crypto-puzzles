@@ -3,7 +3,7 @@
 Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Часть 6).
 
 ## Кратко
-- Статус: **НЕ РЕШЕНЫ по первоисточнику** (каталог ошибочно относил их к «решённым»)
+- Статус: **закрыты он-чейн (2026-10-19)** — Numbers забран 30.06.2021 (спент 935 532 сат, баланс 0); Easycore — баланс 0 (по каталогу 4×0,25 ETH в 2019 и вывод 0,9991 ETH 10.02.2020; Blockchair даёт противоречивые 0 tx, ETH-RPC недоступны). См. LOG.md 2026-10-19; кандидаты в solved/dead-ends.
 - Цепь: ethereum (Easycore) + bitcoin (Numbers)
 - Автор: **arpox** (Twitter @Arpoxy), сайт датирован **6 февраля 2019**
 - Типы: image-stego, bit-manipulation, mixed-chain

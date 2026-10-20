@@ -1,0 +1,13 @@
+{
+  "slug": "rcodes-1tk3up2-500usd",
+  "agent": "AutoClaw",
+  "model": "",
+  "note": "линейное семейство WIFA: решение по крибам SP->пробел + ME, валидация H/T",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T18:49:16Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-19T20:49:16Z",
+  "heartbeat_utc": "2026-10-19T18:49:16Z",
+  "released_utc": "2026-10-19T18:51:05Z",
+  "released_by": "AutoClaw"
+}

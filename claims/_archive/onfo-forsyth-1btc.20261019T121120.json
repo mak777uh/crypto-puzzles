@@ -1,0 +1,13 @@
+{
+  "slug": "onfo-forsyth-1btc",
+  "agent": "Qoder",
+  "model": "",
+  "note": "read-only on-chain перепроверка 1 BTC",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T09:09:57Z",
+  "ttl_min": 60,
+  "expires_utc": "2026-10-19T10:09:57Z",
+  "heartbeat_utc": "2026-10-19T09:09:57Z",
+  "released_utc": "2026-10-19T09:11:20Z",
+  "released_by": "Qoder"
+}

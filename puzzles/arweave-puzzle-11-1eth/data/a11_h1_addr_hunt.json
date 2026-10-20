@@ -1,0 +1,91 @@
+{
+ "ts": "2026-10-18 18:30:34",
+ "image_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+ "selftest": [
+  {
+   "case": "byte_row_ascii",
+   "want": [
+    "L_row",
+    123456
+   ],
+   "found": [
+    [
+     "L_row",
+     123456
+    ],
+    [
+     "L_nonwhite_row",
+     6717
+    ]
+   ],
+   "ok": true
+  },
+  {
+   "case": "byte_col_raw20",
+   "want": [
+    "L_col",
+    77777
+   ],
+   "found": [
+    [
+     "L_col",
+     77777
+    ]
+   ],
+   "ok": true
+  },
+  {
+   "case": "bitplane3_unaligned_raw20",
+   "want": [
+    "L3_row",
+    "msb",
+    32003
+   ],
+   "found": [
+    [
+     "L3_row",
+     "msb",
+     32003
+    ]
+   ],
+   "ok": true
+  },
+  {
+   "case": "alpha_plane0_lsb_raw20",
+   "want": [
+    "A0_row",
+    "lsb",
+    16000
+   ],
+   "found": [
+    [
+     "A0_row",
+     "lsb",
+     16000
+    ]
+   ],
+   "ok": true
+  }
+ ],
+ "forms": [
+  "ascii_0x_lower42",
+  "ascii_0x_mixed42",
+  "ascii_0x_upper42",
+  "ascii_lower40",
+  "ascii_mixed40",
+  "ascii_upper40",
+  "dec42",
+  "dec42_rev",
+  "nibble20",
+  "nibble20_rev",
+  "nibble_per_byte40",
+  "nibble_per_byte40_rev",
+  "raw20",
+  "raw20_rev"
+ ],
+ "byte_streams": 25,
+ "bit_streams": 33,
+ "hits": [],
+ "seconds": 33.2,
+ "verdict": "NEGATIVE"
+}

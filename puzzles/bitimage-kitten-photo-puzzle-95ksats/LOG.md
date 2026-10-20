@@ -16,3 +16,8 @@
 - Отказ (2): https://corey-lyle-phillips.medium.com/part-1-3-turn-your-photos-into- [FAIL: <urlopen error [Errno 11001] getad]; https://corey-lyle-phillips.medium.com/… [FAIL: 'ascii' codec can't encode charact]
 - Артефакты: `data/SOURCES.md` + скачанные файлы.
 - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+## 2026-10-18 18:32 UTC — Qoder Desktop (Windows) — он-чейн проверка: приз снят
+- Проверка (read-only, blockstream): `bc1q57euh23y3qs2f9d5mtwpax5lqecfvrdkqce82a` → funded 415 133, spent 415 133, 4 tx.
+- Вывод: адрес полностью опустошён (ранее подтверждено 2019), приз снят → досье кандидат в `solved/` по правилам каталога (перенос — при следующей ревизии, без переноса папки этой сессией).
+- Команда воспроизведения: `curl -s https://blockstream.info/api/address/bc1q57euh23y3qs2f9d5mtwpax5lqecfvrdkqce82a`.

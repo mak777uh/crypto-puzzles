@@ -1,0 +1,190 @@
+H8 — скачивание и зондирование ассетов. Запуск 2026-10-19 15:30 UTC
+источник: data/h8_inventory.json, кандидатов 23
+
+[FAIL] 144728_019f7f75b73e472fb49ea839bf365421~mv2.mp3 : HTTP Error 403: Forbidden | alt HTTP Error 403: Forbidden
+[FAIL] 144728_0c8601557b264778a4388e93befab989~mv2.mp3 : HTTP Error 403: Forbidden | alt HTTP Error 403: Forbidden
+[FAIL] 144728_18a13652c8d3460cb3c08752cf326210~mv2.f000 : HTTP Error 403: Forbidden | alt HTTP Error 403: Forbidden
+[ok]   144728_25803a09f4dc443f889dbd0900b64c1e~mv2.gif  969434 байт
+[ok]   144728_2ba991114f8a4afe84df3d95b9521bf2~mv2.jpg  8704004 байт
+[ok]   144728_2efeeaffd60945af83644a0393e3ecec~mv2.gif  222390 байт
+[ok]   144728_357dfb1de9f248eaa5d3fd3283b1dd64~mv2.jpg  2090418 байт
+[ok]   144728_434553dd039c4dbf9926ca2602de0b08~mv2.gif  996273 байт
+[ok]   144728_52b07010edf4458baa06a821f578df73~mv2.png  601540 байт
+[ok]   144728_690b95a837b14706a3e8583e0c5b8056~mv2.png  13407180 байт
+[ok]   144728_7541577c5aff4ccbb112dcfe10965f80~mv2.png  309878 байт
+[ok]   144728_767b7595759e4fe3a02e01042e7c9ea6~mv2.jpg  46002 байт
+[ok]   144728_7a1969671b2a4462b5554cfbd7fbcad9~mv2.gif  363641 байт
+[ok]   144728_82cfb8b67a4a428994704ffc7fca494f~mv2.gif  253954 байт
+[ok]   144728_8715e8e22d4247af90894b03b8ae6a89~mv2.gif  1752819 байт
+[ok]   144728_8e8262f6c7d94ae082499d651438a5d2~mv2.png  74278 байт
+[ok]   144728_986e585b3b1b4a92bb990c922b750fe8~mv2.gif  1237230 байт
+[ok]   144728_ad1d0fada11947c888047ff55a410976~mv2.png  548325 байт
+[ok]   144728_cd4726a1c5974bb8b9a95df879244bab~mv2.gif  190243 байт
+[ok]   144728_d6531231cbd742c3aaa926cdf65468a0~mv2.png  49997 байт
+[ok]   144728_d989475c36474e97b01704d245236cef~mv2.jpg  1015301 байт
+[ok]   144728_e30067e9859d4ee8976515590a8e9865~mv2.jpg  440971 байт
+[ok]   144728_e97be91711254741999d9cc38f9644da~mv2.gif  4959643 байт
+
+скачано/готово: 20
+======================================================================
+
+25803a09f4dc443f889dbd0900b64c1e  gif  969434 байт
+  GIF: кадров=17  трейлер 0x3B на 969433  всего байт 969434
+  Application ext: 1
+    id=NETSCAPE2.0...
+  после трейлера: 0 байт
+
+2ba991114f8a4afe84df3d95b9521bf2  jpg  8704004 байт
+  JPEG: EOI на 8704002, всего байт 8704004
+  после EOI: 0 байт
+  ключевые слова (6):
+    @509758    bc1         (y...*.B..T..._Z.. W.'..bC1!.gB....ed..m....b..B......a..7.^.e.>%d....ud...
+    @2182070   bc1         -2c0..b3.....V.6...J....bc1.?iN<o.fW.T\...A..T...o,.+..$.8vpi<........,.ww.
+    @2258454   bc1         ..}.~.......^[..@..W.X+.bc1...o<.....F2.\bf#...NK..e.@.cvpau>*........r..N.
+    @2434644   bc1         k....+...!.D.....-..l..NBc1.,.N.7..8.#...,u.=...<.KoZ.c..>..=5o....R..2..#.
+    @2793895   bc1         .nK.^5\|Br.c...-(q.ie.x.Bc1..y....U.......j.e...I.E...$...^O.....\...&`....
+    @4716387   bc1         .z.&;....oY.z..\h.O..Z|~BC1..+f.....*....I.o]C.....8.t......._'.\N..9.fuj.7
+
+2efeeaffd60945af83644a0393e3ecec  gif  222390 байт
+  GIF: кадров=4  трейлер 0x3B на 222389  всего байт 222390
+  Application ext: 1
+    id=NETSCAPE2.0...
+  после трейлера: 0 байт
+
+357dfb1de9f248eaa5d3fd3283b1dd64  jpg  2090418 байт
+  JPEG: EOI на 2090416, всего байт 2090418
+  после EOI: 0 байт
+    EXIF присутствует
+
+434553dd039c4dbf9926ca2602de0b08  gif  996273 байт
+  GIF: кадров=16  трейлер 0x3B на 996272  всего байт 996273
+  Application ext: 2
+    id=NETSCAPE2.0...
+    id=XMP DataXMP?xpacket begin="..." id="W5M0MpCehiHzreSzNTczkc9d"?> 
+  XMP в GIF: 1038 байт
+  после трейлера: 0 байт
+  ключевые слова (1):
+    @885493    bc1         .~.:......nn~m....i....(BC1~A~OC.~.%...v.......e..x...`..`...\...&......Ij.
+
+52b07010edf4458baa06a821f578df73  png  601540 байт
+  PNG: чанков пройдено, IEND на 601528, всего байт 601540
+    iTXt: XML:com.adobe.xmp.....<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="XMP Core 6.0.0">.   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">.      <rdf:Description rdf:about="".            xmlns:exif="http://ns.adobe.com/exif/1.0/">.         <exif:
+  после IEND: 0 байт
+
+690b95a837b14706a3e8583e0c5b8056  png  13407180 байт
+  PNG: чанков пройдено, IEND на 13406933, всего байт 13407180
+    iTXt: XML:com.adobe.xmp.....<?xpacket begin="..." id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 6.0-c006 79.164753, 2021/02/15-11:52:13        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Des
+  после IEND: 235 байт
+    hex: 0a0a596f7527766520666f756e6420546865204d696c6b79205761792e205468616e6b7320666f7220706c6179696e672e20313220776f7264206b6579202b20
+    asc: ..You've found The Milky Way. Thanks for playing. 12 word key + Password. First word: fortune. Last stop, the moon. Your next stop is a secret museum. Enter through a hidden door. You'll need an 8-digit pin to gain admission, explorer.
+  ключевые слова (7):
+    @1221573   bc1         ....s.g.L...(.K-.....%.-Bc1.....c.%M6i.f.-)...-..sr.w..^..r.R."..<..iI.....
+    @3144969   bc1         4..}).99-:............(.BC1.-|C..z....j...qjj.VD0K.mf..y."Z.({......I..3..2
+    @13407009  password     playing. 12 word key + Password. First word: fortune. Last stop, the moon. Your
+    @13406998  word         Thanks for playing. 12 word key + Password. First word: fortune. Last stop,
+    @13407013  word        ying. 12 word key + Password. First word: fortune. Last stop, the moon. Your
+    @13407025  word        d key + Password. First word: fortune. Last stop, the moon. Your next stop i
+    @13407066  next        st stop, the moon. Your next stop is a secret museum. Enter through a hidden
+
+7541577c5aff4ccbb112dcfe10965f80  png  309878 байт
+  PNG: чанков пройдено, IEND на 309866, всего байт 309878
+    iTXt: XML:com.adobe.xmp.....<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="XMP Core 6.0.0">.   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">.      <rdf:Description rdf:about="".            xmlns:exif="http://ns.adobe.com/exif/1.0/">.         <exif:
+  после IEND: 0 байт
+
+767b7595759e4fe3a02e01042e7c9ea6  jpg  46002 байт
+  JPEG: EOI на 46000, всего байт 46002
+  после EOI: 0 байт
+    EXIF присутствует
+
+7a1969671b2a4462b5554cfbd7fbcad9  gif  363641 байт
+  GIF: кадров=36  трейлер 0x3B на 363640  всего байт 363641
+  Comment extensions: 1
+    «Resized on https://ezgif.com/resize»
+  Application ext: 1
+    id=NETSCAPE2.0...
+  после трейлера: 0 байт
+  ключевые слова (1):
+    @127057    bc1         ..3F._......CD........I.Bc1^_.&....<.2O...*>.l'....".....$.......[Y%Mi.....
+
+82cfb8b67a4a428994704ffc7fca494f  gif  253954 байт
+  GIF: кадров=12  трейлер 0x3B на 253953  всего байт 253954
+  Application ext: 1
+    id=NETSCAPE2.0...
+  после трейлера: 0 байт
+
+8715e8e22d4247af90894b03b8ae6a89  gif  1752819 байт
+  GIF: кадров=29  трейлер 0x3B на 1752818  всего байт 1752819
+  Application ext: 2
+    id=NETSCAPE2.0...
+    id=XMP DataXMP?xpacket begin="..." id="W5M0MpCehiHzreSzNTczkc9d"?> 
+  XMP в GIF: 1104 байт
+  после трейлера: 0 байт
+  ключевые слова (2):
+    @461809    bc1         E...b..c.%)su`...H;W....Bc1V...I].....6.=@...d......L....U.!}.K.\.J...cx.c1
+    @1648799   bc1          ..d../...z.Q..../....|/bc1u...O.$W....4..!.E_...T...R&.4...YZ+2`.a..}m..ro
+
+8e8262f6c7d94ae082499d651438a5d2  png  74278 байт
+  PNG: чанков пройдено, IEND на 74266, всего байт 74278
+    iTXt: XML:com.adobe.xmp.....<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="XMP Core 6.0.0">.   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">.      <rdf:Description rdf:about="".            xmlns:exif="http://ns.adobe.com/exif/1.0/">.         <exif:
+  после IEND: 0 байт
+
+986e585b3b1b4a92bb990c922b750fe8  gif  1237230 байт
+  GIF: кадров=15  трейлер 0x3B на 1237229  всего байт 1237230
+  Application ext: 2
+    id=NETSCAPE2.0...
+    id=XMP DataXMP?xpacket begin="..." id="W5M0MpCehiHzreSzNTczkc9d"?> 
+  XMP в GIF: 1043 байт
+  после трейлера: 0 байт
+
+ad1d0fada11947c888047ff55a410976  png  548325 байт
+  PNG: чанков пройдено, IEND на 548313, всего байт 548325
+  после IEND: 0 байт
+  ключевые слова (1):
+    @252820    bc1         .1:.4S..:....)V0....2..GbC1.b@....z....V..(.)-..."....\..k........)8]S..|..
+
+cd4726a1c5974bb8b9a95df879244bab  gif  190243 байт
+  GIF: кадров=41  трейлер 0x3B на 190242  всего байт 190243
+  Application ext: 1
+    id=NETSCAPE2.0...
+  после трейлера: 0 байт
+
+d6531231cbd742c3aaa926cdf65468a0  png  49997 байт
+  PNG: чанков пройдено, IEND на 49985, всего байт 49997
+  после IEND: 0 байт
+
+d989475c36474e97b01704d245236cef  jpg  1015301 байт
+  JPEG: EOI на 1015299, всего байт 1015301
+  после EOI: 0 байт
+    EXIF присутствует
+    XMP присутствует
+  ключевые слова (1):
+    @19787     bc1         ="650775DE7EB39EA0845A18BC14B3068C" photoshop:ColorMode="3" photoshop:ICCPr
+
+e30067e9859d4ee8976515590a8e9865  jpg  440971 байт
+  JPEG: EOI на 440969, всего байт 440971
+  после EOI: 0 байт
+    EXIF присутствует
+    XMP присутствует
+
+e97be91711254741999d9cc38f9644da  gif  4959643 байт
+  GIF: кадров=75  трейлер 0x3B на 4959642  всего байт 4959643
+  Application ext: 2
+    id=NETSCAPE2.0...
+    id=XMP DataXMP?xpacket begin="..." id="W5M0MpCehiHzreSzNTczkc9d"?> 
+  XMP в GIF: 1039 байт
+  после трейлера: 0 байт
+  ключевые слова (2):
+    @3837841   bc1         ....\.Q.9d.'..@F...*.jQ.Bc1p10.......Y.....A.. ..r.U.......... ...I.......3
+    @4074639   bc1         Cq..j`3.oh$g.$).k..R|q^.Bc1.gn..oHkF.i&&>.VFs...4d41..3Z....3l.Bm0..z.+..4m
+
+======================================================================
+ИТОГ по ключевым словам (ненулевые):
+  690b95a837b14706a3e8583e0c5b8056 png kw=7
+  2ba991114f8a4afe84df3d95b9521bf2 jpg kw=6
+  8715e8e22d4247af90894b03b8ae6a89 gif kw=2
+  e97be91711254741999d9cc38f9644da gif kw=2
+  434553dd039c4dbf9926ca2602de0b08 gif kw=1
+  7a1969671b2a4462b5554cfbd7fbcad9 gif kw=1
+  ad1d0fada11947c888047ff55a410976 png kw=1
+  d989475c36474e97b01704d245236cef jpg kw=1
+лог: data/h8_assets_probe.log

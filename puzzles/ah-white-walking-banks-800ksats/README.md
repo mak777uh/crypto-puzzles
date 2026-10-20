@@ -13,12 +13,13 @@
 - the mechanism is fully understood and the published text has been mined exhaustively; only 1 of 6 organ-donor groups (4 of 24 words) is printed as a decodable block, and the other 5 are not present anywhere in the free PDF, the site text, or the audiobook narration, which argues the remaining words depend on hints the author has not yet published
 
 ## Адреса/эскроу
-- `bc1qxy4tf0s4n7x9w24rawf9qsxh2hyljrmvyrhwzt` — account 0, index 0 | expected: 100000 sats | state: funded-unspent (checked 2026-08-16) | https://mempool.space/address/bc1qxy4tf0s4n7x9w24rawf9qsxh2hyljrmvyrhwzt
-- `bc1q4qc24xk5cehc4t7vr264zldsms2kmxf86jqjau` — account 0, index 1 | expected: 700000 sats | state: funded-unspent (checked 2026-08-16) | https://mempool.space/address/bc1q4qc24xk5cehc4t7vr264zldsms2kmxf86jqjau
+- `bc1qxy4tf0s4n7x9w24rawf9qsxh2hyljrmvyrhwzt` — account 0, index 0 | expected: 100000 sats | state: funded-unspent (checked 2026-10-19) | https://mempool.space/address/bc1qxy4tf0s4n7x9w24rawf9qsxh2hyljrmvyrhwzt
+- `bc1q4qc24xk5cehc4t7vr264zldsms2kmxf86jqjau` — account 0, index 1 | expected: 700000 sats | state: funded-unspent (checked 2026-10-19) | https://mempool.space/address/bc1q4qc24xk5cehc4t7vr264zldsms2kmxf86jqjau
 
 ## Источники
 - 2026-08-16 — AH White, Nostr profile — https://njump.me/npub1c2rvx6ue9uewl452kczcfxz9w242sfzn64ul8dv2afd3t5dpktzs0kmmvf
 - 2026-08-16 — Walking Banks, official site (Find the Treasure) — https://walkingbanks.com
+- **2026-10-19 — сайт мёртв:** walkingbanks.com отдаёт заглушку Hostinger «Your domain is expired» (HTTP 200, 10 881 байт); официальная страница/подсказки недоступны, приз на обоих адресах жив (100 000 + 700 000 сат, spent 0). См. LOG.md.
 
 ## Подробности
 Здесь должна накапливаться расширенная информация по мере проходов: подсказки, прогресс сообщества, проверенные гипотезы, ссылки, compute-оценки. Текущий файл — скелет из OCP; заполняется автоматически в циклах.

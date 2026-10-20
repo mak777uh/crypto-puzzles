@@ -1,0 +1,455 @@
+==========================================================================================
+### 1btc-brainwallet-defcon-2014
+# «1 BTC Brainwallet» (DEFCON 2014)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **open / исторический**
+- Цепь: bitcoin
+- Приз: 1 BTC
+- Опубликовано: 2014 (DEFCON)
+- Типы: brainwallet, book-cipher, word-selection
+- Что осталось / сложность: 20 подсказок из книги → brainwallet; книга — обязательный материал
+## Адреса/эскроу
+- Адрес в каталоге не зафиксирован — требуется уточнить (B43).
+## Источники
+- 2014 — DEFCON, пазл с призом 1 BTC (первоисточник в каталоге не указан — требуется найти).
+## Подробности
+- Механизм: 20 подсказок, распределённых по книге, сводятся к одной фразе-brainwallet.
+- Классический brainwallet-подход: SHA-256 от фразы → приватный ключ, без BIP39-деривации.
+- Пазл 2014 года: если приз не снят, это один из старейших активных brainwallet-челленджей.
+## Зацепки / следующий шаг
+    ...(README всего 56 строк)
+    LOG(9 строк) хвост:
+      | - Кратко из README: статус open / исторический; приз 1 BTC; типы brainwallet, book-cipher, word-selection; остаток-сложность n/a.
+      | - Адрес/эскроу: n/a
+      | - Источники: n/a
+      | - Вся история и досье — в README.md этой папки; новые сессии описывать здесь (self-intro, что делал, результаты вкл. отрицательные, артефакты, ссылки).
+    файлы(6): data\01_api.pullpush.io.json(9239); data\02_the-one-bitcoin-heist-making-a-custom-hashcat-modu.html(8593); data\00_api.pullpush.io.json(7501); README.md(4993); data\SOURCES.md(1447); LOG.md(1176)
+
+==========================================================================================
+### arweave-puzzle-3-1000ar
+# Arweave Puzzle #3
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles).
+## Кратко
+- Статус: **open** (mid)
+- Цепь: arweave
+- Приз: 1000.165838006237 AR (USD 1810)
+- Примечание: balance drifts slightly above the original funding from unsolicited dust deposits over the years
+- Опубликовано: 2019-05-27 https://twitter.com/arweavep/status/1132936723162378240
+- Типы: word-selection, text-cipher
+- Difficulty left: insight
+- Exact-address oracle and original-page controls pass. Historical searches lack per-run witnesses and do not prove the number of wrong image readings. Dated ecosystem sources and visual interpretation remain unresolved.
+## Адреса/эскроу
+- `wHP6OPG5GMF5dedo_CD8AAy6x8La-gfI5b5pk65Tx_0` — main | expected: 1000.165838006237 AR | state: funded-unspent (checked 2026-09-04) | https://viewblock.io/arweave/address/wHP6OPG5GMF5dedo_CD8AAy6x8La-gfI5b5pk65Tx_0
+## Источники
+- 2019-05-27 — Puzzle Weave 3 announcement — https://twitter.com/arweavep/status/1132936723162378240
+- 2019-05-27 — Live puzzle page — https://kszeqgxezf5quhzld4nhpasyilhxphclq2peqi5mrn7utxmqhwga.arweave.net/VLJIGuTJewofKx8ad4JYQs93nEuGnkgjrIt_Sd2QPYw
+- 2019-09-26 — "With N.1.7.0.0 release, third pic became obsolete" — https://twitter.com/arweavep/status/1177235139035836417
+- 2019-07-21 — "Did anybody count the dots?" — https://twitter.com/arweavep/status/1152887601529073665
+- 2020-03-04 — "The list of unsolved Arweave puzzles ordered by difficulty probably looks like: 3, 9, 8, 5, 7" — https://twitter.com/arweavep/status/1235199397371277315
+- 2026-08-16 — HomelessPhD/AR_Puzzles community repository, PZL3 entry — https://github.com/HomelessPhD/AR_Puzzles/tree/main/PZL3
+    ...(README всего 201 строк)
+    LOG(23 строк) хвост:
+      | - Делал: обогащение из внешнего репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) — раскладка дельты снапшота `19644e58` (клон `_sources
+      | - Результат: перенесено 15 файлов данных → `data/ocp/`, 5 кода → `tools/ocp/`,1 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих 
+      | - Артефакты: `2-mid-prizes/arweave-puzzle-3-1000ar/analysis/funding-2026-09-04.json`, `2-mid-prizes/arweave-puzzle-3-1000ar/analysis/h1-result.json`, `2-mid-prizes/arweav
+      | - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/arweave-puzzle-3-1000ar ; полная дель
+    файлы(30): data\02_VLJIGuTJewofKx8ad4JYQs93nEuGnkgjrIt_Sd2QPYw.html(781000); data\ocp\clues\slot-6.png(72240); data\ocp\clues\slot-7.png(68756); data\ocp\clues\slot-5.png(67542); data\ocp\clues\slot-8.png(66944); data\ocp\clues\slot-2.png(59612)
+
+==========================================================================================
+### arweave-puzzle-10-500ar
+# Arweave Puzzle #10
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles).
+## Кратко
+- Статус: **open** (mid)
+- Цепь: arweave
+- Приз: 500.02225493 AR (USD 905)
+- Опубликовано: 2020-04-14 https://arweave.net/1fLPMP_smP6ipdIYbYUAZtFPwO4crdYr4kMVf5uTivg
+- Типы: word-selection, text-cipher
+- Difficulty left: insight
+- the author never published any length or charset constraint for this puzzle specifically; on the order of 8,000,000 candidates tested across every literal, pun, and genesis-block reading found so far, 0 matches; the block is one unguessed token, not a search problem
+## Адреса/эскроу
+- `bkjJGw3NLxs8OAyRxgTL-QFpiB3lBJqZ76kDhWdB-Rs` — main | expected: 500.02225493 AR | state: funded-unspent (checked 2026-08-16) | https://viewblock.io/arweave/address/bkjJGw3NLxs8OAyRxgTL-QFpiB3lBJqZ76kDhWdB-Rs
+## Источники
+- 2020-04-14 — Live puzzle page — https://arweave.net/1fLPMP_smP6ipdIYbYUAZtFPwO4crdYr4kMVf5uTivg
+- 2020-04-14 — "1,2,4,8 = solved / 3,5,7,9 = not solved yet" — https://twitter.com/arweavep/status/1250036746802298885
+- 2020-04-22 — @_LeFevre_ reply in the #10 announcement thread — https://github.com/HomelessPhD/AR_Puzzles/tree/main/PZL10
+- 2026-08-16 — HomelessPhD/AR_Puzzles community repository, PZL10 entry — https://github.com/HomelessPhD/AR_Puzzles/tree/main/PZL10
+- 2026-08-16 — Escrow wallet, viewblock.io — https://viewblock.io/arweave/address/bkjJGw3NLxs8OAyRxgTL-QFpiB3lBJqZ76kDhWdB-Rs
+## Подробности
+    ...(README всего 183 строк)
+    LOG(23 строк) хвост:
+      | - Делал: обогащение из внешнего репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) — раскладка дельты снапшота `19644e58` (клон `_sources
+      | - Результат: перенесено 2 файлов данных → `data/ocp/`, 7 кода → `tools/ocp/`,1 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в
+      | - Артефакты: `2-mid-prizes/arweave-puzzle-10-500ar/analysis/genesis28-results.json`, `2-mid-prizes/arweave-puzzle-10-500ar/puzzle.json`, `2-mid-prizes/arweave-puzzle-10-5
+      | - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/arweave-puzzle-10-500ar ; полная дель
+    файлы(22): data\04_1fLPMP_smP6ipdIYbYUAZtFPwO4crdYr4kMVf5uTivg.html(908296); data\03_open-crypto-puzzles.html(375285); data\05_PZL10.html(297290); tools\ocp\oracle.py(20323); README.md(14596); data\00_README.md(9869)
+
+==========================================================================================
+### gold-crystal-ubisoft-hunt-500k
+# Gold & Crystal — The Lost Treasure of Edward Kenway (Ubisoft × Unsolved Hunts, $500 000)
+**Тип**: физическая охота за кладом с платным входом (не on-chain пазл).
+**Статус**: анонсирована 2026-05-13, открыта/нерешена; старт прохождения — 2026-11-09 (по данным sknr.net).
+**Приз**: реальный клад стоимостью **$500 000** (золото + кристалл), спрятан в Карибском регионе; победитель
+летит на место и достаёт сундук сам.
+**Механика**: **15 головоломок** (карты, письма, архивы, «послание в бутылке»); часть решается удалённо,
+финальный шаг — физический поиск. Ubisoft оценивает срок решения в **2–5 лет**.
+**Вход**: от **~$40** (платный доступ через Unsolved Hunts).
+## Вердикт для нашей базы (2026-10-18, Qoder)
+Не наш основной скоуп по трём причинам: (1) приз вне блокчейна и не снимается транзакцией;
+(2) требуется платная регистрация = трата (правило «никаких трат без ОК Ильи»);
+(3) финальный шаг — физическое присутствие в Карибах.
+Занесена в базу как **каталожная позиция и объект мониторинга**: если организаторы опубликуют
+on-chain- component (BTC/ETH-часть приза) или бесплатные слои головоломок — пазл становится нашим.
+## Источники (все открыты 2026-10-18)
+- Официальный сайт охоты: https://goldandcrystal.com/en
+- Пресс-релиз Ubisoft (2026-05-13): https://www.ubisoft.com/en-us/game/assassins-creed/news/7K8UlceK8PKZ4QjBdGR8FG/embark-on-a-thrilling-treasure-hunt-and-take-your-shot-at-winning-500000
+- Разбор Polygon: https://www.polygon.com/assassins-creed-black-flag-treasure-hunt/
+- Новость SKNR (дата старта, 15 задач, статус «ongoing»): https://www.sknr.net/2026/05/12/ubisoft-reveals-unsolved-hunts-unveiled-gold-crystal-the-lost-treasure-of-edward-kenway-to-win-real-money/
+- Посты организатора/издателя: https://www.facebook.com/UbisoftSEA/posts/1427338572765932 ; https://www.facebook.com/AccessTheAnimus/videos/1654005462481662/
+- Организатор пазлов (каталог живых охот): **Unsolved Hunts** — https://www.unsolvedhunts.com/ (проверить актуальность домена при следующем заходе)
+    ...(README всего 31 строк)
+    LOG(19 строк) хвост:
+      | живость домена unsolvedhunts.com (не запрашивался).
+      | ## 2026-10-18, 13:05 — Qoder (проход верификации)
+      | - Проверка живости доменов: goldandcrystal.com/en HTTP 200, unsolvedhunts.com HTTP 200 — охота активна, нерешена.
+      | - Ончейн-компоненты не обнаружено (физический клад $500k, платный вход ~$40). Подтверждён вердикт off-chain/physical.
+    файлы(2): README.md(3397); LOG.md(2501)
+
+==========================================================================================
+### lake-city-quiet-pills
+# Lake City Quiet Pills (2010-е)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **не подтверждена**
+- Цепь: —
+- Приз: нет
+- Опубликовано: 2010-е
+- Типы: website, forum-mystery, intelligence-myth
+- Что осталось / сложность: связь с разведкой не подтверждена
+## Адреса/эскроу
+- Не применимо.
+## Источники
+- 2026 — 10enews, famous internet mysteries — https://www.10enews.com/famous-internet-mysteries-which-are-still-unsolved-in-2026/
+## Подробности
+- Сайт и сообщения, которые связывали с наймом наёмников и разведкой.
+- Заявленная связь с разведкой оспаривается и документально не подтверждена.
+- Значительная часть истории — смесь фактов, домыслов и поздних добавлений.
+- Кейс часто приводят как пример «мифологизации» интернет-загадок.
+    ...(README всего 62 строк)
+    LOG(15 строк) хвост:
+      | - Успех (6): 00_www.10enews.com.html; 01_the-lake-city-quiet-pills-mystery.html; 02_negativepid.blog.html; 03_i-think-i-accidentally-reawakened-the-lake-city-qu.html; 04_
+      | - Отказ (0): —
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(9): data\05_lake-city-quiet-pills-e-il-segreto-del-forum-nasco.html(199630); data\02_negativepid.blog.html(176129); data\01_the-lake-city-quiet-pills-mystery.html(141587); data\03_i-think-i-accidentally-reawakened-the-lake-city-qu.html(123568); data\04_lake-city-quiet-pills.html(102179); data\00_www.10enews.com.html(95227)
+
+==========================================================================================
+### 973-eht-namuh-973
+# 973-eht-namuh-973.com
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **не объяснён**
+- Цепь: —
+- Приз: нет
+- Опубликовано: —
+- Типы: website-mystery, countdown
+- Что осталось / сложность: назначение сайта неизвестно
+## Адреса/эскроу
+- Не применимо.
+## Источники
+- 2026 — WatchMojo, 48 unsolved internet mysteries — https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries
+## Подробности
+- Загадочный сайт с обратным таймером и темой «the end is coming».
+- Название домена читается как перевёрнутый/искажённый текст (отсылка к «human»).
+- Содержимое неоднократно менялось, что затрудняет анализ.
+- Автор и цель не установлены.
+    ...(README всего 58 строк)
+    LOG(9 строк) хвост:
+      | - Кратко из README: статус не объяснён; приз нет; типы website-mystery, countdown; остаток-сложность n/a.
+      | - Адрес/эскроу: n/a
+      | - Источники: https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries
+      | - Вся история и досье — в README.md этой папки; новые сессии описывать здесь (self-intro, что делал, результаты вкл. отрицательные, артефакты, ссылки).
+    файлы(5): data\00_973-eht-namuh-973.com.html(128024); data\01_bu-site-neyi-anlatmaya-calisiyor-205033.html(59451); README.md(4936); LOG.md(1208); data\SOURCES.md(1098)
+
+==========================================================================================
+### john-titor
+# John Titor (2000-2001)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **не решена**
+- Цепь: —
+- Приз: нет
+- Опубликовано: 2000-2001 (форумы)
+- Типы: forum-mystery, identity
+- Что осталось / сложность: личность не установлена
+## Адреса/эскроу
+- Не применимо.
+## Источники
+- 2026 — архив обсуждений — https://paranormalis.com
+## Подробности
+- Форумный «путешественник во времени из 2036 года».
+- Оставил технические детали (описание машины времени, физика) и предсказания.
+- Часть «предсказаний» сбылась, часть — нет; методика проверки неоднозначна.
+- Личность не установлена, несмотря на многолетние расследования.
+    ...(README всего 70 строк)
+    LOG(15 строк) хвост:
+      | - Успех (6): 00_paranormalis.com.html; 01_John_Titor.html; 02_timetravelinstitute.com.html; 03_16118.html; 04_16126.html; 05_john-titor-aka-razimus-report_13.html
+      | - Отказ (0): —
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(9): data\04_16126.html(486323); data\02_timetravelinstitute.com.html(377349); data\03_16118.html(310214); data\01_John_Titor.html(241867); data\00_paranormalis.com.html(227117); data\05_john-titor-aka-razimus-report_13.html(168264)
+
+==========================================================================================
+### webdriver-torso
+# Webdriver Torso (2013+)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **объяснена (частично)**
+- Цепь: —
+- Приз: нет
+- Опубликовано: 2013+
+- Типы: youtube-mystery, test-patterns
+- Что осталось / сложность: аномальные видео остались необъяснёнными
+## Адреса/эскроу
+- Не применимо.
+## Источники
+- 2026 — Википедия — https://en.wikipedia.org/wiki/Webdriver_Torso
+## Подробности
+- YouTube-канал с тысячами видео: красные и синие прямоугольники со звуковыми сигналами.
+- Google официально признал: канал использовался для тестирования качества видео.
+- Аномальные видео (Rick Astley, Эйфелева башня, «Matei») официального объяснения не получили.
+- Канал также стал объектом шуток Google (например, пасхалка в поиске).
+    ...(README всего 65 строк)
+    LOG(15 строк) хвост:
+      | - Успех (2): 00_Webdriver_Torso.html; 01_truth-youtube-mysterious-videos-webdriver-torso.html
+      | - Отказ (3): https://www.bbc.co.uk/news/technology-27778071 [FAIL: <urlopen error [WinError 10054] Уд]; https://www.bbc.com/news/technology-27238332 [FAIL: <urlopen error
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(5): data\01_truth-youtube-mysterious-videos-webdriver-torso.html(313725); data\00_Webdriver_Torso.html(283756); README.md(5664); LOG.md(2092); data\SOURCES.md(1089)
+
+==========================================================================================
+### purebasic-t85211-600eur
+# purebasic.fr t=85211 — 600 EUR
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: `MASTER_CATALOG_v2_2026-10-16.md` (журнал «оычн», 13.10.2026).
+## Кратко
+- Статус: **неизвестен** — страница недоступна (Cloudflare 403 и для fetch, и для браузера; в Wayback пусто)
+- Цепь: —
+- Приз: **600 EUR**
+- Источник: https://www.purebasic.fr/english/viewtopic.php?t=85211
+## Зацепки / следующий шаг
+- Достать страницу вручную (другой IP/браузер) или найти её копию — без текста задачи работать нельзя.
+- Приоритет низкий до получения доступа.
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка, прогресс, баланс или решение (полностью либо частично) **должны** быть дописаны сюда с датой и ссылкой на источник.
+## История изменений
+- 2026-10-16 (deepseek-flash) — папка создана при переносе данных из `MASTER_CATALOG_v2_2026-10-16.md` (Часть Б: живые загадки вне каталога).
+    LOG(19 строк) хвост:
+      | ## 2026-10-17 18:58 — Big Pickle (big-pickle / OpenCode, Windows) — повторный сбор (0/предыдущий)
+      | - Причина прогона: предыдущая попытка дала 0 файлов (GitHub IncompleteRead / HTTP 403).
+      | - Метод: raw-README OCP-репо и/или зеркало web.archive.org.
+      | - Результат: сохранено 0 из 1; см. `data/SOURCES.md`.
+    файлы(3): LOG.md(2160); README.md(1379); data\SOURCES.md(734)
+
+==========================================================================================
+### adam-2-0
+# Adam 2.0 / наследники Unfavorable Semicircle
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **не раскрыта**
+- Цепь: —
+- Приз: нет
+- Опубликовано: после 2016
+- Типы: youtube-mystery, successor-channel
+- Что осталось / сложность: каналы молчаливы, назначение неизвестно
+## Адреса/эскроу
+- Не применимо.
+## Источники
+- 2026 — WatchMojo, 48 unsolved internet mysteries — https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries
+## Подробности
+- Предполагаемые каналы-преемники Unfavorable Semicircle.
+- Публикации молчаливые/без пояснений, что повторяет паттерн оригинала.
+- Связь с оригиналом не подтверждена — возможны как наследники, так и подражатели.
+## Зацепки / следующий шаг
+    ...(README всего 57 строк)
+    LOG(15 строк) хвост:
+      | - Успех (4): 00_History_and_background.html; 01_List_of_Series.html; 02_Unfavorable_Semicircle.html; 03_negativepid.blog.html
+      | - Отказ (2): https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries [FAIL: HTTP Error 403: Forbidden | jina: ]; https://www.bbc.com/future/article/20160225
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(7): data\03_negativepid.blog.html(166565); data\02_Unfavorable_Semicircle.html(100093); data\00_History_and_background.html(14746); README.md(5470); data\01_List_of_Series.html(3953); LOG.md(2061)
+
+==========================================================================================
+### markovian-parallax-denigrate
+# Markovian Parallax Denigrate (1996)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **не решена**
+- Цепь: —
+- Приз: нет
+- Опубликовано: 1996 (Usenet)
+- Типы: usenet, text-cipher, markov-chains
+- Что осталось / сложность: смысл сообщений не установлен
+## Адреса/эскроу
+- Не применимо.
+## Источники
+- 2026 — Википедия — https://en.wikipedia.org/wiki/Markovian_Parallax_Denigrate
+## Подробности
+- Самая старая интернет-загадка: серия бессмысленных сообщений в Usenet (1996).
+- Текст напоминает результат работы цепей Маркова — отсюда название.
+- Версии: спам, эксперимент, троллинг, побочный продукт генератора текста.
+- Единого объяснения нет; автор не установлен.
+    ...(README всего 58 строк)
+    LOG(15 строк) хвост:
+      | - Успех (3): 00_Markovian_Parallax_Denigrate.html; 01_markovian-parallax-denigrate-mystery-internet.html; 02_the-usenet-markovian-parallax-denigrate-mystery.html
+      | - Отказ (2): https://www.dailydot.com/society/markovian-parallax-denigrate-spam-mys [FAIL: HTTP Error 404: Not Found | jina: ]; https://www.avclub.com/need-a-distraction-
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(6): data\01_markovian-parallax-denigrate-mystery-internet.html(288225); data\00_Markovian_Parallax_Denigrate.html(101246); data\02_the-usenet-markovian-parallax-denigrate-mystery.html(92635); README.md(4951); LOG.md(2103); data\SOURCES.md(1147)
+
+==========================================================================================
+### project-architeuthis
+# Project Architeuthis (US Navy, 2014)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-9).
+## Кратко
+- Статус: **завершён** (рекрутинговая акция)
+- Цепь: —
+- Приз: не денежный — приглашение на собеседование/работа в US Navy
+- Опубликовано: 2014
+- Типы: arg, recruiting, cryptography
+- Что осталось / сложность: пазл закрыт, ценность — историческая и методическая
+## Источники
+- 2026 — Википедия о Cicada 3301 (раздел о подражателях) — https://en.wikipedia.org/wiki/Cicada_3301
+## Подробности
+- Криптографический рекрутинговый challenge, запущенный ВМС США в 2014 году.
+- Идея заимствована у Cicada 3301: цепочка загадок для отбора кандидатов в криптологи.
+- Успешные участники получали контакт с рекрутерами, а не денежный приз.
+- Важен как прецедент: государственная структура использовала ARG-формат для найма.
+## Зацепки / следующий шаг
+- Не тратить время (кампания завершена).
+- Использовать как пример дизайна рекрутинговых ARG.
+    ...(README всего 35 строк)
+    LOG(15 строк) хвост:
+      | - Успех (1): 00_Cicada_3301.html
+      | - Отказ (0): —
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(4): data\00_Cicada_3301.html(195855); README.md(2403); LOG.md(1816); data\SOURCES.md(366)
+
+==========================================================================================
+### max-headroom-broadcast-hijacking
+# Max Headroom Broadcast Hijacking (1987)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **не раскрыта**
+- Цепь: —
+- Приз: нет
+- Опубликовано: 1987-11-22 (Чикаго)
+- Типы: broadcast-intrusion, investigation
+- Что осталось / сложность: виновные не установлены (дело FCC открыто)
+## Адреса/эскроу
+- Не применимо.
+## Источники
+- 2026 — Википедия — https://en.wikipedia.org/wiki/Max_Headroom_broadcast_signal_intrusion
+- 2026 — WatchMojo, 48 unsolved internet mysteries — https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries
+## Подробности
+- 22.11.1987 два чикагских телеканала были перехвачены в эфире.
+- В первом случае неизвестный в маске Max Headroom появился на WGN-TV во время спортивной трансляции.
+- Во втором — на WTTW во время сериала «Doctor Who» показали ролик с тем же персонажем.
+- Виновные не установлены; FCC держит дело открытым.
+    ...(README всего 60 строк)
+    LOG(15 строк) хвост:
+      | - Успех (4): 00_Max_Headroom_broadcast_signal_intrusion.html; 01_30-years-later-notorious-max-headroom-incident-rem.html; 02_today-in-history-november-22-what-happened-on
+      | - Отказ (4): https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries [FAIL: HTTP Error 403: Forbidden | jina: ]; https://www.upi.com/Archives/1987/11/23/A-v
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(7): data\02_today-in-history-november-22-what-happened-on-this.html(254449); data\00_Max_Headroom_broadcast_signal_intrusion.html(237066); data\03_www.chicagotribune.com.html(179776); data\01_30-years-later-notorious-max-headroom-incident-rem.html(73250); README.md(5594); LOG.md(2402)
+
+==========================================================================================
+### lost-media-bfi-75-most-wanted
+# Lost Media (BFI 75 Most Wanted, Doctor Who и др.)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **открытые дела**
+- Цепь: —
+- Приз: нет
+- Опубликовано: —
+- Типы: lost-media, archive-research
+- Что осталось / сложность: сотни утраченных материалов; поиск ведётся десятилетиями
+## Адреса/эскроу
+- Не применимо.
+## Источники
+- 2026 — Lost Media Wiki — https://lostmediawiki.com
+- 2026 — BFI Most Wanted — https://www.bfi.org.uk
+- 2026 — Mystery Atlas — https://mysteryatlas.pulsaa.net/topics/internet-mysteries
+## Подробности
+- Категория «потерянных медиа»: фильмы, телепередачи, аудиозаписи, считающиеся утраченными.
+- BFI 75 Most Wanted — список из 75 утраченных британских фильмов.
+- Потерянные эпизоды «Doctor Who» — самый известный кейс (часть найдена в архивах по всему миру).
+    ...(README всего 68 строк)
+    LOG(15 строк) хвост:
+      | - Успех (6): 00_www.bfi.org.uk.html; 01_internet-mysteries.html; 02_about.html; 03_75-list.html; 04_bfi-most-wanted-our-discoveries-so-far.html; 05_20100429_archive_75.pd
+      | - Отказ (1): https://lostmediawiki.com [FAIL: HTTP Error 403: Forbidden | jina: ]
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(9): data\00_www.bfi.org.uk.html(341535); data\04_bfi-most-wanted-our-discoveries-so-far.html(186109); data\05_20100429_archive_75.pdf(99070); data\01_internet-mysteries.html(75850); data\03_75-list.html(42783); data\02_about.html(8612)
+
+==========================================================================================
+### actuarial-science-nft-hunt-10eth
+# Actuarial Science NFT Hunt
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **open**
+- Цепь: ethereum
+- Приз: до 10 ETH
+- Типы: nft, collectible, word-selection
+- Что осталось / сложность: нужно собрать 12 из 100 NFT
+## Адреса/эскроу
+- Контракт/эскроу в каталоге не зафиксирован — требуется уточнить (B24).
+## Источники
+- Каталожная запись B24 (прямой первоисточник не указан — требуется найти).
+## Подробности
+- Механизм: собрать 12 из 100 NFT, выпущенных в рамках проекта.
+- Верхняя граница приза — до 10 ETH, что делает пазл крупным, несмотря на категорию «нишевые».
+- Коммерческая механика (цена минта NFT) может превышать ожидаемую выгоду — нужна оценка ROI.
+## Зацепки / следующий шаг
+- Найти коллекцию на OpenSea/Blur и определить контракт
+    ...(README всего 49 строк)
+    LOG(13 строк) хвост:
+      | ## 2026-10-17 18:59 — Big Pickle (big-pickle / OpenCode, Windows) — повторный сбор (0/предыдущий)
+      | - Причина прогона: предыдущая попытка дала 0 файлов (GitHub IncompleteRead / HTTP 403).
+      | - Метод: raw-README OCP-репо и/или зеркало web.archive.org.
+      | - Результат: сохранено 0 из 3; см. `data/SOURCES.md`.
+    файлы(3): README.md(3807); LOG.md(1578); data\SOURCES.md(1371)
+
+==========================================================================================
+### lunarcrush-lunar-vault-62btc
+# LunarCrush Lunar Vault — 62 BTC на луноходе MAPP (Лунный южный полюс)
+**Тип**: физически размещённый ключ кошелька (не on-chain-задача и не криптограмма).
+**Приз**: **62 BTC** (~$1.5M на момент анонса 2023-03-23), кошелёк «заперт» в физическом хранилище на
+луноходе **MAPP Lunar Rover** (Lunar Outpost), прикреплённом к посадочной платформе Blue Ghost (Firefly Aerospace).
+**Статус по состоянию на наш проход**: нерешена/невостребована (ключ физически недоступен).
+**Механика по первоисточнику**: «key affixed to the rover»; доступ только через реальную доставку к роверу
+на Луне; объявлено, что план может предложить кто угодно на Земле.
+## Что известно по датам (источники ниже)
+- 2023-03-23 — анонс (PR Newswire): 62 BTC, MAPP, Blue Ghost, «key can only be accessed via space travel».
+- 2023-04 — репортажи (Space.com, The Block): критика «publicity stunt», вопросы легитимности.
+- 2025-02 — Lunar Outpost: первая миссия ровера «no earlier than February 26, 2025», южный полюс Луны.
+  Публикация Lunar Outpost о первой миссии не подтверждает в лоб, что «treasure chest» полетел, — **требуется
+  отдельная проверка статуса миссии и того, улетел ли ровер с сейфом**.
+## Вердикт для нашей базы (2026-10-18, Qoder)
+Не решаем: приз требует физического доступа к Луне, адрес кошелька публично не опубликован (в доступных нам
+материалах), значит ончейн-проверка «есть ли ещё деньги» невозможна без документов программы.
+Занесена в каталог как **загадка с неснятым призом**, чтобы следующий агент не считал её «новой находкой».
+Единственный реальный путь к продвижению — найти опубликованный адрес (тогда — проверка баланса) и
+условия claims (юридические/физические).
+## Источники (открыты 2026-10-18)
+    ...(README всего 40 строк)
+    LOG(28 строк) хвост:
+      | - Вывод: остаётся офф-чейн/физической позицией каталога (нерешена, но без ончейн-оракула) — как Gold&Crystal/Krypto Chase.
+      | - Ссылки: https://www.hiro.so/blog/launching-a-bitcoin-treasure-hunt-on-the-moon (арх. 20230405182207) ;
+      | https://fireflyspace.com/news/firefly-aerospaces-blue-ghost-mission-1-successfully-launches-and-begins-45-day-transit-to-the-moon/ ;
+      | https://payloadspace.com/blue-ghost-notches-first-successful-lunar-landing/
+    файлы(4): data\hiro_blog.html(79506); README.md(4824); LOG.md(3692); data\pr_2023.html(0)
+

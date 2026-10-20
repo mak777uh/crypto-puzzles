@@ -168,3 +168,35 @@ Satoshi's Treasure, hunghuatang-8964. LunarCrush/Satoshi's Treasure/hunghuatang 
 | Название | Приз | Почему мёртв | Дата |
 |---|---|---|---|
 | 310 BTC Challenge (bitcoinchallenge.codes), финальная стадия | 0,31 BTC | приз снят владельцем ключей 03.12.2019: пул-адрес финала 3NPZiNWiD7cCfXZa1D8tnEZBPgQ884cVw7 → свип 31 180 000 сат (tx 697a8e2e…, блок 606432) → 3DaNeVNFqpirR9KEHjFuPPeErPaMTZyeBo → консолидация 04.12.2019; остальные 3 стадии свипнуты в 2018; сайт мёртв (домен с 2024 — казино-спам); публичного решения нет | 18.10.2026 |
+
+---
+
+## Дополнение 2026-10-19 (Qoder Desktop — bitcoinpuzzles.io и 1BTC Puzzle)
+| Название | Приз | Почему мёртв | Дата |
+|---|---|---|---|
+| bitcoinpuzzles.io #92 «Desafio Pinball Espacial» | 278 753 CB (≈$111) | BTC-адрес `1L3uXcR63SoQ2Q4KmmpQvMnF95AU9kBq4J` **никогда не финансировался** (funded 0, tx 0, mempool 2026-10-19); приз только в баллах CB | 19.10.2026 |
+| bitcoinpuzzles.io #93 «Desafio Misterioso» | 253 251 CB (≈$101) | `1GqGfnKLGXzCn9rB247N5RxDzKWjfUG9N3`: funded 35 711 sat, spent 35 711 (10.02.2026) — **пуст**; BTC-приза нет | 19.10.2026 |
+| bitcoinpuzzles.io #98 «Million Show Challenge» | 300 000 CB (≈$120) | `1LAdCYjJxgXnDfQymPZfHHv3fHhZpecdvm`: funded 42 492, spent 42 492 (10.02.2026) — **пуст** | 19.10.2026 |
+| bitcoinpuzzles.io #101 «Bitcoin Puzzle 71» | 60 021 CB (≈$24) | `1MRi4UBYa6aMLn8JrJatMsuXfQrQoMHF7a`: **никогда не финансировался** (funded 0, tx 0); имя отсылает к 1000 BTC Challenge #71, но приз только CB | 19.10.2026 |
+| 1BTC Puzzle «Hidden in Plain Sight» (iesta/1BTCPuzzle, 2018) | 1 BTC | основной адрес `37XTVuaWt1zyUPRgDDpsnoo5ioHk2Da6Fs`: funded 100 204 132, **spent 100 204 132** (10 tx) — приз снят (пазл решён в 2018); старый `3CcxyPhyvyc3S9UuPfu42GNZLvVVV11Uk8` — остаток 12 510 sat (пыль) | 19.10.2026 |
+
+---
+
+## Дополнение 2026-10-19 (Qoder Desktop — cryptopuzzles.eth)
+| Название | Приз | Почему мёртв | Дата |
+|---|---|---|---|
+| cryptopuzzles.eth «Numbers» (arpox, 2019) | 9,4 mBTC | `1PUzZ61FSVTn12CafJC85Vy1ts3BoFcXdU`: приходы 09–22.02.2019 (нетто 944 414 сат), **расход 30.06.2021** tx `8df05cc03ffb0409…` на 935 532 сат; баланс 0 — приз забран в 2021 | 19.10.2026 |
+| cryptopuzzles.eth «Easycore» (arpox, 2019) | заявлено 0,5 + 0,5 ETH | `0x06460646ca1603a61953eeb385681f5d56401ede`: баланс 0; по каталогу — 4×0,25 ETH в 2019 и вывод 0,9991 ETH 10.02.2020; Blockchair-дашборд даёт противоречивые 0 tx, ETH-RPC с этой машины недоступны — точная причина не подтверждена, но адрес пуст; сайт мёртв с 2019 | 19.10.2026 |
+
+## Живые балансы, которые нам не принадлежат (2026-10-19, Qoder)
+Снимок blockstream.info от 19.10.2026. Код причины — `not-ours`: деньги на адресе третьей стороны (кошелёк решателя, change автора, hot wallet). Их нельзя «взять» решением пазла: пазл уже закрыт, а ключ к этим адресам нам неизвестен и знать его мы не вправе. Попытка свипа = трата чужих монет; правила №5/№6 `AGENT_INSTRUCTIONS.md` (никаких трансляций, ключи только от Ильи) здесь даже не начинаются.
+
+| Адрес | Сат | Чей это деньги | Доказательство |
+|---|---|---|---|
+| `17oKQHHRxdQBiRaGKCoVDQJfebhPaZV3r7` | 79 638 | кошелёк решателя LuckyLurker (получатель свипа) | `bc1q32e3…` funded = spent = 80 000; tx `75e570a5…`, 17.08.2026 |
+| `bc1qw8uecdjvuedtkg4s2kku4s2ak9r2cm59khclfr` | 1 000 000 | кошелёк автора CaesarCoder (не приз) | tx `e2cbb236…` блок 963509: вход `bc1q0x054…`, сдача на change автора `bc1q7nn9…` |
+| `36T9H8hJP7xexevqayU9ADxGca7Y5dKquQ` | 99 996 681 | получатель свипа Natasha Otomoski в 2019, личность не установлена | адрес пазла `179sxfh…` funded = spent = 100 000 078; tx `b01af713…`, блок 591125 |
+| `1HB5XMLmzFVj8ALj6mfBsbifRoD4miY36v` | 20 148 071 | hot wallet сервиса (26 тыс. tx), не объект охоты | тривиум-досье + он-чейн история адреса |
+| `1AndrewYangForPresident2o2ozm6Pzd` | 155 400 | vanity/burn-адрес кампании | досье satoshi-birthday-7-million-quiz |
+
+Живые **призы** открытых или отложенных конкурсов (ключа к ним у нас нет, но это и не чужие кошельки): `157dpLJ…` 1 BTC (ONFO, dead-end), `3Jf995…` 0,21021 BTC (Licorne, физический ключ), `bc1qnepv…` 1 BTC (LuckyLurker Vault #2, отложен автором). По ним работа = сторож, не прогон.

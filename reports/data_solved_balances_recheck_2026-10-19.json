@@ -1,0 +1,125 @@
+{
+ "generated_utc": "2026-10-19T10:30:50Z",
+ "mode": "read-only balance probe, no transactions, no keys",
+ "addresses_checked": 59,
+ "live_nonzero": 11,
+ "errors": 1,
+ "results": [
+  {
+   "address": "bc1qdu8mh9qjtjhy89mvhmcgf66ul6ld92rdr6qzad",
+   "balance": 924704,
+   "funded": 2523649,
+   "spent": 1598945,
+   "tx_count": 6,
+   "utxo_in_mempool": 0,
+   "source": "blockstream.info",
+   "provenance_sample": []
+  },
+  {
+   "address": "bc1qw8uecdjvuedtkg4s2kku4s2ak9r2cm59khclfr",
+   "balance": 1000000,
+   "funded": 1000000,
+   "spent": 0,
+   "tx_count": 1,
+   "utxo_in_mempool": 0,
+   "source": "blockstream.info",
+   "provenance_sample": []
+  },
+  {
+   "address": "1KDUcZh5Z6H1of4Pwoy5ojJtkQxcQBHhnH",
+   "balance": 99081,
+   "funded": 99081,
+   "spent": 0,
+   "tx_count": 8,
+   "utxo_in_mempool": 0,
+   "source": "blockstream.info",
+   "provenance_sample": []
+  },
+  {
+   "address": "13CiiWnD475JHMyY7jc42tEw9KgTsMbr1p",
+   "balance": 546,
+   "funded": 546,
+   "spent": 0,
+   "tx_count": 1,
+   "utxo_in_mempool": 0,
+   "source": "blockstream.info",
+   "provenance_sample": []
+  },
+  {
+   "address": "3CcxyPhyvyc3S9UuPfu42GNZLvVVV11Uk8",
+   "balance": 12510,
+   "funded": 100165446,
+   "spent": 100152936,
+   "tx_count": 13,
+   "utxo_in_mempool": 0,
+   "source": "blockstream.info",
+   "provenance_sample": []
+  },
+  {
+   "address": "17oKQHHRxdQBiRaGKCoVDQJfebhPaZV3r7",
+   "balance": 79638,
+   "funded": 79638,
+   "spent": 0,
+   "tx_count": 1,
+   "utxo_in_mempool": 0,
+   "source": "blockstream.info",
+   "provenance_sample": []
+  },
+  {
+   "address": "bc1qnepv9pcnqvndux9h9mcaxvk6u993rc0lew9fpp",
+   "balance": 100000000,
+   "funded": 100000000,
+   "spent": 0,
+   "tx_count": 1,
+   "utxo_in_mempool": 0,
+   "source": "blockstream.info",
+   "provenance_sample": []
+  },
+  {
+   "address": "1Thanksg9t4MRoCH2CM3cArWq26JiNvMY",
+   "balance": 2032998,
+   "funded": 2728947,
+   "spent": 695949,
+   "tx_count": 5,
+   "utxo_in_mempool": 0,
+   "source": "blockstream.info",
+   "provenance_sample": []
+  },
+  {
+   "address": "16YUMnqAExU7yCCRaE1kfFrc4X9c4dMFjL",
+   "balance": 2027060,
+   "funded": 2027060,
+   "spent": 0,
+   "tx_count": 3,
+   "utxo_in_mempool": 0,
+   "source": "blockstream.info",
+   "provenance_sample": []
+  },
+  {
+   "address": "1AndrewYangForPresident2o2ozm6Pzd",
+   "balance": 155400,
+   "funded": 155400,
+   "spent": 0,
+   "tx_count": 2,
+   "utxo_in_mempool": 0,
+   "source": "blockstream.info",
+   "provenance_sample": []
+  },
+  {
+   "address": "1HB5XMLmzFVj8ALj6mfBsbifRoD4miY36v",
+   "balance": 20148071,
+   "funded": 404383492240,
+   "spent": 404363344169,
+   "tx_count": 26717,
+   "utxo_in_mempool": 0,
+   "source": "blockstream.info",
+   "provenance_sample": []
+  }
+ ],
+ "error_list": [
+  {
+   "address": "1TRUMPforPresident2o2oxxxxxAvY6s",
+   "error": "blockstream.info: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  }
+ ]
+}

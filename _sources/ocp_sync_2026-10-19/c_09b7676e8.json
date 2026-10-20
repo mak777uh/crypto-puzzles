@@ -1,0 +1,85 @@
+{
+  "sha": "09b7676e8520f1981a4021bbc7f40a5f2f66daf8",
+  "node_id": "C_kwDOT6BV9NoAKDA5Yjc2NzZlODUyMGYxOTgxYTQwMjFiYmM3ZjQwYTVmMmY2NmRhZjg",
+  "commit": {
+    "author": {
+      "name": "florent",
+      "email": "floflo777@gmail.com",
+      "date": "2026-10-18T19:11:08Z"
+    },
+    "committer": {
+      "name": "florent",
+      "email": "floflo777@gmail.com",
+      "date": "2026-10-18T19:11:08Z"
+    },
+    "message": "guntis (#38, profesor1234): four free-order sweeps integrated with credit; author 'only written words' reply retires the audio channel of lead 1; verbatim hint-5 fork wording recorded",
+    "tree": {
+      "sha": "bbb32a6ab3b95c98d378e275070618dc6a1a09ab",
+      "url": "https://api.github.com/repos/floflo777/open-crypto-puzzles/git/trees/bbb32a6ab3b95c98d378e275070618dc6a1a09ab"
+    },
+    "url": "https://api.github.com/repos/floflo777/open-crypto-puzzles/git/commits/09b7676e8520f1981a4021bbc7f40a5f2f66daf8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/floflo777/open-crypto-puzzles/commits/09b7676e8520f1981a4021bbc7f40a5f2f66daf8",
+  "html_url": "https://github.com/floflo777/open-crypto-puzzles/commit/09b7676e8520f1981a4021bbc7f40a5f2f66daf8",
+  "comments_url": "https://api.github.com/repos/floflo777/open-crypto-puzzles/commits/09b7676e8520f1981a4021bbc7f40a5f2f66daf8/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "44bf7dd78dd1831da0922092499f5bc32192f1af",
+      "url": "https://api.github.com/repos/floflo777/open-crypto-puzzles/commits/44bf7dd78dd1831da0922092499f5bc32192f1af",
+      "html_url": "https://github.com/floflo777/open-crypto-puzzles/commit/44bf7dd78dd1831da0922092499f5bc32192f1af"
+    }
+  ],
+  "stats": {
+    "total": 50,
+    "additions": 50,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "16362dcf808118eec0515f44faf31263b8066c0f",
+      "filename": "1-big-prizes/guntis-vitolins-metamask-8-6eth/analysis/leads.md",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/floflo777/open-crypto-puzzles/blob/09b7676e8520f1981a4021bbc7f40a5f2f66daf8/1-big-prizes%2Fguntis-vitolins-metamask-8-6eth%2Fanalysis%2Fleads.md",
+      "raw_url": "https://github.com/floflo777/open-crypto-puzzles/raw/09b7676e8520f1981a4021bbc7f40a5f2f66daf8/1-big-prizes%2Fguntis-vitolins-metamask-8-6eth%2Fanalysis%2Fleads.md",
+      "contents_url": "https://api.github.com/repos/floflo777/open-crypto-puzzles/contents/1-big-prizes%2Fguntis-vitolins-metamask-8-6eth%2Fanalysis%2Fleads.md?ref=09b7676e8520f1981a4021bbc7f40a5f2f66daf8",
+      "patch": "@@ -44,6 +44,13 @@ words against the list and spot-checked `link`, `token`, `atom` and `reveal` on\n my own frames. The RO1 model extended with the five coin words as free video\n words is the natural next sweep; @cjmcdaniel said they are running it.\n \n+Update (issue #38, 2026-10-18): the spoken-audio half of this channel is most\n+likely retired. profesor1234 reports an author reply on the challenge video,\n+@GuntisVitolins \"Youll need only written words\" to a viewer who could not make\n+out a spoken word (see `clues/author-posts.md`). Read plainly, the audio is not\n+a source, so the 110 auto-caption-only words do not need sweeping. On-screen\n+printed and drawn words (cjmcdaniel's frame read) are unaffected.\n+\n Original lead text, kept for the reasoning:\n \n The author states in the spoken rules of the challenge video,"
+    },
+    {
+      "sha": "ce45e8e23d49526adeeb0042885f81dead42066e",
+      "filename": "1-big-prizes/guntis-vitolins-metamask-8-6eth/analysis/tested.md",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 0,
+      "changes": 26,
+      "blob_url": "https://github.com/floflo777/open-crypto-puzzles/blob/09b7676e8520f1981a4021bbc7f40a5f2f66daf8/1-big-prizes%2Fguntis-vitolins-metamask-8-6eth%2Fanalysis%2Ftested.md",
+      "raw_url": "https://github.com/floflo777/open-crypto-puzzles/raw/09b7676e8520f1981a4021bbc7f40a5f2f66daf8/1-big-prizes%2Fguntis-vitolins-metamask-8-6eth%2Fanalysis%2Ftested.md",
+      "contents_url": "https://api.github.com/repos/floflo777/open-crypto-puzzles/contents/1-big-prizes%2Fguntis-vitolins-metamask-8-6eth%2Fanalysis%2Ftested.md?ref=09b7676e8520f1981a4021bbc7f40a5f2f66daf8",
+      "patch": "@@ -321,3 +321,29 @@ the RO1 reading-order model, checksum-invalid phrases (only valid candidates wer\n and the other paths for the extra-word sweeps. Speed was about 1,000 derivations per second\n per core; the paths sweep took about 13 minutes on 22 workers. The connecting-words lead\n (about 1.36e10 derivations) needs a GPU PBKDF2 implementation.\n+\n+## Free-order sweeps on a 29-word content pool (issue #38, profesor1234 / Boris, 2026-10-18)\n+\n+Four sweeps contributed in [issue #38](https://github.com/floflo777/open-crypto-puzzles/issues/38),\n+all no match. Pipeline: CPU enumerate plus BIP39 checksum, CUDA PBKDF2-HMAC-SHA512 x2048, CPU BIP32\n+`m/44'/60'/0'/0/0` plus keccak256. Engine certified before each run (canonical `abandon` x11 `about`\n+vector on CPU and device, `abandon` x12 checksum-rejected, 171/171 differential SHA-512 cases,\n+planted-key end to end, btcrecover cross-check). Every run reports exact work-unit coverage and\n+recovered one genuine planted witness per corner. Not re-run here; recorded as contributed with the\n+witness protocol and coverage audit as described. Anchors `dutch`/1, `fog`/5, `parrot`/12 throughout;\n+pool of 29 is the content words of the 5 planted sentences plus blog tag slugs plus the video title\n+and hook, minus anchors and floats.\n+\n+| Sweep | Checksum-valid executed | Result | Witness |\n+| --- | --- | --- | --- |\n+| B-POSS: `fiber`+`fork`+`possible` required, free position, 6 more ordered from the pool (space P(9,3)*P(29,6) = 172,375,257,600) | 10,773,378,819 | 0 match, 42.3 h | 3/3 |\n+| B-CLOUD-A: `fog`/5, floats `fiber`/`fork`/`cloud` | 10,773,355,757 | 0 match, 49.6 h | 3/3 |\n+| B-CLOUD-B: `cloud`/5, floats `fiber`/`fork`/`fog` | 10,773,538,507 | 0 match, 48.5 h | 2/2 |\n+| B-FRAMES: `fiber`+`fork` required, post side 3 of 14, video side 4 of 9 (`build` `share` `atom` `link` off frames), 6/6 partition | 1,040,162,282 derivations | 0 match (also at indices 0 to 4) | 4/4 |\n+\n+B-POSS probes README lead 4 (substrings) under free order, which RO2 does not cover; its 29-word\n+pool contains no substring words, so it is disjoint from every prior sweep and is about 4 percent of\n+the 2.8e11 free-order substring space. B-CLOUD-A/B close both orientations of the `fog`/`cloud`\n+question and are consistent with the existing retirement, not a reopening. B-FRAMES is the free-order\n+counterpart to Bayols (issue #18) on a narrower pool. None of these touch the 77 dictionary words\n+outside the pool of 29."
+    },
+    {
+      "sha": "b08ea9d5b5185a1a3732316d2f2e9aa7c0ad0d46",
+      "filename": "1-big-prizes/guntis-vitolins-metamask-8-6eth/clues/author-posts.md",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 0,
+      "changes": 17,
+      "blob_url": "https://github.com/floflo777/open-crypto-puzzles/blob/09b7676e8520f1981a4021bbc7f40a5f2f66daf8/1-big-prizes%2Fguntis-vitolins-metamask-8-6eth%2Fclues%2Fauthor-posts.md",
+      "raw_url": "https://github.com/floflo777/open-crypto-puzzles/raw/09b7676e8520f1981a4021bbc7f40a5f2f66daf8/1-big-prizes%2Fguntis-vitolins-metamask-8-6eth%2Fclues%2Fauthor-posts.md",
+      "contents_url": "https://api.github.com/repos/floflo777/open-crypto-puzzles/contents/1-big-prizes%2Fguntis-vitolins-metamask-8-6eth%2Fclues%2Fauthor-posts.md?ref=09b7676e8520f1981a4021bbc7f40a5f2f66daf8",
+      "patch": "@@ -132,3 +132,20 @@ Quoted from the hint 5 video description as archived by the Wayback Machine on\n The 6 and 6 split is therefore the author's own, not an inference. The escrow\n address given in the same rules block matches the address in `puzzle.json` and\n in `tools/oracle.py`.\n+\n+\n+## Reported by profesor1234 (issue #38, 2026-10-18), not independently verified here\n+\n+Author reply that retires the spoken-audio channel of lead 1, on the challenge video\n+https://www.youtube.com/watch?v=w4mpiuBP_aY :\n+\n+- @ZeIronDucK: \"I really can't hear what's the last word you saying in video ... and I guess Im needing it\"\n+- @GuntisVitolins: \"Youll need only written words.\"\n+\n+Hint-5 verbatim, https://www.youtube.com/watch?v=ZjBJKooVmuE at 17:25:\n+\n+> \"so the last hint we are giving out is a keyboard fork so it's f o r k that's a keyword it's not\n+> necessarily uh in order um it's one of the keywords from the seed wallet\"\n+\n+This is the primary support for treating `fork` as a literal list member at a free position. Minor\n+timestamp corrections on the current uploads: hint 4 at 15:15 (not 15:26), hint 5 at 17:25 (not 17:28)."
+    }
+  ]
+}

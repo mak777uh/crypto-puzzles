@@ -1,0 +1,167 @@
+{
+  "slug": "arweave-puzzle-11-1eth",
+  "agent": "Qoder",
+  "ts": "2026-10-18T12:07:18Z",
+  "date": "2026-10-18",
+  "status": "partial",
+  "note": "",
+  "api_calls": 14,
+  "free_transports": 8,
+  "remaining_seen": 56,
+  "reset_utc": "2026-10-18T12:47:49Z",
+  "files": 177,
+  "bytes": 8658728,
+  "media": 14,
+  "repos": [
+    {
+      "repo": "floflo777/open-crypto-puzzles",
+      "role": "registry",
+      "branch": "main",
+      "head_sha": "f28531c09095e81d1897ac4df00dc13ae22e4df2",
+      "counts": {},
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "repo": "homelessphd/ar_puzzles",
+      "role": "author",
+      "branch": "main",
+      "head_sha": "d04a6a233a3b5e7e4270cef511c0610d30c574c3",
+      "counts": {
+        "issues": 13,
+        "comments": 44,
+        "releases": 0
+      },
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "repo": "consigcody94/arweave-puzzle-11",
+      "role": "community",
+      "branch": "main",
+      "head_sha": "7326f0fc727d3dea237d86b5554a3d193a5bb456",
+      "counts": {
+        "issues": 1,
+        "comments": 0,
+        "releases": 0
+      },
+      "files": 35,
+      "bytes": 199003
+    },
+    {
+      "repo": "homelessphd/btc32",
+      "role": "author",
+      "branch": "main",
+      "head_sha": "f5b982e1ce850aa7efda40c09d5cfb5c500dcdb0",
+      "counts": {
+        "issues": 11,
+        "comments": 14,
+        "releases": 0
+      },
+      "files": 142,
+      "bytes": 8459725
+    }
+  ],
+  "candidates": [
+    {
+      "repo": "floflo777/open-crypto-puzzles",
+      "role": "registry",
+      "source": "ссылки досье",
+      "hits": 31
+    },
+    {
+      "repo": "homelessphd/ar_puzzles",
+      "role": "author",
+      "source": "ссылки досье",
+      "hits": 7
+    },
+    {
+      "repo": "consigcody94/arweave-puzzle-11",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 2
+    },
+    {
+      "repo": "homelessphd/btc32",
+      "role": "author",
+      "source": "репо владельца homelessphd",
+      "hits": 0
+    },
+    {
+      "repo": "homelessphd/blm_0.2btc",
+      "role": "author",
+      "source": "репо владельца homelessphd",
+      "hits": 0
+    },
+    {
+      "repo": "homelessphd/zden_lvl5",
+      "role": "author",
+      "source": "репо владельца homelessphd",
+      "hits": 0
+    },
+    {
+      "repo": "homelessphd/wealth_in_poetry",
+      "role": "author",
+      "source": "репо владельца homelessphd",
+      "hits": 0
+    },
+    {
+      "repo": "homelessphd/asabove_sobelow",
+      "role": "author",
+      "source": "репо владельца homelessphd",
+      "hits": 0
+    },
+    {
+      "repo": "schum-io/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "lekejf/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "pauldmurphy/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "ebr4him68-rgb/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "aperioscanner/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "windstalker-arch/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    }
+  ],
+  "errors": [
+    "не собрано (сверх --max-repos 4): homelessphd/blm_0.2btc, homelessphd/zden_lvl5, homelessphd/wealth_in_poetry, homelessphd/asabove_sobelow, schum-io/open-crypto-puzzles, lekejf/open-crypto-puzzles, pauldmurphy/open-crypto-puzzles, ebr4him68-rgb/open-crypto-puzzles, aperioscanner/open-crypto-puzzles, windstalker-arch/open-crypto-puzzles",
+    "homelessphd/ar_puzzles: репозиторий больше --max-mb (25 МБ) — содержимое НЕ распаковано, только метаданные и API"
+  ],
+  "stop_reason": "срезано потолками: собрано 4 кандидатов из 14 (--max-repos/--max-mb)",
+  "ocp": {
+    "slug": "arweave-puzzle-11-1eth",
+    "tier": "mid",
+    "folder": "2-mid-prizes/arweave-puzzle-11-1eth",
+    "handles": [
+      "twitter:@arweavep"
+    ],
+    "repo": "floflo777/open-crypto-puzzles",
+    "ocp_path": "_sources/ocp/2-mid-prizes/arweave-puzzle-11-1eth"
+  },
+  "digest": "data/github/GITHUB_INTAKE.md"
+}

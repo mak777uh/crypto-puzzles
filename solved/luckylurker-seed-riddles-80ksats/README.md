@@ -78,3 +78,11 @@
   - url: https://luckylurker.com/casino/gamdom/ | title: Gamdom review (hint 5 target) | date: 2026-08-16
   - url: https://luckylurker.com/casino/n1/ | title: N1 Casino review (hint 8 target) | date: 2026-08-16
   - url: https://luckylurker.com/fastest-crypto-casino-withdrawals-2026/ | title: Fastest crypto casino withdrawals article (hint 9 target) | date: 2026-08-16
+
+## Уточнение (2026-10-19, Qoder): 79 638 сат на 17oKQH… — кошелёк решателя
+- Тип: баланс / классификация (not-ours)
+- Суть: приз `bc1q32e3dxcd…` полностью потрачен (funded = spent = 80 000). Свип 17.08.2026 (tx `75e570a5…`) вывел 79 638 сат на `17oKQHHRxdQBiRaGKCoVDQJfebhPaZV3r7`. Это адрес **получателя**, т.е. деньги решателя серии LuckyLurker; в `puzzles/` папку не возвращаем.
+- Источник: https://blockstream.info/address/bc1q32e3dxcd0n2tlzdmchraf2057d0ax4xdwrk3jq
+- Проверено: да (19.10.2026, read-only)
+- Влияние на оценку: цель закрыта; в `puzzles/dead-ends-registry/` добавлена строка `not-ours`.
+- Подробности и хроника: см. LOG.md

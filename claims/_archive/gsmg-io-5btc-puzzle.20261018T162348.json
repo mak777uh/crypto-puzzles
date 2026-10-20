@@ -1,0 +1,13 @@
+{
+  "slug": "gsmg-io-5btc-puzzle",
+  "agent": "BigPickle",
+  "model": "",
+  "note": "ось seg0: контроль механизма seg1/seg2, затем 'matrixsumlist' (D=7x13, F=570) + третья дверь",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T13:20:36Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-18T15:20:36Z",
+  "heartbeat_utc": "2026-10-18T13:20:36Z",
+  "released_utc": "2026-10-18T13:23:48Z",
+  "released_by": "BigPickle"
+}

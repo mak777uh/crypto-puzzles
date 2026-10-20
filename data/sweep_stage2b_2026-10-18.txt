@@ -1,0 +1,726 @@
+====================================================================================================
+### timeless-1000-random-seed-puzzle-0-062eth
+--- README (первые 45 строк из 59) ---
+# Timeless $1000 Random Seed Puzzle
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+
+## Кратко
+- Статус: **open (практически нерешаем)**
+- Цепь: ethereum
+- Приз: 0,062 ETH
+- Опубликовано: 2023-03-08, r/CryptoCurrency, пользователь timelesssmidgen
+- Типы: bip39-seed, permutation
+- Что осталось / сложность: 24! ≈ 10²³ перестановок — полный перебор невозможен
+
+## Адреса/эскроу
+- Адрес в каталоге не зафиксирован — требуется уточнить по посту (B39).
+
+## Источники
+- 2023-03-08 — пост автора в r/CryptoCurrency (пользователь timelesssmidgen)
+
+## Подробности
+- Механизм: 24 слова BIP39 даны, но в случайном порядке; нужно восстановить правильную перестановку.
+- Пространство поиска: 24! ≈ 6,2·10²³ — практически нерешаемо полным перебором.
+- Важная деталь: 12-словная версия того же пазла (приз $5 ALGO) была **решена за 30 часов**, что показывает разницу масштабов.
+- Единственный реалистичный путь — утечка порядка или слабость генератора перестановки (если она была не случайной).
+
+## Зацепки / следующий шаг
+- Найти оригинальный пост и точный список 24 слов
+- Проверить, не был ли порядок сгенерирован детерминированно (по дате, по seedrandom и т. п.)
+- Сравнить с решённой 12-словной версией: возможно, использован тот же алгоритм перестановки
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка, прогресс, баланс или решение (полностью либо частично) **должны** быть дописаны сюда с датой и ссылкой на источник. Параллельные агенты обязаны соблюдать тот же протокол.
+
+## История изменений
+- 2026-10-16 (deepseek-flash) — папка создана; базовое досье собрано из `MASTER_CATALOG.md` (Части 1-8).
+
+## Обновление (2026-10-16, deepseek-flash — web-исследование): АДРЕС ОПУСТОШЁН
+- Тип: изменение статуса + точные данные
+- Суть:
+  - **8 марта 2023** пользователь **`u/timelesssmidgen`** перевёл ETH на $1000 в новый кошелёк с 24-словной seed-фразой,
+    **переставил слова случайно** и опубликовал их в r/CryptoCurrency: кто получит доступ — забирает содержимое.
+  - Цель — демонстрация стойкости: **23! ≈ 2,6·10²²** перестановок, при миллиарде проверок в секунду ≈ **820 тысяч лет**.
+  - Для контраста автор выложил **$5 в ALGO** на кошельке с **12 словами** в случайном порядке — его «вскрыли» примерно за **30 часов**
+    (11! ≈ 4,0·10⁷).
+  - **17 апреля 2023** — апдейт: за месяц ничего не изменилось, ETH не тронуты и подорожали (≈$1400).
+--- LOG (последние 12 строк из 18) ---
+- Тип объекта: пазл. Состояние папки: README 5372 байт (обогащённое досье), файлов 1, data/=нет, tools/=нет.
+- Кратко из README: статус open (практически нерешаем); приз 0,062 ETH; типы bip39-seed, permutation; остаток-сложность n/a.
+- Адрес/эскроу: n/a
+- Источники: n/a
+- Вся история и досье — в README.md этой папки; новые сессии описывать здесь (self-intro, что делал, результаты вкл. отрицательные, артефакты, ссылки).
+
+## 2026-10-17 18:54 — Big Pickle (big-pickle / OpenCode, Windows) — сбор данных в пустую папку
+- Делал: массовый обход README → источники; попыток 6, сохранено 6 в `data/`.
+- Успех (6): 00_api.pullpush.io.json; 01_api.pullpush.io.json; 02_api.pullpush.io.json; 03_api.pullpush.io.json; 04_transactions.json; 05_24_seed_phrase_guesser.html
+- Отказ (0): —
+- Артефакты: `data/SOURCES.md` + скачанные файлы.
+- Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+--- файлы (топ-15 по размеру) ---
+      277678  data\05_24_seed_phrase_guesser.html
+       22565  data\01_api.pullpush.io.json
+       19051  data\03_api.pullpush.io.json
+       17233  data\00_api.pullpush.io.json
+       11044  data\02_api.pullpush.io.json
+        6470  data\04_transactions.json
+        5372  README.md
+        1861  LOG.md
+        1108  data\SOURCES.md
+
+====================================================================================================
+### the-great-riddle-0-00423871btc
+--- README (первые 45 строк из 177) ---
+# The Great Riddle («The Great Print»)
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+
+## Кратко
+- Статус: **open**
+- Цепь: bitcoin
+- Приз: 0,00423871 BTC
+- Опубликовано: 2024-02 (художник The Great Print)
+- Типы: bip39-seed, passphrase, physical-object
+- Что осталось / сложность: известны 4 слова из 24; слова спрятаны в физических иллюстрациях «Genesis Collection»
+
+## Адреса/эскроу
+- `bc1qm3ayuhn7wppuqxaywu8ea0lggs8myy7543fekk` — main
+- Проверка баланса: https://mempool.space/address/bc1qm3ayuhn7wppuqxaywu8ea0lggs8myy7543fekk
+
+## Источники
+- 2024-02 — проект «The Great Print» (художник)
+
+## Подробности
+- Механизм: 24 слова BIP39 + passphrase (25-е слово).
+- Опубликовано только 4 слова из 24.
+- Слова спрятаны в физических иллюстрациях серии «Genesis Collection» — то есть нужен доступ к физическим предметам.
+- Наличие 25-го слова (passphrase) означает, что даже полный набор 24 слов может быть недостаточен.
+
+## Зацепки / следующий шаг
+- Найти изображения всех работ «Genesis Collection» в высоком разрешении
+- Проверить, не публиковались ли подсказки в соцсетях художника
+- Проверить гипотезу: 4 опубликованных слова фиксируют позиции (например, 1, 6, 12, 24)
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка, прогресс, баланс или решение (полностью либо частично) **должны** быть дописаны сюда с датой и ссылкой на источник. Параллельные агенты обязаны соблюдать тот же протокол.
+
+## История изменений
+- 2026-10-16 (deepseek-flash) — папка создана; базовое досье собрано из `MASTER_CATALOG.md` (Части 1-8).
+
+## Обновление (2026-10-16, deepseek-flash — web-исследование)
+- Тип: идентификация автора + механика
+- Суть:
+  - **Автор — Бартош Левицки (Bartosz Lewicki)**, студия **The Great Print** (Базель); рисует крупные работы шариковой ручкой.
+  - 24 слова seed-фразы спрятаны в **оригинальных** рисунках серии **«Genesis Collection»** —
+    в печатных копиях слов **нет**, их нужно видеть в студии или на выставке.
+  - Первый, кто пришлёт автору 24 слова **в любом порядке**, получает **25-е слово**, открывающее адрес.
+  - На декабрь 2025 публично доступны были 3 работы и, соответственно, **4 слова**; четвёртая работа
+--- LOG (последние 12 строк из 18) ---
+- Тип объекта: пазл. Состояние папки: README 12091 байт (обогащённое досье), файлов 1, data/=нет, tools/=нет.
+- Кратко из README: статус open; приз 0,00423871 BTC; типы bip39-seed, passphrase, physical-object; остаток-сложность n/a.
+- Адрес/эскроу: bc1qm3ayuhn7wppuqxaywu8ea0lggs8myy7543fekk
+- Источники: n/a
+- Вся история и досье — в README.md этой папки; новые сессии описывать здесь (self-intro, что делал, результаты вкл. отрицательные, артефакты, ссылки).
+
+## 2026-10-17 18:53 — Big Pickle (big-pickle / OpenCode, Windows) — сбор данных в пустую папку
+- Делал: массовый обход README → источники; попыток 5, сохранено 5 в `data/`.
+- Успех (5): 00_riddle.html; 01_honeybadger.html; 02_artist.html; 03_great-riddle.html; 04_great-riddle.md
+- Отказ (0): —
+- Артефакты: `data/SOURCES.md` + скачанные файлы.
+- Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+--- файлы (топ-15 по размеру) ---
+     1458113  data\00_riddle.html
+     1443933  data\02_artist.html
+     1277832  data\01_honeybadger.html
+      231940  data\03_great-riddle.html
+       12091  README.md
+        7219  data\04_great-riddle.md
+        1810  LOG.md
+         790  data\SOURCES.md
+
+====================================================================================================
+### keir-finlow-bates-blockchain-book-600ksats
+--- README (первые 45 строк из 229) ---
+# Keir Finlow-Bates: Move Over Brokers Treasure Hunt
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles).
+
+## Кратко
+- Статус: **open** (mid)
+- Цепь: bitcoin
+- Приз: 600000 sats (USD 378)
+- Примечание: 3 of 12 lots still open, 200,000 sats each; 9 lots already solved and swept (4 by me, 5 by the community before I started; I have since recovered the answers of 3 of those 5)
+- Опубликовано: 2020-11-28 https://www.amazon.com/Move-Over-Brokers-Comes-Blockchain-ebook/dp/B08QSH5X91
+- Типы: book, brainwallet, text-cipher
+- Difficulty left: human-action
+- the sha256x3 transform is confirmed on three lots; the ebook-accessible text and figures of both editions are exhausted across every mechanism tested (about 9,600 answer strings, 694,000 page-number forms, 800,800 ISBN add-on forms and 34.4e9 proof-of-work nonces, 0 match); the EN_easy_2 answer is the paperback ISBN, printed on the physical copyright page and nowhere in the ebook, and every print surface reachable through Amazon's public sample reader (4 editions) is null, so the missing element for the 3 open lots, if physical, sits in the unseen interior of the printed book
+
+## Адреса/эскроу
+- `14aFhno96fkt7knLWMDQ4j8yh8v5hBF4n1` — EN_easy_1 | expected: 200000 sats | state: swept (checked 2026-09-01) | https://mempool.space/address/14aFhno96fkt7knLWMDQ4j8yh8v5hBF4n1
+- `14utGQn5GdfPvUrHNLAwTmmP99QpXm9mg6` — EN_easy_2 | expected: 200000 sats | state: swept (checked 2026-09-01) | https://mempool.space/address/14utGQn5GdfPvUrHNLAwTmmP99QpXm9mg6
+- `1QFafw3weoWTRQhiLafRw2eyWbVmES6wfJ` — EN_medium_s | expected: 200000 sats | state: swept (checked 2026-09-01) | https://mempool.space/address/1QFafw3weoWTRQhiLafRw2eyWbVmES6wfJ
+- `17Y9czcbcCz433QXsy1SGQjwLb27BBtLLZ` — EN_medium | expected: 200000 sats | state: funded-unspent (checked 2026-09-01) | https://mempool.space/address/17Y9czcbcCz433QXsy1SGQjwLb27BBtLLZ
+- `181rPpfdUGFg4fVEdhDZEfDbBSqgigtoZR` — EN_hard_1 | expected: 200000 sats | state: swept (checked 2026-09-01) | https://mempool.space/address/181rPpfdUGFg4fVEdhDZEfDbBSqgigtoZR
+- `161YgNX2NrCzGunWvoV1hN3DuzWeuovBK3` — EN_hard_2 | expected: 200000 sats | state: swept (checked 2026-09-01) | https://mempool.space/address/161YgNX2NrCzGunWvoV1hN3DuzWeuovBK3
+- `1KZei2D5yz3UJ59LvXsC1Y9y4ktSgcnVwz` — EN_veryhard_s | expected: 200000 sats | state: swept (checked 2026-09-01) | https://mempool.space/address/1KZei2D5yz3UJ59LvXsC1Y9y4ktSgcnVwz
+- `1DZ5NbUwDgxeJkKhQLgYcUUX36PtYso1pm` — EN_veryhard | expected: 200000 sats | state: funded-unspent (checked 2026-09-01) | https://mempool.space/address/1DZ5NbUwDgxeJkKhQLgYcUUX36PtYso1pm
+- `1MEstvLAzc5DzJtvx7uyvKNNUCPN3ofWMK` — IT_easy | expected: 200000 sats | state: swept (checked 2026-09-01) | https://mempool.space/address/1MEstvLAzc5DzJtvx7uyvKNNUCPN3ofWMK
+- `1Q78hDeaHXQbuCSQxG1uPAc4V3jsuVUG9r` — IT_medium | expected: 200000 sats | state: swept (checked 2026-09-01) | https://mempool.space/address/1Q78hDeaHXQbuCSQxG1uPAc4V3jsuVUG9r
+- `1QExGvuieS9MvuKC3R1qjp6jGTVcqisTDj` — IT_hard | expected: 200000 sats | state: swept (checked 2026-09-01) | https://mempool.space/address/1QExGvuieS9MvuKC3R1qjp6jGTVcqisTDj
+- `19kkawFcg2U2s6vq368MXD7FJU9JZvRrjA` — IT_veryhard | expected: 200000 sats | state: funded-unspent (checked 2026-09-01) | https://mempool.space/address/19kkawFcg2U2s6vq368MXD7FJU9JZvRrjA
+- `bc1qax0hsnwnxl7393awtc3hsy0ftm6tg4tyk2nfja` — my wallet (destination of all 4 payouts) | expected: n/a | state: unknown (checked 2026-08-16) | https://mempool.space/address/bc1qax0hsnwnxl7393awtc3hsy0ftm6tg4tyk2nfja
+
+## Источники
+- 2025-09-11 — Everyone Loves a Treasure Hunt — https://kf106.medium.com/everyone-loves-a-treasure-hunt-93885ae8d80a
+- 2020-11-28 — Move Over Brokers, Here Comes The Blockchain (Kindle edition) — https://www.amazon.com/Move-Over-Brokers-Comes-Blockchain-ebook/dp/B08QSH5X91
+- 2020-11-28 — EN escrow funding transaction — https://mempool.space/tx/f26ecab737b701982a7a3d0f9b0ffb3c509225cbbefecc2a4fe2e73758ce8972
+- 2021-09-11 — IT escrow funding transaction — https://mempool.space/tx/42919c00a64661e20b8af5719c64d58339e6e492ad21f07f4d38548768cbb23e
+- 2026-06-17 — EN_hard_1 payout transaction — https://mempool.space/tx/b6e064aa8fde1153c342e2f7d98bce09e004bef5ac8db8f0138601289ceae69a
+- 2026-06-25 — EN_hard_2 payout transaction — https://mempool.space/tx/c46c70fb04a2faeebde24057b22a547da7b309fd33b74b3d77181943a02b45d0
+- 2026-07-01 — IT_medium payout transaction — https://mempool.space/tx/914a825138f943fc357b5a026b607b3c62bf67d5997043761711aaeabf5cab49
+- 2026-07-03 — IT_hard payout transaction — https://mempool.space/tx/ad999c5837e67b4d566516a70344b352c4c688e1a0781eed739be3aad3afb20c
+
+## Подробности
+Здесь должна накапливаться расширенная информация по мере проходов: подсказки, прогресс сообщества, проверенные гипотезы, ссылки, compute-оценки. Текущий файл — скелет из OCP; заполняется автоматически в циклах.
+
+
+---
+## Логирование (обязательно)
+--- LOG (последние 12 строк из 33) ---
+- Прорыв данных: OCP-папка keir-finlow-bates-blockchain-book-600ksats содержит ПОЛНЫЙ разбор серии (32 КБ README floflo777): 12 лотов по 200,000 сат, **3 открыты и живы** (балансы проверены 17.10: EN_medium 17Y9cz…, EN_veryhard 1DZ5Nb…, IT_veryhard 19kkaw… — по 200,000 сат, 1 tx, не тронуты). Итог 600,000 сат ≈ $378.
+- Механика подтверждена: точная строка-ответ → SHA-256×3 (raw chaining, варианты hex-строки ±newline проверяются оракулом) → uncompressed P2PKH. Оракул сертифицирован (EN_easy_1 «221B Baker Street», EN_easy_2 «9781688289970», IT_hard «Genova Firenze Bologna Brindisi»). Известные ответы — конкретные идентификаторы, не предложения.
+- floflo777 решил 4 лота сам в 2026 (EN_hard_1/2, IT_medium/hard) и исчерпал EBOOK; вероятный гейт открытых лотов — физическая книга (KDP paperback ISBN 9781688289970 / Lulu hardcover 9781716479724; «Limited Indexed Edition» 2025 — 330 стр., лишних данных о ханте нет). Наша старая заметка «нужна физическая книга, 3 лота по 200k» — подтверждена и уточнена.
+- Варианты без покупки: Amazon Look Inside превью нужных страниц (бесплатно), автора спросить нельзя? — можно: автор жив (kf106.medium.com, статья 2025-09-11 «Everyone Loves a Treasure Hunt»); письма = ОК Ильи.
+- Артефакты: data/ocp_readme_2026.md, data/ocp_lots.csv (все 12 лотов, адреса, состояния, даты).
+- Следующий шаг: прочитать leads.md/tested.md OCP (что именно ищется в 3 открытых лотах), затем Look Inside / решение о покупке.
+
+## 2026-10-18, 09:52 — OCP Sync (Qoder Desktop, Windows) <!-- ocp-snapshot:19644e58 -->
+- Делал: обогащение из внешнего репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) — раскладка дельты снапшота `19644e58` (клон `_sources/ocp/`, реестр `_sources/OCP_SNAPSHOT.md`). Протокол: `claims acquire/heartbeat/release` по `keir-finlow-bates-blockchain-book-600ksats`. Прогонов/переборов не запускали, статус пазла и балансы не меняли, чужие файлы не перезатёрты (копии лежат отдельными деревами `data/ocp/` и `tools/ocp/` с provenance).
+- Результат: перенесено 8 файлов данных → `data/ocp/`, 5 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в базе, пропущено: 4. Статус по OCP: `open`.
+- Артефакты: `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/clues/author-posts.md`, `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/data/pipeline-stages.json`, `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/data/pow-nonce-best.csv`, `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/data/timeline.csv`, `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/images/01-pipeline-derivation.svg`, `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/images/02-structure-lots.svg`, `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/images/03-timeline-funding.png`, `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/puzzle.json`, `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/tools/fig_lots.py`, `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/tools/fig_pipeline.py`, `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/tools/fig_timeline.py`, `2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/tools/oracle.py` …
+- Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats ; полная дельта — `_sources/ocp_sync_2026-10-18/delta_report.md`.
+--- файлы (топ-15 по размеру) ---
+      375280  data\03_open-crypto-puzzles.html
+       57377  data\ocp\images\03-timeline-funding.png
+       32884  data\ocp_readme_2026.md
+       32471  data\05_README.md
+       32471  data\00_README.md
+       20156  README.md
+       11656  data\ocp\puzzle.json
+       11375  tools\ocp\oracle.py
+        9144  data\02_tested.md
+        6528  LOG.md
+        6085  data\ocp\images\02-structure-lots.svg
+        5405  tools\ocp\fig_lots.py
+        4829  tools\ocp\fig_pipeline.py
+        4141  tools\ocp\fig_timeline.py
+        3923  data\01_leads.md
+
+====================================================================================================
+### rushwallet-contest-30-1msats
+--- README (первые 45 строк из 199) ---
+# RushWallet Contest #30
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles).
+
+## Кратко
+- Статус: **open** (mid)
+- Цепь: bitcoin
+- Приз: 1000000 sats (USD 630)
+- Примечание: the escrow was funded 101,000,000 sats total: 100,000,000 sats on 2014-09-22 later returned to its own sender on 2015-03-25, and a separate 1,000,000 sats on 2015-04-24 that remains unspent; the 1,000,000 sats figure is the live prize
+- Опубликовано: 2015-02-08 http://web.archive.org/web/20150208174448/https://rushwallet.com/js/contest.js
+- Типы: brainwallet, audio
+- Difficulty left: external-info
+- the derivation is certified; about 95 million candidate passphrases across public wordlists have produced zero matches; the likely gate is a video source above the 720p footage currently available, not more computation
+
+## Адреса/эскроу
+- `13Q8hJqagtd77ojTJcEZPjTz2sBFSsYxyj` — main | expected: 1000000 sats | state: partially-spent (checked 2026-08-16) | https://mempool.space/address/13Q8hJqagtd77ojTJcEZPjTz2sBFSsYxyj
+
+## Источники
+- 2015-02-08 — RushWallet contest script (derivation) — http://web.archive.org/web/20150208174448/https://rushwallet.com/js/contest.js
+- 2015-02-08 — RushWallet contest page — http://web.archive.org/web/20150208172337/https://rushwallet.com/contest
+- 2026-08-16 — BitcoinTalk discussion thread — https://bitcointalk.org/index.php?topic=793720.0
+- 2026-08-16 — Surviving video re-upload — https://www.youtube.com/watch?v=x0LqsUOIw0M
+
+## Подробности
+Здесь должна накапливаться расширенная информация по мере проходов: подсказки, прогресс сообщества, проверенные гипотезы, ссылки, compute-оценки. Текущий файл — скелет из OCP; заполняется автоматически в циклах.
+
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка/прогресс/баланс/решение (полностью или частично) **должна** быть дописана сюда с датой и ссылкой. Параллельные агенты обязаны соблюдать тот же протокол.
+
+## OCP deep docs
+- Folder: https://github.com/floflo777/open-crypto-puzzles/tree/main/2-mid-prizes/rushwallet-contest-30-1msats
+- README (raw): https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/2-mid-prizes/rushwallet-contest-30-1msats/README.md
+
+
+## Curated deep dive (OCP, 16.10.2026)
+- Приз 1 000 000 сат (0.01 BTC), несжатый WIF uncompressed. priv = SHA256(utf8 фразы как есть). Адрес 13Q8hJqagtd77ojTJcEZPjTz2sBFSsYxyj.
+- Morze: «DMITRI KNOWS THIS GAME IS NOT EASY… READ SATOSHI'S PAPER».
+- Blocker: нужно видео выше 720p — лист в руке Дмитрия около 1:00 (720p не считывает).
+- Проверено: ~историческое покрытие SHA256 10 тыс./с; без высокого разрешения продвижение бессмысленно.
+- Зацепки: найти оригинальное видео/источник более высокого разрешения; декодировать лист; проверить фразу через SHA256.
+- Deep doc: https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/2-mid-prizes/rushwallet-contest-30-1msats/README.md
+## Досье Hark v2 (16.10.2026)
+
+--- LOG (последние 12 строк из 24) ---
+## 2026-10-17 18:54 — Big Pickle (big-pickle / OpenCode, Windows) — сбор данных в пустую папку
+- Делал: массовый обход README → источники; попыток 8, сохранено 5 в `data/`.
+- Успех (5): 00_README.md; 01_leads.md; 02_tested.md; 03_README.md; 04_rushwallet-puzzle-30.html
+- Отказ (3): https://github.com/floflo777/open-crypto-puzzles [FAIL: IncompleteRead(327680 bytes read) ]; https://bitcointalk.org/index.php?topic=793720.0 [FAIL: <urlopen error [Errno 11001] getad]; https://bitcointalk.org/index.php?topic=793720 [FAIL: <urlopen error [Errno 11001] getad]
+- Артефакты: `data/SOURCES.md` + скачанные файлы.
+- Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+## 2026-10-18, 09:52 — OCP Sync (Qoder Desktop, Windows) <!-- ocp-snapshot:19644e58 -->
+- Делал: обогащение из внешнего репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) — раскладка дельты снапшота `19644e58` (клон `_sources/ocp/`, реестр `_sources/OCP_SNAPSHOT.md`). Протокол: `claims acquire/heartbeat/release` по `rushwallet-contest-30-1msats`. Прогонов/переборов не запускали, статус пазла и балансы не меняли, чужие файлы не перезатёрты (копии лежат отдельными деревами `data/ocp/` и `tools/ocp/` с provenance).
+- Результат: перенесено 2 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в базе, пропущено: 3. Статус по OCP: `open`.
+- Артефакты: `2-mid-prizes/rushwallet-contest-30-1msats/clues/author-posts.md`, `2-mid-prizes/rushwallet-contest-30-1msats/puzzle.json`, `2-mid-prizes/rushwallet-contest-30-1msats/tools/oracle.py`
+- Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/rushwallet-contest-30-1msats ; полная дельта — `_sources/ocp_sync_2026-10-18/delta_report.md`.
+--- файлы (топ-15 по размеру) ---
+      298277  data\04_rushwallet-puzzle-30.html
+       15998  README.md
+        7983  data\03_README.md
+        7983  data\00_README.md
+        6076  data\02_tested.md
+        4135  tools\ocp\oracle.py
+        3828  data\ocp\puzzle.json
+        3671  LOG.md
+        2071  data\01_leads.md
+        2070  data\ocp\clues\author-posts.md
+        1558  data\SOURCES.md
+        1397  data\ocp\SOURCE.md
+        1087  tools\ocp\SOURCE.md
+
+====================================================================================================
+### corey-phillips-kitten-passphrase-1msats
+--- README (первые 45 строк из 110) ---
+# Corey Phillips: Kitten Passphrase Puzzle
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles).
+
+## Кратко
+- Статус: **open** (mid)
+- Цепь: bitcoin
+- Приз: 1001900 sats (USD 631)
+- Примечание: 2 funding UTXOs summing to 1,001,900 sats, 0 spent as of 2026-08-16
+- Опубликовано: 2019-07-09 https://corey-lyle-phillips.medium.com/part-1-3-turn-your-photos-into-bitcoin-private-keys-addresses-57669771cf7a
+- Типы: bip39-seed, brainwallet
+- Difficulty left: external-info
+- the mnemonic and derivation are fully certified; about 1.16 billion passphrase candidates have been tested across curated, rule-mangled, and raw wordlist regions with 0 matches; the author states the puzzle is not meant to be solved, so the passphrase is a freely chosen secret with no confirmed public provenance
+
+## Адреса/эскроу
+- `bc1qcyrndzgy036f6ax370g8zyvlw86ulawgt0246r` — main | expected: 1001900 sats | state: funded-unspent (checked 2026-08-16) | https://mempool.space/address/bc1qcyrndzgy036f6ax370g8zyvlw86ulawgt0246r
+- `bc1q57euh23y3qs2f9d5mtwpax5lqecfvrdkqce82a` — sister (empty passphrase, oracle calibration only, not a target) | expected: n/a, not a prize address | state: swept (checked 2026-08-16) | https://mempool.space/address/bc1q57euh23y3qs2f9d5mtwpax5lqecfvrdkqce82a
+
+## Источники
+- 2019-07-09 — Part 1/3: Turn Your Photos Into Bitcoin Private Keys/Addresses — https://corey-lyle-phillips.medium.com/part-1-3-turn-your-photos-into-bitcoin-private-keys-addresses-57669771cf7a
+- 2020-01-05 — A Bitcoin Audio Puzzle — https://corey-lyle-phillips.medium.com/a-bitcoin-audio-puzzle-61174b9849ce
+- 2026-08-16 — BTC-Puzzle-by-Corey-Phillips (community hint repository) — https://github.com/Schum-io/BTC-Puzzle-by-Corey-Phillips
+- 2026-08-16 — bitimage (author's tool) — https://github.com/coreyphillips/bitimage
+
+## Подробности
+Здесь должна накапливаться расширенная информация по мере проходов: подсказки, прогресс сообщества, проверенные гипотезы, ссылки, compute-оценки. Текущий файл — скелет из OCP; заполняется автоматически в циклах.
+
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка/прогресс/баланс/решение (полностью или частично) **должна** быть дописана сюда с датой и ссылкой. Параллельные агенты обязаны соблюдать тот же протокол.
+
+## OCP deep docs
+- Folder: https://github.com/floflo777/open-crypto-puzzles/tree/main/2-mid-prizes/corey-phillips-kitten-passphrase-1msats
+- README (raw): https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/2-mid-prizes/corey-phillips-kitten-passphrase-1msats/README.md
+## Досье Hark v2 (16.10.2026)
+
+Перенесено из `MASTER_CATALOG_v2_2026-10-16.md` (рабочие досье агентов Hark, 16.10.2026 23:40 МСК). Картина механизма, подсказок, проверенных и отброшенных гипотез, оракулов и файлов.
+
+### B31. Kitten Passphrase Puzzle — 0,0010019 BTC
+- ⚠️ Дубль B16 (Corey Phillips Kitten) с ошибкой: приз 0,010019 BTC, неизвестна только BIP39-passphrase (24 слова публичны). См. 8.5.
+
+
+### Corey Phillips «Kitten passphrase» (bitimage) — 1 001 900 сат (0,010019 BTC)
+- **Адрес/сеть/путь**: `bc1qcyrndzgy036f6ax370g8zyvlw86ulawgt0246r`, BTC P2WPKH, `m/84'/0'/0'/0/0`. 2 входа, трат нет.
+--- LOG (последние 12 строк из 24) ---
+## 2026-10-17 18:50 — Big Pickle (big-pickle / OpenCode, Windows) — сбор данных в пустую папку
+- Делал: массовый обход README → источники; попыток 8, сохранено 5 в `data/`.
+- Успех (5): 00_README.md; 01_leads.md; 02_tested.md; 03_BTC-Puzzle-by-Corey-Phillips.html; 04_bitimage.html
+- Отказ (3): https://github.com/floflo777/open-crypto-puzzles [FAIL: IncompleteRead(327680 bytes read) ]; https://corey-lyle-phillips.medium.com/part-1-3-turn-your-photos-into- [FAIL: <urlopen error [Errno 11001] getad]; https://corey-lyle-phillips.medium.com/a-bitcoin-audio-puzzle-61174b98 [FAIL: <urlopen error [Errno 11001] getad]
+- Артефакты: `data/SOURCES.md` + скачанные файлы.
+- Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+## 2026-10-18, 09:52 — OCP Sync (Qoder Desktop, Windows) <!-- ocp-snapshot:19644e58 -->
+- Делал: обогащение из внешнего репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) — раскладка дельты снапшота `19644e58` (клон `_sources/ocp/`, реестр `_sources/OCP_SNAPSHOT.md`). Протокол: `claims acquire/heartbeat/release` по `corey-phillips-kitten-passphrase-1msats`. Прогонов/переборов не запускали, статус пазла и балансы не меняли, чужие файлы не перезатёрты (копии лежат отдельными деревами `data/ocp/` и `tools/ocp/` с provenance).
+- Результат: перенесено 6 файлов данных → `data/ocp/`, 3 кода → `tools/ocp/`,1 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в базе, пропущено: 3. Статус по OCP: `open`.
+- Артефакты: `2-mid-prizes/corey-phillips-kitten-passphrase-1msats/clues/author-posts.md`, `2-mid-prizes/corey-phillips-kitten-passphrase-1msats/data/coverage.csv`, `2-mid-prizes/corey-phillips-kitten-passphrase-1msats/data/pipeline-stages.json`, `2-mid-prizes/corey-phillips-kitten-passphrase-1msats/images/01-pipeline-derivation.svg`, `2-mid-prizes/corey-phillips-kitten-passphrase-1msats/images/02-coverage-tested-space.png`, `2-mid-prizes/corey-phillips-kitten-passphrase-1msats/puzzle.json`, `2-mid-prizes/corey-phillips-kitten-passphrase-1msats/tools/fig_coverage.py`, `2-mid-prizes/corey-phillips-kitten-passphrase-1msats/tools/fig_pipeline.py`, `2-mid-prizes/corey-phillips-kitten-passphrase-1msats/tools/oracle.py`
+- Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/corey-phillips-kitten-passphrase-1msats ; полная дельта — `_sources/ocp_sync_2026-10-18/delta_report.md`.
+--- файлы (топ-15 по размеру) ---
+      276999  data\04_bitimage.html
+      268092  data\03_BTC-Puzzle-by-Corey-Phillips.html
+      141137  data\ocp\images\02-coverage-tested-space.png
+       12843  README.md
+       11490  data\00_README.md
+        7699  tools\ocp\oracle.py
+        5289  tools\ocp\fig_pipeline.py
+        4324  LOG.md
+        4305  data\ocp\puzzle.json
+        3995  data\02_tested.md
+        3901  data\ocp\images\01-pipeline-derivation.svg
+        3152  data\01_leads.md
+        2880  data\ocp\SOURCE.md
+        2595  data\ocp\clues\author-posts.md
+        2432  tools\ocp\fig_coverage.py
+
+====================================================================================================
+### exitonly-challenge-14-30ksats
+--- README (первые 45 строк из 70) ---
+# Exitonly Bitcoin Challenge 14
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles).
+
+## Кратко
+- Статус: **open** (small)
+- Цепь: bitcoin
+- Приз: 30000 sats (USD 18.9)
+- Примечание: single P2WPKH escrow, one funding transaction
+- Опубликовано: 2024-10-03 https://www.youtube.com/watch?v=jMRoWtsfCuY
+- Типы: bip39-seed, word-selection
+- Difficulty left: uneconomic
+- the brute-force space with known word positions is 2048^4 x 128 = 2,251,799,813,685,248 candidates; at an assumed 1,000,000 to 5,000,000 derivations/second on a rented GPU the cost is roughly $31,000 to $156,000 against an $18.90 prize, about 1,600 to 8,300 times over
+
+## Адреса/эскроу
+- `bc1q5rjy2cdfy4n4dkk4r6pxtwqlm8tgjcc2dj0ee9` — main | expected: 30000 sats | state: funded-unspent (checked 2026-08-16) | https://mempool.space/address/bc1q5rjy2cdfy4n4dkk4r6pxtwqlm8tgjcc2dj0ee9
+
+## Источники
+- 2024-10-03 — Bitcoin Challenge 14 video — https://www.youtube.com/watch?v=jMRoWtsfCuY
+- 2026-08-16 — Channel Exitonly — https://www.youtube.com/channel/UCRLx2BwF7wNHGoduOZE4QVw
+
+## Подробности
+Здесь должна накапливаться расширенная информация по мере проходов: подсказки, прогресс сообщества, проверенные гипотезы, ссылки, compute-оценки. Текущий файл — скелет из OCP; заполняется автоматически в циклах.
+
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка/прогресс/баланс/решение (полностью или частично) **должна** быть дописана сюда с датой и ссылкой. Параллельные агенты обязаны соблюдать тот же протокол.
+
+## OCP deep docs
+- Folder: https://github.com/floflo777/open-crypto-puzzles/tree/main/3-small-prizes/exitonly-challenge-14-30ksats
+- README (raw): https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/3-small-prizes/exitonly-challenge-14-30ksats/README.md
+
+## OCP: машинные данные (puzzles.json, 16.10.2026)
+
+Структурированные данные из `puzzles.json` репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) (snapshot OCP: 2026-08-16; цены: {'date': '2026-08-16', 'BTC': 63000, 'ETH': 1880, 'AR': 1.81, 'LTC': 54}).
+
+- `slug`: exitonly-challenge-14-30ksats
+- `title`: Exitonly Bitcoin Challenge 14
+- `status`: **open**
+- `tier`: small | `chain`: bitcoin
+- `series`: Exitonly "Bitcoin Challenge", 16 numbered episodes, 15 already spent
+- `author`: Exitonly | youtube:UCRLx2BwF7wNHGoduOZE4QVw
+- `prize`: 30000 sats (оценка $18.9 на 2026-08-16) — single P2WPKH escrow, one funding transaction
+- `published`: 2024-10-03 https://www.youtube.com/watch?v=jMRoWtsfCuY
+--- LOG (последние 12 строк из 24) ---
+## 2026-10-17 18:50 — Big Pickle (big-pickle / OpenCode, Windows) — сбор данных в пустую папку
+- Делал: массовый обход README → источники; попыток 5, сохранено 2 в `data/`.
+- Успех (2): 00_README.md; 01_README.md
+- Отказ (3): https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/3 [FAIL: HTTP Error 404: Not Found | jina: ]; https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/3 [FAIL: HTTP Error 404: Not Found | jina: ]; https://github.com/floflo777/open-crypto-puzzles [FAIL: IncompleteRead(327680 bytes read) ]
+- Артефакты: `data/SOURCES.md` + скачанные файлы.
+- Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+## 2026-10-18, 09:52 — OCP Sync (Qoder Desktop, Windows) <!-- ocp-snapshot:19644e58 -->
+- Делал: обогащение из внешнего репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) — раскладка дельты снапшота `19644e58` (клон `_sources/ocp/`, реестр `_sources/OCP_SNAPSHOT.md`). Протокол: `claims acquire/heartbeat/release` по `exitonly-challenge-14-30ksats`. Прогонов/переборов не запускали, статус пазла и балансы не меняли, чужие файлы не перезатёрты (копии лежат отдельными деревами `data/ocp/` и `tools/ocp/` с provenance).
+- Результат: перенесено 2 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в базе, пропущено: 1. Статус по OCP: `open`.
+- Артефакты: `3-small-prizes/exitonly-challenge-14-30ksats/clues/author-posts.md`, `3-small-prizes/exitonly-challenge-14-30ksats/puzzle.json`, `3-small-prizes/exitonly-challenge-14-30ksats/tools/oracle.py`
+- Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/3-small-prizes/exitonly-challenge-14-30ksats ; полная дельта — `_sources/ocp_sync_2026-10-18/delta_report.md`.
+--- файлы (топ-15 по размеру) ---
+        6968  data\01_README.md
+        6968  data\00_README.md
+        5341  README.md
+        3721  tools\ocp\oracle.py
+        3678  LOG.md
+        3271  data\ocp\puzzle.json
+        1836  data\ocp\clues\author-posts.md
+        1409  data\ocp\SOURCE.md
+        1253  data\SOURCES.md
+        1093  tools\ocp\SOURCE.md
+
+====================================================================================================
+### satoshi-nakamoto-mystery
+--- README (первые 45 строк из 82) ---
+# Сатоси Накамото (личность)
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+
+## Кратко
+- Статус: **не решена**
+- Цепь: —
+- Приз: ~1M BTC не тронуты
+- Опубликовано: 2008 (white paper)
+- Типы: identity-mystery, blockchain-analysis
+- Что осталось / сложность: личность не установлена; ключевое доказательство — подпись ранним ключом или движение монет
+
+## Адреса/эскроу
+- Кошельки Сатоси с ~1M BTC не тронуты (Patoshi-паттерн)
+
+## Источники
+- 2008 — Bitcoin whitepaper — https://bitcoin.org/bitcoin.pdf
+- 2026 — Patoshi-исследование (Sergio Demian Lerner)
+- 2026 — Википедия о Сатоси Накамото — https://en.wikipedia.org/wiki/Satoshi_Nakamoto
+
+## Подробности
+- Личность неизвестна; кошельки с ~1M BTC не тронуты с 2010 года.
+- Patoshi-паттерн в блокчейне указывает на единого раннего майнера с характерным nonce-паттерном.
+- Кандидаты: Ник Сабо, Хэл Финни, Адам Бэк, Дориан Накамото, Крейг Райт.
+- Решающее доказательство — подпись ранним ключом или движение монет Сатоси.
+- Юридически: попытки «доказать» личность через суд (дело Крейга Райта) к консенсусу не привели.
+
+## Зацепки / следующий шаг
+- Следить за движением монет Patoshi — это единственный неоспоримый сигнал
+- Не доверять «признаниям» без криптографического доказательства
+- Проверять любые подписи сообщений ключами ранних блоков
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка, прогресс, баланс или решение (полностью либо частично) **должны** быть дописаны сюда с датой и ссылкой на источник. Параллельные агенты обязаны соблюдать тот же протокол.
+
+## История изменений
+- 2026-10-16 (deepseek-flash) — папка создана; базовое досье собрано из `MASTER_CATALOG.md` (Части 1-8).
+
+## Обновление (2026-10-16, deepseek-flash — web-исследование)
+- Тип: детализация + правовой статус
+- Суть (первичные факты):
+  - **31 октября 2008** — whitepaper «Bitcoin: A Peer-to-Peer Electronic Cash System» опубликован на криптографическом
+    мейл-листе **metzdowd.com** за подписью Satoshi Nakamoto.
+  - **3 января 2009** — в coinbase генезис-блока вписан заголовок The Times: «Chancellor on brink of second bailout for banks».
+--- LOG (последние 12 строк из 18) ---
+- Тип объекта: пазл. Состояние папки: README 8299 байт (обогащённое досье), файлов 1, data/=нет, tools/=нет.
+- Кратко из README: статус не решена; приз ~1M BTC не тронуты; типы identity-mystery, blockchain-analysis; остаток-сложность n/a.
+- Адрес/эскроу: n/a
+- Источники: https://bitcoin.org/bitcoin.pdf
+- Вся история и досье — в README.md этой папки; новые сессии описывать здесь (self-intro, что делал, результаты вкл. отрицательные, артефакты, ссылки).
+
+## 2026-10-17 18:54 — Big Pickle (big-pickle / OpenCode, Windows) — сбор данных в пустую папку
+- Делал: массовый обход README → источники; попыток 8, сохранено 4 в `data/`.
+- Успех (4): 00_Satoshi_Nakamoto.html; 01_www.wired.com.html; 02_coincodex.com.html; 03_index.html
+- Отказ (4): https://bitcoin.org/bitcoin.pdf [FAIL: <urlopen error [SSL: WRONG_VERSION]; https://www.nytimes.com/2026/04/08/business/bitcoin-satoshi-nakamoto-i [FAIL: HTTP Error 403: Forbidden | jina: ]; https://www.bbc.co.uk/news/technology-68567320 [FAIL: <urlopen error _ssl.c:1015: The ha]; https://www.reuters.com/markets/currencies/self-proclaimed-bitcoin-inv [FAIL: HTTP Error 401: HTTP Forbidden | j]
+- Артефакты: `data/SOURCES.md` + скачанные файлы.
+- Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+--- файлы (топ-15 по размеру) ---
+     5663485  data\03_index.html
+     1250582  data\01_www.wired.com.html
+      510770  data\00_Satoshi_Nakamoto.html
+      474521  data\02_coincodex.com.html
+        8299  README.md
+        2200  LOG.md
+        1589  data\SOURCES.md
+
+====================================================================================================
+### 310-btc-challenge-0-31btc
+--- README (первые 45 строк из 51) ---
+# 310 BTC Challenge (финальный этап)
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+
+## Кратко
+- Статус: **open (частично решён)**
+- Цепь: bitcoin
+- Приз: 0,31 BTC
+- Типы: steganography, image-stego, text-cipher, cultural-references
+- Что осталось / сложность: 3 из 4 этапов решены; финальный этап не закрыт
+
+## Адреса/эскроу
+- Адреса этапов в каталоге не зафиксированы — требуется уточнить (B29).
+
+## Источники
+- Каталожная запись B29 и упоминание в Части 6 («310 BTC Challenge (частично)»).
+
+## Подробности
+- Механизм: чёрно-белые PNG со стеганографией, шифрами и культурными отсылками.
+- Решены 3 из 4 этапов; остался финальный.
+- Пазл исторически один из самых известных «картиночных» челленджей с призом в BTC.
+
+## Зацепки / следующий шаг
+- Найти оригинальные PNG всех этапов в исходном разрешении
+- Собрать публичные write-up по первым трём этапам и выделить общий принцип кодирования
+- Проверить, не свипнут ли финальный адрес (если свипнут — пазл закрыт)
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка, прогресс, баланс или решение (полностью либо частично) **должны** быть дописаны сюда с датой и ссылкой на источник. Параллельные агенты обязаны соблюдать тот же протокол.
+
+## История изменений
+- 2026-10-16 (deepseek-flash) — папка создана; базовое досье собрано из `MASTER_CATALOG.md` (Части 1-8).
+
+## Обновление (2026-10-16, deepseek-flash — web-исследование)
+- Тип: уточнение истории и статуса
+- Суть:
+  - Пазл **«310 BTC»** — картина с 310 BTC, разделёнными на **4 стадии**.
+  - Первые три стадии были вскрыты **в течение примерно недели** после запуска (**октябрь 2018**), победитель получил основную часть.
+  - **Четвёртая (финальная) стадия с призом 0,31 BTC** осталась нерешённой и стала одним из самых известных «висящих» крипто-пазлов.
+  - Механика финала — **чёрно-белое PNG-изображение и стеганография** (битовые плоскости / паттерн чёрно-белых пикселей → ключ).
+    Точный алгоритм публично не раскрыт.
+- Источники:
+  - https://news.ycombinator.com/item?id=18197639
+  - https://www.secrss.com/articles/5570
+--- LOG (последние 12 строк из 18) ---
+- Тип объекта: пазл. Состояние папки: README 4017 байт (обогащённое досье), файлов 1, data/=нет, tools/=нет.
+- Кратко из README: статус open (частично решён); приз 0,31 BTC; типы steganography, image-stego, text-cipher, cultural-references; остаток-сложность n/a.
+- Адрес/эскроу: n/a
+- Источники: n/a
+- Вся история и досье — в README.md этой папки; новые сессии описывать здесь (self-intro, что делал, результаты вкл. отрицательные, артефакты, ссылки).
+
+## 2026-10-17 18:49 — Big Pickle (big-pickle / OpenCode, Windows) — сбор данных в пустую папку
+- Делал: массовый обход README → источники; попыток 4, сохранено 3 в `data/`.
+- Успех (3): 00_5570.html; 01_detail.php.html; 02_www.gamelook.com.cn.html
+- Отказ (1): https://news.ycombinator.com/item?id=18197639 [FAIL: HTTP Error 419:  | jina: HTTP Erro]
+- Артефакты: `data/SOURCES.md` + скачанные файлы.
+- Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+--- файлы (топ-15 по размеру) ---
+       46530  data\02_www.gamelook.com.cn.html
+       40468  data\00_5570.html
+       37399  data\01_detail.php.html
+        4017  README.md
+        1863  LOG.md
+         724  data\SOURCES.md
+
+====================================================================================================
+### publius-enigma
+--- README (первые 45 строк из 59) ---
+# Publius Enigma (1994)
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+
+## Кратко
+- Статус: **не решена (спорно)**
+- Цепь: —
+- Приз: обещанный приз не выплачен
+- Опубликовано: 1994 (Usenet)
+- Типы: arg, music, usenet
+- Что осталось / сложность: кто такой Publius и был ли приз — неизвестно
+
+## Адреса/эскроу
+- Не применимо.
+
+## Источники
+- 2026 — Википедия — https://en.wikipedia.org/wiki/Publius_Enigma
+
+## Подробности
+- Загадка, связанная с альбомом Pink Floyd «The Division Bell» (1994).
+- Пользователь Publius обещал приз тому, кто разгадает скрытое послание.
+- Обсуждение велось в Usenet; часть подсказок указывала на обложку и тексты песен.
+- Были заявления о «решении», но приз так и не был вручён.
+- Официальных подтверждений от группы нет; многие считают это маркетинговым приёмом.
+
+## Зацепки / следующий шаг
+- Собрать архивы Usenet-обсуждения 1994-1996 годов
+- Проверить связь с официальными материалами Pink Floyd
+- Не ожидать приза: ценность историческая
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка, прогресс, баланс или решение (полностью либо частично) **должны** быть дописаны сюда с датой и ссылкой на источник. Параллельные агенты обязаны соблюдать тот же протокол.
+
+## История изменений
+- 2026-10-16 (deepseek-flash) — папка создана; базовое досье собрано из `MASTER_CATALOG.md` (Части 1-8).
+
+## Обновление (2026-10-16, deepseek-flash — web-исследование)
+- Тип: решение/разъяснение
+- Суть:
+  - **11 июня 1994** пользователь под псевдонимом **Publius** (через анонимный ремейлер **Penet**) начал публиковать в ньюсгруппе
+    **alt.music.pink-floyd** загадочные сообщения о скрытом смысле альбома **The Division Bell** (1994) — в текстах, обложке и музыке.
+  - В одном из постов заявлено, что у альбома есть «central purpose and a designed solution», а нашедшему обещан **«unique prize»**.
+  - **16 июля 1994** Publius пообещал подсказку в «мигающих белых огнях»; вечером **18 июля** на концерте в **Ист-Ратерфорде**
+    огни сцены сложились в слова **ENIGMA PUBLIUS**. Световой дизайнер **Марк Брикман** заявил, что это устроил **Стив О'Рурк** (менеджер группы).
+--- LOG (последние 12 строк из 18) ---
+- Тип объекта: пазл. Состояние папки: README 5080 байт (обогащённое досье), файлов 1, data/=нет, tools/=нет.
+- Кратко из README: статус не решена (спорно); приз обещанный приз не выплачен; типы arg, music, usenet; остаток-сложность n/a.
+- Адрес/эскроу: n/a
+- Источники: https://en.wikipedia.org/wiki/Publius_Enigma
+- Вся история и досье — в README.md этой папки; новые сессии описывать здесь (self-intro, что делал, результаты вкл. отрицательные, артефакты, ссылки).
+
+## 2026-10-17 18:52 — Big Pickle (big-pickle / OpenCode, Windows) — сбор данных в пустую папку
+- Делал: массовый обход README → источники; попыток 4, сохранено 3 в `data/`.
+- Успех (3): 00_Publius_Enigma.html; 01_Publius_Enigma.html; 02_faroutmagazine.co.uk.html
+- Отказ (1): https://query.nytimes.com/gst/fullpage.html?res=990CE4DB133DF935A25751 [FAIL: HTTP Error 403: Forbidden | jina: ]
+- Артефакты: `data/SOURCES.md` + скачанные файлы.
+- Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+--- файлы (топ-15 по размеру) ---
+      231398  data\01_Publius_Enigma.html
+      134482  data\00_Publius_Enigma.html
+      133260  data\02_faroutmagazine.co.uk.html
+        5080  README.md
+        1930  LOG.md
+         814  data\SOURCES.md
+
+====================================================================================================
+### wif500-500btc
+--- README (первые 45 строк из 54) ---
+# WIF500 (500 BTC) — ИСПРАВЛЕНО: пазл ОТКРЫТ
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Часть 6).
+
+## Кратко
+- Статус: **OPEN — НЕ решён** (каталог ошибочно помечал его как «закрытый/решённый»)
+- Цепь: bitcoin
+- Приз: **500,00035446 BTC** — лежат нетронутыми (проверено через Blockstream API: `spent_txo_sum = 0`, 26 пополнений)
+- Автор: **phrutis**
+- Типы: wif, base58, gpu-bruteforce, range-splitting
+- Что осталось / сложность: **12 неизвестных символов WIF** ≈ 58¹² ≈ **2⁷⁰** вариантов (НЕ 2⁵⁸, как в каталоге)
+
+## Адрес/эскроу
+- `1PfNh5fRcE9JKDmicD2Rh3pexGwce1LqyU` — main | 500,00035446 BTC | state: **funded-unspent**
+- Проверка: https://blockstream.info/api/address/1PfNh5fRcE9JKDmicD2Rh3pexGwce1LqyU
+- Проверка (веб): https://blockchain.com/btc/address/1PfNh5fRcE9JKDmicD2Rh3pexGwce1LqyU
+
+## Механизм
+- Приватный ключ в формате **WIF известен на 40 символов из 52**; неизвестны **12 символов**.
+- Заявленное вознаграждение: **200 BTC** нашедшему ключ + **0,01 BTC** каждому охотнику за каждый пройденный диапазон
+  (в сумме 33,64 BTC на 3364 диапазона).
+- Диапазон из 12 символов разделён на **3364 малых отрезка**; ведётся публичная таблица занятых диапазонов,
+  участники берут «FREE»-диапазоны и запускают закрытый (без исходников) GPU-инструмент **WifSolverCuda / WifSolver**.
+- Производительность: RTX 3090 ≈ 4 Gkey/s (~4 дня на диапазон), RTX 3060 ≈ 1,4 Gkey/s (~9 дней), RTX 2070 ≈ 1,2 Gkey/s (~12 дней).
+
+## КРАСНЫЕ ФЛАГИ (важно)
+- Программа **не выдаёт готовый приватный ключ**, а выдаёт «зашифрованный ключ», расшифровать который могут **только организаторы**.
+  В FAQ прямо сказано: «Если я найду ключ, могу я забрать все монеты? Нет, вы найдёте зашифрованный ключ».
+- То есть нашедший **не может забрать монеты сам** — это централизованная схема с высоким риском невыплаты.
+- Организатор сам предупреждает, что в существующем видео «есть ошибки, делающие ключ ненаходимым».
+- Подлинность WIF и адреса никто не подтвердил; организатор пишет: «чтобы узнать, нужно пройти очень большой диапазон».
+
+## Источники
+- https://github.com/jonlloner/wif500
+- https://raw.githubusercontent.com/jonlloner/wif500/main/README.md
+- https://github.com/phrutis/wif500
+- https://github.com/phrutis/WifSolverCuda
+- https://github.com/bigvito19/wif500
+- https://github.com/Yanmailde/Phrutis_wif500
+- https://blockstream.info/api/address/1PfNh5fRcE9JKDmicD2Rh3pexGwce1LqyU
+
+## Исправление каталога (2026-10-16)
+- Формулировка каталога «WIF500 (500 BTC, закрытый GPU-перебор 2⁵⁸)» **не подтверждается**:
+  адрес по-прежнему держит все 500 BTC и **0 потрачено**; README описывает 12 неизвестных base58-символов (~2⁷⁰), а не 2⁵⁸.
+  Слово «closed» в каталоге, вероятно, означало «проект закрыт», а не «решён».
+--- LOG (последние 12 строк из 18) ---
+- Тип объекта: пазл. Состояние папки: README 4981 байт (обогащённое досье), файлов 1, data/=нет, tools/=нет.
+- Кратко из README: статус OPEN — НЕ решён; приз **500,00035446 BTC** — лежат нетронутыми (проверено через Blockstream API: `spent_txo_sum = 0`, 26 пополнений); типы wif, base58, gpu-bruteforce, range-splitting; остаток-сложность n/a.
+- Адрес/эскроу: 1PfNh5fRcE9JKDmicD2Rh3pexGwce1LqyU
+- Источники: n/a
+- Вся история и досье — в README.md этой папки; новые сессии описывать здесь (self-intro, что делал, результаты вкл. отрицательные, артефакты, ссылки).
+
+## 2026-10-17 18:56 — Big Pickle (big-pickle / OpenCode, Windows) — сбор данных в пустую папку
+- Делал: массовый обход README → источники; попыток 6, сохранено 4 в `data/`.
+- Успех (4): 00_wif500.html; 01_README.md; 02_wif500.html; 03_Phrutis_wif500.html
+- Отказ (2): https://github.com/phrutis/wif500 [FAIL: HTTP Error 404: Not Found | jina: ]; https://github.com/phrutis/WifSolverCuda [FAIL: HTTP Error 404: Not Found | jina: ]
+- Артефакты: `data/SOURCES.md` + скачанные файлы.
+- Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+--- файлы (топ-15 по размеру) ---
+      275800  data\03_Phrutis_wif500.html
+      257243  data\00_wif500.html
+      253122  data\02_wif500.html
+        5368  data\01_README.md
+        4981  README.md
+        2080  LOG.md
+         953  data\SOURCES.md
+

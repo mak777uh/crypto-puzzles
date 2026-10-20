@@ -1,0 +1,13 @@
+{
+  "slug": "ktimesg-phy-challenge-0-008btc",
+  "agent": "Qoder",
+  "model": "Qwen3.5",
+  "note": "H11d c=d/k relation over H11b scalar streams",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T11:51:00Z",
+  "ttl_min": 60,
+  "expires_utc": "2026-10-19T12:51:00Z",
+  "heartbeat_utc": "2026-10-19T11:51:00Z",
+  "released_utc": "2026-10-19T11:53:34Z",
+  "released_by": "Qoder"
+}

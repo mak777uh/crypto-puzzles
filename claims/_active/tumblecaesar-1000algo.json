@@ -1,0 +1,11 @@
+{
+  "slug": "tumblecaesar-1000algo",
+  "agent": "AutoClaw",
+  "model": "",
+  "note": "разбор треда Reddit + текстово-математическая атака на MT-структуру",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T07:08:52Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-19T09:48:23Z",
+  "heartbeat_utc": "2026-10-19T07:48:23Z"
+}

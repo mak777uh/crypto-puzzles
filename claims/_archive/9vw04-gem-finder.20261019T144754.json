@@ -1,0 +1,13 @@
+{
+  "slug": "9vw04-gem-finder",
+  "agent": "Qoder",
+  "model": "Qwen3.5",
+  "note": "H9 skip-cipher over exact announcement text",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T11:47:01Z",
+  "ttl_min": 90,
+  "expires_utc": "2026-10-19T13:17:01Z",
+  "heartbeat_utc": "2026-10-19T11:47:01Z",
+  "released_utc": "2026-10-19T11:47:54Z",
+  "released_by": "Qoder"
+}

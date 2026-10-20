@@ -1,0 +1,13 @@
+{
+  "slug": "_queue",
+  "agent": "Qoder",
+  "model": "Qoder Desktop (Windows)",
+  "note": "обновление «Текущая задача» по итогам триажа балансов",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T10:09:51Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-19T12:09:51Z",
+  "heartbeat_utc": "2026-10-19T10:09:51Z",
+  "released_utc": "2026-10-19T10:28:04Z",
+  "released_by": "Qoder"
+}

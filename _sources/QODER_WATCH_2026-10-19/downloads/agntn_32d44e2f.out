@@ -1,0 +1,125 @@
+---
+title: "Quizchain"
+description: "AoiNakamoto's numbered quiz blocks on r/bitcoinpuzzles, April to July 2019. Each block hashed a short answer plus a piece of the previous key into BIP39 entropy"
+canonical_url: "https://puzzles.agntn.dev/collections/quizchain"
+---
+# Quizchain
+
+> AoiNakamoto's numbered quiz blocks on r/bitcoinpuzzles, April to July 2019. Each block hashed a short answer plus a piece of the previous key into BIP39 entropy
+
+Quizchain is a chain of small Bitcoin quizzes. AoiNakamoto started it on r/bitcoinpuzzles on April 7, 2019, the day after the [book quiz](https://puzzles.agntn.dev/collections/book-quiz) ran out its clock. One question per block, one wallet per question.
+
+Here's the trick. You answer the question, glue on a piece of the previous block's key and hash the lot. That hash is the seed, and the first address holds the prize. So you can't open a block without the key of the one before it. That's the chain.
+
+It started as an experiment. It ran to block 77. Most blocks paid 7 mBTC, the lucky ones more, the last one 77 mBTC. On the way the author broke a fair number of hashes: line breaks, the wrong algorithm, a stray word. All of them got claimed anyway, the last one on July 23, 2019.
+
+<collection-facts collection="quizchain">
+
+
+
+</collection-facts>
+
+## The run, phase by phase
+
+Every block has its own page with the whole story: the question, the answer, the mistakes and what the chain says. Here's the short version, so you know where to click.
+
+### Blocks 1 to 10: a question, a key, a line break
+
+One question per block, the answer plus three characters of the previous key, SHA-256, entropy. [Block 1](https://puzzles.agntn.dev/collections/quizchain/1) gave the answer away and hid the work in the author's favorite address. [Block 4](https://puzzles.agntn.dev/collections/quizchain/4) put two words inside one kanji. [Block 6](https://puzzles.agntn.dev/collections/quizchain/6) held out overnight with two very plain words. [Block 7](https://puzzles.agntn.dev/collections/quizchain/7) paid 77 mBTC for a question about the handle. Then [block 9](https://puzzles.agntn.dev/collections/quizchain/9) and [block 10](https://puzzles.agntn.dev/collections/quizchain/10) both broke on a line break the author copied into the hash.
+
+### Blocks 11 to 29: expert, impossible, MD5
+
+[Block 11](https://puzzles.agntn.dev/collections/quizchain/11) was billed as expert and the answer was the question. [Block 13](https://puzzles.agntn.dev/collections/quizchain/13) and [block 23](https://puzzles.agntn.dev/collections/quizchain/23) were impossible on purpose until July. At [block 15](https://puzzles.agntn.dev/collections/quizchain/15) the hashing app quietly switched to MD5, and the author kept it. [Block 26](https://puzzles.agntn.dev/collections/quizchain/26) got claimed before its post existed. And [block 27](https://puzzles.agntn.dev/collections/quizchain/27) fell so fast the author cried brute force, then took it back.
+
+### Blocks 30 to 47: a field against bots
+
+Short answers were too easy to brute force, so the format grew a field. First BotFU in [block 30](https://puzzles.agntn.dev/collections/quizchain/30), then BFUB from [block 31](https://puzzles.agntn.dev/collections/quizchain/31) on: a short hint that only makes sense once you know the answer. [Block 34](https://puzzles.agntn.dev/collections/quizchain/34) found `Hoax` inside a prize address. [Blocks 39 to 41](https://puzzles.agntn.dev/collections/quizchain/39) were the first real chain, no links given. [Block 44](https://puzzles.agntn.dev/collections/quizchain/44) was an empty answer and a line from Du Hast, and it held for 23 days.
+
+### Blocks 48 to 58: TOMI
+
+The field got a friendlier name, Thinking Only Method, and the first three blocks with it were still hashed as BFUB. [Block 53](https://puzzles.agntn.dev/collections/quizchain/53) broke so badly it got funded twice. [Block 54](https://puzzles.agntn.dev/collections/quizchain/54)'s answer never reached the thread. [Block 56](https://puzzles.agntn.dev/collections/quizchain/56) sat for 19 days on a stray word in the hash. [Block 58](https://puzzles.agntn.dev/collections/quizchain/58) brought in Atbash, and it stayed.
+
+### Blocks 59 to 76: the whole key as the link
+
+From [block 59](https://puzzles.agntn.dev/collections/quizchain/59) the link is the whole previous key, so nothing short can be guessed anymore. Atbash words, a road block in [block 66](https://puzzles.agntn.dev/collections/quizchain/66) that locked [block 67](https://puzzles.agntn.dev/collections/quizchain/67) for a day, Lord of the Rings, The Da Vinci Code and Agatha Christie. The prize climbed with the cross sum of the block number, up to 76 mBTC for [block 76](https://puzzles.agntn.dev/collections/quizchain/76).
+
+### Block 77: the genesis address
+
+[Block 77](https://puzzles.agntn.dev/collections/quizchain/77), 77 mBTC, turned the genesis address into a puzzle the author credits to Satoshi. It took ten hints and two and a half months, and the answer has Hal Finney in it.
+
+## What the quizchain records carry
+
+### A hash and a key, no seed phrase
+
+```ts [src/collections/quizchain/1.ts]
+export const quizchainBlock1 = puzzle({
+  id: "quizchain/1",
+  chain: "bitcoin",
+  address: "16NLaozWwi4JSTRMnMfi3oCkBjXBWVFgYR",
+  sourceUrl: THREAD,
+  startedAt: "2019-04-07 03:31:37",
+  status: Status.Solved,
+  pubkey: compressed("028a941c0effd36b57654b9bf871817384f5bd06286cebe73096191bc3584acef3"),
+  key: wif("L58cp8Ex3RsTsiKaaeodmu7SetzDzqQkzfX3bAtjdtmu4KbTpUzp").entropy(
+    "50611e63a52089bc14e38becb1ad8880be6ba8f4aff0e64223f3dbd740adc1b7",
+    source(SOLUTION, "SHA-256 of answer b) with the last three characters of the address appended"),
+  ),
+  prize: 0.007,
+  transactions: [funding(/* … */), claim(/* … */)],
+});
+```
+
+The author printed block 1's SHA-256 and WIF. Not the mnemonic. So the record keeps the hash and the key, no seed phrase, no path. Want to check it? Put the hash into the BIP39 tool as entropy, take `m/44'/0'/0'/0/0`, and you get that WIF.
+
+Every other block keeps its hash too, even when no thread printed it. The recipe is public: the answer, a piece of the previous key, a hash. So the record runs it, and `source` says what went in. Block 2's `e743564b…742e600d` is SHA-256 of the solution with `Uzp` on the end, and it derives the WIF the author posted.
+
+From block 15 the hash is MD5. That's 16 bytes, so the seed phrase has 12 words instead of 24. Same path.
+
+### Printed or derived?
+
+Some keys were printed. The author posted the first five. Players posted plenty more, often because the next block needed the whole key as its link. Block 76's shows up only in a Wattpad chapter.
+
+Nobody printed the rest. Those records end in `.derived()`: the record ran the published recipe on the published answer. Block 6 was the first one like that. The derivation is the only evidence there, so the chain checks every one. The WIF has to give the funded address, and its public key has to match the one the claim revealed. Two things the author didn't control.
+
+### The author hashed something else
+
+Block 9 has a newline in its hash. The author drafted in a word processor and copied the answer with a line break. Without it the hash is `c2fee0ce…938907c1`, and that key doesn't match the funded address. Block 10 has the same newline.
+
+It happened more than once. Block 11's update says "whatsover", block 21's says "Satoshi was", block 28's comment says `NM2`, block 48's update writes `forPresident`, block 51's names the wrong block, block 60's adds a period, and block 61's link is really block 59's. The hints keep the author's words. The keys follow the chain.
+
+### Where the answers come from
+
+Mostly from the author's updates to the posts. Sometimes from a player's comment the author confirmed. Where the thread never says, from [Complete Quizchain](https://www.wattpad.com/720895205-second-complete-quizchain), the author's Wattpad chapter with every first run question and solution. Block 54's answer exists only there. So does block 43's question, because Reddit removed the post.
+
+Blocks 13 and 23 waited for the final version of the Wattpad chapter Second. Their answers come from the players who posted them after the claims.
+
+### Where the address comes from
+
+No post prints an address. It prints the funding transaction, and that transaction pays the prize to one address. That's the address on the record. Block 59 is the exception: its post links the address itself.
+
+Block 53 got funded twice. The first time, `cf03595f…3e8206de` paid `1HfaXQw45mg9VmxTHtvX5mrGNw8GX4tuHa`, a hash with two mistakes in it. The record holds the second address, the one the fixed recipe derives.
+
+### Who claimed it?
+
+The chain doesn't say, so no record names anybody. Take block 1. The solution comment went up at 05:35 UTC, and the prize moved at **05:39:30**. Four minutes with a public key. Could be the player with the screenshot, could be a fast stranger.
+
+### The threads, archived
+
+Every thread lives in the repo as a reading copy with a screenshot, in [assets/sources/quizchain](https://github.com/agntn/puzzles/tree/main/assets/sources/quizchain). Most come from a 2023 capture of old.reddit.com. Block 10 and block 42 have no readable capture, so their copies come from the Arctic Shift Reddit archive, checked against pullpush. Block 1's capture had already lost one of its seven comments.
+
+### Numbered like bits
+
+`quizchain/1`, and `1`, `"1"` and `"quizchain/1"` all resolve. The number is the block, the way the author counted them: "Stay tuned for block 2 of this chain." Later blocks get the next numbers, not a new collection each.
+
+## The Quizchain puzzle records
+
+<collection-puzzles collection="quizchain">
+
+
+
+</collection-puzzles>
+
+
+## Sitemap
+
+See the full [sitemap](https://puzzles.agntn.dev/sitemap.md) for all pages.

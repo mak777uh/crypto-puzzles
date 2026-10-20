@@ -30,3 +30,9 @@ _sources/ocp/
 **/data/github/*/files__*/
 **/data/github/*/raw/
 **/data/github/*/wiki/
+
+# Локальные ML-кэши (whisper/huggingface) — тяжёлые модели не коммитим (AutoClaw, 20.10.2026)
+**/models/models--*/
+
+# Сырой клон чужого репозитория внутри data/ - не коммитим, пересобирается github_intake-ом (AutoClaw, 20.10.2026)
+puzzles/rushwallet-contest-30-1msats/data/visalord_repo/

@@ -1,0 +1,436 @@
+==========================================================================================
+### bitimage-kitten-photo-puzzle-95ksats
+# Bitimage (Kitten Photo Puzzle)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **open**
+- Цепь: bitcoin
+- Приз: ~0,00095 BTC
+- Типы: image-stego, brainwallet, bip39-seed
+- Что осталось / сложность: seed спрятан в фотографии котёнка; связь с инструментом bitimage автора Corey Phillips
+## Адреса/эскроу
+- Адрес в каталоге не зафиксирован — требуется уточнить (B42).
+## Источники
+- 2019 — Corey Phillips, bitimage (инструмент) — https://github.com/coreyphillips/bitimage
+- 2019 — твит Andreas Antonopoulos с фото котёнка (первоисточник подсказки)
+## Подробности
+- Механизм: seed-фраза спрятана в фотографии котёнка, опубликованной в твите Andreas Antonopoulos.
+- Связано с инструментом `bitimage` того же автора, что и B16 (Corey Phillips kitten passphrase) — возможно пересечение.
+- Оценка приза ~0,00095 BTC — мелкий, но полезен как калибровочный пример image→seed.
+- Важно разделять: B16 (passphrase-пазл на 1 001 900 сат) и B42 (bitimage, ~95 000 сат) — **разные** записи каталога.
+    ...(README всего 127 строк)
+    LOG(15 строк) хвост:
+      | - Успех (4): 00_bitimage.html; 01_31.html; 02_bitimage.html; 03_bitimage.md
+      | - Отказ (2): https://corey-lyle-phillips.medium.com/part-1-3-turn-your-photos-into- [FAIL: <urlopen error [Errno 11001] getad]; https://corey-lyle-phillips.medium.com/… [
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(7): data\01_31.html(301480); data\00_bitimage.html(276994); data\02_bitimage.html(171874); README.md(8656); data\03_bitimage.md(2664); LOG.md(1975)
+
+==========================================================================================
+### school-of-bitcoin-1msats
+# School of Bitcoin: 1 Million Sats In This Image
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles).
+## Кратко
+- Статус: **open** (mid)
+- Цепь: bitcoin
+- Приз: 1000000 sats (USD 630)
+- Примечание: single funding transaction, 0.01 BTC
+- Опубликовано: 2025-03-09 https://stacker.news/items/908283
+- Типы: bip39-seed, image-stego, password-pages
+- Difficulty left: external-info
+- word 1 (abstract) is confirmed; the remaining 11 words are not found on the card or in any crawled course content, and the intended-path KeePass file was pulled from the live site before it was opened by anyone who has a copy, so the missing piece is external information rather than more search over known material
+## Адреса/эскроу
+- `bc1qcsdfkaqgy9ux668vmzflzqsyg0qtspncymt5ed` — main | expected: 1000000 sats | state: funded-unspent (checked 2026-08-16) | https://mempool.space/address/bc1qcsdfkaqgy9ux668vmzflzqsyg0qtspncymt5ed
+## Источники
+- 2025-03-09 — Puzzle announcement, stacker.news item 908283 — https://stacker.news/items/908283
+- 2026-08-16 — School of Bitcoin course site — https://schoolofbitcoin.com/
+## Подробности
+Здесь должна накапливаться расширенная информация по мере проходов: подсказки, прогресс сообщества, проверенные гипотезы, ссылки, compute-оценки. Текущий файл — скелет из OCP; заполняется автоматически в циклах.
+    ...(README всего 164 строк)
+    LOG(18 строк) хвост:
+      | - Делал: обогащение из внешнего репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) — раскладка дельты снапшота `19644e58` (клон `_sources
+      | - Результат: перенесено 5 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в
+      | - Артефакты: `2-mid-prizes/school-of-bitcoin-1msats/README.md`, `2-mid-prizes/school-of-bitcoin-1msats/analysis/leads.md`, `2-mid-prizes/school-of-bitcoin-1msats/analysis
+      | - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/school-of-bitcoin-1msats ; полная дел
+    файлы(14): data\slide104_what-is-money.js(11984); README.md(11771); data\ocp\README.md(7431); tools\ocp\oracle.py(5599); LOG.md(5456); data\ocp\puzzle.json(2967)
+
+==========================================================================================
+### oobit-139-bitcoinpuzzles-io-0-01545btc
+# Oobit 139 (bitcoinpuzzles.io)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **open**
+- Цепь: bitcoin
+- Приз: 0,01545 BTC
+- Опубликовано: 2026-06-02 (автор Mestre Caçatal)
+- Типы: word-selection, video, bip39-seed
+- Что осталось / сложность: модель кодирования не подтверждена; нужен платный оракул либо независимый разбор клипов
+## Адреса/эскроу
+- `1KKtnqLdK17ndRRwF8zaKZH6FSkSmTN6fk` — main | путь m/44'/0'/0'/0/0
+- Проверка баланса: https://mempool.space/address/1KKtnqLdK17ndRRwF8zaKZH6FSkSmTN6fk
+## Источники
+- 2026-06-02 — страница пазла #139 — https://bitcoinpuzzles.io/en/puzzles/139
+## Подробности
+- 6 YouTube-клипов с ID: `7DEcPmhijrU`, `qrvocJCSc4Q`, `bshCjlr5bdI`, `NagGwROg-lM`, `uxLjx32vTL0`, `V0E8p9wreD4`
+- Известные слова: mushroom, elephant, deer, tortoise, coyote, bone, slab, stone
+- Модель «2 слова на клип» **не подтверждена**
+- Платная подсказка 1 стоит ~4588 CB (~$1,8); покупка отклонена
+    ...(README всего 125 строк)
+    LOG(9 строк) хвост:
+      | - Кратко из README: статус open; приз 0,01545 BTC; типы word-selection, video, bip39-seed; остаток-сложность n/a.
+      | - Адрес/эскроу: 1KKtnqLdK17ndRRwF8zaKZH6FSkSmTN6fk
+      | - Источники: https://bitcoinpuzzles.io/en/puzzles/139
+      | - Вся история и досье — в README.md этой папки; новые сессии описывать здесь (self-intro, что делал, результаты вкл. отрицательные, артефакты, ссылки).
+    файлы(159): data\tex\TeXiSNqmqvs.f399.mp4(21254453); data\main\oobit139.png(8157593); data\main\num_crop_0.png(2674978); data\main\sky_highpass.jpg(1397837); data\tex\TeXiSNqmqvs.info.json(1116630); data\main\num_crop_1.png(963713)
+
+==========================================================================================
+### seed-phrase-com-metaneer-0-01btc
+# seed-phrase.com (MetaNeer Labs)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **open**
+- Цепь: bitcoin
+- Приз: 0,01 BTC
+- Типы: bip39-seed, text-cipher, image-stego
+- Что осталось / сложность: датированные подсказки 2024 года (стихи, эмодзи, загадки) не собраны в решение
+## Адреса/эскроу
+- `bc1q7x3p3rkmkxgf20n3apkccqcmn5mdtsf8zx5227` — main | BIP84
+- Проверка баланса: https://mempool.space/address/bc1q7x3p3rkmkxgf20n3apkccqcmn5mdtsf8zx5227
+## Источники
+- 2024 — сайт пазла — https://seed-phrase.com
+- 2024 — репозиторий MetaNeer — https://github.com/metaneer/seed-phrase
+## Подробности
+- Автор/организация: MetaNeer Labs.
+- Формат: серия датированных подсказок 2024 года — стихи, эмодзи и загадки, публикуемые последовательно.
+- Адрес BIP84 (native SegWit) — значит seed-фраза используется с путём m/84'/0'/0'/0/0.
+- Подсказки публикуются с датами, что даёт естественный порядок применения (timeline как ключ).
+    ...(README всего 171 строк)
+    LOG(18 строк) хвост:
+      | ## 2026-10-17, ~13:30 — Qoder: полный QR-скан завершён (канал закрыт)
+      | - Просканированы все 2048 кадров `spv1080.mp4` (аналитика QR в каждом кадре) с контраст-стретчем; декодировано ровно 4 строки, все — мусор/аналитика: кадр 189 `"/"`, кадр
+      | - Ни одна не содержит слов/индексов фразы. Вывод: QR-канал — только аналитика (`?source=qr&i=N`), **окончательно закрыт**.
+      | - Итог по пазлу: все дешёвые каналы закрыты (HSL-цвет, аудио, QR, PDF, метаданные, git). Пазл остаётся внешне-информационно заблокированным (утраченный onetimesecret 404;
+    файлы(12): data\img\whatafeeling.png(2244247); data\img\illusionsmichael.png(1214522); data\commits.json(72337); data\img\SPfavicon-256x256.png(52892); data\img\sumofwords.png(35150); data\index.html(31957)
+
+==========================================================================================
+### wealth-in-poetry-0-03btc
+# Trithemius: Wealth in Poetry
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles).
+## Кратко
+- Статус: **open** (mid)
+- Цепь: bitcoin
+- Приз: 3124630 sats (USD 1969)
+- Примечание: 0.0312463 BTC, 2 funding transactions, exact dates not recorded
+- Опубликовано: 2019-02-11 https://medium.com/coinmonks/securing-bitcoin-seed-phrases-in-stories-d8eb43a02254
+- Типы: bip39-seed, text-cipher, brainwallet
+- Difficulty left: insight
+- the mechanism is taught explicitly by the author; tokenization is calibrated against both worked examples; the real carrier text and numeric key are, by the article's own design, author-specific and not guessable from the article alone, consistent with a stylometric pass finding no detectable insertion fingerprint
+## Адреса/эскроу
+- `1K4ezpLybootYF23TM4a8Y4NyP7auysnRo` — main | expected: 3124630 sats | state: funded-unspent (checked 2026-08-16) | https://mempool.space/address/1K4ezpLybootYF23TM4a8Y4NyP7auysnRo
+## Источники
+- 2019-02-11 — Trithemius, Securing Bitcoin Seed Phrases in Stories, Medium/Coinmonks — https://medium.com/coinmonks/securing-bitcoin-seed-phrases-in-stories-d8eb43a02254
+- 2026-08-16 — Community tracker confirming the puzzle is unsolved — https://privatekeys.pw/puzzles/0.03-btc-coinmonks-puzzle
+## Подробности
+Здесь должна накапливаться расширенная информация по мере проходов: подсказки, прогресс сообщества, проверенные гипотезы, ссылки, compute-оценки. Текущий файл — скелет из OCP; заполняется автоматически в циклах.
+    ...(README всего 248 строк)
+    LOG(36 строк) хвост:
+      | - Следствие: полученные здесь нули корректны как «при rounds=2048 совпадений нет», но **не покрывают** пространство нестандартных rounds/соли — это ограничение интерпрета
+      | - Что делать (бесплатный шаг): прочитать генератор/оракул пазла и подсказки автора на явные упоминания rounds / iterations / salt / «Electrum vs BIP39»; при неясности — в
+      | - Артефакты: не создавались (запись текстовая).
+      | - Ссылки: `solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/LOG.md` (запись 10:05), https://github.com/floflo777/open-crypto-puzzles/pull/44 ; `_sources/ocp_sync_2
+    файлы(17): data\05_Wealth_in_Poetry.html(259878); README.md(24571); data\03_0.03-btc-coinmonks-puzzle.html(16181); LOG.md(9326); data\04_README.md(7936); data\00_README.md(7936)
+
+==========================================================================================
+### peter-todd-hash-collision-bounties-0-59btc
+# Peter Todd Hash Collision Bounties
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles).
+## Кратко
+- Статус: **watch** (big)
+- Цепь: bitcoin
+- Приз: 0.59364885 BTC (USD 37400)
+- Примечание: combined across 4 live P2SH scripts (SHA-256, RIPEMD-160, HASH160, HASH256); a 5th sibling (SHA-1) was claimed in 2023 and is not part of this total
+- Опубликовано: 2013-09-13 https://bitcointalk.org/index.php?topic=293382.0
+- Типы: hash-collision
+- Difficulty left: research-breakthrough
+- no known shortcut over the generic collision bound for any of the 4 live hash functions (2^128 for SHA-256 and HASH256, 2^80 for RIPEMD-160 and HASH160); what would close this is a published practical collision on one of them, the way SHAttered did for SHA-1 in 2017
+## Адреса/эскроу
+- `35Snmmy3uhaer2gTboc81ayCip4m9DT4ko` — SHA-256 | expected: 0.27734251 BTC | state: funded-unspent (checked 2026-08-16) | https://mempool.space/address/35Snmmy3uhaer2gTboc81ayCip4m9DT4ko
+- `3KyiQEGqqdb4nqfhUzGKN6KPhXmQsLNpay` — RIPEMD-160 | expected: 0.11576888 BTC | state: funded-unspent (checked 2026-08-16) | https://mempool.space/address/3KyiQEGqqdb4nqfhUzGKN6KPhXmQsLNpay
+- `39VXyuoc6SXYKp9TcAhoiN1mb4ns6z3Yu6` — HASH160 (RIPEMD160(SHA256())) | expected: 0.10026873 BTC | state: funded-unspent (checked 2026-08-16) | https://mempool.space/address/39VXyuoc6SXYKp9TcAhoiN1mb4ns6z3Yu6
+- `3DUQQvz4t57Jy7jxE86kyFcNpKtURNf1VW` — HASH256 (SHA256(SHA256())) | expected: 0.10026873 BTC | state: funded-unspent (checked 2026-08-16) | https://mempool.space/address/3DUQQvz4t57Jy7jxE86kyFcNpKtURNf1VW
+- `37k7toV1Nv4DfmQbmZ8KuZDQCYK9x5KpzP` — SHA-1 (reference sibling, claimed 2023-02-22, not part of the live prize) | expected: 0 BTC (fully spent) | state: swept (checked 2026-08-16) | https://mempool.space/address/37k7toV1Nv4DfmQbmZ8KuZDQCYK9x5KpzP
+## Источники
+- 2013-09-13 — REWARD offered for hash collisions for SHA1, SHA256, RIPEMD160 and other — https://bitcointalk.org/index.php?topic=293382.0
+- 2026-08-16 — boha, community bounty mirror (hash_collision.jsonc) — https://github.com/oritwoen/boha
+    ...(README всего 148 строк)
+    LOG(20 строк) хвост:
+      | - Делал: обогащение из внешнего репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) — раскладка дельты снапшота `19644e58` (клон `_sources
+      | - Результат: перенесено 4 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в
+      | - Артефакты: `1-big-prizes/peter-todd-hash-collision-bounties-0-59btc/clues/author-posts.md`, `1-big-prizes/peter-todd-hash-collision-bounties-0-59btc/data/redeem_scripts
+      | - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/1-big-prizes/peter-todd-hash-collision-bounties-0-
+    файлы(15): data\03_shattered.io.html(192888); README.md(11712); data\04_README.md(10058); data\00_README.md(10058); tools\ocp\oracle.py(8938); data\ocp\puzzle.json(5898)
+
+==========================================================================================
+### guntis-vitolins-metamask-8-6eth
+# Guntis Vitolins: 10 ETH Challenge
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles).
+## Кратко
+- Статус: **open** (big)
+- Цепь: ethereum
+- Приз: 8.612541554256945 ETH (USD 16192)
+- Примечание: wallet funded with 10 ETH on 2020-02-12; the author has withdrawn from it 7 times since 2021-05, most recently 2024-06-04, totaling approximately 1.377 ETH; he still holds and periodically uses this private key, so this is not a frozen escrow
+- Опубликовано: 2020-02-12 https://www.youtube.com/watch?v=w4mpiuBP_aY
+- Типы: bip39-seed, word-selection, video-series
+- Difficulty left: bounded-compute
+- 3 of 12 positions are confirmed (1, 5 with 2 candidates, and 12), plus 2 more confirmed list members with unknown positions; every sweep of the confirmed word pool (approximately 16.75 billion derivations across 6 metadata-era sweeps, all witnessed) has failed; the next 2 leads (connecting words, then substrings of longer words) are priced at hours and about a day respectively on one rented GPU and have not been run; a third lead (re-reading remaining metadata) is a human task, not a sweep
+## Адреса/эскроу
+- `0x9C2F44EFAd0c1E852a09dF9939e6DaF061140CaF` — main | expected: 8.61254155425694462 ETH | state: funded-unspent (checked 2026-08-16) | https://etherscan.io/address/0x9C2F44EFAd0c1E852a09dF9939e6DaF061140CaF
+## Источники
+- 2020-02-12 — Challenge video — https://www.youtube.com/watch?v=w4mpiuBP_aY
+- 2020-02-12 — Challenge blog post — https://mineshop.eu/2020/02/12/crypto-pumping-hardcore-research-portfolio-update-how-are-we-doing/
+- 2026-08-16 — Hint 4 video — https://www.youtube.com/watch?v=03wXiMczCXk
+- 2026-08-16 — Hint 5 video — https://www.youtube.com/watch?v=ZjBJKooVmuE
+## Подробности
+    ...(README всего 250 строк)
+    LOG(89 строк) хвост:
+      | - Следствие: полученные здесь нули корректны как «при rounds=2048 совпадений нет», но **не покрывают** пространство нестандартных rounds/соли — это ограничение интерпрета
+      | - Что делать (бесплатный шаг): прочитать генератор/оракул пазла и подсказки автора на явные упоминания rounds / iterations / salt / «Electrum vs BIP39»; при неясности — в
+      | - Артефакты: не создавались (запись текстовая).
+      | - Ссылки: `solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/LOG.md` (запись 10:05), https://github.com/floflo777/open-crypto-puzzles/pull/44 ; `_sources/ocp_sync_2
+    файлы(529): data\mirror\later_video_2024-11-24.html(914652); data\mirror\later_video_2026-09-22.html(521522); data\03_open-crypto-puzzles.html(375280); data\mirror\later_post_2023-03-24.html(355794); data\mirror\wayback_video_2020.html(315686); data\community\ocp_issues_recent.json(218849)
+
+==========================================================================================
+### 1000-btc-challenge-bitcoin-puzzle-tx
+# 1000 BTC Challenge (Bitcoin Puzzle Transaction)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **open (78 из 160 не решены)**
+- Цепь: bitcoin
+- Приз: ~916-989 BTC (~$58-60M)
+- Опубликовано: январь 2015, блок #339085; создатель анонимный ('saatoshi_rising', не подтверждено)
+- Типы: address-only, known-public-key, bruteforce, pollard-kangaroo
+- Что осталось / сложность: 78 нерешённых пазлов; ближайший — #71 (2⁷⁰-2⁷¹), просканировано 0,864%
+## Адреса/эскроу
+- Решено: 82 из 160 пазлов
+- Нерешено: 78 пазлов
+- Ближайший нерешённый: #71 — 7.1019 BTC, диапазон 2⁷⁰-2⁷¹
+## Источники
+- 2026 — трекер — https://btcpuzzle.info/
+- 2026 — информация — https://github.com/roadhero/Bitcoin-Puzzle-Info
+- 2026 — privatekeys.pw — https://privatekeys.pw/puzzles/bitcoin-puzzle-tx
+- 2026 — needlespace — https://needlespace.com/en/puzzle
+- 2026 — news.bitcoin.com — https://news.bitcoin.com/key-hunters-eye-58-87m-bitcoin-puzzle-as-916-btc-sits-unsolved-in-78-addresses/
+- 2026 — alexanderthurn — https://github.com/alexanderthurn/1000-BTC-Challenge
+    ...(README всего 236 строк)
+    LOG(15 строк) хвост:
+      | - Успех (6): 00_btcpuzzle.info.html; 01_Bitcoin-Puzzle-Info.html; 02_bitcoin-puzzle-tx.html; 03_puzzle.html; 04_news.bitcoin.com.html; 05_mini.md
+      | - Отказ (1): https://github.com/alexanderthurn/1000-BTC-Challenge [FAIL: IncompleteRead(294912 bytes read) ]
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(9): data\02_bitcoin-puzzle-tx.html(1031975); data\04_news.bitcoin.com.html(1003375); data\01_Bitcoin-Puzzle-Info.html(279101); data\03_puzzle.html(265646); data\00_btcpuzzle.info.html(116607); README.md(16347)
+
+==========================================================================================
+### fe-lang-bountiful-compiler-bounty-1eth
+# Bountiful: the Fe compiler bug bounty
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles).
+## Кратко
+- Статус: **open** (mid)
+- Цепь: ethereum
+- Приз: 1 ETH (USD 1880)
+- Примечание: the registry holds 1 ETH and each of the 7 registered challenges carries a 0.25 ETH prize, so the pot pays the first 4 claims and the 5th would revert; the 1 ETH balance, not the 1.75 ETH nominal total, is what the chain can pay today
+- Опубликовано: 2026-05-04 https://blog.fe-lang.org/posts/bountiful-reloaded/
+- Типы: smart-contract, timelock
+- Difficulty left: insight
+- the 7 contracts are small and their sources are published, so nothing here is compute bound; what is missing is a defect nobody has spotted yet, in a compiler at version 26.1.0 or in about 1,000 lines of hand-written Fe
+## Адреса/эскроу
+- `0x71fB6afcD98c5BD611712ad4b8D314EF729aa69D` — BountyRegistry, round 3 | expected: 1 ETH | state: funded-unspent (checked 2026-08-17) | https://etherscan.io/address/0x71fB6afcD98c5BD611712ad4b8D314EF729aa69D
+- `0x046a3a4968282BaA7ad6291723873C8275434623` — Game | expected: 0 ETH, prize held by the registry | state: zero-balance-contract (checked 2026-08-17) | https://etherscan.io/address/0x046a3a4968282BaA7ad6291723873C8275434623
+- `0xE959e7ecA1afCa6cf2Bf8b07e25Da355b6C8E8c7` — Game2D | expected: 0 ETH, prize held by the registry | state: zero-balance-contract (checked 2026-08-17) | https://etherscan.io/address/0xE959e7ecA1afCa6cf2Bf8b07e25Da355b6C8E8c7
+- `0xfb5423aDfBAC65ac675845Bb4FEBf8aeC128272E` — GameEnum | expected: 0 ETH, prize held by the registry | state: zero-balance-contract (checked 2026-08-17) | https://etherscan.io/address/0xfb5423aDfBAC65ac675845Bb4FEBf8aeC128272E
+- `0x5E987b6aADD4DFC2236D21edE6D07feb04350b06` — GameBitboard | expected: 0 ETH, prize held by the registry | state: zero-balance-contract (checked 2026-08-17) | https://etherscan.io/address/0x5E987b6aADD4DFC2236D21edE6D07feb04350b06
+- `0x86B7AEce1503242fED29E593FAEde3b7b00a5a1D` — GameMonadic | expected: 0 ETH, prize held by the registry | state: zero-balance-contract (checked 2026-08-17) | https://etherscan.io/address/0x86B7AEce1503242fED29E593FAEde3b7b00a5a1D
+- `0x3dF9789634995546B0126bC28B9F9FcBCB129F18` — GameNested | expected: 0 ETH, prize held by the registry | state: zero-balance-contract (checked 2026-08-17) | https://etherscan.io/address/0x3dF9789634995546B0126bC28B9F9FcBCB129F18
+- `0x85b4d0B32b8a285111c244E52524B642f1A5ccFE` — GameTrait | expected: 0 ETH, prize held by the registry | state: zero-balance-contract (checked 2026-08-17) | https://etherscan.io/address/0x85b4d0B32b8a285111c244E52524B642f1A5ccFE
+    ...(README всего 178 строк)
+    LOG(14 строк) хвост:
+      | - Делал: обогащение из внешнего репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) — раскладка дельты снапшота `19644e58` (клон `_sources
+      | - Результат: перенесено 5 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в
+      | - Артефакты: `2-mid-prizes/fe-lang-bountiful-compiler-bounty-1eth/README.md`, `2-mid-prizes/fe-lang-bountiful-compiler-bounty-1eth/analysis/leads.md`, `2-mid-prizes/fe-la
+      | - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/fe-lang-bountiful-compiler-bounty-1et
+    файлы(50): README.md(25628); data\registry.fe(25159); data\sim_harness.mjs(13979); data\sim_harness2.mjs(13606); data\ocp\README.md(13331); data\BountyRegistry.runtime.bin(11819)
+
+==========================================================================================
+### teikhos-bipedaljoe-solver-bounties-2eth
+# TeikhosBounty: Johan Nygren's Proof-of-Public-Key Puzzles
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles).
+## Кратко
+- Статус: **open** (mid)
+- Цепь: ethereum
+- Приз: 2.000006 ETH (USD 3760)
+- Примечание: sum of the 3 open contracts: C1 1.000002 ETH, C2 0.500002 ETH, 9732 0.500002 ETH; a 4th contract, AEC7, holds 1.000012 ETH with no payout path for anyone; a 5th, 735B, was solved by me for 0.5 ETH and is now drained
+- Опубликовано: 2018-02-25 https://gist.github.com/resilience-me/be11a0ed3575dddca10df8263b53cc1d
+- Типы: smart-contract, timelock
+- Difficulty left: external-info
+- the cryptography is sound and confirmed working end to end by the 735B solve; C1, C2, and 9732 target public keys that have never appeared on chain or in any OSINT trace found so far, so the only realistic path in is information from the author
+## Адреса/эскроу
+- `0x735ba26f91e1275fa4b504649b19ef74739fe7e7` — 735B | expected: 0.5 ETH | state: swept (checked 2026-08-16) | https://etherscan.io/address/0x735ba26f91e1275fa4b504649b19ef74739fe7e7
+- `0x17e5e0910b9185b0ede564dcbf074ca910ad56a4` — C1 | expected: 1.000002 ETH | state: contract-holds-funds (checked 2026-08-16) | https://etherscan.io/address/0x17e5e0910b9185b0ede564dcbf074ca910ad56a4
+- `0xd7c6d542f3dcdceda845112b8fd567b8f8655805` — C2 | expected: 0.500002 ETH | state: contract-holds-funds (checked 2026-08-16) | https://etherscan.io/address/0xd7c6d542f3dcdceda845112b8fd567b8f8655805
+- `0x973c2178b09225d1de3ab037d40b3f24af696255` — 9732 | expected: 0.500002 ETH | state: contract-holds-funds (checked 2026-08-16) | https://etherscan.io/address/0x973c2178b09225d1de3ab037d40b3f24af696255
+- `0xaec7e8c221c3fd24e75c996e32289235fd899ebf` — AEC7 | expected: 1.000012 ETH, no payout path exists | state: contract-holds-funds (checked 2026-08-16) | https://etherscan.io/address/0xaec7e8c221c3fd24e75c996e32289235fd899ebf
+- `0x83e4b2a5A464bDfCD83057Ac08447f533A595156` — my wallet (735B payout destination) | expected: n/a | state: unknown (checked 2026-08-16) | https://etherscan.io/address/0x83e4b2a5A464bDfCD83057Ac08447f533A595156
+## Источники
+- 2018-03-19 — Signature idea for use with account abstraction — https://github.com/ethereum/EIPs/issues/935
+    ...(README всего 206 строк)
+    LOG(36 строк) хвост:
+      | - Делал: обогащение из внешнего репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) — раскладка дельты снапшота `19644e58` (клон `_sources
+      | - Результат: перенесено 7 файлов данных → `data/ocp/`, 3 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в
+      | - Артефакты: `2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth/analysis/mechanism.md`, `2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2eth/clues/author-posts.md`, `
+      | - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/teikhos-bipedaljoe-solver-bounties-2e
+    файлы(21): data\04_935.html(405377); data\03_be11a0ed3575dddca10df8263b53cc1d.html(122513); README.md(18355); data\05_README.md(16504); data\00_README.md(16504); tools\ocp\oracle.py(11564)
+
+==========================================================================================
+### cicada-3301
+# Cicada 3301
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **не решена (частично)**
+- Цепь: —
+- Приз: нет денежного приза (идейный ARG)
+- Опубликовано: 2012-2014 (задачи), 2016-2017 (наследники)
+- Типы: arg, cryptography, physical-quest, pgp
+- Что осталось / сложность: Liber Primus — руническая книга, большая часть не расшифрована
+## Адреса/эскроу
+- Не применимо.
+## Источники
+- 2026 — Is It Cicada (проверка подписей) — https://cicada-solvers.github.io
+- 2026 — Википедия — https://en.wikipedia.org/wiki/Cicada_3301
+- 2026 — Unfiction — https://unfiction.com
+- 2026 — разборы на Habr — https://habr.com
+## Подробности
+- Тип: ARG с криптографией и физическими квестами (QR-коды в Москве, Париже, Сеуле, Окинаве).
+- PGP-ключ: `7A35090F` — использовался для подписи задач.
+    ...(README всего 80 строк)
+    LOG(15 строк) хвост:
+      | - Успех (6): 00_Cicada_3301.html; 01_unfiction.com.html; 02_habr.com.html; 03_D0_A6_D0_B8_D0_BA_D0_B0_D0_B4_D0_B0_3301.html; 04_cicada-3301-liber-primus.html; 05_www.cica
+      | - Отказ (2): https://cicada-solvers.github.io [FAIL: HTTP Error 404: Not Found | jina: ]; https://uncovering-cicada.fandom.com/wiki/Liber_Primus [FAIL: HTTP Error 403: Fo
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(9): data\02_habr.com.html(346318); data\05_www.cicadasolvers.com.html(259570); data\00_Cicada_3301.html(195855); data\03_D0_A6_D0_B8_D0_BA_D0_B0_D0_B4_D0_B0_3301.html(181120); data\04_cicada-3301-liber-primus.html(72429); data\01_unfiction.com.html(12964)
+
+==========================================================================================
+### ghostnet
+# GhostNet (2009)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **установлена (кибершпионаж)**
+- Цепь: —
+- Приз: нет
+- Опубликовано: 2009
+- Типы: cyber-espionage, investigation
+- Что осталось / сложность: прямых доказательств государственного заказчика нет
+## Адреса/эскроу
+- Не применимо.
+## Источники
+- 2026 — Википедия — https://en.wikipedia.org/wiki/GhostNet
+- 2026 — Citizen Lab / Ron Deibert — https://deibert.citizenlab.ca
+## Подробности
+- Кибершпионаж: 1295 компьютеров в 103 странах под управлением.
+- Цели: посольства, министерства, офис Далай-ламы.
+- Использовалось ПО Ghost RAT; управление через динамические домены и социальную инженерию.
+- Подозрение на Китай, но прямых доказательств госзаказчика нет.
+    ...(README всего 71 строк)
+    LOG(15 строк) хвост:
+      | - Успех (5): 00_GhostNet.html; 01_deibert.citizenlab.ca.html; 02_UCAM-CL-TR-746.pdf; 03_china-dalai-lama-spying-computers.html; 04_getcard.cgi.pdf
+      | - Отказ (3): https://www.nytimes.com/2009/03/29/technology/29spy.html [FAIL: HTTP Error 403: Forbidden | jina: ]; https://news.bbc.co.uk/1/hi/world/americas/7970471.stm [
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(8): data\03_china-dalai-lama-spying-computers.html(286322); data\02_UCAM-CL-TR-746.pdf(254980); data\00_GhostNet.html(178498); data\01_deibert.citizenlab.ca.html(148657); data\04_getcard.cgi.pdf(68716); README.md(6650)
+
+==========================================================================================
+### marianas-web
+# Mariana's Web / мифология глубокого веба
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **миф (debunked)**
+- Цепь: —
+- Приз: нет
+- Опубликовано: —
+- Типы: legend, debunking
+- Что осталось / сложность: не является реальной загадкой
+## Адреса/эскроу
+- Не применимо.
+## Источники
+- 2026 — WatchMojo, 48 unsolved internet mysteries — https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries
+## Подробности
+- Легенда о «самом глубоком» уровне интернета, где якобы скрыты секретные данные.
+- Технически интернет не имеет «уровней»: есть индексируемый и неиндексируемый контент.
+- Миф популяризован через крипипасты и видео; доказательств существования нет.
+- Относится к категории легенд, а не решаемых загадок.
+    ...(README всего 64 строк)
+    LOG(15 строк) хвост:
+      | - Успех (2): 00_Dark_web.html; 01_vvXru.png
+      | - Отказ (3): https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries [FAIL: HTTP Error 403: Forbidden | jina: ]; https://www.engadget.com/2015-12-18-the-myt
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(5): data\00_Dark_web.html(478348); data\01_vvXru.png(400527); README.md(6046); LOG.md(2059); data\SOURCES.md(970)
+
+==========================================================================================
+### uvb-76-the-buzzer
+# UVB-76 / «The Buzzer»
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-9).
+## Кратко
+- Статус: **не объяснена**
+- Цепь: —
+- Приз: нет (не про деньги)
+- Опубликовано: с ~1980-х (наблюдения радиолюбителей)
+- Типы: shortwave-radio, numbers-station, signal-mystery
+- Что осталось / сложность: назначение станции официально не подтверждено
+## Источники
+- 2026 — Википедия — https://en.wikipedia.org/wiki/UVB-76
+- 2026 — Mystery Atlas — https://mysteryatlas.pulsaa.net/topics/internet-mysteries
+## Подробности
+- Коротковолновая станция на частоте ~4625 кГц, непрерывно передающая гудок (25-50 гудков в минуту).
+- Иногда гудок прерывается голосовыми сообщениями на русском — короткие кодовые фразы и позывные.
+- Основные гипотезы: система «удержания частоты» для военной сети, канал связи, тестовый передатчик.
+- Официального подтверждения назначения нет; станция продолжает работу десятилетиями.
+- Радиолюбители ведут постоянный мониторинг и архивируют все голосовые вставки.
+## Зацепки / следующий шаг
+    ...(README всего 38 строк)
+    LOG(15 строк) хвост:
+      | - Успех (2): 00_UVB-76.html; 01_internet-mysteries.html
+      | - Отказ (0): —
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(5): data\00_UVB-76.html(298725); data\01_internet-mysteries.html(75850); README.md(2940); LOG.md(1786); data\SOURCES.md(478)
+
+==========================================================================================
+### jack-froese-emails
+# Jack Froese Emails (2011)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **объяснена (вероятно)**
+- Цепь: —
+- Приз: нет
+- Опубликовано: 2011
+- Типы: hoax, account-security
+- Что осталось / сложность: официального подтверждения механизма нет
+## Адреса/эскроу
+- Не применимо.
+## Источники
+- 2026 — WatchMojo, 48 unsolved internet mysteries — https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries
+## Подробности
+- Письма с личными деталями пришли из аккаунта умершего от сердечной аритмии человека.
+- Получатели — друг и кузен; письма пришли примерно через 5 месяцев после смерти.
+- Наиболее вероятное объяснение: предварительно настроенная отложенная отправка или доступ третьего лица к аккаунту.
+- Доказательств сверхъестественного нет; кейс относится к «интернет-легендам».
+    ...(README всего 66 строк)
+    LOG(15 строк) хвост:
+      | - Успех (5): 00_ghostwriter-mysterious-emails-sent-from-beyond-the.html; 01_dead-man-sends-emails-from-beyond-763728.html; 02_dead-man-emails-jack-froese_n_1346194.html; 
+      | - Отказ (3): https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries [FAIL: HTTP Error 403: Forbidden | jina: ]; https://www.irishtimes.com/news/you-ve-got-
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(8): data\01_dead-man-sends-emails-from-beyond-763728.html(586304); data\02_dead-man-emails-jack-froese_n_1346194.html(477021); data\04_ghostwriter-mysterious-emails-sent-from-beyond-the.html(111463); data\00_ghostwriter-mysterious-emails-sent-from-beyond-the.html(111463); data\03_deadmansswitch.net.html(8857); README.md(6410)
+
+### rcodes-1jeu3c-5usd  [ПАПКА НЕ НАЙДЕНА]
+

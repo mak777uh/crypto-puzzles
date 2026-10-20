@@ -1,0 +1,416 @@
+==========================================================================================
+### veil-hunts-1380-2020usd
+# Veil Hunts (findveil.com)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **open (серия)**
+- Цепь: physical / geocaching
+- Приз: $1 380 – $2 020
+- Типы: physical, geocaching, qr
+- Что осталось / сложность: физический поиск: сундук с QR-кодом
+## Адреса/эскроу
+- Не применимо — приз физический/денежный, а не on-chain.
+## Источники
+- 2026 — платформа — https://findveil.com
+## Подробности
+- Механизм: физический геокэшинг — найти сундук, внутри QR-код, дающий доступ к призу.
+- Призы в диапазоне $1 380-$2 020; несколько охот (серия).
+- География ограничивает участие: нужна физическая поездка к месту.
+## Зацепки / следующий шаг
+- Собрать список активных охот и их регионов
+    ...(README всего 56 строк)
+    LOG(15 строк) хвост:
+      | - Успех (4): 00_findveil.com.html; 01_mysteriouswritings.com.html; 02_mysteriouswritings.com.html; 03_mysteriouswritings.com.html
+      | - Отказ (1): https://discord.com/invite/hhHGAnA435 [FAIL: <urlopen error _ssl.c:1015: The ha]
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(7): data\02_mysteriouswritings.com.html(127124); data\01_mysteriouswritings.com.html(120509); data\03_mysteriouswritings.com.html(116638); data\00_findveil.com.html(103849); README.md(4514); LOG.md(1881)
+
+==========================================================================================
+### rcodes-1tk3up2-500usd
+# r/codes 1tk3up2 «$500 first to solve»
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: `MASTER_CATALOG_v2_2026-10-16.md` (журнал «оычн», 13.10.2026).
+## Кратко
+- Статус: **не решён** (с мая 2026, 97 комментариев)
+- Цепь: — (приз от автора поста)
+- Приз: **$500** первому решившему
+- Источник: https://www.reddit.com/r/codes/comments/1tk3up2/
+## Подробности
+- Подсказки в теме расплывчатые; доказанного частичного прогресса нет.
+- Приоритет низкий.
+## Зацепки / следующий шаг
+- Вычитать тему целиком (97 комментариев) на предмет подтверждённых автором частичных шагов.
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка, прогресс, баланс или решение (полностью либо частично) **должны** быть дописаны сюда с датой и ссылкой на источник.
+## История изменений
+- 2026-10-16 (deepseek-flash) — папка создана при переносе данных из `MASTER_CATALOG_v2_2026-10-16.md` (Часть Б: живые загадки вне каталога).
+    ...(README всего 31 строк)
+    LOG(112 строк) хвост:
+      | промежутков в строке 5; (2) положение знака `+` в L5#2 (левый средний или левый нижний);
+      | (3) форму пробельного глифа (у неё прямая spine, 2 насечки слева, 3 справа) — чтобы
+      | включить пробел в ранжирование.
+      | - Артефакты: tools/wifa_hypothesis_test.py, tools/wifa_crib_robustness.py.
+    файлы(18): data\rcodes_cipher.jpeg(855550); data\rcodes-1tk3up2_thread_arctic.json(422089); data\rcodes_com.json(200186); data\rcodes-1tk3up2_thread_comments.txt(36273); LOG.md(22838); data\rcodes_comments.txt(18724)
+
+### rcodes-1jeu3c-5usd  [ПАПКА НЕ НАЙДЕНА]
+
+==========================================================================================
+### rectorsquid-arrow-puzzle-50usd
+# rectorsquid Arrow Puzzle (2012)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: `MASTER_CATALOG_v2_2026-10-16.md` (журнал «оычн», 13.10.2026).
+## Кратко
+- Статус: **не решён** (по комментарию 2013 — приз жив)
+- Цепь: — (выплата PayPal)
+- Приз: **$50**
+- Источник: https://blog.rectorsquid.com/arrow-puzzle/
+- Файлы (workspace): `/workspace/projects/89da3155-7b64-41d5-9823-4200239c1884/work/hunt/arrow/`
+## Подробности
+- Механика: клавиатура 3×3, цепочки стрелок и 8 направлений.
+- Проверено и отброшено: версии с цепочками стрелок и 8 направлениями не подошли; ответ «dave» — неверный.
+- Оракул: проверка ответа у автора (публичной автоматической проверки нет).
+## Зацепки / следующий шаг
+- Найти полный корпус комментариев (2012-2013) — там могут быть подтверждённые частичные ответы.
+- Приоритет низкий (приз $50).
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка, прогресс, баланс или решение (полностью либо частично) **должны** быть дописаны сюда с датой и ссылкой на источник.
+    ...(README всего 26 строк)
+    LOG(19 строк) хвост:
+      | ## 2026-10-17 18:58 — Big Pickle (big-pickle / OpenCode, Windows) — повторный сбор (0/предыдущий)
+      | - Причина прогона: предыдущая попытка дала 0 файлов (GitHub IncompleteRead / HTTP 403).
+      | - Метод: raw-README OCP-репо и/или зеркало web.archive.org.
+      | - Результат: сохранено 0 из 1; см. `data/SOURCES.md`.
+    файлы(3): LOG.md(2146); README.md(1832); data\SOURCES.md(720)
+
+==========================================================================================
+### cryptopuzzles-eth-easycore-numbers
+# cryptopuzzles.eth — Easycore и Numbers — ИСПРАВЛЕНО: НЕ решены
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Часть 6).
+## Кратко
+- Статус: **НЕ РЕШЕНЫ по первоисточнику** (каталог ошибочно относил их к «решённым»)
+- Цепь: ethereum (Easycore) + bitcoin (Numbers)
+- Автор: **arpox** (Twitter @Arpoxy), сайт датирован **6 февраля 2019**
+- Типы: image-stego, bit-manipulation, mixed-chain
+- Что осталось / сложность: сайт не обновлялся с 2019 года — актуальность статусов нужно проверять по блокчейну
+## Адреса/эскроу
+- Easycore: `0x06460646ca1603a61953eeb385681f5d56401ede` — заявлено **0,5 + 0,5 ETH** (см. сайт)
+  — проверка: https://etherscan.io/address/0x06460646ca1603a61953eeb385681f5d56401ede
+- Numbers: `1PUzZ61FSVTn12CafJC85Vy1ts3BoFcXdU` — заявлено **9,4 mBTC**
+  — проверка: https://mempool.space/address/1PUzZ61FSVTn12CafJC85Vy1ts3BoFcXdU
+## Подробности
+- `cryptopuzzles.eth` — сайт-репозиторий головоломок автора arpox, доступен по адресам **cryptopuzzles.eth.limo** (ранее .eth.link).
+- На главной сказано, что автор разыгрывает часть награды из головоломки **Zden XIXOIO** в пяти головоломках:
+  **Gifts, Easycore, Deepest, Robots, Map**; каждая независима, приз **0.25 ETH** + **0.25 ETH** бонус за последнюю решённую.
+- **Easycore** (раздел «Unsolved puzzles»): подсказки «Christmas hint:» (картинка easyhint.png) и
+  «Second hint: Take 1 bit out of 8» («выньте 1 бит из 8»); призовой адрес `0x06460646…`; SVG-изображение;
+  пост в r/bitcoinpuzzles «1.5 ETH five puzzles for Christmas».
+    ...(README всего 64 строк)
+    LOG(38 строк) хвост:
+      | ### Итог по пазлу
+      | Оба призовых адреса **пусты**, оба выведены владельцем ключа (2020 и 2021). Это устойчиво подтверждает первоначальную классификацию каталога («решены») и **опровергает** 
+      | - Примечание: одиночный вывод всей суммы не доказывает «solve» на 100% (автор мог вернуть средства), но совпадение с исходной меткой «solved» каталога + полное опустошени
+      | - Артефакты: сырые ответы API — в `tools/balance_check_2026-10-17_2320_bigpickle.txt`; транзакции воспроизводимы командами `blockstream.info/api/address/<btc>/txs` и `eth
+    файлы(9): data\01_api.pullpush.io.json(17496); data\03_api.pullpush.io.json(14251); README.md(5621); data\04_cryptopuzzles.eth.limo.html(5525); LOG.md(5230); data\05_easycore.html(5018)
+
+==========================================================================================
+### krypto-chase-skavengerz-1m
+# Krypto Chase × Skavengerz — общенациональная охота США, $5 000 за квалификацию / $1 000 000 финал
+**Тип**: физическая GPS-охота с шифрованными подсказками (мобильное приложение Skavengerz).
+**Статус**: анонс 2026-10-08 (PR Newswire), серия стартует в Юте (Wasatch Front); **нерешена**, квалификаций ещё не сыграно.
+**Приз**: **$5 000** за каждую штатную квалификацию (выплата в BTC или наличными) → **$1 000 000** в национальном
+чемпионате для одного финалиста.
+**Механика**: «серия загадочных подсказок → реальные локации», проверка продвижения по GPS, QR-коды,
+цифровые чекпоинты; побеждает первый, кто собрал всю цепочку за выходные (пятница утро — воскресенье вечер).
+**Вход**: регистрация через приложение Skavengerz; дата квалификации объявляется только после набора 200 участников;
+регистрация ограничена (детейла по цене входа в пресс-релизе нет — уточнять на сайте).
+## Вердикт для нашей базы (2026-10-18, Qoder)
+Не наш скоуп: (1) призовой фонд не в ончейне, выплата — «Bitcoin или cash» по решению организатора;
+(2) нужен физический выезд в конкретный штат США в конкретные выходные; (3) возможная платная регистрация.
+Занесена как **свежий источник новых охот** (серия будет идти по всем 50 штатам) и объект мониторинга:
+если подсказки уходят в сеть (ончейн-адрес, OP_RETURN, хеш) — появляется удалённо-решаемый слой.
+## Ключевые лица и организации
+- **Jeremy Lyman** — founder Krypto Chase (ранее известен по BitPay/Coinkite-экосистеме; требует отдельной проверки).
+- **Nate Alder** — CEO Skavengerz (платформа location-based квестов).
+## Источники (открыты 2026-10-18)
+- Пресс-релиз PR Newswire (2026-10-08, SALT LAKE CITY): https://www.prnewswire.com/news-releases/new-treasure-hunt-series-offers-1-million-grand-prize-302901997.html
+  (локальная копия HTML: `data/prnewswire_2026-10-08.html`)
+    ...(README всего 34 строк)
+    LOG(18 строк) хвост:
+      | - Не проверено до конца: цена участия (в релизе нет), живой домен skavengerz.com, наличие удалённо-решаемых загадок.
+      | ## 2026-10-18, 13:05 — Qoder (проход верификации)
+      | - Проверка живости домена: skavengerz.com HTTP 200 — серия активна, квалификаций не сыграно, нерешена.
+      | - Выплата «Bitcoin или cash» по решению организатора, публичного адреса/ончейн-оракула нет. Вердикт off-chain/physical.
+    файлы(3): data\prnewswire_2026-10-08.html(201916); README.md(3898); LOG.md(2437)
+
+==========================================================================================
+### unfavorable-semicircle
+# Unfavorable Semicircle (2015-2016)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **не раскрыта**
+- Цепь: —
+- Приз: нет
+- Опубликовано: 2015-2016 (YouTube)
+- Типы: youtube-mystery, audio, automated-upload
+- Что осталось / сложность: создатель неизвестен, смысл видео не установлен
+## Адреса/эскроу
+- Не применимо.
+## Источники
+- 2026 — Википедия — https://en.wikipedia.org/wiki/Unfavorable_Semicircle
+- 2026 — WatchMojo, 48 unsolved internet mysteries — https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries
+## Подробности
+- Около 77 000 абстрактных видео с искажённым аудио, загружавшихся на нечеловеческой скорости.
+- BBC называла это «quest to solve YouTube's strangest mystery».
+- Создатель неизвестен; канал в итоге прекратил публикации.
+- Видео содержат повторяющиеся структуры, что породило гипотезы о коде и о машинной генерации.
+    ...(README всего 60 строк)
+    LOG(15 строк) хвост:
+      | - Успех (6): 00_Unfavorable_Semicircle.html; 01_www.cnet.com.html; 02_the-unsettling-mystery-of-the-creepiest-channel-on.html; 03_History_and_background.html; 04_List_of_
+      | - Отказ (2): https://www.watchmojo.com/articles/top-48-unsolved-internet-mysteries [FAIL: HTTP Error 403: Forbidden | jina: ]; https://www.bbc.com/future/article/20160225
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(9): data\02_the-unsettling-mystery-of-the-creepiest-channel-on.html(321226); data\01_www.cnet.com.html(279173); data\05_negativepid.blog.html(166565); data\00_Unfavorable_Semicircle.html(100093); data\03_History_and_background.html(14746); README.md(5686)
+
+==========================================================================================
+### valor-por-tamaulipas
+# Valor por Tamaulipas (2012)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **не раскрыта**
+- Цепь: —
+- Приз: нет
+- Опубликовано: 2012
+- Типы: anonymous-source, social-media
+- Что осталось / сложность: личность администратора не раскрыта
+## Адреса/эскроу
+- Не применимо.
+## Источники
+- 2026 — Википедия — https://en.wikipedia.org/wiki/Valor_por_Tamaulipas
+## Подробности
+- Анонимная Facebook-страница, публиковавшая сведения о наркоторговле в мексиканском штате Тамаулипас.
+- Администратор действовал под угрозами; в 2014 прекратил деятельность.
+- Личность не раскрыта; рассматривались версии от журналистов до участников конфликта.
+- Кейс ценен как пример анонимного источниковедения и рисков для источника.
+    ...(README всего 73 строк)
+    LOG(15 строк) хвост:
+      | - Успех (1): 00_Valor_por_Tamaulipas.html
+      | - Отказ (6): https://www.proceso.com.mx/nacional/2013/4/7/administrador-de-valor-po [FAIL: HTTP Error 403: Forbidden | jina: ]; https://www.proceso.com.mx/?p=385029 [FAIL
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(4): data\00_Valor_por_Tamaulipas.html(356434); README.md(7413); LOG.md(2356); data\SOURCES.md(1500)
+
+==========================================================================================
+### coin-games-weekly-banknote-puzzles
+# Coin_Games weekly banknote puzzles
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: реестр [@agntn/puzzles](https://puzzles.agntn.dev/collections/coin-games) (raw: https://puzzles.agntn.dev/collections/coin-games.md).
+## Кратко (реестр agntn/puzzles)
+- Описание: Coin_Pro drew Bitcoin puzzles as banknotes in late 2017 and promised a bigger prize every week. Every funded prize got emptied and nobody said how
+- Реестр: https://puzzles.agntn.dev/collections/coin-games
+> Coin_Pro drew Bitcoin puzzles as banknotes in late 2017 and promised a bigger prize every week. Every funded prize got emptied and nobody said how
+December 4, 2017. A post on r/bitcoinpuzzles asks whether the subreddit is coming back to life. [New Weekly Bitcoin Puzzles!](https://www.reddit.com/r/bitcoinpuzzles/comments/7hfbar/new_weekly_bitcoin_puzzles_is_it_the_resurrection/) Three images, three addresses, three tiny prizes. 2,020 sats, then 3,301, then 6,661. The makers? "Coin_Pro and Valhalla Games Unlimited."
+Tiny, yes. One commenter said it out loud: "the prize is so small there's no real reason to be secretive". Fair point. Did anyone listen?
+## What were the Coin_Games puzzles?
+A Webnode site, [coingames6](https://coingames6.webnode.page/), still online. CO||N GAMES on top, "Powered by: VALHALLA GAMES UNL||M||TED" under it, COIN_PRO in the footer. The site promised a puzzle a week until the new year, each one worth more than the last.
+### One banknote a week
+Every puzzle is a fake banknote. Week 1 is black and green, with a skull wearing question marks for eyes and two lines of letters and digits along the bottom. Week 2 puts a lion in front of Stonehenge, with 3301 printed on the note. Week 3 is an XES note with the Venus de Milo, the pyramids and a mushroom cloud. Its file name is `1337330119992020.png`. Subtle it isn't.
+The originals sat on Tinypic, which is gone. The site's own copies still load, and the repo keeps them byte for byte. All of them ship in [assets/coin-games](https://github.com/agntn/puzzles/tree/main/assets/coin-games).
+    ...(README всего 74 строк)
+    LOG(15 строк) хвост:
+      | - Успех (6): 00_api.pullpush.io.json; 01_api.pullpush.io.json; 02_coin-games.html; 03_coin-games.md; 04_coingames6.webnode.page.html; 05_coin-games.html
+      | - Отказ (0): —
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(8): data\05_coin-games.html(212880); data\02_coin-games.html(184123); README.md(6021); data\03_coin-games.md(5459); data\00_api.pullpush.io.json(4202); data\01_api.pullpush.io.json(3304)
+
+==========================================================================================
+### mapnificent-treasure-hunt-mth202610
+# Mapnificent Treasure Hunt MTH202610
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: `MASTER_CATALOG_v2_2026-10-16.md` (рабочие досье агентов Hark, 16.10.2026).
+- **Адрес/сеть**: не крипта. Приз выплачивает организатор: «This website will contact the winner to deliver the prize». Способ выплаты не указан, KYC не упоминается. **Статус**: ответ отправлен, ждём итогов.
+- **Источники**: https://mapnificenceofchina.com/mapnificent-treasure-hunt-mth202610/; правила и подсказки — treasure-hunt и tips-on-how-to-solve-the-riddles-or-puzzle (копии .txt в папке).
+- **Механизм**: цепочка из 5 загадок в разных разделах сайта. Метки стоят в KML Google My Maps (`https://www.google.com/maps/d/kml?mid=MID&forcekml=1`), а не в HTML, а на картинках — в левом нижнем углу. Ответ отправляется письмом на mth_admin@mapofcn-dev.org с темой «Mapnificent Treasure Hunt 202610», формат: English name [MTH202610] + URL, по строке на ответ. **Попытка одна**: засчитывается первое письмо.
+- **Что установлено/решено**: 5/5. Mogao Caves → Leshan Giant Buddha → Shaolin Temple → картинка «Buddha Jumps Over the Wall» (галерея Rice Culture, #images-10) → Zhu Yuanzhang. В метке последнего — копия первой загадки, цикл замыкается. **Письмо отправлено 13.10.2026 19:11 МСК** с mak777777uh@gmail.com.
+- **Проверено и отброшено**: старая картинка 佛跳墙 в галерее Fujian (2025/07) меток не содержит.
+- **Что осталось / следующий шаг**: ждать итога (≈01.12.2026) и поста «MTH202610 Answer». На 14.10 10:00 МСК ответа организатора не было. **Повторно не слать и Илье не предлагать.** Следующий выпуск, вероятно, будет MTH202701: прошлые — 202607 и 202610.
+- **Файлы/скрипты**: `/workspace/work/mth202610/NOTES.md`, `email_draft.txt`, `kml_*.kml`, `kmlurls.txt`, `checks/list.json`, страницы 202607/202610 (.html/.txt); исходная находка — `/workspace/projects/89da3155-7b64-41d5-9823-4200239c1884/work/hunt/mth/` и `answers/mapnificent_MTH202610.md`.
+- **Проекты Hark и статус**: проект 10354a0a (ведёт), охота «оычн» (89da3155) нашла 4/5 меток. Ежедневная проверка Gmail по журналу шла до 14.10.
+- **Оценка шансов**: ответ полный, но победителя выбирают среди верных ответов или по первенству (точное правило в NOTES не записано). Исход неизвестен.
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка, прогресс, баланс или решение (полностью либо частично) **должны** быть дописаны сюда с датой и ссылкой на источник.
+## История изменений
+- 2026-10-16 (deepseek-flash) — папка создана при переносе данных из `MASTER_CATALOG_v2_2026-10-16.md` (Часть Б: живые загадки вне каталога).
+    LOG(15 строк) хвост:
+      | - Успех (1): 00_mapnificenceofchina.com.html
+      | - Отказ (0): —
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(4): data\00_mapnificenceofchina.com.html(266423); README.md(3736); LOG.md(1715); data\SOURCES.md(420)
+
+==========================================================================================
+### qday-steal-this-vault-solana
+# QDay «Steal this vault» (Solana)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **open**
+- Цепь: solana
+- Приз: приз внутри программы (сумма не зафиксирована)
+- Типы: smart-contract, exploit
+- Что осталось / сложность: нужен эксплойт on-chain программы
+## Адреса/эскроу
+- Программа: `22AEUZtxpbi1ReJGrG9SyFob3uHGzZERERyVNp6uV8Y6`
+- Проверка: https://solscan.io/account/22AEUZtxpbi1ReJGrG9SyFob3uHGzZERERyVNp6uV8Y6
+## Источники
+- 2026 — страница челленджа — https://beforeqday.com/challenge
+## Подробности
+- Механизм: on-chain программа Solana, которую предлагается «взломать» и забрать средства.
+- Название «Steal this vault» подразумевает, что цель — не подбор seed, а поиск уязвимости в коде программы.
+- Юридически это легальный bounty: автор сам публикует программу и приглашает к эксплойту.
+## Зацепки / следующий шаг
+    ...(README всего 65 строк)
+    LOG(15 строк) хвост:
+      | - Успех (3): 00_22AEUZtxpbi1ReJGrG9SyFob3uHGzZERERyVNp6uV8Y6.html; 01_challenge.html; 02_source.html
+      | - Отказ (0): —
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(6): data\00_22AEUZtxpbi1ReJGrG9SyFob3uHGzZERERyVNp6uV8Y6.html(39162); README.md(6418); data\02_source.html(3641); data\01_challenge.html(3641); LOG.md(1846); data\SOURCES.md(610)
+
+==========================================================================================
+### solana-puzzles-4-0-834sol
+# Solana Puzzles #4
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **open**
+- Цепь: solana
+- Приз: 0,834 SOL
+- Опубликовано: solanapuzzles.com/puzzle4 (картинка 1536×1024)
+- Типы: bip39-seed, image-stego, text-cipher, shamir
+- Что осталось / сложность: 12 подсказок частично расшифрованы; финальная сборка seed-фразы не получена
+## Адреса/эскроу
+- `DmDBmb7AEm6xRxkoBYq1mJYqsZP263gmXB53zA2dqjne` — кошелёк-эскроу
+- Проверка баланса: https://solscan.io/account/DmDBmb7AEm6xRxkoBYq1mJYqsZP263gmXB53zA2dqjne
+## Источники
+- 2026 — страница пазла — https://solanapuzzles.com/puzzle4
+- 2026 — Telegram-чат — https://t.me/+5GYvaO1qGT44Mjdh
+- 2026 — QR ведёт на YouTube — https://www.youtube.com/watch?v=QhXQo-h0lwc
+## Подробности
+- Механизм: 12 слов, Phantom, путь m/44'/501'/0'/0', без passphrase.
+- 12 подсказок включают: ROT13, зеркальное отражение, фразу «The key is under the moonlight»,
+    ...(README всего 109 строк)
+    LOG(15 строк) хвост:
+      | - Успех (3): 00_DmDBmb7AEm6xRxkoBYq1mJYqsZP263gmXB53zA2dqjne.html; 01_puzzle4.html; 02_puzzle4.png
+      | - Отказ (1): https://t.me/+5GYvaO1qGT44Mjdh [FAIL: <urlopen error timed out> | jina: ]
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(6): data\02_puzzle4.png(3291888); data\00_DmDBmb7AEm6xRxkoBYq1mJYqsZP263gmXB53zA2dqjne.html(39162); data\01_puzzle4.html(12780); README.md(10089); LOG.md(1858); data\SOURCES.md(762)
+
+==========================================================================================
+### tumblecaesar-1000algo
+# Tumblecaesar (harttrav, r/codes, 2022)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: `MASTER_CATALOG_v2_2026-10-16.md` (рабочие досье агентов Hark, 16.10.2026).
+- **Адрес/сеть**: Algorand, `ZUECZQ67…WBYU` (полный адрес в файлах не записан, он есть в посте). **Баланс**: 1000,0037 ALGO, не тронуты (algonode, 13.10.2026; статус аккаунта Offline).
+- **Источники**: https://www.reddit.com/r/codes/comments/ux648f/tumblecaesar_an_algorithm_i_created_with_a_prize/; README автора; блог harttraveller.com/Tumbler+Challenge (не найден, стоит искать в Wayback); Discord автора.
+- **Механизм**: шифр на Python: Mersenne-«тамблер» (random.Random((i+seed)·T).sample по алфавиту из 62 символов) в несколько слоёв. Шифртекст 175 символов, ordinal_sum = 335475 — точный оракул. Открытый текст по README — CamelCase, из него собирается мнемоника Algorand.
+- **Что установлено**: самотест на примере из README проходит, модель шифра воспроизведена (brute.py).
+- **Проверено и отброшено**: seed 0…~3 800 000 × слои 1–16 с фильтром CamelCase + сумма — не найдено (≈1100 seed/с на ядро).
+- **Что осталось / следующий шаг**: найти подсказки о seed (Wayback блога, Discord); или расширить seed до 10⁷–10⁸, слои до 40 и ослабить фильтр (это часы-сутки CPU, правило «без тупого перебора» требует сильной гипотезы). Для вывода нужен Algorand-адрес Ильи — его в списке выплатных адресов нет, спросить.
+- **Файлы/скрипты**: `/workspace/projects/89da3155-7b64-41d5-9823-4200239c1884/work/hunt/tumble/brute.py`, логи `a.log`–`d.log`; журнал `/workspace/projects/89da3155-7b64-41d5-9823-4200239c1884/work/hunt/NOTES.md` (сессии 13–15).
+- **Проекты Hark и статус**: «оычн» (89da3155). Остановлено 13.10: «перебор дальше нерационален без подсказки».
+- **Оценка шансов**: низкие без подсказки о seed. Оракул точный, приз автоматический (по ключу).
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка, прогресс, баланс или решение (полностью либо частично) **должны** быть дописаны сюда с датой и ссылкой на источник.
+## История изменений
+- 2026-10-16 (deepseek-flash) — папка создана при переносе данных из `MASTER_CATALOG_v2_2026-10-16.md` (Часть Б: живые загадки вне каталога).
+    LOG(15 строк) хвост:
+      | - Успех (2): 00_api.pullpush.io.json; 01_api.pullpush.io.json
+      | - Отказ (0): —
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(5): data\00_api.pullpush.io.json(5507); README.md(3218); data\01_api.pullpush.io.json(2952); LOG.md(1668); data\SOURCES.md(531)
+
+==========================================================================================
+### groestlcoin-puzzle-1000grs
+# Groestlcoin Puzzle
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **open**
+- Цепь: groestlcoin (GRS)
+- Приз: 1000,0001 GRS
+- Типы: address-puzzle, raw-key
+- Что осталось / сложность: coin-specific; нужен GRS-эксплорер и кошелёк
+## Адреса/эскроу
+- `FindKEYLrVaahtkaVRk8KTspRMyWxfUi3i` — main
+- Проверка баланса: эксплорер GRS — chainz.cryptoid.info (точный deep-link не подтверждён)
+## Источники
+- 2026 — страница пазла — https://groestlcoin.org/puzzle
+- 2026 — тема на bitcointalk 5137602 — https://bitcointalk.org/index.php?topic=5137602.0
+## Подробности
+- Механизм: пазл на блокчейне Groestlcoin с «говорящим» адресом `FindKEY…` — классическая охота за приватным ключом/seed.
+- Приз 1000,0001 GRS — типичная «круглая» сумма, начисленная к базовому 1000 GRS.
+- Ликвидность GRS ниже BTC/ETH: нужно учитывать риск при конвертации приза.
+    ...(README всего 53 строк)
+    LOG(22 строк) хвост:
+      | - Успех (1): 00_puzzle.html
+      | - Отказ (1): https://bitcointalk.org/index.php?topic=5137602.0 [FAIL: <urlopen error [Errno 11001] getad]
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(4): data\00_puzzle.html(52709); README.md(4983); LOG.md(3898); data\SOURCES.md(511)
+
+==========================================================================================
+### bitcoin-treasure-hunt-book-series
+# Bitcoin Treasure-Hunt Book Series
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **open (серия)**
+- Цепь: bitcoin
+- Приз: призы в BTC (суммы по книгам не сведены)
+- Типы: book-cipher, brainwallet, literary-riddle
+- Что осталось / сложность: литературные загадки в книгах; часть книг платные
+## Адреса/эскроу
+- Адреса по книгам в каталоге не зафиксированы — требуется уточнить (B33).
+## Источники
+- Каталожная запись B33 (серия книг с загадками).
+## Подробности
+- Механизм: литературные загадки, встроенные в текст книг; 25% роялти заявляются как часть механики.
+- Каждая книга, вероятно, содержит собственный призовой адрес — серия, а не один пазл.
+- Экономика: покупка книг — обязательные издержки; нужен план по извлечению текста.
+## Зацепки / следующий шаг
+- Составить список книг серии и призовых адресов
+    ...(README всего 61 строк)
+    LOG(15 строк) хвост:
+      | - Успех (4): 00_cracked.html; 01_mysteriouswritings.com.html; 02_cracked-bitcoin-treasure-hunt-started.html; 03_ru.beincrypto.com.html
+      | - Отказ (0): —
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(7): data\03_ru.beincrypto.com.html(613559); data\01_mysteriouswritings.com.html(120017); data\00_cracked.html(46751); README.md(5388); data\02_cracked-bitcoin-treasure-hunt-started.html(2668); LOG.md(1889)
+
+==========================================================================================
+### seed-phrase-crossword-nft-magic-eden
+# Seed Phrase Crossword (NFT, Magic Eden)
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+## Кратко
+- Статус: **open**
+- Цепь: solana/ethereum (NFT)
+- Приз: seed-фраза кошелька Pillar
+- Типы: nft, crossword, bip39-seed
+- Что осталось / сложность: кроссворд внутри NFT; структура ключа не подтверждена
+## Адреса/эскроу
+- Эскроу-адрес в каталоге не зафиксирован — требуется уточнить (B30).
+## Источники
+- Каталожная запись B30 (площадка Magic Eden).
+## Подробности
+- Механизм: кроссворд внутри NFT, из которого собирается seed-фраза кошелька Pillar Wallet.
+- NFT-носитель означает, что нужен доступ к метаданным/изображению конкретного токена.
+- Приз — не фиксированная сумма в BTC/ETH, а содержимое кошелька Pillar.
+## Зацепки / следующий шаг
+- Найти коллекцию на Magic Eden и скачать изображение/метаданные в максимальном разрешении
+    ...(README всего 49 строк)
+    LOG(15 строк) хвост:
+      | - Успех (2): 00_near-crossword.html; 01_tangem.com.html
+      | - Отказ (1): https://docs.near.org/tutorials/crosswords/intermediate/use-seed-phras [FAIL: HTTP Error 404: Not Found | jina: ]
+      | - Артефакты: `data/SOURCES.md` + скачанные файлы.
+      | - Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+    файлы(5): data\00_near-crossword.html(296535); data\01_tangem.com.html(66491); README.md(3835); LOG.md(1847); data\SOURCES.md(669)
+

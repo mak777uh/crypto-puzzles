@@ -1,0 +1,26 @@
+hint_watch 2026-10-20 00:45 UTC — проверено 25 точек, изменений 0, 160 с, эталон есть
+slm/home                   ok               http=200  bytes=488763    4ca6529fe9b00fc3 
+slm/lock-raft              ok               http=200  bytes=384927    gate1-13252cd2b8f4 гейт=1, ссылок на страницы=23
+slm/lock-fire              ok               http=200  bytes=385098    gate1-13252cd2b8f4 гейт=1, ссылок на страницы=23
+walkingbanks/home          ok               http=200  bytes=10881     0fea82f8fc3080d4 
+walkingbanks/www           ok               http=200  bytes=10881     0fea82f8fc3080d4 
+nostr/ah-white             ok               http=200  bytes=215686    text843903b825abcbdb слов=9245, блоков=100, последняя дата=2026-03-16 19:18:40
+school/home                ok               http=200  bytes=63656     0dbdf76b5538c716 
+school/kdbx                ok               http=404  bytes=63656     0dbdf76b5538c716 
+stacker/school-908283      ok               http=200  bytes=340940    32eae9d12d8d5561 
+seedphrase/home            ok               http=200  bytes=31957     eadc4fed53c6c09d 
+onetime/secret             ok               http=404  bytes=6519      a5fdb25f7ce67b30 
+gh/metaneer-seed-phrase    ok               http=200  bytes=4051      6bb1378bf98139eb 
+stacker/bip38-275973       ok               http=200  bytes=275079    8dd45b529c5def4d 
+oobit/puzzle-139           ok               http=200  bytes=54164     32d59108a6234d67 
+oobit/dicas                ok               http=200  bytes=3446      9b0bfed72b2e6e96 
+oobit/comentarios          ok               http=200  bytes=26525     f012db41e425db18 
+oobit/aliancas-3           ok               http=200  bytes=178727    031b8720f4129b14 
+gh/wealth-in-poetry        ok               http=200  bytes=5097      4f7b1a3064a8a6e2 
+zden/halv-wayback-cdx      ok               http=200  bytes=2723      dc5cda1eb1c798b5 
+gh/open-crypto-puzzles     ok               http=200  bytes=4056      08a38eec541ffd0a 
+zden/haluska-live-index    СЕТЬ             http=0    bytes=0          URLError:<urlopen error [WinError 10060] Попытка установить 
+guntis/rss-uploads         ok               http=200  bytes=50555     12129c6fb83a2a6c 
+gh/boha                    ok               http=200  bytes=4986      a5d0712eb4a8caab 
+echo-ls/rss                СЕТЬ             http=0    bytes=0          URLError:<urlopen error _ssl.c:1015: The handshake operation
+ballet/bt-5265748          СЕТЬ             http=0    bytes=0          URLError:<urlopen error [SSL: WRONG_VERSION_NUMBER] wrong ve

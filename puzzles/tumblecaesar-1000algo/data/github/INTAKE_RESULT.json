@@ -1,0 +1,41 @@
+{
+  "slug": "tumblecaesar-1000algo",
+  "agent": "AutoClaw",
+  "ts": "2026-10-18T18:30:20Z",
+  "date": "2026-10-18",
+  "status": "done",
+  "note": "содержимое уже в базе (ls-remote не отвечает (404/приватный/удалён)); API-сбор не требовался",
+  "api_calls": 2,
+  "free_transports": 1,
+  "remaining_seen": 58,
+  "reset_utc": "2026-10-18T19:30:13Z",
+  "files": 0,
+  "bytes": 0,
+  "media": 0,
+  "repos": [
+    {
+      "repo": "harttraveller/tumblecaesar",
+      "role": "community",
+      "branch": "",
+      "head_sha": "",
+      "counts": {},
+      "files": 0,
+      "bytes": 0
+    }
+  ],
+  "candidates": [
+    {
+      "repo": "harttraveller/tumblecaesar",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 1
+    }
+  ],
+  "errors": [
+    "форки harttraveller/tumblecaesar: HTTP 404",
+    "harttraveller/tumblecaesar: ls-remote не отвечает (404/приватный/удалён)"
+  ],
+  "stop_reason": "",
+  "ocp": null,
+  "digest": "data/github/GITHUB_INTAKE.md"
+}

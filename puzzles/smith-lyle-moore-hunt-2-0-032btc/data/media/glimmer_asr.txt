@@ -1,0 +1,15 @@
+# samples=3277824 seconds=204.9
+# language=en duration=204.9s
+[   0.00-  19.00] She had that look like a glimmer in the ocean Getting further and further away
+[  19.00-  27.00] Hot tide will bring her back to the coast and I'm the ship I'll wait for the day
+[  27.00-  42.00] That she knocks on my door just to say We're getting closer and closer
+[  42.00-  56.00] The dust is just set off only on the other side
+[  63.00-  68.00] Broken eyes on the tips of the feathers of an eagle
+[  68.00-  75.00] Can fly a little easier each day and ask the sun, kiss the mountains and bodies I feel free now
+[  75.00-  84.00] Getting closer and closer each day
+[  84.00- 106.00] The dust is just set off only on the other side
+[ 114.00- 125.00] We'll paint our names across the silver sky
+[ 125.00- 132.00] We'll paint our names across the silver sky
+[ 132.00- 146.00] We'll paint our names across the silver sky
+[ 162.00- 189.00] We'll paint our names across the silver sky
+[ 189.00- 216.00] We'll paint our names across the silver sky

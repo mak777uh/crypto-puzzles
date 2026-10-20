@@ -79,3 +79,27 @@ Per-run reports: [H2](h2-result.json), [H3](h3-result.json), [H4](h4-result.json
 The exact readings remain outside Git, as for H1. The reports preserve their input
 fingerprints, counts, rates and observed controls; a public checkout alone cannot
 reconstruct those exact private input files. No solution is claimed.
+
+
+## Compound-word axis, 2026-10-18 (Qoder Desktop, Windows)
+
+Registered before the runs in `LOG.md` (16:09Z). Hypothesis: the drawing shows one
+component of a compound term and the 4-character key is the other component
+(`ANNO`→`unce`, ZIP→`code`, `SH`+mining→`a384`, AR+`$`→`cash`, Scandinavia→`e4d5`
+matches the author's chess style (`Castle`=O-O in solved PZL5), tree→`hash`,
+UP→`vest`, 58 dots→`base`). Slots 3/4/8 fixed at `a384`/`cash|silo`/`base`.
+
+| ID | Constraint | Unique candidates | Method and witness | Result | Runtime |
+|---|---|---|---|---|---|
+| C-A | slot4=cash, slot7=vest; slots 1/2/5/6 pools of 4/8/5/5 | 800 | `tools/ocp/parallel_check.py` importing certified `oracle.check()` unchanged; `--selftest` = SELFTEST OK; wrong-candidate witness NO MATCH; 12 workers | Exhausted, no match | 135 s (5.94/s) |
+| C-B | same, slot7=pull | 800 | same | Exhausted, no match | 139 s (5.76/s) |
+| C-C | slot4=cash; slots 1/2/5/6/7 pools 5/8/6/5/4, excluding A/B and ≤2-slot-diff from H5 consensus | 3,124 | same, 14 workers | Exhausted, no match | 523 s (5.98/s) |
+| C-D | slot4=silo; slots 1/2/5/6/7 pools 5/7/5/5/3 | 2,625 | same, 14 workers | Exhausted, no match | 444 s (5.91/s) |
+
+Total 7,349 unique candidates, 0 matches. Exact lists and sha256:
+`data/compound_batch_A.txt` `697c95a43e9ef1c23319fc3e40194ccca4175a202a6c466019b36528bec50be0`,
+`..._B.txt` `c2a8e635404f35b847841b6f3f99f77889c9fff397aed89131c58d4e31c6c20e`,
+`..._C.txt` `364b161e7a1d8d08730a885f0916908e9912a3cb32787a7abb069f499390ad36`,
+`..._D.txt` `0b89b014b21a58a2268881dac223236c0028a08bc8611a6dfce61e9c1ab60275`.
+Every candidate was checked by the same function as the certified oracle, so a
+MATCH would have been exact. No solution is claimed.

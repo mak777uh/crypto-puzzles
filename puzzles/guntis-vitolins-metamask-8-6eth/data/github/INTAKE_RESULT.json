@@ -1,0 +1,141 @@
+{
+  "slug": "guntis-vitolins-metamask-8-6eth",
+  "agent": "Big Pickle",
+  "ts": "2026-10-18T14:47:42Z",
+  "date": "2026-10-18",
+  "status": "partial",
+  "note": "",
+  "api_calls": 11,
+  "free_transports": 12,
+  "remaining_seen": 43,
+  "reset_utc": "2026-10-18T15:42:28Z",
+  "files": 66,
+  "bytes": 254831,
+  "media": 0,
+  "repos": [
+    {
+      "repo": "floflo777/open-crypto-puzzles",
+      "role": "registry",
+      "branch": "main",
+      "head_sha": "f28531c09095e81d1897ac4df00dc13ae22e4df2",
+      "counts": {},
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "repo": "agntn/puzzles",
+      "role": "community",
+      "branch": "main",
+      "head_sha": "decdd4db731a8ea6da7bbc30d4e234711fa9b0cd",
+      "counts": {
+        "issues": 300,
+        "comments": 500,
+        "releases": 47
+      },
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "repo": "noobsilence/crypto-puzzle-lab",
+      "role": "community",
+      "branch": "main",
+      "head_sha": "f436ad006e778222e07867e6481f302499166e91",
+      "counts": {
+        "issues": 0,
+        "comments": 0,
+        "releases": 0
+      },
+      "files": 66,
+      "bytes": 254831
+    },
+    {
+      "repo": "pytorch/pytorch",
+      "role": "community",
+      "branch": "",
+      "head_sha": "",
+      "counts": {},
+      "files": 0,
+      "bytes": 0
+    }
+  ],
+  "candidates": [
+    {
+      "repo": "floflo777/open-crypto-puzzles",
+      "role": "registry",
+      "source": "ссылки досье",
+      "hits": 143
+    },
+    {
+      "repo": "agntn/puzzles",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 6
+    },
+    {
+      "repo": "noobsilence/crypto-puzzle-lab",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 1
+    },
+    {
+      "repo": "pytorch/pytorch",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 1
+    },
+    {
+      "repo": "schum-io/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "lekejf/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "pauldmurphy/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "ebr4him68-rgb/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "aperioscanner/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "windstalker-arch/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    }
+  ],
+  "errors": [
+    "не собрано (сверх --max-repos 4): schum-io/open-crypto-puzzles, lekejf/open-crypto-puzzles, pauldmurphy/open-crypto-puzzles, ebr4him68-rgb/open-crypto-puzzles, aperioscanner/open-crypto-puzzles, windstalker-arch/open-crypto-puzzles",
+    "agntn/puzzles: репозиторий больше --max-mb (25 МБ) — содержимое НЕ распаковано, только метаданные и API",
+    "pytorch/pytorch: ls-remote не отвечает (404/приватный/удалён)"
+  ],
+  "stop_reason": "срезано потолками: собрано 4 кандидатов из 10 (--max-repos/--max-mb)",
+  "ocp": {
+    "slug": "guntis-vitolins-metamask-8-6eth",
+    "tier": "big",
+    "folder": "1-big-prizes/guntis-vitolins-metamask-8-6eth",
+    "handles": [
+      "youtube:#GuntisVitolins",
+      "web:mineshop.eu"
+    ],
+    "repo": "floflo777/open-crypto-puzzles",
+    "ocp_path": "_sources/ocp/1-big-prizes/guntis-vitolins-metamask-8-6eth"
+  },
+  "digest": "data/github/GITHUB_INTAKE.md"
+}

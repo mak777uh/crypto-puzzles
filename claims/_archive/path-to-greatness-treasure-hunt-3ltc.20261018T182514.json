@@ -1,0 +1,13 @@
+{
+  "slug": "path-to-greatness-treasure-hunt-3ltc",
+  "agent": "Qoder",
+  "model": "",
+  "note": "reading clue7 LSB raw + clue1 image (vision), oracle=4 AES locks",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T15:23:17Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-18T17:23:17Z",
+  "heartbeat_utc": "2026-10-18T15:23:17Z",
+  "released_utc": "2026-10-18T15:25:14Z",
+  "released_by": "Qoder"
+}

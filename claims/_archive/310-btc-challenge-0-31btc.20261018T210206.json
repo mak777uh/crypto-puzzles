@@ -1,0 +1,13 @@
+{
+  "slug": "310-btc-challenge-0-31btc",
+  "agent": "AutoClaw",
+  "model": "",
+  "note": "финальная стего-стадия: адрес/баланс финала, write-ups 3 этапов, GitHub-шлюз, анализ PNG",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T17:03:55Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-18T19:56:12Z",
+  "heartbeat_utc": "2026-10-18T17:56:12Z",
+  "released_utc": "2026-10-18T18:02:06Z",
+  "released_by": "AutoClaw"
+}

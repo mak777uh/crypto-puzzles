@@ -1,0 +1,12 @@
+{
+ "axis": "H9 text skip cipher",
+ "source_chars": 340,
+ "selftest_wif": "KwntMbt59tTsj8xqpqYqRRWufyjGunvhSyeMo3NTYpFYzZbXJ5Hp",
+ "selftest_pub": "034f355bdcb7cc0af728ef3cceb9615d90684bb5b2ca5f859ab0f0b704075871aa",
+ "tested_windows": 0,
+ "valid_wif": 0,
+ "valid": [],
+ "hits": [],
+ "readable_top": [],
+ "wall_sec": 0.01
+}

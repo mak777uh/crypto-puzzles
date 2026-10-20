@@ -375,3 +375,11 @@ Every message here was checked against confirmed transaction bytes. Earlier repl
   сид и фраза намеренно не дублируются — только указатель и проверяемый `tools/ocp/verify_solution.py`.
   Ключ чужой, средства выведены 17.10 — трогать нечего.
 - Подробности и хроника: см. LOG.md (запись 2026-10-18, 10:05) и `_sources/ocp_sync_2026-10-18/delta_report.md`.
+
+## Уточнение (2026-10-19, Qoder): bc1qw8… = кошелёк автора, не приз
+- Тип: баланс / классификация (not-ours)
+- Суть: `bc1qw8uecdjvuedtkg4s2kku4s2ak9r2cm59khclfr` (1 000 000 сат, funded 2026-08-21) пополнен tx `e2cbb236…`: вход с `bc1q0x054…`, сдача 62 970 на `bc1q7nn9…`, который в `data/ocp/data/on-chain-dialogue.json` — **change-адрес автора**. OP_RETURN нет. Эскроу приза `bc1qfkhx02…` пуст (947 620 = spent). Поэтому папка **остаётся в `solved/`** — «приз пополнили» не подтверждается.
+- Источник: https://blockstream.info/tx/e2cbb23690c3c1f8a294c7e4747cf62f374cddf06bdec1beeff39e12d2a0c5d2 ; `data/ocp/data/on-chain-dialogue.json`
+- Проверено: да (19.10.2026, read-only)
+- Влияние на оценку: цель не открывается заново; 0,01 BTC — чужие средства автора.
+- Подробности и хроника: см. LOG.md

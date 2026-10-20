@@ -1,0 +1,17 @@
+h2c gating probe 2026-10-18 15:02:10
+наблюдаем только структуру ответа; текст страницы не извлекается и не пишется
+CONTROL /treasure-hunt (публичная) | GET /treasure-hunt -> HTTP 200, bytes 486201, sha256 6b7be77a217fa28e
+    json.z-страниц: нет
+    маркеры: password=5 protected=15 wix-warmup-data=1 pagejsonfile=22
+CONTROL2 /pirates (заперта, пароль albatross) | GET /pirates -> HTTP 200, bytes 385112, sha256 f6363a3cc24e6082
+    json.z-страниц: нет
+    маркеры: password=6 protected=17 wix-warmup-data=1 pagejsonfile=22
+PROBE /raft-escape (zhgsm) | GET /raft-escape -> HTTP 200, bytes 384927, sha256 d338aec4cc1918d2
+    json.z-страниц: нет
+    маркеры: password=6 protected=17 wix-warmup-data=1 pagejsonfile=22
+PROBE /smoke-signals (jcl9c) | GET /smoke-signals -> HTTP 200, bytes 385098, sha256 89f604fbdb82bfd1
+    json.z-страниц: нет
+    маркеры: password=6 protected=17 wix-warmup-data=1 pagejsonfile=22
+PROBE /pirate-battle (y6cd1) | GET /pirate-battle -> HTTP 200, bytes 384974, sha256 f7c784160d13ad06
+    json.z-страниц: нет
+    маркеры: password=6 protected=17 wix-warmup-data=1 pagejsonfile=22

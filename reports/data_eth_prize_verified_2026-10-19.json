@@ -1,0 +1,256 @@
+{
+ "checked_utc": "2026-10-19T14:30Z",
+ "block": 26227181,
+ "price_usd_eth": 2395.21,
+ "rpc": [
+  "https://ethereum-rpc.publicnode.com",
+  "https://1rpc.io/eth"
+ ],
+ "source_snapshot": "reports/data_eth_live_2026-10-19.json",
+ "note": "PRIZE = адрес назван призом в собственном досье; NOT_PRIZE = чужие средства (админы, биржи, фишинг-дропы, кошельки других решателей) — доступ запрещён; unknown требует разбора.",
+ "total_prize_eth": 13.66256,
+ "total_prize_usd": 32724.7,
+ "total_not_prize_eth": 2.955904,
+ "total_unknown_eth": 0.000179,
+ "prize": [
+  {
+   "address": "0x9c2f44efad0c1e852a09df9939e6daf061140caf",
+   "eth": 8.61254155426562,
+   "usd": 20628.85,
+   "contract": false,
+   "puzzle": "guntis-vitolins-metamask-8-6eth",
+   "role": "Escrow приза 10 ETH (факт 8,61)",
+   "evidence": "puzzles/guntis-vitolins-metamask-8-6eth/data/00_README.md:22"
+  },
+  {
+   "address": "0xaec7e8c221c3fd24e75c996e32289235fd899ebf",
+   "eth": 1.000012026,
+   "usd": 2395.24,
+   "contract": true,
+   "puzzle": "teikhos-bipedaljoe-solver-bounties-2eth",
+   "role": "Контракт AEC7: средства есть, пути выплаты нет",
+   "evidence": "puzzles/teikhos-bipedaljoe-solver-bounties-2eth/README.md:21"
+  },
+  {
+   "address": "0x17e5e0910b9185b0ede564dcbf074ca910ad56a4",
+   "eth": 1.000002026,
+   "usd": 2395.21,
+   "contract": true,
+   "puzzle": "teikhos-bipedaljoe-solver-bounties-2eth",
+   "role": "Контракт C1",
+   "evidence": "puzzles/teikhos-bipedaljoe-solver-bounties-2eth/README.md:18"
+  },
+  {
+   "address": "0x71fb6afcd98c5bd611712ad4b8d314ef729aa69d",
+   "eth": 1.0,
+   "usd": 2395.21,
+   "contract": true,
+   "puzzle": "fe-lang-bountiful-compiler-bounty-1eth",
+   "role": "BountyRegistry round 3 (приз держит он, не игры)",
+   "evidence": "puzzles/fe-lang-bountiful-compiler-bounty-1eth/README.md:16"
+  },
+  {
+   "address": "0xff2142e98e09b5344994f9beb9c56c95506b9f17",
+   "eth": 1.0,
+   "usd": 2395.21,
+   "contract": false,
+   "puzzle": "arweave-puzzle-11-1eth",
+   "role": "Target-адрес бан티 1 ETH, nonce 0",
+   "evidence": "puzzles/arweave-puzzle-11-1eth/README.md:16"
+  },
+  {
+   "address": "0x973c2178b09225d1de3ab037d40b3f24af696255",
+   "eth": 0.500002026,
+   "usd": 1197.61,
+   "contract": true,
+   "puzzle": "teikhos-bipedaljoe-solver-bounties-2eth",
+   "role": "Контракт 9732",
+   "evidence": "puzzles/teikhos-bipedaljoe-solver-bounties-2eth/README.md:20"
+  },
+  {
+   "address": "0xd7c6d542f3dcdceda845112b8fd567b8f8655805",
+   "eth": 0.500002026,
+   "usd": 1197.61,
+   "contract": true,
+   "puzzle": "teikhos-bipedaljoe-solver-bounties-2eth",
+   "role": "Контракт C2",
+   "evidence": "puzzles/teikhos-bipedaljoe-solver-bounties-2eth/README.md:19"
+  },
+  {
+   "address": "0x1fa8be9de5bbfe047c72db8e8e3257128f7661ad",
+   "eth": 0.05,
+   "usd": 119.76,
+   "contract": false,
+   "puzzle": "crypto-puzzles-2018-puzzle-2-0-05eth",
+   "role": "Таргет 0,05 ETH",
+   "evidence": "puzzles/crypto-puzzles-2018-puzzle-2-0-05eth/data/ocp/puzzle.json:28"
+  }
+ ],
+ "not_prize": [
+  {
+   "address": "0xad0ad88d27f49fe6a0c73fdb743f6b7304a2c357",
+   "eth": 2.0018119604382636,
+   "usd": 4794.76,
+   "contract": false,
+   "puzzle": "fe-lang-bountiful-compiler-bounty-1eth",
+   "role": "EOA-деплойер реестра (админ), 2,0018 ETH",
+   "evidence": "puzzles/fe-lang-bountiful-compiler-bounty-1eth/data/ocp/README.md:116"
+  },
+  {
+   "address": "0xcad621da75a66c7a8f4ff86d30a2bf981bfc8fdd",
+   "eth": 0.3097398417088132,
+   "usd": 741.89,
+   "contract": false,
+   "puzzle": "timeless-1000-random-seed-puzzle-0-062eth",
+   "role": "KuCoin Hot Wallet из дампа транзакций",
+   "evidence": "puzzles/timeless-1000-random-seed-puzzle-0-062eth/data/04_transactions.json"
+  },
+  {
+   "address": "0xe708d1496ee95435ea50f3e4bc79c28a5f8fe859",
+   "eth": 0.2218436091293082,
+   "usd": 531.36,
+   "contract": false,
+   "puzzle": "guntis-vitolins-metamask-8-6eth",
+   "role": "DRAIN_DEST_3 — кошелёк фишинг-кампании",
+   "evidence": "puzzles/guntis-vitolins-metamask-8-6eth/data/github/noobsilence__crypto-puzzle-lab/files/scripts/ens_forensics.py:17"
+  },
+  {
+   "address": "0xd28082cd48e1b279425346e8f6c651c45a9023c5",
+   "eth": 0.2,
+   "usd": 479.04,
+   "contract": false,
+   "puzzle": "1000-btc-challenge-bitcoin-puzzle-tx",
+   "role": "пример/донат-адрес из README bitcrack, к пазлу отношения не имеет",
+   "evidence": "puzzles/1000-btc-challenge-bitcoin-puzzle-tx/data/github/brichard19__bitcrack/files/README.md"
+  },
+  {
+   "address": "0x861ebcc056e0645cf7ba7f5bb528fae9fba8ba55",
+   "eth": 0.09652139270603485,
+   "usd": 231.19,
+   "contract": false,
+   "puzzle": "guntis-vitolins-metamask-8-6eth",
+   "role": "Attacker wallet кампании 25.08 (address poisoning)",
+   "evidence": "puzzles/guntis-vitolins-metamask-8-6eth/data/github/noobsilence__crypto-puzzle-lab/files/cases/address-poisoning-2026.md:97"
+  },
+  {
+   "address": "0x0a937ec94abc55d92f5740a988a122ebdcab2e15",
+   "eth": 0.07679905216315655,
+   "usd": 183.95,
+   "contract": false,
+   "puzzle": "crypto-puzzles-2018-puzzle-2-0-05eth",
+   "role": "funder-кошелёк автора",
+   "evidence": "puzzles/crypto-puzzles-2018-puzzle-2-0-05eth/data/ocp/README.md:57"
+  },
+  {
+   "address": "0xaad9a1c75946d3db263141659a6111b6de1f57c6",
+   "eth": 0.019359796694290127,
+   "usd": 46.37,
+   "contract": false,
+   "puzzle": "guntis-vitolins-metamask-8-6eth",
+   "role": "DRAIN_DEST_4 — кошелёк фишинг-кампании",
+   "evidence": "puzzles/guntis-vitolins-metamask-8-6eth/data/github/noobsilence__crypto-puzzle-lab/files/scripts/ens_forensics.py:18"
+  },
+  {
+   "address": "0x4c5d24a7ca972aea90cc040da6770a13fc7d4d9a",
+   "eth": 0.015393693868957444,
+   "usd": 36.87,
+   "contract": false,
+   "puzzle": "teikhos-bipedaljoe-solver-bounties-2eth",
+   "role": "creator-адрес 5 контрактов",
+   "evidence": "puzzles/teikhos-bipedaljoe-solver-bounties-2eth/data/ocp/README.md:43"
+  },
+  {
+   "address": "0x9c739dfa1674eae112dcdfb163653cf20d9d2070",
+   "eth": 0.01042120774010976,
+   "usd": 24.96,
+   "contract": false,
+   "puzzle": "teikhos-bipedaljoe-solver-bounties-2eth",
+   "role": "сторонний решатель (автономная попытка 735B)",
+   "evidence": "puzzles/teikhos-bipedaljoe-solver-bounties-2eth/data/ocp/README.md:128"
+  },
+  {
+   "address": "0x5d801b2b0b216790a49898b322246282547b546b",
+   "eth": 0.003773,
+   "usd": 9.04,
+   "contract": false,
+   "puzzle": "gsmg-io-5btc-puzzle",
+   "role": "владелец земли Decentraland (приз GSMG — в BTC)",
+   "evidence": "puzzles/gsmg-io-5btc-puzzle/data/decentraland_2026-10-18/scene.json:10"
+  },
+  {
+   "address": "0x83e4b2a5a464bdfcd83057ac08447f533a595156",
+   "eth": 0.000240222470768257,
+   "usd": 0.58,
+   "contract": false,
+   "puzzle": "teikhos-bipedaljoe-solver-bounties-2eth",
+   "role": "ЛИЧНЫЙ кошелёк куратора Hark (выплата 735B) — не трогать",
+   "evidence": "puzzles/teikhos-bipedaljoe-solver-bounties-2eth/README.md:22"
+  }
+ ],
+ "unknown": [
+  {
+   "address": "0x97e9e65eda435ce80c95d554bf8fbb757fcfcbfe",
+   "eth": 9.9086978187769e-05,
+   "usd": 0.24,
+   "contract": false,
+   "puzzle": "?",
+   "role": "НЕ КЛАССИФИЦИРОВАН",
+   "evidence": ""
+  },
+  {
+   "address": "0xa15585918e6ef74239246f4e1538acdf70b4743e",
+   "eth": 2.4535987966109e-05,
+   "usd": 0.06,
+   "contract": false,
+   "puzzle": "?",
+   "role": "НЕ КЛАССИФИЦИРОВАН",
+   "evidence": ""
+  },
+  {
+   "address": "0xdf04a38f0d60c913b70b60255139e3f12cb43b94",
+   "eth": 2.3532200244e-05,
+   "usd": 0.06,
+   "contract": false,
+   "puzzle": "?",
+   "role": "НЕ КЛАССИФИЦИРОВАН",
+   "evidence": ""
+  },
+  {
+   "address": "0x635739254bde27d28301f25ad57c3cac3c3468f3",
+   "eth": 2.1487724202e-05,
+   "usd": 0.05,
+   "contract": false,
+   "puzzle": "?",
+   "role": "НЕ КЛАССИФИЦИРОВАН",
+   "evidence": ""
+  },
+  {
+   "address": "0xf755aaace22fcfdcd4e300a3f26249000d95f1b2",
+   "eth": 4.222932799e-06,
+   "usd": 0.01,
+   "contract": false,
+   "puzzle": "?",
+   "role": "НЕ КЛАССИФИЦИРОВАН",
+   "evidence": ""
+  },
+  {
+   "address": "0xa468335485ce853f21a44451755bd88364e9d618",
+   "eth": 3.8434737285e-06,
+   "usd": 0.01,
+   "contract": false,
+   "puzzle": "?",
+   "role": "НЕ КЛАССИФИЦИРОВАН",
+   "evidence": ""
+  },
+  {
+   "address": "0xf5d45c9d798aedb754b1ed8660af3ea79178b765",
+   "eth": 2.0345688993e-06,
+   "usd": 0.0,
+   "contract": false,
+   "puzzle": "?",
+   "role": "НЕ КЛАССИФИЦИРОВАН",
+   "evidence": ""
+  }
+ ],
+ "zero_balance_count": 36
+}

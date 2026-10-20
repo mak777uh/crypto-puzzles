@@ -1,0 +1,35 @@
+Solving Zden's Bitcoin Crypto Puzzle Level 5 · echo.ls Skip to content echo.ls 
+ 
+ 
+ Solving Zden's Bitcoin Crypto Puzzle Level 5 27 September 2026 Zden originally announced Bitcoin Crypto Puzzle Level 5 on November 9, 2018, and provided a hint the following month. In 2021, after becoming aware of an error in the original image, he published a corrected version . I solved the corrected puzzle on September 22, 2026, using GPT-6 Astra for quick prototyping and experimentation. The image below shows the original puzzle with the 2021 update in red: Solution Each rectangle provides four measurements: width, height, left/right border thickness, and top/bottom border thickness. Opposite borders always have the same thickness, so we can simply use \( \mathrm{left} \) and \( \mathrm{top} \). Additionally, the 2021 update includes horizontal lines below two rectangles; we treat the width of these lines as the "true" width of their associated rectangle while maintaining the other measurements. The diagram in the bottom-left corner suggests a transformation using \( -1 \), \( \times 10 \), and \( 64 \). In particular, we use the following: \[
+\begin{align*}
+x = (10 \cdot \mathrm{width} + \mathrm{left} - 1) / 64 \\
+y = (10 \cdot \mathrm{height} + \mathrm{top} - 1) / 64
+\end{align*}
+\] I found these expressions experimentally while searching for simple formulas suggested by the diagram such that \( x \cdot y \) lies near integers, for all rectangles. Then, we calculate each rectangle's transformed area with \( \mathrm{round}(x \cdot y) \), arranging the results in an \( 8 \times 8 \) matrix to correspond with the rectangles in the original image: \[
+\begin{bmatrix}
+156 & 88 & 124 & 67 & 79 & 94 & 29 & 75 \\
+13 & 12 & 37 & 96 & 52 & 21 & 107 & 104 \\
+146 & 83 & 35 & 62 & 20 & 27 & 66 & 97 \\
+109 & 68 & 145 & 57 & 76 & 110 & 81 & 128 \\
+18 & 52 & 82 & 39 & 110 & 88 & 37 & 15 \\
+18 & 35 & 86 & 72 & 17 & 30 & 54 & 40 \\
+184 & 69 & 86 & 130 & 1 & 3 & 92 & 129 \\
+144 & 62 & 41 & 97 & 101 & 58 & 35 & 46
+\end{bmatrix}
+\] Empirically, \( x \cdot y \) is within \( 1/6 \) of an integer for all rectangles in the puzzle. The 2018 hint includes the sentence "Sum of two consecutive following rectangles areas creates one byte of the private key." After adding consecutive, non-overlapping pairs, we can write each sum as hexadecimal bytes to obtain: \[
+\begin{bmatrix}
+\mathrm{f4} & \mathrm{bf} & \mathrm{ad} & \mathrm{68} \\
+\mathrm{19} & \mathrm{85} & \mathrm{49} & \mathrm{d3} \\
+\mathrm{e5} & \mathrm{61} & \mathrm{2f} & \mathrm{a3} \\
+\mathrm{b1} & \mathrm{ca} & \mathrm{ba} & \mathrm{d1} \\
+\mathrm{46} & \mathrm{79} & \mathrm{c6} & \mathrm{34} \\
+\mathrm{35} & \mathrm{9e} & \mathrm{2f} & \mathrm{5e} \\
+\mathrm{fd} & \mathrm{d8} & \mathrm{04} & \mathrm{dd} \\
+\mathrm{ce} & \mathrm{8a} & \mathrm{9f} & \mathrm{51}
+\end{bmatrix}
+\] Finally, we can concatenate the hexadecimal values in row-major order to obtain the puzzle's private key: \[
+\mathrm{f4bfad68198549d3e5612fa3b1cabad14679c634359e2f5efdd804ddce8a9f51}
+\] Treating these 32 bytes as a secp256k1 private key and deriving the address from its uncompressed public key yields the following Bitcoin address: \[
+\mathrm{1cryptoGeCRiTzVgxBQcKFFjSVydN1GW7}
+\] The recovered key produces the published vanity address, confirming the solution. Thanks to Zden for creating the puzzle; it was an entertaining challenge that only seems simple in retrospect. Back to home

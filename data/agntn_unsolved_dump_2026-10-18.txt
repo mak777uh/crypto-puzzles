@@ -1,0 +1,231 @@
+### ballet  (открыто 2, суммарный приз ~2.000074)
+    ballet/AA009926                    bitcoin    prize=1.00003          1JxWyNrkgYvgsHu8hVQZqTXEB9RftRGP5m
+        key: encryptedWif("6PnQmAyBky9ZXJyZBv9QSGRUXkKh9HfnVsZWPn4YtcwoKy5vufUgfA3L
+    ballet/AA012381                    bitcoin    prize=1.00004          1QGtbKxx6FKDD66LwnrzHCAHmyZ7mDHqC4
+        key: passphrase("594Y-L2RW-4ME7-2XVX-9B41"),
+### bitaddress  (открыто 1, суммарный приз ~0.005297)
+    bitaddress                         bitcoin    prize=0.005297         1J7BVeP8JK4op2X3GN3Hy7xkTnGnQTMpou
+        key: uncompressed("04f7af13c4fda2f920dbd8ebc8d2cc87cdc6674a7beda95a402ab83d
+### bitaps  (открыто 1, суммарный приз ~1.000168)
+    bitaps                             bitcoin    prize=1.00017          bc1qyjwa0tf0en4x09magpuwmt2smpsrlaxwn85lh6
+        key: compressed("0385a3a591451ed7ed6c90dae882db918107d6f906d270cf4728d16812
+### bitimage  (открыто 1, суммарный приз ~0.010019)
+    bitimage/kitten-passphrase         bitcoin    prize=0.010019         bc1qcyrndzgy036f6ax370g8zyvlw86ulawgt0246r
+        key: derivation("m/84'/0'/0'/0/0").entropy("1808d35318ac7cb98b69ff9779b699d
+### bits  (открыто 77, суммарный приз ~903.016768)
+    bits/71                            bitcoin    prize=7.10192          1PWo3JeB9jrGwfHDNpdGK54CRas7fsVzXU
+        key: bits$1(71),
+    bits/72                            bitcoin    prize=7.20014          1JTK7s9YVYywfm5XUH7RNhHJH1LshCaRFR
+        key: bits$1(72),
+    bits/73                            bitcoin    prize=7.30014          12VVRNPi4SJqUTsp6FmqDqY5sGosDtysn4
+        key: bits$1(73),
+    bits/74                            bitcoin    prize=7.40005          1FWGcVDK3JGzCC3WtkYetULPszMaK2Jksv
+        key: bits$1(74),
+    bits/76                            bitcoin    prize=7.6              1DJh2eHFYQfACPmrvpyWc8MSTYKh7w9eRF
+        key: bits$1(76),
+    bits/77                            bitcoin    prize=7.70002          1Bxk4CQdqL9p22JEtDfdXMsng1XacifUtE
+        key: bits$1(77),
+    bits/78                            bitcoin    prize=7.8              15qF6X51huDjqTmF9BJgxXdt1xcj46Jmhb
+        key: bits$1(78),
+    bits/79                            bitcoin    prize=7.9              1ARk8HWJMn8js8tQmGUJeQHjSE7KRkn2t8
+        key: bits$1(79),
+    bits/81                            bitcoin    prize=8.10002          15qsCm78whspNQFydGJQk5rexzxTQopnHZ
+        key: bits$1(81),
+    bits/82                            bitcoin    prize=8.2              13zYrYhhJxp6Ui1VV7pqa5WDhNWM45ARAC
+        key: bits$1(82),
+    bits/83                            bitcoin    prize=8.30002          14MdEb4eFcT3MVG5sPFG4jGLuHJSnt1Dk2
+        key: bits$1(83),
+    bits/84                            bitcoin    prize=8.40001          1CMq3SvFcVEcpLMuuH8PUcNiqsK1oicG2D
+        key: bits$1(84),
+    bits/86                            bitcoin    prize=8.6              1K3x5L6G57Y494fDqBfrojD28UJv4s5JcK
+        key: bits$1(86),
+    bits/87                            bitcoin    prize=8.7              1PxH3K1Shdjb7gSEoTX7UPDZ6SH4qGPrvq
+        key: bits$1(87),
+    bits/88                            bitcoin    prize=8.8              16AbnZjZZipwHMkYKBSfswGWKDmXHjEpSf
+        key: bits$1(88),
+    bits/89                            bitcoin    prize=8.9              19QciEHbGVNY4hrhfKXmcBBCrJSBZ6TaVt
+        key: bits$1(89),
+    bits/91                            bitcoin    prize=9.1              1EzVHtmbN4fs4MiNk3ppEnKKhsmXYJ4s74
+        key: bits$1(91),
+    bits/92                            bitcoin    prize=9.2              1AE8NzzgKE7Yhz7BWtAcAAxiFMbPo82NB5
+        key: bits$1(92),
+    bits/93                            bitcoin    prize=9.3              17Q7tuG2JwFFU9rXVj3uZqRtioH3mx2Jad
+        key: bits$1(93),
+    bits/94                            bitcoin    prize=9.4              1K6xGMUbs6ZTXBnhw1pippqwK6wjBWtNpL
+        key: bits$1(94),
+    bits/96                            bitcoin    prize=9.60001          15ANYzzCp5BFHcCnVFzXqyibpzgPLWaD8b
+        key: bits$1(96),
+    bits/97                            bitcoin    prize=9.70003          18ywPwj39nGjqBrQJSzZVq2izR12MDpDr8
+        key: bits$1(97),
+    bits/98                            bitcoin    prize=9.8              1CaBVPrwUxbQYYswu32w7Mj4HR4maNoJSX
+        key: bits$1(98),
+    bits/99                            bitcoin    prize=9.91257          1JWnE6p6UN7ZJBN7TtcbNDoRcjFtuDWoNL
+        key: bits$1(99),
+    bits/101                           bitcoin    prize=10.1             1CKCVdbDJasYmhswB6HKZHEAnNaDpK7W4n
+        key: bits$1(101),
+    bits/102                           bitcoin    prize=10.2             1PXv28YxmYMaB8zxrKeZBW8dt2HK7RkRPX
+        key: bits$1(102),
+    bits/103                           bitcoin    prize=10.3             1AcAmB6jmtU6AiEcXkmiNE9TNVPsj9DULf
+        key: bits$1(103),
+    bits/104                           bitcoin    prize=10.4             1EQJvpsmhazYCcKX5Au6AZmZKRnzarMVZu
+        key: bits$1(104),
+    bits/106                           bitcoin    prize=10.6             18KsfuHuzQaBTNLASyj15hy4LuqPUo1FNB
+        key: bits$1(106),
+    bits/107                           bitcoin    prize=10.7             15EJFC5ZTs9nhsdvSUeBXjLAuYq3SWaxTc
+        key: bits$1(107),
+    bits/108                           bitcoin    prize=10.8             1HB1iKUqeffnVsvQsbpC6dNi1XKbyNuqao
+        key: bits$1(108),
+    bits/109                           bitcoin    prize=10.9001          1GvgAXVCbA8FBjXfWiAms4ytFeJcKsoyhL
+        key: bits$1(109),
+    bits/111                           bitcoin    prize=11.1001          1824ZJQ7nKJ9QFTRBqn7z7dHV5EGpzUpH3
+        key: bits$1(111),
+    bits/112                           bitcoin    prize=11.2             18A7NA9FTsnJxWgkoFfPAFbQzuQxpRtCos
+        key: bits$1(112),
+    bits/113                           bitcoin    prize=11.3             1NeGn21dUDDeqFQ63xb2SpgUuXuBLA4WT4
+        key: bits$1(113),
+    bits/114                           bitcoin    prize=11.4             174SNxfqpdMGYy5YQcfLbSTK3MRNZEePoy
+        key: bits$1(114),
+    bits/116                           bitcoin    prize=11.6             1MnJ6hdhvK37VLmqcdEwqC3iFxyWH2PHUV
+        key: bits$1(116),
+    bits/117                           bitcoin    prize=11.7             1KNRfGWw7Q9Rmwsc6NT5zsdvEb9M2Wkj5Z
+        key: bits$1(117),
+    bits/118                           bitcoin    prize=11.8             1PJZPzvGX19a7twf5HyD2VvNiPdHLzm9F6
+        key: bits$1(118),
+    bits/119                           bitcoin    prize=11.9             1GuBBhf61rnvRe4K8zu8vdQB3kHzwFqSy7
+        key: bits$1(119),
+    bits/121                           bitcoin    prize=12.1             1GDSuiThEV64c166LUFC9uDcVdGjqkxKyh
+        key: bits$1(121),
+    bits/122                           bitcoin    prize=12.2             1Me3ASYt5JCTAK2XaC32RMeH34PdprrfDx
+        key: bits$1(122),
+    bits/123                           bitcoin    prize=12.3             1CdufMQL892A69KXgv6UNBD17ywWqYpKut
+        key: bits$1(123),
+    bits/124                           bitcoin    prize=12.4             1BkkGsX9ZM6iwL3zbqs7HWBV7SvosR6m8N
+        key: bits$1(124),
+    bits/126                           bitcoin    prize=12.6             1AWCLZAjKbV1P7AHvaPNCKiB7ZWVDMxFiz
+        key: bits$1(126),
+    bits/127                           bitcoin    prize=12.7             1G6EFyBRU86sThN3SSt3GrHu1sA7w7nzi4
+        key: bits$1(127),
+    bits/128                           bitcoin    prize=12.8             1MZ2L1gFrCtkkn6DnTT2e4PFUTHw9gNwaj
+        key: bits$1(128),
+    bits/129                           bitcoin    prize=12.9             1Hz3uv3nNZzBVMXLGadCucgjiCs5W9vaGz
+        key: bits$1(129),
+    bits/131                           bitcoin    prize=13.1             16zRPnT8znwq42q7XeMkZUhb1bKqgRogyy
+        key: bits$1(131),
+    bits/132                           bitcoin    prize=13.2             1KrU4dHE5WrW8rhWDsTRjR21r8t3dsrS3R
+        key: bits$1(132),
+    bits/133                           bitcoin    prize=13.3             17uDfp5r4n441xkgLFmhNoSW1KWp6xVLD
+        key: bits$1(133),
+    bits/134                           bitcoin    prize=13.4             13A3JrvXmvg5w9XGvyyR4JEJqiLz8ZySY3
+        key: bits$1(134),
+    bits/136                           bitcoin    prize=13.6             1UDHPdovvR985NrWSkdWQDEQ1xuRiTALq
+        key: bits$1(136),
+    bits/137                           bitcoin    prize=13.7             15nf31J46iLuK1ZkTnqHo7WgN5cARFK3RA
+        key: bits$1(137),
+    bits/138                           bitcoin    prize=13.8             1Ab4vzG6wEQBDNQM1B2bvUz4fqXXdFk2WT
+        key: bits$1(138),
+    bits/139                           bitcoin    prize=13.9             1Fz63c775VV9fNyj25d9Xfw3YHE6sKCxbt
+        key: bits$1(139),
+    bits/140                           bitcoin    prize=14               1QKBaU6WAeycb3DbKbLBkX7vJiaS8r42Xo
+        key: compressed("031f6a332d3c5c4f2de2378c012f429cd109ba07d69690c6c701b6bb87
+    bits/141                           bitcoin    prize=14.1001          1CD91Vm97mLQvXhrnoMChhJx4TP9MaQkJo
+        key: bits$1(141),
+    bits/142                           bitcoin    prize=14.2             15MnK2jXPqTMURX4xC3h4mAZxyCcaWWEDD
+        key: bits$1(142),
+    bits/143                           bitcoin    prize=14.3             13N66gCzWWHEZBxhVxG18P8wyjEWF9Yoi1
+        key: bits$1(143),
+    bits/144                           bitcoin    prize=14.4             1NevxKDYuDcCh1ZMMi6ftmWwGrZKC6j7Ux
+        key: bits$1(144),
+    bits/145                           bitcoin    prize=14.5             19GpszRNUej5yYqxXoLnbZWKew3KdVLkXg
+        key: compressed("03afdda497369e219a2c1c369954a930e4d3740968e5e4352475bcffce
+    bits/146                           bitcoin    prize=14.6             1M7ipcdYHey2Y5RZM34MBbpugghmjaV89P
+        key: bits$1(146),
+    bits/147                           bitcoin    prize=14.7             18aNhurEAJsw6BAgtANpexk5ob1aGTwSeL
+        key: bits$1(147),
+    bits/148                           bitcoin    prize=14.8             1FwZXt6EpRT7Fkndzv6K4b4DFoT4trbMrV
+        key: bits$1(148),
+    bits/149                           bitcoin    prize=14.9             1CXvTzR6qv8wJ7eprzUKeWxyGcHwDYP1i2
+        key: bits$1(149),
+    bits/150                           bitcoin    prize=15               1MUJSJYtGPVGkBCTqGspnxyHahpt5Te8jy
+        key: compressed("03137807790ea7dc6e97901c2bc87411f45ed74a5629315c4e4b03a0a1
+    bits/151                           bitcoin    prize=15.1             13Q84TNNvgcL3HJiqQPvyBb9m4hxjS3jkV
+        key: bits$1(151),
+    bits/152                           bitcoin    prize=15.2             1LuUHyrQr8PKSvbcY1v1PiuGuqFjWpDumN
+        key: bits$1(152),
+    bits/153                           bitcoin    prize=15.3             18192XpzzdDi2K11QVHR7td2HcPS6Qs5vg
+        key: bits$1(153),
+    bits/154                           bitcoin    prize=15.4             1NgVmsCCJaKLzGyKLFJfVequnFW9ZvnMLN
+        key: bits$1(154),
+    bits/155                           bitcoin    prize=15.5001          1AoeP37TmHdFh8uN72fu9AqgtLrUwcv2wJ
+        key: compressed("035cd1854cae45391ca4ec428cc7e6c7d9984424b954209a8eea197b9e
+    bits/156                           bitcoin    prize=15.6             1FTpAbQa4h8trvhQXjXnmNhqdiGBd1oraE
+        key: bits$1(156),
+    bits/157                           bitcoin    prize=15.7             14JHoRAdmJg3XR4RjMDh6Wed6ft6hzbQe9
+        key: bits$1(157),
+    bits/158                           bitcoin    prize=15.8             19z6waranEf8CcP8FqNgdwUe1QRxvUNKBG
+        key: bits$1(158),
+    bits/159                           bitcoin    prize=15.9             14u4nA5sugaswb6SZgn5av2vuChdMnD9E5
+        key: bits$1(159),
+    bits/160                           bitcoin    prize=16.0012          1NBC8uXJy1GiJ6drkiZa1WuKn51ps7EPTv
+        key: compressed("02e0a8b039282faf6fe0fd769cfbc4b6b4cf8758ba68220eac420e32b9
+### brave-new-world  (открыто 1, суммарный приз ~0.201073)
+    brave-new-world                    bitcoin    prize=0.201073         1KfZGvwZxsvSmemoCmEV75uqcNzYBHjkHZ
+### genesis  (открыто 1, суммарный приз ~0.000000)
+    genesis                            bitcoin    prize=0                bc1qfkhx02v89u2qyyyljeczw6hu9sr437y44t7ae5yf09thrdukfqesnjg2wj
+        key: 50k sats output + 1k input.", "https://mempool.space/tx/ae906bdebdf7cd
+### great-riddle  (открыто 1, суммарный приз ~0.004239)
+    great-riddle                       bitcoin    prize=0.00423871       bc1qm3ayuhn7wppuqxaywu8ea0lggs8myy7543fekk
+### gsmg  (открыто 1, суммарный приз ~1.256370)
+    gsmg                               bitcoin    prize=1.25637          1GSMG1JC9wtdSwfwApgj2xcmJPAwx7prBe
+        key: uncompressed("04f4d1bbd91e65e2a019566a17574e97dae908b784b388891848007e
+### hash-collision  (открыто 4, суммарный приз ~0.593649)
+    hash-collision/sha256              bitcoin    prize=0.277343         -
+    hash-collision/ripemd160           bitcoin    prize=0.115769         -
+    hash-collision/hash160             bitcoin    prize=0.100269         -
+    hash-collision/hash256             bitcoin    prize=0.100269         -
+### luckylurker  (открыто 1, суммарный приз ~1.000000)
+    luckylurker/vault-2                bitcoin    prize=1                bc1qnepv9pcnqvndux9h9mcaxvk6u993rc0lew9fpp
+### mineshop  (открыто 1, суммарный приз ~8.612542)
+    mineshop                           ethereum   prize=8.61254          0x9C2F44EFAd0c1E852a09dF9939e6DaF061140CaF
+        key: uncompressed("04e1a30fe567710a3592a56eb479d251fe7456e1f0791c39bf54691a
+### move-over-brokers  (открыто 3, суммарный приз ~0.006000)
+    move-over-brokers/en-medium-1      bitcoin    prize=0.002            17Y9czcbcCz433QXsy1SGQjwLb27BBtLLZ
+    move-over-brokers/en-very-hard-2   bitcoin    prize=0.002            1DZ5NbUwDgxeJkKhQLgYcUUX36PtYso1pm
+    move-over-brokers/it-very-hard     bitcoin    prize=0.002            19kkawFcg2U2s6vq368MXD7FJU9JZvRrjA
+### path-to-greatness  (открыто 1, суммарный приз ~3.026088)
+    path-to-greatness                  litecoin   prize=3.02609          LUtL7qnm3gzxKjHcfVLSjydqhhinTVmTmS
+### phy  (открыто 1, суммарный приз ~0.008000)
+    phy                                bitcoin    prize=0.008            bc1qrpn28qa82uyjg37dvsz3w7wpm3kpdea957nm9p
+        key: compressed("02425afdd1716149faf414b6fdb96d5e7afc8ce42496042f4df559c80a
+### real-big-block  (открыто 1, суммарный приз ~0.777000)
+    real-big-block                     bitcoin    prize=0.777            14zMkTgaVXJcxdh4JdWi29MLRR44iUSG9W
+### rushwallet  (открыто 1, суммарный приз ~0.000000)
+    rushwallet/30                      bitcoin    prize=0                13Q8hJqagtd77ojTJcEZPjTz2sBFSsYxyj
+        key: uncompressed("04b28d687ff46211d3cf75021db818b86f70addcb42ccedf53f42809
+### school-of-bitcoin  (открыто 1, суммарный приз ~0.010000)
+    school-of-bitcoin                  bitcoin    prize=0.01             bc1qcsdfkaqgy9ux668vmzflzqsyg0qtspncymt5ed
+### seed-phrase  (открыто 1, суммарный приз ~0.010000)
+    seed-phrase                        bitcoin    prize=0.01             bc1q7x3p3rkmkxgf20n3apkccqcmn5mdtsf8zx5227
+        key: derivation("m/84'/0'/0'/0/0"),
+### smith-lyle-moore  (открыто 1, суммарный приз ~0.031777)
+    smith-lyle-moore/glimmer           bitcoin    prize=0.031777         bc1q0akdjvrc2csau2n3gyxa3xcq0fss852x997m9y
+        key: compressed("037e3109f564912f1007912d90f76c7aae43b812d6286d609a86140b74
+### teikhos  (открыто 4, суммарный приз ~3.000018)
+    teikhos/0                          ethereum   prize=1.00001          -
+    teikhos/1                          ethereum   prize=1                -
+    teikhos/2                          ethereum   prize=0.500002         -
+    teikhos/3                          ethereum   prize=0.500002         -
+### walking-banks  (открыто 2, суммарный приз ~0.008000)
+    walking-banks/1                    bitcoin    prize=0.001            bc1qxy4tf0s4n7x9w24rawf9qsxh2hyljrmvyrhwzt
+        key: compressed("027b26f0973f7656d7405ebdc2d7500d855aee346ff4518d6150705025
+    walking-banks/2                    bitcoin    prize=0.007            bc1q4qc24xk5cehc4t7vr264zldsms2kmxf86jqjau
+        key: compressed("0345a988db0b34ab48693b9d525ff227d98c67e8986c0664c1d9412f11
+### wealth-in-poetry  (открыто 1, суммарный приз ~0.031246)
+    wealth-in-poetry                   bitcoin    prize=0.0312463        1K4ezpLybootYF23TM4a8Y4NyP7auysnRo
+### weave  (открыто 3, суммарный приз ~1501.188093)
+    weave/3                            arweave    prize=1000.17          wHP6OPG5GMF5dedo_CD8AAy6x8La-gfI5b5pk65Tx_0
+    weave/10                           arweave    prize=500.022          bkjJGw3NLxs8OAyRxgTL-QFpiB3lBJqZ76kDhWdB-Rs
+    weave/11                           ethereum   prize=1                0xff2142e98e09b5344994f9beb9c56c95506b9f17
+### zden  (открыто 1, суммарный приз ~0.003125)
+    zden/level-halv                    bitcoin    prize=0.003125         1crypto24HCr178iMcKd5iUi5D4rsg1nK
+
+ИТОГО открытых записей: 113, суммарный приз ~2425.7995

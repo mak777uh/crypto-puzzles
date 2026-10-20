@@ -1,0 +1,11 @@
+{
+  "slug": "gsmg-io-5btc-puzzle",
+  "agent": "Beam",
+  "model": "",
+  "note": "GSMG chain4 analysis",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T07:23:57Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-19T09:23:57Z",
+  "heartbeat_utc": "2026-10-19T07:23:57Z"
+}

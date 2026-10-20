@@ -1,0 +1,208 @@
+ПРОВЕРКА КОНТРОЛЬНЫХ ХЕШЕЙ ОБЪЕКТОВ:
+  DBBI      71fe46259e270c113529dfaded4b59c5 OK
+  FAED      066191b4aafc114fbca7f0d168382f40 OK
+  BIFID570  0c5d984f90e9baefc09f1d3888e62acb OK
+  длины: DBBI=91 FAED=570 BIFID570=570 ODD_noIO=256 KEPT256=256
+словари: англ=360036, токены пазла=60598, курированные=53, прочитано текста=49.4 МБ, файлов=1395
+
+==============================================================================
+ОСЬ A — ландмарк в btcseed-семействе
+==============================================================================
+  BIFID570   len=570  sha256=0c5d984f90e9baef  (уникальных букв: 25)
+  EVEN285    len=285  sha256=33fc727b5a9d1d11  (уникальных букв: 4)
+  ODD285     len=285  sha256=559ca4e1b0e19d8c  (уникальных букв: 25)
+  ODD_noIO   len=256  sha256=1740b55ba5d224e8  (уникальных букв: 23)
+  KEPT256    len=256  sha256=1740b55ba5d224e8  (уникальных букв: 23)
+  DBBI       len= 91  sha256=71fe46259e270c11  (уникальных букв: 9)
+  FAED       len=570  sha256=066191b4aafc114f  (уникальных букв: 9)
+
+A1. Словарный скан подстрок 5..24 (англ. словарь 360036; курированные токены 53)
+   попаданий (EN+CUR): 39
+     L= 7 CUR BIFID570  fwd pos=  0  btcseed
+     L= 6 EN EVEN285   fwd pos= 48  decede
+     L= 6 EN EVEN285   fwd pos=197  deeded
+     L= 6 EN EVEN285   rev pos=232  decede
+     L= 6 EN FAED      rev pos= 58  heeded
+     L= 6 EN KEPT256   fwd pos= 76  sprank
+     L= 6 EN KEPT256   fwd pos= 77  pranks
+     L= 6 EN ODD285    fwd pos= 83  sprank
+     L= 6 EN ODD285    fwd pos= 84  pranks
+     L= 6 EN ODD285    rev pos=279  modest
+     L= 6 EN ODD_noIO  fwd pos= 76  sprank
+     L= 6 EN ODD_noIO  fwd pos= 77  pranks
+     L= 5 EN BIFID570  fwd pos=129  medea
+     L= 5 EN BIFID570  fwd pos=218  endue
+     L= 5 EN BIFID570  fwd pos=351  melds
+     L= 5 EN BIFID570  rev pos= 59  bleed
+     L= 5 EN BIFID570  rev pos=161  bleed
+     L= 5 EN BIFID570  rev pos=183  cadie
+     L= 5 EN BIFID570  rev pos=218  merer
+     L= 5 EN EVEN285   fwd pos= 50  ceded
+     L= 5 EN EVEN285   fwd pos= 76  ebbed
+     L= 5 EN EVEN285   fwd pos=121  ebbed
+     L= 5 EN EVEN285   fwd pos=138  ceded
+     L= 5 EN FAED      fwd pos=555  bahai
+     L= 5 EN FAED      rev pos= 55  gighe
+     L= 5 EN FAED      rev pos=191  heidi
+     L= 5 EN FAED      rev pos=277  ahead
+     L= 5 EN KEPT256   fwd pos= 77  prank
+     L= 5 EN KEPT256   fwd pos= 78  ranks
+     L= 5 EN KEPT256   rev pos= 25  allen
+     L= 5 EN ODD285    fwd pos= 84  prank
+     L= 5 EN ODD285    fwd pos= 85  ranks
+     L= 5 EN ODD285    fwd pos=197  nigel
+     L= 5 EN ODD285    rev pos= 28  allen
+     L= 5 EN ODD285    rev pos=173  funis
+     L= 5 EN ODD285    rev pos=279  modes
+     L= 5 EN ODD_noIO  fwd pos= 77  prank
+     L= 5 EN ODD_noIO  fwd pos= 78  ranks
+     L= 5 EN ODD_noIO  rev pos= 25  allen
+   из них англ. слов: 38; курированных токенов: 1
+   НУЛЬ-КОНТРОЛЬ (перестановки букв, 40 реплик на объект):
+   L : наблюдено | ожидание(шум)
+    5 :       27 |     6.38
+    6 :       11 |     0.90
+    7 :        1 |     0.15
+
+A1b. Окна длины 10 (и 8..12) с наибольшим z-score по англ. биграммам
+   -- BIFID570 L=10: μ=-7.71 σ=1.27
+      z=+2.23 pos=345  NEREREMELD
+      z=+2.03 pos=344  CNEREREMEL
+      z=+2.01 pos=346  EREREMELDS
+      z=+1.88 pos=195  RENENCCEGE
+      z=+1.84 pos=127  NEMEDEADOB
+      z=+1.82 pos=194  BRENENCCEG
+      z=+1.82 pos=196  ENENCCEGEL
+      z=+1.70 pos=128  EMEDEADOBR
+      z=+1.69 pos=343  BCNEREREME
+      z=+1.68 pos=213  GESEIENDUE
+   -- ODD285 L=10: μ=-7.77 σ=1.12
+      z=+2.29 pos=248  OMEUNELLAP
+      z=+2.22 pos=247  GOMEUNELLA
+      z=+2.14 pos=249  MEUNELLAPP
+      z=+2.01 pos= 78  TSAPUSPRAN
+      z=+1.92 pos= 79  SAPUSPRANK
+      z=+1.77 pos= 77  LTSAPUSPRA
+      z=+1.75 pos= 80  APUSPRANKS
+      z=+1.70 pos=195  OTNIGELELM
+      z=+1.69 pos=250  EUNELLAPPM
+      z=+1.62 pos=228  NSYOOINSOI
+   -- ODD_noIO L=10: μ=-8.14 σ=1.18
+      z=+2.33 pos=223  MEUNELLAPP
+      z=+2.21 pos= 71  TSAPUSPRAN
+      z=+2.19 pos=222  GMEUNELLAP
+      z=+2.12 pos= 72  SAPUSPRANK
+      z=+1.98 pos= 70  LTSAPUSPRA
+      z=+1.96 pos= 73  APUSPRANKS
+      z=+1.95 pos=177  EAATNGELEL
+      z=+1.91 pos=224  EUNELLAPPM
+      z=+1.78 pos=176  UEAATNGELE
+      z=+1.77 pos= 69  SLTSAPUSPR
+   -- KEPT256 L=10: μ=-8.14 σ=1.18
+      z=+2.33 pos=223  MEUNELLAPP
+      z=+2.21 pos= 71  TSAPUSPRAN
+      z=+2.19 pos=222  GMEUNELLAP
+      z=+2.12 pos= 72  SAPUSPRANK
+      z=+1.98 pos= 70  LTSAPUSPRA
+      z=+1.96 pos= 73  APUSPRANKS
+      z=+1.95 pos=177  EAATNGELEL
+      z=+1.91 pos=224  EUNELLAPPM
+      z=+1.78 pos=176  UEAATNGELE
+      z=+1.77 pos= 69  SLTSAPUSPR
+   -- EVEN285 L=10: μ=-7.50 σ=0.95
+      z=+2.38 pos= 45  CCEDECEDED
+      z=+2.35 pos= 46  CEDECEDEDD
+      z=+2.09 pos= 44  CCCEDECEDE
+      z=+1.88 pos=197  DEEDEDEBCE
+      z=+1.85 pos= 47  EDECEDEDDC
+      z=+1.79 pos=134  CECCCEDEDD
+      z=+1.67 pos=199  EDEDEBCEBE
+      z=+1.65 pos=198  EEDEDEBCEB
+      z=+1.64 pos=171  ECEEEEDDDE
+      z=+1.64 pos=172  CEEEEDDDEC
+   -- DBBI L=10: μ=-7.94 σ=0.92
+      z=+1.82 pos= 81  gigbeeeabe
+      z=+1.71 pos= 23  beggegebeb
+      z=+1.51 pos= 24  eggegebebb
+      z=+1.46 pos= 64  beeggecbed
+      z=+1.44 pos= 22  hbeggegebe
+      z=+1.40 pos= 13  bihabebeih
+      z=+1.37 pos= 15  habebeihbe
+      z=+1.31 pos= 12  gbihabebei
+      z=+1.31 pos= 10  begbihabeb
+      z=+1.31 pos= 11  egbihabebe
+   -- FAED L=10: μ=-7.66 σ=0.85
+      z=+2.33 pos=523  beiichiedi
+      z=+2.28 pos=524  eiichiedif
+      z=+2.24 pos=343  heagegecaf
+      z=+2.19 pos=342  aheagegeca
+      z=+2.13 pos=452  hieeeieeec
+      z=+2.12 pos=341  haheagegec
+      z=+2.10 pos=453  ieeeieeeci
+      z=+2.07 pos=344  eagegecafe
+      z=+2.05 pos=526  ichiedifbe
+      z=+2.00 pos=454  eeeieeecif
+   == СВОДНЫЙ топ-15 окон L=10 по всем объектам ==
+      z=+2.38 EVEN285   pos= 45  CCEDECEDED
+      z=+2.35 EVEN285   pos= 46  CEDECEDEDD
+      z=+2.33 FAED      pos=523  beiichiedi
+      z=+2.33 ODD_noIO  pos=223  MEUNELLAPP
+      z=+2.33 KEPT256   pos=223  MEUNELLAPP
+      z=+2.29 ODD285    pos=248  OMEUNELLAP
+      z=+2.28 FAED      pos=524  eiichiedif
+      z=+2.24 FAED      pos=343  heagegecaf
+      z=+2.23 BIFID570  pos=345  NEREREMELD
+      z=+2.22 ODD285    pos=247  GOMEUNELLA
+      z=+2.21 ODD_noIO  pos= 71  TSAPUSPRAN
+      z=+2.21 KEPT256   pos= 71  TSAPUSPRAN
+      z=+2.19 ODD_noIO  pos=222  GMEUNELLAP
+      z=+2.19 KEPT256   pos=222  GMEUNELLAP
+      z=+2.19 FAED      pos=342  aheagegeca
+
+A2. 18 индексов Boulayo: 51,49,43,45,32,50,36,12,44,14,40,34,41,43,20,30,56,52
+   -- BIFID570 (n=570)
+      0b.fwd: DEIIBBCCCECCRICDDD
+      0b.rev: DDDCIRCCECCCBBIIED
+      1b.fwd: DBCBXDOKIARPDCHVSB
+      1b.rev: BSVHCDPRAIKODXBCBD
+   -- ODD285 (n=285)
+      0b.fwd: FLUAPMSDQKNNMURPKF
+      0b.rev: FKPRUMNNKQDSMPAULF
+      1b.fwd: FMQDNFGSAVMSUQIGYS
+      1b.rev: SYGIQUSMVASGFNDQMF
+   -- ODD_noIO (n=256)
+      0b.fwd: KSLLSWNSZVQDALENSY
+      0b.rev: YSNELADQVZSNWSLLSK
+      1b.fwd: YWZMGKMKLXALDZDSWU
+      1b.rev: UWSDZDLAXLKMKGMZWY
+   -- KEPT256 (n=256)
+      0b.fwd: KSLLSWNSZVQDALENSY
+      0b.rev: YSNELADQVZSNWSLLSK
+      1b.fwd: YWZMGKMKLXALDZDSWU
+      1b.rev: UWSDZDLAXLKMKGMZWY
+   -- DBBI (n=91)
+      0b.fwd: fbbbbehgaihghbebbf
+      0b.rev: fbbebhghiaghebbbbf
+      1b.fwd: feafbfhbbhhefaiefc
+      1b.rev: cfeiafehhbbhfbfaef
+   -- FAED (n=570)
+      0b.fwd: cgfeggadabggifaged
+      0b.rev: degafiggbadaggefgc
+      1b.fwd: dgaciceaehiaaadbha
+      1b.rev: ahbdaaaiheaecicagd
+
+==============================================================================
+ОСЬ C — DBBI как подстановочный sha256-хекс (паттерн равенства)
+==============================================================================
+  токенов: 64   различных кодов: 16
+  паттерн(пересчёт): 01234556728966286abc61c88b48de3086dd501d5557d6bab5605233df7bbb96
+  паттерн(публично): 01234556728966286abc61c88b48de3086dd501d5557d6bab5605233df7bbb96  (len=64)
+  КОНТРОЛЬ-1 (паттерн совпал с опубликованным): ДА
+  внешний набор: cands_corpus.txt
+  внешний набор: KNOWN_SET_2026-10-18.txt
+  базовых кандидатов (unique): 925649
+  вариантов (reg): 2776947
+  просмотрено кандидатов: 2776947  (x4 вида хеша)
+  СОВПАДЕНИЙ: 0
+  КОНТРОЛЬ-2 (200000 случайных строк дают совпадений): 0
+

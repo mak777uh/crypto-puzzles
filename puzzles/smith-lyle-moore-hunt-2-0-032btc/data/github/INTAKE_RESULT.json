@@ -1,0 +1,136 @@
+{
+  "slug": "smith-lyle-moore-hunt-2-0-032btc",
+  "agent": "Qoder",
+  "ts": "2026-10-18T11:18:56Z",
+  "date": "2026-10-18",
+  "status": "partial",
+  "note": "",
+  "api_calls": 10,
+  "free_transports": 12,
+  "remaining_seen": 31,
+  "reset_utc": "2026-10-18T11:34:37Z",
+  "files": 679,
+  "bytes": 28312712,
+  "media": 74,
+  "repos": [
+    {
+      "repo": "floflo777/open-crypto-puzzles",
+      "role": "registry",
+      "branch": "main",
+      "head_sha": "19644e58e50721f8469680f2edcba1daa0697630",
+      "counts": {},
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "repo": "benjacasas02/independent-cryptography-research",
+      "role": "community",
+      "branch": "main",
+      "head_sha": "6b438cb2cdbbe0048747801fa89a800fa3ec9e4e",
+      "counts": {
+        "issues": 0,
+        "comments": 0,
+        "releases": 0
+      },
+      "files": 111,
+      "bytes": 546130
+    },
+    {
+      "repo": "diploux/unsolved-crypto-puzzles",
+      "role": "community",
+      "branch": "main",
+      "head_sha": "9c8848bfc13c7c80c780d85266a274ceec92b490",
+      "counts": {
+        "issues": 0,
+        "comments": 0,
+        "releases": 0
+      },
+      "files": 105,
+      "bytes": 2377130
+    },
+    {
+      "repo": "schum-io/open-crypto-puzzles",
+      "role": "fork",
+      "branch": "main",
+      "head_sha": "35ee09caf4a67a3128d9fa8e473eb00c2e68c2a2",
+      "counts": {
+        "issues": 0,
+        "comments": 0,
+        "releases": 0
+      },
+      "files": 463,
+      "bytes": 25389452
+    }
+  ],
+  "candidates": [
+    {
+      "repo": "floflo777/open-crypto-puzzles",
+      "role": "registry",
+      "source": "ссылки досье",
+      "hits": 22
+    },
+    {
+      "repo": "benjacasas02/independent-cryptography-research",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 2
+    },
+    {
+      "repo": "diploux/unsolved-crypto-puzzles",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 1
+    },
+    {
+      "repo": "schum-io/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "lekejf/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "pauldmurphy/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "ebr4him68-rgb/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "aperioscanner/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "windstalker-arch/open-crypto-puzzles",
+      "role": "fork",
+      "source": "форки floflo777/open-crypto-puzzles",
+      "hits": 0
+    }
+  ],
+  "errors": [
+    "не собрано (сверх --max-repos 4): lekejf/open-crypto-puzzles, pauldmurphy/open-crypto-puzzles, ebr4him68-rgb/open-crypto-puzzles, aperioscanner/open-crypto-puzzles, windstalker-arch/open-crypto-puzzles"
+  ],
+  "stop_reason": "срезано потолками: собрано 4 кандидатов из 9 (--max-repos/--max-mb)",
+  "ocp": {
+    "slug": "smith-lyle-moore-hunt-2-0-032btc",
+    "tier": "mid",
+    "folder": "2-mid-prizes/smith-lyle-moore-hunt-2-0-032btc",
+    "handles": [
+      "site:smithlylemoore.com"
+    ],
+    "repo": "floflo777/open-crypto-puzzles",
+    "ocp_path": "_sources/ocp/2-mid-prizes/smith-lyle-moore-hunt-2-0-032btc"
+  },
+  "digest": "data/github/GITHUB_INTAKE.md"
+}

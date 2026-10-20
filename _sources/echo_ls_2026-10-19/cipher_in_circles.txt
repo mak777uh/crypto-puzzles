@@ -1,0 +1,16 @@
+Solving Cipher in Circles · echo.ls Skip to content echo.ls 
+ 
+ 
+ Solving Cipher in Circles 5 October 2026 Crypto Puzzlers announced the Cipher in Circles Puzzle through a reddit post and associated youtube video on September 25, 2021. Over five years later, I used GPT-6 Astra to solve the puzzle; GPT-6 Astra worked autonomously with minimal guidance. Solution The video is a sequence of 69 states. Each state uses exactly seven red rings: three rings in a "left" column, one ring in a "middle" column, and the final three rings in a "right" column. Each ring can occupy one of three possible positions within the circle. For each state, we treat the middle ring as the reference. For example, if the middle red ring is on an otherwise yellow circle, then that state uses yellow to represent a raised dot. Then, we can read the remaining two columns of three circles (along with the boolean active rule from the reference ring) as a letter in the Braille alphabet. Braille chart sourced from the National Library Service . By concatenating one letter for each of the 69 states, we derive the following string: \[
+\mathrm{ssucevktumeaoraeaepnosbettpeiwidemgyatribebevprddsgeorjsrenalsvlseair}
+\] We observe that the ring sizes at each state follow an outer → middle → inner → middle repeating pattern. In total, the ring is at the largest position 18 times, the middle position 34 times, and the smallest position 17 times. We then partition the Braille-derived letters into three segments. \[
+\begin{align*}
+\text{first 18}\quad& \mathrm{ssucevktumeaoraeae} \\
+\text{middle 34}\quad& \mathrm{pnosbettpeiwidemgyatribebevprddsge} \\
+\text{last 17}\quad& \mathrm{orjsrenalsvlseair}
+\end{align*}
+\] Finally, to decrypt the strings into words, read the letters in the same outer → middle → inner → middle pattern to find: \[
+\mathrm{sponsorsubjectstepreviewkindteamuglymasterviableobserveparadedisagree}
+\] Splitting the text into twelve English BIP39 words passes the checksum. Then, we derive the published Ethereum address at m/44'/60'/0'/0/0 using an empty BIP39 passphrase. As a result, we have recovered the private key to the prize address: \[
+\mathrm{0x98EaBa52eF74a9c52CC2B34cD96d7FA19537eC6E}
+\] Back to home

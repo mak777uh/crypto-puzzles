@@ -1,0 +1,3474 @@
+[07-Feb-19 07:43 AM] tiamat#9131
+@DesignBlock you could store a hash of the video so in case video gets modified, you will know, but of course you won't know the original version, still you will save a lot of AR
+
+
+
+[20-Apr-19 04:27 AM] tiamat#9131
+AR has so many use cases but unfortunately marketing is not at the same level as technology.
+
+
+
+[20-Apr-19 05:04 AM] tiamat#9131
+you know a lot of other projects with use cases? why not share with us a few
+
+
+
+[20-Apr-19 05:04 AM] tiamat#9131
+because this things are actually very rare
+
+
+
+[20-Apr-19 06:04 AM] tiamat#9131
+@ATLAS permanent storage is new plus the ease of integration is also new,  which other chain lets you access your files/data directly from browser?
+
+
+
+[20-Apr-19 07:19 AM] tiamat#9131
+for exactly the same reason you need bitcoin when you have paypal
+
+
+
+[20-Apr-19 08:02 AM] tiamat#9131
+because on cloud you cannot be permanent, trustless, censorship resistant
+
+
+
+[20-Apr-19 09:02 AM] tiamat#9131
+TFES
+
+
+
+[20-Apr-19 09:08 AM] tiamat#9131
+like I said, those are not permanent and not easy to integrate
+
+
+
+[20-Apr-19 09:29 AM] tiamat#9131
+if that works for you, good, for other people/purposes it does not fit as well  
+
+
+
+[16-May-19 10:05 AM] tiamat#9131
+don't kill the messenger  
+
+
+
+[23-May-19 03:57 AM] tiamat#9131
+@ATLAS https://github.com/ArweaveTeam/arweave/tree/feature/multiple-txs-per-wallet-per-block
+
+{Reactions}
+  
+
+
+[27-Jan-19 01:47 AM] tiamat#9131
+@DaVinci  no, only some small rewards since block 65700 and full rewards only from 95000 or something close
+
+
+
+[13-Feb-19 06:10 AM] tiamat#9131
+it's already gradually reducing
+
+
+
+[13-Feb-19 06:11 AM] tiamat#9131
+but yeah, I think there will be a big drop somewhere around summer
+
+
+
+[28-Feb-19 07:48 AM] tiamat#9131
+I have followed at least 10 new blockchains started during the last year and I have to say that Arweave is the most stable. The very hyped Zilliqa has lots of issues and needs patches almost every day.
+
+{Reactions}
+💪 (2) logo (2) 
+
+
+[15-Mar-19 02:45 AM] tiamat#9131
+so hardware, network link and settings are the same for group_2 and group_5 ?
+
+
+
+[29-Jan-19 03:15 PM] tiamat#9131
+Maybe permaweb should be interoperable with Ethereum ENS, otherwise it is not permanent since normal domains could expire.
+
+
+
+[25-Jan-19 01:18 AM] tiamat#9131
+The truth is, you almost never find something constructive on Telegram. Without ICOs there are not many reasons for crypto world to continue with Telegram.
+
+{Reactions}
+  
+
+
+[08-Feb-19 03:57 AM] tiamat#9131
+Out Viewblock sister project, Zilliqa, launched mainnet few days ago and it has a lot of troubles  and stall times of more than 1 hour. Not to mention they run some centralized guard nodes and seed nodes. It feels good to have a stable chain like  :logo:
+
+{Reactions}
+  (2) 💪 
+
+
+[05-Mar-19 06:26 AM] tiamat#9131
+@ivhturp can you undo if you send 100 ETH to someone by mistake?
+
+
+
+[24-May-19 02:13 PM] tiamat#9131
+no, please dont vote for another Quer*  
+
+
+
+[27-May-19 02:27 AM] tiamat#9131
+results are stored on arweave
+
+
+
+[27-May-19 02:27 AM] tiamat#9131
+so they cannot be manipulated
+
+
+
+[27-May-19 02:32 AM] tiamat#9131
+audit + permanent/immutable is a nice combination  
+
+
+
+[27-May-19 03:47 AM] tiamat#9131
+Who is ready for Puzzle Weave 3 🤑 ? https://arweave.net/VLJIGuTJewofKx8ad4JYQs93nEuGnkgjrIt_Sd2QPYw
+
+{Reactions}
+  logo 
+
+
+
+
+[17-Apr-19 06:22 AM] tiamat#9131
+it's all about adoption, team itself cannot  do infrastructure+apps+marketing, once more people find out about the project and community grows, cool things will start to pop
+
+
+
+[18-Apr-19 02:46 AM] tiamat#9131
+That would be nice @Marcin. The community should be more involved in spreading the word about Arweave, we have such a nice technology but so very few know about it...
+
+
+
+[29-Jan-19 03:16 PM] tiamat#9131
+seed was in 2017?
+
+
+
+[29-Jan-19 03:17 PM] tiamat#9131
+in ETH they said price was comparable to ico
+
+{Reactions}
+  (2) 
+
+
+[31-Jan-19 07:00 AM] tiamat#9131
+@DaVinci you are a couple of months late in doing your homework  
+
+
+
+[24-Jan-19 02:25 PM] tiamat#9131
+but that has been answered already
+
+
+
+[24-Jan-19 02:26 PM] tiamat#9131
+there is an upcoming release to make integration easier and name - NDA
+
+{Reactions}
+  
+
+
+[30-Jan-19 10:25 AM] tiamat#9131
+Any plan of integration with Ethereum Name Service ?
+
+{Reactions}
+  (3) 
+
+
+[09-Sep-18 08:51 AM] tiamat#9131
+each on a different IP?
+
+
+
+[09-Sep-18 09:05 AM] tiamat#9131
+doesn't polling stil bind port 1984? did you try to connect?
+
+
+
+[09-Sep-18 09:13 AM] tiamat#9131
+you should run 2nd instance on a different port or different IP
+
+
+
+[09-Sep-18 09:14 AM] tiamat#9131
+though different IP might require some modification in the code, I don't remember it as an option
+
+
+
+[01-Oct-18 09:08 AM] tiamat#9131
+did you ever stress test? how many tx/s can the system handle?
+
+
+
+[02-Oct-18 09:21 AM] tiamat#9131
+what is hash_lists directory?
+
+
+
+[05-Oct-18 01:15 AM] tiamat#9131
+we need some backup solution for that, it's not good if everything relies on a single ip, it is not decentralization
+
+
+
+[17-Oct-18 02:08 AM] tiamat#9131
+It's one of the main ideas that it can't be modified, it's permanent.
+
+
+
+[17-Oct-18 02:38 AM] tiamat#9131
+I have seen a paper comparing Arweave with Sia and Storj, but how about Bluzelle? Did you guys look into that?
+
+
+
+[29-Oct-18 09:36 AM] tiamat#9131
+what's the correlation between "network":"arweave.N.1","version":3,"release":15" and N.1.5.0.0-RC-5 ?
+
+
+
+[01-Nov-18 02:40 AM] tiamat#9131
+can we set the wallet which node to use? we can't rely on LB + it's centralized
+
+
+
+[02-Nov-18 04:43 AM] tiamat#9131
+reboot? restarting the process is enough
+
+
+
+[03-Nov-18 08:58 AM] tiamat#9131
+it's about RAM not disk space, you are probably ok
+
+
+
+[13-Nov-18 01:59 PM] tiamat#9131
+screen or nohup
+
+
+
+[05-Jan-19 11:02 AM] tiamat#9131
+I think you will have to wait for a tx to be confirmed before you upload the next
+
+
+
+[05-Jan-19 11:02 AM] tiamat#9131
+from the same account
+
+
+
+[05-Jan-19 11:04 AM] tiamat#9131
+you can get a tx with GET http://<NODEIP>:1984/tx/<TRANSACTION_ID>
+
+
+
+[05-Jan-19 11:04 AM] tiamat#9131
+https://github.com/ArweaveTeam/arweave/blob/master/http_iface_docs.md
+
+
+
+[05-Jan-19 11:41 AM] tiamat#9131
+I have seen some multi-file upload tags on github
+
+
+
+[05-Jan-19 11:41 AM] tiamat#9131
+that should ease these things
+
+
+
+[18-Mar-19 12:29 AM] tiamat#9131
+what is the exact error when you try to open http://wallet-1.nodes.arweave.org:1984/height ?
+
+
+
+[10-Apr-19 04:38 AM] tiamat#9131
+is 1 week enough? we still have "release 19" nodes
+
+
+
+[10-Apr-19 04:45 AM] tiamat#9131
+Also depends if it is emergency (like in the dao hack) or just an upgrade/improvement
+
+
+
+[10-Jul-18 12:54 AM] tiamat#9131
+yes, any news when we'll receive the peer ips?
+
+
+
+[19-Jul-18 11:50 PM] tiamat#9131
+do we know an average daily traffic that a miner is currently doing?
+
+
+
+[26-Jul-18 01:37 AM] tiamat#9131
+I have setup a limit of 30 GB and after reaching this limit, it turned to "not_connected". Is this normal behaviour? Can't it just stay connected and continue to within the 30 limit?
+
+
+
+[29-Jul-18 06:17 AM] tiamat#9131
+is keeping all the blocks mandatory? or we can start with a higher block?
+
+
+
+[30-Jul-18 01:45 AM] tiamat#9131
+is it established already the amount on mining rewards after inflation? right now they are very tiny
+
+
+
+[04-Aug-18 01:19 PM] tiamat#9131
+what is more important, to have more cores/threads or few and very fast?
+
+
+
+[04-Aug-18 02:04 PM] tiamat#9131
+also can we create/join pools?
+
+
+
+[05-Aug-18 06:10 AM] tiamat#9131
+if we run more than 1 miner, do they compete? if yes, then pools are necessary
+
+
+
+[05-Aug-18 06:26 AM] tiamat#9131
+@codybartfast  Generally yes, but I've heard Sam explaining that on Arweave miners work together instead of against each other.
+
+
+
+[05-Aug-18 06:27 AM] tiamat#9131
+It does not matter about peers, you should use more in case some are down, but even if you use only 1, it will get more peers from it
+
+
+
+[05-Aug-18 06:34 AM] tiamat#9131
+Is there a fix block/date for rewards? "2 months" were like a month ago  
+
+
+
+[08-Aug-18 01:01 AM] tiamat#9131
+yes, there seems to be very little consensus
+
+
+
+[08-Aug-18 01:08 AM] tiamat#9131
+my guess is some nodes are too fast compared to others and the block heights are so different that they just can't sync back
+
+
+
+[08-Aug-18 01:08 AM] tiamat#9131
+lets say you start a new node now, the answers are so different about a certain block that it just cannot tell who is right
+
+
+
+[08-Aug-18 07:10 AM] tiamat#9131
+I see some consensus now, but many peers are down
+
+
+
+[19-Aug-18 04:58 AM] tiamat#9131
+What bw do you have? In 1 week I have 2/3 of blocks, probably in the next 3-4 days 100%.
+
+
+
+[20-Aug-18 11:22 AM] tiamat#9131
+you can still mine even if you don't have all blocks
+
+
+
+[20-Aug-18 12:26 PM] tiamat#9131
+rewards are given now for transactions only so if you mine a block you may get something if there were transactions in it
+
+
+
+[25-Aug-18 03:17 AM] tiamat#9131
+@Joel after 1 month of mining I have around 0.6 AR balance, I will just shut them off, there is no point to keep going like this
+
+
+
+[28-Aug-18 01:23 AM] tiamat#9131
+the soft onboarding does not make much sense, why would miners join if there is no incentive ?
+
+
+
+[30-Aug-18 06:27 AM] tiamat#9131
+but why no rewards? we the early testers end up wasting resources for nothing
+
+
+
+[30-Aug-18 06:36 AM] tiamat#9131
+yeah, but it's near 3 months already
+
+
+
+[30-Aug-18 01:14 PM] tiamat#9131
+blocks are much slower now ~1/3 than what it was a month ago
+
+
+
+[31-Aug-18 05:43 AM] tiamat#9131
+I still believe early testers should get some rewards, I think  later more miners with strong hardware will join and we might not get anything.
+
+
+
+[05-Sep-18 12:58 PM] tiamat#9131
+@arweave-india  I don't know how have you calculated but there are approx. 16425 blocks to got until that and we are currently doing only 300 blocks/ day, it will take another 54 days, and if more miners are leaving it will take more
+
+
+
+[05-Sep-18 01:50 PM] tiamat#9131
+ETA for the update?
+
+
+
+[18-Sep-18 07:05 AM] tiamat#9131
+yeah, maybe they have to do with the 1.5 version?
+
+
+
+[24-Sep-18 12:29 PM] tiamat#9131
+I guess the same applies for eth, only it would be more expensive, you can store data there and then download from nodes
+
+
+
+[26-Sep-18 01:19 AM] tiamat#9131
+yes
+
+
+
+[26-Sep-18 01:33 PM] tiamat#9131
+I guess once the beta turns out to be stable, getting blocks will be  much faster since they are so "tiny" now
+
+
+
+[28-Sep-18 01:32 PM] tiamat#9131
+what is node_state_latency ?
+
+
+
+[29-Sep-18 03:44 AM] tiamat#9131
+what is ADR%/NODE and POA RATE ?
+
+
+
+[29-Sep-18 05:13 AM] tiamat#9131
+I counted around 70 nodes but arweave.org says 37 , does it report only those of a specific version  or how does it count?
+
+
+
+[01-Oct-18 06:24 AM] tiamat#9131
+what is net-explorer?
+
+
+
+[01-Oct-18 06:35 AM] tiamat#9131
+If a node  serves a lot of files, will this be counted to Wildfire? Do other nodes know when someone serves files?
+
+
+
+[01-Oct-18 06:39 AM] tiamat#9131
+will 1.5 final version come with more features or just like the beta only with some fine tuning&bug fixes?
+
+
+
+[03-Oct-18 11:51 PM] tiamat#9131
+there are less and less miners, I've seen yesterday 1h+ between blocks, why everyone backs off?
+
+
+
+[05-Oct-18 01:12 PM] tiamat#9131
+that is uploaded files only, blocks are not included
+
+
+
+[06-Oct-18 12:20 AM] tiamat#9131
+I think you are missing the recall blocks
+
+
+
+[06-Oct-18 12:20 AM] tiamat#9131
+it should work after you have all blocks
+
+
+
+[06-Oct-18 04:19 AM] tiamat#9131
+for ipv6 I think you could use some tunneling to have it fixed, but that could add some lag
+
+
+
+[06-Oct-18 09:12 AM] tiamat#9131
+I  think once everyone upgrades to 1.5 you will no longer have this issue
+
+
+
+[06-Oct-18 09:13 AM] tiamat#9131
+I speculate that some settings would be adjusted to get these tiny blocks faster since they won't create so much traffic
+
+
+
+[07-Oct-18 12:40 PM] tiamat#9131
+83 transactions so far today, does this mean anything?
+
+
+
+[07-Oct-18 12:57 PM] tiamat#9131
+I think the number of nodes is more important than hashing power? Did the team ever commented about Sybil attacks and things like this?
+
+
+
+[07-Oct-18 12:58 PM] tiamat#9131
+I'm also very curious if miners will have to serve files to end users or only to other nodes.
+
+
+
+[07-Oct-18 12:59 PM] tiamat#9131
+Once we get some adoption, will our nodes end users requests ? and if yes, will those count in mining score?
+
+
+
+[07-Oct-18 01:11 PM] tiamat#9131
+why did you stop mining? is it temporary or it has to do with regulations? it means you are also not storing files?
+
+
+
+[07-Oct-18 01:21 PM] tiamat#9131
+Yeah, I've heard voices on telegram that you guys were delaying things so your friends can fill their bags from premine, but those poor voices did not even know that rewards are not on.
+
+
+
+[07-Oct-18 01:31 PM] tiamat#9131
+the  censorship-resistant gateway to IA looks very interesting  
+
+
+
+[07-Oct-18 02:22 PM] tiamat#9131
+I suspect you don't have enough blocks, so when recall block is asked you don't have it
+
+
+
+[07-Oct-18 02:22 PM] tiamat#9131
+check how many blocks you have in blocks directory
+
+
+
+[07-Oct-18 02:30 PM] tiamat#9131
+how do know your miner never kicked in? did you grep miner logs/* ?
+
+
+
+[07-Oct-18 02:38 PM] tiamat#9131
+with 10% of blocks it should definitely start from time to time, like once ever 10 blocks  
+
+
+
+[07-Oct-18 02:41 PM] tiamat#9131
+did you try without poll ?
+
+
+
+[07-Oct-18 02:44 PM] tiamat#9131
+I'd try without polling
+
+
+
+[07-Oct-18 02:50 PM] tiamat#9131
+but the wallet_lists is still big
+
+
+
+[07-Oct-18 02:53 PM] tiamat#9131
+hmm, I already have 13G in wallet_lists and I only have 80% of blocks
+
+
+
+[08-Oct-18 01:46 AM] tiamat#9131
+those blocks are old I think when we didn't have difficulty enforcing
+
+
+
+[08-Oct-18 02:12 PM] tiamat#9131
+is there a way to clean invalid blocks and convert long format to short format locally?
+
+
+
+[08-Oct-18 02:31 PM] tiamat#9131
+after you start the miner, you end up with something like: started_auto_updater
+    watch_address:
+
+
+
+[08-Oct-18 02:31 PM] tiamat#9131
+if you pus enter, you will get a terminal
+
+
+
+[08-Oct-18 02:31 PM] tiamat#9131
+*push
+
+
+
+[08-Oct-18 02:32 PM] tiamat#9131
+I guess the cleanup with start from the first block and delete duplicates/higher invalid blocks and convert to tiny format
+
+
+
+[08-Oct-18 03:15 PM] tiamat#9131
+you seem to be getting into lots of issues, maybe consider restarting with a latest fresh install?
+
+
+
+[08-Oct-18 03:21 PM] tiamat#9131
+cleanup seems to be working nice, I see a lot of: rewrote_block: <<"cjnka .... in logs
+
+
+
+[08-Oct-18 03:29 PM] tiamat#9131
+meanwhile you should give it a try without polling, I know I repeat myself  
+
+
+
+[08-Oct-18 03:29 PM] tiamat#9131
+ah, ok
+
+
+
+[08-Oct-18 03:30 PM] tiamat#9131
+RC-1 fixed some fork issue
+
+
+
+[08-Oct-18 03:33 PM] tiamat#9131
+why would a new ip desync? you only should restart the node when IP changes, maybe use a crontab?
+
+
+
+[09-Oct-18 02:29 AM] tiamat#9131
+copied txs, blocks and wallet_lists?
+
+
+
+[09-Oct-18 08:33 AM] tiamat#9131
+I get like 1 conversion/second
+
+
+
+[09-Oct-18 08:33 AM] tiamat#9131
+with ssd
+
+
+
+[09-Oct-18 02:04 PM] tiamat#9131
+mine is running from 24h and has reduced the blocks size from 140 GB to 30 and still going
+
+
+
+[11-Oct-18 07:39 AM] tiamat#9131
+Actually the process is very easy, 1)get he files with git and 2) start the node
+
+
+
+[11-Oct-18 07:39 AM] tiamat#9131
+I don't think team should waste valuable time on this
+
+
+
+[11-Oct-18 09:08 AM] tiamat#9131
+Of course a GUI can't hurt, but I don't it is a top priority right now. For many, fine tuning is much easier done in console/config files than in GUI.  The number of miners will grow after rewards will be enabled.
+
+
+
+[11-Oct-18 09:09 AM] tiamat#9131
+Arweave is a revolutionary platform that can only grow organically, not over night.
+
+
+
+[11-Oct-18 11:49 PM] tiamat#9131
+yeah, and the fact that it runs within the weave makes it very cool  
+
+
+
+[13-Oct-18 03:44 AM] tiamat#9131
+to see if you are synced or not, open a  browser and check <yourip>:1984
+
+
+
+[13-Oct-18 03:44 AM] tiamat#9131
+on a different tab, open an ip from the peer list
+
+
+
+[13-Oct-18 03:44 AM] tiamat#9131
+and compare block heights
+
+
+
+[13-Oct-18 03:54 AM] tiamat#9131
+you will be connected to more peers anyeay, even if you specify just one in miner, it will query that specific one for more
+
+
+
+[13-Oct-18 04:00 AM] tiamat#9131
+it must be something with your system, is it ubuntu? I don't see any issues following some 3 simple steps: install erlang, grab arweave from github, run the ./arweave-server command
+
+
+
+[13-Oct-18 04:00 AM] tiamat#9131
+but with polling there could be some lag in getting the latest block
+
+
+
+[13-Oct-18 04:03 AM] tiamat#9131
+you can not mine higher blocks since the min difficulty enforcing which happened 2 months ago or so
+
+
+
+[13-Oct-18 04:06 AM] tiamat#9131
+what's your current  block height?
+
+
+
+[13-Oct-18 04:07 AM] tiamat#9131
+the block height of your node
+
+
+
+[13-Oct-18 04:09 AM] tiamat#9131
+tiamat
+:
+to see if you are synced or not, open a browser and check <yourip>:1984
+
+
+
+[13-Oct-18 04:12 AM] tiamat#9131
+then it is either not running or you have some kind of firewall
+
+
+
+[13-Oct-18 04:13 AM] tiamat#9131
+if you check from the same machine you could try http://127.0.0.1:1984
+
+
+
+[13-Oct-18 04:15 AM] tiamat#9131
+you are like 2 blocks behind
+
+
+
+[13-Oct-18 04:19 AM] tiamat#9131
+maybe because of polling you are not announcing them as fast as needed
+
+
+
+[13-Oct-18 04:22 AM] tiamat#9131
+when I was running in polling mode, I was very often 1 block behind,  I don't know if this was fixed already or not, or if it is normal
+
+
+
+[13-Oct-18 04:25 AM] tiamat#9131
+yeah, that could be a workaround for now
+
+
+
+[13-Oct-18 04:25 AM] tiamat#9131
+if we support ipv6 you may want to look at tunnelbroker.net
+
+
+
+[13-Oct-18 04:27 AM] tiamat#9131
+watch address is the same for everyone I guess
+
+
+
+[13-Oct-18 04:28 AM] tiamat#9131
+watch_address: <<"8L1Nm ...
+
+
+
+[13-Oct-18 04:28 AM] tiamat#9131
+
+I guess it's some internal identifier like 127.0.0.1
+
+
+
+[13-Oct-18 04:43 AM] tiamat#9131
+that is because you have some firewall?
+
+
+
+[13-Oct-18 04:43 AM] tiamat#9131
+either on the router or on the machine itself
+
+
+
+[13-Oct-18 05:05 AM] tiamat#9131
+those extra are not valid blocks
+
+
+
+[13-Oct-18 05:05 AM] tiamat#9131
+they are probably from forks, most likely before the diff enforcement
+
+
+
+[14-Oct-18 12:16 PM] tiamat#9131
+the script on the website is not very accurate, it always showed less nodes
+
+
+
+[15-Oct-18 12:33 AM] tiamat#9131
+@arweave-sam it seems like the latest update about forks fixed a lot of sync issues    however I was wondering if there is or if there will be a test net where we could do some stress tests?
+
+
+
+[15-Oct-18 12:53 AM] tiamat#9131
+you once said that with 2.0 wallet_lists will get smaller, significantly? could you give a %?
+
+
+
+[15-Oct-18 04:33 AM] tiamat#9131
+about port, I see a lot of "1984" in ar_http_iface.erl
+
+
+
+[15-Oct-18 04:33 AM] tiamat#9131
+maybe that should be replaced with DEFAULT_HTTP_IFACE_PORT ?
+
+
+
+[15-Oct-18 07:33 AM] tiamat#9131
+yes, also very interested in democratic content policy
+
+
+
+[15-Oct-18 08:26 AM] tiamat#9131
+do you have the same number of files in ./blocks as in ./wallet_lists ?
+
+
+
+[15-Oct-18 08:49 AM] tiamat#9131
+sad to see you go, but the dynamic IP is not a good environment for mining, be it arweave or anything else
+
+
+
+[15-Oct-18 09:18 AM] tiamat#9131
+yeah, but I think I got the same error when I moved some block files without their wallet_lists pair
+
+
+
+[15-Oct-18 09:19 AM] tiamat#9131
+Sam said that in the next version(2) this won't be an issue any longer because wallet_lists will have only last 50 blocks
+
+
+
+[15-Oct-18 01:47 PM] tiamat#9131
+good to see you back Marcin  
+
+
+
+[15-Oct-18 01:52 PM] tiamat#9131
+viewblock.io/arweave
+
+
+
+[16-Oct-18 01:20 AM] tiamat#9131
+you will never need only 50 blocks, you will always be asked for a recall block if you want to mine
+
+
+
+[16-Oct-18 01:23 AM] tiamat#9131
+and yeah, since recall block is a condition of mining, I don't think it's in the decentralization spirit, not fair if the team would get involved in spreading zipped blocks, all they should do is to improve block distribution
+
+
+
+[16-Oct-18 01:24 AM] tiamat#9131
+we are lucky to have direct communication with the team, very few projects have this, so I don't think it's wise to put pressure
+
+
+
+[16-Oct-18 01:26 AM] tiamat#9131
+you mean deduplicated between nodes, like sharding? probably only hosted files
+
+
+
+[16-Oct-18 01:27 AM] tiamat#9131
+if wallet_lists will contain only last 50 blocks in version 2, and since we already have tiny blocks, the data will be much smaller, but the stored files should grow
+
+
+
+[16-Oct-18 01:28 AM] tiamat#9131
+and at that point, each miner will choose what to keep
+
+
+
+[16-Oct-18 01:28 AM] tiamat#9131
+btw, version 2 is not RC2, we are still on 1.5
+
+
+
+[16-Oct-18 01:44 AM] tiamat#9131
+It's very important if things work well on the protocol layer so to speak, how files look on disk is not that important, like you said, miners could change the way they are at some point.
+
+
+
+[16-Oct-18 01:48 AM] tiamat#9131
+yeah, in the later stages I'd probably like to keep files which are not often accessed in a big slow hdd, while the high traffic data would be on ssds
+
+
+
+[16-Oct-18 01:53 AM] tiamat#9131
+I'm very excited by this project because the value is directly linked in the coins. For instance Ethereum is a great project, but you can run smart contracts and use the network at highest potential with only a tiny amount of ETH.
+
+
+
+[16-Oct-18 01:54 AM] tiamat#9131
+with AR if you have only a tiny amount, you won't be able to store much, so you will need more
+
+
+
+[16-Oct-18 01:54 AM] tiamat#9131
+however, it will be a challenge to keep it well balanced
+
+
+
+[16-Oct-18 08:59 AM] tiamat#9131
+It seems like the number of miners is growing
+
+
+
+[16-Oct-18 08:59 AM] tiamat#9131
+100+ already
+
+
+
+[16-Oct-18 02:14 PM] tiamat#9131
+@Ivan  a quick fix would be to use symbolic links, like for sdb1 blocks + wallet_lists and the hosted files on sdc1, but for something more advance you would have to write a solution yourself at this point
+
+
+
+[19-Oct-18 12:10 PM] tiamat#9131
+original list was a NO for me also, but with this it joined in no time
+
+
+
+[19-Oct-18 01:57 PM] tiamat#9131
+did you try connecting  to different nodes?
+
+
+
+[19-Oct-18 02:37 PM] tiamat#9131
+how much ram?
+
+
+
+[19-Oct-18 02:37 PM] tiamat#9131
+@Mike
+
+
+
+[20-Oct-18 03:42 AM] tiamat#9131
+@patrick changing old blocks is not possible, you probably mined them on a fork?
+
+
+
+[20-Oct-18 07:53 AM] tiamat#9131
+hmm... I think I was not able to mine blocks for which I did not have the WL
+
+
+
+[20-Oct-18 07:53 AM] tiamat#9131
+recall
+
+
+
+[20-Oct-18 08:02 AM] tiamat#9131
+you should run on different ports, that there might be some small issues with that that need to be fixed
+
+
+
+[20-Oct-18 08:06 AM] tiamat#9131
+Sam, with internal nodes, aren't we getting some issues? like our nodes trying to connect to inexistent IPs?
+
+
+
+[20-Oct-18 08:06 AM] tiamat#9131
+*unreacheable
+
+
+
+[20-Oct-18 08:08 AM] tiamat#9131
+yeah
+
+
+
+[20-Oct-18 08:08 AM] tiamat#9131
+peer lists with IPs from private networks
+
+
+
+[20-Oct-18 01:00 PM] tiamat#9131
+I guess it depends if you want to be 99.9% or 99.99999999999% sure  
+
+
+
+[20-Oct-18 01:29 PM] tiamat#9131
+@Mike I expect mining to get harder because as time goes by, more participants get to have the recall block
+
+
+
+[20-Oct-18 01:58 PM] tiamat#9131
+@Mike and the only change was to update to RC3b?
+
+
+
+[21-Oct-18 02:26 AM] tiamat#9131
+when it is mining it will use all cpus unless you specify to use less with maxminers option
+
+
+
+[21-Oct-18 02:35 AM] tiamat#9131
+without =
+
+
+
+[21-Oct-18 02:35 AM] tiamat#9131
+also note it's per core or hyperthread
+
+
+
+[21-Oct-18 02:35 AM] tiamat#9131
+not per cpu
+
+
+
+[21-Oct-18 02:35 AM] tiamat#9131
+if you have 2 cpus, each with 4 cores you may want to start 8 mining processes
+
+
+
+[21-Oct-18 03:06 AM] tiamat#9131
+max_miners
+
+
+
+[21-Oct-18 03:06 AM] tiamat#9131
+max_miners (num)              The maximum number of mining processes.
+
+
+
+[21-Oct-18 07:52 AM] tiamat#9131
+I don't think it means it's invalid, I think someone found that block number before you and you simply didn't know about it. And his block was accepted by the majority of the peers.
+
+
+
+[21-Oct-18 07:53 AM] tiamat#9131
+but if this happens very often, I think the communication between peers should be improved
+
+
+
+[21-Oct-18 07:54 AM] tiamat#9131
+Well, I think the definition is like you did something wrong when you created it or you tried to cheat with the puzzle solution  
+
+
+
+[22-Oct-18 12:50 AM] tiamat#9131
+the thing is you don't know right away that your block was not accepted
+
+
+
+[22-Oct-18 07:47 AM] tiamat#9131
+disk_almost_full sounds like disk almost full   how much space do you have left?
+
+
+
+[22-Oct-18 07:51 AM] tiamat#9131
+Erlang version, OS? it looks the same error as you had before
+
+
+
+[22-Oct-18 07:57 AM] tiamat#9131
+yeah, a peak in memory usage, not necessarily concerning
+
+
+
+[22-Oct-18 07:58 AM] tiamat#9131
+@woombash so you upgraded Erlang,  now I'd try to get a new clean Arweave from github
+
+
+
+[22-Oct-18 08:24 AM] tiamat#9131
+what is your start command line?
+
+
+
+[22-Oct-18 08:29 AM] tiamat#9131
+yes, @Vilenarios I also noticed an increase, I wonder if it is because the network has more nodes or if it's something else
+
+
+
+[22-Oct-18 08:32 AM] tiamat#9131
+@woombash it seems to me like a start command line issue
+
+
+
+[22-Oct-18 08:43 AM] tiamat#9131
+you should choose a peer that you trust and that has the  same  version as you  
+
+
+
+[22-Oct-18 08:44 AM] tiamat#9131
+but trust is much more important when you do operations with AR like using your wallet, when running a  node I don't think you can get much harm
+
+
+
+[22-Oct-18 09:10 AM] tiamat#9131
+@Mike if you select a peer when connecting, you will get from it a bigger list of peers and you will connect with those, so if your starting peer enters a fork by itself, you should be ok, were you also 200 blocks behind?
+
+
+
+[22-Oct-18 10:53 AM] tiamat#9131
+you could open a github issue ticket and request different log level option
+
+
+
+[22-Oct-18 11:06 AM] tiamat#9131
+how about the memory ?  few days/weeks ago beam was sitting below 5% now jumping often to 30%
+
+
+
+[22-Oct-18 11:06 AM] tiamat#9131
+and many complained about this
+
+
+
+[22-Oct-18 11:06 AM] tiamat#9131
+any reason?
+
+
+
+[22-Oct-18 11:12 AM] tiamat#9131
+To me it's concerning because I found it once with 100 blocks behind and a high watermark alert, the system has 32 GB
+
+
+
+[22-Oct-18 11:13 AM] tiamat#9131
+and it was pretty stuck, if it happens again I will take a closer look
+
+
+
+[23-Oct-18 01:36 AM] tiamat#9131
+yes, it will sync
+
+
+
+[23-Oct-18 01:37 AM] tiamat#9131
+@woombash how did it stop working? you tried to restart?
+
+
+
+[23-Oct-18 01:37 AM] tiamat#9131
+@Mike 1 block behind, are you in polling mode?
+
+
+
+[23-Oct-18 10:20 AM] tiamat#9131
+ 
+
+
+
+[23-Oct-18 10:35 AM] tiamat#9131
+VB is generally behind, not ahead
+
+
+
+[23-Oct-18 10:36 AM] tiamat#9131
+it can take your reward back only if it was on a fork
+
+
+
+[24-Oct-18 06:56 AM] tiamat#9131
+@ATLAS yes, PoW can be somehow centralized, but the same applies for PoS where the richest in coins, not in hardware make the most. Masternodes model is even more centralized.  Proof of Authority also.
+
+
+
+[24-Oct-18 06:59 AM] tiamat#9131
+even if a coin is centralized around miners, like many say about Bitcoin, I don't think that is necessarily a problem, because if miners mess up the network, their business is gone, so they have to do their best to make things work well
+
+
+
+[24-Oct-18 07:01 AM] tiamat#9131
+ah, sorry
+
+
+
+[24-Oct-18 07:01 AM] tiamat#9131
+it was not you complaining about centralization  
+
+
+
+[24-Oct-18 07:02 AM] tiamat#9131
+the  thing is, once the Arweave gets traction, we won't be able to mine, because there will be datacenters dedicated to do this  
+
+
+
+[24-Oct-18 07:04 AM] tiamat#9131
+I think viewblock waits for one extra confirmation? I often see it behind
+
+
+
+[24-Oct-18 07:06 AM] tiamat#9131
+I think this is also because many nodes don't have all blocks, once the majority of nodes have everything, maybe things go smooth?
+
+
+
+[24-Oct-18 07:06 AM] tiamat#9131
+If a node keep asking for blocks, it probably loses WF score?
+
+
+
+[24-Oct-18 07:10 AM] tiamat#9131
+you can get all the IPs yourself
+
+
+
+[24-Oct-18 07:10 AM] tiamat#9131
+just connect to each peer and check for /peers
+
+
+
+[24-Oct-18 07:10 AM] tiamat#9131
+someone here even had a script for this, he was showing us stats
+
+
+
+[24-Oct-18 07:11 AM] tiamat#9131
+I think fork recoveries should be quicker, it's normal and logical to wait for blocks when you have very few, but when you are 5 blocks behind you should be able to sync as quick as possible
+
+
+
+[24-Oct-18 07:13 AM] tiamat#9131
+but @Mike, if that block will be accepted, what will prevent a miner to already begin the search so he has a chance to be faster? he has nothing to do anyway while waiting
+
+
+
+[24-Oct-18 07:15 AM] tiamat#9131
+all these things have to be enforced on Protocol layer, not on client, it would be so easy if it was on client
+
+
+
+[24-Oct-18 07:22 AM] tiamat#9131
+somehow it does fix things, a few fast nodes are leading, only if we could be among them  
+
+
+
+[24-Oct-18 07:28 AM] tiamat#9131
+we should have a node list marketplace  
+
+
+
+[24-Oct-18 07:29 AM] tiamat#9131
+5 AR and I give you the best node
+
+
+
+[24-Oct-18 10:01 AM] tiamat#9131
+intels have hyperthreading
+
+
+
+[24-Oct-18 10:01 AM] tiamat#9131
+yes, they are faster but they don't work as good when all cores are used
+
+
+
+[24-Oct-18 10:02 AM] tiamat#9131
+on intel you can have 4 cores lets say and 8 vcpus
+
+
+
+[24-Oct-18 10:03 AM] tiamat#9131
+but when you start using your 5th vcpu, it will not work as good as the first 4
+
+
+
+[24-Oct-18 10:03 AM] tiamat#9131
+because it does not have a dedicated core
+
+
+
+[24-Oct-18 10:05 AM] tiamat#9131
+it does not if the 2700 has 16 threads  and the 6600k only 8
+
+
+
+[24-Oct-18 10:11 AM] tiamat#9131
+on many operations the threads lock the core, so if you have 2 ht doing the same things they will split the resources
+
+
+
+[24-Oct-18 10:11 AM] tiamat#9131
+turning it off should not help overall, you will just have less vcpus but the speed of them will be more consistent
+
+
+
+[24-Oct-18 11:59 AM] tiamat#9131
+BV is messed up
+
+
+
+[24-Oct-18 12:00 PM] tiamat#9131
+VB
+
+
+
+[24-Oct-18 12:00 PM] tiamat#9131
+I have seen transaction with many confirmations but no wallet balance update
+
+
+
+[24-Oct-18 12:01 PM] tiamat#9131
+extension works
+
+
+
+[24-Oct-18 12:01 PM] tiamat#9131
+but VB will not update balances
+
+
+
+[24-Oct-18 12:02 PM] tiamat#9131
+haha
+
+
+
+[24-Oct-18 12:23 PM] tiamat#9131
+I see KYi-W
+
+
+
+[24-Oct-18 12:23 PM] tiamat#9131
+on that block
+
+
+
+[24-Oct-18 12:33 PM] tiamat#9131
+VB has buggy wallet balances, I think they don't update well from forks
+
+
+
+[24-Oct-18 12:34 PM] tiamat#9131
+like if there are more blocks on the same height they randomly pick
+
+
+
+[24-Oct-18 12:34 PM] tiamat#9131
+or something
+
+
+
+[24-Oct-18 12:35 PM] tiamat#9131
+well, they have wrong balance on KYi-WkdbVo92pJVTZ4MzM7l1b_WB_BlZXNOXKG4ZcME and I can show you another example if you wish
+
+
+
+[24-Oct-18 12:36 PM] tiamat#9131
+VB
+
+
+
+[24-Oct-18 12:36 PM] tiamat#9131
+so VB either does not sync their web DB with their node or they are buggy when there are more blocks saved for the same height
+
+
+
+[24-Oct-18 12:38 PM] tiamat#9131
+@Mike you wonder about BTC? I tell you only projects that use ERC20 and no product don't have issues  
+
+
+
+[24-Oct-18 12:45 PM] tiamat#9131
+Maybe a faster fork recovery would be good, I understand some nodes should be delayed when they keep asking for old nodes, but when there is a fork and some part of the network is 3 blocks ahead, things should happen much faster
+
+
+
+[25-Oct-18 03:48 AM] tiamat#9131
+is it a trend now for miners to get funny addresses? I see uzi, wine, Bro_OP, no F* yet though
+
+
+
+[25-Oct-18 09:34 AM] tiamat#9131
+'NodeWorkerERROR': {{badrecord,gs_state},
+
+
+
+[25-Oct-18 09:34 AM] tiamat#9131
+and node stopped working and memory usage went 80%
+
+
+
+[25-Oct-18 09:34 AM] tiamat#9131
+[{ar_gossip,already_heard,2,
+                             [{file,"src/ar_gossip.erl"},{line,121}]},
+
+
+
+[26-Oct-18 12:47 AM] tiamat#9131
+I see most nodes are synced lately, I guess the latest changes made improvements
+
+
+
+[26-Oct-18 05:18 AM] tiamat#9131
+yes,  you can use Centos as well
+
+
+
+[26-Oct-18 05:19 AM] tiamat#9131
+it worked on ARM arch as well
+
+
+
+[26-Oct-18 09:47 AM] tiamat#9131
+but having a block, means you need  to have the associated tx as well, where the uploads are actually stored, not just the tiny blocks, is this correct @arweave-sam  ?
+
+
+
+[27-Oct-18 11:55 AM] tiamat#9131
+{ar_node_worker,handle_gossip,2,
+                             [{file,"src/ar_node_worker.erl"},{line,199}]},
+                         {ar_node_worker,server,2,
+                             [{file,"src/ar_node_worker.erl"},{line,56}]}]}
+
+
+
+[27-Oct-18 11:56 AM] tiamat#9131
+it happened again and node remains stuck
+
+
+
+[27-Oct-18 11:57 AM] tiamat#9131
+@arweave-sam what is with hash_lists folder? can we regenerate it?
+
+
+
+[28-Oct-18 11:52 AM] tiamat#9131
+a node got stuck with:
+
+
+
+[28-Oct-18 11:52 AM] tiamat#9131
+{badarith,[{ar_node_utils,calculate_reward_pool,4,
+                          [{file,"src/ar_node_utils.erl"},{line,113}]},
+           {ar_block,generate_block_from_shadow,2,
+
+
+
+[29-Oct-18 08:45 AM] tiamat#9131
+git fetch; git checkout N.1.5.0.0-RC-5
+
+
+
+[30-Oct-18 05:15 AM] tiamat#9131
+can't we just force a sync when this happens?
+
+
+
+[30-Oct-18 05:15 AM] tiamat#9131
+90 minutes without network data it means we should restart
+
+
+
+[30-Oct-18 05:15 AM] tiamat#9131
+actually that is what I did to fix
+
+
+
+[30-Oct-18 05:16 AM] tiamat#9131
+I got this on a machine running behind a bridge, I don't know why it happened because the network was working
+
+
+
+[30-Oct-18 05:16 AM] tiamat#9131
+I was not using polling
+
+
+
+[30-Oct-18 05:17 AM] tiamat#9131
+port 1984 opened, bridge doing its job
+
+
+
+[30-Oct-18 05:17 AM] tiamat#9131
+I'm curious where @Vilenarios got it, if it's the same situation
+
+
+
+[30-Oct-18 08:19 AM] tiamat#9131
+when a node has to serve a file, it needs public IP
+
+
+
+[30-Oct-18 08:19 AM] tiamat#9131
+however, running nodes on different ports should be allowed
+
+
+
+[30-Oct-18 08:19 AM] tiamat#9131
+also SSL communication would be nice
+
+
+
+[31-Oct-18 11:30 AM] tiamat#9131
+stopped in what way? stuck or delayed?
+
+
+
+[31-Oct-18 11:33 AM] tiamat#9131
+did you monitor your IP:1984 ? height?
+
+
+
+[31-Oct-18 11:34 AM] tiamat#9131
+open a browser http://<yourip>:1984
+
+
+
+[31-Oct-18 11:35 AM] tiamat#9131
+you are running on your local machine? or remote?
+
+
+
+[31-Oct-18 11:36 AM] tiamat#9131
+you need to check the connection of your virtualbox with outside world
+
+
+
+[31-Oct-18 11:36 AM] tiamat#9131
+maybe try polling mode first
+
+
+
+[31-Oct-18 11:36 AM] tiamat#9131
+yeah but port 1984 needs to be open+forwarded
+
+
+
+[31-Oct-18 11:37 AM] tiamat#9131
+otherwise use polling
+
+
+
+[31-Oct-18 11:37 AM] tiamat#9131
+but with polling mining might not be as efficient
+
+
+
+[31-Oct-18 11:42 AM] tiamat#9131
+yeah, benchmark will keep one core busy
+
+
+
+[01-Nov-18 04:16 AM] tiamat#9131
+do you have all blocks?
+
+
+
+[01-Nov-18 04:59 AM] tiamat#9131
+@Vilenarios that was not the case weeks ago, I wonder if it's because we have more nodes on the network or new version has some issue, beam.smp takes now more resources even when not mining
+
+
+
+[04-Nov-18 01:01 PM] tiamat#9131
+some kind of burst maybe? uzi has 7 blocks in a row, then nothing for 20-30
+
+
+
+[07-Nov-18 02:47 AM] tiamat#9131
+why is VB showing so many nodes?
+
+
+
+[07-Nov-18 03:28 AM] tiamat#9131
+WARNING: No foreign blocks received from network. Please check your internet connection.
+
+
+
+[08-Nov-18 03:34 AM] tiamat#9131
+wow, the memory usage improvement is amazing in release 17, I hope I won't get that no block received annoying issue  anymore
+
+
+
+[08-Nov-18 03:44 AM] tiamat#9131
+taking only 7% on 16 GB
+
+
+
+[08-Nov-18 03:45 AM] tiamat#9131
+in earlier releases it was in the +40% area
+
+
+
+[08-Nov-18 03:47 AM] tiamat#9131
+what will 1.6 bring?
+
+
+
+[08-Nov-18 03:48 AM] tiamat#9131
+also why do we have different versioning system between nodes and github ?
+
+
+
+[08-Nov-18 01:32 PM] tiamat#9131
+@Marcin When people will start using the weave for storing lots of files, some big miners will have a different file policy than you, so they won't have all blocks because they deny some kind of files (wikileaks let's say). When you will need such recall blocks, there will be less miners and higher chances. So good signs for decentralization  
+
+
+
+[08-Nov-18 01:36 PM] tiamat#9131
+what happened with uzi? no more 10 blocks combos?
+
+
+
+[09-Nov-18 12:15 PM] tiamat#9131
+good point baz
+
+
+
+[09-Nov-18 12:16 PM] tiamat#9131
+theoretically a longer chain could come up tomorrow and you can have 10.000 last blocks being invalid
+
+
+
+[10-Nov-18 12:39 AM] tiamat#9131
+@arweave-sam  release 17 works so much better, I hardly noticed any fork since update
+
+
+
+[12-Nov-18 04:49 AM] tiamat#9131
+@ivhturp  my record is 23 GB
+
+
+
+[13-Nov-18 02:44 AM] tiamat#9131
+@Marcin difficulty increases when new blocks are found too quickly and decreases when they are found too slow
+
+
+
+[13-Nov-18 03:07 AM] tiamat#9131
+it seems to work very well lately, as we have ~620 blocks/day, it was fluctuating much a few weeks ago
+
+
+
+[15-Nov-18 03:01 AM] tiamat#9131
+are you running the latest version? I had those on previous versions, not anymore
+
+
+
+[16-Nov-18 02:20 AM] tiamat#9131
+did you restart the miner after latest checkout? @ivhturp
+
+
+
+[16-Nov-18 02:21 AM] tiamat#9131
+again, I had exactly the same issue but since RC-6 it runs smooth
+
+
+
+[16-Nov-18 08:26 AM] tiamat#9131
+yeah, it can be an issue, start with a clean copy, not even blocks/wallets, now is pretty fast and you will get them easier back
+
+
+
+[18-Nov-18 12:59 AM] tiamat#9131
+release 17 is amazing, no restart in more than one week 😌
+
+
+
+[21-Nov-18 11:24 AM] tiamat#9131
+if port 1984 is closed you can't serve files, so how do you help the network?
+
+
+
+[24-Nov-18 02:09 PM] tiamat#9131
+You mean this "[Stage 1/3]" ? That's because you don't have the blocks yet, it's normal.
+
+
+
+[24-Nov-18 11:59 PM] tiamat#9131
+Are you running the latest release?
+
+
+
+[01-Dec-18 08:11 AM] tiamat#9131
+use 'make log' and see what's happening
+
+
+
+[01-Dec-18 08:49 AM] tiamat#9131
+@prk and after you start the miner what messages do you get?
+
+
+
+[02-Dec-18 08:40 AM] tiamat#9131
+only one? lucky you
+
+
+
+[02-Dec-18 08:53 AM] tiamat#9131
+I remember there was a javascript tool to generate cmd line
+
+
+
+[02-Dec-18 09:01 AM] tiamat#9131
+sudo apt-get install build-essential
+
+
+
+[02-Dec-18 09:01 AM] tiamat#9131
+then retry
+
+
+
+[02-Dec-18 09:03 AM] tiamat#9131
+only if that peer goes down and you restart the miner
+
+
+
+[02-Dec-18 09:03 AM] tiamat#9131
+it gets more peers
+
+
+
+[02-Dec-18 09:03 AM] tiamat#9131
+even if starts with 1
+
+
+
+[02-Dec-18 09:13 AM] tiamat#9131
+you need to wait a while until it gets the recall blocks needed
+
+
+
+[02-Dec-18 09:13 AM] tiamat#9131
+you are ok for now
+
+
+
+[02-Dec-18 09:13 AM] tiamat#9131
+just make sure it remains running after you disconnect from the console (did you use screen or nohup?)
+
+
+
+[03-Dec-18 05:06 AM] tiamat#9131
+@Goldberg | StakeSquid I guess it can hurt when restarting if many are down you need to wait for timeouts(not sure if it uses parallel sockets yet?)
+
+
+
+[04-Dec-18 11:20 AM] tiamat#9131
+who won the contest?
+
+
+
+[04-Dec-18 11:21 AM] tiamat#9131
+I remember a contest for block 65700 and one for best address before 95000, who won them?
+
+
+
+[04-Dec-18 11:21 AM] tiamat#9131
+and what were the rewards
+
+
+
+[08-Dec-18 03:04 AM] tiamat#9131
+yeah, team should come up with some bugs to make us active again
+
+{Reactions}
+😝 (2) 
+
+
+[11-Dec-18 05:50 AM] tiamat#9131
+are you polling?
+
+
+
+[22-Dec-18 12:16 AM] tiamat#9131
+@ivhturp  1) uploader chooses to encrypt or not, if he encrypts then that data is pretty much private because it is not accessible without decryption first 2) there is a content policy which each miner can enforce
+
+
+
+[22-Dec-18 12:17 AM] tiamat#9131
+you can upload encrypted data right now on any cloud even if it's  completely illegal because cloud does not know what you have there
+
+
+
+[24-Dec-18 07:39 AM] tiamat#9131
+welcome to PoW, where you can have 3 blocks withing seconds and then wait 10 minutes for the 4th
+
+
+
+[24-Dec-18 07:45 AM] tiamat#9131
+but that 2h gap is kind of concerning
+
+
+
+[24-Dec-18 07:45 AM] tiamat#9131
+was it really a bad luck PoW or something else?
+
+
+
+[24-Dec-18 08:06 AM] tiamat#9131
+there are 4 nodes in a fork, about 200 blocks ago
+
+
+
+[27-Dec-18 01:10 AM] tiamat#9131
+maybe it should use some api calls to buy additional space from cloud or order more ssds from Amazon  
+
+
+
+[29-Dec-18 12:19 PM] tiamat#9131
+@Marcin I have to agree that illicit data needs to be addressed asap because you never know when it starts to cause issues
+
+
+
+[29-Dec-18 12:19 PM] tiamat#9131
+right now it is the Sword of Damocles
+
+
+
+[29-Dec-18 12:23 PM] tiamat#9131
+but overall we are still doing pretty good, I follow other projects where networks keep hanging, teams come up with centralized fixes
+
+
+
+[29-Dec-18 12:23 PM] tiamat#9131
+even Zilliqa has a lot of issues and delays
+
+
+
+[01-Jan-19 08:37 AM] tiamat#9131
+anyone can run a miner
+
+
+
+[01-Jan-19 08:37 AM] tiamat#9131
+you don't need permission from team@
+
+
+
+[01-Jan-19 08:38 AM] tiamat#9131
+and yeah, a link to a mining guide would be better than email to blabla for mining guide
+
+
+
+[01-Jan-19 08:39 AM] tiamat#9131
+like @2072 [ANFRA] I think they only want to collect miner emails to contact them in case of an update/fork
+
+
+
+[02-Jan-19 04:27 AM] tiamat#9131
+~2 minutes
+
+
+
+[02-Jan-19 07:39 AM] tiamat#9131
+what was the final answer for cost per GB? It seems to me ~22 USD / GB @tierralibre
+
+
+
+[02-Jan-19 07:47 AM] tiamat#9131
+and yeah, it's going to be funny on exchange, AR is one of the very few coins I know with intrinsic value,  Golem will be like this, Factom maybe and those supply chains coins
+
+
+
+[02-Jan-19 08:25 AM] tiamat#9131
+a part goes to whoever mines the block and a part is distributed gradually to whoever hosts it
+
+
+
+[02-Jan-19 08:25 AM] tiamat#9131
+there is a pending pool
+
+
+
+[02-Jan-19 09:48 AM] tiamat#9131
+@Vilenarios 4 cpu you mean 4x CPU or 4 cores or 4 threads?
+
+
+
+[02-Jan-19 09:48 AM] tiamat#9131
+isnt 150 usd a bit too much for that?
+
+
+
+[02-Jan-19 09:49 AM] tiamat#9131
+I run 32 threads for less than that
+
+
+
+[02-Jan-19 09:50 AM] tiamat#9131
+and I get at least 5 blocks/day
+
+
+
+[02-Jan-19 10:12 AM] tiamat#9131
+sorry, I was speaking about dedicated server not cloud
+
+
+
+[02-Jan-19 10:19 AM] tiamat#9131
+once we'll list on exchanges, mining will be over for us, Asians have thousands of servers, if it's profitable they jump in immediately
+
+
+
+[02-Jan-19 10:21 AM] tiamat#9131
+it probably has weak or not dedicated cpu if you mined only 50 AR
+
+
+
+[02-Jan-19 10:21 AM] tiamat#9131
+even my 2 core atom does better
+
+
+
+[02-Jan-19 10:23 AM] tiamat#9131
+@Vilenarios I have seen other projects, they can run thousands of miners in a couple of days if it's profitable
+
+
+
+[02-Jan-19 10:24 AM] tiamat#9131
+I think they operate EU and US servers/IPs
+
+
+
+[02-Jan-19 10:26 AM] tiamat#9131
+One example is our viewblock sister project Zilliqa , no rewards for testnet but thousands of miners, when mainnet will launch it will be crazy
+
+
+
+[04-Jan-19 07:41 AM] tiamat#9131
+you need fast connection + fast cpu
+
+
+
+[04-Jan-19 07:41 AM] tiamat#9131
+but you can't mine without enough space, so careful what vps plan you choose
+
+
+
+[05-Jan-19 06:44 AM] tiamat#9131
+you probably used wrong peer
+
+
+
+[05-Jan-19 06:45 AM] tiamat#9131
+if it  does not connect to network and port is open, most likely you have used a wrong peer
+
+
+
+[06-Jan-19 04:06 AM] tiamat#9131
+multiport > polling
+
+
+
+[09-Jan-19 08:27 AM] tiamat#9131
+I see lots of new miners lately... 115 not counting polling/private
+
+
+
+[15-Jan-19 07:21 AM] tiamat#9131
+Only 14 different countries, we need to cover more
+
+
+
+[16-Jan-19 12:29 AM] tiamat#9131
+threads
+
+
+
+[17-Jan-19 03:52 AM] tiamat#9131
+since we have tiny blocks, they are not doing any harm
+
+
+
+[21-Jan-19 05:13 AM] tiamat#9131
+no bulls, no buyers, unless it drops ridiculously low to like 10%
+
+
+
+[21-Jan-19 05:50 AM] tiamat#9131
+I think 0,09 was for some early backers in 2017? presale was near ico, 15% less or so
+
+
+
+[30-Jan-19 06:17 AM] tiamat#9131
+something must be wrong in the setup, 12 corres / 1 week should definitely produce rewards
+
+
+
+[30-Jan-19 11:12 AM] tiamat#9131
+they are seen by erlang as different vcpus
+
+
+
+[30-Jan-19 11:13 AM] tiamat#9131
+a 4core intel with 2 hyperthreads would be seen as 8 vcpus
+
+
+
+[30-Jan-19 11:19 AM] tiamat#9131
+I hope you migrate to Proof of Capacity or some kind of PoS
+
+
+
+[30-Jan-19 11:22 AM] tiamat#9131
+Someone from Quarkchain had some nice articles, one  about a hybrid where you get 10x hashrate if you stake
+
+
+
+[30-Jan-19 11:23 AM] tiamat#9131
+and one about Hashpower reuse
+
+
+
+[30-Jan-19 11:23 AM] tiamat#9131
+Hashpower reuse technique
+
+A key observation from this list is that BTC/ETH has very strong hashpower but with lower number of transactions per second. Is it possible that new blockchains could reuse the hashpower of BTC/ETH to prevent double-spending attacks, like code reuse in software development? One possible solution is to use sidechains, where the block producers (BP) of the sidechain periodically submit their chain snapshot to the mainchain (BTC/ETH). However, the consensus of the mainchain is not aware of the underlying sidechain consensus, and thus if different views are created in the sidechain, i.e., forks, the sidechain has to decide the correct view by the sidechain’s own consensus algorithm, which weakens the security model.
+
+
+
+[02-Feb-19 01:10 AM] tiamat#9131
+486 cpus https://en.wikipedia.org/wiki/Intel_80486
+
+
+
+[02-Feb-19 01:11 AM] tiamat#9131
+my guess is new miners don't have blocks yet
+
+
+
+[07-Feb-19 07:44 AM] tiamat#9131
+a higher chance of getting your blocks accepted, so higher rewards
+
+
+
+[12-Feb-19 01:05 AM] tiamat#9131
+We don't have classic miners here which generally dump their tokens the same day, because coin is not listed  
+
+
+
+[12-Feb-19 02:14 AM] tiamat#9131
+@chriscord you can mine with one address on many servers
+
+
+
+[12-Feb-19 02:14 AM] tiamat#9131
+plus I think some of those nodes are just cheap vps
+
+
+
+[12-Feb-19 02:16 AM] tiamat#9131
+so it's not like we have 100+ serious miners, more like 10 I think
+
+
+
+[12-Feb-19 04:29 AM] tiamat#9131
+About marketing just look at NKN which has 6 exchanges, 5000+ nodes and their chain keeps hanging every few days, they have to restart from snapshots.
+
+
+
+[12-Feb-19 04:33 AM] tiamat#9131
+they probably raised more
+
+
+
+[12-Feb-19 04:33 AM] tiamat#9131
+because they bought tokens from miners with ETH when only ERC20 was listed
+
+
+
+[12-Feb-19 04:33 AM] tiamat#9131
+their tokens are not listed, only the erc20 equivalent
+
+
+
+[12-Feb-19 04:34 AM] tiamat#9131
+they will have a problem listing their own token because chain is very unstable
+
+
+
+[12-Feb-19 04:34 AM] tiamat#9131
+but who cares  
+
+
+
+[12-Feb-19 04:36 AM] tiamat#9131
+short term is good, but then exchange could reject you your natives
+
+
+
+[12-Feb-19 04:39 AM] tiamat#9131
+also when they make an update, they spawn like more nodes than the majority and force kick everyne's node out, pretty funny
+
+
+
+[12-Feb-19 04:42 AM] tiamat#9131
+yes, we had a hard fork
+
+
+
+[12-Feb-19 04:42 AM] tiamat#9131
+but it was well planned
+
+
+
+[12-Feb-19 04:42 AM] tiamat#9131
+10k block ahead or something
+
+
+
+[12-Feb-19 09:14 AM] tiamat#9131
+DADI I think
+
+
+
+[13-Feb-19 01:08 AM] tiamat#9131
+what do you mine with gpus? Grin?
+
+
+
+[14-Feb-19 05:41 AM] tiamat#9131
+yeah
+
+
+
+[14-Feb-19 05:41 AM] tiamat#9131
+congrats
+
+{Reactions}
+  (2) 
+
+
+[15-Feb-19 08:49 AM] tiamat#9131
+@ATLAS Grin does not bring anything new on the table... It's just for some early years BTC nostalgics...
+
+
+
+[15-Feb-19 08:51 AM] tiamat#9131
+the protocol could be nice, like a serious coin could adopt it, but the coin Grin has no value
+
+
+
+[15-Feb-19 08:51 AM] tiamat#9131
+LTC already made a move in this sense
+
+
+
+[15-Feb-19 08:52 AM] tiamat#9131
+smart move I'd say, because LTC has no other purpose lately than a BTC clone
+
+
+
+[15-Feb-19 01:49 PM] tiamat#9131
+@ATLAS yeah, one reason it does not have value is because we already have monero and zcash, being a little better than monero is nothing
+
+
+
+[15-Feb-19 01:51 PM] tiamat#9131
+no, because big miners do it through browsers
+
+
+
+[26-Feb-19 08:12 AM] tiamat#9131
+@arweave-martin what stops a node to ask another node for the recall block right before PoW ?
+
+
+
+[01-Mar-19 12:21 AM] tiamat#9131
+@notjeff(jeff) you don't need to put your private key on the miner
+
+
+
+[03-Mar-19 11:35 PM] tiamat#9131
+what's up with the forks at 151640 and 150226 ? 12 nodes and 4 nodes
+
+
+
+[07-Mar-19 05:22 AM] tiamat#9131
+I see many new countries: Sweden, Romania, Ireland a lot of Canada.
+
+
+
+[13-Mar-19 02:05 AM] tiamat#9131
+you don't have the needed blocks yet
+
+
+
+[26-Mar-19 12:40 AM] tiamat#9131
+We have miners in Kazakhstan and Norway :blockchain:
+
+{Reactions}
+arweave (2) 
+
+
+[27-Mar-19 09:50 AM] tiamat#9131
+⚠  I see at least 23 nodes which are in NOT_JOINED state or simply out of sync, some on 140k-150k zone. Maybe Arweave should send a notification to those subscribed in mining newsletter to check their node against viewblock.io/arweave height? 23 servers wasting resources....
+
+
+
+[27-Mar-19 11:23 AM] tiamat#9131
+@arweave-kyle https://chronobot.io/arweave/
+
+
+
+[28-Mar-19 03:41 PM] tiamat#9131
+@Marcin Sounds bad indeed, but Sam mentioned some months ago that wallet_lists will become optional so that will free most of the space
+
+
+
+[28-Mar-19 03:42 PM] tiamat#9131
+@arweave-martin why 120 GB? Right now all the stuff is around 60 GB
+
+
+
+[29-Mar-19 01:03 PM] tiamat#9131
+how do you know which wallet belongs to a node?
+
+
+
+[29-Mar-19 01:06 PM] tiamat#9131
+ah, ok  
+
+
+
+[02-Apr-19 06:46 AM] tiamat#9131
+Why the number of peers for some nodes is 300+ ?
+
+
+
+[02-Apr-19 08:29 AM] tiamat#9131
+@arweave-sophie for instance http://54.159.24.25:1984/ shows 240 peers
+
+
+
+[02-Apr-19 08:29 AM] tiamat#9131
+on 1st April viewblock was down for a couple of hours, not sure if they catched up with the number of blocks
+
+
+
+[02-Apr-19 11:48 PM] tiamat#9131
+that's a quite poor benchmark
+
+
+
+[04-Apr-19 01:25 PM] tiamat#9131
+my upgraded node mines much better than the rest which I did not upgrade yet, is it only the hashing improved or communication as well?
+
+
+
+[05-Apr-19 01:35 PM] tiamat#9131
+@JW yeah, PoS would be nice
+
+
+
+[05-Apr-19 11:52 PM] tiamat#9131
+we just entered DIFFICULTY 39 :pickspark:
+
+{Reactions}
+arweave (2) 
+
+
+[05-Apr-19 11:53 PM] tiamat#9131
+I think it's the first time ever
+
+
+
+[06-Apr-19 02:07 AM] tiamat#9131
+I hope not, that would be big a security issue
+
+
+
+[06-Apr-19 06:10 AM] tiamat#9131
+first day was more, but still higher than before
+
+
+
+[06-Apr-19 08:06 AM] tiamat#9131
+around 4 blocks for 4x2 Skylake  cores
+
+
+
+[06-Apr-19 08:09 AM] tiamat#9131
+but only 6 out of 8 mining
+
+
+
+[06-Apr-19 08:11 AM] tiamat#9131
+4 cores 8 hyper
+
+
+
+[06-Apr-19 02:02 PM] tiamat#9131
+@arweave-sam  diff 39 reached a couple of times so I guess 40 is not far
+
+
+
+[09-Apr-19 07:46 AM] tiamat#9131
+Difficulty 40 https://viewblock.io/arweave/block/175320
+
+
+
+[09-Apr-19 07:46 AM] tiamat#9131
+is it a first?
+
+
+
+[09-Apr-19 09:18 AM] tiamat#9131
+depends what vCPU
+
+
+
+[09-Apr-19 09:18 AM] tiamat#9131
+are they dedicated? shared? what generation, Mhz, etc
+
+
+
+[09-Apr-19 02:07 PM] tiamat#9131
+@Marcin check in ./blocks each block has diff
+
+
+
+[09-Apr-19 02:19 PM] tiamat#9131
+each node has that info in ./blocks
+
+
+
+[09-Apr-19 02:20 PM] tiamat#9131
+120 sec
+
+
+
+[09-Apr-19 02:21 PM] tiamat#9131
+but with PoW it can be more or less
+
+
+
+[09-Apr-19 02:22 PM] tiamat#9131
+still pending? last block was seconds ago
+
+
+
+[09-Apr-19 02:26 PM] tiamat#9131
+how did you check confirmation? wallet or viewblock?
+
+
+
+[09-Apr-19 02:31 PM] tiamat#9131
+whitepaper/lightpaper
+
+
+
+[09-Apr-19 02:31 PM] tiamat#9131
+blocks are tiny because they don't include transactions
+
+
+
+[09-Apr-19 02:32 PM] tiamat#9131
+Arweave has some innovations and is a bit different
+
+
+
+[09-Apr-19 02:33 PM] tiamat#9131
+to summerize: block size=~1k  block time= ~120sec     supply 55 mil , block reward 32 AR slowly decreasing
+
+
+
+[09-Apr-19 02:34 PM] tiamat#9131
+uploaded files and transactions are not stored in blocks they are separated which means you could do some kind of "sharding" at later stages when things occupy a lot of space
+
+
+
+[14-Apr-19 12:58 AM] tiamat#9131
+diff 42
+
+
+
+[14-Apr-19 12:58 AM] tiamat#9131
+first time I think
+
+
+
+[16-May-19 09:10 AM] tiamat#9131
+getting close to block 200k :pickspark:  :arweave:
+
+{Reactions}
+  (2) 
+
+
+[16-May-19 12:43 PM] tiamat#9131
+Do we have any app for betting yet? We should bet how large the Weave will be on block 1M
+
+
+
+[01-Aug-18 01:42 PM] tiamat#9131
+I've tried this in #📝general, maybe here is more appropriate: :
+I have four questions: 1) Is it normal to see splits? I often find the same block number with different hash across different nodes, yes they eventually sync. 2) Can I upload now 100 GB of data on the network if I pay the fees? How much can the network handle, how much did you put during tests? 3) Right now all blocks are around 50GB, once they reach 500+, are smaller miners(<100 GB space avail) still able to participate? 4) Is there a public testnet?
+
+
+
+[04-Aug-18 10:42 AM] tiamat#9131
+is there a way we could check the balance of a wallet  from the node?
+
+
+
+[05-Aug-18 07:16 AM] tiamat#9131
+yeah, I've figured it, thank you
+
+
+
+[05-Aug-18 07:17 AM] tiamat#9131
+how can I check if a block is valid? sometimes during forks it seems like more blocks are stored in ./blocks for the same block height
+
+
+
+[28-Oct-18 11:41 AM] tiamat#9131
+for that you could use screen or simply redirect the server output to a log file
+
+
+
+[29-Oct-18 10:22 AM] tiamat#9131
+yeah, Telegram is full of those
+
+
+
+[31-Oct-18 08:32 AM] tiamat#9131
+is there a way to request a tiny block from API?  GET /block/height/ gives the full block so it's very slow
+
+
+
+[31-Oct-18 11:20 AM] tiamat#9131
+works  
+
+
+
+[31-Oct-18 11:59 AM] tiamat#9131
+right now I guess the strategy for large files is to store in chunks and reassemble
+
+
+
+[31-Oct-18 11:59 AM] tiamat#9131
+Sam is here, so he will clarify  
+
+
+
+[31-Oct-18 12:06 PM] tiamat#9131
+considering the http protocol, paying more for large files sounds a good idea to me
+
+
+
+[02-Nov-18 02:52 AM] tiamat#9131
+no, id is not included in the concatenation that needs to be signed
+
+
+
+[02-Nov-18 02:53 AM] tiamat#9131
+the id is generated based on that signature
+
+
+
+[02-Nov-18 02:57 AM] tiamat#9131
+so you will not use a random number but the sha256 of the signed msg
+
+
+
+[02-Nov-18 02:58 AM] tiamat#9131
+not sure if it's clear what I say but I think Helpers::base64urlEncode(base64_encode(random_bytes(32)));  is used only for testing, you cannot generate a valid tx with that
+
+
+
+[02-Nov-18 03:00 AM] tiamat#9131
+@patrick
+
+
+
+[04-Nov-18 09:19 AM] tiamat#9131
+https://medium.com/poa-network/poa-network-compound-and-consensys-announce-collaboration-on-ethereum-client-written-in-elixir-b265d048402
+
+
+
+[04-Nov-18 09:19 AM] tiamat#9131
+“This is for the hackers out there — using bleeding-edge languages like Elixir and having the safety and reliability of Erlang’s Virtual Machine, which has performed for over 25 years as the VM of choice for telecom companies"
+
+
+
+[18-Nov-18 03:13 AM] tiamat#9131
+The AR wallets use SHA256, is this right? Any reason for not starting with something stronger, like at least 384? Quantum computers are around the corner, why didn't you chose to be more prepared than other blockchains?
+
+
+
+[19-Nov-18 02:07 PM] tiamat#9131
+I'm talking about the wallets
+
+
+
+[19-Nov-18 02:08 PM] tiamat#9131
+not the miner
+
+
+
+[20-Nov-18 02:12 PM] tiamat#9131
+@arweave-martin But the RSA key is not stored on the weave, so it does not matter, attacker only needs something with the same hash.
+
+
+
+[20-Nov-18 02:29 PM] tiamat#9131
+ah, you are right, attacker would not only need a RSA key to match the hash, but also the pair
+
+
+
+[12-Dec-18 04:23 AM] tiamat#9131
+I don't think they are fake, more likely they are valid but not accepted by the network because someone else was faster or had better WF score.
+
+
+
+[12-Dec-18 04:24 AM] tiamat#9131
+There is an ar_cleanup:remove_invalid_blocks() but I'm not sure what's the latest syntax, I have used it months ago, maybe someone will tell you exactly how to use it in the latest version.
+
+
+
+[10-Jan-19 02:29 AM] tiamat#9131
+@team I have seen the article where you want to move to ProgWork. Why not some hybrid PoS where you still need recall blocks? That would make the network much safer. PoW is not the best with smaller networks as we have seen recently with ETC.
+
+
+
+[11-Jan-19 11:11 AM] tiamat#9131
+a link to support my claims: https://medium.com/quarkchain-official/slash-in-proof-of-staked-work-with-example-to-etc-51-attack-273f84c00742
+
+
+
+[12-Jan-19 03:05 AM] tiamat#9131
+wow, where did you find a 72 core?
+
+
+
+[13-Jan-19 12:18 PM] tiamat#9131
+I think it's all about hashrate. Like 10 slow racers could compete with one fast racer as long as their hashrate sums the faster's rate. But in reality with different network speeds and different WF, results could be different.
+
+
+
+[15-Jan-19 02:37 AM] tiamat#9131
+miners will use hyperthreads(vcpus)
+
+
+
+[17-Jan-19 01:56 PM] tiamat#9131
+https://youtu.be/nCT2lvfGYWU?t=1072 Ivanontech speaking about Functional programming languages and formal verification in the context of Constantinople bug.
+
+{Reactions}
+🤖 
+
+
+[30-Jan-19 11:02 AM] tiamat#9131
+@Vilenarios centralized in the same way as Ethereum and Infura, at this point you are either a geek and use your own gateway or use a service which is centralized
+
+
+
+[04-Feb-19 05:05 AM] tiamat#9131
+are multiple tx per wallet per block included in the latest release?
+
+
+
+[03-Apr-19 09:30 AM] tiamat#9131
+6. I think they should be like a milestones, when ASICs jump in, it means the project is well known, important and well incentivized  
+
+
+
+[03-Apr-19 12:40 PM] tiamat#9131
+Could you tell more about progwork? Will it include proof of capacity or just different PoW for ASIC resistance ?
+
+
+
+[03-Apr-19 01:20 PM] tiamat#9131
+yeah, but still wasted computation, my personal taste would be towards proof of capacity(though yea it could overlap with proof of access) or proof of stake
+
+
+
+[03-Apr-19 01:23 PM] tiamat#9131
+also some projects have this idea of anchoring BTC or ETH blocks to avoid long private chains or don't know exactly how to call it... retroactive hashing
+
+
+
+[03-Apr-19 01:25 PM] tiamat#9131
+block collider is first that comes into my mind which uses blocks from other chains to secure their own
+
+
+
+[03-Apr-19 01:25 PM] tiamat#9131
+the main idea is smaller chains stand no chance when it comes about hashing against a BTC farm or ETH farm, we've seen it with ETC
+
+
+
+[03-Apr-19 01:26 PM] tiamat#9131
+a single big eth farm could decide one day to attack pretty much anything below top50 CMC
+
+
+
+[03-Apr-19 01:39 PM] tiamat#9131
+anyway, I'm really glad we have a stable chain, I've seen bigger names like Zilliqa, Quarkchain, NKN getting into lots of issues and hotfixes
+
+
+
+[03-Apr-19 01:40 PM] tiamat#9131
+having to run a patch for nodes every 2-3 days
+
+
+
+[03-Apr-19 01:44 PM] tiamat#9131
+Actually here is the only place I have seen a proper well planned hard fork on a young blockchain.
+
+
+
+[03-Apr-19 01:44 PM] tiamat#9131
+Congrats to the devs for this
+
+{Reactions}
+arweave (3) 
+
+
+[09-Apr-19 05:53 AM] tiamat#9131
+Is peer list now sorted by IPs? I think it should be either random or in the order passed as arguments
+
+
+
+[09-Apr-19 07:43 AM] tiamat#9131
+no, when starting the node
+
+
+
+[09-Apr-19 07:43 AM] tiamat#9131
+I had an offline peer starting with 13.... and it was trying it first, though it was last in the cmdline
+
+
+
+[09-Apr-19 08:09 AM] tiamat#9131
+not a big problem, it's just that people would give more attention to first peers in the list
+
+
+
+[18-Apr-19 02:21 AM] tiamat#9131
+Maybe https://unstoppabledomains.com/ and Arweave could be interlinked ?
+
+
+
+[24-Apr-19 06:41 AM] tiamat#9131
+any idea why we have 8 nodes forked at 184714 and 3 at 184999 ?
+
+
+
+[03-May-19 02:35 PM] tiamat#9131
+any new info about content blacklists and automated filters?
+
+
+
+[04-May-19 02:51 PM] tiamat#9131
+that would be nice
+
+
+
+[04-May-19 02:51 PM] tiamat#9131
+a testnet with a few nodes would be nice to avoid mainnet pollution
+
+
+
+[04-May-19 03:14 PM] tiamat#9131
+what is the fork addressing ? content filter or multiple txs/wallet/block?
+
+
+
+[15-May-19 12:57 AM] tiamat#9131
+@arweave-sam what's wrong with JSON?
+
+
+
+[15-May-19 12:57 AM] tiamat#9131
+why some nodes have 400+ peers?
+
+
+
+[15-May-19 04:26 AM] tiamat#9131
+@arweave-lev 139.59.51.59:1984 425 peers
+
+
+
+[21-May-19 01:55 AM] tiamat#9131
+1) Is there a way to get traffic statistics(at least something basic) for a page served by arweave.net ? 2) What's the reason of using .org for general information and .net for file serving? Isn't .org more safe in terms of abuses? I haven't researched much on the subject, but I see the .org of thepiratebay still up after so many years of tries to shut it down ?
+
+
+
+[21-May-19 10:27 AM] tiamat#9131
+@aahutsal some extensions are easier to shut down than others
+
+
+
+[21-May-19 10:27 AM] tiamat#9131
+how does Weavemail know someone's public key?
+
+
+
+[22-May-19 07:52 AM] tiamat#9131
+are there any CLI wallets ?
+
+
+
+[23-May-19 02:21 AM] tiamat#9131
+not sure where to register this, but when deploying on permaweb, if I have <script src="bla.js"> and the </script> tag is not on the same line, the packaged file ends up with two </script> tags
+
+
+
+[23-May-19 02:24 AM] tiamat#9131
+speaking about $ arweave package <in> <out>
+
+
+
+[27-May-19 02:59 AM] tiamat#9131
+your node does not need any private information except for your mining address, but no keys are required and it's actually not recommended to store wallet/keys on the node
+
+
+
+[06-Sep-18 04:36 AM] tiamat#9131
+someone over Telegram asked about Asia coverage, do you have any plans? partnerships? conferences?
+
+
+
+[16-Sep-18 01:32 PM] tiamat#9131
+@arweave-india  Do you consider doing something like Mainframe did with Proof of Freedom ? It was a huge success and they got lot of attention.
+
+
+
+[18-Sep-18 07:04 AM] tiamat#9131
+@thegoat19 why rush? market is not good to list now
+
+
+
+[24-Oct-18 11:24 AM] tiamat#9131
+@thegoat19  what kind of serious team would encourage OTC in their discord?
+
+
+
+[17-Nov-18 03:52 AM] tiamat#9131
+100k was mined
+
+
+
+[17-Nov-18 03:53 AM] tiamat#9131
+and 6 months gone already, so we'll have a lot for the remaining 6 months according to whitepaper
+
+
+
+[17-Nov-18 03:57 AM] tiamat#9131
+(83,936 - 65,700) * 7
+
+
+
+[17-Nov-18 03:58 AM] tiamat#9131
+under 100 AR  
+
+
+
+[18-Nov-18 02:24 AM] tiamat#9131
+Right now I think you will be fine with 50 GB, as we are in the early stages, Bandwidth and CPU are more important in this moment.
+
+
+
+[18-Nov-18 03:03 AM] tiamat#9131
+It's hard to calculate an optimal config since we don't know the real value of AR, just get as many cores as you can afford  
+
+
+
+[23-Nov-18 09:28 AM] tiamat#9131
+sooner or later it will list on exchange, but some impatient folks will sell cheap to some whales with this OTC option
+
+
+
+[23-Nov-18 09:32 AM] tiamat#9131
+maybe but those guys will wait for much longer and they had more uncertainties
+
+
+
+[05-Dec-18 03:27 AM] tiamat#9131
+That is a very nice use case @tierralibre  
+
+
+
+[31-Dec-18 01:44 AM] tiamat#9131
+yeah, Bittrex is quite friendly with coins that are far from securities
+
+
+
+[01-Jan-19 02:32 AM] tiamat#9131
+you can use the product without exchange by setting up a miner, a in 2-3 days you will get enough tokens to upload some things
+
+
+
+[08-Jan-19 09:49 AM] tiamat#9131
+so the OTC desk was a fail?
+
+
+
+[12-Jan-19 03:06 AM] tiamat#9131
+I left Telegram, too much FUD there.
+
+
+
+[12-Jan-19 08:45 AM] tiamat#9131
+of course, life itself is full of FUD, but somehow we still move forward
+
+
+
+[12-Jan-19 12:33 PM] tiamat#9131
+looking forward to see what @arweave-sam will talk about at the Decentralized Summit
+
+{Reactions}
+arweave 
+
+
+[16-Jan-19 12:34 PM] tiamat#9131
+wow, 140 nodes without polling 💪
+
+{Reactions}
+arweave blockchain files mineblock hashing 💪 
+
+
+[18-Jan-19 11:28 AM] tiamat#9131
+what do you mean you are not sure it will list? do you think it will stay unlisted for ever?
+
+
+
+[19-Jan-19 10:55 AM] tiamat#9131
+no mod around?
+
+
+
+[20-Jan-19 01:20 AM] tiamat#9131
+@Mason Black you have 4 mil AR?
+
+
+
+[20-Jan-19 01:22 AM] tiamat#9131
+there are like 20 mil circulating and you hold 20% of them?
+
+
+
+[20-Jan-19 01:23 AM] tiamat#9131
+hard to believe...
+
+
+
+[20-Jan-19 01:36 AM] tiamat#9131
+yeah, whole crypto lost hope
+
+
+
+[20-Jan-19 02:12 AM] tiamat#9131
+Nobody is going to buy "unreleased top tier" if market continue like this. I wonder what those huge projects like TON are going to do.
+
+
+
+[20-Jan-19 02:15 AM] tiamat#9131
+I don't know... so many projects raised money by flagging TPS, in reality it seems nobody cares really about TPS, there is this project NANO than can scale and has no fees, still it does not get adoption.
+
+{Reactions}
+  
+
+
+[20-Jan-19 02:18 AM] tiamat#9131
+It's all about speculation, no tangible value.
+
+
+
+[20-Jan-19 06:11 AM] tiamat#9131
+@Vilenarios no matter what team will do, people will be unhappy. Look at Block Collider, Lisk, Edenchain or any other project. People lost money and they turn on whoever they can. Basically they are doing the opposite of what they were doing last year with "just take my money" without any research or DD.
+
+
+
+[20-Jan-19 06:12 AM] tiamat#9131
+Some people hope this will not dump like every other 2018 project. I don't think it will be the case, when it will list, it will dump and finally some people can move on with their lives  
+
+
+
+[20-Jan-19 06:41 AM] tiamat#9131
+I had a miner going even in July when there were no rewards  
+
+
+
+[20-Jan-19 06:41 AM] tiamat#9131
+wait, there were tx fees, I made near 1 AR in a couple of months
+
+
+
+[20-Jan-19 11:12 AM] tiamat#9131
+the problem with Block Collider is centralization, their team control all mining software and operations
+
+
+
+[21-Jan-19 06:47 AM] tiamat#9131
+what was the time interval for private sale?
+
+
+
+[22-Jan-19 06:05 AM] tiamat#9131
+I can only agree, so often people get the opposite of what I mean
+
+
+
+[22-Jan-19 09:44 AM] tiamat#9131
+I think he was just making some "suppositions" instead of speculating on price for profit
+
+
+
+[22-Jan-19 11:16 PM] tiamat#9131
+databases do the same, only they have some indexes for easier access of specific data
+
+
+
+[22-Jan-19 11:17 PM] tiamat#9131
+this is something that each miner will choose, keeping it zipped, plain text, sql, etc
+
+
+
+[22-Jan-19 11:19 PM] tiamat#9131
+protocol, adoption, incentivisation, those are much more important than how data is stored
+
+
+
+[22-Jan-19 11:20 PM] tiamat#9131
+I'd like Arweave to move to PoS which is more energy efficient and more secure
+
+
+
+[22-Jan-19 11:31 PM] tiamat#9131
+that's because of block times, not tps
+
+
+
+[22-Jan-19 11:32 PM] tiamat#9131
+but maybe you can make 10k txs in the same 3-12 minutes
+
+
+
+[22-Jan-19 11:32 PM] tiamat#9131
+I read somewhere it can handle 5k per block
+
+
+
+[22-Jan-19 11:34 PM] tiamat#9131
+block time not size
+
+
+
+[22-Jan-19 11:34 PM] tiamat#9131
+tps is not important at this point for ar, after all you only store stuff, you don't do smart contracts or things like this
+
+
+
+[22-Jan-19 11:35 PM] tiamat#9131
+there are other chains which do this
+
+
+
+[22-Jan-19 11:35 PM] tiamat#9131
+block times are random because of PoW
+
+
+
+[22-Jan-19 11:35 PM] tiamat#9131
+the same as ETH
+
+
+
+[22-Jan-19 11:36 PM] tiamat#9131
+2 minutes I guess
+
+
+
+[22-Jan-19 11:37 PM] tiamat#9131
+but it theoretically can be reduced, nodes sync very well now
+
+
+
+[22-Jan-19 11:42 PM] tiamat#9131
+nah, it sync well, only slow nodes fork
+
+
+
+[22-Jan-19 11:42 PM] tiamat#9131
+do you use vps?
+
+
+
+[22-Jan-19 11:43 PM] tiamat#9131
+maybe your connection is not that good, I didn't have forks in the latest version except for a node running on a slow vps
+
+
+
+[22-Jan-19 11:44 PM] tiamat#9131
+before release 19 yeah, there were forks
+
+
+
+[22-Jan-19 11:44 PM] tiamat#9131
+now it's very smooth
+
+
+
+[22-Jan-19 11:49 PM] tiamat#9131
+lack of txs is a thing for every chain except btc and eth
+
+
+
+[22-Jan-19 11:49 PM] tiamat#9131
+people don't use/need blockchains  
+
+
+
+[22-Jan-19 11:50 PM] tiamat#9131
+I remember I looked into neo few months ago and it only had 40 smart contracts
+
+
+
+[22-Jan-19 11:50 PM] tiamat#9131
+and hype was peak
+
+
+
+[22-Jan-19 11:50 PM] tiamat#9131
+and only 40 sc overall entire network
+
+
+
+[22-Jan-19 11:51 PM] tiamat#9131
+with 100+ projects "building on top"
+
+
+
+[22-Jan-19 11:54 PM] tiamat#9131
+speaking about ETH, interoperability with ETH would be very nice, because storing stuff on ETH is very expensive
+
+
+
+[23-Jan-19 11:05 AM] tiamat#9131
+@Mason Black yes, such thing is definitely needed. If someone wants to put files up for the next 10 years, she could pre-pay some cloud/hosting but there is no guarantee that it will remain up( there can be a bug/bankruptcy/hardware fail/etc). Of course there is no guarantee with Arweave either, but at least it is an alternative.
+
+
+
+[23-Jan-19 11:06 AM] tiamat#9131
+with Arweave you also have a guarantee of data age and non-alteration
+
+
+
+[23-Jan-19 11:07 AM] tiamat#9131
+I can't think of any other project offering this, Factom had something but I'm not sure how costly and if it is ready now.
+
+
+
+[23-Jan-19 11:15 AM] tiamat#9131
+@arweave-sam how about offering an api/plugin for MD5 Checksum for sensitive software downloads? Like geth, right now I can check the md5 on their site but if someone hacks the page, they can change that as well.
+
+
+
+[24-Jan-19 01:11 AM] tiamat#9131
+@arweave-martin If you take a look at https://geth.ethereum.org/downloads/ or many other releases they have checksums. Even Ubuntu packages have checksums/hashes. But all these checksums are generally stored on the same platform with the software release itself. Registering them on a immutable platform will add extra security. Now if some attacker tries to register his own checksum of the modified(backdoored lets say) version of the software, we can always check which was registered first for that file and trust that one.
+
+
+
+[24-Jan-19 07:45 AM] tiamat#9131
+@arweave-martin Not specifically for Arweave releases, generally. Right now signatures and hashes are mostly on the same host as the package they refer to. Putting them on a completely different medium (and read-only unalterable) would be much more secure.
+
+
+
+[24-Jan-19 07:56 AM] tiamat#9131
+sure, but for large stuff or pre-releases you may want to store the hash only to save $
+
+
+
+[24-Jan-19 07:58 AM] tiamat#9131
+How about a platform for predictions? I have seen people doing crypto price predictions on twitter, then deleting those that didn't happen. Then they get lots of followers but in reality they are pretty much scammers.  Puting things on read-only would prevent this.
+
+
+
+[30-Jan-19 02:46 AM] tiamat#9131
+filecoin 237 mil ? wow
+
+
+
+[13-Feb-19 01:07 AM] tiamat#9131
+permanent storage is made by a pool that gradually releases rewards
+
+
+
+[13-Feb-19 01:07 AM] tiamat#9131
+and transactions are decoupled from blocks and files are in transactions, so yeah, it can scale like this
+
+
+
+[05-Mar-19 04:32 AM] tiamat#9131
+I think people don't need blockchains as much as we like to believe. That's a reason why they like partnerships and projects that will deliver(or not) instead of working product like Arweave.
+
+
+
+[05-Mar-19 04:33 AM] tiamat#9131
+The same for high TPS like Tomochain or Gochain(and even POA) which solved pretty much the scaling issue, but nobody touches them.
+
+
+
+[16-Mar-19 07:58 AM] tiamat#9131
+higher  cpu frequency or more cores will get you pretty much the same effect
+
+
+
+[16-Mar-19 07:59 AM] tiamat#9131
+network is two factors, latency and bandwidth
+
+
+
+[21-Mar-19 12:34 AM] tiamat#9131
+yeah, sound quality is ridiculous
+
+{Reactions}
+  
+
+
+[26-Mar-19 06:58 AM] tiamat#9131
+works for me
+
+
+
+[26-Mar-19 07:22 AM] tiamat#9131
+what happens when you try to open http://wallet-1.nodes.arweave.org:1984 from the browser?
+
+
+
+[26-Mar-19 07:22 AM] tiamat#9131
+also keep in mind that you can switch to another node if you wish
+
+
+
+[01-Apr-19 07:57 AM] tiamat#9131
+@arweave-stan he is not selling anything, it was just for 1 April...who is so stupid to sell AR?  
+
+
+
+[06-Apr-19 05:31 AM] tiamat#9131
+PoS would be great
+
+
+
+[06-Apr-19 05:35 AM] tiamat#9131
+PoS or rewards proportional with AR holding would be nicer, it would avoid dumping from miners
+
+
+
+[23-Apr-19 09:40 AM] tiamat#9131
+what's going on? why so much activity on the chain?
+
+
+
+[24-Apr-19 10:57 AM] tiamat#9131
+@arweave-sam yes, no problem
+
+
+
+[24-Apr-19 10:58 AM] tiamat#9131
+I remember someone built something very interesting with some forest maps
+
+
+
+[24-Apr-19 10:58 AM] tiamat#9131
+maybe you should mention as well
+
+
+
+[24-Apr-19 10:58 AM] tiamat#9131
+for some green project that got closed with normal host
+
+
+
+[06-May-19 09:46 AM] tiamat#9131
+For anyone that knows Andre Cronje and missed this: https://cryptobriefing.com/arweave-code-review-decentralized-storage/
+
+
+
+[06-May-19 09:49 AM] tiamat#9131
+don't forget it's not the kind of paid review
+
+
+
+[10-May-19 12:34 PM] tiamat#9131
+nice idea, but why such a weird name? why not just qweave ? too many vowels lead to typos
+
+
+
+[13-May-19 02:07 PM] tiamat#9131
+Arweave avg is 2 minutes while BTC is 10 minutes
+
+
+
+[13-May-19 02:10 PM] tiamat#9131
+this is because of PoW not because of Arweave particularly
+
+
+
+[13-May-19 02:11 PM] tiamat#9131
+PoS is superior in this matter
+
+
+
+[13-May-19 02:19 PM] tiamat#9131
+if  you look at Ethereum https://www.etherchain.org/blocks you may see 1 sec block times and 88 sec block times
+
+
+
+[13-May-19 02:26 PM] tiamat#9131
+generally PoW is a weakness for coins that are not top5 or so
+
+
+
+[13-May-19 02:27 PM] tiamat#9131
+Zilliqa managed to get an interesting approach with their PoW window
+
+
+
+[13-May-19 02:29 PM] tiamat#9131
+Just think that any mining pool/farm (asic for bitcoin, cpu for monero, gpu for eth) could easily attack smaller coins if they redirect hashing for a few minutes.
+
+
+
+[13-May-19 02:35 PM] tiamat#9131
+I don't understand. You need storage + stake, where is the problem?
+
+
+
+[13-May-19 02:36 PM] tiamat#9131
+Satoshi designed a currency that has the most hashing power. But smaller coins have limited hashing posibilities.
+
+
+
+[13-May-19 02:36 PM] tiamat#9131
+It is simple, someone rents 1000 CPUs from a cloud provider and attacks a small coin.
+
+
+
+[13-May-19 02:39 PM] tiamat#9131
+Something hybrid maybe? without staking chain is not secure.
+
+
+
+[13-May-19 02:39 PM] tiamat#9131
+Of course many projects are in the same situation  
+
+
+
+[13-May-19 02:40 PM] tiamat#9131
+But I remember in 2018 someone created a site where they were gathering hashing power and use it to prove how insecure small chains are.
+
+
+
+[13-May-19 02:40 PM] tiamat#9131
+Not sure if they started to attack someone yet, I didn't follow.
+
+
+
+[13-May-19 02:41 PM] tiamat#9131
+with 6 cents /hour for a 8 CPU server costs of attacks are minimal
+
+
+
+[13-May-19 02:42 PM] tiamat#9131
+80 000  CPUS are only 600$ for 1 hour   
+
+
+
+[13-May-19 02:42 PM] tiamat#9131
+Proof of Capacity could help
+
+
+
+[13-May-19 02:43 PM] tiamat#9131
+but staking is the way to make an attack not profitable
+
+
+
+[13-May-19 02:44 PM] tiamat#9131
+why would a miner ignore the block? if the majority accepts it
+
+
+
+[13-May-19 02:54 PM] tiamat#9131
+yeah, but security of a single miner is his business after all, if the miner wants to get rewards he better secure his stuff, while the PoW is a vulnerability for the whole chain
+
+
+
+[13-May-19 02:57 PM] tiamat#9131
+I remember Ethereum had a solution for this when they were talking their PoS implementation
+
+
+
+[13-May-19 02:57 PM] tiamat#9131
+but I think it involved SC
+
+
+
+[13-May-19 03:03 PM] tiamat#9131
+Proof of Capacity could help, on cloud providers storage seems to be more expensive
+
+
+
+[13-May-19 03:03 PM] tiamat#9131
+also helps with botnets
+
+
+
+[13-May-19 03:04 PM] tiamat#9131
+a large percent of Monero is mined by malware bots
+
+
+
+[13-May-19 03:05 PM] tiamat#9131
+or memory-intensive algo, but then people would complain they can't run the miner on a cheap  vps or some old machine  
+
+
+
+[13-May-19 03:11 PM] tiamat#9131
+1) PoA 2) Proof of Relay 3) PoC  (I have stored data, I serve data, I am willing to store more data) CPU is just waste of energy
+
+
+
+[14-May-19 03:25 AM] tiamat#9131
+@Zeus Yes, PoC is very cool, some people here actually prepared in advanced last year for something like this with hdds/ssds and are very disappointed by the CPU mining. A community vote held on the weave for  PoW vs PoC would be very nice  
+
+
+
+[14-May-19 05:00 AM] tiamat#9131
+it's a challenge for the tongue  
+
+
+
+[17-May-19 11:51 AM] tiamat#9131
+Quorweave definitely needs a new name, like qweave, askweave,  smartweave,  topicweave, weavedebate, weavequiz, etc  
+
+
+
+[20-May-19 07:32 AM] tiamat#9131
+maybe we should have a dedicated channel for the bots? also whale bot no longer working?
+
+
+
+[23-May-19 05:51 AM] tiamat#9131
+Anyone likes puzzles? How about puzzles with nice rewards 🤑 ?  https://arweave.net/eLC6AKy_lFkF1HlpQSQvEW8eKisUelmk9X2CreyormE
+
+{Reactions}
+arweave (6) 
+
+
+[23-May-19 07:13 AM] tiamat#9131
+1000 soon  
+
+
+
+[23-May-19 07:38 AM] tiamat#9131
+yes
+
+
+
+[23-May-19 07:41 AM] tiamat#9131
+guys please don't ask question here, the rules are I reply only on Weavemail  
+
+
+
+[23-May-19 07:43 AM] tiamat#9131
+instruction #7  
+
+
+
+[23-May-19 10:52 AM] tiamat#9131
+the good news is that pot is now 1000 AR, the bad news is that original version needed a slight clarification so the new address is: http://arweave.net/byT7l6tkFq8mzqshwmju8fVi1rp8H9mYanlxzsJ7RjQ
+
+
+
+[23-May-19 11:05 AM] tiamat#9131
+I could have skipped this announcement and let it be part of the puzzle for solvers to follow what I will publish next on viewblock  
+
+
+
+[23-May-19 02:57 PM] tiamat#9131
+Congrats @pogo for solving the puzzle, I estimated it would take a few days, I was wrong  
+
+
+
+[23-May-19 03:25 PM] tiamat#9131
+@HDGreg I totally understand your frustration if you had 6/7 but 9 hours  until it got solved is decent
+
+
+
+[23-May-19 03:26 PM] tiamat#9131
+there were 200+ challengers
+
+
+
+[23-May-19 03:30 PM] tiamat#9131
+Stay tuned for the next one  
+
+
+
+[23-May-19 03:31 PM] tiamat#9131
+the best system is probably to start with a smaller amount and reward gets increased every day
+
+
+
+[24-Apr-19 10:27 AM] tiamat#9131
+There is this youtube influencer ivanontech, some of you probably have heard of him, he keeps talking about functional programming being safer than imperative prog, maybe you guys should approach him to review Arweave? it would get a lot of attention. He recently spoke about Erlang, he was not aware of blockchain projects built upon it.
+
+
+
+[24-May-19 01:11 PM] tiamat#9131
+who just solved the puzzle? show yourself don't be lurker  
+
+{Reactions}
+  (2) 
+
+
+[24-May-19 01:43 PM] tiamat#9131
+no way, I was planning to have 1 puzzle /week and these guys solve in hours! but stay tuned, I have some ideas  
+
+{Reactions}
+  (3) 
+
+
+[24-May-19 01:47 PM] tiamat#9131
+This was a race, apparently around 3 people found the solution, one was too late with the transaction, one was 30 minutes late
+
+
+
+[27-May-19 03:46 AM] tiamat#9131
+Who is ready for Puzzle Weave 3  🤑  ? https://arweave.net/VLJIGuTJewofKx8ad4JYQs93nEuGnkgjrIt_Sd2QPYw
+
+{Reactions}
+  (6)   (2) 👻 
+
+
+[27-May-19 06:37 AM] tiamat#9131
+You'd be surprised how easy #3 is
+
+
+
+[27-May-19 03:05 PM] tiamat#9131
+yeah, not solved yet
+

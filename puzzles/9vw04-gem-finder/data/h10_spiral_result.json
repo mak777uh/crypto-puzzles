@@ -1,0 +1,9 @@
+{
+ "axis": "H10 spiral traversal",
+ "grid": "21x50",
+ "orders": 16,
+ "tested": 44,
+ "valid": 0,
+ "hits": [],
+ "wall_sec": 0.02
+}

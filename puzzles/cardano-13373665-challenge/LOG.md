@@ -9,3 +9,22 @@
 - Что остаётся (для следующих агентов): (а) Ch5 — по SOLUTIONS.MD автор использовал **steghide БЕЗ пароля** на IPFS-картинке QmcUgS4LgPrVbtBoLMJAbrDLokWEDxJt36Uj1NHsReTUHh; стоит повторить steghide extract с пустой фразой на НЕСКОЛЬКИХ копиях с разных шлюзов (перезакодированная копия теряет данные); Hark пробовал одну копию. (б) «matrix» может означать Discord-канал автора (discord.gg/EnB6znbkZx — в футере сайта) — нужна учётка. (в) F5/jsteg для Ch5-JPEG — маловероятно (метод Ch5 = steghide).
 - Артефакты: `data/cardano_mclear.png`, `data/cardano_registry_logo.png`, `data/cardano_main.html`.
 - Ссылки/доказательства: https://github.com/eggdropper/13373665Challenge (README: адреса и награды; SOLUTIONS.MD: методы Ch1–5); koios API (asset_info/address_info); web.archive.org (M-clear.png 20220124210116; главная 20211214021623).
+
+## 2026-10-18, 20:40 — Qoder (github_intake) — GITHUB INTAKE (шлюз)
+- Делал: python tools/github_intake.py run cardano-13373665-challenge --agent Qoder
+- Кандидаты: eggdropper/13373665challenge (author, ссылки досье), chewiegumballoni/13373665challenge (fork, форки eggdropper/13373665challenge)
+- Скачано: репо=2 (файлов 2, 5.4 КБ; медиа 0), issues=0, comments=0, PR=0, releases=0, gists=0, wiki=нет
+- Бюджет: api.github.com запросов = 0 (remaining 52, reset 2026-10-18T18:25:38Z); бесплатных транспортов (codeload/ls-remote/git) = 4
+- Негативы: репо владельца eggdropper: ERR ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='api.github.com', port=443): Read timed out. (read timeout=45)")); eggdropper/13373665challenge: issues: /repos/eggdropper/13373665challenge/issues: ERR ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='api.github.com', port=443): Read timed out. (read timeout=45)")); eggdropper/13373665challenge: comments: /repos/eggdropper/13373665challenge/issues/comments: ERR ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='api.github.com', port=443): Read timed out. (read timeout=45)")); eggdropper/13373665challenge: releases: /repos/eggdropper/13373665challenge/releases: ERR ReadTimeout(ReadTimeoutError("
+- Артефакты: data/github/GITHUB_INTAKE.md, data/github/INTAKE_RESULT.json, data/github/_legacy_pointers.md, data/github/<owner>__<repo>/{files,raw,REPO_META.json}
+- Статус шлюза: done — содержимое уже в базе (snapshot уже лежит, HEAD 569e0fe2 не изменился; ls-remote не отвечает (404/приватный/удалён)); API-сбор не требовался
+- Ссылки/доказательства: https://github.com/eggdropper/13373665Challenge, chewiegumballoni/13373665challenge
+
+
+## 2026-10-18 20:5x (MSK) — Qoder — Ch5: приз уже снят; носитель в IPFS недоступен (закрытие ветки)
+- Представляюсь: Qoder Desktop (Windows). Шлюз GitHub пройден: `github_intake run cardano-13373665-challenge --agent Qoder` → **DONE** (2 репо, 2 файла, 0 API; репо `eggdropper/13373665challenge`, `eggdropper/cardano-token-registry`), дайджест `data/github/GITHUB_INTAKE.md`.
+- Проверка приза (koios, 17:58Z): Ch5 `addr1v957qn2vmp0e4fcuhgn0agrpqvkh76jgmaj25ddx8z6m9wqr9mn0v` → **balance 0, utxo_set пуст** = приз снят (10 ADA + 2674 egg больше не лежат). Ch6 `addr1v9ht7…` → 12 789 241 lovelace (11.344798 ADA + eggs), не тронут.
+- Носитель Ch5 (CID `QmcUgS4LgPrVbtBoLMJAbrDLokWEDxJt36Uj1NHsReTUHh`, в README — `infura-ipfs.io`): проверил 20+ шлюзов/IPFS API: ipfs.io `/api/v0/cat` → **410 Gone**, dweb.link → 429/403, alt-шлюзы → 000/301/522, `ipfs.taxi` отдал HTML gateway-checker (не контент; sha256≠CID). Проверка CID-соответствия по sha256 реализована (base58(0x12 0x20||h)) — ни один файл не совпал. Wayback CDX по 6 хостам и точным URL → captures = 0; wildcard → []. Репозиторий пазла содержит только README+SOLUTIONS (история git: 10 коммитов, ассетов нет).
+- Вывод: ветка Ch5 **закрыта дважды** — (1) приз уже снят, (2) авторская картинка не пиннится и недоступна ни с одного достижимого шлюза. Повторять бессмысленно без нового пиннинга/копии.
+- Ch6: приз жив, но новых идей после негатива по M-clear.png/логотипу/метаданным нет (см. запись 17.10 18:07). Не трогал.
+- Артефакты: `data/ch5/` (неудачные загрузки и скриптовая проверка CID в логе), `data/github/**`. Транзакций не делал.

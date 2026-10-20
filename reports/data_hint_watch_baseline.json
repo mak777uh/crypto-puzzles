@@ -1,0 +1,205 @@
+{
+ "checks": {
+  "ballet/bt-5265748": {
+   "bytes": 211692,
+   "digest": "bt20-54995660",
+   "err": "постов=20, макс.msg=54995660, стр=3",
+   "mode": "btlast",
+   "status": 200,
+   "url": "https://bitcointalk.org/index.php?topic=5265748.0"
+  },
+  "echo-ls/rss": {
+   "bytes": 3398,
+   "digest": "bc23f9f6ca0e4737",
+   "err": "",
+   "mode": "body",
+   "status": 200,
+   "url": "https://echo.ls/index.xml"
+  },
+  "gh/boha": {
+   "bytes": 4986,
+   "digest": "a5d0712eb4a8caab",
+   "err": "",
+   "mode": "body",
+   "status": 200,
+   "url": "https://api.github.com/repos/oritwoen/boha/commits?per_page=1"
+  },
+  "gh/metaneer-seed-phrase": {
+   "bytes": 4051,
+   "digest": "6bb1378bf98139eb",
+   "err": "",
+   "mode": "body",
+   "status": 200,
+   "url": "https://api.github.com/repos/metaneer/seed-phrase/commits?per_page=1"
+  },
+  "gh/open-crypto-puzzles": {
+   "bytes": 4056,
+   "digest": "08a38eec541ffd0a",
+   "err": "",
+   "mode": "body",
+   "status": 200,
+   "url": "https://api.github.com/repos/floflo777/open-crypto-puzzles/commits?per_page=1"
+  },
+  "gh/wealth-in-poetry": {
+   "bytes": 5097,
+   "digest": "4f7b1a3064a8a6e2",
+   "err": "",
+   "mode": "body",
+   "status": 200,
+   "url": "https://api.github.com/repos/HomelessPhD/Wealth_in_Poetry/commits?per_page=1"
+  },
+  "guntis/rss-uploads": {
+   "bytes": 50555,
+   "digest": "12129c6fb83a2a6c",
+   "err": "",
+   "mode": "body",
+   "status": 200,
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCkYCnjVcFJDN6Cp_uP0pv_A"
+  },
+  "nostr/ah-white": {
+   "bytes": 215687,
+   "digest": "text843903b825abcbdb",
+   "err": "слов=9245, блоков=100, последняя дата=2026-03-16 19:18:40",
+   "mode": "text",
+   "status": 200,
+   "url": "https://njump.me/npub1c2rvx6ue9uewl452kczcfxz9w242sfzn64ul8dv2afd3t5dpktzs0kmmvf"
+  },
+  "onetime/secret": {
+   "bytes": 6519,
+   "digest": "a5fdb25f7ce67b30",
+   "err": "",
+   "mode": "status",
+   "status": 404,
+   "url": "https://onetimesecret.com/secret/9ju7i8r5tx59szmh2xms48y24phaded"
+  },
+  "oobit/aliancas-3": {
+   "bytes": 178727,
+   "digest": "15b7310e1e8d3318",
+   "err": "",
+   "mode": "status",
+   "status": 200,
+   "url": "https://bitcoinpuzzles.io/pt/puzzles/aliancas/3"
+  },
+  "oobit/comentarios": {
+   "bytes": 26525,
+   "digest": "f012db41e425db18",
+   "err": "",
+   "mode": "body",
+   "status": 200,
+   "url": "https://bitcoinpuzzles.io/pt/puzzles/139/tab/comentarios"
+  },
+  "oobit/dicas": {
+   "bytes": 3446,
+   "digest": "9b0bfed72b2e6e96",
+   "err": "",
+   "mode": "body",
+   "status": 200,
+   "url": "https://bitcoinpuzzles.io/pt/puzzles/139/tab/dicas"
+  },
+  "oobit/puzzle-139": {
+   "bytes": 54164,
+   "digest": "35b299297e010409",
+   "err": "",
+   "mode": "status",
+   "status": 200,
+   "url": "https://bitcoinpuzzles.io/en/puzzles/139"
+  },
+  "school/home": {
+   "bytes": 63656,
+   "digest": "0dbdf76b5538c716",
+   "err": "",
+   "mode": "body",
+   "status": 200,
+   "url": "https://schoolofbitcoin.com"
+  },
+  "school/kdbx": {
+   "bytes": 63656,
+   "digest": "0dbdf76b5538c716",
+   "err": "",
+   "mode": "status",
+   "status": 404,
+   "url": "https://schoolofbitcoin.com/whatisthepassphrase.kdbx"
+  },
+  "seedphrase/home": {
+   "bytes": 31957,
+   "digest": "eadc4fed53c6c09d",
+   "err": "",
+   "mode": "body",
+   "status": 200,
+   "url": "https://seed-phrase.com"
+  },
+  "slm/home": {
+   "bytes": 488763,
+   "digest": "4ca6529fe9b00fc3",
+   "err": "",
+   "mode": "body",
+   "status": 200,
+   "url": "https://www.smithlylemoore.com"
+  },
+  "slm/lock-fire": {
+   "bytes": 385098,
+   "digest": "gate1-13252cd2b8f4",
+   "err": "гейт=1, ссылок на страницы=23",
+   "mode": "gate",
+   "status": 200,
+   "url": "https://www.smithlylemoore.com/smoke-signals"
+  },
+  "slm/lock-raft": {
+   "bytes": 384927,
+   "digest": "gate1-13252cd2b8f4",
+   "err": "гейт=1, ссылок на страницы=23",
+   "mode": "gate",
+   "status": 200,
+   "url": "https://www.smithlylemoore.com/raft-escape"
+  },
+  "stacker/bip38-275973": {
+   "bytes": 275079,
+   "digest": "8999ff4d3b259224",
+   "err": "",
+   "mode": "status",
+   "status": 200,
+   "url": "https://stacker.news/items/275973"
+  },
+  "stacker/school-908283": {
+   "bytes": 340940,
+   "digest": "371eb3ac69a7387b",
+   "err": "",
+   "mode": "status",
+   "status": 200,
+   "url": "https://stacker.news/items/908283"
+  },
+  "walkingbanks/home": {
+   "bytes": 10881,
+   "digest": "0fea82f8fc3080d4",
+   "err": "",
+   "mode": "status",
+   "status": 200,
+   "url": "https://walkingbanks.com"
+  },
+  "walkingbanks/www": {
+   "bytes": 10881,
+   "digest": "0fea82f8fc3080d4",
+   "err": "",
+   "mode": "status",
+   "status": 200,
+   "url": "https://www.walkingbanks.com"
+  },
+  "zden/haluska-live-index": {
+   "bytes": 30227,
+   "digest": "b7782e52bed09e67",
+   "err": "",
+   "mode": "body",
+   "status": 200,
+   "url": "https://crypto.haluska.sk/"
+  },
+  "zden/halv-wayback-cdx": {
+   "bytes": 2723,
+   "digest": "dc5cda1eb1c798b5",
+   "err": "",
+   "mode": "body",
+   "status": 200,
+   "url": "https://web.archive.org/cdx/search/cdx?url=crypto.haluska.sk*&output=json&limit=-25&fl=timestamp,original,statuscode,digest"
+  }
+ },
+ "committed_utc": "2026-10-19T21:11:14Z"
+}

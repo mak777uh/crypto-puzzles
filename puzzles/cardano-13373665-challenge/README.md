@@ -11,7 +11,7 @@
   - Ch5 пуст (steghide, пустой пароль). Ch7 — скрипт-адрес, не приз.
   - Автор — команда MintMatrix.io: по метаданным минта яиц «redeemableProperties: True».
 - **Проверено и отброшено** (по Ch6): LSB, альфа и хвост PNG логотипа; LSB PNG Ch2; outguess на Ch5 jpg; zero-width в README; метаданные tx; запись в token registry; мнемоники Ch1/2/4/5 на acct 0–2, role 0/1, idx 0–9; транспонированные и диагональные матрицы слов (14 валидных, 0 совпадений); soft-children xvk Ch3/4/5.
-- **Что осталось / следующий шаг**: DCT-стего (jsteg/F5) в стегозавре Ch5 JPEG («see-through», рентген); M-clear.png (прозрачный логотип MintMatrix, архив январь 2022) не разобран; «redeemable properties» в архиве mintmatrix.io за 2022.
+- **Что осталось / следующий шаг**: Ch6 — только «See through the matrix.» (M-clear.png, логотип, метаданные и registry уже закрыты негативом 17.10); Ch5 **закрыт 18.10**: приз снят (balance 0, koios 17:58Z), а картинка `QmcUgS4…` больше не пиннится (ipfs.io 410 Gone; Wayback captures=0), так что и steghide/DCT-ветка недостижима.
 - **Файлы/скрипты**: `/workspace/work/cardano_egg/NOTES.md`, `icarus.py` (BIP39 → Icarus → CIP1852, сверен на Ch2/4/5), `sweep.py` (ручной CBOR-билдер tx + отправка через Koios, годится для любых Cardano-выводов), `derive.py`, `english.txt`, `img/`, `pub.hex`; ключ Ch3 — только в `.secret/`.
 - **Проекты Hark и статус**: мультичейн-охота, задача 98bdbcc9 (`/workspace/work/multichain/NOTES.md`). Ch6 после сессии 13.10 (~35 мин) не возобновлялся. Охоте «оычн» с 14.10 09:34 велено «Cardano/TON-квесты не делать».
 - **Оценка шансов**: низкие-средние, приз ≈12,8 ADA. Выплата без посредников: ключ → sweep.py.
@@ -22,3 +22,6 @@
 
 ## История изменений
 - 2026-10-16 (deepseek-flash) — папка создана при переносе данных из `MASTER_CATALOG_v2_2026-10-16.md` (Часть Б: живые загадки вне каталога).
+
+## Обновление GitHub-интейка (2026-10-18, Qoder)
+- GitHub-интейк: **done** 2026-10-18 — 2 репо, 0 API-запросов, 4 бесплатных транспортов — содержимое уже в базе (snapshot уже лежит, HEAD 569e0fe2 не изменился; ls-remote не отвечает (404/приватный/удалён)); API-сбор не требовался репо: 2; путь дайдеста: `data/github/GITHUB_INTAKE.md`

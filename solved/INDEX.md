@@ -9,12 +9,13 @@
   убрать строку отсюда, добавить в `puzzles/README.md`, отметить в `LOG.md` пазла и в отчёте `reports/`.
 - Внутри каждой папки: `README.md` (досье), `LOG.md` (хроника), `tools/`, `data/` — структура прежняя.
 
-## Решённые — приз снят (29)
+## Решённые — приз снят (30)
 
 Приз снят (нами или третьей стороной). Работать нечего; папки хранят методику и историю.
 
 | Папка | Причина переноса |
 |---|---|
+| [1btc-brainwallet-defcon-2014](1btc-brainwallet-defcon-2014/README.md) | дубль решённого: «The One Bitcoin Book» (Spencer Lucas, 2014), приз 1 BTC снят 12.2024 (DEF CON 33, J. Gabay) — адрес в досье не был указан |
 | [80-bit-ktimesg-key-challenge](80-bit-ktimesg-key-challenge/README.md) | решён 02.11.2024 (status: Solved) |
 | [andy-bauch-new-money-cog-428ksats](andy-bauch-new-money-cog-428ksats/README.md) | solved — приз снят (OCP) |
 | [bc1q21-timelock-challenge-l5-100ksats](bc1q21-timelock-challenge-l5-100ksats/README.md) | solved — приз снят (OCP) |
@@ -24,6 +25,7 @@
 | [dug-student-treasure-hunt-63ksats](dug-student-treasure-hunt-63ksats/README.md) | solved (наш индекс 1 из 3; остальные сняты третьей стороной за 5 недель до нас) |
 | [ftpk-season-4-166usdc](ftpk-season-4-166usdc/README.md) | solved — решён читателем после публикации |
 | [grycoin-chain](grycoin-chain/README.md) | все блоки claimed; серия закрыта через неделю после старта |
+| [iesta-1btc-hidden-in-plain-sight-2018](iesta-1btc-hidden-in-plain-sight-2018/README.md) | приз снят 16.08.2018 (100 148 121 сат → 31hK4Ev…); проверка Qoder 18.10.2026 |
 | [iamabananaamaa-puzzles](iamabananaamaa-puzzles/README.md) | solved (agntn) |
 | [keysa-crack-the-seed-369ksats](keysa-crack-the-seed-369ksats/README.md) | solved — приз снят |
 | [ledger-donjon-ctf](ledger-donjon-ctf/README.md) | solved (Scissors Secret Sharing; приз — CTF-очки, не BTC) |
@@ -31,7 +33,7 @@
 | [luckylurker-seed-riddles-80ksats](luckylurker-seed-riddles-80ksats/README.md) | solved — приз снят |
 | [luckylurker-vault-1-0-0008btc](luckylurker-vault-1-0-0008btc/README.md) | solved (разминочный пазл серии) |
 | [mini-puzzles-retiredcoder](mini-puzzles-retiredcoder/README.md) | серия с ключами уже решённых пазлов 1000 BTC Challenge |
-| [natasha-otomoski-1btc](natasha-otomoski-1btc/README.md) | solved (WIF восстановлен, случай закрыт) |
+| [natasha-otomoski-1btc](natasha-otomoski-1btc/README.md) | solved (WIF опубликован решателем akkort 22.08.2019); приз 0,99996681 BTC ушёл на ЧУЖОЙ адрес `36T9H8…` до публикации — not-ours; адрес пазла пуст (funded = spent = 100 000 078 сат, blockstream 19.10.2026). Возврат в puzzles/, сделанный Beam 19.10, отменён |
 | [picture-puzzle-1mbtc](picture-puzzle-1mbtc/README.md) | claimed через ~5 часов (2013) |
 | [quizchain-series](quizchain-series/README.md) | все блоки сняты, последний — 23.07.2019 |
 | [quizchain2-series](quizchain2-series/README.md) | все блоки сняты (блок 76 — 17.08.2026) |
@@ -65,9 +67,14 @@
 | [satoshis-treasure-arg-1m](satoshis-treasure-arg-1m/README.md) | сайт мёртв (2019 ARG); единственный верифицируемый bounty-адрес 1899BGHGR4… потрачен (баланс 0, проверка 18.10.2026); основной ~$1M фонд физический/off-chain |
 | [310-btc-challenge-0-31btc](310-btc-challenge-0-31btc/README.md) | закрыт: финальная стадия 0,31 BTC снята владельцем ключей 03.12.2019 (пул-адрес Pip 3NPZiNWiD7cCfXZa1D8tnEZBPgQ884cVw7, tx 697a8e2e…, блок 606432 → 3DaNeVNFqpirR9KEHjFuPPeErPaMTZyeBo); сайт мёртв (домен с 2024 — казино-спам); наша on-chain проверка 18.10.2026 |
 
-## Dead-end и не-пазлы — не тратить время (14)
+## Dead-end и не-пазлы — не тратить время (12)
 
 Тупик без новой информации, отбраковано проверкой или не пазл вовсе. Не тратить время.
+
+> 2026-10-19, Qoder: `onfo-forsyth-1btc` и `objective-thune-licorne-0-21btc` вынесены отсюда
+> в `puzzles/` **по решению Ильи** со статусом «сторож» (живой приз + наблюдение, прогонов не
+> запускать). Причины тупика в силе; строки — в `puzzles/README.md`. Папок в `solved/` = 56,
+> строк индекса = 30 + 12 + 14.
 
 | Папка | Причина переноса |
 |---|---|
@@ -77,8 +84,6 @@
 | [demint-bitcoin-evangelism](demint-bitcoin-evangelism/README.md) | dead-end |
 | [game-of-satoshi-season-1](game-of-satoshi-season-1/README.md) | dead-end |
 | [nist-seeds-bounty-valsorda](nist-seeds-bounty-valsorda/README.md) | отбраковано нашей проверкой (проект «оычн», 13.10.2026) |
-| [objective-thune-licorne-0-21btc](objective-thune-licorne-0-21btc/README.md) | dead-end |
-| [onfo-forsyth-1btc](onfo-forsyth-1btc/README.md) | dead-end |
 | [operation-mindfuck-illuminatus](operation-mindfuck-illuminatus/README.md) | культурный контекст, не решаемая загадка |
 | [pindar-van-arman-cryptoartgan-nft](pindar-van-arman-cryptoartgan-nft/README.md) | вероятно мёртв: 0 ETH на адресе; владение NFT не проверено (dead-ends-registry) |
 | [platos-solid](platos-solid/README.md) | источников не найдено; рекомендация каталога — исключить |

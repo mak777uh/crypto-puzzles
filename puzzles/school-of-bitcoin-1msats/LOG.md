@@ -19,3 +19,9 @@
 - Результат: перенесено 5 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в базе, пропущено: 0. Статус по OCP: `open`.
 - Артефакты: `2-mid-prizes/school-of-bitcoin-1msats/README.md`, `2-mid-prizes/school-of-bitcoin-1msats/analysis/leads.md`, `2-mid-prizes/school-of-bitcoin-1msats/analysis/tested.md`, `2-mid-prizes/school-of-bitcoin-1msats/clues/author-posts.md`, `2-mid-prizes/school-of-bitcoin-1msats/puzzle.json`, `2-mid-prizes/school-of-bitcoin-1msats/tools/oracle.py`
 - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/school-of-bitcoin-1msats ; полная дельта — `_sources/ocp_sync_2026-10-18/delta_report.md`.
+
+## 2026-10-18, 17:14 UTC — Qoder Desktop (Windows) — проверка пути к kdbx через Wayback: сетевой блокер
+- Брал бронь, сделал точечную проверку единственного оставшегося бесплатного пути к `whatisthepassphrase.kdbx`: Wayback CDX по `schoolofbitcoin.com/*` с фильтрами `kdbx`/`keepass`/`application/octet-stream` и прямые snapshot-URL — пусто; сам `web.archive.org` с этой машины недоступен (HTTP 000, 20–45 с таймаута, 3 проверки), тогда как живой сайт отвечает 200.
+- OCP `analysis/leads.md` независимо фиксирует: файла нет ни на сайте, ни в GitHub, ни в Wayback, ни в треде stacker.news; единственный известный путь — человек с копией (контакт запрещён правилами Ильи).
+- Новых данных нет, переборов/трат не было, бронь снята. Статус пазла не меняется: external-info.
+- Артефактов не создано (только чтение/сетевые проверки).

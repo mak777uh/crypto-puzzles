@@ -1,0 +1,101 @@
+---
+title: "Puzzle Weave"
+description: "Tiamat's twelve weave puzzles from 2019 and 2020 with prizes in AR and ETH and DAI. Nine claimed. Three still open including over 1500 AR."
+canonical_url: "https://puzzles.agntn.dev/collections/weave"
+---
+# Puzzle Weave
+
+> Tiamat's twelve weave puzzles from 2019 and 2020 with prizes in AR and ETH and DAI. Nine claimed. Three still open including over 1500 AR.
+
+<collection-facts collection="weave">
+
+
+
+</collection-facts>
+
+## The puzzle
+
+Tiamat published a series of puzzles on Arweave itself. Every titled page says Puzzle Weave and a number. Hence the key `weave` and ids like `weave/3`. Arweave is the address, not the name. Each puzzle is a transaction with instructions and a funded wallet. A few live on Ethereum for variety. The prizes were AR for the most part, plus a few ETH and one 100 DAI bounty. That bounty is why `currency` exists as a field.
+
+```ts
+const puzzle = await get("weave/9");
+
+puzzle.chain(); // "ethereum"
+puzzle.prize(); // 100
+puzzle.currency(); // "DAI"
+puzzle.prizeCurrency(); // "DAI", not ETH
+```
+
+## What the records carry
+
+An Arweave address is a `standard` address. There are no script kinds to pick from, and the library has no key to address derivation for the chain, so an Arweave record never verifies. It doesn't have to. None of the solvers published a key. The outcomes are `claimed`, the wallet was emptied, and the record stops where the knowledge stops. The Ethereum records in the collection are the same shape with `chain: "ethereum"`.
+
+```ts [src/collections/weave/3.ts]
+export const weave3 = puzzle({
+  id: "weave/3",
+  chain: "arweave",
+  address: "wHP6OPG5GMF5dedo_CD8AAy6x8La-gfI5b5pk65Tx_0",
+  sourceUrl: "https://ur42unm2jhdm.arweave.net/VLJIGuTJewofKx8ad4JYQs93nEuGnkgjrIt_Sd2QPYw",
+  startedAt: "2019-05-25 13:07:33",
+  prize: 1000.165838006237,
+  transactions: [
+    funding("hTB5Ouv5nY11pQiGFXCJQZxNOkVlgPAAJ9IYSRu8v0E", "2019-05-25 13:07:33", 250),
+    funding("_Aa5au3qzhCSIPxj5RfLkF_eSUuxAcnqoWY3PeKTaRg", "2019-05-27 08:30:39", 500),
+    funding("7-sWojFc0sG3mTr34YGBGssYDvXjOPZf-xik8v1Ct24", "2019-08-28 14:09:38", 250),
+    increase("2u0lD8wh91CYdWU0NiqSPC2K2MBo-1KdtKSREcSoyjc", "2021-12-21 01:58:12", 0.03062018),
+    increase(…),
+    …
+  ],
+});
+```
+
+Three funding transactions make the 1000 AR bounty. Then strangers kept tipping the wallet, from December 2021 to September 2025. A few sent hundredths of an AR, most a lot less. Who sends dust to an open puzzle? Nobody says. The record lists every tip anyway, because the prize is what the wallet holds, not what the author promised. `weave/10` and `weave/12` got the same treatment.
+
+## Two weaves you can actually read
+
+Most weaves are a picture and an unlock box. Two of them aren't. `weave/1` and `weave/4` print their riddles as plain text. So the records carry them as `official` hints, one riddle per hint. `puzzles hints weave/4` lists them.
+
+### Puzzle Weave 1, seven riddles and one rule
+
+The page has seven riddles. Under each one the blanks give away the length of the answer. The instructions add a rule: write several numbers in ascending order. That rule is a hint too. The last riddle is a picture of ten logos, so the record ships it as `assets/weave/1/logos.png`.
+
+Every hint from the page carries the time its transaction was mined, May 23, 2019 at 15:49 UTC. That's when the riddles went public.
+
+ZorenX wrote up every answer in June 2020. Each one sits on its riddle as `answer`. Glued together they make `5710:011890DeadSeaBd6Apple039`. Ten boxes, zero spaces.
+
+But the answer was public a year earlier. Tiamat tweeted Puzzle #1 at 18:33 UTC. The wallet moved at 19:53. Twenty minutes later [pogo](https://puzzles.agntn.dev/solvers/pogo) replied under the tweet with the whole thing, spaces and all. That reply is the solver's own word, so it sits on the solver record. The answers stay with ZorenX, because only the write-up says which piece answers which riddle.
+
+The page also promised more hints through Weavemail every couple of days. The address it gives is the wallet that uploaded the page. Every couple of days is a long time for a puzzle that lasted four hours on chain. No hint made it to the record.
+
+### Puzzle Weave 4 and a lot of zeros
+
+Five riddles, one input box. Tiamat helped twice under the launch tweet. First came a run length example, a week after it. Then one line about the droids: only a "%" on the 2nd question. ZorenX lists a third hint, no separators and case sensitive. It isn't anywhere on Tiamat's feed that we could find. So the record keeps it as `community`.
+
+Which is the most compressible hodler? A zero address, obviously. Except the answer has 41 zeros, one more than an Ethereum address holds. And that's exactly the string that opens the wallet.
+
+Medium marks that write-up as edited two weeks after it went up. Which version first had the answers? No capture says. So the Weave 4 answers carry no date.
+
+### Check the answers yourself
+
+Both pages keep the encrypted key file and the code that opens it. The code runs the answer through SHA-512 11,513 times, then decrypts with CryptoJS AES. We ran it on both published strings. Each one gave back a key file for the record's address. A wrong string just says FAILED.
+
+## Status
+
+Three open: `weave/3` and `weave/10` on Arweave, `weave/11` on Ethereum for 1 ETH. `puzzles balance weave/3` asks the arweave.net gateway whether the AR is still there.
+
+`weave/12` held out for six and a half years. On 3 October 2026 someone moved 1 AR out of it, waited five minutes and took the other 398.75. Nobody has said who or how, so the record has both claims and no solver.
+
+## Every puzzle
+
+One page each: the record, the transactions and the live balance.
+
+<collection-puzzles collection="weave">
+
+
+
+</collection-puzzles>
+
+
+## Sitemap
+
+See the full [sitemap](https://puzzles.agntn.dev/sitemap.md) for all pages.

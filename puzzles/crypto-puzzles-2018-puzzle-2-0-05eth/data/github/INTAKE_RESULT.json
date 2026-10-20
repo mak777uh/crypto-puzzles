@@ -1,0 +1,49 @@
+{
+  "slug": "crypto-puzzles-2018-puzzle-2-0-05eth",
+  "agent": "Beam",
+  "ts": "2026-10-19T10:22:46Z",
+  "date": "2026-10-19",
+  "status": "done",
+  "note": "содержимое уже в базе (общий кэш _sources/ocp (git pull, 0 запросов и 0 дублей)); API-сбор не требовался",
+  "api_calls": 0,
+  "free_transports": 2,
+  "remaining_seen": 59,
+  "reset_utc": "2026-10-19T11:21:58Z",
+  "files": 0,
+  "bytes": 0,
+  "media": 0,
+  "repos": [
+    {
+      "repo": "floflo777/open-crypto-puzzles",
+      "role": "registry",
+      "branch": "main",
+      "head_sha": "09b7676e8520f1981a4021bbc7f40a5f2f66daf8",
+      "counts": {},
+      "files": 0,
+      "bytes": 0
+    }
+  ],
+  "candidates": [
+    {
+      "repo": "floflo777/open-crypto-puzzles",
+      "role": "registry",
+      "source": "ссылки досье",
+      "hits": 11
+    }
+  ],
+  "errors": [
+    "форки floflo777/open-crypto-puzzles: ERR ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='api.github.com', port=443): Read timed out. (read timeout=45)\"))"
+  ],
+  "stop_reason": "",
+  "ocp": {
+    "slug": "crypto-puzzles-2018-puzzle-2-0-05eth",
+    "tier": "small",
+    "folder": "3-small-prizes/crypto-puzzles-2018-puzzle-2-0-05eth",
+    "handles": [
+      "youtube:UCR8-P07nNhxyEr6fwJXvjQQ"
+    ],
+    "repo": "floflo777/open-crypto-puzzles",
+    "ocp_path": "_sources/ocp/3-small-prizes/crypto-puzzles-2018-puzzle-2-0-05eth"
+  },
+  "digest": "data/github/GITHUB_INTAKE.md"
+}

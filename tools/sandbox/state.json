@@ -1,0 +1,189 @@
+{
+  "updated": "2026-10-19 21:41 UTC",
+  "note": "watch-only снимок; ключей нет",
+  "addresses": {
+    "bc1qnepv9pcnqvndux9h9mcaxvk6u993rc0lew9fpp": {
+      "balance": 100000000,
+      "funded": 100000000,
+      "spent": 0,
+      "tx_count": 1,
+      "utxo_in_mempool": 0,
+      "slug": "luckylurker-vault-2-1btc",
+      "op_returns": [],
+      "delta": ""
+    },
+    "157dpLJgAAKugukKz8UwBHapM4idyZvnLc": {
+      "balance": 100000000,
+      "funded": 100000000,
+      "spent": 0,
+      "tx_count": 1,
+      "utxo_in_mempool": 0,
+      "slug": "onfo-forsyth-1btc",
+      "op_returns": [],
+      "delta": ""
+    },
+    "3Jf995GANG4EmFBK89byNNyZdtB3ELXJsZ": {
+      "balance": 21021000,
+      "funded": 21021000,
+      "spent": 0,
+      "tx_count": 2,
+      "utxo_in_mempool": 0,
+      "slug": "objective-thune-licorne-0-21btc",
+      "op_returns": [],
+      "delta": ""
+    },
+    "1GSMG1JC9wtdSwfwApgj2xcmJPAwx7prBe": {
+      "balance": 125649674,
+      "funded": 876003172,
+      "spent": 750353498,
+      "tx_count": 129,
+      "utxo_in_mempool": 0,
+      "slug": "gsmg-io-5btc-puzzle",
+      "op_returns": [
+        {
+          "txid": "973646bb3204b9e67e0fcb58efabe951aaf3714020c277f77092ae59bc1a1bd6",
+          "block_height": 949664,
+          "text": "#GSMG WITNESS BLK 949653 TX 808f812f"
+        }
+      ],
+      "delta": ""
+    },
+    "17ucy1K9ZUAaoY6JVtM932W9jUp5LXfyHa": {
+      "balance": 375055856,
+      "funded": 375055856,
+      "spent": 0,
+      "tx_count": 45,
+      "utxo_in_mempool": 0,
+      "slug": "gsmg-io-5btc-puzzle",
+      "op_returns": [],
+      "delta": ""
+    },
+    "bc1qyjwa0tf0en4x09magpuwmt2smpsrlaxwn85lh6": {
+      "balance": 100016775,
+      "funded": 100016775,
+      "spent": 0,
+      "tx_count": 5,
+      "utxo_in_mempool": 0,
+      "slug": "bitaps-shamir-challenge-1btc",
+      "op_returns": [],
+      "delta": ""
+    },
+    "bc1qfkhx02v89u2qyyyljeczw6hu9sr437y44t7ae5yf09thrdukfqesnjg2wj": {
+      "balance": 0,
+      "funded": 947620,
+      "spent": 947620,
+      "tx_count": 123,
+      "utxo_in_mempool": 0,
+      "slug": "caesarcoder-genesis-block-wallet-puzzle-947ksats",
+      "op_returns": [
+        {
+          "txid": "473a314bcb3f5abc8dc4500e8d0ab80525ff65a846d55406c1e1e10fa8c8e46c",
+          "block_height": 971886,
+          "text": "M\u001f\u0002-----BEGIN PGP SIGNED MESSAGE-----\nHash: SHA512\n\n              [ PUZZLE AUTHOR ]\n\n  Handle : CaesarCoder\n  GitHub : github.com/caesrcd\n\n  PGP Fingerprint:\n  E2A0 BF0D 72D7 4483 064D\n  4FF9 3049 5240 7A6E 5C38\n\n  \"Every cipher tells a story.\n   Every puzzle bears its creator's mark.\"\n\n            "
+        },
+        {
+          "txid": "4b2d29ec21e2c9a37dae5ca7ddc49d6f34b0efbf4b0aa1afed6405dec8067b78",
+          "block_height": 971840,
+          "text": "CMy GPU searched everywhere except the PBKDF2 settings. Well played!"
+        },
+        {
+          "txid": "3367997d30d4b0363ff96e9fb587c28622a691044ab3ea9ce5c30c5d730b422f",
+          "block_height": 971814,
+          "text": "%Thank you for the fascinating puzzle!"
+        },
+        {
+          "txid": "bcfc8cbeb5498d803dc1b1384233eb5e9f2da79c2077b9a0907bc0187e2e4465",
+          "block_height": 971810,
+          "text": "LQShoutout to the player who cracked the puzzle!\n\nThanks to everyone who joined in."
+        },
+        {
+          "txid": "484fef192e43bd6c72407ad4382037f6ff3c6df985df165b3a78713bc50aa4d8",
+          "block_height": 971789,
+          "text": "&1) e4caa034; 2) 9fb54bad; 3) 3bc42789."
+        },
+        {
+          "txid": "39a7dd0c74a15d11c2cc301167bcee243f458bdc54f2aa3e6a1426df44d868d6",
+          "block_height": 971770,
+          "text": "LZ1) e4caa034; 2) 9fb54bad; 3) e4caa034; 4) e79c9765; 5) 8b9b2fea; 6) 68ab4226; 7) 9290f941."
+        }
+      ],
+      "delta": ""
+    },
+    "36T9H8hJP7xexevqayU9ADxGca7Y5dKquQ": {
+      "balance": 99996681,
+      "funded": 99996681,
+      "spent": 0,
+      "tx_count": 1,
+      "utxo_in_mempool": 0,
+      "slug": "natasha-otomoski-1btc",
+      "op_returns": [],
+      "delta": ""
+    },
+    "17oKQHHRxdQBiRaGKCoVDQJfebhPaZV3r7": {
+      "balance": 79638,
+      "funded": 79638,
+      "spent": 0,
+      "tx_count": 1,
+      "utxo_in_mempool": 0,
+      "slug": "luckylurker-vault-1-0-0008btc",
+      "op_returns": [],
+      "delta": ""
+    },
+    "bc1qw8uecdjvuedtkg4s2kku4s2ak9r2cm59khclfr": {
+      "balance": 1000000,
+      "funded": 1000000,
+      "spent": 0,
+      "tx_count": 1,
+      "utxo_in_mempool": 0,
+      "slug": "caesarcoder-genesis-block-wallet-puzzle-947ksats",
+      "op_returns": [],
+      "delta": ""
+    },
+    "bc1qdu8mh9qjtjhy89mvhmcgf66ul6ld92rdr6qzad": {
+      "balance": 924704,
+      "funded": 2523649,
+      "spent": 1598945,
+      "tx_count": 6,
+      "utxo_in_mempool": 0,
+      "slug": "caesarcoder-genesis-block-wallet-puzzle-947ksats",
+      "op_returns": [
+        {
+          "txid": "3367997d30d4b0363ff96e9fb587c28622a691044ab3ea9ce5c30c5d730b422f",
+          "block_height": 971814,
+          "text": "%Thank you for the fascinating puzzle!"
+        },
+        {
+          "txid": "040cca803909ca782fe3ba4d197740afc4ff3b353af1c5cbe06de52cfbb99792",
+          "block_height": 968351,
+          "text": "LN50k+1k: please send the 2 pubkeys Electrum-encrypted to this tx's input pubkey"
+        },
+        {
+          "txid": "e43647274f672f9b4eb42fff1d15f2afcaa8bfd4650823403a18a76774999169",
+          "block_height": 966966,
+          "text": "KPassphrase: genesis data or your own word? How long? What built the wallet?"
+        }
+      ],
+      "delta": ""
+    },
+    "179sxfh6rw6bHSo5wVUhLP96k46QaEzVP": {
+      "balance": 0,
+      "funded": 100000780,
+      "spent": 100000780,
+      "tx_count": 4,
+      "utxo_in_mempool": 0,
+      "slug": "natasha-otomoski-1btc",
+      "op_returns": [],
+      "delta": ""
+    },
+    "bc1q32e3dxcd0n2tlzdmchraf2057d0ax4xdwrk3jq": {
+      "balance": 0,
+      "funded": 80000,
+      "spent": 80000,
+      "tx_count": 3,
+      "utxo_in_mempool": 0,
+      "slug": "luckylurker-seed-riddles-80ksats",
+      "op_returns": [],
+      "delta": ""
+    }
+  }
+}

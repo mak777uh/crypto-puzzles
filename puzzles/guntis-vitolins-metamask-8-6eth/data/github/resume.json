@@ -1,0 +1,18 @@
+{
+  "done": [
+    "floflo777/open-crypto-puzzles",
+    "agntn/puzzles",
+    "noobsilence/crypto-puzzle-lab",
+    "pytorch/pytorch"
+  ],
+  "left": [
+    "schum-io/open-crypto-puzzles",
+    "lekejf/open-crypto-puzzles",
+    "pauldmurphy/open-crypto-puzzles",
+    "ebr4him68-rgb/open-crypto-puzzles",
+    "aperioscanner/open-crypto-puzzles",
+    "windstalker-arch/open-crypto-puzzles"
+  ],
+  "ts": "2026-10-18T14:47:42Z",
+  "reason": "срезано потолками: собрано 4 кандидатов из 10 (--max-repos/--max-mb)"
+}

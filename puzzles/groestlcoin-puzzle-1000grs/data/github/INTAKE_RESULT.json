@@ -1,0 +1,21 @@
+{
+  "slug": "groestlcoin-puzzle-1000grs",
+  "agent": "Beam",
+  "ts": "2026-10-19T07:15:23Z",
+  "date": "2026-10-19",
+  "status": "none",
+  "note": "репозиториев нет: в досье прочитано 57.9 КБ знаков, github.com-ссылок 0, запись OCP: нет записи; репо автора/форки/поиск: запрошены, кандидатов не дали",
+  "api_calls": 0,
+  "free_transports": 0,
+  "remaining_seen": null,
+  "reset_utc": "2026-10-18T19:30:13Z",
+  "files": 0,
+  "bytes": 0,
+  "media": 0,
+  "repos": [],
+  "candidates": [],
+  "errors": [],
+  "stop_reason": "",
+  "ocp": null,
+  "digest": "data/github/GITHUB_INTAKE.md"
+}

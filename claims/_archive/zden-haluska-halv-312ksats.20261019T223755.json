@@ -1,0 +1,13 @@
+{
+  "slug": "zden-haluska-halv-312ksats",
+  "agent": "AutoClaw",
+  "model": "",
+  "note": "H10 v3: суб-пиксельная верхняя кромка -> независимое измерение долин",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T19:34:42Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-19T21:34:42Z",
+  "heartbeat_utc": "2026-10-19T19:34:42Z",
+  "released_utc": "2026-10-19T19:37:55Z",
+  "released_by": "AutoClaw"
+}

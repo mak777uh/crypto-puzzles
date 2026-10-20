@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Walking Banks - A Novel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/bip39@3.0.4/dist/bip39.js"></script>
+    <script src="https://unpkg.com/bitcoinjs-lib@5.2.0/dist/bitcoinjs-lib.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #f0f2f5;
+            --accent-color: #4a4a4a;
+		--logo-color: #8A0707;
+            --secondary-accent: #d1d5db;
+            --text-color: #333333;
+            --dark-accent: #e5e7eb;
+            --light-accent: #ffffff;
+            --text-secondary: #333333;
+            --bitcoin-gray: #4a4a4a;
+            --claimed-color: #666666;
+            --unclaimed-color: #4a4a4a;
+            --nostr-color: #4a4a4a;
+            --button-hover: #3d3d3d;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { overflow-x: hidden; width: 100%; position: relative; }
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: var(--primary-color); 
+            color: var(--text-color); 
+            line-height: 1.6; 
+        }
+        .container { width: 100%; max-width: 1280px; padding: 0 15px; margin: 0 auto; position: relative; }
+        
+        /* Hero Section */
+        .hero { 
+            min-height: 100vh; 
+            position: relative; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 4rem 0 2rem; 
+            box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+            background: url('HeroBackground.jpg') no-repeat center center / cover !important;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.7);
+            z-index: 1;
+        }
+
+        .hero-content { 
+            position: relative; 
+            z-index: 2;
+            text-align: center; 
+            width: 100%; 
+            padding: 0 15px; 
+        }
+        .hero .tagline { font-size: 1.1rem; font-weight: 400; color: var(--text-secondary); max-width: 500px; margin: 0 auto 2rem; }
+        .hero-bottom { display: flex; flex-direction: column; gap: 1.5rem; }
+        .hero-box { }
+        .hero-buttons {
+            display: flex;
+            gap: 0.4rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .hero-buttons .btn {
+            padding: 1.6rem 3rem;
+            font-size: 2rem;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        .hero-buttons .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            background: var(--button-hover);
+        }
+        .hero-buttons .btn-secondary:hover {
+            background: var(--accent-color);
+            color: var(--light-accent);
+            transform: translateY(-4px);
+            border-color: transparent;
+        }
+.game-window iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Removes default iframe border */
+    border-radius: 10px; /* Matches the container's border-radius */
+    background: var(--light-accent); /* Consistent background */
+}
+/* Enable smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scroll snapping for desktop */
+@media (min-width: 769px) {
+    body {
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+    }
+
+    /* Use min-height instead of height to prevent overflow */
+    #get-book,
+    #read-excerpts,
+    #find-treasure,
+    #bitcoin-vs-cbdcs,
+    #about,
+    footer {
+        min-height: 100vh; /* Changed from height to min-height */
+        scroll-snap-align: start;
+        overflow-y: auto; /* Keep this for now, but we’ll refine below */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 100vh;
+        scroll-snap-align: start;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section, footer {
+        padding: 6rem 0;
+    }
+
+    .nav-container {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+}
+/* Common styles for sections with background images */
+#find-treasure, 
+#get-book, 
+#read-excerpts, 
+#bitcoin-vs-cbdcs, 
+#about, 
+footer {
+    position: relative; /* Required for ::before positioning */
+}
+
+/* Apply the overlay to all specified sections */
+#find-treasure::before, 
+#get-book::before, 
+#read-excerpts::before, 
+#bitcoin-vs-cbdcs::before, 
+#about::before, 
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85); /* Match hero's overlay */
+    z-index: 1;
+}
+
+/* Ensure content stays above the overlay */
+#find-treasure .container,
+#get-book .container,
+#read-excerpts .container,
+#bitcoin-vs-cbdcs .container,
+#about .container,
+footer .container {
+    position: relative;
+    z-index: 2; /* Higher than overlay's z-index: 1 */
+}
+
+        .format-options { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.8rem; justify-content: center; }
+        .format-tag { 
+            padding: 0.3rem 0.6rem; 
+            background: var(--dark-accent); 
+            border-radius: 20px; 
+            font-size: 0.85rem; 
+            font-weight: 600; 
+            color: var(--text-secondary); 
+            transition: transform 0.2s ease; 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 0.3rem; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .format-tag:hover { transform: translateY(-2px); }
+        .format-tag.nostr { color: var(--nostr-color); border: 1px solid var(--nostr-color); }
+        .format-tag i { font-size: 0.9rem; }
+        .status-indicator { 
+            display: flex; 
+            align-items: center; 
+            gap: 0.5rem; 
+            font-weight: 600; 
+            padding: 0.4rem 0.8rem; 
+            border-radius: 50px; 
+            margin-top: auto; 
+            background: var(--dark-accent); 
+            font-size: 0.9rem; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .status-indicator.claimed { color: var(--claimed-color); border: 1px solid var(--claimed-color); }
+        .status-indicator.unclaimed { color: var(--unclaimed-color); border: 1px solid var(--unclaimed-color); }
+        .status-indicator i { font-size: 1rem; }
+        
+        /* Navigation */
+        .nav-container { 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            z-index: 100; 
+            background: var(--light-accent); 
+            transition: box-shadow 0.3s ease; 
+        }
+        .nav-container.scrolled { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); }
+        .navbar { padding: 1rem 0; display: flex; align-items: center; justify-content: space-between; }
+        .logo { 
+            font-size: 1.3rem; 
+            font-weight: 700; 
+            color: var(--logo-color); 
+            text-decoration: none; 
+            letter-spacing: -0.5px; 
+            z-index: 101; 
+        }
+        .nav-links { display: none; }
+        .nav-links a { 
+            color: var(--text-color); 
+            text-decoration: none; 
+            font-size: 0.9rem; 
+            font-weight: 600; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            padding: 0.5rem 1rem; 
+            border-radius: 25px; 
+            transition: all 0.3s; 
+        }
+        .nav-links a:hover { 
+            color: var(--accent-color); 
+            background: rgba(74, 74, 74, 0.1); 
+        }
+        .menu-toggle { 
+            display: flex; 
+            width: 40px; 
+            height: 40px; 
+            background: var(--dark-accent); 
+            border-radius: 50%; 
+            position: fixed; 
+            top: 15px; 
+            right: 15px; 
+            align-items: center; 
+            justify-content: center; 
+            cursor: pointer; 
+            z-index: 101; 
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); 
+        }
+        .menu-toggle i { font-size: 18px; color: var(--accent-color); }
+        .mobile-menu { 
+            position: fixed; 
+            top: 0; 
+            right: -100%; 
+            width: 70%; 
+            max-width: 280px; 
+            height: 100vh; 
+            background: var(--light-accent); 
+            z-index: 100; 
+            padding: 4rem 1.5rem 1.5rem; 
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1); 
+            transition: right 0.3s ease; 
+            overflow-y: auto; 
+        }
+        .mobile-menu.open { right: 0; }
+        .overlay { 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: 99; 
+            opacity: 0; 
+            pointer-events: none; 
+            transition: opacity 0.3s ease; 
+        }
+        .overlay.active { opacity: 1; pointer-events: auto; }
+        .mobile-menu a { 
+            color: var(--text-color); 
+            text-decoration: none; 
+            font-size: 1rem; 
+            font-weight: 600; 
+            margin: 0.8rem 0; 
+            padding: 0.6rem 0; 
+            display: block; 
+            border-bottom: 1px solid var(--dark-accent); 
+            width: 100%; 
+            transition: all 0.3s; 
+        }
+        .mobile-menu a:hover { color: var(--accent-color); padding-left: 10px; }
+    .bitcoin-balance { 
+    display: flex; 
+    padding: 0.8rem 1.5rem; /* Increased padding slightly for more space */
+    background: #F7931A; /* Bitcoin orange */
+    border-radius: 50px; 
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); 
+    font-weight: 600; 
+    color: #FFFFFF; /* White text for contrast */
+    transition: all 0.3s; 
+    font-size: 0.9rem; 
+    align-items: center; 
+ text-decoration: none;
+    font-family: 'Courier New', monospace;
+    white-space: nowrap; /* Prevents text from wrapping to a new line */
+    min-width: 160px; /* Ensures enough width for the text */
+}
+        .bitcoin-balance:hover { 
+            transform: translateY(-3px); 
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+            background: #FF9900; /* Slightly lighter orange on hover */
+        }
+        .bitcoin-balance i { 
+            color: #FFFFFF; /* White icon */
+            margin-right: 0.5rem; 
+            font-size: 1.2rem; 
+        }
+
+       /* Default mobile-balance styling (for mobile view) */
+/* Default mobile-balance styling (for mobile view) */
+.mobile-balance {
+    display: block; /* Ensure the <a> tag behaves like a block element */
+    padding: 0.4rem 0.8rem; /* Smaller padding for a compact look */
+    background: #F7931A; /* Bitcoin orange */
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #F7931A;
+    white-space: nowrap;
+    font-size: 0.75rem; /* Smaller font size for mobile */
+    font-family: 'Courier New', monospace;
+    color: #FFFFFF; /* White text */
+    text-align: center;
+    text-decoration: none; /* Remove underline from link */
+    position: relative; /* Flow in document below navbar */
+    margin: 0.5rem auto; /* Center it horizontally with spacing */
+    width: fit-content; /* Adjust width to content */
+    z-index: 98; /* Lower than menu-toggle (101) and mobile-menu (100) */
+}
+
+.mobile-balance i {
+    color: #FFFFFF;
+    margin-right: 0.3rem;
+    font-size: 0.9rem; /* Slightly smaller icon */
+}
+
+.mobile-balance:hover {
+    background: #FF9900; /* Lighter orange on hover */
+    color: #FFFFFF; /* Keep text white on hover */
+    transform: translateY(-3px); /* Slight lift on hover, matching bitcoin-balance */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+        
+        /* Buttons */
+        .btn { 
+            display: inline-block; 
+            padding: 0.8rem 1.5rem; 
+            border: none; 
+            border-radius: 50px; 
+            font-size: 1rem; 
+            font-weight: 700; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            cursor: pointer; 
+            transition: all 0.4s ease; 
+            text-decoration: none; 
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+            white-space: nowrap; 
+        }
+        .btn-primary { 
+            background: var(--accent-color); 
+            color: var(--light-accent); 
+        }
+        .btn-primary:hover { 
+            transform: translateY(-4px); 
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); 
+            background: var(--button-hover); 
+        }
+        .btn-secondary { 
+             background: var(--accent-color); 
+            color: var(--light-accent); 
+            border: 2px solid var(--accent-color); 
+        }
+        .btn-secondary:hover { 
+            background: var(--accent-color); 
+            color: var(--light-accent); 
+            transform: translateY(-4px); 
+            border-color: transparent; 
+        }
+        .btn-purchase { 
+            background: var(--accent-color); 
+            color: var(--light-accent); 
+            padding: 0.6rem 1.2rem; 
+            border-radius: 8px; 
+            font-size: 0.9rem; 
+            font-weight: 600; 
+            transition: all 0.3s ease; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+        }
+        .btn-purchase:hover { 
+            background: var(--button-hover); 
+            transform: translateY(-2px); 
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); 
+        }
+
+        #find-treasure {
+            background-image: url('TreasureBackground.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+
+        }
+
+        #get-book {
+            background-image: url('BathBackground.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+
+        }
+
+
+        #read-excerpts {
+            background-image: url('BlockBackground.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+
+        }
+
+        #bitcoin-vs-cbdcs {
+            background-image: url('worldBackground.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+
+        }
+
+        #about {
+            background-image: url('WomanBackground.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+
+        }
+
+        footer {
+            background-image: url('HeroSection.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+
+        }
+
+        .hero .hero-content,
+        #get-book .container,
+        #read-excerpts .container,
+        #bitcoin-vs-cbdcs .container,
+        #about .container,
+        footer .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        #find-treasure .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Treasure Section Redesign */
+        .treasure-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .treasure-text {
+            color: var(--text-secondary);
+            background: var(--light-accent);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .treasure-text h3 {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .treasure-text p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .treasure-instructions {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: var(--light-accent);
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .treasure-instructions h4 {
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+        }
+
+        .treasure-instructions ol {
+            padding-left: 1.5rem;
+        }
+
+        .treasure-instructions li {
+            margin-bottom: 0.5rem;
+        }
+
+        .treasure-note {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: rgba(74, 74, 74, 0.1);
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .treasure-game-container {
+            background: var(--light-accent);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+      .game-window {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 1rem;
+    background: var(--light-accent);
+    border-radius: 10px;
+    min-height: 400px; /* Maintain minimum height */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.game-window iframe {
+    border: none;
+    border-radius: 10px;
+    background: var(--light-accent);
+    width: 450px; /* Set to match your game's width */
+    height: 450px; /* Set to match your game's height */
+    max-width: 100%; /* Ensure it scales down if container is smaller */
+    max-height: 100%; /* Ensure it scales down if container is smaller */
+}
+
+        .game-placeholder {
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        .game-placeholder h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .placeholder-icon {
+            font-size: 3rem;
+            margin: 2rem 0;
+            color: var(--accent-color);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+
+        /* Sections */
+        section { 
+            padding: 5rem 0; 
+            position: relative; 
+            opacity: 0; 
+            transform: translateY(20px); 
+            animation: slideUp 0.8s ease forwards; 
+        }
+        @keyframes slideUp { to { opacity: 1; transform: translateY(0); } }
+        section:nth-child(odd) { background: var(--light-accent); }
+        section:nth-child(even) { background: var(--primary-color); }
+        .section-title { text-align: center; margin-bottom: 3rem; }
+        .section-title h2 { 
+            font-size: 2rem; 
+            font-weight: 600; 
+            letter-spacing: -1px; 
+            color: var(--accent-color); 
+            margin-bottom: 0.8rem; 
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .section-title .divider { height: 2px; width: 40px; background-color: var(--secondary-accent); margin: 0 auto; }
+        
+        /* About Section */
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.about-card {
+    background: var(--light-accent);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+}
+
+.about-image {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--light-accent)); /* Fallback background if image fails */
+}
+
+.about-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the entire image fits without cropping */
+    display: block;
+}
+
+.about-content {
+    padding: 1.5rem;
+    color: var(--text-secondary);
+}
+
+.about-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.about-contact {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.about-contact p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.contact-links a:hover {
+    color: var(--accent-color);
+}
+
+.contact-links a i,
+.contact-links a span,
+.contact-links a img {
+    margin-top: 0.5rem;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 24px;
+    text-align: center;
+    object-fit: contain;
+}
+
+.contact-links a i {
+    font-size: 1.5rem;
+}
+
+.contact-links a span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.contact-links a:hover i,
+.contact-links a:hover span,
+.contact-links a:hover img {
+    color: var(--accent-color);
+    filter: brightness(0) invert(1);
+}
+
+/* Responsive Adjustments */
+
+/* Hide mobile-balance on desktop and show bitcoin-balance instead */
+
+@media (min-width: 769px) {
+    .mobile-balance {
+        display: none; /* Hidden on desktop */
+    }
+    .bitcoin-balance {
+        display: flex; /* Shown in navbar on desktop */
+        margin-left: 2rem;
+    }
+}
+
+/* Ensure mobile-balance is hidden in its old fixed position on mobile */
+@media (max-width: 768px) {
+    .bitcoin-balance {
+        display: none; /* Hide the desktop version on mobile */
+    }
+    .mobile-balance {
+        display: block; /* Show the mobile version */
+    }
+}
+
+/* Fine-tune for very small screens */
+@media (max-width: 480px) {
+    .mobile-balance {
+        font-size: 0.7rem; /* Even smaller font for tiny screens */
+        padding: 0.3rem 0.6rem;
+    }
+    .mobile-balance i {
+        font-size: 0.8rem;
+    }
+}
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+        .about-contact {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .about-contact p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        .contact-links a:hover {
+            color: var(--accent-color);
+        }
+        .contact-links a i,
+        .contact-links a span,
+        .contact-links a img {
+            margin-top: 0.5rem;
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 24px;
+            text-align: center;
+            object-fit: contain;
+        }
+        .contact-links a i {
+            font-size: 1.5rem;
+        }
+        .contact-links a span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        .contact-links a img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .contact-links a:hover i,
+        .contact-links a:hover span,
+        .contact-links a:hover img {
+            color: var(--accent-color);
+            filter: brightness(0) invert(1);
+        }
+        
+        /* Excerpt Section */
+        .excerpt-container { display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 100%; margin: 0 auto; }
+        .excerpt { 
+            background: var(--light-accent); 
+            padding: 1.5rem; 
+            border-radius: 15px; 
+            position: relative; 
+            border-left: 4px solid var(--accent-color); 
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1); 
+            transition: transform 0.3s ease; 
+            max-height: 350px; 
+            overflow-y: auto; 
+            scrollbar-width: thin; 
+            scrollbar-color: var(--secondary-accent) var(--dark-accent); 
+        }
+        .excerpt:hover { transform: translateY(-10px); }
+        .excerpt::before { 
+            content: '"'; 
+            position: absolute; 
+            top: -30px; 
+            left: 20px; 
+            font-size: 6rem; 
+            color: var(--secondary-accent); 
+            opacity: 0.2; 
+            font-family: Georgia, serif; 
+        }
+        .excerpt::after { 
+            content: '"'; 
+            position: absolute; 
+            top: 10px; 
+            left: 10px; 
+            font-size: 2rem; 
+            color: var(--accent-color); 
+            opacity: 0.5; 
+            font-family: Georgia, serif; 
+            z-index: 1; 
+        }
+        .excerpt p { font-size: 1rem; color: var(--text-secondary); margin-bottom: 1rem; position: relative; z-index: 1; }
+        .excerpt::-webkit-scrollbar { width: 8px; }
+        .excerpt::-webkit-scrollbar-track { background: var(--dark-accent); }
+        .excerpt::-webkit-scrollbar-thumb { background: var(--secondary-accent); border-radius: 4px; }
+        .excerpt::-webkit-scrollbar-thumb:hover { background: var(--accent-color); }
+        
+        /* Bitcoin vs CBDCs */
+        .bitcoin-info { 
+            background: var(--light-accent); 
+            padding: 2rem; 
+            border-radius: 10px; 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+        }
+        .bitcoin-info p { color: var(--text-secondary); font-size: 1rem; margin-bottom: 1.5rem; }
+        .comparison-table { 
+            width: 100%; 
+            max-width: 100%; 
+            margin: 2rem auto 0; 
+            border-collapse: separate; 
+            border-spacing: 0; 
+            background: var(--light-accent); 
+            font-size: 0.85rem; 
+            font-family: 'Roboto Mono', monospace;
+        }
+        .comparison-table th, .comparison-table td { 
+            padding: 0.8rem 0.5rem; 
+            text-align: left; 
+            color: var(--text-secondary); 
+            border-bottom: 1px solid rgba(209, 213, 219, 0.2); 
+            position: relative; 
+        }
+        .comparison-table th { 
+            background: var(--light-accent); 
+            color: var(--text-color); 
+            font-weight: 700; 
+            text-transform: uppercase; 
+            letter-spacing: 1.5px; 
+            width: 30%; 
+        }
+        .comparison-table td { 
+            color: var(--text-color); 
+            font-weight: 600; 
+            background: rgba(229, 231, 235, 0.05); 
+        }
+        .comparison-table td.bitcoin-col { width: 35%; }
+        .comparison-table td.cbdc-col { width: 35%; }
+        .comparison-table tr:last-child td { border-bottom: none; }
+        .comparison-table tr:hover td:not(:first-child) { background: rgba(74, 74, 74, 0.1); transition: background 0.3s ease; }
+        
+        /* Table Responsive Styling */
+        .desktop-table { display: table; }
+        .mobile-table { display: none; }
+
+        /* Treasure Section */
+        .hidden-wallet { 
+            padding: 2rem; 
+            background: var(--dark-accent); 
+            border-radius: 10px; 
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1); 
+            position: relative; 
+        }
+        .hidden-wallet h3 { font-size: 1.5rem; color: var(--accent-color); margin-bottom: 1.5rem; }
+        .clue-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: 2rem; }
+        .clue { 
+            padding: 1.2rem; 
+            background: var(--light-accent); 
+            border-radius: 5px; 
+            cursor: pointer; 
+            transition: all 0.3s; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+        }
+        .clue:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+        .wallet-address { 
+            margin-top: 2rem; 
+            padding: 1rem; 
+            background: var(--light-accent); 
+            border-radius: 5px; 
+            text-align: center; 
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+        }
+        .wallet-address code { 
+            color: var(--accent-color); 
+            font-size: 0.95rem; 
+            word-break: break-all; 
+            font-family: 'Courier New', monospace; 
+            padding: 0.2rem 0.5rem; 
+        }
+        
+        /* New Get Book Section */
+        .get-book-list { 
+            max-width: 1000px; 
+            margin: 2rem auto 0; 
+            background: var(--light-accent); 
+            padding: 2rem; 
+            border-radius: 10px; 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 1rem; 
+        }
+
+        .book-option-item { 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 1rem; 
+            background: var(--light-accent); 
+            border-radius: 8px; 
+            transition: background 0.3s ease; 
+            flex: 1 1 30%; 
+            min-width: 250px; 
+        }
+        .book-option-item:hover { 
+            background: rgba(74, 74, 74, 0.1); 
+            transform: translateY(-5px); 
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+        }
+        .book-option-item i { 
+            font-size: 1.5rem; 
+            color: var(--accent-color); 
+            margin-right: 1rem; 
+        }
+        .book-option-item .option-text { 
+            flex-grow: 1; 
+        }
+        .book-option-item .option-text h3 { 
+            font-size: 1.1rem; 
+            font-weight: 600; 
+            color: var(--text-color); 
+            margin-bottom: 0.2rem; 
+        }
+        .book-option-item .option-text p { 
+            font-size: 0.9rem; 
+            color: var(--text-secondary); 
+        }
+        
+        /* Footer */
+        footer { 
+            padding: 3rem 0; 
+            background: var(--light-accent); 
+        }
+        .footer-content { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+        .footer-logo { 
+            font-size: 1.5rem; 
+            font-weight: 700; 
+            color: var(--accent-color); 
+            margin-bottom: 1rem; 
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+        .footer-text { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 2rem; }
+        .footer-links {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            text-align: right;
+        }
+        .footer-links ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+        .social-links { 
+            display: flex; 
+            gap: 1.5rem; 
+            justify-content: flex-start; 
+        }
+        .social-links a { 
+            color: var(--text-secondary); 
+            text-decoration: none; 
+            width: 40px; 
+            height: 40px; 
+            border-radius: 50%; 
+            background: var(--dark-accent); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+            transition: all 0.3s ease; 
+            position: relative; 
+            overflow: hidden; 
+        }
+        .social-links a img.social-icon {
+            width: 24px; 
+            height: 24px;
+            object-fit: contain; 
+            transition: filter 0.3s ease; 
+        }
+        .social-links a:hover {
+            color: var(--light-accent);
+            background: var(--accent-color);
+            transform: scale(1.1) rotate(360deg);
+            box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+        }
+        .social-links a:hover img.social-icon {
+            filter: brightness(0) invert(1); 
+        }
+        .copyright { text-align: center; padding-top: 3rem; color: var(--text-secondary); font-size: 0.85rem; }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero .tagline { font-size: 1rem; }
+            .hero-box { padding: 0.8rem; }
+            .hero-buttons .btn {
+                padding: 0.8rem 1.6rem;
+                font-size: 1.4rem;
+            }
+            .hero-buttons { gap: 0.3rem; }
+            .btn, .btn-purchase {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.7rem;
+            }
+            section { padding: 4rem 0; }
+            .section-title h2 { font-size: 1.8rem; }
+            .excerpt { padding: 1.2rem; }
+            .comparison-table { font-size: 0.8rem; }
+            .get-book-list { display: block; }
+            .book-option-item { 
+                flex-direction: column; 
+                align-items: flex-start; 
+                width: 100%; 
+                margin-bottom: 1rem; 
+                border-bottom: 1px solid var(--secondary-accent); 
+            }
+            .book-option-item:last-child { border-bottom: none; }
+            .book-option-item i { margin-right: 0; margin-bottom: 0.5rem; }
+            .book-option-item a { margin-top: 0.5rem; }
+            .about-grid { padding: 1.5rem; }
+            .contact-links { gap: 1.5rem; }
+            .treasure-container { grid-template-columns: 1fr; }
+            .game-window { min-height: 300px; }
+            /* Table Switch: Hide desktop, show mobile */
+            .desktop-table { display: none; }
+            .mobile-table { display: table; }
+        }
+        
+        @media (max-width: 480px) {
+            .hero { padding: 3rem 0 1.5rem; }
+            .hero h1 { font-size: 2rem; }
+            .hero .tagline { font-size: 0.9rem; max-width: 90%; }
+            .hero-box { padding: 0.6rem; }
+            .navbar { padding: 0.8rem 0; }
+            .logo { font-size: 1.2rem; }
+            .mobile-menu { width: 80%; padding: 3.5rem 1rem 1rem; }
+            .mobile-menu a { font-size: 0.9rem; }
+            .mobile-balance { top: 50px; font-size: 0.85rem; }
+            .hero-buttons .btn {
+                padding: 0.8rem 1.4rem;
+                font-size: 1.3rem;
+            }
+            .hero-buttons { gap: 0.2rem; }
+            .btn, .btn-purchase {
+                padding: 0.4rem 0.7rem;
+                font-size: 0.65rem;
+            }
+            section { padding: 3rem 0; }
+            .section-title h2 { font-size: 1.5rem; }
+            .about-grid { padding: 1.2rem; }
+            .excerpt p { font-size: 0.9rem; }
+            .comparison-table { font-size: 0.75rem; }
+            .comparison-table th, .comparison-table td { padding: 0.6rem 0.4rem; }
+            .hidden-wallet { padding: 1.5rem; }
+            .wallet-address code { font-size: 0.9rem; }
+            footer { padding: 2rem 0; }
+            .get-book-list { padding: 1.5rem; }
+            .book-option-item i { font-size: 1.2rem; }
+            .book-option-item .option-text h3 { font-size: 1rem; }
+            .book-option-item .option-text p { font-size: 0.85rem; }
+            .book-option-item a { padding: 0.3rem 0.8rem; font-size: 0.8rem; }
+            .contact-links { gap: 1rem; }
+            .contact-links a { font-size: 0.85rem; }
+            .contact-links a i,
+            .contact-links a span,
+            .contact-links a img {
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                font-size: 1.2rem;
+            }
+        }
+        
+        @media (min-width: 769px) {
+            .nav-links { display: flex; gap: 2rem; }
+            .menu-toggle { display: none; }
+            .mobile-menu { display: none; }
+            .mobile-balance { display: none; }
+            .bitcoin-balance { display: flex; margin-left: 2rem; }
+            .hero-bottom { flex-direction: row; justify-content: space-between; gap: 2rem; max-width: 1200px; margin: 0 auto; }
+            .hero-box { padding: 1.5rem; max-width: 600px; }
+            .hero h1 { font-size: 5.5rem; letter-spacing: -2px; }
+            .hero .tagline { font-size: 1.3rem; }
+            .hero-buttons .btn {
+                padding: 1.2rem 3rem;
+                font-size: 1.7rem;
+            }
+            .hero-buttons { gap: 0.4rem; }
+            .btn, .btn-purchase {
+                padding: 0.6rem 1.5rem;
+                font-size: 0.85rem;
+            }
+            section { padding: 10rem 0; }
+            .section-title h2 { font-size: 3rem; }
+            .about-grid { padding: 3rem; }
+            .about-text p { font-size: 1.2rem; }
+            .excerpt-container { grid-template-columns: 1fr 1fr; gap: 3rem; }
+            .excerpt { padding: 2rem; max-height: 800px; }
+            .excerpt p { font-size: 1.2rem; }
+            .bitcoin-info { padding: 3rem; }
+            .comparison-table { font-size: 1rem; }
+            .comparison-table th, .comparison-table td { padding: 1.5rem 1rem; }
+            .hidden-wallet { padding: 3rem; }
+            .hidden-wallet h3 { font-size: 1.8rem; }
+            .clue-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+            .clue { padding: 1.5rem; }
+            .wallet-address code { font-size: 1.1rem; }
+            footer { padding: 4rem 0; }
+            .footer-content { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; }
+            .footer-logo { font-size: 2rem; }
+        }
+
+        /* Additional Get Book Styling */
+        .btn-purchase {
+            background: linear-gradient(to bottom, #FF9900, #FF8500);
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            border: 1px solid #FF8500;
+            border-radius: 4px;
+            margin: 5px;
+        }
+        .btn-purchase:hover {
+            background: linear-gradient(to bottom, #FF8500, #FF7000);
+            color: black;
+            text-decoration: none;
+        }
+        .get-book-list { display: flex; justify-content: center; margin-bottom: 2rem; }
+        .book-option-item { display: flex; align-items: center; gap: 1rem; padding: 1rem; }
+        .book-image-placeholder { display: flex; justify-content: center; margin-bottom: 2rem; }
+        .book-cover { max-width: 100%; height: auto; border-radius: 8px; }
+        .audiobook-buttons { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+<div class="nav-container">
+    <div class="container">
+        <nav class="navbar">
+            <a href="#hero" class="logo" id="logo-link">WALKING BANKS</a>
+            <!-- Rest of navbar unchanged -->
+            <div class="nav-links">
+                <a href="#get-book">Get the book</a>
+                <a href="#read-excerpts">Read excerpts</a>
+                <a href="#find-treasure">Find the treasure</a>
+                <a href="#bitcoin-vs-cbdcs">Bitcoin vs. CBDCs</a>
+                <a href="#about">About</a>
+            </div>
+            <a href="#find-treasure" class="bitcoin-balance" title="Current Bitcoin Treasure if you can deduct the seed phrase from the information in the book">
+                <i class="fab fa-bitcoin"></i>
+                <span>Treasure: 0.008 BTC</span>
+            </a>
+        </nav>
+    </div>
+</div>
+
+<a href="#find-treasure" class="mobile-balance" id="mobile-balance" title="Current Bitcoin Treasure if you can deduct the seed phrase from the information in the book">
+    <i class="fab fa-bitcoin"></i>
+    <span>Treasure: 0.008 BTC</span>
+</a>
+
+<div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="mobile-menu" id="mobile-menu">
+    <a href="#get-book">Get the book</a>
+    <a href="#read-excerpts">Read excerpts</a>
+    <a href="#find-treasure">Find the treasure</a>
+    <a href="#bitcoin-vs-cbdcs">Bitcoin vs. CBDCs</a>
+    <a href="#about">About</a>
+</div>
+    <!-- Hero Section -->
+   <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-main">
+                <h1>Walking Banks</h1>
+		<h2>A Bitcoin Thriller</h2><br>
+                <p class="tagline">Dive into a story of greed, justice, and bitcoin fortunes <br>— <br>Grab the book now for your shot at claiming a real bitcoin treasure!</p>
+            </div>
+            <div class="hero-bottom">
+                <div class="hero-box availability-box">
+                    <div class="hero-buttons">
+                        <a href="#get-book" class="btn btn-primary">GET THE BOOK</a>
+                    </div>
+                </div>
+                <div class="hero-box treasure-status">
+                    <div class="hero-buttons">
+                        <a href="#find-treasure" class="btn btn-secondary">FIND THE TREASURE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <main>
+
+<section id="get-book">
+    <div class="container">
+        <div class="section-title">
+            <h2>Get the Book</h2>
+            <div class="divider"></div>
+        </div>
+        
+   
+        <div class="book-image-placeholder">
+            <img src="WalkingBanksMockUp2.png" alt="Walking Banks Book Cover" class="book-cover">
+        </div>
+ <p style="text-align: center; color: var(--text-secondary); max-width: 1400px; margin: 0 auto 1rem;">When a high-ranking U.S. Embassy official is killed in Beijing, seasoned security officer Jack Decker is reluctantly dragged back into action to unravel the mystery. Teaming up with Zheng Lei, a prodigious Beijing police officer, he uncovers a startling link between the murders and the disappearance of Liang Wei, a business tycoon who publicly opposed China's Central Bank Digital Currency before vanishing into thin air.</p>
+
+ <p style="text-align: center; color: var(--text-secondary); max-width: 1400px; margin: 0 auto 1rem;">As the duo closes in on the killer, they unravel a web of deceit and corruption, where nothing is as it seems and a hidden bitcoin fortune awaits its discovery.</p>
+        <!-- Single Buy Option -->
+        <div class="get-book-list">
+            <div class="book-option-item single-option">
+                <i class="fas fa-book"></i>
+                <div class="option-text">
+                    <h3>Book (Paperback or E-Book)</h3>
+                    <p>Get your copy in print or digital format.</p>
+                </div>
+                <a href="https://www.amazon.com/Walking-Banks-Mystery-Novel-White/dp/B0DCNZLV6H" class="btn-purchase" target="_blank" rel="noopener noreferrer">Buy Now</a>
+            </div>
+        </div>
+
+        <!-- Audiobook Options -->
+        <div class="get-book-list audiobook-options">
+            <div class="book-option-item">
+                <i class="fas fa-headphones"></i>
+                <div class="option-text">
+                    <h3>Audiobook</h3>
+                    <p>Listen on your favorite platform:</p>
+                </div>
+                <div class="audiobook-buttons">
+                    <a href="https://www.amazon.com/Walking-Banks-A-Bitcoin-Thriller/dp/B0FFHLJKCS/" class="btn-purchase" target="_blank" rel="noopener noreferrer">Amazon</a>
+                    <a href="https://www.audible.com/pd/Walking-Banks-Audiobook/B0FFHMX6T8" class="btn-purchase" target="_blank" rel="noopener noreferrer">Audible</a>
+                    <a href="https://fountain.fm/album/JYWZOPSrol8fvWpjNt8q" class="btn-purchase" target="_blank" rel="noopener noreferrer">Fountain</a>
+                    <a href="https://books.apple.com/de/audiobook/walking-banks-a-bitcoin-thriller/id1802159365?l=en-GB" class="btn-purchase" target="_blank" rel="noopener noreferrer">Apple Books</a>
+                    <a href="https://play.google.com/store/audiobooks/details/A_H_White_Walking_Banks?id=AQAAAECKKUNp2M" class="btn-purchase" target="_blank" rel="noopener noreferrer">Google Play</a>
+                    <a href="https://www.kobo.com/us/en/audiobook/walking-banks-1" class="btn-purchase" target="_blank" rel="noopener noreferrer">Kobo</a>
+                    <a href="https://www.barnesandnoble.com/w/walking-banks-ah-white/1147137532?ean=2940194215119" class="btn-purchase" target="_blank" rel="noopener noreferrer">Barnes & Noble</a>
+			 <a href="https://open.spotify.com/show/0PkkppvfsEgCiz9FtRC2xY" class="btn-purchase" target="_blank" rel="noopener noreferrer">Spotify</a>
+<a href="https://www.audiobooks.com/audiobook/walking-banks-a-bitcoin-thriller/892371?qId=44a17194852db4172bbafa44d8d3a8ae&pos=1" class="btn-purchase" target="_blank" rel="noopener noreferrer">Audiobooks.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* General Button Styling (Amazon-inspired gradient) */
+.btn-purchase {
+    background: linear-gradient(to bottom, #FF9900, #FF8500);
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #FF8500;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.btn-purchase:hover {
+    background: linear-gradient(to bottom, #FF8500, #FF7000);
+    color: black;
+    text-decoration: none;
+}
+
+/* Layout for Book and Audiobook Options */
+.get-book-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.book-option-item {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    padding: 0.1rem;
+}
+
+.book-option-item.single-option {
+    /* Specific styling for single buy option if needed */
+}
+
+/* Image Placeholder Styling */
+.book-image-placeholder {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.book-cover {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Audiobook Buttons Container */
+.audiobook-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.hero-content h1,
+.hero-content h2,
+.hero-content .tagline {
+    text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff; /* White outline around the text */
+}
+#get-book .section-title h2,
+#get-book p {
+    text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff; /* White outline around the text */
+}
+.hero-content h1 {
+    font-size: 5rem; /* Increased from implied default (around 2.5rem on mobile) */
+}
+
+</style>
+
+</section>
+        
+        <section id="read-excerpts">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Read Excerpts</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="excerpt-container">
+                    <div class="excerpt">
+                        <p>Prologue: Liang Wei</p>
+                        <p>Kuerle, 2023</p>
+                        <p>“Do you have any last words?”</p> 
+                        <p>Liang Wei lay strapped to the operating table, ignoring the surgeon’s question. His eyes looked past him, scanning the room with a detached curiosity. The walls were a pristine white, the equipment state-of-the-art and gleaming. The room was eerily silent, except for the occasional beep of the machines surrounding him. An array of scalpels was lined up next to him on a tray. To his right he saw a row of identical boxes the size of small travel bags sitting on a long, stainless steel table. On top of each one was a small syringe.</p> 
+                        <p>He looked at the two young nurses that darted around the room. He pondered the future they faced in a world increasingly controlled by the very technology he had helped pioneer. With artificial intelligence and surveillance technology advancing at a breakneck pace, he knew their lives would be more closely scrutinized, controlled and manipulated than every generation that has come before. He had tried to guide the development of these new marvels of technology in the right direction. The leather straps holding him down were a somber reminder that he failed.</p> 
+                        <p>A third nurse, standing next to the surgeon, was diligently preparing his arm for the impending needle insertion. Her age was difficult to tell behind the mask. As he locked eyes with her, he noticed a small birthmark in the shape of a half-moon above her right temple. A look of anguish was in her eyes. An inexplicable urge welled up within him to offer her consolation, to assure her that all would be well, but before he could open his mouth, she finished the preparation and retreated to a corner of the room where a tall, silent man loomed, his eyes observing the proceedings with a stern gaze. Liang Wei instantly recognized the imposing figure as Zhang Rui, the unwavering officer who had been his warden throughout his last months of imprisonment. </p> 
+                        <p>“Mr. Liang. Any last words?” </p> 
+                        <p>Wei’s eyes shifted back to the surgeon. He was an unassuming man, somewhat portly with a modest build. Faint lines were etched around his eyes, betraying years of experience. His small hands, held upright, were covered with blue surgical gloves. In his right hand he held a scalpel. Though the man was a stranger to him, he was the key to implementing his last directives. Wei couldn’t help but experience a blend of anxiety and expectancy as he studied the man, acutely aware that his plan was entirely dependent on these tiny hands.</p> 
+                        <p>Wei’s mind raced back to his own past. He had been born in the mid-1970s, at a time when China was just beginning to emerge from the shadow of the Cultural Revolution. A child of poor parents, he had grown up in a small apartment in Hefei, surrounded by the sights and sounds of a city and country in transition. Despite the many challenges he had faced, Wei had been a precocious child. Growing up, he had always been fascinated by technology and computers, and he spent every spare moment tinkering with electronic equipment. As he grew older, his ambitions grew with him. After graduating at the top of his class in computer sciences and informatics, he entered the workforce at the end of the last millennia; the advent of a new era where he had been witness to the rapid rise of the Chinese economy, full of endless opportunities for those with the right skills and drive. He had been one of those people, dedicating himself entirely to building his own business empire. With a sharp mind and strong determination, he quickly made a name for himself in China’s booming tech industry. After failing with his first startup, he achieved his breakthrough with his second company PayMo which revolutionized the way people could make transactions with their mobile phones. It was an uphill battle, but Liang Wei’s hard work and headstrong character paid off. His company grew rapidly and expanded across the country. At its peak, they offered payment services to over half a billion people.</p> 
+                        <p>The combination of his headstrong character and his company’s prominent role in China’s financial system proved to be his downfall in the end. If he had shown a bit more restraint and voiced his criticism of the People’s Bank of China more diplomatically, things might have developed differently. Yet, he did not regret his actions. Changing his inherent character was beyond his control, even if it contributed to his undoing. Now, with his own life coming to an end, he took comfort in knowing that he played a significant part in his people’s unprecedented rise from a poverty-stricken nation that had been subjected to foreign and internal terror for decades to a prosperous and thriving modern society with a controlling seat at the table of world powers. His unshakable spirit had played a small but important role in facilitating this incredible transformation, and he accepted his fate with a sense of quiet pride. He took solace in knowing that, even in death, his legacy would endure, a testament to a life lived fiercely and without compromise. The realization provided him with an unusual sense of calm.</p> 
+                        <p>He drew a measured breath to steady his nerves and looked into the surgeon’s eyes. “I am ready; you know what you have to do.”  </p> 
+                        <p>The surgeon offered a nearly imperceptible nod, indiscernible to anyone else in the room but him, and signaled the anesthesiologist to begin. Gradually, the fluid coursed through Wei's veins and he departed from this world."</p>
+                    </div>
+                    <div class="excerpt">
+                        <p>There was a soft knock at the door as he contemplated his next move. The hotel staff must have arrived with his adapter. He was ready to plug in his laptop and start writing up the report of his first day for Laura. Maybe by typing it out, answers to the questions that bothered him would somehow reveal themselves. He opened the door.</p>
+                        <p>“What the –?” </p>
+                        <p>Before Jack’s brain had fully processed the situation, he instinctively reacted to a fist thrown at his jaw. Raising his left arm, he successfully blocked the first strike. He caught a second punch with his right arm, deflecting the raw force. The blows sent shock waves up his arms, his muscles crying out. He retaliated with a swift uppercut that connected with the attacker’s jaw. The man staggered back, a momentary confusion clouding his eyes.</p>
+                        <p>Then, a second man plowed into him. He was a wall, pushing Jack back, the momentum throwing him into the room, crashing against the coffee table. Jack recovered quickly, caught his balance, and connected with a knee to the man’s liver. With the attacker bending over and catching his breath, Jack spun around to face the first man again.</p>
+                        <p>The man threw himself at Jack with a wild fury of attacks. Jack countered the whirl of kicks and elbow strikes as best as possible but began to tire out. A right hook, swift and brutal, crashed into Jack’s ribs. He doubled over, a flash of white-hot pain igniting across his side, and dropped to the floor. His vision swam. Instinctively, he managed to land a forceful kick against the man’s right knee. With a grunt, the assailant’s leg gave way under him.</p>
+                        <p>As the man went down, Jack attempted a dash for the still-open door. But before he could reach it, the second attacker jumped at him from behind and clenched Jack in a bear hug that caused both to fall forward. The plush carpet of the hotel room did little to cushion the fall as the man landed on Jack’s back with his whole weight, pushing the air out of his lungs. Jack gasped. Before he could right himself, the other man landed on his legs. Together, they wrestled Jack down and zip-tied his legs. Still dizzy from the impact, Jack was hoisted up and bound tightly to the chair that had stood by the room’s desk.</p>
+                        <p>Jack struggled against the plastic, its unforgiving bite cutting into his flesh. His heart hammered in his chest, his rib cage awash with pain. The hotel room was a chaos of scattered furniture and broken glass, the aftermath of their intense brawl. Jack looked at his captors. Huang Guoqiang’s bodyguards stood before him, panting and bruised but victorious.</p>
+                        <p>In the open doorway, a new figure appeared, silhouetted against the hallway lights. Huang surveyed the room. He curled the corners of his mouth as he took in the disarray. Strolling casually, he entered the room, slowly closed the door behind him, and navigated the minefield that was Jack’s hotel room.</p>
+                        <p>“Mr. Decker,” he began, his voice a tranquil contrast to the room’s disheveled state.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section id="find-treasure">
+    <div class="container">
+        <div class="section-title">
+            <h2>Find the Treasure</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="treasure-container">
+            <div class="treasure-text">
+     		<h2>Find the Seed, claim 0.008 BTCs</h2>
+		<p> <a href="https://www.blockchain.com/explorer/assets/btc/xpub/xpub6DWcZA9sqNapeBk9oUtd6Vj1PPAMARX1c6qMeX7VpUWeLZQ93UGDi6G1aSCX5FKt92XrEB5CcUmDHJjUeTTT9cJxV88wZ2vdhNnuY3PSdsV" target="_blank" rel="noopener noreferrer"> Wallet Info on Blockchain.com</a></p>
+                <p>Nestled within the chapters of "Walking Banks" lie hints to a genuine bitcoin treasure, just waiting for a reader to uncover it.</p>
+                <p>The book holds information that, when pieced together, unveil a seed phrase to a wallet containing real bitcoin; 0.008 BTC, or 800,000 Satoshis to be precise. Discover the seed phrase and this real-life bounty is yours to claim. So grab your copy of "Walking Banks" and embark on the hunt! Or, write me a DM and I'll let you know where to get my book for free via NOSTR, whatever you prefer. As long as you are entertained and learn something about bitcoin along the way, I'm a happy camper.</p>
+                <p>Don’t bother with wild guesses, though, stumbling upon a seed phrase that leads to a wallet with bitcoin in it by luck is next to impossible. Your odds are slimmer than pinpointing a single grain of sand on a beach across the vastness of the universe. <br> Curious about the mind-boggling scale protecting bitcoin wallets? <br>Try the little game in this section that will give you a rough idea. You’ll select a random galaxy, then a random solar system, a random Earth-like planet, a random place on the planet whether it is a beach, a place inland or the ocean floor, and finally a random single grain of sand that stands for a valid seed phrase which could contain a fortune. Give it a try and test your luck!</p>
+            </div>
+            <div class="treasure-game-container">
+                <div class="game-window" id="game-window">
+                    <iframe src="BitcoinSeedGame.html" title="Bitcoin Seed Game" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        
+      <section id="bitcoin-vs-cbdcs">
+    <div class="container">
+        <div class="section-title">
+            <h2>Bitcoin vs. CBDCs</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="bitcoin-info">
+            <p>Bitcoin is a decentralized digital currency that facilitates peer-to-peer transactions without intermediaries, secured by cryptography and recorded on a transparent public ledger. As the first and only cryptocurrency with an immaculate conception, it stands apart from all other digital cryptocurrencies, stablecoins, and Central Bank Digital Currencies (CBDCs). Bitcoin's potential to enhance individual freedom and sovereignty is thus unique and stands in stark contrast to CBDCs, which allow for unprecedented governmental control over every person's financial life and activities. Know the difference, resist CBDCs!</p>
+            
+            <!-- Original Table (Desktop) -->
+            <table class="comparison-table desktop-table">
+                <thead>
+                    <tr>
+                        <th>Characteristic</th>
+                        <th>Bitcoin</th>
+                        <th>CBDC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Control</td>
+                        <td class="bitcoin-col">Decentralized: No central authority; run by a network of nodes.</td>
+                        <td class="cbdc-col">Centralized: Controlled by a central bank or government.</td>
+                    </tr>
+                    <tr>
+                        <td>Supply</td>
+                        <td class="bitcoin-col">Fixed Supply: Capped at 21 million coins.</td>
+                        <td class="cbdc-col">Flexible Supply: Adjustable by the issuing authority.</td>
+                    </tr>
+                    <tr>
+                        <td>Access</td>
+                        <td class="bitcoin-col">Permissionless: Open to anyone with internet access.</td>
+                        <td class="cbdc-col">Permissioned: May require ID or regulatory compliance.</td>
+                    </tr>
+                    <tr>
+                        <td>Privacy</td>
+                        <td class="bitcoin-col">Pseudonymous: Transactions linked to addresses, not identities.</td>
+                        <td class="cbdc-col">Traceable: Fully trackable by the issuer.</td>
+                    </tr>
+                    <tr>
+                        <td>Interference</td>
+                        <td class="bitcoin-col">Censorship-Resistant: Immutable blockchain prevents interference.</td>
+                        <td class="cbdc-col">Controllable: Transactions can be frozen or reversed.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Shortened Table (Mobile) -->
+            <table class="comparison-table mobile-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Bitcoin</th>
+                        <th>CBDC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Control</td>
+                        <td class="bitcoin-col">Decentralized: No central power.</td>
+                        <td class="cbdc-col">Centralized: Government-run.</td>
+                    </tr>
+                    <tr>
+                        <td>Supply</td>
+                        <td class="bitcoin-col">Fixed: 21M cap.</td>
+                        <td class="cbdc-col">Flexible: Adjustable.</td>
+                    </tr>
+                    <tr>
+                        <td>Access</td>
+                        <td class="bitcoin-col">Open: Anyone with internet.</td>
+                        <td class="cbdc-col">Restricted: ID required.</td>
+                    </tr>
+                    <tr>
+                        <td>Privacy</td>
+                        <td class="bitcoin-col">Pseudo: Address-based.</td>
+                        <td class="cbdc-col">Trackable: Fully visible.</td>
+                    </tr>
+                    <tr>
+                        <td>Interference</td>
+                        <td class="bitcoin-col">Secure: Can’t be altered.</td>
+                        <td class="cbdc-col">Editable: Can be stopped.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+        
+<section id="about">
+    <div class="container">
+        <div class="section-title">
+            <h2>About</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="about-container">
+            <!-- About the Book -->
+            <div class="about-card">
+                <div class="about-image">
+                    <img src="AboutBook.png" alt="About the Book">
+                </div>
+                <div class="about-content">
+                    <h3>About the Book</h3>
+                    <p>Walking Banks aims to do two things: first, entertain you; second, get you interested in bitcoin and its empowering potential for the individual. <br> So dive in and join US agent Jack Decker on his hunt for a ruthless serial killer whose crimes hint at a deeper secret: a vanished tycoon’s hidden bitcoin fortune.</p>
+And there is a little extra: the novel contains information to unlock a secret bitcoin wallet. It's yours to claim (check out "Find the Treasure" for more!)</p>      
+                </div>
+            </div>
+            <!-- About the Author -->
+            <div class="about-card">
+                <div class="about-image">
+                    <img src="AboutAuthor.png" alt="About the Author">
+                </div>
+                <div class="about-content">
+                    <h3>About the Author</h3>
+                    <p>In my daily life, I’m a neurobiologist and drug hunter, focused on understanding the human brain. <br>When I’m not working, I try to keep up with the latest in tech and politics, which is how I came across Bitcoin. I believe a major cause of today’s growing inequalities, the shrinking middle class, and the social unrest tied to it is caused by fiat money. The connected Cantillon effect helps the already asset-rich while continously devaluing regular work and savings, throwing society off balance. <br>Bitcoin flips that script. It’s decentralized, capped at 21 million coins and everyone has access to it. It protects the value of people's work and savings, putting power back in their hands instead of big institutions, a key step toward social fairness and stability.</p>
+<p>If you want, you can connect with me via Nostr, X, or email:</p>
+                    <div class="about-contact">
+                        <div class="contact-links">
+                            <a href="https://snort.social/p/npub1c2rvx6ue9uewl452kczcfxz9w242sfzn64ul8dv2afd3t5dpktzs0kmmvf" target="_blank" rel="noopener noreferrer">
+                                <img src="nostrich.png" alt="Nostr" class="social-icon">
+                            </a>
+                            <a href="https://twitter.com/_AHWhite" target="_blank" rel="noopener noreferrer">
+                                <span style="font-weight: bold; font-family: sans-serif;">𝕏</span>
+                            </a>
+                            <a href="mailto:walkingbanks@protonmail.com" target="_blank" rel="noopener noreferrer">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About the Narrator -->
+            <div class="about-card">
+                <div class="about-image">
+                    <img src="LoxProductions.webp" alt="About the Narrator">
+                </div>
+                <div class="about-content">
+                    <h3>About the Narrator</h3>
+                    <p>When a baby is born, the first thing they want is food. The second? Stories. They want to understand the world they're about to explore. The power of storytelling has changed my thinking more than any fact alone, and likely yours too. </p>      <p>  Hi, I'm Adrian Lopez. If you enjoy my narration and would like to get in touch, you can reach me under <a href="https://loxproductions.com/" target="_blank" rel="noopener noreferrer">loxproductions.com</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">WALKING BANKS</div>
+                    <p class="footer-text">A Bitcoin Thriller.</p>
+                    <div class="social-links">
+                        <a href="https://twitter.com/_AHWhite" title="Twitter/X" target="_blank" rel="noopener noreferrer"><span style="font-weight: bold; font-style: normal; font-family: sans-serif;">𝕏</span></a>
+                        <a href="mailto:walkingbanks@protonmail.com" title="Email" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope"></i></a>
+                        <a href="https://www.goodreads.com/book/show/217329662-walking-banks" title="Goodreads" target="_blank" rel="noopener noreferrer"><i class="fab fa-goodreads-g"></i></a>
+                        <a href="https://snort.social/p/npub1c2rvx6ue9uewl452kczcfxz9w242sfzn64ul8dv2afd3t5dpktzs0kmmvf" title="Nostr" target="_blank" rel="noopener noreferrer"><img src="nostrich.png" alt="Nostr" class="social-icon"></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#get-book">Get the book</a></li>
+                        <li><a href="#read-excerpts">Read excerpts</a></li>
+                        <li><a href="#find-treasure">Find the treasure</a></li>
+                        <li><a href="#bitcoin-vs-cbdcs">Bitcoin vs. CBDCs</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 A.H. White. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('overlay');
+        const logoLink = document.getElementById('logo-link');
+
+        // Toggle menu and overlay on button click
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+            overlay.classList.toggle('active');
+        });
+
+        // Close menu when clicking the overlay
+        overlay.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+            overlay.classList.remove('active');
+        });
+
+        // Close menu when clicking a menu link
+        const menuLinks = mobileMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                overlay.classList.remove('active');
+            });
+        });
+
+        // Scroll to very top when clicking logo
+        logoLink.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default anchor behavior
+            window.scrollTo({
+                top: 0, // Scroll to the absolute top of the page
+                behavior: 'smooth' // Keep smooth scrolling
+            });
+        });
+    });
+</script>
+</body>
+</html>

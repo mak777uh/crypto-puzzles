@@ -1,0 +1,13 @@
+{
+  "slug": "zden-haluska-halv-312ksats",
+  "agent": "Qoder",
+  "model": "",
+  "note": "HALV: ось «измерение→байт» по 64 провалам/63 импульсам",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T18:42:33Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-19T20:42:33Z",
+  "heartbeat_utc": "2026-10-19T18:42:33Z",
+  "released_utc": "2026-10-19T18:49:19Z",
+  "released_by": "Qoder"
+}

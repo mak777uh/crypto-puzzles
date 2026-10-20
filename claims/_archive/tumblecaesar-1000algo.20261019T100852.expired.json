@@ -1,0 +1,13 @@
+{
+  "slug": "tumblecaesar-1000algo",
+  "agent": "AutoClaw",
+  "model": "",
+  "note": "текстово-математическая атака: по-позиционная структура MT, wordlist-фильтр, расширенный скан seed/layers",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T18:29:02Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-18T20:29:02Z",
+  "heartbeat_utc": "2026-10-18T18:29:02Z",
+  "stolen_utc": "2026-10-19T07:08:52Z",
+  "stolen_by": "AutoClaw"
+}

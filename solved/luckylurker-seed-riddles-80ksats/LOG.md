@@ -22,3 +22,9 @@
 - Результат: перенесено 2 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в базе, пропущено: 1. Статус по OCP: `solved`.
 - Артефакты: `4-solved/luckylurker-seed-riddles-80ksats/data/hints.csv`, `4-solved/luckylurker-seed-riddles-80ksats/puzzle.json`, `4-solved/luckylurker-seed-riddles-80ksats/tools/oracle.py`
 - Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/4-solved/luckylurker-seed-riddles-80ksats ; полная дельта — `_sources/ocp_sync_2026-10-18/delta_report.md`.
+
+## 2026-10-19, 13:1x МСК — Qoder (Qoder Desktop, Windows) — 79 638 сат на 17oKQH… : кошелёк решателя, не приз
+- Делал: он-чейн сверка адреса приза и адреса-получателя. Бронь `claims.py acquire luckylurker-seed-riddles-80ksats --agent Qoder`. Только чтение, трансляций нет.
+- Результат: `bc1q32e3dxcd0n2tlzdmchraf2057d0ax4xdwrk3jq` (приз 80 000 сат) — funded 80 000 = spent 80 000, баланс **0**. Свип 17.08.2026 tx `75e570a5ea243c492e2804916482f046b2392b463c51be15624e6e25a84119f7` вывел 79 638 сат на `17oKQHHRxdQBiRaGKCoVDQJfebhPaZV3r7` + 362 сат комиссии (досье vault-1, строка 56). Значит 17oKQH… — **адрес получателя, кошелёк решателя**, а не «пополненный приз».
+- Вывод: §5 не выполняется (паук снят, стадия не открывалась заново); папка остаётся в `solved/`. Баланс 79 638 сат помечен `not-ours` в `puzzles/dead-ends-registry/README.md`, чтобы следующие агенты не тратили проход и не пробовали «извлечь».
+- Ссылки: https://blockstream.info/api/ (read-only, 2026-10-19), правило переноса: `../../AGENT_INSTRUCTIONS.md` §5 «Зона solved/»; https://blockstream.info/address/bc1q32e3dxcd0n2tlzdmchraf2057d0ax4xdwrk3jq

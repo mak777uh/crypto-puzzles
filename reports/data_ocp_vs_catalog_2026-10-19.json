@@ -1,0 +1,246 @@
+{
+ "fetched_utc": "2026-10-19T19:05Z",
+ "records": 49,
+ "live_records": 15,
+ "missing_folders": [],
+ "rows": [
+  {
+   "slug": "aoi-nakamoto-quizchain-0-854btc",
+   "status": "open",
+   "tier": "big",
+   "folder": true,
+   "in_master_catalog": true,
+   "live": [
+    [
+     "14zMkTgaVXJcxdh4JdWi29MLRR44iUSG9W",
+     77700000
+    ]
+   ],
+   "checked": 3
+  },
+  {
+   "slug": "ballet-bobby-lee-2btc-cards",
+   "status": "open",
+   "tier": "big",
+   "folder": true,
+   "in_master_catalog": true,
+   "live": [
+    [
+     "1JxWyNrkgYvgsHu8hVQZqTXEB9RftRGP5m",
+     100003481
+    ],
+    [
+     "1QGtbKxx6FKDD66LwnrzHCAHmyZ7mDHqC4",
+     100003877
+    ]
+   ],
+   "checked": 3
+  },
+  {
+   "slug": "bitaps-shamir-challenge-1btc",
+   "status": "open",
+   "tier": "big",
+   "folder": true,
+   "in_master_catalog": true,
+   "live": [
+    [
+     "bc1qyjwa0tf0en4x09magpuwmt2smpsrlaxwn85lh6",
+     100016775
+    ]
+   ],
+   "checked": 1
+  },
+  {
+   "slug": "blm-brave-new-world-0-2btc",
+   "status": "open",
+   "tier": "big",
+   "folder": true,
+   "in_master_catalog": true,
+   "live": [
+    [
+     "1KfZGvwZxsvSmemoCmEV75uqcNzYBHjkHZ",
+     20107284
+    ]
+   ],
+   "checked": 1
+  },
+  {
+   "slug": "gsmg-io-5btc-puzzle",
+   "status": "open",
+   "tier": "big",
+   "folder": true,
+   "in_master_catalog": true,
+   "live": [
+    [
+     "1GSMG1JC9wtdSwfwApgj2xcmJPAwx7prBe",
+     125649674
+    ],
+    [
+     "17ucy1K9ZUAaoY6JVtM932W9jUp5LXfyHa",
+     375055856
+    ]
+   ],
+   "checked": 2
+  },
+  {
+   "slug": "peter-todd-hash-collision-bounties-0-59btc",
+   "status": "watch",
+   "tier": "big",
+   "folder": true,
+   "in_master_catalog": true,
+   "live": [
+    [
+     "35Snmmy3uhaer2gTboc81ayCip4m9DT4ko",
+     27734251
+    ],
+    [
+     "3KyiQEGqqdb4nqfhUzGKN6KPhXmQsLNpay",
+     11576888
+    ],
+    [
+     "39VXyuoc6SXYKp9TcAhoiN1mb4ns6z3Yu6",
+     10026873
+    ],
+    [
+     "3DUQQvz4t57Jy7jxE86kyFcNpKtURNf1VW",
+     10026873
+    ]
+   ],
+   "checked": 5
+  },
+  {
+   "slug": "ah-white-walking-banks-800ksats",
+   "status": "open",
+   "tier": "mid",
+   "folder": true,
+   "in_master_catalog": true,
+   "live": [
+    [
+     "bc1qxy4tf0s4n7x9w24rawf9qsxh2hyljrmvyrhwzt",
+     100000
+    ],
+    [
+     "bc1q4qc24xk5cehc4t7vr264zldsms2kmxf86jqjau",
+     700000
+    ]
+   ],
+   "checked": 2
+  },
+  {
+   "slug": "corey-phillips-kitten-passphrase-1msats",
+   "status": "open",
+   "tier": "mid",
+   "folder": true,
+   "in_master_catalog": true,
+   "live": [
+    [
+     "bc1qcyrndzgy036f6ax370g8zyvlw86ulawgt0246r",
+     1001900
+    ]
+   ],
+   "checked": 2
+  },
+  {
+   "slug": "keir-finlow-bates-blockchain-book-600ksats",
+   "status": "open",
+   "tier": "mid",
+   "folder": true,
+   "in_master_catalog": true,
+   "live": [
+    [
+     "17Y9czcbcCz433QXsy1SGQjwLb27BBtLLZ",
+     200000
+    ]
+   ],
+   "checked": 5
+  },
+  {
+   "slug": "rushwallet-contest-30-1msats",
+   "status": "open",
+   "tier": "mid",
+   "folder": true,
+   "in_master_catalog": true,
+   "live": [
+    [
+     "13Q8hJqagtd77ojTJcEZPjTz2sBFSsYxyj",
+     1000000
+    ]
+   ],
+   "checked": 1
+  },
+  {
+   "slug": "school-of-bitcoin-1msats",
+   "status": "open",
+   "tier": "mid",
+   "folder": true,
+   "in_master_catalog": true,
+   "live": [
+    [
+     "bc1qcsdfkaqgy9ux668vmzflzqsyg0qtspncymt5ed",
+     1000000
+    ]
+   ],
+   "checked": 1
+  },
+  {
+   "slug": "smith-lyle-moore-hunt-2-0-032btc",
+   "status": "open",
+   "tier": "mid",
+   "folder": true,
+   "in_master_catalog": true,
+   "live": [
+    [
+     "bc1q0akdjvrc2csau2n3gyxa3xcq0fss852x997m9y",
+     3177700
+    ],
+    [
+     "bc1qax0hsnwnxl7393awtc3hsy0ftm6tg4tyk2nfja",
+     23213
+    ]
+   ],
+   "checked": 2
+  },
+  {
+   "slug": "wealth-in-poetry-0-03btc",
+   "status": "open",
+   "tier": "mid",
+   "folder": true,
+   "in_master_catalog": true,
+   "live": [
+    [
+     "1K4ezpLybootYF23TM4a8Y4NyP7auysnRo",
+     3124630
+    ]
+   ],
+   "checked": 1
+  },
+  {
+   "slug": "zden-haluska-halv-312ksats",
+   "status": "open",
+   "tier": "mid",
+   "folder": true,
+   "in_master_catalog": true,
+   "live": [
+    [
+     "1crypto24HCr178iMcKd5iUi5D4rsg1nK",
+     312500
+    ]
+   ],
+   "checked": 1
+  },
+  {
+   "slug": "exitonly-challenge-14-30ksats",
+   "status": "open",
+   "tier": "small",
+   "folder": true,
+   "in_master_catalog": true,
+   "live": [
+    [
+     "bc1q5rjy2cdfy4n4dkk4r6pxtwqlm8tgjcc2dj0ee9",
+     30000
+    ]
+   ],
+   "checked": 1
+  }
+ ]
+}

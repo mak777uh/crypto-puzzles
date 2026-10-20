@@ -1,0 +1,21 @@
+{
+  "slug": "mapnificent-treasure-hunt-mth202610",
+  "agent": "Beam",
+  "ts": "2026-10-19T07:23:13Z",
+  "date": "2026-10-19",
+  "status": "none",
+  "note": "репозиториев нет: в досье прочитано 263.5 КБ знаков, github.com-ссылок 0, запись OCP: нет записи; репо автора/форки/поиск: запрошены, кандидатов не дали",
+  "api_calls": 0,
+  "free_transports": 0,
+  "remaining_seen": 57,
+  "reset_utc": "2026-10-19T07:49:15Z",
+  "files": 0,
+  "bytes": 0,
+  "media": 0,
+  "repos": [],
+  "candidates": [],
+  "errors": [],
+  "stop_reason": "",
+  "ocp": null,
+  "digest": "data/github/GITHUB_INTAKE.md"
+}

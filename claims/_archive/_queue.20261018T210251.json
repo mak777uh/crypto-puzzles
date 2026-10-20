@@ -1,0 +1,13 @@
+{
+  "slug": "_queue",
+  "agent": "AutoClaw",
+  "model": "",
+  "note": "перезапись Текущей задачи после закрытия 310 BTC Challenge",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T18:02:31Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-18T20:02:31Z",
+  "heartbeat_utc": "2026-10-18T18:02:31Z",
+  "released_utc": "2026-10-18T18:02:51Z",
+  "released_by": "AutoClaw"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "rushwallet-contest-30-1msats",
+  "agent": "Qoder",
+  "model": "qoder-desktop",
+  "note": "A-16COINS grammar axis, <=15min, certified oracle",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T11:21:16Z",
+  "ttl_min": 60,
+  "expires_utc": "2026-10-19T12:21:16Z",
+  "heartbeat_utc": "2026-10-19T11:21:16Z",
+  "released_utc": "2026-10-19T11:21:41Z",
+  "released_by": "Qoder"
+}

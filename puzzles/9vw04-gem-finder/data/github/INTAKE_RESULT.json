@@ -1,24 +1,28 @@
 {
   "slug": "9vw04-gem-finder",
   "agent": "Qoder",
-  "ts": "2026-10-18T10:33:35Z",
+  "ts": "2026-10-18T12:49:33Z",
   "date": "2026-10-18",
   "status": "partial",
   "note": "",
-  "api_calls": 0,
-  "free_transports": 3,
-  "remaining_seen": 34,
-  "reset_utc": "2026-10-18T10:33:40Z",
-  "files": 0,
-  "bytes": 0,
-  "media": 0,
+  "api_calls": 9,
+  "free_transports": 17,
+  "remaining_seen": 53,
+  "reset_utc": "2026-10-18T13:19:21Z",
+  "files": 49,
+  "bytes": 4790055,
+  "media": 2,
   "repos": [
     {
       "repo": "agntn/puzzles",
       "role": "community",
       "branch": "main",
       "head_sha": "decdd4db731a8ea6da7bbc30d4e234711fa9b0cd",
-      "counts": {},
+      "counts": {
+        "issues": 300,
+        "comments": 500,
+        "releases": 47
+      },
       "files": 0,
       "bytes": 0
     },
@@ -26,7 +30,7 @@
       "repo": "floflo777/open-crypto-puzzles",
       "role": "registry",
       "branch": "main",
-      "head_sha": "19644e58e50721f8469680f2edcba1daa0697630",
+      "head_sha": "f28531c09095e81d1897ac4df00dc13ae22e4df2",
       "counts": {},
       "files": 0,
       "bytes": 0
@@ -36,9 +40,26 @@
       "role": "community",
       "branch": "main",
       "head_sha": "1c180a1f415f37299a2ccbc3938726c2dbc75e22",
-      "counts": {},
+      "counts": {
+        "issues": 0,
+        "comments": 0,
+        "releases": 0
+      },
       "files": 0,
       "bytes": 0
+    },
+    {
+      "repo": "canalqb/agentehermes",
+      "role": "community",
+      "branch": "main",
+      "head_sha": "a16e185b34fcbbb524193358b3926144dc4619c1",
+      "counts": {
+        "issues": 0,
+        "comments": 0,
+        "releases": 0
+      },
+      "files": 49,
+      "bytes": 4790055
     }
   ],
   "candidates": [
@@ -97,17 +118,61 @@
       "role": "community",
       "source": "ссылки досье",
       "hits": 2
+    },
+    {
+      "repo": "canalqb/puzzle_bc1qr5mssp6sn",
+      "role": "community",
+      "source": "дампы соагентов: data/external2/github2/canalqb__puzzle_bc1qr5mssp6sn",
+      "hits": 0
+    },
+    {
+      "repo": "canalqb/teoremas",
+      "role": "community",
+      "source": "дампы соагентов: data/external2/github2/canalqb__teoremas",
+      "hits": 0
+    },
+    {
+      "repo": "olawale20r/puzzles",
+      "role": "fork",
+      "source": "форки agntn/puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "cryptocool/boha",
+      "role": "fork",
+      "source": "форки agntn/puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "scitechindian/cbpcdl",
+      "role": "fork",
+      "source": "форки agntn/puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "procgro/boha",
+      "role": "fork",
+      "source": "форки agntn/puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "alexhardwormer/boha",
+      "role": "fork",
+      "source": "форки agntn/puzzles",
+      "hits": 0
+    },
+    {
+      "repo": "alexanderkud/boha",
+      "role": "fork",
+      "source": "форки agntn/puzzles",
+      "hits": 0
     }
   ],
   "errors": [
     "кандидаты отсечены как шум одного владельца (39 из 48): canalqb/briefcase, canalqb/canalqb.github.io, canalqb/canalqb_wallet, canalqb/cpuminer, canalqb/cpuminer-multi, canalqb/electrum_config, canalqb/engaja, canalqb/ESP_ambiente…",
-    "репо владельца agntn: пропущено (исчерпан --api-budget (0 запросов))",
-    "форки agntn/puzzles: пропущено (исчерпан --api-budget (0 запросов))",
-    "не собрано (сверх --max-repos 3): canalqb/agentehermes, canalqb/blogforlinkedin, canalqb/bot_telegram, canalqb/puzzle, canalqb/puzzle-67-neon, onyxdeveloper/webpack-simple",
-    "agntn/puzzles: не собрано: исчерпан --api-budget (0 запросов)",
-    "canalqb/puzzle_bc1qr5mssp6snmduqp9enx4dzmcxvk7qw83lceyy2v: не собрано: исчерпан --api-budget (0 запросов)"
+    "не собрано (сверх --max-repos 4): canalqb/blogforlinkedin, canalqb/bot_telegram, canalqb/puzzle, canalqb/puzzle-67-neon, onyxdeveloper/webpack-simple, canalqb/puzzle_bc1qr5mssp6sn, canalqb/teoremas, olawale20r/puzzles, cryptocool/boha, scitechindian/cbpcdl, procgro/boha, alexhardwormer/boha, alexanderkud/boha"
   ],
-  "stop_reason": "исчерпан --api-budget (0 запросов)",
+  "stop_reason": "срезано потолками: собрано 4 кандидатов из 17 (--max-repos/--max-mb)",
   "ocp": null,
   "digest": "data/github/GITHUB_INTAKE.md"
 }

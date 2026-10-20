@@ -1,0 +1,106 @@
+{
+  "_comment": "Watch-only список песочницы. Ключей здесь нет и быть не может (правило №6 AGENT_INSTRUCTIONS.md). only_read: monitor.py читает баланс/tx_count/OP_RETURN через blockstream.info. kind=prize — наш призовой эскроу (сторож), kind=external — чужой кошелёк (решатель/автор/hot wallet), наблюдение только чтобы не спутать с призом.",
+  "updated": "2026-10-19",
+  "updated_by": "Qoder",
+  "api_base": "https://blockstream.info/api",
+  "wallet": {
+    "name": "master-sandbox-watch-only",
+    "type": "watch-only",
+    "descriptor_placeholder": "добавить xpub descriptors от Ильи, если нужна синхронизация с его кошельком",
+    "destination_address": null,
+    "destination_note": "Адрес назначения sweep-транзакций НЕ задан: Илья ещё не выдавал destination. psbt_prepare.py без него работает в режиме --dry-run."
+  },
+  "watch": [
+    {
+      "address": "bc1qnepv9pcnqvndux9h9mcaxvk6u993rc0lew9fpp",
+      "slug": "luckylurker-vault-2-1btc",
+      "kind": "prize",
+      "note": "LuckyLurker Vault #2, 1 BTC, жив с 2026-08-12, трат 0",
+      "seeded_balance": 100000000
+    },
+    {
+      "address": "157dpLJgAAKugukKz8UwBHapM4idyZvnLc",
+      "slug": "onfo-forsyth-1btc",
+      "kind": "prize",
+      "note": "ONFO / Dr. Forsyth (1 BTC), жив с 2021-06; статус «сторож» по решению владельца 19.10.2026",
+      "seeded_balance": 100000000
+    },
+    {
+      "address": "3Jf995GANG4EmFBK89byNNyZdtB3ELXJsZ",
+      "slug": "objective-thune-licorne-0-21btc",
+      "kind": "prize",
+      "note": "Objective Thune «Licorne» (0.21021 BTC), жив с 2020; статус «сторож» по решению владельца 19.10.2026",
+      "seeded_balance": 21021000
+    },
+    {
+      "address": "1GSMG1JC9wtdSwfwApgj2xcmJPAwx7prBe",
+      "slug": "gsmg-io-5btc-puzzle",
+      "kind": "prize",
+      "note": "GSMG.io 5 BTC — следить за пополнениями и OP_RETURN-хинтами автора",
+      "seeded_balance": null
+    },
+    {
+      "address": "17ucy1K9ZUAaoY6JVtM932W9jUp5LXfyHa",
+      "slug": "gsmg-io-5btc-puzzle",
+      "kind": "external",
+      "note": "GSMG: 3,75 BTC, выведено при халвингах (2024-04-24), пути выплаты не опубликовано — следить, а не считать призом",
+      "seeded_balance": 375055856
+    },
+    {
+      "address": "bc1qyjwa0tf0en4x09magpuwmt2smpsrlaxwn85lh6",
+      "slug": "bitaps-shamir-challenge-1btc",
+      "kind": "prize",
+      "note": "bitaps Shamir challenge, 1,00016775 BTC (BIP84), funded-unspent с 2026-08-28",
+      "seeded_balance": 100016775
+    },
+    {
+      "address": "bc1qfkhx02v89u2qyyyljeczw6hu9sr437y44t7ae5yf09thrdukfqesnjg2wj",
+      "slug": "caesarcoder-genesis-block-wallet-puzzle-947ksats",
+      "kind": "prize",
+      "note": "Genesis-эскроу CaesarCoder: пуст (выметен 17.10.2026) — следим за новым пополнением",
+      "seeded_balance": 0
+    },
+    {
+      "address": "36T9H8hJP7xexevqayU9ADxGca7Y5dKquQ",
+      "slug": "natasha-otomoski-1btc",
+      "kind": "external",
+      "note": "Адрес третьей стороны (украденный приз Natasha, 99 996 681 сат с блока 591125) — НЕ цель охоты",
+      "seeded_balance": 99996681
+    },
+    {
+      "address": "17oKQHHRxdQBiRaGKCoVDQJfebhPaZV3r7",
+      "slug": "luckylurker-vault-1-0-0008btc",
+      "kind": "external",
+      "note": "Кошелёк решателя LuckyLurker Vault #1 (79 638 сат) — не приз",
+      "seeded_balance": 79638
+    },
+    {
+      "address": "bc1qw8uecdjvuedtkg4s2kku4s2ak9r2cm59khclfr",
+      "slug": "caesarcoder-genesis-block-wallet-puzzle-947ksats",
+      "kind": "external",
+      "note": "Кошелёк автора CaesarCoder (1 000 000 сат, tx e2cbb236…) — не приз",
+      "seeded_balance": 1000000
+    },
+    {
+      "address": "bc1qdu8mh9qjtjhy89mvhmcgf66ul6ld92rdr6qzad",
+      "slug": "caesarcoder-genesis-block-wallet-puzzle-947ksats",
+      "kind": "external",
+      "note": "Назначение свипа Genesis-эскроу (сторонний решатель), 924 704 сат — не приз",
+      "seeded_balance": 924704
+    },
+    {
+      "address": "179sxfh6rw6bHSo5wVUhLP96k46QaEzVP",
+      "slug": "natasha-otomoski-1btc",
+      "kind": "prize",
+      "note": "Адрес самого пазла Natasha (пуст с 2019) — сигналит только если приз вернут автору",
+      "seeded_balance": 0
+    },
+    {
+      "address": "bc1q32e3dxcd0n2tlzdmchraf2057d0ax4xdwrk3jq",
+      "slug": "luckylurker-seed-riddles-80ksats",
+      "kind": "prize",
+      "note": "Эскроу LuckyLurker seed-riddles (выметен 17.08.2026) — следим за новым этапом",
+      "seeded_balance": 0
+    }
+  ]
+}

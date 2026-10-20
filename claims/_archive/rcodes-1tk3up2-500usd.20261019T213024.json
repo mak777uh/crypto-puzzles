@@ -1,0 +1,13 @@
+{
+  "slug": "rcodes-1tk3up2-500usd",
+  "agent": "AutoClaw",
+  "model": "",
+  "note": "vision-проход: внешние маркеры + форма пробел-глифа + сверка транскрипции; WIFA с пробелом в ранжировании",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T18:04:27Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-19T20:22:46Z",
+  "heartbeat_utc": "2026-10-19T18:22:46Z",
+  "released_utc": "2026-10-19T18:30:24Z",
+  "released_by": "AutoClaw"
+}

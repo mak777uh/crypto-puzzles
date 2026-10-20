@@ -20,10 +20,18 @@
 - 2015-02-08 — RushWallet contest page — http://web.archive.org/web/20150208172337/https://rushwallet.com/contest
 - 2026-08-16 — BitcoinTalk discussion thread — https://bitcointalk.org/index.php?topic=793720.0
 - 2026-08-16 — Surviving video re-upload — https://www.youtube.com/watch?v=x0LqsUOIw0M
-
+- 2026-10-19 — privatekeys.pw tracker (30 адресов/brainwallets) — https://privatekeys.pw/puzzles/2-btc-rushwallet-puzzle
+- 2026-10-19 — Original contest video (archived, unavailable) — https://www.youtube.com/watch?v=sr8lBrtd9U4
+- 2026-10-19 — Original contest video (Wayback) — https://web.archive.org/web/20230419210424/https://www.youtube.com/watch?v=Mbu9dD8ahgE
 ## Подробности
 Здесь должна накапливаться расширенная информация по мере проходов: подсказки, прогресс сообщества, проверенные гипотезы, ссылки, compute-оценки. Текущий файл — скелет из OCP; заполняется автоматически в циклах.
 
+
+## Обновление (2026-10-19, Beam — обогащение из privatekeys.pw)
+- Тип: источники / таблица адресов / транскрипт
+- Суть: добавлена полная таблица 30 brainwallet-адресов (#26 claimed, баланс 0; #30 open 1 000 000 сат) и транскрипт видео. Файлы: data/privatekeys-pw-30-brainwallets.md, data/privatekeys-pw-video-transcript.md.
+- Источник: https://privatekeys.pw/puzzles/2-btc-rushwallet-puzzle
+- Проверено: баланс #30 = 1 000 000 сат, #26 = 0 (blockstream, 2026-10-19).
 
 ---
 ## Логирование (обязательно)

@@ -1,0 +1,1523 @@
+{
+ "checked_utc": "2026-10-19T14:40Z",
+ "btc_usd_used": 63000,
+ "folders": 83,
+ "addresses_queried": 70,
+ "sum_of_max_live_per_puzzle_satoshi": 51059810131,
+ "rows": [
+  {
+   "slug": "1000-btc-challenge-bitcoin-puzzle-tx",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 1,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [
+    {
+     "address": "1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH",
+     "net": 0,
+     "funded": 25034358,
+     "spent": 25034358,
+     "tx": 199,
+     "mempool": 0
+    }
+   ],
+   "errors": []
+  },
+  {
+   "slug": "11b-x-1371",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "973-eht-namuh-973",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "9vw04-gem-finder",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 2020760,
+   "live_usd_approx": 1273.08,
+   "live": [
+    {
+     "address": "bc1qr5mssp6snmduqp9enx4dzmcxvk7qw83lceyy2v",
+     "net": 2020760,
+     "funded": 5081908,
+     "spent": 3061148,
+     "tx": 4,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "actuarial-science-nft-hunt-10eth",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "adam-2-0",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "ah-white-walking-banks-800ksats",
+   "source": "секция Адреса/эскроу",
+   "checked": 2,
+   "live_max_satoshi": 700000,
+   "live_usd_approx": 441.0,
+   "live": [
+    {
+     "address": "bc1q4qc24xk5cehc4t7vr264zldsms2kmxf86jqjau",
+     "net": 700000,
+     "funded": 700000,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    },
+    {
+     "address": "bc1qxy4tf0s4n7x9w24rawf9qsxh2hyljrmvyrhwzt",
+     "net": 100000,
+     "funded": 100000,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "anime-seed-phrase-puzzle-0-2btc",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "aoi-nakamoto-quizchain-0-854btc",
+   "source": "секция Адреса/эскроу",
+   "checked": 3,
+   "live_max_satoshi": 77700000,
+   "live_usd_approx": 48951.0,
+   "live": [
+    {
+     "address": "14zMkTgaVXJcxdh4JdWi29MLRR44iUSG9W",
+     "net": 77700000,
+     "funded": 77700000,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [
+    {
+     "address": "13Cv6SXUnzGDT8JHqzzJ8xMPtsSdhJA4wd",
+     "net": 0,
+     "funded": 7700000,
+     "spent": 7700000,
+     "tx": 2,
+     "mempool": 0
+    },
+    {
+     "address": "19TbyN5KCg1Lg7qHwezifsLVcdSa2Rj5KN",
+     "net": 0,
+     "funded": 7700000,
+     "spent": 7700000,
+     "tx": 2,
+     "mempool": 0
+    }
+   ],
+   "errors": []
+  },
+  {
+   "slug": "arweave-puzzle-10-500ar",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "arweave-puzzle-11-1eth",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "arweave-puzzle-3-1000ar",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "ballet-bobby-lee-2btc-cards",
+   "source": "секция Адреса/эскроу",
+   "checked": 3,
+   "live_max_satoshi": 100003877,
+   "live_usd_approx": 63002.44,
+   "live": [
+    {
+     "address": "1JxWyNrkgYvgsHu8hVQZqTXEB9RftRGP5m",
+     "net": 100003481,
+     "funded": 100003481,
+     "spent": 0,
+     "tx": 3,
+     "mempool": 0
+    },
+    {
+     "address": "1QGtbKxx6FKDD66LwnrzHCAHmyZ7mDHqC4",
+     "net": 100003877,
+     "funded": 100003877,
+     "spent": 0,
+     "tx": 3,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [
+    {
+     "address": "1LL6Xy92LwGDRfQP9fBU7f1477cEKctr7c",
+     "net": 0,
+     "funded": 148637,
+     "spent": 148637,
+     "tx": 19,
+     "mempool": 0
+    }
+   ],
+   "errors": []
+  },
+  {
+   "slug": "bitaddress-bip38-giveaway-0-005297btc",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 529700,
+   "live_usd_approx": 333.71,
+   "live": [
+    {
+     "address": "1J7BVeP8JK4op2X3GN3Hy7xkTnGnQTMpou",
+     "net": 529700,
+     "funded": 4865700,
+     "spent": 4336000,
+     "tx": 3,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "bitaps-shamir-challenge-1btc",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 100016775,
+   "live_usd_approx": 63010.57,
+   "live": [
+    {
+     "address": "bc1qyjwa0tf0en4x09magpuwmt2smpsrlaxwn85lh6",
+     "net": 100016775,
+     "funded": 100016775,
+     "spent": 0,
+     "tx": 5,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "bitcoin-coders-puzzle-07-21ksats",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 21000,
+   "live_usd_approx": 13.23,
+   "live": [
+    {
+     "address": "bc1qj7xsxrlgmnnrqwvlakacc5yrh33h2n3xaa0m09",
+     "net": 21000,
+     "funded": 21000,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "bitcoin-treasure-hunt-book-series",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "bitcoinpuzzles-io-143-the-last-backup-0-0001btc",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 1,
+   "live_max_satoshi": 10000,
+   "live_usd_approx": 6.3,
+   "live": [
+    {
+     "address": "1LATz4tnX6DSBPqkZEV7NSGvHEMLTjBGtt",
+     "net": 10000,
+     "funded": 10000,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "bitimage-kitten-photo-puzzle-95ksats",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 2,
+   "live_max_satoshi": 1001900,
+   "live_usd_approx": 631.2,
+   "live": [
+    {
+     "address": "bc1qcyrndzgy036f6ax370g8zyvlw86ulawgt0246r",
+     "net": 1001900,
+     "funded": 1001900,
+     "spent": 0,
+     "tx": 2,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [
+    {
+     "address": "bc1q57euh23y3qs2f9d5mtwpax5lqecfvrdkqce82a",
+     "net": 0,
+     "funded": 415133,
+     "spent": 415133,
+     "tx": 4,
+     "mempool": 0
+    }
+   ],
+   "errors": []
+  },
+  {
+   "slug": "blm-brave-new-world-0-2btc",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 20107284,
+   "live_usd_approx": 12667.59,
+   "live": [
+    {
+     "address": "1KfZGvwZxsvSmemoCmEV75uqcNzYBHjkHZ",
+     "net": 20107284,
+     "funded": 20107284,
+     "spent": 0,
+     "tx": 5,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "cardano-13373665-challenge",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "cicada-3301",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "coin-games-weekly-banknote-puzzles",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "corey-phillips-kitten-passphrase-1msats",
+   "source": "секция Адреса/эскроу",
+   "checked": 2,
+   "live_max_satoshi": 1001900,
+   "live_usd_approx": 631.2,
+   "live": [
+    {
+     "address": "bc1qcyrndzgy036f6ax370g8zyvlw86ulawgt0246r",
+     "net": 1001900,
+     "funded": 1001900,
+     "spent": 0,
+     "tx": 2,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [
+    {
+     "address": "bc1q57euh23y3qs2f9d5mtwpax5lqecfvrdkqce82a",
+     "net": 0,
+     "funded": 415133,
+     "spent": 415133,
+     "tx": 4,
+     "mempool": 0
+    }
+   ],
+   "errors": []
+  },
+  {
+   "slug": "crypto-puzzles-2018-puzzle-2-0-05eth",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "cryptopuzzles-eth-easycore-numbers",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [
+    {
+     "address": "1PUzZ61FSVTn12CafJC85Vy1ts3BoFcXdU",
+     "net": 0,
+     "funded": 944414,
+     "spent": 944414,
+     "tx": 4,
+     "mempool": 0
+    }
+   ],
+   "errors": []
+  },
+  {
+   "slug": "dead-ends-registry",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 16,
+   "live_max_satoshi": 99996681,
+   "live_usd_approx": 62997.91,
+   "live": [
+    {
+     "address": "17oKQHHRxdQBiRaGKCoVDQJfebhPaZV3r7",
+     "net": 79638,
+     "funded": 79638,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    },
+    {
+     "address": "1AndrewYangForPresident2o2ozm6Pzd",
+     "net": 155400,
+     "funded": 155400,
+     "spent": 0,
+     "tx": 2,
+     "mempool": 0
+    },
+    {
+     "address": "1HB5XMLmzFVj8ALj6mfBsbifRoD4miY36v",
+     "net": 20148071,
+     "funded": 404383492240,
+     "spent": 404363344169,
+     "tx": 26717,
+     "mempool": 0
+    },
+    {
+     "address": "1KDUcZh5Z6H1of4Pwoy5ojJtkQxcQBHhnH",
+     "net": 99081,
+     "funded": 99081,
+     "spent": 0,
+     "tx": 8,
+     "mempool": 0
+    },
+    {
+     "address": "36T9H8hJP7xexevqayU9ADxGca7Y5dKquQ",
+     "net": 99996681,
+     "funded": 99996681,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    },
+    {
+     "address": "3CcxyPhyvyc3S9UuPfu42GNZLvVVV11Uk8",
+     "net": 12510,
+     "funded": 100165446,
+     "spent": 100152936,
+     "tx": 13,
+     "mempool": 0
+    },
+    {
+     "address": "bc1qw8uecdjvuedtkg4s2kku4s2ak9r2cm59khclfr",
+     "net": 1000000,
+     "funded": 1000000,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [
+    {
+     "address": "1GqGfnKLGXzCn9rB247N5RxDzKWjfUG9N3",
+     "net": 0,
+     "funded": 35711,
+     "spent": 35711,
+     "tx": 2,
+     "mempool": 0
+    },
+    {
+     "address": "1L3uXcR63SoQ2Q4KmmpQvMnF95AU9kBq4J",
+     "net": 0,
+     "funded": 0,
+     "spent": 0,
+     "tx": 0,
+     "mempool": 0
+    },
+    {
+     "address": "1LAdCYjJxgXnDfQymPZfHHv3fHhZpecdvm",
+     "net": 0,
+     "funded": 42492,
+     "spent": 42492,
+     "tx": 3,
+     "mempool": 0
+    },
+    {
+     "address": "1MRi4UBYa6aMLn8JrJatMsuXfQrQoMHF7a",
+     "net": 0,
+     "funded": 0,
+     "spent": 0,
+     "tx": 0,
+     "mempool": 0
+    },
+    {
+     "address": "1PUzZ61FSVTn12CafJC85Vy1ts3BoFcXdU",
+     "net": 0,
+     "funded": 944414,
+     "spent": 944414,
+     "tx": 4,
+     "mempool": 0
+    },
+    {
+     "address": "37XTVuaWt1zyUPRgDDpsnoo5ioHk2Da6Fs",
+     "net": 0,
+     "funded": 100204132,
+     "spent": 100204132,
+     "tx": 10,
+     "mempool": 0
+    },
+    {
+     "address": "3DaNeVNFqpirR9KEHjFuPPeErPaMTZyeBo",
+     "net": 0,
+     "funded": 31166405,
+     "spent": 31166405,
+     "tx": 2,
+     "mempool": 0
+    },
+    {
+     "address": "3NPZiNWiD7cCfXZa1D8tnEZBPgQ884cVw7",
+     "net": 0,
+     "funded": 31030916003,
+     "spent": 31030916003,
+     "tx": 24,
+     "mempool": 0
+    },
+    {
+     "address": "bc1qhzy6j4amw26z7e694mgfr7kvzl7xteu54f0a85",
+     "net": 0,
+     "funded": 420000,
+     "spent": 420000,
+     "tx": 3,
+     "mempool": 0
+    }
+   ],
+   "errors": []
+  },
+  {
+   "slug": "exitonly-challenge-14-30ksats",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 30000,
+   "live_usd_approx": 18.9,
+   "live": [
+    {
+     "address": "bc1q5rjy2cdfy4n4dkk4r6pxtwqlm8tgjcc2dj0ee9",
+     "net": 30000,
+     "funded": 30000,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "fe-lang-bountiful-compiler-bounty-1eth",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "ghostnet",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "gold-crystal-ubisoft-hunt-500k",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "groestlcoin-puzzle-1000grs",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "gsmg-io-5btc-puzzle",
+   "source": "секция Адреса/эскроу",
+   "checked": 2,
+   "live_max_satoshi": 375055856,
+   "live_usd_approx": 236285.19,
+   "live": [
+    {
+     "address": "17ucy1K9ZUAaoY6JVtM932W9jUp5LXfyHa",
+     "net": 375055856,
+     "funded": 375055856,
+     "spent": 0,
+     "tx": 45,
+     "mempool": 0
+    },
+    {
+     "address": "1GSMG1JC9wtdSwfwApgj2xcmJPAwx7prBe",
+     "net": 125649674,
+     "funded": 876003172,
+     "spent": 750353498,
+     "tx": 129,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "guntis-vitolins-metamask-8-6eth",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "jack-froese-emails",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "john-titor",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "keir-finlow-bates-blockchain-book-600ksats",
+   "source": "секция Адреса/эскроу",
+   "checked": 13,
+   "live_max_satoshi": 200000,
+   "live_usd_approx": 126.0,
+   "live": [
+    {
+     "address": "17Y9czcbcCz433QXsy1SGQjwLb27BBtLLZ",
+     "net": 200000,
+     "funded": 200000,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    },
+    {
+     "address": "19kkawFcg2U2s6vq368MXD7FJU9JZvRrjA",
+     "net": 200000,
+     "funded": 200000,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    },
+    {
+     "address": "1DZ5NbUwDgxeJkKhQLgYcUUX36PtYso1pm",
+     "net": 200000,
+     "funded": 200000,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    },
+    {
+     "address": "bc1qax0hsnwnxl7393awtc3hsy0ftm6tg4tyk2nfja",
+     "net": 23213,
+     "funded": 15332648,
+     "spent": 15309435,
+     "tx": 25,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [
+    {
+     "address": "14aFhno96fkt7knLWMDQ4j8yh8v5hBF4n1",
+     "net": 0,
+     "funded": 200000,
+     "spent": 200000,
+     "tx": 2,
+     "mempool": 0
+    },
+    {
+     "address": "14utGQn5GdfPvUrHNLAwTmmP99QpXm9mg6",
+     "net": 0,
+     "funded": 200000,
+     "spent": 200000,
+     "tx": 2,
+     "mempool": 0
+    },
+    {
+     "address": "161YgNX2NrCzGunWvoV1hN3DuzWeuovBK3",
+     "net": 0,
+     "funded": 200000,
+     "spent": 200000,
+     "tx": 2,
+     "mempool": 0
+    },
+    {
+     "address": "181rPpfdUGFg4fVEdhDZEfDbBSqgigtoZR",
+     "net": 0,
+     "funded": 200000,
+     "spent": 200000,
+     "tx": 2,
+     "mempool": 0
+    },
+    {
+     "address": "1KZei2D5yz3UJ59LvXsC1Y9y4ktSgcnVwz",
+     "net": 0,
+     "funded": 200000,
+     "spent": 200000,
+     "tx": 2,
+     "mempool": 0
+    },
+    {
+     "address": "1MEstvLAzc5DzJtvx7uyvKNNUCPN3ofWMK",
+     "net": 0,
+     "funded": 200000,
+     "spent": 200000,
+     "tx": 2,
+     "mempool": 0
+    },
+    {
+     "address": "1Q78hDeaHXQbuCSQxG1uPAc4V3jsuVUG9r",
+     "net": 0,
+     "funded": 200000,
+     "spent": 200000,
+     "tx": 2,
+     "mempool": 0
+    },
+    {
+     "address": "1QExGvuieS9MvuKC3R1qjp6jGTVcqisTDj",
+     "net": 0,
+     "funded": 200000,
+     "spent": 200000,
+     "tx": 2,
+     "mempool": 0
+    },
+    {
+     "address": "1QFafw3weoWTRQhiLafRw2eyWbVmES6wfJ",
+     "net": 0,
+     "funded": 200000,
+     "spent": 200000,
+     "tx": 2,
+     "mempool": 0
+    }
+   ],
+   "errors": []
+  },
+  {
+   "slug": "krypto-chase-skavengerz-1m",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "ktimesg-phy-challenge-0-008btc",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 800000,
+   "live_usd_approx": 504.0,
+   "live": [
+    {
+     "address": "bc1qrpn28qa82uyjg37dvsz3w7wpm3kpdea957nm9p",
+     "net": 800000,
+     "funded": 800000,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "lake-city-quiet-pills",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "logicbeach-powerful-moss-0-55eth",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 1,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [
+    {
+     "address": "bc1qj7467e7r5pdfpypm03wyvguupdrld0ul2gcutg",
+     "net": 0,
+     "funded": 10582160,
+     "spent": 10582160,
+     "tx": 9,
+     "mempool": 0
+    }
+   ],
+   "errors": []
+  },
+  {
+   "slug": "lost-media-bfi-75-most-wanted",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "luckylurker-vault-2-1btc",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 100000000,
+   "live_usd_approx": 63000.0,
+   "live": [
+    {
+     "address": "bc1qnepv9pcnqvndux9h9mcaxvk6u993rc0lew9fpp",
+     "net": 100000000,
+     "funded": 100000000,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "lunarcrush-lunar-vault-62btc",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "mapnificent-treasure-hunt-mth202610",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "marianas-web",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "markovian-parallax-denigrate",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "max-headroom-broadcast-hijacking",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "minecraft-arg",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "neuro-sama-arg",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "nuaza-bitcoin-fr-chasse-au-tresor-0-2024btc",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 20240000,
+   "live_usd_approx": 12751.2,
+   "live": [
+    {
+     "address": "bc1q8zfy6wvvtskzkg4s343x42pyf363nmejspgc02",
+     "net": 20240000,
+     "funded": 20240000,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "objective-thune-licorne-0-21btc",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 21021000,
+   "live_usd_approx": 13243.23,
+   "live": [
+    {
+     "address": "3Jf995GANG4EmFBK89byNNyZdtB3ELXJsZ",
+     "net": 21021000,
+     "funded": 21021000,
+     "spent": 0,
+     "tx": 2,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "onfo-forsyth-1btc",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 100000000,
+   "live_usd_approx": 63000.0,
+   "live": [
+    {
+     "address": "157dpLJgAAKugukKz8UwBHapM4idyZvnLc",
+     "net": 100000000,
+     "funded": 100000000,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "oobit-139-bitcoinpuzzles-io-0-01545btc",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 1545000,
+   "live_usd_approx": 973.35,
+   "live": [
+    {
+     "address": "1KKtnqLdK17ndRRwF8zaKZH6FSkSmTN6fk",
+     "net": 1545000,
+     "funded": 1545000,
+     "spent": 0,
+     "tx": 2,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "path-to-greatness-treasure-hunt-3ltc",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 2,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [
+    {
+     "address": "1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH",
+     "net": 0,
+     "funded": 25034358,
+     "spent": 25034358,
+     "tx": 199,
+     "mempool": 0
+    },
+    {
+     "address": "1EHNa6Q4Jz2uvNExL497mE43ikXhwF6kZm",
+     "net": 0,
+     "funded": 784927386,
+     "spent": 784927386,
+     "tx": 1475,
+     "mempool": 0
+    }
+   ],
+   "errors": []
+  },
+  {
+   "slug": "peter-todd-hash-collision-bounties-0-59btc",
+   "source": "секция Адреса/эскроу",
+   "checked": 5,
+   "live_max_satoshi": 27734251,
+   "live_usd_approx": 17472.58,
+   "live": [
+    {
+     "address": "35Snmmy3uhaer2gTboc81ayCip4m9DT4ko",
+     "net": 27734251,
+     "funded": 27734251,
+     "spent": 0,
+     "tx": 10,
+     "mempool": 0
+    },
+    {
+     "address": "39VXyuoc6SXYKp9TcAhoiN1mb4ns6z3Yu6",
+     "net": 10026873,
+     "funded": 10026873,
+     "spent": 0,
+     "tx": 2,
+     "mempool": 0
+    },
+    {
+     "address": "3DUQQvz4t57Jy7jxE86kyFcNpKtURNf1VW",
+     "net": 10026873,
+     "funded": 10026873,
+     "spent": 0,
+     "tx": 2,
+     "mempool": 0
+    },
+    {
+     "address": "3KyiQEGqqdb4nqfhUzGKN6KPhXmQsLNpay",
+     "net": 11576888,
+     "funded": 11576888,
+     "spent": 0,
+     "tx": 5,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [
+    {
+     "address": "37k7toV1Nv4DfmQbmZ8KuZDQCYK9x5KpzP",
+     "net": 0,
+     "funded": 249983220,
+     "spent": 249983220,
+     "tx": 37,
+     "mempool": 0
+    }
+   ],
+   "errors": []
+  },
+  {
+   "slug": "project-architeuthis",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "publius-enigma",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "purebasic-t85211-600eur",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "qday-steal-this-vault-solana",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "rcodes-1ojeu3c-5usd",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "rcodes-1tk3up2-500usd",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "rectorsquid-arrow-puzzle-50usd",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "rushwallet-contest-30-1msats",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 1000000,
+   "live_usd_approx": 630.0,
+   "live": [
+    {
+     "address": "13Q8hJqagtd77ojTJcEZPjTz2sBFSsYxyj",
+     "net": 1000000,
+     "funded": 101000000,
+     "spent": 100000000,
+     "tx": 3,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "satoshi-nakamoto-mystery",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "school-of-bitcoin-1msats",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 1000000,
+   "live_usd_approx": 630.0,
+   "live": [
+    {
+     "address": "bc1qcsdfkaqgy9ux668vmzflzqsyg0qtspncymt5ed",
+     "net": 1000000,
+     "funded": 1000000,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "seed-phrase-com-metaneer-0-01btc",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 1000000,
+   "live_usd_approx": 630.0,
+   "live": [
+    {
+     "address": "bc1q7x3p3rkmkxgf20n3apkccqcmn5mdtsf8zx5227",
+     "net": 1000000,
+     "funded": 1000000,
+     "spent": 0,
+     "tx": 2,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "seed-phrase-crossword-nft-magic-eden",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "smith-lyle-moore-hunt-2-0-032btc",
+   "source": "секция Адреса/эскроу",
+   "checked": 2,
+   "live_max_satoshi": 3177700,
+   "live_usd_approx": 2001.95,
+   "live": [
+    {
+     "address": "bc1q0akdjvrc2csau2n3gyxa3xcq0fss852x997m9y",
+     "net": 3177700,
+     "funded": 3177700,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    },
+    {
+     "address": "bc1qax0hsnwnxl7393awtc3hsy0ftm6tg4tyk2nfja",
+     "net": 23213,
+     "funded": 15332648,
+     "spent": 15309435,
+     "tx": 25,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "solana-puzzles-4-0-834sol",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "teikhos-bipedaljoe-solver-bounties-2eth",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "the-great-riddle-0-00423871btc",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 423871,
+   "live_usd_approx": 267.04,
+   "live": [
+    {
+     "address": "bc1qm3ayuhn7wppuqxaywu8ea0lggs8myy7543fekk",
+     "net": 423871,
+     "funded": 423871,
+     "spent": 0,
+     "tx": 23,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "timeless-1000-random-seed-puzzle-0-062eth",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "trezor-bug-bounty-100k-usd",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "tumblecaesar-1000algo",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "unfavorable-semicircle",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "uvb-76-the-buzzer",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "valor-por-tamaulipas",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "veil-hunts-1380-2020usd",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "wealth-in-poetry-0-03btc",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 3124630,
+   "live_usd_approx": 1968.52,
+   "live": [
+    {
+     "address": "1K4ezpLybootYF23TM4a8Y4NyP7auysnRo",
+     "net": 3124630,
+     "funded": 3124630,
+     "spent": 0,
+     "tx": 2,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "webdriver-torso",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 0,
+   "live_max_satoshi": 0,
+   "live_usd_approx": 0,
+   "live": [],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "wif500-500btc",
+   "source": "весь README (секции Адреса/эскроу нет)",
+   "checked": 1,
+   "live_max_satoshi": 50000035446,
+   "live_usd_approx": 31500022.33,
+   "live": [
+    {
+     "address": "1PfNh5fRcE9JKDmicD2Rh3pexGwce1LqyU",
+     "net": 50000035446,
+     "funded": 50000035446,
+     "spent": 0,
+     "tx": 26,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  },
+  {
+   "slug": "zden-haluska-halv-312ksats",
+   "source": "секция Адреса/эскроу",
+   "checked": 1,
+   "live_max_satoshi": 312500,
+   "live_usd_approx": 196.88,
+   "live": [
+    {
+     "address": "1crypto24HCr178iMcKd5iUi5D4rsg1nK",
+     "net": 312500,
+     "funded": 312500,
+     "spent": 0,
+     "tx": 1,
+     "mempool": 0
+    }
+   ],
+   "empty_or_spent": [],
+   "errors": []
+  }
+ ],
+ "non_btc_addresses_found": [
+  {
+   "slug": "path-to-greatness-treasure-hunt-3ltc",
+   "address": "LUtL7qnm3gzxKjHcfVLSjydqhhinTVmTmS"
+  },
+  {
+   "slug": "path-to-greatness-treasure-hunt-3ltc",
+   "address": "LUtL7qnm3gzxKjHcfVLSjydqhhinTVmTmS"
+  },
+  {
+   "slug": "path-to-greatness-treasure-hunt-3ltc",
+   "address": "LUtL7qnm3gzxKjHcfVLSjydqhhinTVmTmS"
+  },
+  {
+   "slug": "path-to-greatness-treasure-hunt-3ltc",
+   "address": "LUtL7qnm3gzxKjHcfVLSjydqhhinTVmTmS"
+  },
+  {
+   "slug": "path-to-greatness-treasure-hunt-3ltc",
+   "address": "LUtL7qnm3gzxKjHcfVLSjydqhhinTVmTmS"
+  },
+  {
+   "slug": "path-to-greatness-treasure-hunt-3ltc",
+   "address": "LUtL7qnm3gzxKjHcfVLSjydqhhinTVmTmS"
+  },
+  {
+   "slug": "path-to-greatness-treasure-hunt-3ltc",
+   "address": "LUtL7qnm3gzxKjHcfVLSjydqhhinTVmTmS"
+  },
+  {
+   "slug": "path-to-greatness-treasure-hunt-3ltc",
+   "address": "LUtL7qnm3gzxKjHcfVLSjydqhhinTVmTmS"
+  },
+  {
+   "slug": "path-to-greatness-treasure-hunt-3ltc",
+   "address": "LUtL7qnm3gzxKjHcfVLSjydqhhinTVmTmS"
+  },
+  {
+   "slug": "path-to-greatness-treasure-hunt-3ltc",
+   "address": "ltc1qkekjqn9yl0h5quwy42p7zqjuz3t4dmfarx8wtq"
+  }
+ ],
+ "note": "Адреса только из секции «Адреса/эскроу» собственного README; если секции нет — весь README (флаг source). net = funded − spent; mempool показан отдельно."
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "zden-haluska-halv-312ksats",
+  "agent": "AutoClaw",
+  "model": "",
+  "note": "H10: кусочно-линейная интерполяция по вершинам -> 256 сэмплов + перечисление альтернатив",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T19:28:04Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-19T21:28:04Z",
+  "heartbeat_utc": "2026-10-19T19:28:04Z",
+  "released_utc": "2026-10-19T19:30:38Z",
+  "released_by": "AutoClaw"
+}

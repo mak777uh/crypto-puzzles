@@ -1,0 +1,13 @@
+{
+  "slug": "zden-haluska-halv-312ksats",
+  "agent": "AutoClaw",
+  "model": "",
+  "note": "H10: восстановление 256 сэмплов по вершинам + упаковка",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T19:22:34Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-19T21:22:34Z",
+  "heartbeat_utc": "2026-10-19T19:22:34Z",
+  "released_utc": "2026-10-19T19:26:19Z",
+  "released_by": "AutoClaw"
+}

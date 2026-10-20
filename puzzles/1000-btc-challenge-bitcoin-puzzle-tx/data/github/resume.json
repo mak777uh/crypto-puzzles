@@ -1,0 +1,21 @@
+{
+  "done": [
+    "roadhero/bitcoin-puzzle-info",
+    "ilkerccom/btcpuzzle",
+    "alexanderthurn/1000-btc-challenge",
+    "brichard19/bitcrack"
+  ],
+  "left": [
+    "jeanlucpons/kangaroo",
+    "retiredc/rckangaroo",
+    "ilkerccom/bitcrackrandomiser",
+    "wanderingphilosopher/keyhunt-cuda",
+    "floflo777/open-crypto-puzzles",
+    "ilkerccom/bitcoinpuzzlescanner",
+    "ilkerccom/visual-puzzle-hunter",
+    "ilkerccom/bitcrack",
+    "translatorelite1-sys/bitcoin-puzzle-info"
+  ],
+  "ts": "2026-10-19T11:26:58Z",
+  "reason": "срезано потолками: собрано 4 кандидатов из 13 (--max-repos/--max-mb)"
+}

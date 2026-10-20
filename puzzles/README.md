@@ -21,7 +21,6 @@ satoshis-treasure — сайт мёртв, верифицируемый bounty-�
 
 - [1000-btc-challenge-bitcoin-puzzle-tx](1000-btc-challenge-bitcoin-puzzle-tx/README.md) — 1000 BTC Challenge (Bitcoin Puzzle Transaction) (~916-989 BTC (~$58-60M))
 - [11b-x-1371](11b-x-1371/README.md) — 11B-X-1371 (2015)
-- [1btc-brainwallet-defcon-2014](1btc-brainwallet-defcon-2014/README.md) — «1 BTC Brainwallet» (DEFCON 2014) (1 BTC)
 - [973-eht-namuh-973](973-eht-namuh-973/README.md) — 973-eht-namuh-973.com
 - [9vw04-gem-finder](9vw04-gem-finder/README.md) — Gem Finder 9vw04 (0.0202076 BTC, цветная сетка 21×50, WIF-маска)
 - [actuarial-science-nft-hunt-10eth](actuarial-science-nft-hunt-10eth/README.md) — Actuarial Science NFT Hunt (до 10 ETH)
@@ -37,6 +36,7 @@ satoshis-treasure — сайт мёртв, верифицируемый bounty-�
 - [bitaps-shamir-challenge-1btc](bitaps-shamir-challenge-1btc/README.md) — Bitaps Shamir Secret Sharing Challenge (1.00016775 BTC (USD 63011))
 - [bitcoin-coders-puzzle-07-21ksats](bitcoin-coders-puzzle-07-21ksats/README.md) — Bitcoin Coders Puzzle 07 (21 000 сат)
 - [bitcoin-treasure-hunt-book-series](bitcoin-treasure-hunt-book-series/README.md) — Bitcoin Treasure-Hunt Book Series (призы в BTC (суммы по книгам не сведены))
+- [bitcoinpuzzles-io-143-the-last-backup-0-0001btc](bitcoinpuzzles-io-143-the-last-backup-0-0001btc/README.md) — bitcoinpuzzles.io #143 The Last Backup (0,0001 BTC on-chain)
 - [bitimage-kitten-photo-puzzle-95ksats](bitimage-kitten-photo-puzzle-95ksats/README.md) — Bitimage (Kitten Photo Puzzle) (~0,00095 BTC)
 - [blm-brave-new-world-0-2btc](blm-brave-new-world-0-2btc/README.md) — BLM Collage: Welcome to the Brave New World (20107284 sats (USD 12668))
 - [cardano-13373665-challenge](cardano-13373665-challenge/README.md) — Cardano «13373665 Challenge» (eggdropper / MintMatrix)
@@ -61,6 +61,7 @@ satoshis-treasure — сайт мёртв, верифицируемый bounty-�
 - [krypto-chase-skavengerz-1m](krypto-chase-skavengerz-1m/README.md) — Krypto Chase × Skavengerz (США, 50 штатов; $5 000 за квалификацию, **$1 000 000** финал; нерешена; вне блокчейна)
 - [lake-city-quiet-pills](lake-city-quiet-pills/README.md) — Lake City Quiet Pills (2010-е)
 - [lost-media-bfi-75-most-wanted](lost-media-bfi-75-most-wanted/README.md) — Lost Media (BFI 75 Most Wanted, Doctor Who и др.)
+- [logicbeach-powerful-moss-0-55eth](logicbeach-powerful-moss-0-55eth/README.md) — LogicBeach: Powerful Moss (0.55 ETH, Base) — **забран он-чейн 2026-10-05** (0.553 ETH, tx 0xae42…f98f), баланс контракта 0
 - [luckylurker-vault-2-1btc](luckylurker-vault-2-1btc/README.md) — LuckyLurker Bitcoin Vault #2 (1,0 BTC)
 - [lunarcrush-lunar-vault-62btc](lunarcrush-lunar-vault-62btc/README.md) — LunarCrush Lunar Vault (62 BTC, ключ на луноходе MAPP; нерешена; адрес не опубликован)
 - [mapnificent-treasure-hunt-mth202610](mapnificent-treasure-hunt-mth202610/README.md) — Mapnificent Treasure Hunt MTH202610
@@ -70,7 +71,9 @@ satoshis-treasure — сайт мёртв, верифицируемый bounty-�
 - [minecraft-arg](minecraft-arg/README.md) — Minecraft ARG (2019+)
 - [neuro-sama-arg](neuro-sama-arg/README.md) — Neuro-sama ARG (2023-2024)
 - [nuaza-bitcoin-fr-chasse-au-tresor-0-2024btc](nuaza-bitcoin-fr-chasse-au-tresor-0-2024btc/README.md) — Нуаза / bitcoin.fr «Chasse au trésor» (0,2024 BTC)
+- [objective-thune-licorne-0-21btc](objective-thune-licorne-0-21btc/README.md) — Objective Thune «Le Secret de la Licorne» (0,21021 BTC) — **[сторож]** жив с 2020, нужен физический факт (3 из 210 томов); решение Ильи 19.10.2026, прогоны не запускать
 - [oobit-139-bitcoinpuzzles-io-0-01545btc](oobit-139-bitcoinpuzzles-io-0-01545btc/README.md) — Oobit 139 (bitcoinpuzzles.io) (0,01545 BTC)
+- [onfo-forsyth-1btc](onfo-forsyth-1btc/README.md) — ONFO / Dr. Forsyth Treasure Hunt (1,00000000 BTC) — **[сторож]** приз жив с 2021-06, сегменты 6–10 не опубликованы, автор умер; решение Ильи 19.10.2026, прогоны не запускать
 - [path-to-greatness-treasure-hunt-3ltc](path-to-greatness-treasure-hunt-3ltc/README.md) — Path to Greatness: Treasure Hunt (3.02608794 LTC (USD 163))
 - [peter-todd-hash-collision-bounties-0-59btc](peter-todd-hash-collision-bounties-0-59btc/README.md) — Peter Todd Hash Collision Bounties (0.59364885 BTC (USD 37400))
 - [project-architeuthis](project-architeuthis/README.md) — Project Architeuthis (US Navy, 2014) (не денежный — приглашение на собеседование/работа в US Navy)

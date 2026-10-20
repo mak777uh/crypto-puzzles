@@ -1,0 +1,2308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Wallet Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplex-noise@2.4.0/simplex-noise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-sha256@0.9.0/src/sha256.min.js"></script>
+
+    <style>
+        :root {
+            --bg-color: #020409;
+            --ui-dark: rgba(8, 15, 30, 0.8);
+            --ui-accent: #3b82f6;
+            --ui-accent-hover: #60a5fa;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        
+        .page-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        
+        #game-container {
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%; /* Square aspect ratio */
+            position: relative;
+            background: var(--bg-color);
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 0 auto; /* Center the container */
+        }
+        
+        .canvas-area {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        #three-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .ui-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 10;
+        }
+        
+        .title-bar {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--ui-dark);
+            backdrop-filter: blur(10px);
+            padding: 10px 16px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .title-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .current-level {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--ui-dark);
+            backdrop-filter: blur(10px);
+            padding: 10px 16px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            color: var(--text-primary);
+        }
+        
+        .level-icon {
+            font-size: 2rem;
+            color: var(--ui-accent);
+        }
+        
+        .help-text {
+            position: center;
+            bottom: 20px;
+            left: 20px;
+            background: var(--ui-dark);
+            backdrop-filter: blur(10px);
+            padding: 10px 16px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            color: var(--text-primary);
+        }
+        
+        .description {
+            margin: 30px 0;
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        #sand-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+        
+        /* New styles for message box */
+.message-box {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    max-height: 90%;
+    background: linear-gradient(135deg, rgba(10, 60, 140, 0.95), rgba(20, 80, 160, 0.9));
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 100;
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Start from top to ensure order */
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.message-box p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin: 0 0 15px;
+    max-width: 100%;
+    word-wrap: break-word;
+    color: #ffffff; /* Explicitly set to white */
+}
+
+.message-box .seed-phrase {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.8rem;
+    word-break: break-word;
+    margin: 15px 0;
+    line-height: 1;
+    color: #e6f0ff;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.message-box a {
+    color: #60a5fa;
+    text-decoration
+        
+        @media (max-width: 768px) {
+            .title-text {
+                font-size: 0.2rem;
+            }
+            
+            .help-text, .current-level {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+            <div id="game-container">
+                <div class="canvas-area">
+                    <div id="three-canvas"></div>
+                    <canvas id="sand-canvas"></canvas>
+                    
+                    <div class="ui-overlay">
+                        <div class="help-text">
+                            <span id="help-text">Pick a Galaxy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <script>
+        // Three.js setup
+        let scene, camera, renderer;
+        let galaxies = [];
+        let backgroundGalaxies = null;
+        let stars = [];
+        let currentGalaxy = null;
+        let solarSystem = null;
+        let sunMesh = null;
+        let planets = [];
+        let orbits = [];
+        let planetRotationSpeeds = [];
+        let planetOrbitalSpeeds = [];
+        let selectedPlanet = null;
+        let planetMesh = null;
+        let isTransitioning = false;
+        let currentView = 'universe';
+        let clock = new THREE.Clock();
+        let simplex = null;
+        
+        // 2D Sand simulation variables
+        let sandCanvas, sandCtx;
+        let isRunning = false;
+        let isPouring = false;
+        let pouredParticles = 0;
+        let particlesToPour = 0;
+        let sandParticles = [];
+        let pourPositionX = 0; 
+        let pourDirection = 1;
+        let sandAnimationId = null;
+        let messageBox = null;
+        let allParticlesSettled = false;
+
+const WORDLIST = [  "abandon", "ability", "able", "about", "above", "absent", "absorb", "abstract", "absurd", "abuse",
+            "access", "accident", "account", "accuse", "achieve", "acid", "acoustic", "acquire", "across", "act",
+            "action", "actor", "actress", "actual", "adapt", "add", "addict", "address", "adjust", "admit",
+            "adult", "advance", "advice", "aerobic", "affair", "afford", "afraid", "again", "age", "agent",
+            "agree", "ahead", "aim", "air", "airport", "aisle", "alarm", "album", "alcohol", "alert",
+            "alien", "all", "alley", "allow", "almost", "alone", "alpha", "already", "also", "alter",
+            "always", "amateur", "amazing", "among", "amount", "amused", "analyst", "anchor", "ancient", "anger",
+            "angle", "angry", "animal", "ankle", "announce", "annual", "another", "answer", "antenna", "antique",
+            "anxiety", "any", "apart", "apology", "appear", "apple", "approve", "april", "arch", "arctic",
+            "area", "arena", "argue", "arm", "armed", "armor", "army", "around", "arrange", "arrest",
+            "arrive", "arrow", "art", "artefact", "artist", "artwork", "ask", "aspect", "assault", "asset",
+            "assist", "assume", "asthma", "athlete", "atom", "attack", "attend", "attitude", "attract", "auction",
+            "audit", "august", "aunt", "author", "auto", "autumn", "average", "avocado", "avoid", "awake",
+            "aware", "away", "awesome", "awful", "awkward", "axis", "baby", "bachelor", "bacon", "badge",
+            "bag", "balance", "balcony", "ball", "bamboo", "banana", "banner", "bar", "barely", "bargain",
+            "barrel", "base", "basic", "basket", "battle", "beach", "bean", "beauty", "because", "become",
+            "beef", "before", "begin", "behave", "behind", "believe", "below", "belt", "bench", "benefit",
+            "best", "betray", "better", "between", "beyond", "bicycle", "bid", "bike", "bind", "biology",
+            "bird", "birth", "bitter", "black", "blade", "blame", "blanket", "blast", "bleak", "bless",
+            "blind", "blood", "blossom", "blouse", "blue", "blur", "blush", "board", "boat", "body",
+            "boil", "bomb", "bone", "bonus", "book", "boost", "border", "boring", "borrow", "boss",
+            "bottom", "bounce", "box", "boy", "bracket", "brain", "brand", "brass", "brave", "bread",
+            "breeze", "brick", "bridge", "brief", "bright", "bring", "brisk", "broccoli", "broken", "bronze",
+            "broom", "brother", "brown", "brush", "bubble", "buddy", "budget", "buffalo", "build", "bulb",
+            "bulk", "bullet", "bundle", "bunker", "burden", "burger", "burst", "bus", "business", "busy",
+            "butter", "buyer", "buzz", "cabbage", "cabin", "cable", "cactus", "cage", "cake", "call",
+            "calm", "camera", "camp", "can", "canal", "cancel", "candy", "cannon", "canoe", "canvas",
+            "canyon", "capable", "capital", "captain", "car", "carbon", "card", "cargo", "carpet", "carry",
+            "cart", "case", "cash", "casino", "castle", "casual", "cat", "catalog", "catch", "category",
+            "cattle", "caught", "cause", "caution", "cave", "ceiling", "celery", "cement", "census", "century",
+            "cereal", "certain", "chair", "chalk", "champion", "change", "chaos", "chapter", "charge", "chase",
+            "chat", "cheap", "check", "cheese", "chef", "cherry", "chest", "chicken", "chief", "child",
+            "chimney", "choice", "choose", "chronic", "chuckle", "chunk", "churn", "cigar", "cinnamon", "circle",
+            "citizen", "city", "civil", "claim", "clap", "clarify", "claw", "clay", "clean", "clerk",
+            "clever", "click", "client", "cliff", "climb", "clinic", "clip", "clock", "clog", "close",
+            "cloth", "cloud", "clown", "club", "clump", "cluster", "clutch", "coach", "coast", "coconut",
+            "code", "coffee", "coil", "coin", "collect", "color", "column", "combine", "come", "comfort",
+            "comic", "common", "company", "concert", "conduct", "confirm", "congress", "connect", "consider", "control",
+            "convince", "cook", "cool", "copper", "copy", "coral", "core", "corn", "correct", "cost",
+            "cotton", "couch", "country", "couple", "course", "cousin", "cover", "coyote", "crack", "cradle",
+            "craft", "cram", "crane", "crash", "crater", "crawl", "crazy", "cream", "credit", "creek",
+            "crew", "cricket", "crime", "crisp", "critic", "crop", "cross", "crouch", "crowd", "crucial",
+            "cruel", "cruise", "crumble", "crunch", "crush", "cry", "crystal", "cube", "culture", "cup",
+            "cupboard", "curious", "current", "curtain", "curve", "cushion", "custom", "cute", "cycle", "dad",
+            "damage", "damp", "dance", "danger", "daring", "dash", "daughter", "dawn", "day", "deal",
+            "debate", "debris", "decade", "december", "decide", "decline", "decorate", "decrease", "deer", "defense",
+            "define", "defy", "degree", "delay", "deliver", "demand", "demise", "denial", "dentist", "deny",
+            "depart", "depend", "deposit", "depth", "deputy", "derive", "describe", "desert", "design", "desk",
+            "despair", "destroy", "detail", "detect", "develop", "device", "devote", "diagram", "dial", "diamond",
+            "diary", "dice", "diesel", "diet", "differ", "digital", "dignity", "dilemma", "dinner", "dinosaur",
+            "direct", "dirt", "disagree", "discover", "disease", "dish", "dismiss", "disorder", "display", "distance",
+            "divert", "divide", "divorce", "dizzy", "doctor", "document", "dog", "doll", "dolphin", "domain",
+            "donate", "donkey", "donor", "door", "dose", "double", "dove", "draft", "dragon", "drama",
+            "drastic", "draw", "dream", "dress", "drift", "drill", "drink", "drip", "drive", "drop",
+            "drum", "dry", "duck", "dumb", "dune", "during", "dust", "dutch", "duty", "dwarf",
+            "dynamic", "eager", "eagle", "early", "earn", "earth", "easily", "east", "easy", "echo",
+            "ecology", "economy", "edge", "edit", "educate", "effort", "egg", "eight", "either", "elbow",
+            "elder", "electric", "elegant", "element", "elephant", "elevator", "elite", "else", "embark", "embody",
+            "embrace", "emerge", "emotion", "employ", "empower", "empty", "enable", "enact", "end", "endless",
+            "endorse", "enemy", "energy", "enforce", "engage", "engine", "enhance", "enjoy", "enlist", "enough",
+            "enrich", "enroll", "ensure", "enter", "entire", "entry", "envelope", "episode", "equal", "equip",
+            "era", "erase", "erode", "erosion", "error", "erupt", "escape", "essay", "essence", "estate",
+            "eternal", "ethics", "evidence", "evil", "evoke", "evolve", "exact", "example", "excess", "exchange",
+            "excite", "exclude", "excuse", "execute", "exercise", "exhaust", "exhibit", "exile", "exist", "exit",
+            "exotic", "expand", "expect", "expire", "explain", "expose", "express", "extend", "extra", "eye",
+            "eyebrow", "fabric", "face", "faculty", "fade", "faint", "faith", "fall", "false", "fame",
+            "family", "famous", "fan", "fancy", "fantasy", "farm", "fashion", "fat", "fatal", "father",
+            "fatigue", "fault", "favorite", "feature", "february", "federal", "fee", "feed", "feel", "female",
+            "fence", "festival", "fetch", "fever", "few", "fiber", "fiction", "field", "figure", "file",
+            "film", "filter", "final", "find", "fine", "finger", "finish", "fire", "firm", "first",
+            "fiscal", "fish", "fit", "fitness", "fix", "flag", "flame", "flash", "flat", "flavor",
+            "flee", "flight", "flip", "float", "flock", "floor", "flower", "fluid", "flush", "fly",
+            "foam", "focus", "fog", "foil", "fold", "follow", "food", "foot", "force", "forest",
+            "forget", "fork", "fortune", "forum", "forward", "fossil", "foster", "found", "fox", "fragile",
+            "frame", "frequent", "fresh", "friend", "fringe", "frog", "front", "frost", "frown", "frozen",
+            "fruit", "fuel", "fun", "funny", "furnace", "fury", "future", "gadget", "gain", "galaxy",
+            "gallery", "game", "gap", "garage", "garbage", "garden", "garlic", "garment", "gas", "gasp",
+            "gate", "gather", "gauge", "gaze", "general", "genius", "genre", "gentle", "genuine", "gesture",
+            "ghost", "giant", "gift", "giggle", "ginger", "giraffe", "girl", "give", "glad", "glance",
+            "glare", "glass", "glide", "glimpse", "globe", "gloom", "glory", "glove", "glow", "glue",
+            "goat", "goddess", "gold", "good", "goose", "gorilla", "gospel", "gossip", "govern", "gown",
+            "grab", "grace", "grain", "grant", "grape", "grass", "gravity", "great", "green", "grid",
+            "grief", "grit", "grocery", "group", "grow", "grunt", "guard", "guess", "guide", "guilt",
+            "guitar", "gun", "gym", "habit", "hair", "half", "hammer", "hamster", "hand", "happy",
+            "harbor", "hard", "harsh", "harvest", "hat", "have", "hawk", "hazard", "head", "health",
+            "heart", "heavy", "hedgehog", "height", "hello", "helmet", "help", "hen", "hero", "hidden",
+            "high", "hill", "hint", "hip", "hire", "history", "hobby", "hockey", "hold", "hole",
+            "holiday", "hollow", "home", "honey", "hood", "hope", "horn", "horror", "horse", "hospital",
+            "host", "hotel", "hour", "hover", "hub", "huge", "human", "humble", "humor", "hundred",
+            "hungry", "hunt", "hurdle", "hurry", "hurt", "husband", "hybrid", "ice", "icon", "idea",
+            "identify", "idle", "ignore", "ill", "illegal", "illness", "image", "imitate", "immense", "immune",
+            "impact", "impose", "improve", "impulse", "inch", "include", "income", "increase", "index", "indicate",
+            "indoor", "industry", "infant", "inflict", "inform", "inhale", "inherit", "initial", "inject", "injury",
+            "inmate", "inner", "innocent", "input", "inquiry", "insane", "insect", "inside", "inspire", "install",
+            "intact", "interest", "into", "invest", "invite", "involve", "iron", "island", "isolate", "issue",
+            "item", "ivory", "jacket", "jaguar", "jar", "jazz", "jealous", "jeans", "jelly", "jewel",
+            "job", "join", "joke", "journey", "joy", "judge", "juice", "jump", "jungle", "junior",
+            "junk", "just", "kangaroo", "keen", "keep", "ketchup", "key", "kick", "kid", "kidney",
+            "kind", "kingdom", "kiss", "kit", "kitchen", "kite", "kitten", "kiwi", "knee", "knife",
+            "knock", "know", "lab", "label", "labor", "ladder", "lady", "lake", "lamp", "language",
+            "laptop", "large", "later", "latin", "laugh", "laundry", "lava", "law", "lawn", "lawsuit",
+            "layer", "lazy", "leader", "leaf", "learn", "leave", "lecture", "left", "leg", "legal",
+            "legend", "leisure", "lemon", "lend", "length", "lens", "leopard", "lesson", "letter", "level",
+            "liar", "liberty", "library", "license", "life", "lift", "light", "like", "limb", "limit",
+            "link", "lion", "liquid", "list", "little", "live", "lizard", "load", "loan", "lobster",
+            "local", "lock", "logic", "lonely", "long", "loop", "lottery", "loud", "lounge", "love",
+            "loyal", "lucky", "luggage", "lumber", "lunar", "lunch", "luxury", "lyrics", "machine", "mad",
+            "magic", "magnet", "maid", "mail", "main", "major", "make", "mammal", "man", "manage",
+            "mandate", "mango", "mansion", "manual", "maple", "marble", "march", "margin", "marine", "market",
+            "marriage", "mask", "mass", "master", "match", "material", "math", "matrix", "matter", "maximum",
+            "maze", "meadow", "mean", "measure", "meat", "mechanic", "medal", "media", "melody", "melt",
+            "member", "memory", "mention", "menu", "mercy", "merge", "merit", "merry", "mesh", "message",
+            "metal", "method", "middle", "midnight", "milk", "million", "mimic", "mind", "minimum", "minor",
+            "minute", "miracle", "mirror", "misery", "miss", "mistake", "mix", "mixed", "mixture", "mobile",
+            "model", "modify", "mom", "moment", "monitor", "monkey", "monster", "month", "moon", "moral",
+            "more", "morning", "mosquito", "mother", "motion", "motor", "mountain", "mouse", "move", "movie",
+            "much", "muffin", "mule", "multiply", "muscle", "museum", "mushroom", "music", "must", "mutual",
+            "myself", "mystery", "myth", "naive", "name", "napkin", "narrow", "nasty", "nation", "nature",
+            "near", "neck", "need", "negative", "neglect", "neither", "nephew", "nerve", "nest", "net",
+            "network", "neutral", "never", "news", "next", "nice", "night", "noble", "noise", "nominee",
+            "noodle", "normal", "north", "nose", "notable", "note", "nothing", "notice", "novel", "now",
+            "nuclear", "number", "nurse", "nut", "oak", "obey", "object", "oblige", "obscure", "observe",
+            "obtain", "obvious", "occur", "ocean", "october", "odor", "off", "offer", "office", "often",
+            "oil", "okay", "old", "olive", "olympic", "omit", "once", "one", "onion", "online",
+            "only", "open", "opera", "opinion", "oppose", "option", "orange", "orbit", "orchard", "order",
+            "ordinary", "organ", "orient", "original", "orphan", "ostrich", "other", "outdoor", "outer", "output",
+            "outside", "oval", "oven", "over", "own", "owner", "oxygen", "oyster", "ozone", "pact",
+            "paddle", "page", "pair", "palace", "palm", "panda", "panel", "panic", "panther", "paper",
+            "parade", "parent", "park", "parrot", "party", "pass", "patch", "path", "patient", "patrol",
+            "pattern", "pause", "pave", "payment", "peace", "peanut", "pear", "peasant", "pelican", "pen",
+            "penalty", "pencil", "people", "pepper", "perfect", "permit", "person", "pet", "phone", "photo",
+            "phrase", "physical", "piano", "picnic", "picture", "piece", "pig", "pigeon", "pill", "pilot",
+            "pink", "pioneer", "pipe", "pistol", "pitch", "pizza", "place", "planet", "plastic", "plate",
+            "play", "please", "pledge", "pluck", "plug", "plunge", "poem", "poet", "point", "polar",
+            "pole", "police", "pond", "pony", "pool", "popular", "portion", "position", "possible", "post",
+            "potato", "pottery", "poverty", "powder", "power", "practice", "praise", "predict", "prefer", "prepare",
+            "present", "pretty", "prevent", "price", "pride", "primary", "print", "priority", "prison", "private",
+            "prize", "problem", "process", "produce", "profit", "program", "project", "promote", "proof", "property",
+            "prosper", "protect", "proud", "provide", "public", "pudding", "pull", "pulp", "pulse", "pumpkin",
+            "punch", "pupil", "puppy", "purchase", "purity", "purpose", "purse", "push", "put", "puzzle",
+            "pyramid", "quality", "quantum", "quarter", "question", "quick", "quit", "quiz", "quote", "rabbit",
+            "raccoon", "race", "rack", "radar", "radio", "rail", "rain", "raise", "rally", "ramp",
+            "ranch", "random", "range", "rapid", "rare", "rate", "rather", "raven", "raw", "razor",
+            "ready", "real", "reason", "rebel", "rebuild", "recall", "receive", "recipe", "record", "recycle",
+            "reduce", "reflect", "reform", "refuse", "region", "regret", "regular", "reject", "relax", "release",
+            "relief", "rely", "remain", "remember", "remind", "remove", "render", "renew", "rent", "reopen",
+            "repair", "repeat", "replace", "report", "require", "rescue", "resemble", "resist", "resource", "response",
+            "result", "retire", "retreat", "return", "reunion", "reveal", "review", "reward", "rhythm", "rib",
+            "ribbon", "rice", "rich", "ride", "ridge", "rifle", "right", "rigid", "ring", "riot",
+            "ripple", "risk", "ritual", "rival", "river", "road", "roast", "robot", "robust", "rocket",
+            "romance", "roof", "rookie", "room", "rose", "rotate", "rough", "round", "route", "royal",
+            "rubber", "rude", "rug", "rule", "run", "runway", "rural", "sad", "saddle", "sadness",
+            "safe", "sail", "salad", "salmon", "salon", "salt", "salute", "same", "sample", "sand",
+            "satisfy", "satoshi", "sauce", "sausage", "save", "say", "scale", "scan", "scare", "scatter",
+            "scene", "scheme", "school", "science", "scissors", "scorpion", "scout", "scrap", "screen", "script",
+            "scrub", "sea", "search", "season", "seat", "second", "secret", "section", "security", "seed",
+            "seek", "segment", "select", "sell", "seminar", "senior", "sense", "sentence", "series", "service",
+            "session", "settle", "setup", "seven", "shadow", "shaft", "shallow", "share", "shed", "shell",
+            "sheriff", "shield", "shift", "shine", "ship", "shiver", "shock", "shoe", "shoot", "shop",
+            "short", "shoulder", "shove", "shrimp", "shrug", "shuffle", "shy", "sibling", "sick", "side",
+            "siege", "sight", "sign", "silent", "silk", "silly", "silver", "similar", "simple", "since",
+            "sing", "siren", "sister", "situate", "six", "size", "skate", "sketch", "ski", "skill",
+            "skin", "skirt", "skull", "slab", "slam", "sleep", "slender", "slice", "slide", "slight",
+            "slim", "slogan", "slot", "slow", "slush", "small", "smart", "smile", "smoke", "smooth",
+            "snack", "snake", "snap", "sniff", "snow", "soap", "soccer", "social", "sock", "soda",
+            "soft", "solar", "soldier", "solid", "solution", "solve", "someone", "song", "soon", "sorry",
+            "sort", "soul", "sound", "soup", "source", "south", "space", "spare", "spatial", "spawn",
+            "speak", "special", "speed", "spell", "spend", "sphere", "spice", "spider", "spike", "spin",
+            "spirit", "split", "spoil", "sponsor", "spoon", "sport", "spot", "spray", "spread", "spring",
+            "spy", "square", "squeeze", "squirrel", "stable", "stadium", "staff", "stage", "stairs", "stamp",
+            "stand", "start", "state", "stay", "steak", "steel", "stem", "step", "stereo", "stick",
+            "still", "sting", "stock", "stomach", "stone", "stool", "story", "stove", "strategy", "street",
+            "strike", "strong", "struggle", "student", "stuff", "stumble", "style", "subject", "submit", "subway",
+            "success", "such", "sudden", "suffer", "sugar", "suggest", "suit", "summer", "sun", "sunny",
+            "sunset", "super", "supply", "supreme", "sure", "surface", "surge", "surprise", "surround", "survey",
+            "suspect", "sustain", "swallow", "swamp", "swap", "swarm", "swear", "sweet", "swift", "swim",
+            "swing", "switch", "sword", "symbol", "symptom", "syrup", "system", "table", "tackle", "tag",
+            "tail", "talent", "talk", "tank", "tape", "target", "task", "taste", "tattoo", "taxi",
+            "teach", "team", "tell", "ten", "tenant", "tennis", "tent", "term", "test", "text",
+            "thank", "that", "theme", "then", "theory", "there", "they", "thing", "this", "thought",
+            "three", "thrive", "throw", "thumb", "thunder", "ticket", "tide", "tiger", "tilt", "timber",
+            "time", "tiny", "tip", "tired", "tissue", "title", "toast", "tobacco", "today", "toddler",
+            "toe", "together", "toilet", "token", "tomato", "tomorrow", "tone", "tongue", "tonight", "tool",
+            "tooth", "top", "topic", "topple", "torch", "tornado", "tortoise", "toss", "total", "tourist",
+            "toward", "tower", "town", "toy", "track", "trade", "traffic", "tragic", "train", "transfer",
+            "trap", "trash", "travel", "tray", "treat", "tree", "trend", "trial", "tribe", "trick",
+            "trigger", "trim", "trip", "trophy", "trouble", "truck", "true", "truly", "trumpet", "trust",
+            "truth", "try", "tube", "tuition", "tumble", "tuna", "tunnel", "turkey", "turn", "turtle",
+            "twelve", "twenty", "twice", "twin", "twist", "two", "type", "typical", "ugly", "umbrella",
+            "unable", "unaware", "uncle", "uncover", "under", "undo", "unfair", "unfold", "unhappy", "uniform",
+            "unique", "unit", "universe", "unknown", "unlock", "until", "unusual", "unveil", "update", "upgrade",
+            "uphold", "upon", "upper", "upset", "urban", "urge", "usage", "use", "used", "useful",
+            "useless", "usual", "utility", "vacant", "vacuum", "vague", "valid", "valley", "valve", "van",
+            "vanish", "vapor", "various", "vast", "vault", "vehicle", "velvet", "vendor", "venture", "venue",
+            "verb", "verify", "version", "very", "vessel", "veteran", "viable", "vibrant", "vicious", "victory",
+            "video", "view", "village", "vintage", "violin", "virtual", "virus", "visa", "visit", "visual",
+            "vital", "vivid", "vocal", "voice", "void", "volcano", "volume", "vote", "voyage", "wage",
+            "wagon", "wait", "walk", "wall", "walnut", "want", "warfare", "warm", "warrior", "wash",
+            "wasp", "waste", "water", "wave", "way", "wealth", "weapon", "wear", "weasel", "weather",
+            "web", "wedding", "weekend", "weird", "welcome", "west", "wet", "whale", "what", "wheat",
+            "wheel", "when", "where", "whip", "whisper", "wide", "width", "wife", "wild", "will",
+            "win", "window", "wine", "wing", "wink", "winner", "winter", "wire", "wisdom", "wise",
+            "wish", "witness", "wolf", "woman", "wonder", "wood", "wool", "word", "work", "world",
+            "worry", "worth", "wrap", "wreck", "wrestle", "wrist", "write", "wrong", "yard", "year",
+            "yellow", "you", "young", "youth", "zebra", "zero", "zone", "zoo"
+]; // 2048 words
+
+        // Physics constants for sand
+        const GRAVITY = 0.8;
+        const FRICTION = 0.9;
+        const RESTITUTION = 0.6;
+        const SETTLE_THRESHOLD = 0.5;
+        const POUR_POSITION_Y = 50;
+        const POUR_WIDTH = 20;
+        const POUR_RATE = 2;
+        const POUR_SPEED = 5;
+        const GRAIN_RADIUS = 10;
+        const GRAIN_COLORS = ['#e6c46a', '#d4b255', '#c9a648', '#dfbe6f', '#e8cc83'];
+        const GRAIN_COUNT = 600;
+        
+        // Initialize Three.js
+        function init() {
+            const container = document.getElementById('three-canvas');
+            
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0x000510);
+            
+            const aspectRatio = 1;
+            camera = new THREE.PerspectiveCamera(70, aspectRatio, 0.1, 10000);
+            camera.position.z = 500;
+            
+            renderer = new THREE.WebGLRenderer({ antialias: true });
+            renderer.setSize(container.clientWidth, container.clientHeight);
+            renderer.setPixelRatio(window.devicePixelRatio);
+            container.appendChild(renderer.domElement);
+            
+            simplex = new SimplexNoise();
+            
+            const ambientLight = new THREE.AmbientLight(0x202020);
+            scene.add(ambientLight);
+            
+            sandCanvas = document.getElementById('sand-canvas');
+            sandCtx = sandCanvas.getContext('2d');
+            
+            generateUniverse();
+            
+            window.addEventListener('resize', onWindowResize);
+            
+            renderer.domElement.addEventListener('click', handleClick);
+            sandCanvas.addEventListener('click', handleClick);
+            
+            animate();
+        }
+        
+        function onWindowResize() {
+            const container = document.getElementById('three-canvas');
+            const width = container.clientWidth;
+            const height = width;
+            
+            camera.aspect = 1;
+            camera.updateProjectionMatrix();
+            renderer.setSize(width, height);
+            
+            sandCanvas.width = width;
+            sandCanvas.height = height;
+        }
+
+        // Generate universe
+        function generateUniverse() {
+            createStarfield();
+            createNebulae();
+            createGalaxies();
+        }
+        
+        function createStarfield() {
+            const starGeometry = new THREE.BufferGeometry();
+            const starCount = 10000;
+            const positions = new Float32Array(starCount * 3);
+            const colors = new Float32Array(starCount * 3);
+            const sizes = new Float32Array(starCount);
+            
+            for (let i = 0; i < starCount; i++) {
+                const i3 = i * 3;
+                const radius = 2000 + Math.random() * 1000;
+                const theta = Math.random() * Math.PI * 2;
+                const phi = Math.acos(2 * Math.random() - 1);
+                
+                positions[i3] = radius * Math.sin(phi) * Math.cos(theta);
+                positions[i3 + 1] = radius * Math.sin(phi) * Math.sin(theta);
+                positions[i3 + 2] = radius * Math.cos(phi);
+                
+                const temp = Math.random();
+                if (temp > 0.8) {
+                    colors[i3] = 0.8 + Math.random() * 0.2;
+                    colors[i3 + 1] = 0.8 + Math.random() * 0.2;
+                    colors[i3 + 2] = 1.0;
+                } else if (temp > 0.5) {
+                    colors[i3] = 1.0;
+                    colors[i3 + 1] = 0.9 + Math.random() * 0.1;
+                    colors[i3 + 2] = 0.7 + Math.random() * 0.3;
+                } else if (temp > 0.2) {
+                    colors[i3] = 1.0;
+                    colors[i3 + 1] = 0.7 + Math.random() * 0.3;
+                    colors[i3 + 2] = 0.5 + Math.random() * 0.2;
+                } else {
+                    colors[i3] = 1.0;
+                    colors[i3 + 1] = 0.5 + Math.random() * 0.2;
+                    colors[i3 + 2] = 0.5 + Math.random() * 0.1;
+                }
+                
+                sizes[i] = Math.random() < 0.99 ? Math.random() * 1.5 : 2 + Math.random() * 2;
+            }
+            
+            starGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            starGeometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+            starGeometry.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
+            
+            const starMaterial = new THREE.ShaderMaterial({
+                uniforms: {},
+                vertexShader: `
+                    attribute float size;
+                    attribute vec3 color;
+                    varying vec3 vColor;
+                    void main() {
+                        vColor = color;
+                        vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+                        gl_PointSize = size * (300.0 / -mvPosition.z);
+                        gl_Position = projectionMatrix * mvPosition;
+                    }
+                `,
+                fragmentShader: `
+                    varying vec3 vColor;
+                    void main() {
+                        float r = 0.0;
+                        vec2 cxy = 2.0 * gl_PointCoord - 1.0;
+                        r = dot(cxy, cxy);
+                        if (r > 1.0) {
+                            discard;
+                        }
+                        gl_FragColor = vec4(vColor, 1.0 - r);
+                    }
+                `,
+                blending: THREE.AdditiveBlending,
+                depthTest: false,
+                transparent: true
+            });
+            
+            stars = new THREE.Points(starGeometry, starMaterial);
+            scene.add(stars);
+        }
+        
+        function createNebulae() {
+            const nebulaCount = 12;
+            for (let i = 0; i < nebulaCount; i++) {
+                const canvas = document.createElement('canvas');
+                canvas.width = 512;
+                canvas.height = 512;
+                const ctx = canvas.getContext('2d');
+                
+                const hue = Math.random() * 360;
+                const sat = 60 + Math.random() * 40;
+                const light = 40 + Math.random() * 30;
+                
+                const gradient = ctx.createRadialGradient(256, 256, 0, 256, 256, 256);
+                gradient.addColorStop(0, `hsla(${hue}, ${sat}%, ${light}%, 0.8)`);
+                gradient.addColorStop(0.4, `hsla(${hue}, ${sat}%, ${light-10}%, 0.5)`);
+                gradient.addColorStop(0.6, `hsla(${hue}, ${sat}%, ${light-20}%, 0.3)`);
+                gradient.addColorStop(1, `hsla(${hue}, ${sat}%, ${light-30}%, 0)`);
+                
+                ctx.fillStyle = gradient;
+                ctx.fillRect(0, 0, 512, 512);
+                
+                for (let j = 0; j < 20; j++) {
+                    const x = 100 + Math.random() * 312;
+                    const y = 100 + Math.random() * 312;
+                    const radius = 20 + Math.random() * 60;
+                    const noiseGrad = ctx.createRadialGradient(x, y, 0, x, y, radius);
+                    const alpha = 0.1 + Math.random() * 0.3;
+                    noiseGrad.addColorStop(0, `hsla(${hue}, ${sat}%, ${light+10}%, ${alpha})`);
+                    noiseGrad.addColorStop(1, `hsla(${hue}, ${sat}%, ${light}%, 0)`);
+                    ctx.fillStyle = noiseGrad;
+                    ctx.beginPath();
+                    ctx.arc(x, y, radius, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+                
+                const texture = new THREE.CanvasTexture(canvas);
+                const material = new THREE.SpriteMaterial({
+                    map: texture,
+                    transparent: true,
+                    blending: THREE.AdditiveBlending
+                });
+                const sprite = new THREE.Sprite(material);
+                
+                const radius = 300 + Math.random() * 900;
+                const theta = Math.random() * Math.PI * 2;
+                const phi = Math.acos(2 * Math.random() - 1);
+                
+                sprite.position.x = radius * Math.sin(phi) * Math.cos(theta);
+                sprite.position.y = radius * Math.sin(phi) * Math.sin(theta);
+                sprite.position.z = radius * Math.cos(phi);
+                
+                const size = 200 + Math.random() * 300;
+                sprite.scale.set(size, size, 1);
+                
+                scene.add(sprite);
+            }
+        }
+        
+        function createGalaxies() {
+            const totalGalaxies = 800;
+            for (let i = 0; i < totalGalaxies; i++) {
+                const rand = Math.random();
+                let galaxyType = rand < 0.5 ? 'spiral' : rand < 0.85 ? 'elliptical' : 'irregular';
+                const galaxy = createGalaxy(galaxyType);
+                
+                const useCluster = Math.random() < 0.7;
+                if (useCluster) {
+                    const clusterIndex = Math.floor(Math.random() * 12);
+                    const clusterRadius = 300 + Math.random() * 600;
+                    const clusterTheta = (clusterIndex / 12) * Math.PI * 2;
+                    const clusterPhi = Math.acos(2 * Math.random() - 1);
+                    const clusterX = clusterRadius * Math.sin(clusterPhi) * Math.cos(clusterTheta);
+                    const clusterY = clusterRadius * Math.sin(clusterPhi) * Math.sin(clusterTheta);
+                    const clusterZ = clusterRadius * Math.cos(clusterPhi);
+                    const offset = 50 + Math.random() * 100;
+                    const offsetTheta = Math.random() * Math.PI * 2;
+                    const offsetPhi = Math.acos(2 * Math.random() - 1);
+                    galaxy.position.x = clusterX + offset * Math.sin(offsetPhi) * Math.cos(offsetTheta);
+                    galaxy.position.y = clusterY + offset * Math.sin(offsetPhi) * Math.sin(offsetTheta);
+                    galaxy.position.z = clusterZ + offset * Math.cos(offsetPhi);
+                } else {
+                    const radius = 200 + Math.random() * 900;
+                    const theta = Math.random() * Math.PI * 2;
+                    const phi = Math.acos(2 * Math.random() - 1);
+                    galaxy.position.x = radius * Math.sin(phi) * Math.cos(theta);
+                    galaxy.position.y = radius * Math.sin(phi) * Math.sin(theta);
+                    galaxy.position.z = radius * Math.cos(phi);
+                }
+                
+                galaxy.rotation.x = Math.random() * Math.PI;
+                galaxy.rotation.y = Math.random() * Math.PI;
+                galaxy.rotation.z = Math.random() * Math.PI;
+                
+                scene.add(galaxy);
+                galaxies.push(galaxy);
+            }
+        }
+        
+        function createGalaxy(type) {
+            const galaxyGroup = new THREE.Group();
+            let size = type === 'spiral' ? 5 + Math.random() * 15 :
+                      type === 'elliptical' ? 8 + Math.random() * 20 : 3 + Math.random() * 8;
+            let color;
+            if (type === 'spiral') {
+                if (Math.random() > 0.3) {
+                    const blue = 180 + Math.floor(Math.random() * 75);
+                    const green = 100 + Math.floor(Math.random() * 80);
+                    const red = 70 + Math.floor(Math.random() * 70);
+                    color = new THREE.Color(red/255, green/255, blue/255);
+                } else {
+                    const red = 180 + Math.floor(Math.random() * 75);
+                    const green = 150 + Math.floor(Math.random() * 70);
+                    const blue = 100 + Math.floor(Math.random() * 60);
+                    color = new THREE.Color(red/255, green/255, blue/255);
+                }
+            } else if (type === 'elliptical') {
+                const red = 180 + Math.floor(Math.random() * 75);
+                const green = 150 + Math.floor(Math.random() * 50);
+                const blue = 100 + Math.floor(Math.random() * 40);
+                color = new THREE.Color(red/255, green/255, blue/255);
+            } else {
+                const hue = Math.random();
+                if (hue < 0.33) {
+                    const blue = 160 + Math.floor(Math.random() * 95);
+                    const green = 100 + Math.floor(Math.random() * 70);
+                    const red = 60 + Math.floor(Math.random() * 50);
+                    color = new THREE.Color(red/255, green/255, blue/255);
+                } else if (hue < 0.66) {
+                    const blue = 160 + Math.floor(Math.random() * 95);
+                    const green = 50 + Math.floor(Math.random() * 50);
+                    const red = 140 + Math.floor(Math.random() * 70);
+                    color = new THREE.Color(red/255, green/255, blue/255);
+                } else {
+                    const blue = 60 + Math.floor(Math.random() * 70);
+                    const green = 160 + Math.floor(Math.random() * 95);
+                    const red = 80 + Math.floor(Math.random() * 60);
+                    color = new THREE.Color(red/255, green/255, blue/255);
+                }
+            }
+            
+            const particleCount = type === 'spiral' ? 3000 : type === 'elliptical' ? 2000 : 1000;
+            const particles = new THREE.BufferGeometry();
+            const positions = new Float32Array(particleCount * 3);
+            const colors = new Float32Array(particleCount * 3);
+            const sizes = new Float32Array(particleCount);
+            
+            if (type === 'spiral') {
+                const arms = Math.floor(Math.random() * 3) + 2;
+                const armWidth = 0.2 + Math.random() * 0.3;
+                const rotation = 4 + Math.random() * 4;
+                for (let i = 0; i < particleCount; i++) {
+                    const i3 = i * 3;
+                    const inCore = Math.random() < 0.3;
+                    if (inCore) {
+                        const angle = Math.random() * Math.PI * 2;
+                        const radius = Math.random() * size * 0.2;
+                        positions[i3] = Math.cos(angle) * radius;
+                        positions[i3 + 1] = (Math.random() - 0.5) * size * 0.05;
+                        positions[i3 + 2] = Math.sin(angle) * radius;
+                        colors[i3] = Math.min(1, color.r * 1.2);
+                        colors[i3 + 1] = Math.min(1, color.g * 1.2);
+                        colors[i3 + 2] = Math.min(1, color.b * 1.2);
+                        sizes[i] = 0.5 + Math.random() * 1.5;
+                    } else {
+                        const arm = Math.floor(Math.random() * arms);
+                        const armAngle = (arm / arms) * Math.PI * 2;
+                        const distance = (0.2 + Math.random() * 0.8) * size;
+                        const angle = armAngle + distance / size * rotation + (Math.random() - 0.5) * armWidth;
+                        positions[i3] = Math.cos(angle) * distance;
+                        positions[i3 + 1] = (Math.random() - 0.5) * size * 0.1;
+                        positions[i3 + 2] = Math.sin(angle) * distance;
+                        colors[i3] = color.r * (0.8 + Math.random() * 0.4);
+                        colors[i3 + 1] = color.g * (0.8 + Math.random() * 0.4);
+                        colors[i3 + 2] = color.b * (0.8 + Math.random() * 0.4);
+                        sizes[i] = 0.5 + Math.random();
+                    }
+                }
+            } else if (type === 'elliptical') {
+                const flatness = 0.5 + Math.random() * 0.5;
+                for (let i = 0; i < particleCount; i++) {
+                    const i3 = i * 3;
+                    const radius = Math.random() * size;
+                    const theta = Math.random() * Math.PI * 2;
+                    const phi = Math.acos(2 * Math.random() - 1);
+                    positions[i3] = radius * Math.sin(phi) * Math.cos(theta);
+                    positions[i3 + 1] = radius * Math.sin(phi) * Math.sin(theta) * flatness;
+                    positions[i3 + 2] = radius * Math.cos(phi);
+                    colors[i3] = color.r * (0.9 + Math.random() * 0.2);
+                    colors[i3 + 1] = color.g * (0.9 + Math.random() * 0.2);
+                    colors[i3 + 2] = color.b * (0.9 + Math.random() * 0.2);
+                    sizes[i] = 0.4 + Math.random() * 0.8;
+                }
+            } else {
+                const clumpCount = Math.floor(Math.random() * 4) + 2;
+                const clumps = [];
+                for (let c = 0; c < clumpCount; c++) {
+                    clumps.push({
+                        x: (Math.random() - 0.5) * size,
+                        y: (Math.random() - 0.5) * size * 0.3,
+                        z: (Math.random() - 0.5) * size,
+                        radius: size * (0.2 + Math.random() * 0.3)
+                    });
+                }
+                for (let i = 0; i < particleCount; i++) {
+                    const i3 = i * 3;
+                    const useClump = Math.random() < 0.7;
+                    if (useClump) {
+                        const clump = clumps[Math.floor(Math.random() * clumps.length)];
+                        const distance = Math.random() * clump.radius;
+                        const theta = Math.random() * Math.PI * 2;
+                        const phi = Math.acos(2 * Math.random() - 1);
+                        positions[i3] = clump.x + distance * Math.sin(phi) * Math.cos(theta);
+                        positions[i3 + 1] = clump.y + distance * Math.sin(phi) * Math.sin(theta);
+                        positions[i3 + 2] = clump.z + distance * Math.cos(phi);
+                    } else {
+                        positions[i3] = (Math.random() - 0.5) * size * 2;
+                        positions[i3 + 1] = (Math.random() - 0.5) * size * 0.4;
+                        positions[i3 + 2] = (Math.random() - 0.5) * size * 2;
+                    }
+                    const variation = Math.random() * 0.5 + 0.5;
+                    colors[i3] = color.r * variation;
+                    colors[i3 + 1] = color.g * variation;
+                    colors[i3 + 2] = color.b * variation;
+                    sizes[i] = 0.3 + Math.random() * 1.2;
+                }
+            }
+            
+            particles.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            particles.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+            particles.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
+            
+            const particleMaterial = new THREE.ShaderMaterial({
+                uniforms: {},
+                vertexShader: `
+                    attribute float size;
+                    attribute vec3 color;
+                    varying vec3 vColor;
+                    void main() {
+                        vColor = color;
+                        vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+                        gl_PointSize = size * (100.0 / -mvPosition.z);
+                        gl_Position = projectionMatrix * mvPosition;
+                    }
+                `,
+                fragmentShader: `
+                    varying vec3 vColor;
+                    void main() {
+                        float r = 0.0;
+                        vec2 cxy = 2.0 * gl_PointCoord - 1.0;
+                        r = dot(cxy, cxy);
+                        if (r > 1.0) {
+                            discard;
+                        }
+                        gl_FragColor = vec4(vColor, 1.0 - r);
+                    }
+                `,
+                blending: THREE.AdditiveBlending,
+                depthTest: false,
+                transparent: true
+            });
+            
+            const particleSystem = new THREE.Points(particles, particleMaterial);
+            galaxyGroup.add(particleSystem);
+            
+            if (type !== 'irregular') {
+                const coreSize = type === 'spiral' ? size * 0.15 : size * 0.3;
+                const coreGeometry = new THREE.SphereGeometry(coreSize, 16, 16);
+                const coreMaterial = new THREE.MeshBasicMaterial({
+                    color: color,
+                    transparent: true,
+                    opacity: 0.8,
+                    blending: THREE.AdditiveBlending
+                });
+                const core = new THREE.Mesh(coreGeometry, coreMaterial);
+                galaxyGroup.add(core);
+                
+                const glowSize = coreSize * 1.5;
+                const glowGeometry = new THREE.SphereGeometry(glowSize, 16, 16);
+                const glowMaterial = new THREE.MeshBasicMaterial({
+                    color: color,
+                    transparent: true,
+                    opacity: 0.3,
+                    blending: THREE.AdditiveBlending,
+                    side: THREE.BackSide
+                });
+                const glow = new THREE.Mesh(glowGeometry, glowMaterial);
+                galaxyGroup.add(glow);
+            }
+            
+            return galaxyGroup;
+        }
+
+        function createBackgroundGalaxies() {
+            const galaxyGeometry = new THREE.BufferGeometry();
+            const galaxyCount = 5000;
+            const positions = new Float32Array(galaxyCount * 3);
+            const colors = new Float32Array(galaxyCount * 3);
+            const sizes = new Float32Array(galaxyCount);
+            
+            for (let i = 0; i < galaxyCount; i++) {
+                const i3 = i * 3;
+                const phi = Math.acos(1 - 2 * (i / galaxyCount));
+                const theta = Math.PI * 2 * i * (1 / ((1 + Math.sqrt(5)) / 2));
+                const radius = 1500;
+                positions[i3] = radius * Math.sin(phi) * Math.cos(theta);
+                positions[i3 + 1] = radius * Math.sin(phi) * Math.sin(theta);
+                positions[i3 + 2] = radius * Math.cos(phi);
+                
+                const colorType = Math.random();
+                if (colorType < 0.4) {
+                    colors[i3] = 0.7 + Math.random() * 0.3;
+                    colors[i3 + 1] = 0.6 + Math.random() * 0.3;
+                    colors[i3 + 2] = 0.4 + Math.random() * 0.2;
+                } else if (colorType < 0.7) {
+                    colors[i3] = 0.3 + Math.random() * 0.3;
+                    colors[i3 + 1] = 0.4 + Math.random() * 0.3;
+                    colors[i3 + 2] = 0.7 + Math.random() * 0.3;
+                } else if (colorType < 0.9) {
+                    const val = 0.6 + Math.random() * 0.4;
+                    colors[i3] = val;
+                    colors[i3 + 1] = val;
+                    colors[i3 + 2] = val;
+                } else {
+                    colors[i3] = 0.7 + Math.random() * 0.3;
+                    colors[i3 + 1] = 0.3 + Math.random() * 0.3;
+                    colors[i3 + 2] = 0.3 + Math.random() * 0.2;
+                }
+                sizes[i] = 0.5 + Math.random() * 1.0;
+            }
+            
+            galaxyGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            galaxyGeometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+            galaxyGeometry.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
+            
+            const galaxyMaterial = new THREE.ShaderMaterial({
+                uniforms: {},
+                vertexShader: `
+                    attribute float size;
+                    attribute vec3 color;
+                    varying vec3 vColor;
+                    void main() {
+                        vColor = color;
+                        vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+                        gl_PointSize = size * (300.0 / -mvPosition.z);
+                        gl_Position = projectionMatrix * mvPosition;
+                    }
+                `,
+                fragmentShader: `
+                    varying vec3 vColor;
+                    void main() {
+                        float r = 0.0;
+                        vec2 cxy = 2.0 * gl_PointCoord - 1.0;
+                        r = dot(cxy, cxy);
+                        if (r > 1.0) {
+                            discard;
+                        }
+                        gl_FragColor = vec4(vColor, 1.0 - r);
+                    }
+                `,
+                blending: THREE.AdditiveBlending,
+                depthTest: false,
+                transparent: true
+            });
+            
+            return new THREE.Points(galaxyGeometry, galaxyMaterial);
+        }
+        
+        function generateGalaxyView() {
+            for (const galaxy of galaxies) {
+                scene.remove(galaxy);
+            }
+            galaxies = [];
+            if (stars) {
+                scene.remove(stars);
+                stars = null;
+            }
+            backgroundGalaxies = createBackgroundGalaxies();
+            scene.add(backgroundGalaxies);
+            
+            const galaxy = createStarClusterGalaxy();
+            galaxy.position.set(0, 0, 0);
+            galaxy.rotation.x = Math.PI / 80;
+            scene.add(galaxy);
+            currentGalaxy = galaxy;
+            
+            camera.position.set(0, 40, 100);
+            camera.lookAt(0, 0, 0);
+        }
+        
+        function createStarClusterGalaxy() {
+            const galaxyGroup = new THREE.Group();
+            const size = 60;
+            const particleCount = 40000;
+            const particles = new THREE.BufferGeometry();
+            const positions = new Float32Array(particleCount * 3);
+            const colors = new Float32Array(particleCount * 3);
+            const sizes = new Float32Array(particleCount);
+            const armCount = 3 + Math.floor(Math.random() * 2);
+            const armLooseness = 1.0 + Math.random() * 1.0;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const i3 = i * 3;
+                const rand = Math.random();
+                if (rand < 0.3) {
+                    const radius = Math.pow(Math.random(), 2) * size * 0.25;
+                    const theta = Math.random() * Math.PI * 2;
+                    const phi = Math.acos(2 * Math.random() - 1);
+                    positions[i3] = radius * Math.sin(phi) * Math.cos(theta);
+                    positions[i3 + 1] = radius * Math.sin(phi) * Math.sin(theta) * 0.4;
+                    positions[i3 + 2] = radius * Math.cos(phi);
+                    colors[i3] = 0.9 + Math.random() * 0.1;
+                    colors[i3 + 1] = 0.7 + Math.random() * 0.2;
+                    colors[i3 + 2] = 0.4 + Math.random() * 0.2;
+                    sizes[i] = 0.5 + Math.random() * 1.5;
+                } else if (rand < 0.50) {
+                    const arm = Math.floor(Math.random() * armCount);
+                    const armAngle = (arm / armCount) * Math.PI * 2;
+                    const distanceFactor = 0.3 + Math.random() * 0.7;
+                    const distance = distanceFactor * size;
+                    const angle = armAngle + distanceFactor * 2 * armLooseness;
+                    const randomOffset = (Math.random() - 0.5) * distanceFactor * 10;
+                    const angleOffset = (Math.random() - 0.5) * 1.0;
+                    positions[i3] = Math.cos(angle + angleOffset) * (distance + randomOffset);
+                    positions[i3 + 1] = (Math.random() - 0.5) * size * 0.15;
+                    positions[i3 + 2] = Math.sin(angle + angleOffset) * (distance + randomOffset);
+                    const starType = Math.random();
+                    if (starType > 0.95) {
+                        colors[i3] = 0.6 + Math.random() * 0.2;
+                        colors[i3 + 1] = 0.7 + Math.random() * 0.2;
+                        colors[i3 + 2] = 0.9 + Math.random() * 0.1;
+                        sizes[i] = 1.5 + Math.random() * 1.0;
+                    } else if (starType > 0.8) {
+                        const whiteness = 0.8 + Math.random() * 0.2;
+                        colors[i3] = whiteness;
+                        colors[i3 + 1] = whiteness;
+                        colors[i3 + 2] = whiteness;
+                        sizes[i] = 0.8 + Math.random() * 0.7;
+                    } else if (starType > 0.5) {
+                        colors[i3] = 0.9 + Math.random() * 0.1;
+                        colors[i3 + 1] = 0.8 + Math.random() * 0.2;
+                        colors[i3 + 2] = 0.5 + Math.random() * 0.3;
+                        sizes[i] = 0.7 + Math.random() * 0.6;
+                    } else {
+                        colors[i3] = 0.8 + Math.random() * 0.2;
+                        colors[i3 + 1] = 0.4 + Math.random() * 0.3;
+                        colors[i3 + 2] = 0.3 + Math.random() * 0.2;
+                        sizes[i] = 0.5 + Math.random() * 0.5;
+                    }
+                } else {
+                    const radius = (0.5 + Math.random() * 0.5) * size;
+                    const theta = Math.random() * Math.PI * 2;
+                    const phi = Math.acos(2 * Math.random() - 1);
+                    positions[i3] = radius * Math.sin(phi) * Math.cos(theta);
+                    positions[i3 + 1] = radius * Math.sin(phi) * Math.sin(theta) * 0.5;
+                    positions[i3 + 2] = radius * Math.cos(phi);
+                    colors[i3] = 0.7 + Math.random() * 0.2;
+                    colors[i3 + 1] = 0.4 + Math.random() * 0.2;
+                    colors[i3 + 2] = 0.3 + Math.random() * 0.2;
+                    sizes[i] = 0.4 + Math.random() * 0.4;
+                }
+            }
+            
+            particles.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            particles.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+            particles.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
+            
+            const particleMaterial = new THREE.ShaderMaterial({
+                uniforms: {},
+                vertexShader: `
+                    attribute float size;
+                    attribute vec3 color;
+                    varying vec3 vColor;
+                    void main() {
+                        vColor = color;
+                        vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+                        gl_PointSize = size * (100.0 / -mvPosition.z);
+                        gl_Position = projectionMatrix * mvPosition;
+                    }
+                `,
+                fragmentShader: `
+                    varying vec3 vColor;
+                    void main() {
+                        float r = 0.0;
+                        vec2 cxy = 2.0 * gl_PointCoord - 1.0;
+                        r = dot(cxy, cxy);
+                        if (r > 1.0) {
+                            discard;
+                        }
+                        gl_FragColor = vec4(vColor, 1.0 - r);
+                    }
+                `,
+                blending: THREE.AdditiveBlending,
+                depthTest: false,
+                transparent: true
+            });
+            
+            const particleSystem = new THREE.Points(particles, particleMaterial);
+            galaxyGroup.add(particleSystem);
+            
+            for (let i = 0; i < 5; i++) {
+                const clusterParticleCount = 500;
+                const clusterGeometry = new THREE.BufferGeometry();
+                const clusterPositions = new Float32Array(clusterParticleCount * 3);
+                const clusterColors = new Float32Array(clusterParticleCount * 3);
+                const clusterSizes = new Float32Array(clusterParticleCount);
+                const clusterDistance = Math.random() * size * 0.05;
+                const clusterAngle = Math.random() * Math.PI * 2;
+                const clusterX = Math.cos(clusterAngle) * clusterDistance;
+                const clusterY = (Math.random() - 0.5) * clusterDistance * 0.5;
+                const clusterZ = Math.sin(clusterAngle) * clusterDistance;
+                
+                for (let j = 0; j < clusterParticleCount; j++) {
+                    const j3 = j * 3;
+                    const radius = Math.pow(Math.random(), 3) * size * 0.04;
+                    const theta = Math.random() * Math.PI * 2;
+                    const phi = Math.acos(2 * Math.random() - 1);
+                    clusterPositions[j3] = clusterX + radius * Math.sin(phi) * Math.cos(theta);
+                    clusterPositions[j3 + 1] = clusterY + radius * Math.sin(phi) * Math.sin(theta) * 0.5;
+                    clusterPositions[j3 + 2] = clusterZ + radius * Math.cos(phi);
+                    const brightness = 0.8 + Math.random() * 0.2;
+                    if (i % 3 === 0) {
+                        clusterColors[j3] = 0.6 * brightness;
+                        clusterColors[j3 + 1] = 0.7 * brightness;
+                        clusterColors[j3 + 2] = 1.0 * brightness;
+                    } else if (i % 3 === 1) {
+                        clusterColors[j3] = 1.0 * brightness;
+                        clusterColors[j3 + 1] = 0.9 * brightness;
+                        clusterColors[j3 + 2] = 0.6 * brightness;
+                    } else {
+                        clusterColors[j3] = 1.0 * brightness;
+                        clusterColors[j3 + 1] = 1.0 * brightness;
+                        clusterColors[j3 + 2] = 1.0 * brightness;
+                    }
+                    clusterSizes[j] = 0.8 + Math.random() * 1.0;
+                }
+                
+                clusterGeometry.setAttribute('position', new THREE.BufferAttribute(clusterPositions, 3));
+                clusterGeometry.setAttribute('color', new THREE.BufferAttribute(clusterColors, 3));
+                clusterGeometry.setAttribute('size', new THREE.BufferAttribute(clusterSizes, 1));
+                
+                const clusterMaterial = new THREE.ShaderMaterial({
+                    uniforms: {},
+                    vertexShader: `
+                        attribute float size;
+                        attribute vec3 color;
+                        varying vec3 vColor;
+                        void main() {
+                            vColor = color;
+                            vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+                            gl_PointSize = size * (100.0 / -mvPosition.z);
+                            gl_Position = projectionMatrix * mvPosition;
+                        }
+                    `,
+                    fragmentShader: `
+                        varying vec3 vColor;
+                        void main() {
+                            float r = 0.0;
+                            vec2 cxy = 2.0 * gl_PointCoord - 1.0;
+                            r = dot(cxy, cxy);
+                            if (r > 1.0) {
+                                discard;
+                            }
+                            gl_FragColor = vec4(vColor, 1.0 - r);
+                        }
+                    `,
+                    blending: THREE.AdditiveBlending,
+                    depthTest: false,
+                    transparent: true
+                });
+                
+                const clusterSystem = new THREE.Points(clusterGeometry, clusterMaterial);
+                galaxyGroup.add(clusterSystem);
+            }
+            
+            return galaxyGroup;
+        }
+        
+        function generateSolarSystem() {
+            if (currentGalaxy) {
+                scene.remove(currentGalaxy);
+                currentGalaxy = null;
+            }
+            if (backgroundGalaxies) {
+                scene.remove(backgroundGalaxies);
+                backgroundGalaxies = null;
+            }
+            scene.background = new THREE.Color(0x000000);
+            solarSystem = new THREE.Group();
+            scene.add(solarSystem);
+            
+            scene.remove(...scene.children.filter(child => child instanceof THREE.AmbientLight));
+            const ambientLight = new THREE.AmbientLight(0x111122, 0.4);
+            scene.add(ambientLight);
+            
+            const sunLight = new THREE.PointLight(0xffffee, 2, 0, 1);
+            sunLight.position.set(0, 0, 0);
+            solarSystem.add(sunLight);
+            
+            createSimpleStarfield();
+            createSun();
+            createPlanets();
+            
+            camera.position.set(0, 150, 0);
+            camera.lookAt(0, 0, 0);
+        }
+        
+        function createSimpleStarfield() {
+            const starGeometry = new THREE.BufferGeometry();
+            const starCount = 1000;
+            const positions = new Float32Array(starCount * 3);
+            const colors = new Float32Array(starCount * 3);
+            const sizes = new Float32Array(starCount);
+            
+            for (let i = 0; i < starCount; i++) {
+                const i3 = i * 3;
+                const radius = 800;
+                const theta = Math.random() * Math.PI * 2;
+                const phi = Math.acos(2 * Math.random() - 1);
+                positions[i3] = radius * Math.sin(phi) * Math.cos(theta);
+                positions[i3 + 1] = radius * Math.sin(phi) * Math.sin(theta);
+                positions[i3 + 2] = radius * Math.cos(phi);
+                const brightness = 0.7 + Math.random() * 0.3;
+                colors[i3] = brightness;
+                colors[i3 + 1] = brightness;
+                colors[i3 + 2] = brightness;
+                sizes[i] = 0.5 + Math.random() * 1.5;
+            }
+            
+            starGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            starGeometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+            starGeometry.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
+            
+            const starMaterial = new THREE.ShaderMaterial({
+                uniforms: {},
+                vertexShader: `
+                    attribute float size;
+                    attribute vec3 color;
+                    varying vec3 vColor;
+                    void main() {
+                        vColor = color;
+                        vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+                        gl_PointSize = size * (300.0 / -mvPosition.z);
+                        gl_Position = projectionMatrix * mvPosition;
+                    }
+                `,
+                fragmentShader: `
+                    varying vec3 vColor;
+                    void main() {
+                        float r = 0.0;
+                        vec2 cxy = 2.0 * gl_PointCoord - 1.0;
+                        r = dot(cxy, cxy);
+                        if (r > 1.0) {
+                            discard;
+                        }
+                        gl_FragColor = vec4(vColor, 1.0 - r);
+                    }
+                `,
+                blending: THREE.AdditiveBlending,
+                depthTest: false,
+                transparent: true
+            });
+            
+            stars = new THREE.Points(starGeometry, starMaterial);
+            scene.add(stars);
+        }
+        
+        function createSun() {
+            const sunTexture = createSunTexture();
+            const sunGeometry = new THREE.SphereGeometry(8, 64, 64);
+            const sunMaterial = new THREE.MeshBasicMaterial({
+                map: sunTexture,
+                color: 0xffee80,
+                transparent: true,
+                blending: THREE.AdditiveBlending
+            });
+            sunMesh = new THREE.Mesh(sunGeometry, sunMaterial);
+            solarSystem.add(sunMesh);
+            
+            const sunGlowGeometry = new THREE.SphereGeometry(12, 32, 32);
+            const sunGlowMaterial = new THREE.ShaderMaterial({
+                uniforms: { color: { value: new THREE.Color(0xffaa30) } },
+                vertexShader: `
+                    varying vec3 vNormal;
+                    void main() {
+                        vNormal = normalize(normalMatrix * normal);
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                    }
+                `,
+                fragmentShader: `
+                    uniform vec3 color;
+                    varying vec3 vNormal;
+                    void main() {
+                        float intensity = pow(0.7 - dot(vNormal, vec3(0, 0, 1.0)), 2.0);
+                        gl_FragColor = vec4(color, 1.0) * intensity;
+                    }
+                `,
+                side: THREE.BackSide,
+                blending: THREE.AdditiveBlending,
+                transparent: true
+            });
+            const sunGlow = new THREE.Mesh(sunGlowGeometry, sunGlowMaterial);
+            solarSystem.add(sunGlow);
+            
+            const coronaGeometry = new THREE.SphereGeometry(20, 32, 32);
+            const coronaMaterial = new THREE.ShaderMaterial({
+                uniforms: { color: { value: new THREE.Color(0xff8800) } },
+                vertexShader: `
+                    varying vec3 vNormal;
+                    void main() {
+                        vNormal = normalize(normalMatrix * normal);
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                    }
+                `,
+                fragmentShader: `
+                    uniform vec3 color;
+                    varying vec3 vNormal;
+                    void main() {
+                        float intensity = pow(0.6 - dot(vNormal, vec3(0, 0, 1.0)), 4.0);
+                        gl_FragColor = vec4(color, 1.0) * intensity;
+                    }
+                `,
+                side: THREE.BackSide,
+                blending: THREE.AdditiveBlending,
+                transparent: true
+            });
+            const corona = new THREE.Mesh(coronaGeometry, coronaMaterial);
+            solarSystem.add(corona);
+        }
+        
+        function createSunTexture() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 512;
+            canvas.height = 512;
+            const ctx = canvas.getContext('2d');
+            const gradient = ctx.createRadialGradient(256, 256, 0, 256, 256, 256);
+            gradient.addColorStop(0, 'rgba(255, 255, 220, 1)');
+            gradient.addColorStop(0.5, 'rgba(255, 220, 100, 1)');
+            gradient.addColorStop(1, 'rgba(255, 180, 40, 1)');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 512, 512);
+            
+            for (let i = 0; i < 10000; i++) {
+                const x = Math.random() * 512;
+                const y = Math.random() * 512;
+                const radius = 1 + Math.random() * 3;
+                const brightness = Math.random() * 0.1;
+                ctx.fillStyle = `rgba(255, 255, 255, ${brightness})`;
+                ctx.beginPath();
+                ctx.arc(x, y, radius, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            
+            for (let i = 0; i < 8; i++) {
+                const angle = Math.random() * Math.PI * 2;
+                const distance = 180 + Math.random() * 60;
+                const width = 10 + Math.random() * 30;
+                const length = 20 + Math.random() * 50;
+                const x = 256 + Math.cos(angle) * distance;
+                const y = 256 + Math.sin(angle) * distance;
+                const flareGradient = ctx.createRadialGradient(x, y, 0, x, y, length);
+                flareGradient.addColorStop(0, 'rgba(255, 255, 100, 0.5)');
+                flareGradient.addColorStop(1, 'rgba(255, 120, 0, 0)');
+                ctx.fillStyle = flareGradient;
+                ctx.beginPath();
+                ctx.arc(x, y, length, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            
+            return new THREE.CanvasTexture(canvas);
+        }
+        function createSimpleEarthMaterial() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 512;
+            canvas.height = 256;
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = `rgb(20, 80, 160)`;
+            ctx.fillRect(0, 0, 512, 256);
+            const landColor = `rgb(50, 100, 40)`;
+            ctx.fillStyle = landColor;
+            const continentCount = 2 + Math.floor(Math.random() * 2);
+            for (let c = 0; c < continentCount; c++) {
+                const centerX = Math.random() * 512;
+                const centerY = Math.random() * 256;
+                const size = 50 + Math.random() * 100;
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
+            for (let c = 0; c < 5; c++) {
+                const cloudX = Math.random() * 512;
+                const cloudY = Math.random() * 256;
+                const cloudSize = 20 + Math.random() * 30;
+                ctx.beginPath();
+                ctx.arc(cloudX, cloudY, cloudSize, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            const texture = new THREE.CanvasTexture(canvas);
+            return new THREE.MeshPhongMaterial({
+                map: texture,
+                shininess: 5,
+                emissive: 0x111111
+            });
+        }
+        
+        function createPlanets() {
+            planets = [];
+            orbits = [];
+            planetRotationSpeeds = [];
+            planetOrbitalSpeeds = [];
+            const planetCount = 3 + Math.floor(Math.random() * 13);
+            const orbitSpacing = 10;
+            let startingOrbit = 25;
+            
+            for (let i = 0; i < planetCount; i++) {
+                const orbitRadius = startingOrbit + i * orbitSpacing + Math.random() * 4;
+                const orbitGeometry = new THREE.BufferGeometry();
+                const orbitPoints = [];
+                const segments = 128;
+                for (let j = 0; j <= segments; j++) {
+                    const angle = (j / segments) * Math.PI * 2;
+                    orbitPoints.push(new THREE.Vector3(Math.cos(angle) * orbitRadius, 0, Math.sin(angle) * orbitRadius));
+                }
+                orbitGeometry.setFromPoints(orbitPoints);
+                const orbitMaterial = new THREE.LineBasicMaterial({
+                    color: 0x444466,
+                    transparent: true,
+                    opacity: 0.3 + (i * 0.05)
+                });
+                const orbit = new THREE.Line(orbitGeometry, orbitMaterial);
+                solarSystem.add(orbit);
+                orbits.push(orbit);
+                
+                const planet = createEarthLikePlanet(i, orbitRadius);
+                const angle = Math.random() * Math.PI * 2;
+                planet.position.x = Math.cos(angle) * orbitRadius;
+                planet.position.z = Math.sin(angle) * orbitRadius;
+                planet.userData.angle = angle;
+                planetOrbitalSpeeds.push(0.005 / Math.sqrt(i + 1));
+                planetRotationSpeeds.push(0.005 + Math.random() * 0.005);
+                solarSystem.add(planet);
+                planets.push(planet);
+                
+                if (i >= 2 && Math.random() > 0.4) {
+                    const moonCount = 1 + Math.floor(Math.random() * 3);
+                    for (let m = 0; m < moonCount; m++) {
+                        const moonRadius = 0.4 + Math.random() * 0.8;
+                        const moonDistance = planet.geometry.parameters.radius * (1.5 + Math.random());
+                        const moonGeometry = new THREE.SphereGeometry(moonRadius, 16, 16);
+                        const moonMaterial = new THREE.MeshPhongMaterial({
+                            color: 0xaaaaaa,
+                            emissive: 0x111111,
+                            shininess: 5,
+                        });
+                        const moon = new THREE.Mesh(moonGeometry, moonMaterial);
+                        const moonAngle = Math.random() * Math.PI * 2;
+                        moon.position.x = Math.cos(moonAngle) * moonDistance;
+                        moon.position.z = Math.sin(moonAngle) * moonDistance;
+                        moon.userData = {
+                            angle: moonAngle,
+                            distance: moonDistance,
+                            orbitSpeed: 0.01 + Math.random() * 0.01
+                        };
+                        planet.add(moon);
+                    }
+                }
+            }
+        }
+        
+        function createEarthLikePlanet(index, orbitRadius) {
+            const radius = 2 + Math.random() * 3;
+            const planetGeometry = new THREE.SphereGeometry(radius, 32, 32);
+            const planetMaterial = createSimpleEarthMaterial();
+            const planet = new THREE.Mesh(planetGeometry, planetMaterial);
+            const atmosphereRadius = radius * 1.15;
+            const atmosphereGeometry = new THREE.SphereGeometry(atmosphereRadius, 32, 32);
+            const atmosphereColor = new THREE.Color(0x88aaff);
+            const atmosphereMaterial = new THREE.ShaderMaterial({
+                uniforms: { color: { value: atmosphereColor } },
+                vertexShader: `
+                    varying vec3 vNormal;
+                    void main() {
+                        vNormal = normalize(normalMatrix * normal);
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                    }
+                `,
+                fragmentShader: `
+                    uniform vec3 color;
+                    varying vec3 vNormal;
+                    void main() {
+                        float intensity = pow(0.75 - dot(vNormal, vec3(0, 0, 1.0)), 1.5);
+                        gl_FragColor = vec4(color, 1.0) * intensity;
+                    }
+                `,
+                side: THREE.BackSide,
+                blending: THREE.AdditiveBlending,
+                transparent: true
+            });
+            const atmosphere = new THREE.Mesh(atmosphereGeometry, atmosphereMaterial);
+            planet.add(atmosphere);
+            planet.rotation.x = Math.random() * 0.5;
+            return planet;
+        }
+        
+        function generatePlanetView(planet) {
+            selectedPlanet = planet;
+            for (let child of scene.children.slice()) {
+                if (child.type === 'Group' || child.type === 'Points' || child.type === 'Mesh' || child.type === 'Light') {
+                    scene.remove(child);
+                }
+            }
+            scene.background = new THREE.Color(0x000000);
+            createSimpleStarfield();
+            
+            const planetRadius = 20;
+            const planetGeometry = new THREE.SphereGeometry(planetRadius, 64, 64);
+            const planetMaterial = createEarthMaterial();
+            planetMesh = new THREE.Mesh(planetGeometry, planetMaterial);
+            scene.add(planetMesh);
+            
+            const atmosphereRadius = planetRadius * 1.1;
+            const atmosphereGeometry = new THREE.SphereGeometry(atmosphereRadius, 64, 64);
+            const atmosphereMaterial = new THREE.ShaderMaterial({
+                uniforms: { color: { value: new THREE.Color(0x88aaff) } },
+                vertexShader: `
+                    varying vec3 vNormal;
+                    void main() {
+                        vNormal = normalize(normalMatrix * normal);
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                    }
+                `,
+                fragmentShader: `
+                    uniform vec3 color;
+                    varying vec3 vNormal;
+                    void main() {
+                        float intensity = pow(0.8 - dot(vNormal, vec3(0, 0, 1.0)), 2.0);
+                        gl_FragColor = vec4(color, 1.0) * intensity;
+                    }
+                `,
+                side: THREE.BackSide,
+                blending: THREE.AdditiveBlending,
+                transparent: true
+            });
+            const atmosphere = new THREE.Mesh(atmosphereGeometry, atmosphereMaterial);
+            planetMesh.add(atmosphere);
+            
+            const sunLight = new THREE.DirectionalLight(0xffffee, 1.2);
+            sunLight.position.set(50, 20, 50);
+            scene.add(sunLight);
+            
+            const ambientLight = new THREE.AmbientLight(0x222233, 0.5);
+            scene.add(ambientLight);
+            
+            camera.position.set(0, 0, planetRadius * 2.5);
+            camera.lookAt(0, 0, 0);
+            planetMesh.rotation.y = Math.random() * Math.PI * 2;
+        }
+        
+        function createEarthMaterial() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 2048;
+            canvas.height = 1024;
+            const ctx = canvas.getContext('2d');
+            const oceanGradient = ctx.createLinearGradient(0, 0, 0, 1024);
+            oceanGradient.addColorStop(0, '#0A3C8C');
+            oceanGradient.addColorStop(0.5, '#1450A0');
+            oceanGradient.addColorStop(1, '#0A3C8C');
+            ctx.fillStyle = oceanGradient;
+            ctx.fillRect(0, 0, 2048, 1024);
+            
+            const forestColor = '#326428';
+            const desertColor = '#C8AA64';
+            const beachColor = '#E6C896';
+            const mountainColor = '#645A50';
+            const iceColor = '#F0F5FA';
+            
+            const heightMap = new Float32Array(2048 * 1024);
+            for (let x = 0; x < 2048; x++) {
+                for (let y = 0; y < 1024; y++) {
+                    const noise = simplex.noise2D(x * 0.003, y * 0.003);
+                    heightMap[x + y * 2048] = (noise + 1) * 50;
+                }
+            }
+            
+            for (let x = 0; x < 2048; x++) {
+                for (let y = 0; y < 1024; y++) {
+                    const height = heightMap[x + y * 2048];
+                    const latitude = Math.abs(y - 512) / 512;
+                    const elevation = simplex.noise2D(x * 0.015, y * 0.015) * 40;
+                    if (height > 60) {
+                        let color;
+                        if (latitude > 0.8) {
+                            color = iceColor;
+                        } else if (elevation > 25) {
+                            color = mountainColor;
+                        } else if (latitude < 0.3 && simplex.noise2D(x * 0.01, y * 0.01) > 0.2) {
+                            color = desertColor;
+                        } else if (height < 65) {
+                            color = beachColor;
+                        } else {
+                            color = forestColor;
+                        }
+                        const shade = 0.85 + (elevation / 40) * 0.15;
+                        ctx.fillStyle = color;
+                        ctx.globalAlpha = shade;
+                        ctx.fillRect(x, y, 1, 1);
+                        ctx.globalAlpha = 1.0;
+                    }
+                }
+            }
+            
+            const mountainRanges = 3 + Math.floor(Math.random() * 2);
+            for (let m = 0; m < mountainRanges; m++) {
+                const startX = Math.random() * 2048;
+                const startY = 150 + Math.random() * 724;
+                const length = 400 + Math.random() * 300;
+                for (let i = 0; i < length; i++) {
+                    const x = (startX + i) % 2048;
+                    const yOffset = simplex.noise2D((startX + i) * 0.02, m) * 80;
+                    const y = Math.min(1023, Math.max(0, startY + yOffset));
+                    const peak = simplex.noise2D(x * 0.03, y * 0.03) * 50;
+                    if (peak > 20) {
+                        ctx.fillStyle = mountainColor;
+                        ctx.fillRect(x, y, 1, 1);
+                    }
+                }
+            }
+            
+            ctx.globalCompositeOperation = 'overlay';
+            const cloudCount = 50;
+            for (let c = 0; c < cloudCount; c++) {
+                const cloudX = Math.random() * 2048;
+                const cloudY = Math.random() * 1024;
+                const cloudSize = 80 + Math.random() * 120;
+                const cloudGradient = ctx.createRadialGradient(cloudX, cloudY, 0, cloudX, cloudY, cloudSize);
+                cloudGradient.addColorStop(0, 'rgba(255, 255, 255, 0.8)');
+                cloudGradient.addColorStop(0.6, 'rgba(255, 255, 255, 0.3)');
+                cloudGradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
+                ctx.fillStyle = cloudGradient;
+                ctx.beginPath();
+                ctx.arc(cloudX, cloudY, cloudSize, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            ctx.globalCompositeOperation = 'source-over';
+            
+            const texture = new THREE.CanvasTexture(canvas);
+            texture.wrapS = THREE.ClampToEdgeWrapping;
+            texture.wrapT = THREE.ClampToEdgeWrapping;
+            
+            return new THREE.MeshPhongMaterial({
+                map: texture,
+                bumpMap: texture,
+                bumpScale: 0.3,
+                shininess: 15,
+                specular: 0x444444,
+                emissive: 0x101010
+            });
+        }
+
+        // Helper function to generate a BIP-39 24-word seed phrase
+      function generateBip39SeedPhrase() {
+            // Generate 256 bits (32 bytes) of entropy
+            const entropy = new Uint8Array(32);
+            crypto.getRandomValues(entropy);
+
+            // Compute SHA-256 hash of the entropy
+            const hash = sha256.array(entropy); // Using js-sha256 library
+
+            // Take the first 8 bits (1 byte) of the hash as checksum for 256-bit entropy
+            const checksumBits = 8; // 256 entropy bits -> 8 checksum bits
+            const checksum = hash[0] >>> (8 - checksumBits); // First 8 bits
+
+            // Convert entropy to binary string (256 bits)
+            const entropyBits = Array.from(entropy)
+                .map(byte => byte.toString(2).padStart(8, '0'))
+                .join('');
+
+            // Convert checksum to binary string (8 bits)
+            const checksumBitsString = checksum.toString(2).padStart(checksumBits, '0');
+
+            // Concatenate entropy and checksum (264 bits total)
+            const totalBits = entropyBits + checksumBitsString;
+
+            // Split into 24 groups of 11 bits
+            const words = [];
+            for (let i = 0; i < 24; i++) {
+                const start = i * 11;
+                const bits = totalBits.slice(start, start + 11);
+                const index = parseInt(bits, 2); // Convert 11-bit binary to decimal (0-2047)
+                words.push(WORDLIST[index]);
+            }
+
+            return words.join(' ');
+        }
+
+        
+        function setupSandSimulation() {
+            document.getElementById('three-canvas').style.display = 'none';
+            sandCanvas.style.display = 'block';
+            sandCanvas.width = sandCanvas.clientWidth;
+            sandCanvas.height = sandCanvas.clientHeight;
+            
+            const CONTAINER_WIDTH = sandCanvas.width - 20;
+            const CONTAINER_HEIGHT = sandCanvas.height;
+            const CONTAINER_LEFT = (sandCanvas.width - CONTAINER_WIDTH) / 2;
+            const CONTAINER_TOP = 0;
+            const CONTAINER_RIGHT = CONTAINER_LEFT + CONTAINER_WIDTH;
+            const CONTAINER_BOTTOM = CONTAINER_TOP + CONTAINER_HEIGHT;
+            
+            pourPositionX = CONTAINER_LEFT + POUR_WIDTH/2;
+            if (sandAnimationId) {
+                cancelAnimationFrame(sandAnimationId);
+            }
+            sandParticles = [];
+            particlesToPour = GRAIN_COUNT;
+            pouredParticles = 0;
+            isRunning = true;
+            isPouring = true;
+            allParticlesSettled = false;
+            
+            function checkWallCollision(particle) {
+                if (particle.settled) return;
+                if (particle.x - particle.radius < CONTAINER_LEFT) {
+                    particle.x = CONTAINER_LEFT + particle.radius;
+                    particle.vx = -particle.vx * RESTITUTION;
+                } else if (particle.x + particle.radius > CONTAINER_RIGHT) {
+                    particle.x = CONTAINER_RIGHT - particle.radius;
+                    particle.vx = -particle.vx * RESTITUTION;
+                }
+                if (particle.y + particle.radius > CONTAINER_BOTTOM) {
+                    particle.y = CONTAINER_BOTTOM - particle.radius;
+                    particle.vy = -particle.vy * RESTITUTION;
+                    if (Math.abs(particle.vy) < SETTLE_THRESHOLD && Math.abs(particle.vx) < SETTLE_THRESHOLD) {
+                        settleParticle(particle);
+                    }
+                }
+                if (particle.y - particle.radius < CONTAINER_TOP) {
+                    particle.y = CONTAINER_TOP + particle.radius;
+                    particle.vy = -particle.vy * RESTITUTION;
+                }
+            }
+            
+            function settleParticle(particle) {
+                particle.settled = true;
+                particle.vx = 0;
+                particle.vy = 0;
+            }
+            
+            function checkRestOnParticle(particle) {
+                if (particle.settled) return;
+                if (Math.abs(particle.vy) < SETTLE_THRESHOLD * 2 && Math.abs(particle.vx) < SETTLE_THRESHOLD * 2) {
+                    for (let i = 0; i < sandParticles.length; i++) {
+                        const other = sandParticles[i];
+                        if (other === particle) continue;
+                        const dx = other.x - particle.x;
+                        const dy = other.y - particle.y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+                        if (distance <= particle.radius + other.radius && dy > 0 && other.settled) {
+                            if (Math.abs(dy) < particle.radius + other.radius * 0.2) {
+                                settleParticle(particle);
+                                return;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            function checkParticleCollision(p1, p2) {
+                if (p1.settled && p2.settled) return;
+                const dx = p2.x - p1.x;
+                const dy = p2.y - p1.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                if (distance < p1.radius + p2.radius) {
+                    const angle = Math.atan2(dy, dx);
+                    const sin = Math.sin(angle);
+                    const cos = Math.cos(angle);
+                    const vx1 = p1.vx * cos + p1.vy * sin;
+                    const vy1 = p1.vy * cos - p1.vx * sin;
+                    const vx2 = p2.vx * cos + p2.vy * sin;
+                    const vy2 = p2.vy * cos - p2.vx * sin;
+                    let finalVx1 = p1.settled ? 0 : vx2 * RESTITUTION;
+                    let finalVx2 = p2.settled ? 0 : vx1 * RESTITUTION;
+                    let finalVy1 = p1.settled ? 0 : vy1;
+                    let finalVy2 = p2.settled ? 0 : vy2;
+                    if (!p1.settled) {
+                        p1.vx = finalVx1 * cos - finalVy1 * sin;
+                        p1.vy = finalVy1 * cos + finalVx1 * sin;
+                    }
+                    if (!p2.settled) {
+                        p2.vx = finalVx2 * cos - finalVy2 * sin;
+                        p2.vy = finalVy2 * cos + finalVx2 * sin;
+                    }
+                    const overlap = p1.radius + p2.radius - distance;
+                    if (!p1.settled && !p2.settled) {
+                        p1.x -= overlap * cos * 0.5;
+                        p1.y -= overlap * sin * 0.5;
+                        p2.x += overlap * cos * 0.5;
+                        p2.y += overlap * sin * 0.5;
+                    } else if (!p1.settled) {
+                        p1.x -= overlap * cos;
+                        p1.y -= overlap * sin;
+                    } else if (!p2.settled) {
+                        p2.x += overlap * cos;
+                        p2.y += overlap * sin;
+                    }
+                }
+            }
+            
+            function createSandParticle() {
+                const radius = GRAIN_RADIUS * (0.8 + Math.random() * 0.4);
+                const x = pourPositionX + (Math.random() - 0.5) * POUR_WIDTH;
+                const y = POUR_POSITION_Y;
+                const color = GRAIN_COLORS[Math.floor(Math.random() * GRAIN_COLORS.length)];
+                const particle = {
+                    x, y, vx: (Math.random() - 0.5) * 0.5, vy: Math.random() * 0.5,
+                    radius, color, mass: radius * radius * Math.PI, settled: false
+                };
+                sandParticles.push(particle);
+                pouredParticles++;
+                return particle;
+            }
+            
+            function updatePourPosition() {
+                if (!isPouring) return;
+                pourPositionX += POUR_SPEED * pourDirection;
+                if (pourPositionX + POUR_WIDTH/2 > CONTAINER_RIGHT) {
+                    pourPositionX = CONTAINER_RIGHT - POUR_WIDTH/2;
+                    pourDirection = -1;
+                } else if (pourPositionX - POUR_WIDTH/2 < CONTAINER_LEFT) {
+                    pourPositionX = CONTAINER_LEFT + POUR_WIDTH/2;
+                    pourDirection = 1;
+                }
+            }
+            
+            function pourParticles() {
+                if (!isPouring || pouredParticles >= particlesToPour) {
+                    isPouring = false;
+                    return;
+                }
+                const particlesToCreate = Math.min(POUR_RATE, particlesToPour - pouredParticles);
+                for (let i = 0; i < particlesToCreate; i++) {
+                    createSandParticle();
+                }
+            }
+            
+            function updateParticles() {
+                for (let i = 0; i < sandParticles.length; i++) {
+                    const p = sandParticles[i];
+                    if (p.settled) continue;
+                    p.vy += GRAVITY;
+                    p.vx *= FRICTION;
+                    p.vy *= FRICTION;
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    checkWallCollision(p);
+                    checkRestOnParticle(p);
+                }
+                for (let i = 0; i < sandParticles.length; i++) {
+                    for (let j = i + 1; j < sandParticles.length; j++) {
+                        checkParticleCollision(sandParticles[i], sandParticles[j]);
+                    }
+                }
+            }
+            
+            function drawParticles() {
+                sandParticles.forEach(p => {
+                    sandCtx.beginPath();
+                    sandCtx.arc(p.x + 2, p.y + 2, p.radius, 0, Math.PI * 2);
+                    sandCtx.fillStyle = 'rgba(0, 0, 0, 0.3)';
+                    sandCtx.fill();
+                });
+                
+                sandParticles.forEach(p => {
+                    const gradient = sandCtx.createRadialGradient(
+                        p.x - p.radius * 0.3, p.y - p.radius * 0.3, 0,
+                        p.x, p.y, p.radius
+                    );
+                    let baseColor = p.color;
+                    let r, g, b;
+                    if (baseColor.startsWith('#')) {
+                        const hex = baseColor.substring(1);
+                        r = parseInt(hex.substring(0, 2), 16);
+                        g = parseInt(hex.substring(2, 4), 16);
+                        b = parseInt(hex.substring(4, 6), 16);
+                    }
+                    const highlight = `rgb(${Math.min(255, r + 40)}, ${Math.min(255, g + 40)}, ${Math.min(255, b + 40)})`;
+                    const shadow = `rgb(${Math.max(0, r - 30)}, ${Math.max(0, g - 30)}, ${Math.max(0, b - 30)})`;
+                    gradient.addColorStop(0, highlight);
+                    gradient.addColorStop(0.5, baseColor);
+                    gradient.addColorStop(1, shadow);
+                    sandCtx.beginPath();
+                    sandCtx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                    sandCtx.fillStyle = gradient;
+                    sandCtx.fill();
+                    const highlightSize = p.radius * 0.3;
+                    sandCtx.beginPath();
+                    sandCtx.arc(p.x - p.radius * 0.3, p.y - p.radius * 0.3, highlightSize, 0, Math.PI * 2);
+                    sandCtx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+                    sandCtx.fill();
+                });
+            }
+            
+            function animateSand() {
+                sandAnimationId = requestAnimationFrame(animateSand);
+                sandCtx.clearRect(0, 0, sandCanvas.width, sandCanvas.height);
+                sandCtx.strokeStyle = '#666';
+                sandCtx.lineWidth = 2;
+                sandCtx.strokeRect(CONTAINER_LEFT, CONTAINER_TOP, CONTAINER_WIDTH, CONTAINER_HEIGHT);
+                
+                if (isRunning) {
+                    updatePourPosition();
+                    pourParticles();
+                    updateParticles();
+                }
+                
+                drawParticles();
+                
+                if (!isPouring && !allParticlesSettled) {
+                    allParticlesSettled = sandParticles.every(p => p.settled);
+                }
+                
+                if (isPouring) {
+                    sandCtx.beginPath();
+                    sandCtx.moveTo(pourPositionX - POUR_WIDTH/2, 0);
+                    sandCtx.lineTo(pourPositionX + POUR_WIDTH/2, 0);
+                    sandCtx.lineTo(pourPositionX, POUR_POSITION_Y);
+                    sandCtx.closePath();
+                    sandCtx.fillStyle = '#666';
+                    sandCtx.fill();
+                }
+            }
+            
+            animateSand();
+        }
+        
+        function cleanupSandSimulation() {
+            if (sandAnimationId) {
+                cancelAnimationFrame(sandAnimationId);
+                sandAnimationId = null;
+            }
+            if (sandCanvas) {
+                sandCanvas.style.display = 'none';
+                document.getElementById('three-canvas').style.display = 'block';
+            }
+        }
+        function animate() {
+            if (currentView !== 'sand') {
+                requestAnimationFrame(animate);
+            }
+            
+            const delta = clock.getDelta();
+            const elapsed = clock.getElapsedTime();
+            
+            if (currentView === 'universe') {
+                galaxies.forEach(galaxy => {
+                    galaxy.rotation.y += 0.001;
+                });
+                if (stars) stars.rotation.y += 0.0001;
+                if (!isTransitioning) {
+                    camera.position.x = 500 * Math.sin(Date.now() * 0.0001);
+                    camera.position.z = 500 * Math.cos(Date.now() * 0.0001);
+                    camera.lookAt(0, 0, 0);
+                }
+            } else if (currentView === 'galaxy') {
+                if (currentGalaxy && !isTransitioning) {
+                    currentGalaxy.rotation.y += 0.001;
+                }
+                if (backgroundGalaxies) {
+                    backgroundGalaxies.rotation.y += 0.0001;
+                }
+            } else if (currentView === 'solar') {
+                if (sunMesh) {
+                    sunMesh.rotation.y += 0.002;
+                }
+                for (let i = 0; i < planets.length; i++) {
+                    const planet = planets[i];
+                    planet.userData.angle += planetOrbitalSpeeds[i];
+                    const orbitRadius = planet.position.length();
+                    planet.position.x = Math.cos(planet.userData.angle) * orbitRadius;
+                    planet.position.z = Math.sin(planet.userData.angle) * orbitRadius;
+                    planet.rotation.y += planetRotationSpeeds[i];
+                    planet.children.forEach(child => {
+                        if (child.type === 'Mesh' && child.userData.hasOwnProperty('angle')) {
+                            child.userData.angle += child.userData.orbitSpeed;
+                            child.position.x = Math.cos(child.userData.angle) * child.userData.distance;
+                            child.position.z = Math.sin(child.userData.angle) * child.userData.distance;
+                        }
+                    });
+                }
+            } else if (currentView === 'planet') {
+                if (planetMesh) {
+                    planetMesh.rotation.y += 0.002;
+                }
+            }
+            
+            renderer.render(scene, camera);
+        }
+        
+        function handleClick(event) {
+            if (isTransitioning) return;
+            
+            if (currentView === 'universe') {
+                transitionToGalaxy();
+            } else if (currentView === 'galaxy') {
+                const rect = renderer.domElement.getBoundingClientRect();
+                const x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+                const y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+                const raycaster = new THREE.Raycaster();
+                raycaster.setFromCamera({ x, y }, camera);
+                const mouseVector = new THREE.Vector3(x, y, 0.5);
+                mouseVector.unproject(camera);
+                const direction = mouseVector.sub(camera.position).normalize();
+                const galaxyPlane = new THREE.Plane();
+                galaxyPlane.setFromNormalAndCoplanarPoint(camera.getWorldDirection(new THREE.Vector3()), new THREE.Vector3(0, 0, 0));
+                const intersection = new THREE.Vector3();
+                raycaster.ray.intersectPlane(galaxyPlane, intersection);
+                const galaxySize = 80;
+                const distanceFromCenter = Math.sqrt(intersection.x * intersection.x + intersection.y * intersection.y + intersection.z * intersection.z);
+                if (distanceFromCenter < galaxySize) {
+                    transitionToSolarSystem();
+                }
+            } else if (currentView === 'solar') {
+                const rect = renderer.domElement.getBoundingClientRect();
+                const x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+                const y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+                const raycaster = new THREE.Raycaster();
+                raycaster.setFromCamera({ x, y }, camera);
+                const intersects = raycaster.intersectObjects(planets);
+                if (intersects.length > 0) {
+                    const planet = intersects[0].object;
+                    transitionToPlanetView(planet);
+                }
+            } else if (currentView === 'planet') {
+                transitionToSandView();
+            } else if (currentView === 'sand') {
+                // Changed condition to check if pouring is finished instead of all particles settled
+                if (!isPouring && !messageBox) {
+                    showMessageBox();
+                }
+            }
+        }
+        function transitionToGalaxy() {
+            if (isTransitioning) return;
+            isTransitioning = true;
+            document.getElementById('help-text').innerText = "Pick a Star";
+            const overlay = document.createElement('div');
+            overlay.style.cssText = `
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                opacity: 0;
+                transition: opacity 0.6s ease-in-out;
+                z-index: 50;
+                pointer-events: none;
+            `;
+            document.querySelector('.canvas-area').appendChild(overlay);
+            setTimeout(() => overlay.style.opacity = '1', 50);
+            setTimeout(() => {
+                generateGalaxyView();
+                currentView = 'galaxy';
+                setTimeout(() => {
+                    overlay.style.opacity = '0';
+                    setTimeout(() => {
+                        overlay.remove();
+                        isTransitioning = false;
+                    }, 600);
+                }, 200);
+            }, 600);
+        }
+        
+        function transitionToSolarSystem() {
+            if (isTransitioning) return;
+            isTransitioning = true;
+            document.getElementById('help-text').innerText = "Pick a Planet";
+            const overlay = document.createElement('div');
+            overlay.style.cssText = `
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                opacity: 0;
+                transition: opacity 0.6s ease-in-out;
+                z-index: 50;
+                pointer-events: none;
+            `;
+            document.querySelector('.canvas-area').appendChild(overlay);
+            setTimeout(() => overlay.style.opacity = '1', 50);
+            setTimeout(() => {
+                generateSolarSystem();
+                currentView = 'solar';
+                setTimeout(() => {
+                    overlay.style.opacity = '0';
+                    setTimeout(() => {
+                        overlay.remove();
+                        isTransitioning = false;
+                    }, 600);
+                }, 200);
+            }, 600);
+        }
+        
+        function transitionToPlanetView(planet) {
+            if (isTransitioning) return;
+            isTransitioning = true;
+            document.getElementById('help-text').innerText = "Pick a Place";
+            const overlay = document.createElement('div');
+            overlay.style.cssText = `
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                opacity: 0;
+                transition: opacity 0.6s ease-in-out;
+                z-index: 50;
+                pointer-events: none;
+            `;
+            document.querySelector('.canvas-area').appendChild(overlay);
+            setTimeout(() => overlay.style.opacity = '1', 50);
+            setTimeout(() => {
+                generatePlanetView(planet);
+                currentView = 'planet';
+                setTimeout(() => {
+                    overlay.style.opacity = '0';
+                    setTimeout(() => {
+                        overlay.remove();
+                        isTransitioning = false;
+                    }, 600);
+                }, 200);
+            }, 600);
+        }
+        
+        function transitionToSandView() {
+            if (isTransitioning) return;
+            isTransitioning = true;
+            document.getElementById('help-text').innerText = "Pick a Grain of Sand";
+            const overlay = document.createElement('div');
+            overlay.style.cssText = `
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                opacity: 0;
+                transition: opacity 0.6s ease-in-out;
+                z-index: 50;
+                pointer-events: none;
+            `;
+            document.querySelector('.canvas-area').appendChild(overlay);
+            setTimeout(() => overlay.style.opacity = '1', 50);
+            setTimeout(() => {
+                currentView = 'sand';
+                setupSandSimulation();
+                setTimeout(() => {
+                    overlay.style.opacity = '0';
+                    setTimeout(() => {
+                        overlay.remove();
+                        isTransitioning = false;
+                    }, 600);
+                }, 200);
+            }, 600);
+        }
+        
+function showMessageBox() {
+    if (messageBox) {
+        messageBox.remove();
+    }
+    messageBox = document.createElement('div');
+    messageBox.className = 'message-box';
+
+    // Congratulations message
+    const congrats = document.createElement('p');
+    congrats.textContent = "Congratulations! You have discovered the following real Bitcoin Seed Phrase:";
+    congrats.style.color = "#ffffff"; // Ensure visibility
+    congrats.style.fontWeight = "bold"; // Make it stand out
+    congrats.style.fontSize = "1rem"; // Slightly larger for emphasis
+    congrats.style.marginBottom = "5px"; // Add space below
+    messageBox.appendChild(congrats);
+
+    // Seed phrase
+    const seedPhrase = document.createElement('p');
+    seedPhrase.className = 'seed-phrase';
+    const generatedSeed = generateBip39SeedPhrase();
+    seedPhrase.textContent = generatedSeed;
+    messageBox.appendChild(seedPhrase);
+
+    // Instructions with links
+    const instructions = document.createElement('p');
+    instructions.innerHTML = `
+        To see if this seed phrase leads to a bitcoin wallet with money in it, copy the words into the BIP39 Mnemonic field of: 
+        <a href="https://iancoleman.io/bip39/" target="_blank">https://iancoleman.io/bip39/</a><br>
+        then copy the "BIP32 Extended Public Key" address and look it up with the search function at 
+        <a href="https://www.blockchain.com/" target="_blank">https://www.blockchain.com/</a>
+    `;
+    instructions.style.color = "#ffffff"; // Ensure visibility
+    messageBox.appendChild(instructions);
+
+    // Try Again button
+    const tryAgainButton = document.createElement('button');
+    tryAgainButton.textContent = "Try Again";
+    tryAgainButton.addEventListener('click', resetToUniverse);
+    messageBox.appendChild(tryAgainButton);
+
+    document.querySelector('.canvas-area').appendChild(messageBox);
+    if (sandAnimationId) {
+        cancelAnimationFrame(sandAnimationId);
+    }
+
+    // Dynamically set max height to fit within canvas area
+    const canvasArea = document.querySelector('.canvas-area');
+    const canvasRect = canvasArea.getBoundingClientRect();
+    messageBox.style.maxHeight = `${canvasRect.height * 0.9}px`;
+
+    // Debugging: Log to confirm elements are added
+    console.log("Message box children:", messageBox.children);
+}
+        
+        function resetToUniverse() {
+            if (isTransitioning) return;
+            isTransitioning = true;
+            cleanupSandSimulation();
+            allParticlesSettled = false;
+            if (messageBox) {
+                messageBox.remove();
+                messageBox = null;
+            }
+            const overlay = document.createElement('div');
+            overlay.style.cssText = `
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                opacity: 0;
+                transition: opacity 0.6s ease-in-out;
+                z-index: 50;
+                pointer-events: none;
+            `;
+            document.querySelector('.canvas-area').appendChild(overlay);
+            setTimeout(() => overlay.style.opacity = '1', 50);
+            setTimeout(() => {
+                while (scene.children.length > 0) {
+                    scene.remove(scene.children[0]);
+                }
+                galaxies = [];
+                stars = null;
+                currentGalaxy = null;
+                solarSystem = null;
+                sunMesh = null;
+                planets = [];
+                orbits = [];
+                selectedPlanet = null;
+                planetMesh = null;
+                currentView = 'universe';
+                generateUniverse();
+                document.getElementById('help-text').innerText = "Pick a Galaxy";
+                animate();
+                setTimeout(() => {
+                    overlay.style.opacity = '0';
+                    setTimeout(() => {
+                        overlay.remove();
+                        isTransitioning = false;
+                    }, 600);
+                }, 200);
+            }, 600);
+        }
+        
+        window.addEventListener('load', init);
+    </script>
+</body>
+</html>
+

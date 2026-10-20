@@ -1,0 +1,297 @@
+H8 шаг 7 — скан видео на кадр-подсказку. 2026-10-19 16:11 UTC
+========================================================================
+
+c2ozw_720p  1280x720  fps=25.00  кадров=363  шаг=2 (замеров 182)
+  декодировано 363 кадров за 15 с
+  кадр-карточек (бимод>0.80, std>55): 0
+  flash-кадров (дельта>55): 0
+  почти однотонных (std<18): 0
+  монтаж: sheet_c2ozw_720p.png
+
+c2ozw_480p  854x480  fps=25.00  кадров=363  шаг=2 (замеров 182)
+  декодировано 363 кадров за 7 с
+  кадр-карточек (бимод>0.80, std>55): 0
+  flash-кадров (дельта>55): 0
+  почти однотонных (std<18): 0
+  монтаж: sheet_c2ozw_480p.png
+
+bornwild  640x360  fps=29.97  кадров=5754  шаг=3 (замеров 1918)
+  декодировано 5754 кадров за 19 с
+  кадр-карточек (бимод>0.80, std>55): 0
+  flash-кадров (дельта>55): 15
+  почти однотонных (std<18): 71
+    FLASH idx=57      t=1.90s mean=88.1 std=91.8 bimod=0.440 d=78.62
+    FLASH idx=351     t=11.71s mean=49.3 std=65.6 bimod=0.490 d=55.77
+    FLASH idx=408     t=13.61s mean=125.0 std=97.6 bimod=0.368 d=78.39
+    FLASH idx=606     t=20.22s mean=90.6 std=81.4 bimod=0.331 d=73.61
+    FLASH idx=699     t=23.32s mean=63.1 std=75.2 bimod=0.345 d=67.36
+    FLASH idx=753     t=25.13s mean=95.5 std=75.1 bimod=0.298 d=57.44
+    FLASH idx=807     t=26.93s mean=46.4 std=39.3 bimod=0.274 d=73.19
+    FLASH idx=1206    t=40.24s mean=78.3 std=84.7 bimod=0.323 d=66.46
+    FLASH idx=1803    t=60.16s mean=94.0 std=102.4 bimod=0.396 d=86.98
+    FLASH idx=1902    t=63.46s mean=15.0 std=31.5 bimod=0.833 d=85.89
+    FLASH idx=2907    t=97.00s mean=102.9 std=78.5 bimod=0.291 d=84.08
+    FLASH idx=3201    t=106.81s mean=66.4 std=82.4 bimod=0.479 d=56.78
+    FLAT idx=1059    t=35.34s mean=11.2 std=17.9
+    FLAT idx=1062    t=35.44s mean=11.1 std=17.7
+    FLAT idx=1065    t=35.54s mean=11.1 std=17.5
+    FLAT idx=1068    t=35.64s mean=11.0 std=17.3
+    FLAT idx=1071    t=35.74s mean=11.0 std=17.1
+    FLAT idx=1074    t=35.84s mean=10.9 std=16.9
+    FLAT idx=1077    t=35.94s mean=10.9 std=16.8
+    FLAT idx=1080    t=36.04s mean=10.8 std=16.7
+  монтаж: sheet_bornwild.png
+  сохранено полноразмерных подозрительных кадров: 12
+
+life_720p  1088x720  fps=24.00  кадров=375  шаг=2 (замеров 188)
+  декодировано 375 кадров за 5 с
+  кадр-карточек (бимод>0.80, std>55): 0
+  flash-кадров (дельта>55): 0
+  почти однотонных (std<18): 0
+  монтаж: sheet_life_720p.png
+
+v08cb40  406x720  fps=29.97  кадров=2218  шаг=3 (замеров 740)
+  декодировано 2218 кадров за 7 с
+  кадр-карточек (бимод>0.80, std>55): 0
+  flash-кадров (дельта>55): 109
+  почти однотонных (std<18): 136
+    FLASH idx=12      t=0.40s mean=159.9 std=75.0 bimod=0.250 d=66.49
+    FLASH idx=21      t=0.70s mean=25.2 std=30.8 bimod=0.572 d=138.94
+    FLASH idx=30      t=1.00s mean=145.8 std=24.5 bimod=0.000 d=121.03
+    FLASH idx=42      t=1.40s mean=57.5 std=32.5 bimod=0.042 d=82.29
+    FLASH idx=51      t=1.70s mean=126.6 std=42.9 bimod=0.041 d=91.08
+    FLASH idx=69      t=2.30s mean=57.5 std=32.5 bimod=0.042 d=69.59
+    FLASH idx=90      t=3.00s mean=128.0 std=26.0 bimod=0.000 d=76.19
+    FLASH idx=99      t=3.30s mean=97.8 std=67.0 bimod=0.030 d=70.18
+    FLASH idx=108     t=3.60s mean=126.0 std=56.2 bimod=0.110 d=82.92
+    FLASH idx=129     t=4.30s mean=142.4 std=74.9 bimod=0.056 d=71.85
+    FLASH idx=138     t=4.60s mean=135.1 std=29.1 bimod=0.000 d=71.53
+    FLASH idx=150     t=5.00s mean=57.5 std=32.5 bimod=0.042 d=78.59
+    FLAT idx=606     t=20.22s mean=165.4 std=15.5
+    FLAT idx=630     t=21.02s mean=183.4 std=9.5
+    FLAT idx=633     t=21.12s mean=185.6 std=9.0
+    FLAT idx=636     t=21.22s mean=187.6 std=9.4
+    FLAT idx=669     t=22.32s mean=197.3 std=5.0
+    FLAT idx=672     t=22.42s mean=197.6 std=4.7
+    FLAT idx=675     t=22.52s mean=198.7 std=4.3
+    FLAT idx=1833    t=61.16s mean=0.0 std=0.0
+  монтаж: sheet_v08cb40.png
+  сохранено полноразмерных подозрительных кадров: 12
+
+v5843fb  1280x720  fps=29.97  кадров=2929  шаг=3 (замеров 977)
+  декодировано 2929 кадров за 31 с
+  кадр-карточек (бимод>0.80, std>55): 0
+  flash-кадров (дельта>55): 8
+  почти однотонных (std<18): 8
+    FLASH idx=1773    t=59.16s mean=9.6 std=16.1 bimod=0.841 d=151.58
+    FLASH idx=2067    t=68.97s mean=176.3 std=70.3 bimod=0.288 d=57.11
+    FLASH idx=2082    t=69.47s mean=163.2 std=70.1 bimod=0.236 d=58.28
+    FLASH idx=2085    t=69.57s mean=146.7 std=76.8 bimod=0.226 d=67.43
+    FLASH idx=2091    t=69.77s mean=155.2 std=76.7 bimod=0.255 d=66.08
+    FLASH idx=2097    t=69.97s mean=127.0 std=84.4 bimod=0.264 d=61.23
+    FLASH idx=2115    t=70.57s mean=89.0 std=92.6 bimod=0.429 d=75.37
+    FLASH idx=2118    t=70.67s mean=84.1 std=52.2 bimod=0.139 d=88.91
+    FLAT idx=1764    t=58.86s mean=159.1 std=16.6
+    FLAT idx=1767    t=58.96s mean=160.7 std=12.3
+    FLAT idx=1770    t=59.06s mean=161.1 std=12.4
+    FLAT idx=1773    t=59.16s mean=9.6 std=16.1
+    FLAT idx=2286    t=76.28s mean=104.5 std=17.7
+    FLAT idx=2289    t=76.38s mean=106.3 std=17.6
+    FLAT idx=2292    t=76.48s mean=107.3 std=17.8
+    FLAT idx=2295    t=76.58s mean=108.1 std=17.8
+  монтаж: sheet_v5843fb.png
+  сохранено полноразмерных подозрительных кадров: 8
+
+v7a526c  720x720  fps=29.97  кадров=451  шаг=3 (замеров 151)
+  декодировано 451 кадров за 2 с
+  кадр-карточек (бимод>0.80, std>55): 0
+  flash-кадров (дельта>55): 0
+  почти однотонных (std<18): 151
+    FLAT idx=0       t=0.00s mean=14.8 std=14.2
+    FLAT idx=3       t=0.10s mean=14.8 std=14.1
+    FLAT idx=6       t=0.20s mean=14.8 std=14.1
+    FLAT idx=9       t=0.30s mean=14.8 std=14.0
+    FLAT idx=12      t=0.40s mean=14.8 std=14.0
+    FLAT idx=15      t=0.50s mean=14.8 std=14.0
+    FLAT idx=18      t=0.60s mean=14.8 std=14.0
+    FLAT idx=21      t=0.70s mean=14.8 std=14.0
+  монтаж: sheet_v7a526c.png
+
+v90809b  1280x720  fps=23.98  кадров=698  шаг=2 (замеров 349)
+  декодировано 698 кадров за 9 с
+  кадр-карточек (бимод>0.80, std>55): 0
+  flash-кадров (дельта>55): 0
+  почти однотонных (std<18): 155
+    FLAT idx=0       t=0.00s mean=9.9 std=13.7
+    FLAT idx=2       t=0.08s mean=9.9 std=13.5
+    FLAT idx=4       t=0.17s mean=9.8 std=13.5
+    FLAT idx=6       t=0.25s mean=9.8 std=13.5
+    FLAT idx=8       t=0.33s mean=9.8 std=13.5
+    FLAT idx=10      t=0.42s mean=9.9 std=13.7
+    FLAT idx=12      t=0.50s mean=9.9 std=13.7
+    FLAT idx=14      t=0.58s mean=9.9 std=13.8
+  монтаж: sheet_v90809b.png
+
+========================================================================
+{
+ "c2ozw_720p": {
+  "frames": 363,
+  "cards": 0,
+  "flash": 0,
+  "flat": 0
+ },
+ "c2ozw_480p": {
+  "frames": 363,
+  "cards": 0,
+  "flash": 0,
+  "flat": 0
+ },
+ "bornwild": {
+  "frames": 5754,
+  "cards": 0,
+  "flash": 15,
+  "flat": 71
+ },
+ "life_720p": {
+  "frames": 375,
+  "cards": 0,
+  "flash": 0,
+  "flat": 0
+ },
+ "v08cb40": {
+  "frames": 2218,
+  "cards": 0,
+  "flash": 109,
+  "flat": 136
+ },
+ "v5843fb": {
+  "frames": 2929,
+  "cards": 0,
+  "flash": 8,
+  "flat": 8
+ },
+ "v7a526c": {
+  "frames": 451,
+  "cards": 0,
+  "flash": 0,
+  "flat": 151
+ },
+ "v90809b": {
+  "frames": 698,
+  "cards": 0,
+  "flash": 0,
+  "flat": 155
+ }
+}
+H8 шаг 7 — скан видео на кадр-подсказку. 2026-10-19 16:13 UTC
+========================================================================
+
+v08cb40  406x720  fps=29.97  кадров=2218  шаг=3 (замеров 740)
+  декодировано 2218 кадров за 7 с
+  кадр-карточек (бимод>0.80, std>55): 0
+  flash-кадров (дельта>55): 109
+  почти однотонных (std<18): 136
+    FLASH idx=12      t=0.40s mean=159.9 std=75.0 bimod=0.250 d=66.49
+    FLASH idx=21      t=0.70s mean=25.2 std=30.8 bimod=0.572 d=138.94
+    FLASH idx=30      t=1.00s mean=145.8 std=24.5 bimod=0.000 d=121.03
+    FLASH idx=42      t=1.40s mean=57.5 std=32.5 bimod=0.042 d=82.29
+    FLASH idx=51      t=1.70s mean=126.6 std=42.9 bimod=0.041 d=91.08
+    FLASH idx=69      t=2.30s mean=57.5 std=32.5 bimod=0.042 d=69.59
+    FLASH idx=90      t=3.00s mean=128.0 std=26.0 bimod=0.000 d=76.19
+    FLASH idx=99      t=3.30s mean=97.8 std=67.0 bimod=0.030 d=70.18
+    FLASH idx=108     t=3.60s mean=126.0 std=56.2 bimod=0.110 d=82.92
+    FLASH idx=129     t=4.30s mean=142.4 std=74.9 bimod=0.056 d=71.85
+    FLASH idx=138     t=4.60s mean=135.1 std=29.1 bimod=0.000 d=71.53
+    FLASH idx=150     t=5.00s mean=57.5 std=32.5 bimod=0.042 d=78.59
+    FLAT idx=606     t=20.22s mean=165.4 std=15.5
+    FLAT idx=630     t=21.02s mean=183.4 std=9.5
+    FLAT idx=633     t=21.12s mean=185.6 std=9.0
+    FLAT idx=636     t=21.22s mean=187.6 std=9.4
+    FLAT idx=669     t=22.32s mean=197.3 std=5.0
+    FLAT idx=672     t=22.42s mean=197.6 std=4.7
+    FLAT idx=675     t=22.52s mean=198.7 std=4.3
+    FLAT idx=1833    t=61.16s mean=0.0 std=0.0
+  монтаж: sheet_v08cb40.png
+  сохранено полноразмерных подозрительных кадров: 12
+
+v5843fb  1280x720  fps=29.97  кадров=2929  шаг=3 (замеров 977)
+  декодировано 2929 кадров за 39 с
+  кадр-карточек (бимод>0.80, std>55): 0
+  flash-кадров (дельта>55): 8
+  почти однотонных (std<18): 8
+    FLASH idx=1773    t=59.16s mean=9.6 std=16.1 bimod=0.841 d=151.58
+    FLASH idx=2067    t=68.97s mean=176.3 std=70.3 bimod=0.288 d=57.11
+    FLASH idx=2082    t=69.47s mean=163.2 std=70.1 bimod=0.236 d=58.28
+    FLASH idx=2085    t=69.57s mean=146.7 std=76.8 bimod=0.226 d=67.43
+    FLASH idx=2091    t=69.77s mean=155.2 std=76.7 bimod=0.255 d=66.08
+    FLASH idx=2097    t=69.97s mean=127.0 std=84.4 bimod=0.264 d=61.23
+    FLASH idx=2115    t=70.57s mean=89.0 std=92.6 bimod=0.429 d=75.37
+    FLASH idx=2118    t=70.67s mean=84.1 std=52.2 bimod=0.139 d=88.91
+    FLAT idx=1764    t=58.86s mean=159.1 std=16.6
+    FLAT idx=1767    t=58.96s mean=160.7 std=12.3
+    FLAT idx=1770    t=59.06s mean=161.1 std=12.4
+    FLAT idx=1773    t=59.16s mean=9.6 std=16.1
+    FLAT idx=2286    t=76.28s mean=104.5 std=17.7
+    FLAT idx=2289    t=76.38s mean=106.3 std=17.6
+    FLAT idx=2292    t=76.48s mean=107.3 std=17.8
+    FLAT idx=2295    t=76.58s mean=108.1 std=17.8
+  монтаж: sheet_v5843fb.png
+  сохранено полноразмерных подозрительных кадров: 8
+
+v7a526c  720x720  fps=29.97  кадров=451  шаг=3 (замеров 151)
+  декодировано 451 кадров за 4 с
+  кадр-карточек (бимод>0.80, std>55): 0
+  flash-кадров (дельта>55): 0
+  почти однотонных (std<18): 151
+    FLAT idx=0       t=0.00s mean=14.8 std=14.2
+    FLAT idx=3       t=0.10s mean=14.8 std=14.1
+    FLAT idx=6       t=0.20s mean=14.8 std=14.1
+    FLAT idx=9       t=0.30s mean=14.8 std=14.0
+    FLAT idx=12      t=0.40s mean=14.8 std=14.0
+    FLAT idx=15      t=0.50s mean=14.8 std=14.0
+    FLAT idx=18      t=0.60s mean=14.8 std=14.0
+    FLAT idx=21      t=0.70s mean=14.8 std=14.0
+  монтаж: sheet_v7a526c.png
+
+v90809b  1280x720  fps=23.98  кадров=698  шаг=2 (замеров 349)
+  декодировано 698 кадров за 14 с
+  кадр-карточек (бимод>0.80, std>55): 0
+  flash-кадров (дельта>55): 0
+  почти однотонных (std<18): 155
+    FLAT idx=0       t=0.00s mean=9.9 std=13.7
+    FLAT idx=2       t=0.08s mean=9.9 std=13.5
+    FLAT idx=4       t=0.17s mean=9.8 std=13.5
+    FLAT idx=6       t=0.25s mean=9.8 std=13.5
+    FLAT idx=8       t=0.33s mean=9.8 std=13.5
+    FLAT idx=10      t=0.42s mean=9.9 std=13.7
+    FLAT idx=12      t=0.50s mean=9.9 std=13.7
+    FLAT idx=14      t=0.58s mean=9.9 std=13.8
+  монтаж: sheet_v90809b.png
+
+========================================================================
+{
+ "v08cb40": {
+  "frames": 2218,
+  "cards": 0,
+  "flash": 109,
+  "flat": 136
+ },
+ "v5843fb": {
+  "frames": 2929,
+  "cards": 0,
+  "flash": 8,
+  "flat": 8
+ },
+ "v7a526c": {
+  "frames": 451,
+  "cards": 0,
+  "flash": 0,
+  "flat": 151
+ },
+ "v90809b": {
+  "frames": 698,
+  "cards": 0,
+  "flash": 0,
+  "flat": 155
+ }
+}

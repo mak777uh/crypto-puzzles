@@ -1,0 +1,1146 @@
+
+
+
+
+
+Chasse au trésor : 0,2024 bitcoin à gagner - bitcoin.fr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Facebook
+
+
+
+
+
+RSS
+
+
+
+
+
+Telegram
+
+
+
+
+
+X
+
+
+
+
+
+Youtube
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+COMPRENDRE BITCOIN
+LOGICIELS ET APP
+OBTENIR DES BTC
+DÉPENSER DES BTC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Recherche
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bitcoin.fr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CONTACT
+RESSOURCES
+COURS
+EXCHANGES
+EVENEMENTS
+TABLEAU DE BORD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Facebook
+
+
+
+
+
+RSS
+
+
+
+
+
+Telegram
+
+
+
+
+
+X
+
+
+
+
+
+Youtube
+
+
+
+
+
+
+
+
+
+
+
+
+
+Se connecter
+
+Bienvenue ! Connectez-vous à votre compte :
+
+
+
+
+votre nom d'utilisateur
+
+votre mot de passe
+
+
+
+
+
+
+
+Mot de passe oublié? obtenir de l'aide
+
+
+
+
+
+
+
+
+
+
+
+Récupération de mot de passe
+
+Récupérer votre mot de passe
+
+
+
+
+votre email
+
+
+
+Un mot de passe vous sera envoyé par email.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+COMPRENDRE BITCOIN
+LOGICIELS ET APP
+OBTENIR DES BTC
+DÉPENSER DES BTC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bitcoin :
+...
+
+
+...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Accueil Bitcoin Chasse au trésor : 0,2024 bitcoin à gagner
+
+
+
+
+
+
+
+
+
+
+
+
+Chasse au trésor : 0,2024 bitcoin à gagner
+
+
+
+
+
+Par
+La rédaction -
+
+25 décembre 2024 10
+6789
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rappel du jeu : L’adresse bc1q8zfy6wvvtskzkg4s343x42pyf363nmejspgc02 contient 0,2024 bitcoin. Cette adresse est dérivée d’une phrase de 24 mots (BIP39, no checksum ) dont 21 sont cachés dans le livre « L’énergie, face cachée de la monnaie » de Pierre Noizat (disponible sur le site de Konsensus Network ou de la Fnac ).
+
+
+
+
+Chaque jeudi un indice supplémentaire a été dévoilé sur le compte twitter @e_ducat jusqu’au 25 décembre 2024.
+
+
+
+
+Les indices
+
+
+
+
+Indice n°1 : Une image vaut mille mots mais huit images en valent quatorze
+
+
+
+
+Indice n°2 : Deux années olympiques
+
+
+
+
+Indice n°3 : Département d’origine
+
+
+
+
+Indice n°4 : 2 dans le sommaire
+
+
+
+
+Indice n°5 : 2 dans un chapitre qui traite d’un thème central du livre
+
+
+
+
+Indice n°6 : Une traduction en anglais est en cours
+
+
+
+
+Indice n°7 : A la fin, les réseaux décentralisés s’imposent toujours
+
+
+
+
+Indice n°8 : Tous les mots se trouvent sur la liste normalisée https://github.com/bitcoin/bips/tree/master/bip-0039 . Les 21 premiers mots à trouver (dans le livre) sont en français et les 3 derniers en anglais. Remplacer ensuite chacun des 21 mots français par celui du même rang dans la liste english.txt
+
+
+
+
+Indice n°9 : Pour vérifier que vous avez bien trouvé les 23 premiers mots, le mot staff (1697) peut être utilisé en 24e position pour former une phrase mnémonique valide compatible avec les wallets permettant d’utiliser des phrases de 24 mots, notamment Green wallet de Blockstream. En fait, n’importe lequel de ces 8 mots peut être utilisé en 24e position comme mot de vérification (checksum) :
+alien
+detect
+flip
+gas
+organ
+peasant
+staff
+trigger
+Il suffit alors de le remplacer par le 24e mot (qui n’est PAS parmi les 8 mots ci-dessus) et de calculer la « seed ».
+
+
+
+
+Indice n°10 : Les 14 premiers mots sont contenus dans les images du livre, prises dans l’ordre. Les mots million, minutes et opinions ne font pas partie de la solution car utilisés plusieurs fois dans les images ou au pluriel. Les 13e et 14e mots sont sur la couverture.
+
+
+
+
+Indice n°11 : Les années olympiques sont en lien avec la biographie de l’auteur (15e et 16e mots). Attention, il y a de fausses infos sur certains sites peu fiables. Le 17e mot est en lien avec le nom de l’auteur.
+
+
+
+
+Indice n°12 : Les 18e et 19e mots sont dans le sommaire.
+
+
+
+
+Indice n°13 : Les 20e et 21e mots apparaissent au début d’un chapitre qui traite d’un thème central du livre.
+
+
+
+
+Indice n°14 : les mots en 22e, 23e et 24e position forment un slogan utilisé en 2024 par une marque connue dans le monde entier, inspiré par un titre du groupe Tomorrow x Together .
+
+
+
+
+Pour savoir comment on passe d’une phrase de passe mnémonique de 24 mots à une adresse Bitcoin (ou plus précisément, comment on trouve la clé privée d’une adresse à partir d’une phrase mnémonique) : https://e-ducat.fr/2024-09-29-adresses-et-chemins/
+
+
+
+
+Bonne chasse…
+
+
+
+
+Pour en savoir plus : https://x.com/e_ducat/status/1824061155599438263
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Facebook
+
+X
+
+WhatsApp
+
+Linkedin
+
+Telegram
+
+
+
+
+
+
+
+La rédaction
+
+
+
+
+ARTICLES CONNEXES PLUS DE L'AUTEUR
+
+
+
+
+
+
+
+
+
+
+
+
+Affaire Mara/Exaion : l’histoire d’un Cheval de Troie ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bitcoin meetup Paris Montmartre
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bitcoin meetup à Lorient
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Taux de change du bitcoin
+
+...
+
+
+
+
+...
+
+
+
+
+
+
+
+
+...
+
+...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Publicité
+
+
+
+
+Divers
+
+• Evénements
+
+• Statistiques en temps réel
+
+• Acheter et vendre des bitcoins
+
+• Bitcoin par son inventeur
+
+• Choisir son application "portefeuille"
+
+• Générer des bitcoins : le minage
+
+• Les sites à éviter
+
+• Quelle banque choisir ?
+
+• Histoire de Bitcoin
+
+• Articles populaires
+
+• Statistiques du site
+
+
+
+
+Donations en bitcoins
+
+• Opensats.org
+
+• Asmae - Sœur Emmanuelle
+
+• L'UNICEF France
+
+• Human Rights Foundation
+
+• Internet Archive
+
+
+
+
+Ailleurs
+
+• Plan B Network
+
+• L'Institut National de Bitcoin
+
+• Le Cercle du Coin (association)
+
+• La Voie du Bitcoin
+
+
+
+Archives
+Archives
+
+
+Sélectionner un mois
+octobre 2026 (28)
+septembre 2026 (57)
+août 2026 (48)
+juillet 2026 (41)
+juin 2026 (41)
+mai 2026 (42)
+avril 2026 (48)
+mars 2026 (43)
+février 2026 (46)
+janvier 2026 (45)
+décembre 2025 (39)
+novembre 2025 (37)
+octobre 2025 (58)
+septembre 2025 (45)
+août 2025 (43)
+juillet 2025 (55)
+juin 2025 (48)
+mai 2025 (49)
+avril 2025 (38)
+mars 2025 (43)
+février 2025 (37)
+janvier 2025 (44)
+décembre 2024 (49)
+novembre 2024 (49)
+octobre 2024 (37)
+septembre 2024 (37)
+août 2024 (30)
+juillet 2024 (16)
+juin 2024 (37)
+mai 2024 (42)
+avril 2024 (44)
+mars 2024 (52)
+février 2024 (51)
+janvier 2024 (53)
+décembre 2023 (35)
+novembre 2023 (47)
+octobre 2023 (48)
+septembre 2023 (43)
+août 2023 (39)
+juillet 2023 (42)
+juin 2023 (53)
+mai 2023 (58)
+avril 2023 (49)
+mars 2023 (53)
+février 2023 (45)
+janvier 2023 (50)
+décembre 2022 (53)
+novembre 2022 (72)
+octobre 2022 (65)
+septembre 2022 (59)
+août 2022 (42)
+juillet 2022 (45)
+juin 2022 (50)
+mai 2022 (61)
+avril 2022 (62)
+mars 2022 (66)
+février 2022 (53)
+janvier 2022 (52)
+décembre 2021 (41)
+novembre 2021 (56)
+octobre 2021 (61)
+septembre 2021 (47)
+août 2021 (31)
+juillet 2021 (48)
+juin 2021 (53)
+mai 2021 (53)
+avril 2021 (64)
+mars 2021 (58)
+février 2021 (71)
+janvier 2021 (69)
+décembre 2020 (53)
+novembre 2020 (47)
+octobre 2020 (53)
+septembre 2020 (49)
+août 2020 (54)
+juillet 2020 (43)
+juin 2020 (44)
+mai 2020 (64)
+avril 2020 (56)
+mars 2020 (44)
+février 2020 (47)
+janvier 2020 (57)
+décembre 2019 (49)
+novembre 2019 (57)
+octobre 2019 (54)
+septembre 2019 (61)
+août 2019 (48)
+juillet 2019 (53)
+juin 2019 (73)
+mai 2019 (66)
+avril 2019 (69)
+mars 2019 (62)
+février 2019 (58)
+janvier 2019 (66)
+décembre 2018 (75)
+novembre 2018 (71)
+octobre 2018 (82)
+septembre 2018 (73)
+août 2018 (61)
+juillet 2018 (63)
+juin 2018 (81)
+mai 2018 (84)
+avril 2018 (94)
+mars 2018 (92)
+février 2018 (106)
+janvier 2018 (120)
+décembre 2017 (116)
+novembre 2017 (109)
+octobre 2017 (111)
+septembre 2017 (77)
+août 2017 (56)
+juillet 2017 (61)
+juin 2017 (72)
+mai 2017 (76)
+avril 2017 (75)
+mars 2017 (66)
+février 2017 (59)
+janvier 2017 (67)
+décembre 2016 (62)
+novembre 2016 (71)
+octobre 2016 (68)
+septembre 2016 (50)
+août 2016 (45)
+juillet 2016 (51)
+juin 2016 (68)
+mai 2016 (64)
+avril 2016 (50)
+mars 2016 (64)
+février 2016 (56)
+janvier 2016 (52)
+décembre 2015 (52)
+novembre 2015 (55)
+octobre 2015 (52)
+septembre 2015 (45)
+août 2015 (47)
+juillet 2015 (53)
+juin 2015 (59)
+mai 2015 (59)
+avril 2015 (57)
+mars 2015 (48)
+février 2015 (52)
+janvier 2015 (59)
+décembre 2014 (46)
+novembre 2014 (46)
+octobre 2014 (38)
+septembre 2014 (35)
+août 2014 (40)
+juillet 2014 (52)
+juin 2014 (52)
+mai 2014 (56)
+avril 2014 (50)
+mars 2014 (42)
+février 2014 (39)
+janvier 2014 (41)
+décembre 2013 (31)
+novembre 2013 (23)
+octobre 2013 (14)
+septembre 2013 (5)
+août 2013 (13)
+juillet 2013 (6)
+juin 2013 (10)
+mai 2013 (9)
+avril 2013 (43)
+mars 2013 (10)
+février 2013 (4)
+janvier 2013 (1)
+novembre 2012 (2)
+septembre 2012 (1)
+mai 2012 (2)
+mars 2012 (2)
+janvier 2012 (10)
+novembre 2011 (2)
+octobre 2011 (2)
+août 2011 (1)
+juillet 2011 (1)
+juin 2011 (1)
+mai 2011 (1)
+janvier 2011 (1)
+décembre 2010 (3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+À PROPOS
+
+En savoir plus -
+Nous contacter -
+Compte Nostr
+
+
+SUIVEZ-NOUS
+
+
+
+
+Facebook
+
+
+
+
+
+RSS
+
+
+
+
+
+Telegram
+
+
+
+
+
+X
+
+
+
+
+
+Youtube
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© bitcoin.fr 2010-2026 Sous licence Creative Commons
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

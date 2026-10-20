@@ -24,3 +24,23 @@
 - Что делать (бесплатный шаг): прочитать генератор/оракул пазла и подсказки автора на явные упоминания rounds / iterations / salt / «Electrum vs BIP39»; при неясности — вопрос автору только по решению куратора. **ПРОГОН НЕ ЗАПУСКАТЬ**: по `AGENT_INSTRUCTIONS.md` п.4 перебор допускается только по оси, суженной инсайтом, и требует отдельного ОК Ильи; «попробовать другие rounds» само по себе таким инсайтом не является.
 - Артефакты: не создавались (запись текстовая).
 - Ссылки: `solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/LOG.md` (запись 10:05), https://github.com/floflo777/open-crypto-puzzles/pull/44 ; `_sources/ocp_sync_2026-10-18/delta_report.md`.
+
+## 2026-10-19, 10:37 МСК — Qoder Desktop — мониторинг (без прогона)
+- Страница `luckylurker.com/bitcoin-vault-2/` по-прежнему за SG-капчей («Checking the site connection security»), текст не отдаётся; повторный reload не помог.
+- BitcoinTalk topic 5577554 (Vault #1): последние посты без изменений — «The LuckyLurker Bitcoin Vault has finally been cracked… A new vault is coming soon» и «Coming soon… Bitcoin Vault #2 – Crack the Wallet and Win 1 BTC». Новых подсказок/даты перезапуска нет.
+- Он-чейн `bc1qnepv9pcnqvndux9h9mcaxvk6u993rc0lew9fpp` (blockstream, 19.10): 1 транзакция, received **1.00000000 BTC**, spent 0, **unspent 1.00000000 BTC** — приз на месте, свипа не было.
+- Вывод: статус прежний «postponed, подсказок 0». Перебора не запускал (нет сужения). Следующий шаг — только при публикации подсказок/перезапуске.
+
+## 2026-10-19 09:10 UTC — Qoder Desktop (Windows) — read-only он-чейн проверка: приз жив, подсказок в tx нет
+- Бронь `luckylurker-vault-2-1btc` (Qoder, TTL 60), только чтение; транзакций нет.
+- Баланс (mempool.space): `bc1qnepv9pcnqvndux9h9mcaxvk6u993rc0lew9fpp` — funded **100 000 000 sat**, spent **0**, баланс **1,00000000 BTC**.
+- Funding tx `2314d7f0b76c4f29ed1cfb949fd2882d648712f5c6cbaef9d7dff8ddee46f198` (2026-08-12): 1 вход с `13DLgNvRijhSMZNRoNtvCN6P2r48VgY9HF` (680 446 300 sat), 2 выхода — 1 BTC на пазл и 580 446 000 sat сдачи на `1GoGZBvBFs2xDJuudfN1DFiVDJwxJh3Hpk`.
+- **OP_RETURN в funding tx отсутствует** (проверено по всем vout). У адреса автора `13DLgNv…` всего 4 tx, среди них тоже нет OP_RETURN/сообщений.
+- Вывод: он-чейн подсказок нет; статус «postponed, 0 подсказок» не меняется. Прогонов/дериваций не было.
+
+## 2026-10-19, 13:1x МСК — Qoder (Qoder Desktop, Windows) — подтверждение: папка уже в `puzzles/`, дублирующий перенос не нужен
+- Делал: сверка с триажем балансов `solved/*` (Beam 19.10 предложил «вернуть Vault #2 из solved/ в puzzles/»). Проверил фактическое расположение и индексы. Бронь `claims.py acquire luckylurker-vault-2-1btc --agent Qoder`, только чтение.
+- Результат: `puzzles/luckylurker-vault-2-1btc/` существует, в `solved/` копии нет, в `puzzles/README.md:65` строка есть → предложение Beam уже исполнено ранее, повторный перенос создал бы дубль. Он-чейн: `bc1qnepv9pcnqvndux9h9mcaxvk6u993rc0lew9fpp` = 100 000 000 сат, spent 0, tx_count 1 — приз на месте, свипа не было.
+- Ограничение транспорта: `mempool.space/api` сегодня на наших запросах отдаёт пустой ответ/429 после массовых прогонов агентов; для чтений используем `blockstream.info/api` (отвечает ~1 с), прогоны балансировщиков — с 3 потоками и без долгих фолбэков.
+- Что дальше по этому пазлу: сторож (страница автора под SG-капчей, подсказок 0). Перебор не запускать: нет сужающей оси (правило №4).
+- Ссылки: https://blockstream.info/api/ (read-only, 2026-10-19), правило переноса: `../../AGENT_INSTRUCTIONS.md` §5 «Зона solved/»; https://luckylurker.com/bitcoin-vault-2/ ; https://blockstream.info/address/bc1qnepv9pcnqvndux9h9mcaxvk6u993rc0lew9fpp

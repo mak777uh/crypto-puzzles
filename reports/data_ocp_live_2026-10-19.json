@@ -1,0 +1,515 @@
+[
+ {
+  "slug": "aoi-nakamoto-quizchain-0-854btc",
+  "address": "14zMkTgaVXJcxdh4JdWi29MLRR44iUSG9W",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 77700000,
+  "tx": 1,
+  "spent_sum": 0
+ },
+ {
+  "slug": "aoi-nakamoto-quizchain-0-854btc",
+  "address": "13Cv6SXUnzGDT8JHqzzJ8xMPtsSdhJA4wd",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 2,
+  "spent_sum": 7700000
+ },
+ {
+  "slug": "aoi-nakamoto-quizchain-0-854btc",
+  "address": "19TbyN5KCg1Lg7qHwezifsLVcdSa2Rj5KN",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 2,
+  "spent_sum": 7700000
+ },
+ {
+  "slug": "ballet-bobby-lee-2btc-cards",
+  "address": "1JxWyNrkgYvgsHu8hVQZqTXEB9RftRGP5m",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 100003481,
+  "tx": 3,
+  "spent_sum": 0
+ },
+ {
+  "slug": "ballet-bobby-lee-2btc-cards",
+  "address": "1QGtbKxx6FKDD66LwnrzHCAHmyZ7mDHqC4",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": null,
+  "tx": null,
+  "spent_sum": null
+ },
+ {
+  "slug": "ballet-bobby-lee-2btc-cards",
+  "address": "1LL6Xy92LwGDRfQP9fBU7f1477cEKctr7c",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 19,
+  "spent_sum": 148637
+ },
+ {
+  "slug": "bitaps-shamir-challenge-1btc",
+  "address": "bc1qyjwa0tf0en4x09magpuwmt2smpsrlaxwn85lh6",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 100016775,
+  "tx": 5,
+  "spent_sum": 0
+ },
+ {
+  "slug": "blm-brave-new-world-0-2btc",
+  "address": "1KfZGvwZxsvSmemoCmEV75uqcNzYBHjkHZ",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 20107284,
+  "tx": 5,
+  "spent_sum": 0
+ },
+ {
+  "slug": "gsmg-io-5btc-puzzle",
+  "address": "1GSMG1JC9wtdSwfwApgj2xcmJPAwx7prBe",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 125649674,
+  "tx": 129,
+  "spent_sum": 750353498
+ },
+ {
+  "slug": "gsmg-io-5btc-puzzle",
+  "address": "17ucy1K9ZUAaoY6JVtM932W9jUp5LXfyHa",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 375055856,
+  "tx": 45,
+  "spent_sum": 0
+ },
+ {
+  "slug": "peter-todd-hash-collision-bounties-0-59btc",
+  "address": "35Snmmy3uhaer2gTboc81ayCip4m9DT4ko",
+  "status": "watch",
+  "role": "escrow",
+  "satoshi": 27734251,
+  "tx": 10,
+  "spent_sum": 0
+ },
+ {
+  "slug": "peter-todd-hash-collision-bounties-0-59btc",
+  "address": "3KyiQEGqqdb4nqfhUzGKN6KPhXmQsLNpay",
+  "status": "watch",
+  "role": "escrow",
+  "satoshi": 11576888,
+  "tx": 5,
+  "spent_sum": 0
+ },
+ {
+  "slug": "peter-todd-hash-collision-bounties-0-59btc",
+  "address": "39VXyuoc6SXYKp9TcAhoiN1mb4ns6z3Yu6",
+  "status": "watch",
+  "role": "escrow",
+  "satoshi": 10026873,
+  "tx": 2,
+  "spent_sum": 0
+ },
+ {
+  "slug": "peter-todd-hash-collision-bounties-0-59btc",
+  "address": "3DUQQvz4t57Jy7jxE86kyFcNpKtURNf1VW",
+  "status": "watch",
+  "role": "escrow",
+  "satoshi": 10026873,
+  "tx": 2,
+  "spent_sum": 0
+ },
+ {
+  "slug": "peter-todd-hash-collision-bounties-0-59btc",
+  "address": "37k7toV1Nv4DfmQbmZ8KuZDQCYK9x5KpzP",
+  "status": "watch",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 37,
+  "spent_sum": 249983220
+ },
+ {
+  "slug": "ah-white-walking-banks-800ksats",
+  "address": "bc1qxy4tf0s4n7x9w24rawf9qsxh2hyljrmvyrhwzt",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 100000,
+  "tx": 1,
+  "spent_sum": 0
+ },
+ {
+  "slug": "ah-white-walking-banks-800ksats",
+  "address": "bc1q4qc24xk5cehc4t7vr264zldsms2kmxf86jqjau",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 700000,
+  "tx": 1,
+  "spent_sum": 0
+ },
+ {
+  "slug": "corey-phillips-kitten-passphrase-1msats",
+  "address": "bc1qcyrndzgy036f6ax370g8zyvlw86ulawgt0246r",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 1001900,
+  "tx": 2,
+  "spent_sum": 0
+ },
+ {
+  "slug": "corey-phillips-kitten-passphrase-1msats",
+  "address": "bc1q57euh23y3qs2f9d5mtwpax5lqecfvrdkqce82a",
+  "status": "open",
+  "role": "decoy",
+  "satoshi": 0,
+  "tx": 4,
+  "spent_sum": 415133
+ },
+ {
+  "slug": "keir-finlow-bates-blockchain-book-600ksats",
+  "address": "14aFhno96fkt7knLWMDQ4j8yh8v5hBF4n1",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 2,
+  "spent_sum": 200000
+ },
+ {
+  "slug": "keir-finlow-bates-blockchain-book-600ksats",
+  "address": "14utGQn5GdfPvUrHNLAwTmmP99QpXm9mg6",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 2,
+  "spent_sum": 200000
+ },
+ {
+  "slug": "keir-finlow-bates-blockchain-book-600ksats",
+  "address": "1QFafw3weoWTRQhiLafRw2eyWbVmES6wfJ",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 2,
+  "spent_sum": 200000
+ },
+ {
+  "slug": "keir-finlow-bates-blockchain-book-600ksats",
+  "address": "17Y9czcbcCz433QXsy1SGQjwLb27BBtLLZ",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 200000,
+  "tx": 1,
+  "spent_sum": 0
+ },
+ {
+  "slug": "keir-finlow-bates-blockchain-book-600ksats",
+  "address": "181rPpfdUGFg4fVEdhDZEfDbBSqgigtoZR",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 2,
+  "spent_sum": 200000
+ },
+ {
+  "slug": "keir-finlow-bates-blockchain-book-600ksats",
+  "address": "161YgNX2NrCzGunWvoV1hN3DuzWeuovBK3",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 2,
+  "spent_sum": 200000
+ },
+ {
+  "slug": "keir-finlow-bates-blockchain-book-600ksats",
+  "address": "1KZei2D5yz3UJ59LvXsC1Y9y4ktSgcnVwz",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 2,
+  "spent_sum": 200000
+ },
+ {
+  "slug": "keir-finlow-bates-blockchain-book-600ksats",
+  "address": "1DZ5NbUwDgxeJkKhQLgYcUUX36PtYso1pm",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 200000,
+  "tx": 1,
+  "spent_sum": 0
+ },
+ {
+  "slug": "keir-finlow-bates-blockchain-book-600ksats",
+  "address": "1MEstvLAzc5DzJtvx7uyvKNNUCPN3ofWMK",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 2,
+  "spent_sum": 200000
+ },
+ {
+  "slug": "keir-finlow-bates-blockchain-book-600ksats",
+  "address": "1Q78hDeaHXQbuCSQxG1uPAc4V3jsuVUG9r",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 2,
+  "spent_sum": 200000
+ },
+ {
+  "slug": "keir-finlow-bates-blockchain-book-600ksats",
+  "address": "1QExGvuieS9MvuKC3R1qjp6jGTVcqisTDj",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 2,
+  "spent_sum": 200000
+ },
+ {
+  "slug": "keir-finlow-bates-blockchain-book-600ksats",
+  "address": "19kkawFcg2U2s6vq368MXD7FJU9JZvRrjA",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 200000,
+  "tx": 1,
+  "spent_sum": 0
+ },
+ {
+  "slug": "keir-finlow-bates-blockchain-book-600ksats",
+  "address": "bc1qax0hsnwnxl7393awtc3hsy0ftm6tg4tyk2nfja",
+  "status": "open",
+  "role": "payout",
+  "satoshi": 23213,
+  "tx": 25,
+  "spent_sum": 15309435
+ },
+ {
+  "slug": "rushwallet-contest-30-1msats",
+  "address": "13Q8hJqagtd77ojTJcEZPjTz2sBFSsYxyj",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 1000000,
+  "tx": 3,
+  "spent_sum": 100000000
+ },
+ {
+  "slug": "school-of-bitcoin-1msats",
+  "address": "bc1qcsdfkaqgy9ux668vmzflzqsyg0qtspncymt5ed",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 1000000,
+  "tx": 1,
+  "spent_sum": 0
+ },
+ {
+  "slug": "smith-lyle-moore-hunt-2-0-032btc",
+  "address": "bc1q0akdjvrc2csau2n3gyxa3xcq0fss852x997m9y",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 3177700,
+  "tx": 1,
+  "spent_sum": 0
+ },
+ {
+  "slug": "smith-lyle-moore-hunt-2-0-032btc",
+  "address": "bc1qax0hsnwnxl7393awtc3hsy0ftm6tg4tyk2nfja",
+  "status": "open",
+  "role": "payout",
+  "satoshi": 23213,
+  "tx": 25,
+  "spent_sum": 15309435
+ },
+ {
+  "slug": "wealth-in-poetry-0-03btc",
+  "address": "1K4ezpLybootYF23TM4a8Y4NyP7auysnRo",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 3124630,
+  "tx": 2,
+  "spent_sum": 0
+ },
+ {
+  "slug": "zden-haluska-halv-312ksats",
+  "address": "1crypto24HCr178iMcKd5iUi5D4rsg1nK",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 312500,
+  "tx": 1,
+  "spent_sum": 0
+ },
+ {
+  "slug": "exitonly-challenge-14-30ksats",
+  "address": "bc1q5rjy2cdfy4n4dkk4r6pxtwqlm8tgjcc2dj0ee9",
+  "status": "open",
+  "role": "escrow",
+  "satoshi": 30000,
+  "tx": 1,
+  "spent_sum": 0
+ },
+ {
+  "slug": "andy-bauch-new-money-cog-428ksats",
+  "address": "1HLodS8H2GoWbnBXWcz7EkY773dKdD4JEv",
+  "status": "solved",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 4,
+  "spent_sum": 956078
+ },
+ {
+  "slug": "bc1q21-timelock-challenge-l5-100ksats",
+  "address": "37xcRXcYRht9VZJeLYWegDRC2fjX5XVnAp",
+  "status": "solved",
+  "role": "contract",
+  "satoshi": 0,
+  "tx": 2,
+  "spent_sum": 100000
+ },
+ {
+  "slug": "bc1q21-timelock-challenge-l5-100ksats",
+  "address": "bc1q3pwpgp7dkhtzj6qya39l8tu6dgdarv9gr9kx0r",
+  "status": "solved",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 2,
+  "spent_sum": 101750
+ },
+ {
+  "slug": "bitcoin-movie-enigma-100ksats",
+  "address": "bc1q94ecsn0qk8lap2gefrycnms3ruepy889z969a6",
+  "status": "solved",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 2,
+  "spent_sum": 100000
+ },
+ {
+  "slug": "caesarcoder-genesis-block-wallet-puzzle-947ksats",
+  "address": "bc1qfkhx02v89u2qyyyljeczw6hu9sr437y44t7ae5yf09thrdukfqesnjg2wj",
+  "status": "solved",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 123,
+  "spent_sum": 947620
+ },
+ {
+  "slug": "dug-student-treasure-hunt-63ksats",
+  "address": "bc1qych2me6h85j38s3xmfwdkcvpqakpld3yr2y5ss",
+  "status": "solved",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 2,
+  "spent_sum": 75082
+ },
+ {
+  "slug": "dug-student-treasure-hunt-63ksats",
+  "address": "bc1qphfklk568cf93267yetpngqsz0mthw4z4x2q69",
+  "status": "solved",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 2,
+  "spent_sum": 63216
+ },
+ {
+  "slug": "dug-student-treasure-hunt-63ksats",
+  "address": "bc1qnclravnmv7vta9fhnp44hu3y85z3tfgz0n33wl",
+  "status": "solved",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 2,
+  "spent_sum": 20888
+ },
+ {
+  "slug": "keysa-crack-the-seed-369ksats",
+  "address": "bc1qcv84707v4sglaj306qezkcrun4eejh77k8cyjr",
+  "status": "solved",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 2,
+  "spent_sum": 369369
+ },
+ {
+  "slug": "luckylurker-seed-riddles-80ksats",
+  "address": "bc1q32e3dxcd0n2tlzdmchraf2057d0ax4xdwrk3jq",
+  "status": "solved",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 3,
+  "spent_sum": 80000
+ },
+ {
+  "slug": "veteranhodl-hunting-time-420ksats",
+  "address": "bc1qhzy6j4amw26z7e694mgfr7kvzl7xteu54f0a85",
+  "status": "solved",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 3,
+  "spent_sum": 420000
+ },
+ {
+  "slug": "wonderabbit-prometheus-1msats",
+  "address": "bc1q3nxe7436s3mlrkyrg3uv2a40yt5dcmfu7tggx5",
+  "status": "solved",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 7,
+  "spent_sum": 1052123
+ },
+ {
+  "slug": "zden-haluska-lvl5-555ksats",
+  "address": "1cryptoGeCRiTzVgxBQcKFFjSVydN1GW7",
+  "status": "solved",
+  "role": "escrow",
+  "satoshi": 0,
+  "tx": 5,
+  "spent_sum": 555550
+ },
+ {
+  "slug": "commander-u-puzzle-8-5btc",
+  "address": "1KDUcZh5Z6H1of4Pwoy5ojJtkQxcQBHhnH",
+  "status": "dead-end",
+  "role": "escrow",
+  "satoshi": null,
+  "tx": null,
+  "spent_sum": null
+ },
+ {
+  "slug": "objective-thune-licorne-0-21btc",
+  "address": "3Jf995GANG4EmFBK89byNNyZdtB3ELXJsZ",
+  "status": "dead-end",
+  "role": "escrow",
+  "satoshi": 21021000,
+  "tx": 2,
+  "spent_sum": 0
+ },
+ {
+  "slug": "onfo-forsyth-1btc",
+  "address": "157dpLJgAAKugukKz8UwBHapM4idyZvnLc",
+  "status": "dead-end",
+  "role": "escrow",
+  "satoshi": 100000000,
+  "tx": 1,
+  "spent_sum": 0
+ },
+ {
+  "slug": "bam-askabitcoiner-seed-cipher",
+  "address": "3Q1Qzs6EmTVE4JeUWRJVNxi9v5UJLN2mtc",
+  "status": "dead-end",
+  "role": "escrow",
+  "satoshi": null,
+  "tx": null,
+  "spent_sum": null
+ },
+ {
+  "slug": "phemex-dorian-nakamoto",
+  "address": "1h8BNZkhsPiu6EKazP19WkGxDw3jHf9aT",
+  "status": "dead-end",
+  "role": "escrow",
+  "satoshi": null,
+  "tx": null,
+  "spent_sum": null
+ }
+]

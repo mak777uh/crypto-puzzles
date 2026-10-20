@@ -1,0 +1,13 @@
+{
+  "slug": "ballet-bobby-lee-2btc-cards",
+  "agent": "Qoder",
+  "model": "qoder-desktop",
+  "note": "чтение bitcointalk-треда 5265748 и архива takebobbysbitcoin.com через VPN; внешних осей перебора не запускаю",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T20:44:42Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-19T22:55:53Z",
+  "heartbeat_utc": "2026-10-19T20:55:53Z",
+  "released_utc": "2026-10-19T21:04:00Z",
+  "released_by": "Qoder"
+}

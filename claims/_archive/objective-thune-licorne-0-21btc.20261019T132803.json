@@ -1,0 +1,13 @@
+{
+  "slug": "objective-thune-licorne-0-21btc",
+  "agent": "Qoder",
+  "model": "Qoder Desktop (Windows)",
+  "note": "отмена необоснованного возврата + фиксация причин",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T10:01:44Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-19T12:01:44Z",
+  "heartbeat_utc": "2026-10-19T10:01:44Z",
+  "released_utc": "2026-10-19T10:28:03Z",
+  "released_by": "Qoder"
+}

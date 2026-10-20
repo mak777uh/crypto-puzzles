@@ -1,0 +1,86 @@
+H8 шаг 6 — добор носителей. 2026-10-19 16:07 UTC
+========================================================================
+[ok]   vid_c2ozw_720p.mp4  5555269 байт  <- https://video.wixstatic.com/video/144728_18a13652c8d3460cb3c08752cf326210/720p/m
+[ok]   vid_c2ozw_480p.mp4  2227484 байт  <- https://video.wixstatic.com/video/144728_18a13652c8d3460cb3c08752cf326210/480p/m
+[ok]   ogcover_aebc77f8142a.jpg  1947824 байт  <- https://static.wixstatic.com/media/144728_aebc77f8142a4ac397f8dbdbc8bbd314~mv2.j
+[ok]   hunt1_alt_5f57f68e.mp3  7075511 байт  <- https://music.wixstatic.com/mp3/144728_5f57f68e07ba4319b9c189fbc61626b9-320.mp3
+[ok]   hunt1_b22b1114.mp3  10625045 байт  <- https://music.wixstatic.com/mp3/144728_b22b111462424cf3824203ac3564c2ce-320.mp3
+
+--- проверка хвостов/строк ---
+
+vid_c2ozw_720p.mp4  5555269 байт  сигнатура 000000206674797069736f6d
+  боксы: ftyp@0:32, moov@32:4329, free@4361:8, mdat@4369:5550900
+  байт после цепочки боксов: 0
+  читаемых строк в хвосте: 5, с ключевыми словами: 0
+  фразоподобных последовательностей по файлу: 2
+    «AVC codec - Copyleft »
+    «html - options: cabac»
+
+vid_c2ozw_480p.mp4  2227484 байт  сигнатура 000000206674797069736f6d
+  боксы: ftyp@0:32, moov@32:4277, free@4309:8, mdat@4317:2223167
+  байт после цепочки боксов: 0
+  читаемых строк в хвосте: 8, с ключевыми словами: 0
+  фразоподобных последовательностей по файлу: 2
+    «AVC codec - Copyleft »
+    «html - options: cabac»
+
+ogcover_aebc77f8142a.jpg  1947824 байт  сигнатура ffd8ffe11f66457869660000
+  JPEG EOI на 1947822, после EOI 0 байт
+  читаемых строк в хвосте: 9, с ключевыми словами: 0
+  фразоподобных последовательностей по файлу: 81
+    «rdf:Description rdf:about»
+    «xmpMM:OriginalDocumentID»
+    «crs:IncrementalTemperature»
+    «crs:ParametricShadows»
+    «crs:ParametricLights»
+    «crs:ParametricHighlights»
+    «crs:ParametricShadowSplit»
+    «crs:ParametricMidtoneSplit»
+    «crs:ParametricHighlightSplit»
+    «crs:LuminanceSmoothing»
+    «crs:ColorNoiseReduction»
+    «crs:HueAdjustmentRed»
+    «crs:HueAdjustmentOrange»
+    «crs:HueAdjustmentYellow»
+    «crs:HueAdjustmentGreen»
+
+hunt1_alt_5f57f68e.mp3  7075511 байт  сигнатура 494433040000000003725458
+  читаемых строк в хвосте: 27, с ключевыми словами: 0
+  фразоподобных последовательностей по файлу: 17
+    «Born to Be Wild New Solo.»
+    «UUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUUU »
+    «UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUU »
+    «UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUp»
+
+hunt1_b22b1114.mp3  10625045 байт  сигнатура 494433040000000004025458
+  читаемых строк в хвосте: 49, с ключевыми словами: 0
+  фразоподобных последовательностей по файлу: 26
+    «Copy of I'LL STILL BE LOVIN YOU.Comp.v»
+    «UUUUUUUUUUUUUUUUUUUUU »
+    «UUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUUUT»
+    «UUUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUUUUUUUU»
+    «UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU»
+
+========================================================================
+готово; лог data/h8_extra.log

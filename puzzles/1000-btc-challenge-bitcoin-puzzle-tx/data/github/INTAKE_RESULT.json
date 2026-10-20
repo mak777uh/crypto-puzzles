@@ -1,0 +1,155 @@
+{
+  "slug": "1000-btc-challenge-bitcoin-puzzle-tx",
+  "agent": "Qoder",
+  "ts": "2026-10-19T11:26:58Z",
+  "date": "2026-10-19",
+  "status": "partial",
+  "note": "",
+  "api_calls": 25,
+  "free_transports": 8,
+  "remaining_seen": 19,
+  "reset_utc": "2026-10-19T12:13:30Z",
+  "files": 182,
+  "bytes": 7731737,
+  "media": 4,
+  "repos": [
+    {
+      "repo": "roadhero/bitcoin-puzzle-info",
+      "role": "community",
+      "branch": "main",
+      "head_sha": "6bbd33dcefe2b4d039f96f437e86ea5f918de495",
+      "counts": {
+        "issues": 1,
+        "comments": 0,
+        "releases": 0
+      },
+      "files": 3,
+      "bytes": 85488
+    },
+    {
+      "repo": "ilkerccom/btcpuzzle",
+      "role": "community",
+      "branch": "master",
+      "head_sha": "025e2656fc5ff6f3e8ea51477b8374c8000ee366",
+      "counts": {
+        "issues": 4,
+        "comments": 7,
+        "releases": 2
+      },
+      "files": 58,
+      "bytes": 695905
+    },
+    {
+      "repo": "alexanderthurn/1000-btc-challenge",
+      "role": "author",
+      "branch": "main",
+      "head_sha": "0a83ac7c07eb23bf19f77c9e77299135e662db1a",
+      "counts": {
+        "issues": 0,
+        "comments": 0,
+        "releases": 0
+      },
+      "files": 14,
+      "bytes": 6391760
+    },
+    {
+      "repo": "brichard19/bitcrack",
+      "role": "community",
+      "branch": "master",
+      "head_sha": "6bf8059ef075eb1622298395866b0bd02375e1d9",
+      "counts": {
+        "issues": 300,
+        "comments": 500,
+        "releases": 32
+      },
+      "files": 107,
+      "bytes": 558584
+    }
+  ],
+  "candidates": [
+    {
+      "repo": "roadhero/bitcoin-puzzle-info",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 15
+    },
+    {
+      "repo": "ilkerccom/btcpuzzle",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 4
+    },
+    {
+      "repo": "alexanderthurn/1000-btc-challenge",
+      "role": "author",
+      "source": "ссылки досье",
+      "hits": 3
+    },
+    {
+      "repo": "brichard19/bitcrack",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 3
+    },
+    {
+      "repo": "jeanlucpons/kangaroo",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 3
+    },
+    {
+      "repo": "retiredc/rckangaroo",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 3
+    },
+    {
+      "repo": "ilkerccom/bitcrackrandomiser",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 2
+    },
+    {
+      "repo": "wanderingphilosopher/keyhunt-cuda",
+      "role": "community",
+      "source": "ссылки досье",
+      "hits": 2
+    },
+    {
+      "repo": "floflo777/open-crypto-puzzles",
+      "role": "registry",
+      "source": "отчёт соагента: reports/2026-10-18_1000_OCP_Sync_ocp-full-sync.md",
+      "hits": 0
+    },
+    {
+      "repo": "ilkerccom/bitcoinpuzzlescanner",
+      "role": "author",
+      "source": "репо владельца ilkerccom",
+      "hits": 0
+    },
+    {
+      "repo": "ilkerccom/visual-puzzle-hunter",
+      "role": "author",
+      "source": "репо владельца ilkerccom",
+      "hits": 0
+    },
+    {
+      "repo": "ilkerccom/bitcrack",
+      "role": "author",
+      "source": "репо владельца ilkerccom",
+      "hits": 0
+    },
+    {
+      "repo": "translatorelite1-sys/bitcoin-puzzle-info",
+      "role": "fork",
+      "source": "форки roadhero/bitcoin-puzzle-info",
+      "hits": 0
+    }
+  ],
+  "errors": [
+    "не собрано (сверх --max-repos 4): jeanlucpons/kangaroo, retiredc/rckangaroo, ilkerccom/bitcrackrandomiser, wanderingphilosopher/keyhunt-cuda, floflo777/open-crypto-puzzles, ilkerccom/bitcoinpuzzlescanner, ilkerccom/visual-puzzle-hunter, ilkerccom/bitcrack, translatorelite1-sys/bitcoin-puzzle-info"
+  ],
+  "stop_reason": "срезано потолками: собрано 4 кандидатов из 13 (--max-repos/--max-mb)",
+  "ocp": null,
+  "digest": "data/github/GITHUB_INTAKE.md"
+}

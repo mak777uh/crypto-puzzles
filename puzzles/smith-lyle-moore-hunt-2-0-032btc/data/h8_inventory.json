@@ -1,0 +1,238 @@
+[
+ {
+  "hash": "019f7f75b73e472fb49ea839bf365421",
+  "ext": "mp3",
+  "size": null,
+  "ct": "HTTP Error 403: Forbidden",
+  "src": [
+   "data\\GLIMMER_HANDOFF_2026-10-17.txt"
+  ]
+ },
+ {
+  "hash": "0c8601557b264778a4388e93befab989",
+  "ext": "mp3",
+  "size": null,
+  "ct": "HTTP Error 403: Forbidden",
+  "src": [
+   "LOG.md",
+   "data\\h2d_public\\zrene.json",
+   "data\\h2d_texts.txt"
+  ]
+ },
+ {
+  "hash": "18a13652c8d3460cb3c08752cf326210",
+  "ext": "f000",
+  "size": null,
+  "ct": "HTTP Error 403: Forbidden",
+  "src": [
+   "data\\c2ozw_page.json"
+  ]
+ },
+ {
+  "hash": "25803a09f4dc443f889dbd0900b64c1e",
+  "ext": "gif",
+  "size": 969434,
+  "ct": "image/gif",
+  "src": [
+   "data\\h2d_public\\gv4d7.json",
+   "data\\h2d_texts.txt"
+  ]
+ },
+ {
+  "hash": "2ba991114f8a4afe84df3d95b9521bf2",
+  "ext": "jpg",
+  "size": 8704004,
+  "ct": "image/jpeg",
+  "src": [
+   "data\\h2d_public\\lzyu7.json",
+   "data\\h2d_texts.txt"
+  ]
+ },
+ {
+  "hash": "2efeeaffd60945af83644a0393e3ecec",
+  "ext": "gif",
+  "size": 222390,
+  "ct": "image/gif",
+  "src": [
+   "data\\h2d_public\\jxam2.json",
+   "data\\h2d_texts.txt"
+  ]
+ },
+ {
+  "hash": "357dfb1de9f248eaa5d3fd3283b1dd64",
+  "ext": "jpg",
+  "size": 2090418,
+  "ct": "image/jpeg",
+  "src": [
+   "data\\h2d_public\\p8po9.json",
+   "data\\h2d_texts.txt"
+  ]
+ },
+ {
+  "hash": "434553dd039c4dbf9926ca2602de0b08",
+  "ext": "gif",
+  "size": 996273,
+  "ct": "image/gif",
+  "src": [
+   "data\\h2d_public\\gly1l.json",
+   "data\\h2d_texts.txt"
+  ]
+ },
+ {
+  "hash": "52b07010edf4458baa06a821f578df73",
+  "ext": "png",
+  "size": 601540,
+  "ct": "image/png",
+  "src": [
+   "data\\h2d_public\\zrenb.json",
+   "data\\h2d_texts.txt"
+  ]
+ },
+ {
+  "hash": "690b95a837b14706a3e8583e0c5b8056",
+  "ext": "png",
+  "size": 13407180,
+  "ct": "image/png",
+  "src": [
+   "data\\h2d_public\\lzyu7.json",
+   "data\\h2d_texts.txt",
+   "data\\h7_community\\feed_rational-Gain5010.rss.xml"
+  ]
+ },
+ {
+  "hash": "7541577c5aff4ccbb112dcfe10965f80",
+  "ext": "png",
+  "size": 309878,
+  "ct": "image/png",
+  "src": [
+   "data\\h2d_public\\zren9.json",
+   "data\\h2d_texts.txt"
+  ]
+ },
+ {
+  "hash": "767b7595759e4fe3a02e01042e7c9ea6",
+  "ext": "jpg",
+  "size": 46002,
+  "ct": "image/jpeg",
+  "src": [
+   "data\\h2d_public\\aj73v.json",
+   "data\\h2d_texts.txt",
+   "data\\h7_community\\site\\the-search-begins.html"
+  ]
+ },
+ {
+  "hash": "7a1969671b2a4462b5554cfbd7fbcad9",
+  "ext": "gif",
+  "size": 363641,
+  "ct": "image/gif",
+  "src": [
+   "data\\h2d_public\\vicn4.json",
+   "data\\h2d_texts.txt"
+  ]
+ },
+ {
+  "hash": "82cfb8b67a4a428994704ffc7fca494f",
+  "ext": "gif",
+  "size": 253954,
+  "ct": "image/gif",
+  "src": [
+   "LOG.md",
+   "data\\jetkc_page.json",
+   "data\\jetkc_report.txt"
+  ]
+ },
+ {
+  "hash": "8715e8e22d4247af90894b03b8ae6a89",
+  "ext": "gif",
+  "size": 1752819,
+  "ct": "image/gif",
+  "src": [
+   "data\\h2d_public\\zren9.json",
+   "data\\h2d_public\\zrena.json",
+   "data\\h2d_public\\zrenb.json"
+  ]
+ },
+ {
+  "hash": "8e8262f6c7d94ae082499d651438a5d2",
+  "ext": "png",
+  "size": 74278,
+  "ct": "image/png",
+  "src": [
+   "data\\h2d_public\\zrena.json",
+   "data\\h2d_texts.txt"
+  ]
+ },
+ {
+  "hash": "986e585b3b1b4a92bb990c922b750fe8",
+  "ext": "gif",
+  "size": 1237230,
+  "ct": "image/gif",
+  "src": [
+   "data\\h2d_public\\zrend.json",
+   "data\\h2d_texts.txt"
+  ]
+ },
+ {
+  "hash": "ad1d0fada11947c888047ff55a410976",
+  "ext": "png",
+  "size": 548325,
+  "ct": "image/png",
+  "src": [
+   "data\\h2d_public\\zrene.json",
+   "data\\h2d_texts.txt"
+  ]
+ },
+ {
+  "hash": "cd4726a1c5974bb8b9a95df879244bab",
+  "ext": "gif",
+  "size": 190243,
+  "ct": "image/gif",
+  "src": [
+   "data\\h2d_public\\bbryd.json",
+   "data\\h2d_texts.txt"
+  ]
+ },
+ {
+  "hash": "d6531231cbd742c3aaa926cdf65468a0",
+  "ext": "png",
+  "size": 49997,
+  "ct": "image/png",
+  "src": [
+   "data\\h2c_cache\\treasure-hunt.html",
+   "data\\h7_community\\site\\get-hints.html",
+   "data\\h7_community\\site\\more-info.html"
+  ]
+ },
+ {
+  "hash": "d989475c36474e97b01704d245236cef",
+  "ext": "jpg",
+  "size": 1015301,
+  "ct": "image/jpeg",
+  "src": [
+   "data\\h2d_public\\zren9.json",
+   "data\\h2d_public\\zrena.json",
+   "data\\h2d_public\\zrenb.json"
+  ]
+ },
+ {
+  "hash": "e30067e9859d4ee8976515590a8e9865",
+  "ext": "jpg",
+  "size": 440971,
+  "ct": "image/jpeg",
+  "src": [
+   "data\\h2d_public\\lzyu7.json",
+   "data\\h2d_texts.txt"
+  ]
+ },
+ {
+  "hash": "e97be91711254741999d9cc38f9644da",
+  "ext": "gif",
+  "size": 4959643,
+  "ct": "image/gif",
+  "src": [
+   "data\\h2d_public\\aj73v.json",
+   "data\\h2d_public\\ay4p6.json",
+   "data\\h2d_texts.txt"
+  ]
+ }
+]

@@ -1,0 +1,13 @@
+{
+  "slug": "9vw04-gem-finder",
+  "agent": "Qoder",
+  "model": "Qoder",
+  "note": "H14 color re-extraction",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T12:16:08Z",
+  "ttl_min": 45,
+  "expires_utc": "2026-10-19T13:01:08Z",
+  "heartbeat_utc": "2026-10-19T12:16:08Z",
+  "released_utc": "2026-10-19T12:18:34Z",
+  "released_by": "Qoder"
+}

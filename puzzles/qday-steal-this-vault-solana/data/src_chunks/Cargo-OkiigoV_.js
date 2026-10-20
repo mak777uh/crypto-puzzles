@@ -1,0 +1,34 @@
+var e=`[package]
+name = "bunker-lms"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "LMS hash-based signatures (RFC 8554 / NIST SP 800-208), LMS_SHA256_M32_H10 + LMOTS_SHA256_N32_W4"
+publish = false
+
+[features]
+default = ["sha2"]
+# Off-chain SHA-256 backend (\`Sha2Hasher\`). no_std, no allocation.
+sha2 = ["dep:sha2"]
+# Key generation + signing (\`LmsKey\`). Needs \`alloc\`; never compiled into the on-chain program.
+signer = ["sha2", "dep:zeroize"]
+
+[dependencies]
+sha2 = { version = "0.10.9", default-features = false, optional = true }
+zeroize = { version = "1.8", default-features = false, optional = true }
+
+[dev-dependencies]
+hex = "0.4"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# Enables \`signer\` for this crate's own tests (keygen / signing tests); not for normal builds.
+bunker-lms = { path = ".", features = ["signer"] }
+
+[[example]]
+name = "bench"
+required-features = ["signer"]
+
+[[example]]
+name = "crosscheck_emit"
+required-features = ["signer"]
+`;export{e as default};

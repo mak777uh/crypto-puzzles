@@ -1,0 +1,13 @@
+{
+  "slug": "cardano-13373665-challenge",
+  "agent": "Qoder",
+  "model": "",
+  "note": "Ch5: steghide без пароля на копиях IPFS CID QmcUgS4L…",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-18T17:25:20Z",
+  "ttl_min": 60,
+  "expires_utc": "2026-10-18T18:25:20Z",
+  "heartbeat_utc": "2026-10-18T17:25:20Z",
+  "released_utc": "2026-10-18T17:58:54Z",
+  "released_by": "Qoder"
+}

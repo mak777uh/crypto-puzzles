@@ -1,0 +1,26 @@
+{
+ "page.html": {
+  "url": "https://web.archive.org/web/20200731051832id_/https://www.takebobbysbitcoin.com/",
+  "bytes": 3971,
+  "sha256": "c7e73dbafbe35ec2",
+  "status": 200
+ },
+ "img_passphrase.png": {
+  "url": "https://web.archive.org/web/20200731051832im_/https://www.takebobbysbitcoin.com/img/passphrase.png",
+  "bytes": 284915,
+  "sha256": "5aebca119a424a57",
+  "status": 200
+ },
+ "img_privatekey.png": {
+  "url": "https://web.archive.org/web/20200731051832im_/https://www.takebobbysbitcoin.com/img/privatekey.png",
+  "bytes": 266389,
+  "sha256": "2f892a12523b964f",
+  "status": 200
+ },
+ "img_privatekey_sealed.png": {
+  "url": "https://web.archive.org/web/20200731051832im_/https://www.takebobbysbitcoin.com/img/privatekey-sealed.png",
+  "bytes": 746813,
+  "sha256": "44d14c81443d1a26",
+  "status": 200
+ }
+}

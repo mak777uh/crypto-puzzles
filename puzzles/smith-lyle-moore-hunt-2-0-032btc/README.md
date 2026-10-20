@@ -325,3 +325,17 @@ Every stage carries its password as a published answer, quoted from the write-up
 - Покрытие: 82 575 360 сырых, **5 157 251** чексумм-валидных мнемоник, 32/32 блока, 1660 с. **Совпадений 0** → `FOUND_stage1.txt` не создан.
 - Следствие: при таком порядке первых четырёх слов решения с пустой пассфразой нет ни для одного 12-го слова и ни для одного порядка остальных семи. Остаются: иной порядок первых четырёх (вариант 1b), непустая passphrase (Stage 2) или и то и другое.
 - Эскроу не тронут (mempool.space 14:16: funded 3 177 700, spent 0, tx 1). Артефакты: `data/glimmer_stage1.py`, `data/stage1_run.log`, `data/stage1_blocks/`, `data/bip39.txt`.
+
+## Обновление GitHub-интейка (2026-10-18, Qoder)
+- GitHub-интейк: **partial** (2026-10-18) — срезано потолками: собрано 4 кандидатов из 9 (--max-repos/--max-mb); остаток в `data/github/resume.json` репо: 4; путь дайдеста: `data/github/GITHUB_INTAKE.md`
+
+
+## Обновление 2026-10-18, 15:57 UTC — Qoder: H2e (медиа) + H2f (сверка чужой модели)
+- YouTube-клип `Born to Be Wild` (`XwXfJXdVSYQ`) скачан в `data/media/` (видео/аудио/субтитры/info.json, sha256 в LOG). Описание: «All footage… from NASA. Find where, explorer»; концовка цитирует звонок Никсона Apollo 11. Новых слов Hunt #2 не даёт.
+- Wix-хосты, reddit, stacker.news недоступны (HTTP 000) — mp3 Glimmer и оракул паролей не запускались.
+- Досье `benjacasas02/.../research/glimmer` проверено: адрес Hunt #1 в нём напечатан с ошибкой (невалидный bech32); верный — `bc1qgtymp8q7hw2k9tewhdq74vdlpkqhflgju69n95` (on-chain 2 500 000 сат, swept). Модель досье (whale-слова + virtual moon) × 193 passphrase (вкл. пустую/Amphitrite) × 301 080 наборов → **0** (`data/glimmer_h2f_reconcile.py`, `data/H2F_NEGATIVE.txt`).
+- Актуальные блокеры без изменений: 12-е слово и passphrase; письмо автору — только с ОК Ильи.
+
+
+## H2h: BIP39-свип y6cd1 закрыт (2026-10-19, Qoder)
+- Все 2048 слов стандартного BIP39 проверены на `y6cd1` (pirate-battle): **0 HIT, 0 ERR** (28 прежних ERR перепроверены отдельно, все NO). Гипотеза «пароль — слово BIP39» закрыта; `data/h2h_state.json` = next 2048/2048. Подробности — `LOG.md` 2026-10-19, лог `data/h2h_retry_y6cd1.log`.

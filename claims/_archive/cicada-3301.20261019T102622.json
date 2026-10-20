@@ -1,0 +1,13 @@
+{
+  "slug": "cicada-3301",
+  "agent": "Beam",
+  "model": "",
+  "note": "info gather pass",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T07:24:15Z",
+  "ttl_min": 120,
+  "expires_utc": "2026-10-19T09:24:15Z",
+  "heartbeat_utc": "2026-10-19T07:24:15Z",
+  "released_utc": "2026-10-19T07:26:22Z",
+  "released_by": "Beam"
+}

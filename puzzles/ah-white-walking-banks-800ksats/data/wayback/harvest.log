@@ -1,0 +1,31 @@
+CDX rows=35, колонки=['urlkey', 'timestamp', 'statuscode', 'original', 'mimetype']
+  mimetype-счёт: {"warc/revisit": 3, "text/html": 19, "image/png": 5, "image/jpeg": 6, "image/svg+xml": 1, "image/webp": 1}
+оставлено текстовых URL=19, 19 с
+  http://www.walkingbanks.com/                                 warc/revisit
+  https://www.walkingbanks.com/.well-known/ai-plugin.json      text/html
+  https://www.walkingbanks.com/.well-known/assetlinks.json     text/html
+  https://www.walkingbanks.com/.well-known/dnt-policy.txt      text/html
+  https://www.walkingbanks.com/.well-known/gpc.json            text/html
+  https://www.walkingbanks.com/.well-known/nodeinfo            text/html
+  https://www.walkingbanks.com/.well-known/openid-configuratio text/html
+  https://www.walkingbanks.com/.well-known/security.txt        text/html
+  https://www.walkingbanks.com/.well-known/trust.txt           text/html
+  https://www.walkingbanks.com/ads.txt                         text/html
+  https://www.walkingbanks.com/app-ads.txt                     text/html
+  https://www.walkingbanks.com/atom.xml                        text/html
+  https://walkingbanks.com/BitcoinSeedGame.html                text/html
+  https://www.walkingbanks.com/feed/                           text/html
+  https://www.walkingbanks.com/feed.xml                        text/html
+  https://www.walkingbanks.com/feeds/all.atom.xml              text/html
+  https://www.walkingbanks.com/index.xml                       text/html
+  https://www.walkingbanks.com/robots.txt                      text/html
+  https://www.walkingbanks.com/sitemap.xml                     text/html
+
+Уникальных (url, digest) версий: 5
+  OK   http://www.walkingbanks.com/                            20250402113442   17804 B
+  OK   http://www.walkingbanks.com/                            20250515143055   73360 B
+  OK   http://www.walkingbanks.com/                            20250716082759   73691 B
+  OK   http://www.walkingbanks.com/                            20261004195759    3932 B
+  OK   https://walkingbanks.com/BitcoinSeedGame.html           20250613004812  115355 B
+
+Сохранено 5, ошибок 0, всего 70 с

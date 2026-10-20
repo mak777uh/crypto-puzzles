@@ -1,0 +1,13 @@
+{
+  "slug": "groestlcoin-puzzle-1000grs",
+  "agent": "Qoder",
+  "model": "",
+  "note": "",
+  "host": "DESKTOP-PE9BOJ5",
+  "started_utc": "2026-10-19T10:55:08Z",
+  "ttl_min": 60,
+  "expires_utc": "2026-10-19T11:55:08Z",
+  "heartbeat_utc": "2026-10-19T10:55:08Z",
+  "released_utc": "2026-10-19T11:07:22Z",
+  "released_by": "Qoder"
+}

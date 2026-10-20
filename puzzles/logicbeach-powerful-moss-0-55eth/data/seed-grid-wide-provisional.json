@@ -1,0 +1,297 @@
+{
+ "method": "provisional ±2-row extension by reconstructing the wordlist wrap in a 172-174 character line (best fit W=174) against the 9 known 3-word triples; NOT pixel-verified; column order unresolved",
+ "wrap_width_chars": 174,
+ "total_flow_lines": 77,
+ "checks": "all 9 multi-candidate triples land on 3 consecutive flow lines with start-column spread <=7 chars",
+ "hours": [
+  {
+   "hour": 1,
+   "status": "candidate",
+   "base": [
+    "logic",
+    "mandate",
+    "mechanic"
+   ],
+   "wide_provisional": [
+    "lend",
+    "logic",
+    "mandate",
+    "mechanic",
+    "mirror"
+   ],
+   "lines": [
+    39,
+    40,
+    41
+   ],
+   "cols": [
+    28,
+    28,
+    24
+   ]
+  },
+  {
+   "hour": 2,
+   "status": "candidate",
+   "base": [
+    "open",
+    "oyster",
+    "peace"
+   ],
+   "wide_provisional": [
+    "nurse",
+    "open",
+    "oyster",
+    "peace",
+    "pioneer"
+   ],
+   "lines": [
+    46,
+    47,
+    48
+   ],
+   "cols": [
+    31,
+    31,
+    26
+   ]
+  },
+  {
+   "hour": 3,
+   "status": "candidate",
+   "base": [
+    "retreat",
+    "romance",
+    "sand"
+   ],
+   "wide_provisional": [
+    "relax",
+    "retreat",
+    "romance",
+    "sand",
+    "second"
+   ],
+   "lines": [
+    55,
+    56,
+    57
+   ],
+   "cols": [
+    13,
+    13,
+    11
+   ]
+  },
+  {
+   "hour": 4,
+   "status": "confirmed",
+   "base": [
+    "strategy"
+   ],
+   "wide_provisional": [
+    "source",
+    "strategy",
+    "tackle"
+   ],
+   "lines": [
+    64
+   ],
+   "cols": [
+    0
+   ]
+  },
+  {
+   "hour": 5,
+   "status": "candidate",
+   "base": [
+    "trash",
+    "turtle",
+    "unlock"
+   ],
+   "wide_provisional": [
+    "tomato",
+    "trash",
+    "turtle",
+    "unlock",
+    "various"
+   ],
+   "lines": [
+    68,
+    69,
+    70
+   ],
+   "cols": [
+    158,
+    157,
+    153
+   ]
+  },
+  {
+   "hour": 6,
+   "status": "candidate",
+   "base": [
+    "valve",
+    "vintage",
+    "waste"
+   ],
+   "wide_provisional": [
+    "unit",
+    "valve",
+    "vintage",
+    "waste",
+    "win"
+   ],
+   "lines": [
+    71,
+    72,
+    73
+   ],
+   "cols": [
+    133,
+    131,
+    131
+   ]
+  },
+  {
+   "hour": 7,
+   "status": "candidate",
+   "base": [
+    "traffic",
+    "tuition",
+    "uniform"
+   ],
+   "wide_provisional": [
+    "today",
+    "traffic",
+    "tuition",
+    "uniform",
+    "valid"
+   ],
+   "lines": [
+    68,
+    69,
+    70
+   ],
+   "cols": [
+    123,
+    118,
+    116
+   ]
+  },
+  {
+   "hour": 8,
+   "status": "confirmed",
+   "base": [
+    "stick"
+   ],
+   "wide_provisional": [
+    "solution",
+    "stick",
+    "swing"
+   ],
+   "lines": [
+    63
+   ],
+   "cols": [
+    115
+   ]
+  },
+  {
+   "hour": 9,
+   "status": "candidate",
+   "base": [
+    "recycle",
+    "require",
+    "riot"
+   ],
+   "wide_provisional": [
+    "raccoon",
+    "recycle",
+    "require",
+    "riot",
+    "sadness"
+   ],
+   "lines": [
+    53,
+    54,
+    55
+   ],
+   "cols": [
+    123,
+    124,
+    119
+   ]
+  },
+  {
+   "hour": 10,
+   "status": "candidate",
+   "base": [
+    "notable",
+    "okay",
+    "outdoor"
+   ],
+   "wide_provisional": [
+    "narrow",
+    "notable",
+    "okay",
+    "outdoor",
+    "patch"
+   ],
+   "lines": [
+    44,
+    45,
+    46
+   ],
+   "cols": [
+    149,
+    147,
+    143
+   ]
+  },
+  {
+   "hour": 11,
+   "status": "candidate",
+   "base": [
+    "lizard",
+    "main",
+    "maze"
+   ],
+   "wide_provisional": [
+    "leg",
+    "lizard",
+    "main",
+    "maze",
+    "mimic"
+   ],
+   "lines": [
+    38,
+    39,
+    40
+   ],
+   "cols": [
+    166,
+    164,
+    165
+   ]
+  },
+  {
+   "hour": 12,
+   "status": "confirmed",
+   "base": [
+    "leisure"
+   ],
+   "wide_provisional": [
+    "journey",
+    "leisure",
+    "mammal"
+   ],
+   "lines": [
+    38
+   ],
+   "cols": [
+    12
+   ]
+  }
+ ],
+ "note": "MOOT: the prize was claimed on-chain 2026-10-05 (0.553 ETH, tx 0xae42fac9...f98f); contract balance 0. Kept as a historical lead artifact, do not run."
+}

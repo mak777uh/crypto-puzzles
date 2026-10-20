@@ -18,10 +18,18 @@
 ## Источники
 - 2019-02-11 — Trithemius, Securing Bitcoin Seed Phrases in Stories, Medium/Coinmonks — https://medium.com/coinmonks/securing-bitcoin-seed-phrases-in-stories-d8eb43a02254
 - 2026-08-16 — Community tracker confirming the puzzle is unsolved — https://privatekeys.pw/puzzles/0.03-btc-coinmonks-puzzle
-
+- 2019-02-11 — Article mirror — https://www.cryptoxploits.com/bitcoin-poetry-puzzle/
+- 2019-02-11 — Reddit discussion — https://www.reddit.com/r/CryptoCurrency/comments/lw5z8d/reminder_the_bounty_from_coinmonks_post_in_2019/
+- 2019-02-11 — Community research/scripts — https://github.com/HomelessPhD/Wealth_in_Poetry (HomelessPhD, try_BIP39.py / try_old_Electrum.py)
 ## Подробности
 Здесь должна накапливаться расширенная информация по мере проходов: подсказки, прогресс сообщества, проверенные гипотезы, ссылки, compute-оценки. Текущий файл — скелет из OCP; заполняется автоматически в циклах.
 
+
+## Обновление (2026-10-19, Beam — обогащение из privatekeys.pw)
+- Тип: источники / выжимка
+- Суть: добавлены mirror статьи, Reddit-обсуждение и ссылка на HomelessPhD (скрипты линейного сдвига 12 слов); зафиксировано, что «consecutive BIP39 words» не дали ключ (совпадает с нашими негативами). Файл: data/privatekeys-pw-summary.md.
+- Источник: https://privatekeys.pw/puzzles/0.03-btc-coinmonks-puzzle
+- Проверено: баланс 3 124 630 сат (blockstream, 2026-10-19) — без изменений.
 
 ---
 ## Логирование (обязательно)

@@ -1,0 +1,711 @@
+====================================================================================================
+### anime-seed-phrase-puzzle-0-2btc
+--- README (первые 45 строк из 48) ---
+# Anime Seed Phrase Puzzle
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+
+## Кратко
+- Статус: **open**
+- Цепь: bitcoin
+- Приз: 0,2 BTC
+- Типы: bip39-seed, image-stego, word-selection
+- Что осталось / сложность: картинка с множеством подсказок; структура кодирования не подтверждена
+
+## Адреса/эскроу
+- Адрес в источнике не зафиксирован — **не подтверждено**, нужно уточнить.
+
+## Источники
+- Каталожная запись B23 (прямой первоисточник в каталоге не указан — требуется найти).
+
+## Подробности
+- Механизм: изображение в стиле аниме, содержащее множество подсказок, из которых собирается seed-фраза.
+- Приз 0,2 BTC — один из крупнейших в «мелкой/нишевой» категории, при этом публичной информации крайне мало.
+- В каталоге отсутствуют адрес и первоисточник — это открытый пробел для следующего прохода.
+
+## Зацепки / следующий шаг
+- Найти первоисточник (Reddit r/bitcoinpuzzles, bitcointalk, X) по запросам «anime seed phrase puzzle 0.2 BTC»
+- Зафиксировать адрес-эскроу и проверить баланс
+- Добавить ссылки в этот файл и в `MASTER_CATALOG.md`
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка, прогресс, баланс или решение (полностью либо частично) **должны** быть дописаны сюда с датой и ссылкой на источник. Параллельные агенты обязаны соблюдать тот же протокол.
+
+## История изменений
+- 2026-10-16 (deepseek-flash) — папка создана; базовое досье собрано из `MASTER_CATALOG.md` (Части 1-8).
+
+## Обновление (2026-10-16, deepseek-flash — web-исследование): источников НЕ найдено
+- Тип: отрицательный результат + возможное совпадение
+- Суть:
+  - По запросу **«Anime Seed Phrase Puzzle ~0.2 BTC»** прямых источников **не найдено**; адрес не подтверждён.
+  - Ближайшее реальное совпадение по описанию — анимационный сериал **«Bitcoin & Friends»** (B & Friends LLC):
+    8 серий, премьера **3 января 2024**; в **каждой серии спрятаны seed-фразы**, ведущие к кошелькам с NFT-призами
+    на общую сумму **$150 000**. Нашедшие получали также право стать персонажем и co-producer credit во втором сезоне.
+  - Приз там выражен в **NFT/долларах**, а не в 0,2 BTC — **тождество не подтверждено**, это гипотеза.
+- Источники:
+  - https://cryptokeepercanada.com/150000-bitcoin-friends-nft-treasure-hunt-to-debut-january-3/
+  - https://europeanbusinessmagazine.com/digital-gold-rush-the-hunt-for-150000-in-nfts-hidden-in-the-bitcoin-friends-animated-saga/
+--- LOG (последние 12 строк из 18) ---
+- Тип объекта: пазл. Состояние папки: README 4020 байт (обогащённое досье), файлов 1, data/=нет, tools/=нет.
+- Кратко из README: статус open; приз 0,2 BTC; типы bip39-seed, image-stego, word-selection; остаток-сложность n/a.
+- Адрес/эскроу: n/a
+- Источники: n/a
+- Вся история и досье — в README.md этой папки; новые сессии описывать здесь (self-intro, что делал, результаты вкл. отрицательные, артефакты, ссылки).
+
+## 2026-10-17 18:49 — Big Pickle (big-pickle / OpenCode, Windows) — сбор данных в пустую папку
+- Делал: массовый обход README → источники; попыток 2, сохранено 2 в `data/`.
+- Успех (2): 00_cryptokeepercanada.com.html; 01_europeanbusinessmagazine.com.html
+- Отказ (0): —
+- Артефакты: `data/SOURCES.md` + скачанные файлы.
+- Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+--- файлы (топ-15 по размеру) ---
+      345126  data\01_europeanbusinessmagazine.com.html
+       81084  data\00_cryptokeepercanada.com.html
+        4020  README.md
+        1739  LOG.md
+         643  data\SOURCES.md
+
+====================================================================================================
+### luckylurker-vault-2-1btc
+--- README (первые 45 строк из 158) ---
+# LuckyLurker Bitcoin Vault #2
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+
+## Кратко
+- Статус: **open (отложен)**
+- Цепь: bitcoin
+- Приз: 1,0 BTC
+- Опубликовано: 2026-08-12 (финансирование), автор Paul Jones
+- Типы: electrum-seed, bip39-seed
+- Что осталось / сложность: подсказок 0; автор отложил пазл из-за проблем со спонсором
+
+## Адреса/эскроу
+- `bc1qnepv9pcnqvndux9h9mcaxvk6u993rc0lew9fpp` — main | финансирован 12.08.2026, tx `2314d7f0`
+- Проверка баланса: https://mempool.space/address/bc1qnepv9pcnqvndux9h9mcaxvk6u993rc0lew9fpp
+
+## Источники
+- 2026 — страница пазла — https://luckylurker.com/bitcoin-vault-2/
+- 2026 — тема на bitcointalk 5577554 — https://bitcointalk.org/index.php?topic=5577554
+- 2026 — X автора — https://x.com/LuckyLurkerPaul
+
+## Подробности
+- Автор: Paul Jones (LuckyLurker).
+- Официальный статус: «Postponed until further notice» — спонсорские проблемы, подсказок 0.
+- Модель по аналогии с Vault #1: Electrum SegWit seed **без** passphrase, путь m/0'/0/1.
+- Vault #1 (0,0008 BTC) решён — см. соседнюю папку `luckylurker-vault-1-0-0008btc`.
+- Пока подсказок нет, перебор бессмысленен: пространство 12-словной seed-фразы не сужено.
+
+## Зацепки / следующий шаг
+- Мониторить страницу пазла и X автора на предмет публикации подсказок
+- Зафиксировать дату и tx финансирования для последующей проверки свипа
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка, прогресс, баланс или решение (полностью либо частично) **должны** быть дописаны сюда с датой и ссылкой на источник. Параллельные агенты обязаны соблюдать тот же протокол.
+
+## История изменений
+- 2026-10-16 (deepseek-flash) — папка создана; базовое досье собрано из `MASTER_CATALOG.md` (Части 1-8).
+## Досье Hark v2 (16.10.2026)
+
+Перенесено из `MASTER_CATALOG_v2_2026-10-16.md` (рабочие досье агентов Hark, 16.10.2026 23:40 МСК). Картина механизма, подсказок, проверенных и отброшенных гипотез, оракулов и файлов.
+
+### B10. LuckyLurker Vault #2 — 1,0 BTC
+- **→ Полное актуальное досье (что решено, что проверено, что осталось): ЧАСТЬ 8.6 (LuckyLurker #2).** Старая краткая запись заменена.
+
+--- LOG (последние 12 строк из 26) ---
+- Успех (4): 00_mnemonic.py.bin; 01_keystore.py.bin; 02_luckylurker.html; 03_luckylurker.md
+- Отказ (4): https://luckylurker.com/bitcoin-vault-2/ [FAIL: Remote end closed connection witho]; https://bitcointalk.org/index.php?topic=5577554 [FAIL: <urlopen error [Errno 11001] getad]; https://luckylurker.com/bitcoin-vault-2-is-live-1-btc-prize/ [FAIL: Remote end closed connection witho]; https://bitcointalk.org/index.php?topic=5577554.0 [FAIL: <urlopen error [Errno 11001] getad]
+- Артефакты: `data/SOURCES.md` + скачанные файлы.
+- Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+## 2026-10-18, 10:25 — OCP Sync (Qoder Desktop, Windows)
+- Делал: служебная запись **без прогона** — транслирую инсайт из закрытого 18.10 пазла Genesis Block Wallet (перенесён в `solved/caesarcoder-genesis-block-wallet-puzzle-947ksats`) на этот пазл.
+- Гипотеза «rounds-ось»: решение genesis было не в стандартных настройках KDF — **PBKDF2-HMAC-SHA512 rounds = 181 505 и 200 913 вместо 2 048** (числа кодируют время 18:15:05 UTC и дату 2009-01-03 генезис-блока), при пассфразе «Satoshi Nakamoto». Явного PBKDF2-кода в нашей папке нет (grep по `.py/.mjs/.js/.cu` — ноль), но есть сильный якорь: разбор vault-1 в `data/03_luckylurker.md:49` восстанавливает опубликованный сид стандартным Electrum-пайплайном `pbkdf2Sync(phrase, "electrum", 2048, 64, "sha512")` и попадает в адрес — т.е. у автора 2048 уже работал как надо, и априорная вероятность нестандартных rounds для vault-2 ниже, чем у чистых BIP39-пазлов. Приоритет оси: низкий.
+- Следствие: полученные здесь нули корректны как «при rounds=2048 совпадений нет», но **не покрывают** пространство нестандартных rounds/соли — это ограничение интерпретации прежних негативов, а не новая ось перебора. Их собственный GPU-поиск тоже встал на 30 000 раундов (см. `data/ocp/README.md` genesis-папки), т.е. перебор по rounds вверх — это взрывной рост цены заCandidate, а не «ещё один заход».
+- Что делать (бесплатный шаг): прочитать генератор/оракул пазла и подсказки автора на явные упоминания rounds / iterations / salt / «Electrum vs BIP39»; при неясности — вопрос автору только по решению куратора. **ПРОГОН НЕ ЗАПУСКАТЬ**: по `AGENT_INSTRUCTIONS.md` п.4 перебор допускается только по оси, суженной инсайтом, и требует отдельного ОК Ильи; «попробовать другие rounds» само по себе таким инсайтом не является.
+- Артефакты: не создавались (запись текстовая).
+- Ссылки: `solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/LOG.md` (запись 10:05), https://github.com/floflo777/open-crypto-puzzles/pull/44 ; `_sources/ocp_sync_2026-10-18/delta_report.md`.
+--- файлы (топ-15 по размеру) ---
+      191545  data\02_luckylurker.html
+       48513  data\01_keystore.py.bin
+       13806  README.md
+       11081  data\00_mnemonic.py.bin
+        5550  data\03_luckylurker.md
+        5214  LOG.md
+        1402  data\SOURCES.md
+
+====================================================================================================
+### aoi-nakamoto-quizchain-0-854btc
+--- README (первые 45 строк из 275) ---
+# Aoi Nakamoto Quizchain
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles).
+
+## Кратко
+- Статус: **open** (big)
+- Цепь: bitcoin
+- Приз: 0.777 BTC (USD 48951)
+- Примечание: Block 76 (0.077 BTC) was solved and swept by a reader on 2026-08-17; only Real Big Block (0.777 BTC) remains open
+- Опубликовано: 2019-04-01 https://www.reddit.com/r/Grycoin/
+- Типы: bip39-seed, word-selection
+- Difficulty left: external-info
+- Real Big Block: the transform and the case-flip rule are confirmed exactly on a solved sibling lot; what is missing is the precise source text the author hashed on 2019-07-30. She removed one twist that day and kept at least one, and later wrote that she lost the solution herself. Every contiguous paragraph span (1,469,908 texts), a bounded 2-edit slice on the full chapter (221,520 texts), every pair of boundary edits on 16 certified bases (48,379,696 texts) and the rule the chapter dictates itself are negatives. The reader who swept Block 76 on 2026-08-17 holds the convention of a final Aoi block, which is the cheapest calibration left
+
+## Адреса/эскроу
+- `14zMkTgaVXJcxdh4JdWi29MLRR44iUSG9W` — Real Big Block, stage 2 | expected: 77700000 sats | state: funded-unspent (checked 2026-08-27) | https://mempool.space/address/14zMkTgaVXJcxdh4JdWi29MLRR44iUSG9W
+- `13Cv6SXUnzGDT8JHqzzJ8xMPtsSdhJA4wd` — Quizchain2 Block 76 | expected: 7700000 sats | state: swept (checked 2026-08-21) | https://mempool.space/address/13Cv6SXUnzGDT8JHqzzJ8xMPtsSdhJA4wd
+- `19TbyN5KCg1Lg7qHwezifsLVcdSa2Rj5KN` — Real Big Block, stage 1 (certification reference, solved by a third party in 2019, not part of the live prize) | expected: n/a | state: swept (checked 2026-08-16) | https://mempool.space/address/19TbyN5KCg1Lg7qHwezifsLVcdSa2Rj5KN
+
+## Источники
+- 2019-07-07 — Real Big Block stage 1 — https://www.reddit.com/r/Grycoin/comments/ca6jxv/77_mbtc_quizchain2_block_77_stage_one/
+- 2019-07-22 — Quizchain2 Block 76 — https://www.reddit.com/r/Grycoin/comments/cgcv9i/77_mbtc_quizchain2_block_76/
+- 2019-07-25 — Real Big Block Discussion — https://www.reddit.com/r/Grycoin/comments/chn8un/real_big_block_discussion/
+- 2019-07-23 — Second, Wattpad chapter by AoiNakamoto — https://www.wattpad.com/720888559-second
+- 2019-08-15 — Wattpad Nightmode userstyle, copies generic pre { white-space: pre-wrap } — https://github.com/uso-archive/data/blob/master/data/usercss/170148.user.css
+- 2019-07-15 — Common Crawl CC-MAIN-2019-30 Wattpad homepage (CSS URL v=eb03e30) — https://index.commoncrawl.org/CC-MAIN-2019-30-index?url=www.wattpad.com/&output=json
+- 2019-07-22 — [777 mbtc] Quizchain last block, r/Grycoin, with the 2019-07-30 update on the removed twist — https://www.reddit.com/r/Grycoin/comments/cgkpbb/777_mbtc_quizchain_last_block/
+- 2019-07-23 — Starting Up, Wattpad part by AoiNakamoto: the author lost the solution — https://www.wattpad.com/762380140
+- 2019-07-30 — Real Big Block escrow funding transaction — https://mempool.space/tx/a1916e7ed9eac3fcc56a55056328cb09d06925e2694f2e6720de12b228514d1f
+- 2019-07-22 — Block 76 escrow funding transaction — https://mempool.space/tx/979670f3d1d4134e7989ed6f4a4370362e15c101711c93675790cf0751c8dbd4
+- 2013-05-27 — Hal Finney, Bitcoin and me, bitcointalk topic 155054 — https://bitcointalk.org/index.php?topic=155054.0
+
+## Подробности
+Здесь должна накапливаться расширенная информация по мере проходов: подсказки, прогресс сообщества, проверенные гипотезы, ссылки, compute-оценки. Текущий файл — скелет из OCP; заполняется автоматически в циклах.
+
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка/прогресс/баланс/решение (полностью или частично) **должна** быть дописана сюда с датой и ссылкой. Параллельные агенты обязаны соблюдать тот же протокол.
+
+## OCP deep docs
+- Folder: https://github.com/floflo777/open-crypto-puzzles/tree/main/1-big-prizes/aoi-nakamoto-quizchain-0-854btc
+- README (raw): https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/1-big-prizes/aoi-nakamoto-quizchain-0-854btc/README.md
+
+
+--- LOG (последние 12 строк из 58) ---
+- Делал: обогащение из внешнего репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) — раскладка дельты снапшота `19644e58` (клон `_sources/ocp/`, реестр `_sources/OCP_SNAPSHOT.md`). Протокол: `claims acquire/heartbeat/release` по `aoi-nakamoto-quizchain-0-854btc`. Прогонов/переборов не запускали, статус пазла и балансы не меняли, чужие файлы не перезатёрты (копии лежат отдельными деревами `data/ocp/` и `tools/ocp/` с provenance).
+- Результат: перенесено 6 файлов данных → `data/ocp/`, 3 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в базе, пропущено: 3. Статус по OCP: `open`.
+- Артефакты: `1-big-prizes/aoi-nakamoto-quizchain-0-854btc/clues/author-posts.md`, `1-big-prizes/aoi-nakamoto-quizchain-0-854btc/data/blocks-structure.json`, `1-big-prizes/aoi-nakamoto-quizchain-0-854btc/data/pipeline-stages.json`, `1-big-prizes/aoi-nakamoto-quizchain-0-854btc/images/01-pipeline-derivation.svg`, `1-big-prizes/aoi-nakamoto-quizchain-0-854btc/images/02-structure-blocks.svg`, `1-big-prizes/aoi-nakamoto-quizchain-0-854btc/puzzle.json`, `1-big-prizes/aoi-nakamoto-quizchain-0-854btc/tools/fig_blocks.py`, `1-big-prizes/aoi-nakamoto-quizchain-0-854btc/tools/fig_pipeline.py`, `1-big-prizes/aoi-nakamoto-quizchain-0-854btc/tools/oracle.py`
+- Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/1-big-prizes/aoi-nakamoto-quizchain-0-854btc ; полная дельта — `_sources/ocp_sync_2026-10-18/delta_report.md`.
+
+## 2026-10-18, 10:25 — OCP Sync (Qoder Desktop, Windows)
+- Делал: служебная запись **без прогона** — транслирую инсайт из закрытого 18.10 пазла Genesis Block Wallet (перенесён в `solved/caesarcoder-genesis-block-wallet-puzzle-947ksats`) на этот пазл.
+- Гипотеза «rounds-ось»: решение genesis было не в стандартных настройках KDF — **PBKDF2-HMAC-SHA512 rounds = 181 505 и 200 913 вместо 2 048** (числа кодируют время 18:15:05 UTC и дату 2009-01-03 генезис-блока), при пассфразе «Satoshi Nakamoto». В нашей папке KDF-код не найден (есть только `tools/ocp/oracle.py` без PBKDF2), поэтому здесь axis = «уточнить механику»: сначала по материалам OCP в `data/ocp/` и по блокам квизчейна понять, из чего вообще строится сид (ответы викторины → phrase → ?), и только потом говорить о rounds. Приоритет оси: низкий.
+- Следствие: полученные здесь нули корректны как «при rounds=2048 совпадений нет», но **не покрывают** пространство нестандартных rounds/соли — это ограничение интерпретации прежних негативов, а не новая ось перебора. Их собственный GPU-поиск тоже встал на 30 000 раундов (см. `data/ocp/README.md` genesis-папки), т.е. перебор по rounds вверх — это взрывной рост цены заCandidate, а не «ещё один заход».
+- Что делать (бесплатный шаг): прочитать генератор/оракул пазла и подсказки автора на явные упоминания rounds / iterations / salt / «Electrum vs BIP39»; при неясности — вопрос автору только по решению куратора. **ПРОГОН НЕ ЗАПУСКАТЬ**: по `AGENT_INSTRUCTIONS.md` п.4 перебор допускается только по оси, суженной инсайтом, и требует отдельного ОК Ильи; «попробовать другие rounds» само по себе таким инсайтом не является.
+- Артефакты: не создавались (запись текстовая).
+- Ссылки: `solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/LOG.md` (запись 10:05), https://github.com/floflo777/open-crypto-puzzles/pull/44 ; `_sources/ocp_sync_2026-10-18/delta_report.md`.
+--- файлы (топ-15 по размеру) ---
+       28291  README.md
+       22838  data\00_README.md
+       18381  data\04_api.pullpush.io.json
+       17615  data\02_tested.md
+       13311  LOG.md
+       10434  tools\ocp\oracle.py
+        8956  data\01_leads.md
+        7584  data\ocp\puzzle.json
+        7061  tools\ocp\fig_blocks.py
+        6863  data\03_api.pullpush.io.json
+        4670  tools\ocp\fig_pipeline.py
+        4306  data\ocp\clues\author-posts.md
+        3659  data\05_api.pullpush.io.json
+        3522  data\ocp\images\01-pipeline-derivation.svg
+        3415  data\ocp\images\02-structure-blocks.svg
+
+====================================================================================================
+### nuaza-bitcoin-fr-chasse-au-tresor-0-2024btc
+--- README (первые 45 строк из 120) ---
+# Нуаза / bitcoin.fr «Chasse au trésor»
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+
+## Кратко
+- Статус: **open**
+- Цепь: bitcoin
+- Приз: 0,2024 BTC
+- Опубликовано: 2024-08-15 … 2024-12-25 (15 подсказок, X @e_ducat)
+- Типы: bip39-seed, word-selection, book-cipher
+- Что осталось / сложность: нужны изображения страниц книги (блокер — покупка бумажного издания)
+
+## Адреса/эскроу
+- `bc1q8zfy6wvvtskzkg4s343x42pyf363nmejspgc02` — main | путь m/84'/0'/0'/0/0
+- Проверка баланса: https://mempool.space/address/bc1q8zfy6wvvtskzkg4s343x42pyf363nmejspgc02
+
+## Источники
+- 2024 — страница конкурса с 14 подсказками — https://bitcoin.fr/chasse-au-tresor/
+- 2024 — Pierre Noizat, «L'énergie, face cachée de la monnaie» (книга-ключ)
+- 2024 — форум jeuxvideo.com, тема 76202287 (точный URL не подтверждён — искать по номеру темы)
+
+## Подробности
+- Механизм: 24 английских слова BIP39.
+- Слова 1-21 = французские слова из книги → перевод/сопоставление с английским по номеру.
+- Слова 22-24 = `open always win`.
+- Подсказка 9: 64-битный верификатор (8 допустимых последних слов) — то есть финальный сегмент сужается до 8 вариантов.
+- Известные целевые страницы: yin-yang p.42, timbre p.101, bilan BCE p.99.
+- Проверено сообществом: серии famA-D, ~10¹⁶ комбинаций — отрицательно.
+
+## Зацепки / следующий шаг
+- Добыть сканы/фото страниц 42, 99, 101 книги Noizat (почта, библиотеки, владельцы издания)
+- Проверить, доступна ли книга в электронном виде (€8,99-10)
+- После получения номеров страниц — прогнать оракул BIP84 по 8 вариантам финала
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка, прогресс, баланс или решение (полностью либо частично) **должны** быть дописаны сюда с датой и ссылкой на источник. Параллельные агенты обязаны соблюдать тот же протокол.
+
+## История изменений
+- 2026-10-16 (deepseek-flash) — папка создана; базовое досье собрано из `MASTER_CATALOG.md` (Части 1-8).
+## Досье Hark v2 (16.10.2026)
+
+Перенесено из `MASTER_CATALOG_v2_2026-10-16.md` (рабочие досье агентов Hark, 16.10.2026 23:40 МСК). Картина механизма, подсказок, проверенных и отброшенных гипотез, оракулов и файлов.
+
+### B4. Нуаза / bitcoin.fr «Chasse au trésor» — 0,2024 BTC
+--- LOG (последние 12 строк из 18) ---
+- Тип объекта: пазл. Состояние папки: README 11362 байт (обогащённое досье), файлов 1, data/=нет, tools/=нет.
+- Кратко из README: статус open; приз 0,2024 BTC; типы bip39-seed, word-selection, book-cipher; остаток-сложность n/a.
+- Адрес/эскроу: bc1q8zfy6wvvtskzkg4s343x42pyf363nmejspgc02
+- Источники: https://bitcoin.fr/chasse-au-tresor/
+- Вся история и досье — в README.md этой папки; новые сессии описывать здесь (self-intro, что делал, результаты вкл. отрицательные, артефакты, ссылки).
+
+## 2026-10-17 18:52 — Big Pickle (big-pickle / OpenCode, Windows) — сбор данных в пустую папку
+- Делал: массовый обход README → источники; попыток 2, сохранено 2 в `data/`.
+- Успех (2): 00_bitcoin.fr.html; 01_sample.html
+- Отказ (0): —
+- Артефакты: `data/SOURCES.md` + скачанные файлы.
+- Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+--- файлы (топ-15 по размеру) ---
+      170711  data\00_bitcoin.fr.html
+       18527  data\01_sample.html
+       11362  README.md
+        1793  LOG.md
+         493  data\SOURCES.md
+
+====================================================================================================
+### bitaps-shamir-challenge-1btc
+--- README (первые 45 строк из 189) ---
+# Bitaps Shamir Secret Sharing Challenge
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles).
+
+## Кратко
+- Статус: **open** (big)
+- Цепь: bitcoin
+- Приз: 1.00016775 BTC (USD 63011)
+- Примечание: single P2WPKH escrow, funded across 5 transactions ending 2022-10
+- Опубликовано: 2020-06-19 https://web.archive.org/web/20230328022959/https://bitaps.com/mnemonic/challenge
+- Типы: shamir, bip39-seed
+- Difficulty left: external-info
+- residual entropy is about 125 bits after every constraint I could establish (duplicate-value coefficient rejection plus a real defect in the deployed 2020 generator's entropy check); no third Shamir share has surfaced in the public record, including same-day Reddit and Telegram copies, the 2020-07-04 Common Crawl body, archive.today, live mirrors, and 13 GitHub forks of mnemonic-offline-tool; the published zpub is a BIP84 account key and its 0/0 child is the escrow; what would close this is that missing share, or a disclosed constraint on it, not compute
+
+## Адреса/эскроу
+- `bc1qyjwa0tf0en4x09magpuwmt2smpsrlaxwn85lh6` — main | expected: 1.00016775 BTC (100,016,775 sats) | state: funded-unspent (checked 2026-08-28) | https://mempool.space/address/bc1qyjwa0tf0en4x09magpuwmt2smpsrlaxwn85lh6
+
+## Источники
+- 2020-06-19 — Shamir Secret Backup Scheme bug bounty (challenge page) — https://bitaps.com/mnemonic/challenge
+- 2020-07-04 — Common Crawl CC-MAIN-2020-29 challenge page (challenge.warc) — https://bitaps.com/mnemonic/challenge
+- 2021-06-20 — archive.today snapshot of the challenge page — https://archive.is/8bNRM
+- 2020-06-19 — Bitaps announcement — https://x.com/bitaps_com/status/1274018817304379394
+- 2020-06-19 — Bitaps Reddit copy, r/Bitcoin hc4bfk — https://www.reddit.com/r/Bitcoin/comments/hc4bfk/1_btc_cryptographic_challenge_with_splitted/
+- 2020-06-19 — Bitaps Telegram copy — https://t.me/bitapscom/15
+- 2020-06-19 — mnemonic-offline-tool, commit 5b6dd995 (bundles jsbtc) — https://github.com/bitaps-com/mnemonic-offline-tool/commit/5b6dd995478b49c489b95444fbb0dca4006746a2
+- 2026-08-16 — bitaps-com/jsbtc (repository) — https://github.com/bitaps-com/jsbtc
+- 2026-07-16 — jsbtc issue #65, coefficient-bias defect — https://github.com/bitaps-com/jsbtc/issues/65
+- 2026-08-28 — mempool.space, escrow address — https://mempool.space/address/bc1qyjwa0tf0en4x09magpuwmt2smpsrlaxwn85lh6
+
+## Подробности
+Здесь должна накапливаться расширенная информация по мере проходов: подсказки, прогресс сообщества, проверенные гипотезы, ссылки, compute-оценки. Текущий файл — скелет из OCP; заполняется автоматически в циклах.
+
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка/прогресс/баланс/решение (полностью или частично) **должна** быть дописана сюда с датой и ссылкой. Параллельные агенты обязаны соблюдать тот же протокол.
+
+## OCP deep docs
+- Folder: https://github.com/floflo777/open-crypto-puzzles/tree/main/1-big-prizes/bitaps-shamir-challenge-1btc
+- README (raw): https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/1-big-prizes/bitaps-shamir-challenge-1btc/README.md
+## Досье Hark v2 (16.10.2026)
+
+Перенесено из `MASTER_CATALOG_v2_2026-10-16.md` (рабочие досье агентов Hark, 16.10.2026 23:40 МСК). Картина механизма, подсказок, проверенных и отброшенных гипотез, оракулов и файлов.
+
+### B11. Bitaps Shamir SSS — 1,00016775 BTC
+--- LOG (последние 12 строк из 24) ---
+## 2026-10-17 18:50 — Big Pickle (big-pickle / OpenCode, Windows) — сбор данных в пустую папку
+- Делал: массовый обход README → источники; попыток 8, сохранено 5 в `data/`.
+- Успех (5): 00_README.md; 01_leads.md; 02_tested.md; 03_api.pullpush.io.json; 04_api.pullpush.io.json
+- Отказ (3): https://github.com/floflo777/open-crypto-puzzles [FAIL: IncompleteRead(327680 bytes read) ]; https://bitaps.com/mnemonic/challenge [FAIL: HTTP Error 403: Forbidden | jina: ]; https://archive.is/8bNRM [FAIL: <urlopen error [SSL: WRONG_VERSION]
+- Артефакты: `data/SOURCES.md` + скачанные файлы.
+- Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+## 2026-10-18, 09:52 — OCP Sync (Qoder Desktop, Windows) <!-- ocp-snapshot:19644e58 -->
+- Делал: обогащение из внешнего репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) — раскладка дельты снапшота `19644e58` (клон `_sources/ocp/`, реестр `_sources/OCP_SNAPSHOT.md`). Протокол: `claims acquire/heartbeat/release` по `bitaps-shamir-challenge-1btc`. Прогонов/переборов не запускали, статус пазла и балансы не меняли, чужие файлы не перезатёрты (копии лежат отдельными деревами `data/ocp/` и `tools/ocp/` с provenance).
+- Результат: перенесено 8 файлов данных → `data/ocp/`, 2 кода → `tools/ocp/`,1 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в базе, пропущено: 3. Статус по OCP: `open`.
+- Артефакты: `1-big-prizes/bitaps-shamir-challenge-1btc/challenge.warc`, `1-big-prizes/bitaps-shamir-challenge-1btc/clues/author-posts.md`, `1-big-prizes/bitaps-shamir-challenge-1btc/data/channel_reads.csv`, `1-big-prizes/bitaps-shamir-challenge-1btc/data/entropy_measurements.csv`, `1-big-prizes/bitaps-shamir-challenge-1btc/data/related_disclosures.csv`, `1-big-prizes/bitaps-shamir-challenge-1btc/puzzle.json`, `1-big-prizes/bitaps-shamir-challenge-1btc/tool-en.warc`, `1-big-prizes/bitaps-shamir-challenge-1btc/tool-ru.warc`, `1-big-prizes/bitaps-shamir-challenge-1btc/tools/oracle.py`, `1-big-prizes/bitaps-shamir-challenge-1btc/tools/structured_candidates.py`
+- Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/1-big-prizes/bitaps-shamir-challenge-1btc ; полная дельта — `_sources/ocp_sync_2026-10-18/delta_report.md`.
+--- файлы (топ-15 по размеру) ---
+      121525  data\ocp\tool-ru.warc
+      120245  data\ocp\tool-en.warc
+       72168  data\ocp\challenge.warc
+       17416  data\02_tested.md
+       14754  README.md
+       14235  data\00_README.md
+       12458  data\04_api.pullpush.io.json
+       10361  tools\ocp\oracle.py
+        9385  tools\ocp\structured_candidates.py
+        5091  data\ocp\puzzle.json
+        5062  data\03_api.pullpush.io.json
+        4084  LOG.md
+        3845  data\ocp\clues\author-posts.md
+        3282  data\ocp\SOURCE.md
+        3141  data\01_leads.md
+
+====================================================================================================
+### ballet-bobby-lee-2btc-cards
+--- README (первые 45 строк из 151) ---
+# Ballet / Bobby Lee: Take Bobby's Bitcoin
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles).
+
+## Кратко
+- Статус: **open** (big)
+- Цепь: bitcoin
+- Приз: 2.00007358 BTC (USD 126005)
+- Примечание: two independent cards, 1.00003481 BTC (AA009926) and 1.00003877 BTC (AA012381); a third card, AA007448, was solved and swept by a third party in 2020 and is not part of the live prize
+- Опубликовано: 2020-07-24 https://x.com/bobbyclee/status/1289004702122643456
+- Типы: bip38, physical-object
+- Difficulty left: external-info
+- the BIP38 EC-multiply pipeline is fully confirmed against the solved sibling card; each open card publishes only one half of its BIP38 pair (encrypted WIF on the back face, passphrase on the front face under a scratch-off), and the missing half was never photographed; image forensics on all 4 published photographs recover 0 characters of either missing half; brute force of either missing half is not feasible (about 100 bits for a passphrase, one full scrypt computation per guess)
+
+## Адреса/эскроу
+- `1JxWyNrkgYvgsHu8hVQZqTXEB9RftRGP5m` — AA009926 | expected: 100003481 sats | state: funded-unspent (checked 2026-08-16) | https://mempool.space/address/1JxWyNrkgYvgsHu8hVQZqTXEB9RftRGP5m
+- `1QGtbKxx6FKDD66LwnrzHCAHmyZ7mDHqC4` — AA012381 | expected: 100003877 sats | state: funded-unspent (checked 2026-08-16) | https://mempool.space/address/1QGtbKxx6FKDD66LwnrzHCAHmyZ7mDHqC4
+- `1LL6Xy92LwGDRfQP9fBU7f1477cEKctr7c` — AA007448 (oracle, solved by a third party in 2020, not part of the live prize) | expected: n/a | state: swept (checked 2026-08-16) | https://mempool.space/address/1LL6Xy92LwGDRfQP9fBU7f1477cEKctr7c
+
+## Источники
+- 2020-07-24 — Bobby Lee, challenge announcement — https://x.com/bobbyclee/status/1289004702122643456
+- 2026-08-16 — oritwoen/boha, community data mirror (addresses, encrypted WIFs, passphrases, card photographs) — https://github.com/oritwoen/boha
+
+## Подробности
+Здесь должна накапливаться расширенная информация по мере проходов: подсказки, прогресс сообщества, проверенные гипотезы, ссылки, compute-оценки. Текущий файл — скелет из OCP; заполняется автоматически в циклах.
+
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка/прогресс/баланс/решение (полностью или частично) **должна** быть дописана сюда с датой и ссылкой. Параллельные агенты обязаны соблюдать тот же протокол.
+
+## OCP deep docs
+- Folder: https://github.com/floflo777/open-crypto-puzzles/tree/main/1-big-prizes/ballet-bobby-lee-2btc-cards
+- README (raw): https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/1-big-prizes/ballet-bobby-lee-2btc-cards/README.md
+
+
+## Curated deep dive (OCP, 16.10.2026)
+- Два открытых card’а: AA009926 (1.00003481 BTC) и AA012381 (1.00003877 BTC); третья AA007448 решена третьими (reference oracle).
+- Формат: BIP38 EC-multiply encrypted WIF + passphrase из 5 групп по 4 символа (~100 бит each). Недостает halves: в одном WIF, в другом passphrase; image forensics 0; brute force неосуществим.
+-utenant: Escrow addresses in mempool: 1JxWyNrkgYvgsHu8hVQZqTXEB9RftRGP5m и 1QGtbKxx6FKDD66LwnrzHCAHmyZ7mDHqC4.
+- Зацепки: (1) фотография back face AA012381 (WIF); (2) фотография passphrase scratch-off AA009926; (3) раскрытие slабости энтропии Ballet 2020.
+
+## Досье agntn/puzzles (16.10.2026)
+
+Перенесено из реестра [@agntn/puzzles](https://puzzles.agntn.dev/collections/ballet) (raw: https://puzzles.agntn.dev/collections/ballet.md). Ниже — разбор первоисточника: механика, кто решал, что проверено.
+--- LOG (последние 12 строк из 24) ---
+## 2026-10-17 18:50 — Big Pickle (big-pickle / OpenCode, Windows) — сбор данных в пустую папку
+- Делал: массовый обход README → источники; попыток 8, сохранено 6 в `data/`.
+- Успех (6): 00_README.md; 01_leads.md; 02_tested.md; 03_README.md; 04_ballet.html; 05_ballet.md
+- Отказ (2): https://github.com/floflo777/open-crypto-puzzles [FAIL: IncompleteRead(327680 bytes read) ]; https://github.com/oritwoen/boha [FAIL: IncompleteRead(327680 bytes read) ]
+- Артефакты: `data/SOURCES.md` + скачанные файлы.
+- Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+## 2026-10-18, 09:52 — OCP Sync (Qoder Desktop, Windows) <!-- ocp-snapshot:19644e58 -->
+- Делал: обогащение из внешнего репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) — раскладка дельты снапшота `19644e58` (клон `_sources/ocp/`, реестр `_sources/OCP_SNAPSHOT.md`). Протокол: `claims acquire/heartbeat/release` по `ballet-bobby-lee-2btc-cards`. Прогонов/переборов не запускали, статус пазла и балансы не меняли, чужие файлы не перезатёрты (копии лежат отдельными деревами `data/ocp/` и `tools/ocp/` с provenance).
+- Результат: перенесено 7 файлов данных → `data/ocp/`, 3 кода → `tools/ocp/`,3 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в базе, пропущено: 3. Статус по OCP: `open`.
+- Артефакты: `1-big-prizes/ballet-bobby-lee-2btc-cards/clues/AA009926-revealed.jpg`, `1-big-prizes/ballet-bobby-lee-2btc-cards/clues/author-posts.md`, `1-big-prizes/ballet-bobby-lee-2btc-cards/data/card-faces.json`, `1-big-prizes/ballet-bobby-lee-2btc-cards/data/pipeline-stages.json`, `1-big-prizes/ballet-bobby-lee-2btc-cards/images/01-structure-card-faces.svg`, `1-big-prizes/ballet-bobby-lee-2btc-cards/images/02-pipeline-derivation.svg`, `1-big-prizes/ballet-bobby-lee-2btc-cards/puzzle.json`, `1-big-prizes/ballet-bobby-lee-2btc-cards/tools/fig_cards.py`, `1-big-prizes/ballet-bobby-lee-2btc-cards/tools/fig_pipeline.py`, `1-big-prizes/ballet-bobby-lee-2btc-cards/tools/oracle.py`
+- Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/1-big-prizes/ballet-bobby-lee-2btc-cards ; полная дельта — `_sources/ocp_sync_2026-10-18/delta_report.md`.
+--- файлы (топ-15 по размеру) ---
+      217605  data\ocp\clues\AA009926-revealed.jpg
+      173345  data\04_ballet.html
+       11635  data\03_README.md
+       11635  data\00_README.md
+       11474  README.md
+        6894  tools\ocp\oracle.py
+        6659  tools\ocp\fig_cards.py
+        5836  data\02_tested.md
+        5403  data\ocp\puzzle.json
+        4700  tools\ocp\fig_pipeline.py
+        4032  LOG.md
+        3619  data\ocp\images\01-structure-card-faces.svg
+        3593  data\01_leads.md
+        3300  data\ocp\images\02-pipeline-derivation.svg
+        3076  data\ocp\SOURCE.md
+
+====================================================================================================
+### cardano-13373665-challenge
+--- README (первые 45 строк из 24) ---
+# Cardano «13373665 Challenge» (eggdropper / MintMatrix)
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md). Источник: `MASTER_CATALOG_v2_2026-10-16.md` (рабочие досье агентов Hark, 16.10.2026).
+
+
+- **Адрес/сеть**: Cardano, Ch6 enterprise-адрес `addr1v9ht7ved…` (полный адрес в NOTES не записан; найти в репо или через koios). **Баланс**: 3 UTxO, всего 12,789241 ADA + 4011 egg (koios address_info 13.10.2026). Все пришли с донат-адреса addr1q80dp67…, метаданных нет.
+- **Источники**: https://github.com/eggdropper/13373665Challenge (11 коммитов 16–18.04.2022, SOLUTIONS.MD), форк ChewieGumballoni/13373665Challenge (идентичен), IPFS-картинки (логотип QmNjhx…, Ch5 QmcUgS…), @MintMatrix_io.
+- **Механизм**: серия Cardano-кошельков, каждый с одной подсказкой. Подсказка Ch6 — только «See through the matrix.» Деривация Icarus/CIP1852, m/1852'/1815'/0'/0/0.
+- **Что установлено/решено**:
+  - **Ch3 решён и выведен 13.10.2026 14:15 МСК**: подсказка — Caesar −3 от bech32 addr_xsk. 2,8 ADA + 366 egg ушли на адрес Ильи, tx bf9cb40415fef8bf69e82bc51fff302292899fd1ad563aa6bc949810b3fd9267.
+  - Ch5 пуст (steghide, пустой пароль). Ch7 — скрипт-адрес, не приз.
+  - Автор — команда MintMatrix.io: по метаданным минта яиц «redeemableProperties: True».
+- **Проверено и отброшено** (по Ch6): LSB, альфа и хвост PNG логотипа; LSB PNG Ch2; outguess на Ch5 jpg; zero-width в README; метаданные tx; запись в token registry; мнемоники Ch1/2/4/5 на acct 0–2, role 0/1, idx 0–9; транспонированные и диагональные матрицы слов (14 валидных, 0 совпадений); soft-children xvk Ch3/4/5.
+- **Что осталось / следующий шаг**: DCT-стего (jsteg/F5) в стегозавре Ch5 JPEG («see-through», рентген); M-clear.png (прозрачный логотип MintMatrix, архив январь 2022) не разобран; «redeemable properties» в архиве mintmatrix.io за 2022.
+- **Файлы/скрипты**: `/workspace/work/cardano_egg/NOTES.md`, `icarus.py` (BIP39 → Icarus → CIP1852, сверен на Ch2/4/5), `sweep.py` (ручной CBOR-билдер tx + отправка через Koios, годится для любых Cardano-выводов), `derive.py`, `english.txt`, `img/`, `pub.hex`; ключ Ch3 — только в `.secret/`.
+- **Проекты Hark и статус**: мультичейн-охота, задача 98bdbcc9 (`/workspace/work/multichain/NOTES.md`). Ch6 после сессии 13.10 (~35 мин) не возобновлялся. Охоте «оычн» с 14.10 09:34 велено «Cardano/TON-квесты не делать».
+- **Оценка шансов**: низкие-средние, приз ≈12,8 ADA. Выплата без посредников: ключ → sweep.py.
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка, прогресс, баланс или решение (полностью либо частично) **должны** быть дописаны сюда с датой и ссылкой на источник.
+
+## История изменений
+- 2026-10-16 (deepseek-flash) — папка создана при переносе данных из `MASTER_CATALOG_v2_2026-10-16.md` (Часть Б: живые загадки вне каталога).
+--- LOG (последние 12 строк из 11) ---
+# LOG.md — журнал пазла «Cardano 13373665 Challenge, Ch6»
+
+> Формат ведения: см. `../../AGENT_INSTRUCTIONS.md`. Записи добавляются в конец; чужое не затирать.
+
+## 2026-10-17, 18:07 — AutoClaw (модель zai_glm-5.3-flash, среда AutoClaw/Windows, проект «Default»)
+- Представляюсь: сессия по протоколу AGENT_INSTRUCTIONS.md; взят пункт «M-clear.png не разобран» + перепроверка матчасти Ch6. Полный адрес Ch6 найден в README репозитория: `addr1v9ht7ved2a7346rh0gdwteknkcqk8c9dgzyyg463vg2j73qryn9kp` (вознаграждение 11.344798 ADA + 1337 egg).
+- Делал: (1) баланс Ch6 через koios address_info — **12.789241 ADA на месте** (17.10 вечер, не тронут); (2) метаданные минта egg (koios asset_info) — CIP25-минимум: image/supply/description/publishingPlatform/redeemableProperties:"True", скрытых полей нет; mint_cnt=1 — под policy один ассет «egg», других токенов-подсказок нет; (3) **M-clear.png разобран** (wayback 2022-01-24, https://mintmatrix.io/assets/img/logos/M-clear.png, 2027x2008 RGBA, sha256 ed37efbc…): чанки без хвоста после IEND, iTXt = стандартный Adobe XMP (только Orientation), eXIf = стандартные TIFF-теги; альфа — 0 и антialiasing краёв; LSB-плоскости R/G/B/A и RGBA (row-major) — printable 0.00, полезной нагрузки нет; (4) логотип из token registry metadata (140x140 RGBA, sha256 808c4905… — ДРУГОЙ файл, не копия IPFS-логотипа) — LSB всех каналов и «видимые пиксели» — printable ≤0.34, длиннейшая печатная серия 8 байт = шум, полезной нагрузки нет; (5) архив mintmatrix.io: главная (2021-12-14) — обычный SaaS-лендинг («Mint Matrix», mint-asset.php, FAQ), скрытых строк/addr1/hex нет; mint-asset.php в архив НЕ попадал.
+- Результат: **негатив по M-clear.png, registry-логотипу и метаданным**. «See through the matrix.» не вскрывается через платформенные артефакты (сайт/логотипы/метаданные).
+- Что остаётся (для следующих агентов): (а) Ch5 — по SOLUTIONS.MD автор использовал **steghide БЕЗ пароля** на IPFS-картинке QmcUgS4LgPrVbtBoLMJAbrDLokWEDxJt36Uj1NHsReTUHh; стоит повторить steghide extract с пустой фразой на НЕСКОЛЬКИХ копиях с разных шлюзов (перезакодированная копия теряет данные); Hark пробовал одну копию. (б) «matrix» может означать Discord-канал автора (discord.gg/EnB6znbkZx — в футере сайта) — нужна учётка. (в) F5/jsteg для Ch5-JPEG — маловероятно (метод Ch5 = steghide).
+- Артефакты: `data/cardano_mclear.png`, `data/cardano_registry_logo.png`, `data/cardano_main.html`.
+- Ссылки/доказательства: https://github.com/eggdropper/13373665Challenge (README: адреса и награды; SOLUTIONS.MD: методы Ch1–5); koios API (asset_info/address_info); web.archive.org (M-clear.png 20220124210116; главная 20211214021623).
+--- файлы (топ-15 по размеру) ---
+      199735  data\cardano_mclear.png
+       21956  data\cardano_registry_logo.png
+       13350  data\cardano_main.html
+        3866  README.md
+        3661  LOG.md
+
+====================================================================================================
+### bitcoin-coders-puzzle-07-21ksats
+--- README (первые 45 строк из 84) ---
+# Bitcoin Coders Puzzle 07
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8).
+
+## Кратко
+- Статус: **open (пауза)**
+- Цепь: bitcoin
+- Приз: 21 000 сат
+- Типы: jigsaw, image-stego, pixel-code
+- Что осталось / сложность: сборка пазла из плиток; распознано 5 панелей из 12
+
+## Адреса/эскроу
+- `bc1qj7xsxrlgmnnrqwvlakacc5yrh33h2n3xaa0m09` — main | путь m/84'/0'/0'/0/0
+- Проверка баланса: https://mempool.space/address/bc1qj7xsxrlgmnnrqwvlakacc5yrh33h2n3xaa0m09
+
+## Источники
+- 2026 — серия Bitcoin Coders Puzzle (площадка автора)
+
+## Подробности
+- Механизм: плитки 32×32 (всего 34×46 плиток) = перемешанная страница комикса 4×3 = 12 панелей.
+- Узнано 5 панелей: crane/cargo, lady/woman, tree, dragon/tattoo, diamond/crystal.
+- Статус: пауза, идёт jigsaw-сборка (438 кластеров).
+- Каждая панель, вероятно, даёт слово BIP39 — итого 12 слов.
+
+## Зацепки / следующий шаг
+- Продолжить автоматическую сборку пазла (edge-matching, 438 кластеров)
+- Проверить гипотезу «12 панелей → 12 слов BIP39»
+- Искать в панелях визуальные отсылки к словам (crane/cargo → crane? dragon → dragon?)
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка, прогресс, баланс или решение (полностью либо частично) **должны** быть дописаны сюда с датой и ссылкой на источник. Параллельные агенты обязаны соблюдать тот же протокол.
+
+## История изменений
+- 2026-10-16 (deepseek-flash) — папка создана; базовое досье собрано из `MASTER_CATALOG.md` (Части 1-8).
+## Досье Hark v2 (16.10.2026)
+
+Перенесено из `MASTER_CATALOG_v2_2026-10-16.md` (рабочие досье агентов Hark, 16.10.2026 23:40 МСК). Картина механизма, подсказок, проверенных и отброшенных гипотез, оракулов и файлов.
+
+### Bitcoin Coders Puzzle #07 — 21 000 сат
+- **Адрес/сеть/путь**: `bc1qj7xsxrlgmnnrqwvlakacc5yrh33h2n3xaa0m09`, BTC P2WPKH, BIP39 12 англ. слов, без пассфразы, страница даёт `m/84'/0'/0'`, проверяем `/0/0` (oracle.py также /0/0–2 и /1/0–2). Вход: tx `85ad0185b5dbec7969c99f751c8bfc2b6905b77eca7dc1a6995fbb6137490c5e` (05.10.2026 20:37 UTC).
+- **Баланс**: 21 000 сат, не потрачен — последняя запись цикла 16.10 23:05 («баланс цел, MATCH нет», IDEAS.md).
+- **Источники**: https://bitcoincoders.org/desafios/puzzle-07 (октябрь 2026); картинка https://bitcoincoders.org/assets/desafios/puzzle-07-desafio.webp (1088×1472, файл не менялся). Подсказки — только Discord Bitcoin Coders, канал https://discord.com/channels/1414049501257142284/1479179285884440827 (инвайт discord.gg/e5qUsNWgQg) — нами НЕ прочитан. Анонсы @kakafurlan / @bitcoin_coders в X (подсказок нет). Издания 01–06 закрыты, 07 активно, следующее — ноябрь 2026.
+- **Механизм**: «A imagem contém representações das 12 palavras». Картинка = 34×46 плиток 32×32 px, перемешаны, не повёрнуты (перемешивание серверное, не seed-random — seedtest отверг). Исходник — страница комикса 4 колонки × 3 ряда = 12 панелей (гуттеры: колонки плиток 8, 16, 25/26; ряды 15, 30 — сплошные, 4×3 подтверждена 16.10). Порядок слов — гипотеза: по строкам слева направо.
+- **Подсказки и наши чтения**: открытых подсказок к 07 нет. Прототип — Пазл 01 (решение опубликовано): «rural midnight aerobic version bird grow civil double february penalty flag wood» → слова у автора СЛУЧАЙНЫЕ BIP39 (вкл. абстрактные), картинки рисуются под них ⇒ подбирать слово по главному предмету сцены. У 06 механика «порядок надо угадать» ⇒ порядок тоже может быть частью загадки.
+--- LOG (последние 12 строк из 38) ---
+- Реализация v2 (tools/bc07_speewide2_integer.py): целочисленная формулировка — для каждой из 41,472 комбинаций 11 фиксированных слотов энтропия отличается только 11 битами р3к1; 2048 sha256(16B) на комбинацию, чексумма-ниббл фиксирован (word12); выжившие → PBKDF2 → BIP84 /0/0 → hash160. Оракул сертифицирован ранее (3/3 вектора BIP84).
+- Результат прогонов: **12/162 блоков (~7.4% пространства, ~390k чексумма-валидных выведено) — 0 совпадений.** Скорость CPU-MP (12 воркеров): ~49 с/блок → полный остаток ~2.2 ч = 16 прогонов по 8.3 мин (resume-файл data/speewide2_done_blocks.txt готов). GPU-ядро (PBKDF2-HMAC-SHA512 + secp256k1 в OpenCL) сократило бы до минут, но при призе $13 инженерия не оправдана.
+- Вывод: specE-wide ПРИОСТАНОВЛЕН (не закрыт). Resume: tools/bc07_speewide2_integer.py + data/speewide2_done_blocks.txt, дедлайн 8.3 мин на прогон.
+- Попутно за сессию по #07: specE-lite закрыт (331,776, 0), визион-кандидаты р3к1 задокументированы, BIP84-оракул сертифицирован (3/3 вектора).
+
+## 2026-10-18, 10:25 — OCP Sync (Qoder Desktop, Windows)
+- Делал: служебная запись **без прогона** — транслирую инсайт из закрытого 18.10 пазла Genesis Block Wallet (перенесён в `solved/caesarcoder-genesis-block-wallet-puzzle-947ksats`) на этот пазл.
+- Гипотеза «rounds-ось»: решение genesis было не в стандартных настройках KDF — **PBKDF2-HMAC-SHA512 rounds = 181 505 и 200 913 вместо 2 048** (числа кодируют время 18:15:05 UTC и дату 2009-01-03 генезис-блока), при пассфразе «Satoshi Nakamoto». Наш пайплайн фиксирует стандарт: `tools/bc07_speewide2_integer.py:74` — `pbkdf2_hmac('sha512', mn, b'mnemonic', 2048, 64)`; оракул сертифицирован на 3 вектора BIP84, т.е. корректен ровно при 2048.
+- Следствие: полученные здесь нули корректны как «при rounds=2048 совпадений нет», но **не покрывают** пространство нестандартных rounds/соли — это ограничение интерпретации прежних негативов, а не новая ось перебора. Их собственный GPU-поиск тоже встал на 30 000 раундов (см. `data/ocp/README.md` genesis-папки), т.е. перебор по rounds вверх — это взрывной рост цены заCandidate, а не «ещё один заход».
+- Что делать (бесплатный шаг): прочитать генератор/оракул пазла и подсказки автора на явные упоминания rounds / iterations / salt / «Electrum vs BIP39»; при неясности — вопрос автору только по решению куратора. **ПРОГОН НЕ ЗАПУСКАТЬ**: по `AGENT_INSTRUCTIONS.md` п.4 перебор допускается только по оси, суженной инсайтом, и требует отдельного ОК Ильи; «попробовать другие rounds» само по себе таким инсайтом не является.
+- Артефакты: не создавались (запись текстовая).
+- Ссылки: `solved/caesarcoder-genesis-block-wallet-puzzle-947ksats/LOG.md` (запись 10:05), https://github.com/floflo777/open-crypto-puzzles/pull/44 ; `_sources/ocp_sync_2026-10-18/delta_report.md`.
+--- файлы (топ-15 по размеру) ---
+      247173  data\bc07_r2c2_tile_candidates_2026-10-17.png
+      225531  data\bc07_r3c1_tile_candidates_2026-10-17.png
+       12354  README.md
+       10045  LOG.md
+        6735  tools\bc07_speewide2_integer.py
+        4839  tools\bc07_specE_lite_2026-10-17.py
+         116  data\speewide2_done_blocks.txt
+
+====================================================================================================
+### crypto-puzzles-2018-puzzle-2-0-05eth
+--- README (первые 45 строк из 87) ---
+# Crypto Puzzles 2018: Puzzle #2
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles).
+
+## Кратко
+- Статус: **open** (small)
+- Цепь: ethereum
+- Приз: 0.05 ETH (USD 94)
+- Примечание: single externally-owned account, never signed a transaction (nonce 0); that this address is Puzzle #2's escrow is a strong inference from the funder and amount matching Puzzle #1, not stated directly by the author
+- Опубликовано: 2018-08-06 https://www.youtube.com/watch?v=TRUUTryah70
+- Типы: raw-private-key, image-stego, video-series
+- Difficulty left: external-info
+- the transform is certified; what remains is finishing a visual read of Puzzle #2's two videos, about 40 to 50 of 64 hex characters legible today
+
+## Адреса/эскроу
+- `0x1fa8Be9De5bBFE047C72dB8E8E3257128F7661ad` — main | expected: 0.05 ETH | state: funded-unspent (checked 2026-08-16) | https://etherscan.io/address/0x1fa8Be9De5bBFE047C72dB8E8E3257128F7661ad
+
+## Источники
+- 2018-07-19 — Crypto Puzzle 1, statement part 1 — https://www.youtube.com/watch?v=3l1jFa3Mw0s
+- 2018-07-19 — Crypto Puzzle 1, statement part 2 — https://www.youtube.com/watch?v=hX-pOBj8VsI
+- 2018-07-19 — Crypto Puzzle 1 Solved! — https://www.youtube.com/watch?v=0jJ6XadOAWk
+- 2018-08-06 — Crypto Puzzle 2, part 1 — https://www.youtube.com/watch?v=TRUUTryah70
+- 2018-08-06 — Crypto Puzzle 2, part 2 — https://www.youtube.com/watch?v=U_0DtYHDPy0
+- 2026-08-16 — Channel: Crypto Puzzles — https://www.youtube.com/channel/UCR8-P07nNhxyEr6fwJXvjQQ
+
+## Подробности
+Здесь должна накапливаться расширенная информация по мере проходов: подсказки, прогресс сообщества, проверенные гипотезы, ссылки, compute-оценки. Текущий файл — скелет из OCP; заполняется автоматически в циклах.
+
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка/прогресс/баланс/решение (полностью или частично) **должна** быть дописана сюда с датой и ссылкой. Параллельные агенты обязаны соблюдать тот же протокол.
+
+## OCP deep docs
+- Folder: https://github.com/floflo777/open-crypto-puzzles/tree/main/3-small-prizes/crypto-puzzles-2018-puzzle-2-0-05eth
+- README (raw): https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/3-small-prizes/crypto-puzzles-2018-puzzle-2-0-05eth/README.md
+
+## OCP: машинные данные (puzzles.json, 16.10.2026)
+
+Структурированные данные из `puzzles.json` репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) (snapshot OCP: 2026-08-19; цены: {'date': '2026-08-16', 'BTC': 63000, 'ETH': 1880, 'AR': 1.81, 'LTC': 54}).
+
+- `slug`: crypto-puzzles-2018-puzzle-2-0-05eth
+- `title`: Crypto Puzzles 2018: Puzzle #2
+- `status`: **open**
+- `tier`: small | `chain`: ethereum
+--- LOG (последние 12 строк из 38) ---
+- **Вывод**: гипотеза «ИИ-чтение 64 hex прямо из видео P2» **закрыта отрицательно**. Остаётся интерпретация жирной демо-грамматики как инструкций (шов по обеим осям, зеркало, половинки глифов, колонка) — исследовательская задача. Приз $0.05 ETH (~$94), 8 лет без решения: **приоритет понижен, работа поставлена на паузу**.
+
+
+## 2026-10-18, 10:05 (повторно 13:4x) — OCP Sync (Qoder Desktop, Windows) <!-- ocp-snapshot:19644e58 -->
+- Делал: раскладка дельт снапшота OCP `19644e58` (5 файлов в `data/ocp/`, provenance `SOURCE.md`);
+  запись повторена после того, как параллельный проход ~13:12 перезаписал хвост LOG с
+  дубль-дефектами (склеено `tools/log_dedup.py`, потеря HEAD-строк — 0).
+- Результат: по этому пазлу OCP даёт материалы и разборы, фактических новинок против нашей базы
+  нет; статус совпадает (`open`, 0,05 ETH на `0x1fa8Be9De5bBFE047C72dB8E8E3257128F7661ad`).
+  Прогонов не запускали.
+- Артефакты: `data/ocp/**` этой папки; `_sources/ocp_sync_2026-10-18/delta_report.md`.
+- Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58
+--- файлы (топ-15 по размеру) ---
+     6786498  data\f720\column_motion_sheet.png
+     5528846  data\f720\p2p1_diff_persecond.png
+     5276283  data\U_0DtYHDPy0_720p60.mp4
+     5228755  data\f720\p2p2_diff_persecond.png
+     5177460  data\TRUUTryah70_720p60.mp4
+     3235456  data\f720\p1s1_diff_persecond.png
+     2886784  data\p1_audio.wav
+     2886784  data\a_p2p2.wav
+     2886784  data\a_p2p1.wav
+     2886750  data\a_resid.wav
+     2886750  data\a_aligned_p2p2.wav
+     2886750  data\a_aligned_p2p1.wav
+     2881210  data\p2_audio.wav
+     2717537  data\f720\contact_p1_1fps.png
+     2715638  data\f720\contact_p2_1fps.png
+
+====================================================================================================
+### ah-white-walking-banks-800ksats
+--- README (первые 45 строк из 141) ---
+# AH White: Walking Banks
+
+Индекс: [MASTER_CATALOG.md](../../MASTER_CATALOG.md) (Части 1-8). Источник данных: [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles).
+
+## Кратко
+- Статус: **open** (mid)
+- Цепь: bitcoin
+- Приз: 800000 sats (USD 504)
+- Примечание: split across two P2WPKH addresses derived from one published xpub, funded 2024-09-05
+- Опубликовано: 2025-05-01 https://njump.me/npub1c2rvx6ue9uewl452kczcfxz9w242sfzn64ul8dv2afd3t5dpktzs0kmmvf
+- Типы: bip39-seed, book, text-cipher
+- Difficulty left: external-info
+- the mechanism is fully understood and the published text has been mined exhaustively; only 1 of 6 organ-donor groups (4 of 24 words) is printed as a decodable block, and the other 5 are not present anywhere in the free PDF, the site text, or the audiobook narration, which argues the remaining words depend on hints the author has not yet published
+
+## Адреса/эскроу
+- `bc1qxy4tf0s4n7x9w24rawf9qsxh2hyljrmvyrhwzt` — account 0, index 0 | expected: 100000 sats | state: funded-unspent (checked 2026-08-16) | https://mempool.space/address/bc1qxy4tf0s4n7x9w24rawf9qsxh2hyljrmvyrhwzt
+- `bc1q4qc24xk5cehc4t7vr264zldsms2kmxf86jqjau` — account 0, index 1 | expected: 700000 sats | state: funded-unspent (checked 2026-08-16) | https://mempool.space/address/bc1q4qc24xk5cehc4t7vr264zldsms2kmxf86jqjau
+
+## Источники
+- 2026-08-16 — AH White, Nostr profile — https://njump.me/npub1c2rvx6ue9uewl452kczcfxz9w242sfzn64ul8dv2afd3t5dpktzs0kmmvf
+- 2026-08-16 — Walking Banks, official site (Find the Treasure) — https://walkingbanks.com
+
+## Подробности
+Здесь должна накапливаться расширенная информация по мере проходов: подсказки, прогресс сообщества, проверенные гипотезы, ссылки, compute-оценки. Текущий файл — скелет из OCP; заполняется автоматически в циклах.
+
+
+---
+## Логирование (обязательно)
+См. `../../AGENT_INSTRUCTIONS.md`. Любая значимая находка/прогресс/баланс/решение (полностью или частично) **должна** быть дописана сюда с датой и ссылкой. Параллельные агенты обязаны соблюдать тот же протокол.
+
+## OCP deep docs
+- Folder: https://github.com/floflo777/open-crypto-puzzles/tree/main/2-mid-prizes/ah-white-walking-banks-800ksats
+- README (raw): https://raw.githubusercontent.com/floflo777/open-crypto-puzzles/main/2-mid-prizes/ah-white-walking-banks-800ksats/README.md
+
+## Досье agntn/puzzles (16.10.2026)
+
+Перенесено из реестра [@agntn/puzzles](https://puzzles.agntn.dev/collections/walking-banks) (raw: https://puzzles.agntn.dev/collections/walking-banks.md). Ниже — разбор первоисточника: механика, кто решал, что проверено.
+
+
+> AH White hid a real 24-word Bitcoin seed in the thriller Walking Banks. 800000 sats wait on two addresses. Four words are known and twenty are not.
+
+A murder mystery where the victims carry a seed phrase in their DNA. Fun premise. Then [AH White](https://puzzles.agntn.dev/authors/ah-white) made it real.
+
+On September 5, 2024, two deposits landed on one wallet, **100,000 sats** and **700,000 sats**. The next day the author posted the whole novel as a [free PDF on Nostr](https://njump.me/note1jvpc4m95fdr5hxqkhpyj5alcaeqj7hwtr6hdp4zk5n9uvewpzkyq2ldrlv). The seed is somewhere in that book. Nobody has found it. Two years on, both deposits are still there.
+
+--- LOG (последние 12 строк из 41) ---
+## 2026-10-17 18:49 — Big Pickle (big-pickle / OpenCode, Windows) — сбор данных в пустую папку
+- Делал: массовый обход README → источники; попыток 7, сохранено 6 в `data/`.
+- Успех (6): 00_README.md; 01_leads.md; 02_tested.md; 03_npub1c2rvx6ue9uewl452kczcfxz9w242sfzn64ul8dv2afd3t.html; 04_walkingbanks.com.html; 05_README.md
+- Отказ (1): https://github.com/floflo777/open-crypto-puzzles [FAIL: IncompleteRead(327680 bytes read) ]
+- Артефакты: `data/SOURCES.md` + скачанные файлы.
+- Проверено: да (HTTP-статус/байты); содержательная разборка — следующим шагом.
+
+## 2026-10-18, 09:52 — OCP Sync (Qoder Desktop, Windows) <!-- ocp-snapshot:19644e58 -->
+- Делал: обогащение из внешнего репозитория [open-crypto-puzzles](https://github.com/floflo777/open-crypto-puzzles) — раскладка дельты снапшота `19644e58` (клон `_sources/ocp/`, реестр `_sources/OCP_SNAPSHOT.md`). Протокол: `claims acquire/heartbeat/release` по `ah-white-walking-banks-800ksats`. Прогонов/переборов не запускали, статус пазла и балансы не меняли, чужие файлы не перезатёрты (копии лежат отдельными деревами `data/ocp/` и `tools/ocp/` с provenance).
+- Результат: перенесено 2 файлов данных → `data/ocp/`, 1 кода → `tools/ocp/`,0 тяжёлых (>250 КБ) оставлены в клоне — указатель `data/ocp/_HEAVY.md`. Зеркал, уже лежащих в базе, пропущено: 3. Статус по OCP: `open`.
+- Артефакты: `2-mid-prizes/ah-white-walking-banks-800ksats/clues/author-posts.md`, `2-mid-prizes/ah-white-walking-banks-800ksats/puzzle.json`, `2-mid-prizes/ah-white-walking-banks-800ksats/tools/oracle.py`
+- Ссылки/доказательства: https://github.com/floflo777/open-crypto-puzzles/tree/19644e58e50721f8469680f2edcba1daa0697630/2-mid-prizes/ah-white-walking-banks-800ksats ; полная дельта — `_sources/ocp_sync_2026-10-18/delta_report.md`.
+--- файлы (топ-15 по размеру) ---
+      215761  data\03_npub1c2rvx6ue9uewl452kczcfxz9w242sfzn64ul8dv2afd3t.html
+       10921  README.md
+       10881  data\04_walkingbanks.com.html
+        8616  data\05_README.md
+        8616  data\00_README.md
+        7003  LOG.md
+        6865  tools\ocp\oracle.py
+        3851  data\02_tested.md
+        3682  data\ocp\puzzle.json
+        2699  data\ocp\clues\author-posts.md
+        1773  data\01_leads.md
+        1417  data\SOURCES.md
+        1409  data\ocp\SOURCE.md
+        1093  tools\ocp\SOURCE.md
+
